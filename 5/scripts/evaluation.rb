@@ -8,8 +8,8 @@ system     = ARGV[2].nil? ? "" : ARGV[2]
 config     = ARGV[3].nil? ? "" : ARGV[3]
 mode       = ARGV[1] 
 input_user = ARGV[0]
-input_gold = mode == "test" ? "qald-5_test.xml" : "qald-5_train.xml"
-
+input_gold = mode == "test" ? "../data/qald-5_test.xml" : "../data/qald-5_train.xml"
+template   = "../scripts/evaluation_result_html.mustache"
 
 #################################################################
 
@@ -110,12 +110,12 @@ results_hybrid  = evaluate_answers(answers_user[:hybrid], answers_gold[:hybrid])
 context_dbpedia = compute_results(results_dbpedia,answers_gold[:dbpedia].keys.length)
 context_hybrid  = compute_results(results_hybrid,answers_gold[:hybrid].keys.length)
 
-html = Mustache.render(File.read("evaluation_result_html.mustache"),{ :gold    => input_gold,
-                                                                      :system  => system,
-                                                                      :config  => config,
-                                                                      :time    => Time.now,
-                                                                      :dbpedia => context_dbpedia, 
-                                                                      :hybrid  => context_hybrid })
+html = Mustache.render(File.read(template),{ :gold    => input_gold,
+                                             :system  => system,
+                                             :config  => config,
+                                             :time    => Time.now,
+                                             :dbpedia => context_dbpedia, 
+                                             :hybrid  => context_hybrid })
 
 file = input_user + ".html"
 File.write(file,html)

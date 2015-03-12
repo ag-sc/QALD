@@ -12,12 +12,12 @@
 if (isset($_GET['q'])) {
     $q = $_GET['q']; }
  else {
-    $q = "0"; }
+    $q = "home"; }
  if (isset($_GET['x'])) {
     $x = htmlspecialchars($_GET['x']);
  }
  else {
-    if ($q == "0") { $x = "home"; }
+    if ($q == "home") { $x = "home"; }
     else { $x = "motivation"; }
  }
 
@@ -33,7 +33,7 @@ if (isset($_GET['q'])) {
  <p> &nbsp; </p>
 
  <?php
- if ($q == "0") {
+ if ($q == "home") {
  echo "
  <p> <a href='index.php?x=benchmark&q=".$q."'>Benchmark</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=publications&q=".$q."'>Publications</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -166,7 +166,7 @@ if (isset($_GET['q'])) {
   if (($q == "1" or $q == "2") and ($x == "task1" or $x == "task2")) {
       $link = $q . "/website/motivation.html"; 
   }
-  if ($q != "0" and ($x == "home" or $x == "benchmark" or $x == "publications")) {
+  if ($q != "home" and ($x == "home" or $x == "benchmark" or $x == "publications")) {
      $link = $q . "/website/motivation.html";
   }
 
