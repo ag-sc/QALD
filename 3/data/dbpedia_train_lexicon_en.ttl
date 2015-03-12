@@ -1,0 +1,1014 @@
+
+@prefix lemon: <http://www.monnet-project.eu/lemon#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: < http://www.w3.org/2001/XMLSchema#> .
+
+@prefix base: <http://sc.cit-ec.uni-bielefeld.de/lexica/dbpedia#>.
+@prefix : <http://sc.cit-ec.uni-bielefeld.de/lexica/dbpedia#>.
+
+
+:lexicon a lemon:Lexicon ;
+    lemon:language "en" ;
+    lemon:entry :Muscle,
+                :TradeUnion,
+                :LaborUnion,
+                :PowerStation,
+                :ElectricityStation,
+                :GeneratingPlant,
+                :GeneratingStation,
+                :PowerHouse,
+                :PowerPlant,
+                :Activity,
+                :ComicsCharacter,
+                :FootballPlayer,
+                :GridironFootballPlayer,
+                :Festival,
+                :MusicFestival,
+                :Bridge,
+                :SoccerClub,
+                :SoccerTeam,
+                :Mollusc,
+                :boardMemberAt,
+                :similar,
+                :like,
+                :cross,
+                :traverse,
+                :bridge,
+                :span,
+                :crossingOf,
+                :bridgeOver,
+                :source,
+                :originate,
+                :ethnicity,
+                :studyAt,
+                :university,
+                :viceChancellor,
+                :religion,
+                :border,
+                :residence,
+                :resideIn,
+                :writer,
+                :author,
+                :write,
+                :runningMate,
+                :field,
+                :workOn,
+                :highestMountain,
+                :spouse,
+                :wife,
+                :husband,
+                :marry,
+                :marriedTo,
+                :star,
+                :feature,
+                :playIn,
+                :meanTemperature,
+                :sublimationPoint,
+                :sublimeAt,
+                :formedOn,
+                :foundedOn,
+                :establishedOn,
+                :formationDate,
+                :locatedIn,
+                :in,
+                :partOf,
+                :discover,
+                :discovery, 
+                :drafted,
+                :capacity,
+                :elevation,
+                :altitude,
+                :height,
+                :high,
+                :tall,
+                :profession,
+                :occupation,
+                :workAs,
+                :record,
+                :interpreter,
+                :population,
+                :totalPopulation,
+                :haveInhabitant,
+                :instrument,
+                :play .
+                
+
+
+## Muscle ##
+
+:Muscle a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "muscle"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/Muscle> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## TradeUnion ##
+
+:TradeUnion a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "trade union"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/TradeUnion> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:LaborUnion a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "labor union"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/TradeUnion> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## PowerStation ##
+
+:PowerStation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "power station"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:ElectricityStation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "electricity station"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:GeneratingPlant a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "generating plant"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:GeneratingStation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "generating station"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:PowerHouse a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "power house"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:PowerPlant a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "power plant"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/PowerStation> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## Activity ## 
+
+:Activity a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "activity"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/Activity> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## ComicsCharacter ## 
+
+:ComicsCharacter a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "comics character"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/ComicsCharacter> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## GridironFootballPlayer ##
+
+:FootballPlayer a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "football player"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/AmericanFootballPlayer> ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/GridironFootballPlayer> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:GridironFootballPlayer a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "Gridiron Football player"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/GridironFootballPlayer> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## MusicFestival ## 
+
+:MusicFestival a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "music festival"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/MusicFestival> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:Festival a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "festival"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/MusicFestival> ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/FilmFestival> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## Bridge ## 
+
+:Bridge a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "bridge"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/Bridge> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## SoccerClub ##
+
+:SoccerClub a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "soccer club"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/SoccerClub> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:SoccerTeam a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "soccer team"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/SoccerClub> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## Mollusca ##
+
+:Mollusc a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "mollusc"@en ; 
+                        lexinfo:number lexinfo:singular ] ;
+  lemon:otherForm [ lemon:writtenRep "molluscs"@en ; 
+                    lexinfo:number lexinfo:plural ] ;
+  lemon:otherForm [ lemon:writtenRep "mollusca"@en ; 
+                    lexinfo:number lexinfo:plural ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/Mollusca> ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## board ##
+
+:boardMemberAt a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "board member"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/board> ;
+                lemon:subjOfProp :arg1boardMember ;
+                lemon:objOfProp  :arg2boardMember ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg1boardMember ;
+                      lexinfo:prepositionalAdjunct :arg2boardMember ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2boardMember lemon:marker :at .
+
+## similar ##
+
+:similar a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "similar"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject   :arg1similar;
+                      lexinfo:prepositionalObject :arg2similar ]; 
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/similar> ] ;
+  lexinfo:partOfSpeech lexinfo:adjective  .
+:arg2similar lemon:marker :to .
+
+:like a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "like"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:PrepositionalFrame ;
+                      lexinfo:prepositionalObject :arg2like ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/similar> ;
+                lemon:subjOfProp :arg1like ;
+                lemon:objOfProp  :arg2like ] ;
+  lexinfo:partOfSpeech lexinfo:preposition  .
+
+## crosses ## 
+
+:cross a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "cross"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1cross ;
+                      lexinfo:directObject :arg2cross ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1cross ;
+                lemon:objOfProp  :arg2cross ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:traverse a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "traverse"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1traverse ;
+                      lexinfo:directObject :arg2traverse ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1traverse ;
+                lemon:objOfProp  :arg2traverse ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:bridge a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "bridge"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1bridge ;
+                      lexinfo:directObject :arg2bridge ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1bridge ;
+                lemon:objOfProp  :arg2bridge ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:span a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "span"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1span ;
+                      lexinfo:directObject :arg2span ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1span ;
+                lemon:objOfProp  :arg2span ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:crossingOf a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "crossing"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg1crossing ;
+                      lexinfo:prepositionalObject :arg2crossing ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1crossing ;
+                lemon:objOfProp  :arg2crossing ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2crossing lemon:marker :of .
+
+:bridgeOver a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "bridge"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg1bridgeOver ;
+                      lexinfo:prepositionalObject :arg2bridgeOver ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/crosses>;
+                lemon:subjOfProp :arg1bridgeOver ;
+                lemon:objOfProp  :arg2bridgeOver ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2crossing lemon:marker :over .
+
+## source ##
+
+:source a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "source"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg1source ;
+                      lexinfo:possessiveAdjunct :arg2source ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/source>;
+                lemon:subjOfProp :arg2source ;
+                lemon:objOfProp  :arg1source ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:originate a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "originate"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivePPFrame ;
+                      lexinfo:subject :arg1originate ;
+                      lexinfo:prepositionalObject :arg2originate ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/source>;
+                lemon:subjOfProp :arg1originate ;
+                lemon:objOfProp  :arg2originate ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg2originate lemon:marker :in_marker . 
+
+## ethnicity ##
+
+:ethnicity a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "ethnicity"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/ethnicity> ;
+                lemon:subjOfProp :arg1ethnicity ;
+                lemon:objOfProp  :arg2ethnicity ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2ethnicity ;
+                      lexinfo:prepositionalAdjunct :arg1ethnicity ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2ethnicity lemon:marker :of .
+
+## university ##
+
+:studyAt a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "study"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+		      lexinfo:subject      :arg1study ;
+                      lexinfo:directObject :arg2study ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/university>;
+                lemon:subjOfProp :arg1study;
+                lemon:objOfProp  :arg2study ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg2study lemon:marker :at .
+
+:university a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "university"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/university> ;
+                lemon:subjOfProp :arg1university ;
+                lemon:objOfProp  :arg2university ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2university ;  
+                      lexinfo:possessiveAdjunct :arg1university ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## viceChancellor ##
+
+:viceChancellor a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "vice chancellor"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/viceChancellor> ;
+                lemon:subjOfProp :arg1viceChancellor ;
+                lemon:objOfProp  :arg2viceChancellor ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :viceChancellor ;
+                      lexinfo:possessiveAdjunct :arg1viceChancellor ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## religion ##
+
+:religion a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "religion"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/religion> ;
+                lemon:subjOfProp :arg1religion ;
+                lemon:objOfProp  :arg2religion ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2religion ;  
+                      lexinfo:possessiveAdjunct :arg1religion ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## border ##
+
+:border a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "border"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1border ;
+                      lexinfo:directObject :arg2border ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/border>;
+                lemon:subjOfProp :arg1border ;
+                lemon:objOfProp  :arg2border ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+## residence ##
+
+:residence a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "residence"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/residence> ;
+                lemon:subjOfProp :arg1residence ;
+                lemon:objOfProp  :arg2residence ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2residence ;
+                      lexinfo:possessiveAdjunct :arg1residence ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:resideIn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "reside"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivePPFrame ;
+                      lexinfo:subject :arg1reside ;
+                      lexinfo:prepositionalObject :arg2reside ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/residence>;
+                lemon:subjOfProp :arg1reside ;
+                lemon:objOfProp  :arg2reside ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg2reside lemon:marker :in_marker .
+
+## writer ##
+
+:writer a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "writer"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/writer> ;
+                lemon:subjOfProp :arg1writer ;
+                lemon:objOfProp  :arg2writer ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2writer ;
+                      lexinfo:prepositionalObject :arg1writer ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg1writer lemon:marker :of .
+
+:author a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "author"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/writer> ;
+                lemon:subjOfProp :arg1author ;
+                lemon:objOfProp  :arg2author ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2author ;
+                      lexinfo:possessiveAdjunct :arg1author ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:write a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "write"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1write ;
+                      lexinfo:directObject :arg2write ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/writer>;
+                lemon:subjOfProp :arg2write;
+                lemon:objOfProp  :arg1write ] , 
+              [ lemon:reference <http://dbpedia.org/ontology/artist>;
+                lemon:subjOfProp :arg2write;
+                lemon:objOfProp  :arg1write;
+                lemon:propertyRange <http://dbpedia.org/ontology/Writer> ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+## runningMate ##
+
+:runningMate a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "running mate"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/runningMate> ;
+                lemon:subjOfProp :arg1runningMate ;
+                lemon:objOfProp  :arg2runningMate ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2runningMate ;
+                      lexinfo:prepositionalAdjunct :arg1runningMate ] ,
+                    [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2runningMate ;  
+                      lexinfo:possessiveAdjunct :arg1runningMate ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2runningMate lemon:marker :of .
+
+## field ##
+
+:field a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "field"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/field> ;
+                lemon:subjOfProp :arg1field ;
+                lemon:objOfProp  :arg2field ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2field ;  
+                      lexinfo:possessiveAdjunct :arg1field ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:workOn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "work"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivePPFrame ;
+                      lexinfo:subject :arg1workOn ;
+                      lexinfo:prepositionalObject :arg2workOn ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/field>;
+                lemon:subjOfProp :arg1workOn;
+                lemon:objOfProp  :arg2workOn ] ;
+  lexinfo:partOfSpeec lexinfo:verb .
+:arg2workOn lemon:marker :on .
+
+## highestMountain ##
+
+:highestMountain a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "highest Mountain"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/highestMountain> ;
+                lemon:subjOfProp :arg1highestMountain ;
+                lemon:objOfProp  :arg2highestMountain ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2highestMountain ;
+                      lexinfo:prepositionalAdjunct :arg1highestMountain ] ,
+                    [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2highestMountain ;  
+                      lexinfo:possessiveAdjunct :arg1highestMountain ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2highestMountain lemon:marker :of .
+
+## spouse ##
+
+:spouse a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "spouse"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/spouse> ;
+                lemon:subjOfProp :arg1spouse ;
+                lemon:objOfProp  :arg2spouse ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2spouse ;  
+                      lexinfo:possessiveAdjunct :arg1spouse ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:wife a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "wife"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/spouse> ;
+                lemon:subjOfProp :arg1spouse ;
+                lemon:objOfProp  :arg2spouse ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2spouse ;  
+                      lexinfo:possessiveAdjunct :arg1spouse ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:husband a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "husband"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/spouse> ;
+                lemon:subjOfProp :arg1spouse ;
+                lemon:objOfProp  :arg2spouse ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2spouse ;  
+                      lexinfo:possessiveAdjunct :arg1spouse ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:marry a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "marry"@en ] ;
+  lemon:otherForm [ lemon:writtenRep "married"@en ; 
+                    lexinfo:verbMood lexinfo:participle ;
+                    lexinfo:aspect   lexinfo:perfective ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+		      lexinfo:subject      :arg1marry ;
+                      lexinfo:directObject :arg2marry ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/spouse>;
+                lemon:subjOfProp :arg1marry;
+                lemon:objOfProp  :arg2marry ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:marriedTo a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "married"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePredicateFrame ;
+                      lexinfo:copulativeSubject :arg1married;
+                      lexinfo:attributiveArg :arg1married ],
+                    [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject    :arg1married;
+                      lexinfo:prepositionalAdjunct :arg2married ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/spouse>;
+                lemon:subjOfProp :arg1married;
+                lemon:objOfProp  :arg2married ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2married lemon:marker :to .
+
+## starring ##
+
+:star a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "star"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1star ;
+                      lexinfo:directObject :arg2star ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/starring>;
+                lemon:subjOfProp :arg1star;
+                lemon:objOfProp  :arg2star ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:feature a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "feature"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+                      lexinfo:subject :arg1feature ;
+                      lexinfo:directObject :arg2feature ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/starring>;
+                lemon:subjOfProp :arg1feature;
+                lemon:objOfProp  :arg2feature ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:playIn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "play"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivPPFrame ;
+                      lexinfo:subject :arg1playIn ;
+                      lexinfo:prepositionalObject :arg2playIn ; ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/starring>;
+                lemon:subjOfProp :arg2playIn;
+                lemon:objOfProp  :arg1playIn ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg2playIn lemon:marker :in_marker .
+
+## meanTemperature ##
+
+:meanTemperature a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "mean temperature"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/meanTemperature> ;
+                lemon:subjOfProp :arg1meanTemperature ;
+                lemon:objOfProp  :arg2meanTemperature ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2meanTemperature ;
+                      lexinfo:prepositionalObject :arg1meanTemperature ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2meanTemperature lemon:marker :on .
+
+## sublimationPoint ## 
+
+:sublimationPoint a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "sublimation point"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/sublimationPoint> ;
+                lemon:subjOfProp :arg1sublimationPoint ;
+                lemon:objOfProp  :arg2sublimationPoint ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2sublimationPoint ;  
+                      lexinfo:possessiveAdjunct :arg1sublimationPoint ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:sublimeAt a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "sublime"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivePPFrame ;
+                      lexinfo:subject :arg1sublime ;
+                      lexinfo:prepositionalObject :arg2sublime ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/sublimationPoint>;
+                lemon:subjOfProp :arg1sublime;
+                lemon:objOfProp  :arg2sublime ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg2sublime lemon:marker :at .
+
+## formationDate ##
+
+:formedOn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "formed"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject    :arg1formed;
+                      lexinfo:prepositionalAdjunct :arg2formed ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/formationDate>;
+                lemon:subjOfProp :arg1formed;
+                lemon:objOfProp  :arg2formed ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2formed lemon:marker :on .
+
+:foundedOn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "founded"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject    :arg1founded;
+                      lexinfo:prepositionalAdjunct :arg2founded ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/formationDate>;
+                lemon:subjOfProp :arg1founded;
+                lemon:objOfProp  :arg2founded ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2founded lemon:marker :on .
+
+:establishedOn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "established"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject    :arg1established;
+                      lexinfo:prepositionalAdjunct :arg2established ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/formationDate>;
+                lemon:subjOfProp :arg1established;
+                lemon:objOfProp  :arg2established ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2established lemon:marker :on .
+
+:formationDate a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "formation date"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/formationDate> ;
+                lemon:subjOfProp :arg1formationDate ;
+                lemon:objOfProp  :arg2formationDate ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg     :arg2formationDate ;
+                      lexinfo:possessiveAdjunct :arg1formationDate ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## location, city, range ##
+
+:locatedIn a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "located"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject    :arg1located;
+                      lexinfo:prepositionalAdjunct :arg2located ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/country>;
+                lemon:subjOfProp :arg1located;
+                lemon:objOfProp  :arg2located ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/range>;
+                lemon:subjOfProp :arg1located;
+                lemon:objOfProp  :arg2located ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/city>;
+                lemon:subjOfProp :arg1located;
+                lemon:objOfProp  :arg2located ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/location>;
+                lemon:subjOfProp :arg1located;
+                lemon:objOfProp  :arg2located ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2located lemon:marker :in_marker .
+
+:in a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "in"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:PrepositionFrame ;
+                      lexinfo:copulativeSubject    :arg1in;
+                      lexinfo:prepositionalAdjunct :arg2in ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/country>;
+                lemon:subjOfProp :arg1in;
+                lemon:objOfProp  :arg2in ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/range>;
+                lemon:subjOfProp :arg1in;
+                lemon:objOfProp  :arg2in ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/city>;
+                lemon:subjOfProp :arg1in;
+                lemon:objOfProp  :arg2in ] ,
+              [ lemon:reference <http://dbpedia.org/ontology/location>;
+                lemon:subjOfProp :arg1in;
+                lemon:objOfProp  :arg2in ] ;
+  lexinfo:partOfSpeech lexinfo:preposition .
+
+:partOf a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "part"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg1partOf;
+                      lexinfo:prepositionalObject :arg2partOf ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/range>;
+                lemon:subjOfProp :arg1partOf;
+                lemon:objOfProp  :arg2partOf ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2partOf lemon:marker :of .
+
+## discovered ##
+
+:discover a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "discover"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitivePPFrame ;
+		      lexinfo:subject      :arg1discover ;
+                      lexinfo:directObject :arg2discover ;
+                      lexinfo:prepositionalAdjunct :arg3discover ] ;
+  lemon:sense [ lemon:subsense [ lemon:reference <http://dbpedia.org/ontology/discoverer>;
+                                 lemon:subjOfProp :arg2discover;
+                                 lemon:objOfProp  :arg1discover ] ,
+                               [ lemon:reference <http://dbpedia.org/ontology/discovered>;
+                                 lemon:subjOfProp :arg2discover;
+                                 lemon:objOfProp  :arg3discover ] ];
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg3discover lemon:marker :on .
+:arg3discover lemon:optional "true"^^xsd:boolean .
+
+:discovery a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "discovery"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+		      lexinfo:subject :discovery ;
+                      lexinfo:prepositionalObject  :arg1discovery ;
+                      lexinfo:prepositionalAdjunct :arg2discovery ;
+                      lexinfo:prepositionalAdjunct :arg3discovery ] ;
+  lemon:sense [ lemon:subsense [ lemon:reference <http://dbpedia.org/ontology/discoverer>;
+                                 lemon:subjOfProp :arg1discover;
+                                 lemon:objOfProp  :arg2discover ] ,
+                               [ lemon:reference <http://dbpedia.org/ontology/discovered>;
+                                 lemon:subjOfProp :arg1discover;
+                                 lemon:objOfProp  :arg3discover ] ];
+  lexinfo:partOfSpeech lexinfo:verb .
+:arg1discovery lemon:marker :of .
+:arg2discovery lemon:marker :by .
+:arg2discovery lemon:optional "true"^^xsd:boolean .
+:arg3discovery lemon:marker :on .
+:arg3discovery lemon:optional "true"^^xsd:boolean .
+
+## draftYear ## 
+
+:drafted a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "drafted"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePPFrame ;
+                      lexinfo:copulativeSubject   :arg1drafted;
+                      lexinfo:prepositionalObject :arg2drafted ];
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/draftYear>;
+                lemon:subjOfProp :arg1drafted;
+                lemon:objOfProp  :arg2drafted ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+:arg2drafted lemon:marker :in_marker .
+
+## capacity ##
+
+:capacity a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "capacity"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/capacity> ;
+                lemon:subjOfProp :arg1capacity ;
+                lemon:objOfProp  :arg2capacity ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg       :arg2capacity ;
+                      lexinfo:prepositionalObject :arg1capacity ] ,
+                    [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg     :arg2capacity ;  
+                      lexinfo:possessiveAdjunct :arg1capacity ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg2team lemon:marker :of .
+
+## elevation ##
+
+:elevation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "elevation"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/elevation> ;
+                lemon:subjOfProp :arg1elevation ;
+                lemon:objOfProp  :arg2elevation ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2elevation ;
+                      lexinfo:possessiveAdjunct :arg1elevation ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:altitude a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "altitude"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/elevation> ;
+                lemon:subjOfProp :arg1altitude ;
+                lemon:objOfProp  :arg2altitude ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2altitude ;
+                      lexinfo:possessiveAdjunct :arg1altitude ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:height a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "height"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/elevation> ;
+                lemon:subjOfProp :arg1height ;
+                lemon:objOfProp  :arg2height ;
+                lemon:propertyDomain <http://dbpedia.org/ontology/Place> ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2height ;
+                      lexinfo:possessiveAdjunct :arg1height ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:high a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "high"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/elevation> ;
+                lemon:subjOfProp :arg1high ;
+                lemon:objOfProp  :arg2high ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePredicateFrame ;
+                      lexinfo:copulativeSubject :arg1high ;
+                      lexinfo:attributiveArg :arg1high ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+
+:tall a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "tall"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/elevation> ;
+                lemon:subjOfProp :arg1tall ;
+                lemon:objOfProp  :arg2tall ;
+                lemon:propertyDomain <http://dbpedia.org/ontology/Place> ] ;
+  lemon:synBehavior [ rdf:type lexinfo:AdjectivePredicateFrame ;
+                      lexinfo:copulativeSubject :arg1tall ;
+                      lexinfo:attributiveArg :arg1tall ] ;
+  lexinfo:partOfSpeech lexinfo:adjective .
+
+## profession ## 
+
+:profession a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "profession"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/profession> ;
+                lemon:subjOfProp :arg1profession ;
+                lemon:objOfProp  :arg2profession ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg     :arg2profession ;
+                      lexinfo:possessiveAdjunct :arg1profession ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:occupation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "occupation"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/profession> ;
+                lemon:subjOfProp :arg1occupation ;
+                lemon:objOfProp  :arg2occupation ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg     :arg2occupation ;
+                      lexinfo:possessiveAdjunct :arg1occupation ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:workAs a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "work"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:IntransitivePPFrame ;
+                      lexinfo:subject :arg1workAs ;
+                      lexinfo:prepositionalAdjunct :arg2workAs ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/profession>;
+                lemon:subjOfProp :arg1workAs;
+                lemon:objOfProp  :arg2workAs ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+## artist ##
+
+:record a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "record"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+		      lexinfo:subject      :arg1record ;
+                      lexinfo:directObject :arg2record ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/artist>;
+                lemon:subjOfProp :arg2record;
+                lemon:objOfProp  :arg1record;
+                lemon:propertyDomain [ owl:unionOf ( <http://dbpedia.org/ontology/Album> <http://dbpedia.org/ontology/Song> ) ] ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:interpreter a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "interpreter"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/artist> ;
+                lemon:subjOfProp :arg1interpreter;
+                lemon:objOfProp  :arg2interpreter;
+                lemon:propertyDomain <http://dbpedia.org/ontology/Song> ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPPFrame ;
+                      lexinfo:copulativeArg :arg2interpreter ;
+                      lexinfo:prepositionalObject :arg1interpreter ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+:arg1interpreter lemon:marker :of .
+
+## populationTotal ##
+
+:population a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "population"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/populationTotal> ;
+                lemon:subjOfProp :arg1population ;
+                lemon:objOfProp  :arg2population ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2population ;
+                      lexinfo:possessiveAdjunct :arg1population ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:totalPopulation a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "total population"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/populationTotal> ;
+                lemon:subjOfProp :arg1totalPopulation ;
+                lemon:objOfProp  :arg2totalPopulation ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2totalPopulation ;
+                      lexinfo:possessiveAdjunct :arg1totalPopulation ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:haveInhabitant a lemon:LexicalEntry ;
+  lemon:phraseRoot [ 
+        :root  [ lemon:leaf :have ;
+                 :nsubj [ lemon:leaf :arg1haveInhabitant ] ;
+                 :dobj  [ lemon:leaf :inhabitant ; 
+                          :num [ lemon:leaf :arg2haveInhabitant ] ] ] ] ; 
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/populationTotal> ;
+                lemon:subjOfProp :arg1haveInhabitant ;
+                lemon:objOfProp  :arg2haveInhabitant ] .
+
+:have a lemon:Word ;
+  lemon:canonicalForm [ lemon:writtenRep "have"@en ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+:inhabitant a lemon:Word ;
+  lemon:canonicalForm [ lemon:writtenRep "inhabitant"@en ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+## instrument ##
+
+:instrument a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "instrument"@en ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/instrument> ;
+                lemon:subjOfProp :arg1instrument ;
+                lemon:objOfProp  :arg2instrument ] ;
+  lemon:synBehavior [ rdf:type lexinfo:NounPossessiveFrame ;
+                      lexinfo:copulativeArg :arg2instrument ;
+                      lexinfo:possessiveAdjunct :arg1instrument ] ;
+  lexinfo:partOfSpeech lexinfo:noun .
+
+:play a lemon:LexicalEntry ;
+  lemon:canonicalForm [ lemon:writtenRep "play"@en ] ;
+  lemon:synBehavior [ rdf:type lexinfo:TransitiveFrame ;
+		      lexinfo:subject      :arg1play ;
+                      lexinfo:directObject :arg2play ] ;
+  lemon:sense [ lemon:reference <http://dbpedia.org/ontology/instrument>;
+                lemon:subjOfProp :arg2play;
+                lemon:objOfProp  :arg1play ] ;
+  lexinfo:partOfSpeech lexinfo:verb .
+
+
+
+#### Subproperties ####
+
+:root  rdfs:subPropertyOf lemon:edge .
+:nsubj rdfs:subPropertyOf lemon:edge .
+:dobj  rdfs:subPropertyOf lemon:edge .
+:num   rdfs:subPropertyOf lemon:edge .
+
+
+#### Marker ####
+
+:at lemon:canonicalForm [ lemon:writtenRep "at"@en ] .
+:by lemon:canonicalForm [ lemon:writtenRep "by"@en ] .
+:in_marker lemon:canonicalForm [ lemon:writtenRep "in"@en ] .
+:of lemon:canonicalForm [ lemon:writtenRep "of"@en ] .
+:on lemon:canonicalForm [ lemon:writtenRep "on"@en ] .
+:over lemon:canonicalForm [ lemon:writtenRep "over"@en ] .
+:to lemon:canonicalForm [ lemon:writtenRep "to"@en ] .
+

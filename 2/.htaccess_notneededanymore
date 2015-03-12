@@ -1,0 +1,30 @@
+
+IndexIgnore musicbrainz-test.xml, musicbrainz-test-questions.xml, dbpedia-test.xml dbpedia-test-question.xml
+
+<Files ~ "test\.xml">
+  AuthUserFile /home/cunger/.htpasswd
+  AuthGroupFile /dev/null
+  AuthName "Sorry!"
+  AuthType Basic
+  Order deny,allow
+  Require valid-user
+</Files>
+
+<Files ~ "test-questions\.xml">
+  AuthUserFile /home/cunger/.htpasswd
+  AuthGroupFile /dev/null
+  AuthName "Sorry!"
+  AuthType Basic
+  Order deny,allow
+  Require valid-user
+</Files>
+
+<Files ~ "test-questions.xml">
+  AuthUserFile /home/cunger/.htpasswd
+  AuthGroupFile /dev/null
+  AuthName "Sorry!"
+  AuthType Basic
+  Order deny,allow
+  Require valid-user
+</Files>
+

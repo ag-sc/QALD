@@ -1,0 +1,2851 @@
+<?xml version="1.0" ?>
+
+<dataset id="esdbpedia-train">
+
+
+<question aggregation="false" answertype="resource" id="2" onlyesdbp="true">
+<string lang="en"><![CDATA[Who was the son of Alfonso López Pumarejo married to?]]></string>
+
+<string lang="es"><![CDATA[Con quién estaba casado el hijo de Alfonso López Pumarejo?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Alfonso_López_Pumarejo esdbp:hijos ?hijo .
+   ?hijo esdbp:cónyuge ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Cecilia_Caballero_Blanco</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="45" onlyesdbp="true">
+<string lang="en"><![CDATA[In which films did Julia Roberts as well as Richard Gere play?]]></string>
+
+<string lang="es"><![CDATA[¿En qué películas actúan Julia Roberts y Richard Gere?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:reparto esres:Julia_Roberts . 
+  ?uri esdbp:reparto esres:Richard_Gere .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Pretty_Woman</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Runaway_Bride</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="3" onlyesdbp="true">
+<string lang="en"><![CDATA[Which river does the Brooklyn Bridge cross?]]></string>
+
+<string lang="es"><![CDATA[¿Qué río cruza el puente de Brooklyn?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Puente_de_Brooklyn esdbp:cruza ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Río_Este</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="number" id="20" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the area code of Barcelona?]]></string>
+
+<string lang="es"><![CDATA[¿Cuál es el prefijo de Barcelona?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?prefijo 
+WHERE { 
+   esres:Barcelona esdbp:prefijo ?prefijo . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<number>93</number>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="6" onlyesdbp="true">
+<string lang="en"><![CDATA[Where does the Río Poxté originate?]]></string>
+
+<string lang="es"><![CDATA[¿Dónde nace el Río Poxté?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Río_Poxté esdbp:lugarNacimiento ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Montañas_Maya</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="44" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all movies with Tom Cruise.]]></string>
+
+<string lang="es"><![CDATA[Dame todas las películas con Tom Cruise.]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri rdf:type dbo:Film.
+        ?uri esdbp:reparto esres:Tom_Cruise .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/El_último_samurái</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Valkyrie</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Leones_por_corderos</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Tropic_Thunder</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Knight_&amp;_Day</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Misión:_Imposible_–_Protocolo_Fantasma</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/The_Firm_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/A_Few_Good_Men</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Risky_Business</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Magnolia_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Top_Gun_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Minority_Report</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Nacido_el_4_de_julio</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Vanilla_Sky</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Misión:_Imposible</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Cocktail_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Misión:_Imposible_III</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Collateral</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Jerry_Maguire</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/El_color_del_dinero</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/War_of_the_Worlds_(2005)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Far_and_Away</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Taps,_más_allá_del_honor</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/The_Outsiders_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Legend_(película)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/All_the_Right_Moves</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="number" id="8" onlyesdbp="true">
+<string lang="en"><![CDATA[How tall is Carmen Electra?]]></string>
+
+<string lang="es"><![CDATA[¿Cuánto mide Carmen Electra?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?estatura 
+WHERE { 
+   esres:Carmen_Electra esdbp:estatura ?estatura . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<number>158.0</number>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="31" onlyesdbp="true">
+<string lang="en"><![CDATA[Who produced the most films?]]></string>
+
+<string lang="es"><![CDATA[¿Quién ha producido más películas?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+	?pelicula rdf:type dbo:Film .
+        ?pelicula esdbp:producción ?uri .
+} 
+ORDER BY DESC(COUNT(?pelicula)) LIMIT 1
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Hal_B._Wallis</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="38" onlyesdbp="true">
+<string lang="en"><![CDATA[Which languages are spoken in Estonia?]]></string>
+
+<string lang="es"><![CDATA[¿Qué idiomas se hablan en Estonia?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+      esres:Estonia esdbp:idioma ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[võro]]></string>
+
+</answer>
+
+<answer>
+
+<string><![CDATA[estonio]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="24" onlyesdbp="true">
+<string lang="en"><![CDATA[Who is the mayor of Sevilla?]]></string>
+
+<string lang="es"><![CDATA[¿Quién es el alcalde de Sevilla?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?alcalde
+WHERE { 
+   esres:Sevilla esdbp:alcalde ?alcalde . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[Juan Ignacio Zoido]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="41" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all books written by Danielle Steel.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los libros escritos por Danielle Steel.]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri rdf:type dbo:Book .
+        ?uri esdbp:autor esres:Danielle_Steel .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/El_Anillo_(libro)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Regreso_al_hogar</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="39" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all presidents of the United States.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los presidentes de los Estados Unidos de América.]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri esdbp:cargo esres:Presidente_de_los_Estados_Unidos .
+        ?uri rdf:type dbo:Person .
+        FILTER(!(regex(str(?uri),'Campaña_presidencial')))
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/George_W._Bush</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/John_F._Kennedy</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Barack_Obama</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Theodore_Roosevelt</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/George_Washington</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Abraham_Lincoln</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Jimmy_Carter</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/James_Buchanan</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/John_Adams</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Chester_A._Arthur</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Grover_Cleveland</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bill_Clinton</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Calvin_Coolidge</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/James_Madison</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Andrew_Jackson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/James_Monroe</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Thomas_Jefferson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ronald_Reagan</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Gerald_Ford</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Woodrow_Wilson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Richard_Nixon</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Herbert_Hoover</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/George_H._W._Bush</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Franklin_D._Roosevelt</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Lyndon_B._Johnson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dwight_D._Eisenhower</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Harry_S._Truman</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Warren_G._Harding</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/William_Howard_Taft</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/William_McKinley</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Franklin_Pierce</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/John_Tyler</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Millard_Fillmore</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Rutherford_B._Hayes</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ulysses_S._Grant</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/William_Henry_Harrison</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Martin_Van_Buren</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Zachary_Taylor</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/James_K._Polk</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Andrew_Johnson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Robert_F._Kennedy</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/James_A._Garfield</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/John_Quincy_Adams</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="boolean" id="7" onlyesdbp="true">
+<string lang="en"><![CDATA[Is proinsulin a protein?]]></string>
+
+<string lang="es"><![CDATA[¿La proinsulina es una proteina?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+ASK 
+WHERE { 
+  esres:Proinsulina rdf:type dbo:Protein .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<boolean>True</boolean>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="30" onlyesdbp="true">
+<string lang="en"><![CDATA[List all episodes of the first season of the HBO television series The Sopranos.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los episodios de la primera temporada de la serie de HBO Los Sopranos.]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri esdbp:serie esres:Los_Soprano .
+        ?uri esdbp:temporada 1 .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Piloto_(Los_Soprano)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/46_Largo</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Negación,_enfado_y_aceptación</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Meadowlands_(episodio_de_Los_Soprano)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Universidad_(episodio_de_Los_Soprano)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Pax_Soprana</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Regreso_a_Down_Neck</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/La_leyenda_de_Tennessee_Moltisanti</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Boca_(episodio_de_Los_Soprano)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Un_éxito_es_un_éxito</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Nadie_sabe_nada</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Isabella_(episodio_de_Los_Soprano)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sueño_con_Jeannie_Cusamano</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="26" onlyesdbp="false">
+<string lang="en"><![CDATA[Give me the homepage of Bill Gates.]]></string>
+
+<string lang="es"><![CDATA[Dame la página de web de Bill Gates.]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?string 
+WHERE {
+	esres:Bill_Gates foaf:homepage ?string .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://www.microsoft.com/presspass/exec/billg/default.mspx</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="number" id="40" onlyesdbp="true">
+<string lang="en"><![CDATA[How many films did Pedro Almodóvar produce?]]></string>
+
+<string lang="es"><![CDATA[¿Cuántas películas ha producido Pedro Almodóvar?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri)
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:producción esres:Pedro_Almodóvar . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<number>2</number>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="37" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all films produced by Pedro Almodóvar.]]></string>
+
+<string lang="es"><![CDATA[Dame todas las películas producidas por Pedro Almodóvar.]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:producción esres:Pedro_Almodóvar . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/La_mala_educación</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Acción_mutante</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="21" onlyesdbp="true">
+<string lang="en"><![CDATA[How many official languages does Niger have?]]></string>
+
+<string lang="es"><![CDATA[¿Cuántos idiomas oficiales hay en Níger?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 
+   esres:Níger esdbp:idiomasOficiales ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<number>7</number>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="boolean" id="5" onlyesdbp="false">
+<string lang="en"><![CDATA[Is the wife of president Obama called Michelle?]]></string>
+
+<string lang="es"><![CDATA[¿La mujer del presidente Obama se llama Michelle?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+ASK 
+WHERE { 
+  esres:Barack_Obama esdbp:cónyuge ?conyuge . 
+  ?conyuge foaf:name ?nombre . 
+  FILTER(regex(?nombre,'Michelle')) 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<boolean>True</boolean>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="36" onlyesdbp="true">
+<string lang="en"><![CDATA[Which actors were born in Germany?]]></string>
+
+<string lang="es"><![CDATA[¿Qué actores nacieron en Alemania?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Actor .
+  { ?uri esdbp:lugarDeNacimiento esres:Alemania . }
+  UNION
+  { ?uri esdbp:lugarDeNacimiento ?lugar .
+    FILTER regex(?lugar,'Alemania') }
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Roland_Emmerich</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bernd_Eichinger</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Nora_Tschirner</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dashon_Tia_Mowry</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Denise_Zich</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sigrid_Alegría</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sheryl_Lee</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Helmut_Bakaitis</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Kiowa_Gordon</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Erich_Pommer</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Susan_Hoecke</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Wotan_Wilke_Möhring</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sophie_Karbjinski</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Queeny_Love</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Margarethe_von_Trotta</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Michael_Graziadei</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ernst_Lubitsch</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Joachim_Masannek</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Michael_Fassbender</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Max_Schreck</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mike_Nichols</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Brigitte_Helm</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Russell_William_Thaw</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Grete_Mosheim</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Elke_Sommer</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Lucie_Mannheim</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Benjamin_Trinks</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Albert_Hague</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Jürgen_Prochnow</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bruce_Willis</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Marcel_Ophüls</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Volker_Schlöndorff</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Jeri_Ryan</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Gedeon_Burkhard</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mennan_Yapo</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ingrid_Garbo</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Hans_Zimmer</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Rainer_Werner_Fassbinder</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/William_Wyler</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Udo_Kier</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Albert_Bassermann</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dennis_Gansel</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Margit_Carstensen</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Allison_Mack</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Franka_Potente</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Tetsuya_Kakihara</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Q'orianka_Kilcher</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Conrad_Veidt</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ralf_Moeller</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ulrich_Mühe</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Nadiuska</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Carl_Zuckmayer</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Armin_Mueller-Stahl</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mathieu_Carrière</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mara_Scherzinger</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Tyra_Misoux</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Elke_Winkens</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/David_Kross</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Gisela_May</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Barbara_Bouchet</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sabine_Moussier</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Werner_Krauss</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Juliane_Köhler</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Michael_Lesch</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sophie_Schütt</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Al_Shean</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Werner_Klemperer</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Benno_Fürmann</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Isabella_Soric</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Fritz_Rasp</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Peter_Van_Eyck</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Hinton_Battle</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Claude_France</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sönke_Möhring</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dana_Wynter_(Actriz)</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="29" onlyesdbp="false">
+<string lang="en"><![CDATA[What is the official website of Tom Cruise?]]></string>
+
+<string lang="es"><![CDATA[¿Cuál el la página Web oficial de Tom Cruise?]]></string>
+
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE { 
+	esres:Tom_Cruise foaf:homepage ?string .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://www.tomcruise.com/</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="1" onlyesdbp="false">
+<string lang="en"><![CDATA[Give me all Russian astronauts.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los astronautas rusos.]]></string>
+
+<query><![CDATA[
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?uri
+WHERE{
+   ?uri dcterms:subject <http://es.dbpedia.org/resource/Categoría:Astronautas_de_Rusia>
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Yuri_Gidzenko</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Valeri_Poliakov</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Gennady_Padalka</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sergéi_Avdéyev</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Aleksandr_Kaleri</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Vitali_Zhólobov</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dmitri_Kondrátiev</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Anatoli_Beriozovói</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sergéi_Vólkov</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="19" onlyesdbp="false">
+<string lang="en"><![CDATA[Which European countries adopted the Euro?]]></string>
+
+<string lang="es"><![CDATA[¿Qué países de europa han introducido el Euro?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?uri
+WHERE {
+    ?uri dcterms:subject <http://es.dbpedia.org/resource/Categoría:Países_de_Europa> .
+    { ?uri esdbp:moneda esres:Euro . } UNION
+    { ?uri esdbp:moneda 'Euro'@es . }
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Finlandia</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="18" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the currency of Chile?]]></string>
+
+<string lang="es"><![CDATA[¿Cuál es la moneda de Chile?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Chile esdbp:moneda ?uri .  
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Peso_chileno</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="32" onlyesdbp="true">
+<string lang="en"><![CDATA[Which mountains are higher than the Lhotse?]]></string>
+
+<string lang="es"><![CDATA[¿Qué montañas son más altas que el Lhotse?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri rdf:type dbo:Mountain .
+        ?uri esdbp:elevación ?elevacion .
+        esres:Lhotse esdbp:elevación ?elevacion2 .
+        FILTER (?elevacion > ?elevacion2) .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/K2</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bukit_Timah</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Monte_Olimpo_(Marte)</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Montes_Dikti</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bishorn</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Sierra_de_Otonpetec</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="15" onlyesdbp="true">
+<string lang="en"><![CDATA[Which mountain is the highest after the Annapurna?]]></string>
+
+<string lang="es"><![CDATA[¿Cuál es la montaña más alta después del Annapurna?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Annapurna esdbp:elevación ?elevacion . 
+   ?uri rdf:type dbo:Mountain . 
+   ?uri esdbp:elevación ?elevacion2 . 
+   FILTER (?elevacion2 < ?elevacion) . 
+} 
+ORDER BY DESC(?elevacion2) LIMIT 1
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Broad_Peak</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="16" onlyesdbp="true">
+<string lang="en"><![CDATA[In which films directed by Garry Marshall was Julia Roberts starring?]]></string>
+
+<string lang="es"><![CDATA[¿En qué películas dirigidas por Garry Mashall actuó Julia Roberts?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:reparto esres:Julia_Roberts . 
+  ?uri esdbp:dirección 'Garry Marshall'@es .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Pretty_Woman</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Runaway_Bride</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Valentine's_Day_(película)</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="17" onlyesdbp="true">
+<string lang="en"><![CDATA[Which bridges are of the same type as the Manhattan Bridge?]]></string>
+
+<string lang="es"><![CDATA[¿Qué puentes son del mismo tipo que el puente de Manhattan?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri  WHERE { 
+   ?uri rdf:type dbo:Bridge . 
+   ?uri esdbp:tipo ?tipo . 
+   esres:Puente_de_Manhattan esdbp:tipo ?mtipo . 
+   FILTER (regex(?tipo, ?mtipo)).
+   FILTER (?uri != esres:Puente_de_Manhattan) . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Brooklyn</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Gran_Puente_de_Akashi_Kaikyō</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_25_de_Abril</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Angostura</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Hercílio_Luz</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_del_Bósforo</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_del_Estrecho_de_Mackinac</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Albert_Bridge</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Williamsburg</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Vincent_Thomas</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Cachapoal</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_George_Washington</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Xihoumen</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Benjamin_Franklin</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Ambassador</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Humber</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Runyang</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_colgante_de_Jiangyin</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Yangluo</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Höga_Kusten</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Fatih_Sultan_Mehmet</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Forth_Road</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Severn</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Yichang</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Innoshima</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Akinada</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Semipalatinsk</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Hakuchō</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_la_Bahía</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Balinghe</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_Baluarte_Bicentenario</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_de_Térénez</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Puente_del_Iroise</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="28" onlyesdbp="true">
+<string lang="en"><![CDATA[Who developed the video game World of Warcraft?]]></string>
+
+<string lang="es"><![CDATA[¿Quién desarrolló el videojuego World of Warcraft?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri 
+WHERE {
+	esres:World_of_Warcraft esdbp:desarrollador ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Blizzard_Entertainment</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="22" onlyesdbp="true">
+<string lang="en"><![CDATA[Through which country does the Tagil river flow?]]></string>
+
+<string lang="es"><![CDATA[¿Por qué país fluye el río Tagil?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Río_Tagil esdbp:país ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Rusia</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="11" onlyesdbp="true">
+<string lang="en"><![CDATA[Which museum exhibits The Starry Night by van Gogh?]]></string>
+
+<string lang="es"><![CDATA[¿En qué museo se expone La Noche Estrellada de van Gogh?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?museo
+WHERE {
+	esres:La_noche_estrellada esdbp:localización ?museo .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[Museo de Arte Moderno de Nueva York]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="number" id="48" onlyesdbp="false">
+<string lang="en"><![CDATA[How often was Michael Jordan divorced?]]></string>
+
+<string lang="es"><![CDATA[¿Cuántas veces se ha divorciado Michael Jordan?]]></string>
+
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+
+<answers/>
+</question>
+
+
+<question aggregation="false" answertype="resource" id="27" onlyesdbp="true">
+<string lang="en"><![CDATA[Who was the wife of U.S. president Lincoln?]]></string>
+
+<string lang="es"><![CDATA[¿Quién fué la mujer del presidente americano Lincoln?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Abraham_Lincoln esdbp:cónyuge ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mary_Todd_Lincoln</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="34" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all actors starring in Last Action Hero.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los actores que hayan actuado en Last Action Hero.]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Last_Action_Hero esdbp:reparto ?uri . 
+} 
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Arnold_Schwarzenegger</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Ian_McKellen</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Anthony_Quinn</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/F._Murray_Abraham</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Robert_Prosky</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Joan_Plowright</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bridgette_Wilson</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Art_Carney</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mercedes_Ruehl</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Austin_O'Brien</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Charles_Dance</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Frank_McRae</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Tom_Noonan</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Charles_Kalani,_Jr.</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="number" id="12" onlyesdbp="true">
+<string lang="en"><![CDATA[How many employees does IBM have?]]></string>
+
+<string lang="es"><![CDATA[¿Cuántos empleados tiene IBM?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?empleados 
+WHERE { 
+   esres:IBM esdbp:empleados ?empleados .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<number>426751</number>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="33" onlyesdbp="true">
+<string lang="en"><![CDATA[Who created Wikipedia?]]></string>
+
+<string lang="es"><![CDATA[¿Quién creó Wikipedia?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Wikipedia esdbp:creador ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Larry_Sanger</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Jimmy_Wales</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="boolean" id="35" onlyesdbp="true">
+<string lang="en"><![CDATA[Is Christian Bale starring in Batman Begins?]]></string>
+
+<string lang="es"><![CDATA[¿Actúa Christian Bale en Batman Begins?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+ASK 
+WHERE {
+  esres:Batman_Begins esdbp:reparto esres:Christian_Bale . 
+} 
+]]></query>
+
+<answers>
+
+<answer>
+
+<boolean>True</boolean>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="42" onlyesdbp="true">
+<string lang="en"><![CDATA[In which programming language is GIMP written?]]></string>
+
+<string lang="es"><![CDATA[¿En qué lenguaje de programación esta escrito GIMP?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+	esres:GIMP esdbp:lenguajeProgramación ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[C y GTK+]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="14" onlyesdbp="true">
+<string lang="en"><![CDATA[Which characters were created by Walt Disney?]]></string>
+
+<string lang="es"><![CDATA[¿Qué personajes ideó Walt Disney?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  ?uri esdbp:creador esres:Walt_Disney . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Mickey_Mouse</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/José_Carioca</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Minnie_Mouse</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="4" onlyesdbp="true">
+<string lang="en"><![CDATA[In which city did Eva Perón die?]]></string>
+
+<string lang="es"><![CDATA[¿En qué ciudad murió Eva Perón?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+  esres:Eva_Perón esdbp:lugarmuerte ?uri .
+  ?uri rdf:type dbo:PopulatedPlace .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Buenos_Aires</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="50" onlyesdbp="false">
+<string lang="en"><![CDATA[What is the most beautiful painting?]]></string>
+
+<string lang="es"><![CDATA[¿Cuál es el cuadro más bello?]]></string>
+
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+
+<answers/>
+</question>
+
+
+<question aggregation="false" answertype="resource" id="9" onlyesdbp="true">
+<string lang="en"><![CDATA[Who created Goofy?]]></string>
+
+<string lang="es"><![CDATA[¿Quién es el creador de Goofy?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+  esres:Goofy esdbp:creador ?uri . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Art_Babbitt</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="string" id="23" onlyesdbp="true">
+<string lang="en"><![CDATA[When was the Battle of Gettysburg?]]></string>
+
+<string lang="es"><![CDATA[¿Cuándo tuvo lugar la batalla de Gettysburg?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?fecha 
+WHERE { 
+   esres:Batalla_de_Gettysburg esdbp:fecha ?fecha . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[Del 1 al 3 de julio de 1863]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="resource" id="10" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all cities in Germany with more than 500000 inhabitants.]]></string>
+
+<string lang="es"><![CDATA[Dame todas las cuidades en Alemania que tengan más de 500000 habitantes.]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri WHERE { 
+   ?uri esdbp:estado ?estado .
+   ?estado dbo:country esres:Alemania .
+   ?uri esdbp:población ?habitantes .
+   FILTER (?habitantes > 500000) .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Núremberg</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Hannover</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Dresde</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Leipzig</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bremen</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Stuttgart</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="13" onlyesdbp="true">
+<string lang="en"><![CDATA[In which province is the Lake of Banyoles?]]></string>
+
+<string lang="es"><![CDATA[¿En qué provincia se encuentra el Lago de Bañolas?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri
+WHERE {
+	esres:Lago_de_Bañolas esdbp:provincia ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Provincia_de_Gerona</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="46" onlyesdbp="true">
+<string lang="en"><![CDATA[Who wrote the book The pillars of the Earth?]]></string>
+
+<string lang="es"><![CDATA[¿Quién escribió el libro Los pilares de la tierra?]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri 
+WHERE {
+	esres:Los_pilares_de_la_Tierra esdbp:autor ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<string><![CDATA[Ken Follett]]></string>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="number" id="49" onlyesdbp="false">
+<string lang="en"><![CDATA[How many big fires struck Paris during the Middle Ages?]]></string>
+
+<string lang="es"><![CDATA[¿Cuántos grandes incendios se produjeron en París en la época medieval?]]></string>
+
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+
+<answers/>
+</question>
+
+
+<question aggregation="false" answertype="resource" id="47" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all soccer clubs in the Premier League.]]></string>
+
+<string lang="es"><![CDATA[Dame todos los equipos de futbol de la Premier League.]]></string>
+
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri
+WHERE { 
+   ?uri esdbp:liga esres:Premier_League . 
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Arsenal_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Manchester_United_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Blackburn_Rovers_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Liverpool_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Aston_Villa_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Bolton_Wanderers_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Chelsea_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Fulham_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Manchester_City_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Newcastle_United_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Tottenham_Hotspur_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/West_Bromwich_Albion_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Wigan_Athletic_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Norwich_City_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Wolverhampton_Wanderers_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Queens_Park_Rangers_Football_Club</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Swansea_City_Association_Football_Club</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="true" answertype="boolean" id="25" onlyesdbp="true">
+<string lang="en"><![CDATA[Is Miguel González Avelar still alive?]]></string>
+
+<string lang="es"><![CDATA[¿Todavía vive Miguel González Avelar?]]></string>
+
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+ASK 
+WHERE {
+	OPTIONAL { esres:Miguel_González_Avelar esdbp:fechamuerte ?fecha . }
+        FILTER (!BOUND(?fecha))
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<boolean>False</boolean>
+
+</answer>
+
+</answers>
+
+</question>
+
+
+<question aggregation="false" answertype="resource" id="43" onlyesdbp="true">
+<string lang="en"><![CDATA[Who produced films starring Buster Keaton?]]></string>
+
+<string lang="es"><![CDATA[¿Quién produjo las películas en las que actua Buster Keaton?]]></string>
+
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?pelicula rdf:type dbo:Film .
+        ?pelicula esdbp:reparto esres:Buster_Keaton .
+        ?pelicula esdbp:producción ?uri .
+}
+]]></query>
+
+<answers>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Charles_Brackett</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Charles_Chaplin</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Joseph_Schenck</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Buster_Keaton</uri>
+
+</answer>
+
+<answer>
+
+<uri>http://es.dbpedia.org/resource/Joseph_M._Schenck</uri>
+
+</answer>
+
+</answers>
+
+</question>
+
+</dataset>

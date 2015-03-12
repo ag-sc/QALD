@@ -1,0 +1,82 @@
+<!doctype html> 
+<html> 
+
+<head> 
+<title>QALD evaluation results</title>
+</head> 
+
+<body> 
+
+<h1>QALD evaluation results</h1>
+
+<p>
+<table>
+<tr><td><b>System:</b></td>        <td>{{system}}</td></tr>
+<tr><td><b>Configuration:</b></td> <td>{{config}}</td></tr>
+<tr><td><b>Timestamp:</b></td>     <td>{{time}}</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>Gold standard:</b></td> <td><a href="{{gold}}">{{gold}}</a></td></tr>
+</table>
+</p>
+
+<h2>Multilingual questions (hybrid=false)</h2>
+
+{{#dbpedia.empty}}
+No answers submitted.
+{{/dbpedia.empty}}
+
+{{^dbpedia.empty}}
+<h3>Overall results</h3>
+
+<p>
+<table>
+<tr><td><b>Global Recall:</b></td>     <td>{{dbpedia.global.recall}}</td><tr>
+<tr><td><b>Global Precision:</b></td>  <td>{{dbpedia.global.precision}}</td><tr>
+<tr><td><b>Global F1-measure:</b></td> <td>{{dbpedia.global.f1measure}}</td><tr>
+</table>
+</p>
+
+<h3>Detailed results per question</h3>
+
+<p>
+<table>
+<tr> <td><b>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Recall&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Precision&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>F1-measure</b></td> </tr>
+{{#dbpedia.local}}
+<tr> <td>{{id}}</td> <td>{{recall}}</td> <td>{{precision}}</td> <td>{{f1measure}}</td> </tr>
+{{/dbpedia.local}}
+</table>
+</p>
+{{/dbpedia.empty}}
+
+
+<h2>Hybrid questions (hybrid=true)</h2>
+
+{{#hybrid.empty}}
+No answers submitted.
+{{/hybrid.empty}}
+
+{{^hybrid.empty}}
+<h3>Overall results</h3>
+
+<p>
+<table>
+<tr><td><b>Global Recall:</b></td>     <td>{{hybrid.global.recall}}</td><tr>
+<tr><td><b>Global Precision:</b></td>  <td>{{hybrid.global.precision}}</td><tr>
+<tr><td><b>Global F1-measure:</b></td> <td>{{hybrid.global.f1measure}}</td><tr>
+</table>
+</p>
+
+<h3>Detailed results per question</h3>
+
+<p>
+<table>
+<tr> <td><b>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Recall&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Precision&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>F1-measure</b></td> </tr>
+{{#hybrid.local}}
+<tr> <td>{{id}}</td> <td>{{recall}}</td> <td>{{precision}}</td> <td>{{f1measure}}</td> </tr>
+{{/hybrid.local}}
+</table>
+</p>
+{{/hybrid.empty}}
+
+</body>
+</html>

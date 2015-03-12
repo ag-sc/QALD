@@ -1,0 +1,81 @@
+
+\emph{Task:} \\
+Given a natural language question or keywords, either retrieve the correct answer(s) from a given RDF repository, or provide a SPARQL query that retrieves these answer(s). 
+
+The RDF repository contains three biomedical datasets: SIDER, Diseasome, and Drugbank. 
+The focus of the task is on interlinked data. Thus most of the questions require the integration of information from at least two of those datasets. 
+Participating systems will be evaluated with respect to precision and recall. 
+Moreover, participants are encouraged to report performance, i.e. the average time their system takes to answer a query.
+
+
+\subsection{Datasets: SIDER, Diseasome, Drugbank}
+
+Also for the life sciences, linked data plays a bigger and bigger role. Already a tenth of the Linked Open Data 
+cloud\footnote{\url{http://lod-cloud.net}} consists of biomedical datasets.
+Especially the pharmaceutical industry is starting to embrace linked data, corroborated by a range of large-scale 
+European projects and task forces such as Linking Open Drug Data\footnote{\url{http://www.w3.org/wiki/HCLSIG/LODD}} (LODD).
+
+In the context of QALD-4 we provide the following interlinked biomedical datasets:
+  \begin{itemize}
+  \item SIDER, describing drugs and their side effects\\ \url{http://sideeffects.embl.de}
+  \item Diseasome, encompassing description of diseases and genetic disorders\\ \url{http://wifo5-03.informatik.uni-mannheim.de/diseasome/}
+  \item Drugbank, describing FDA-approved active compounds of medication\\ \url{http://www.drugbank.ca}
+  \end{itemize}
+You can either download a dump at the specified URL, or access them via the challenge's SPARQL endpoint:
+\begin{itemize} 
+\item[] \url{http://vtentacle.techfak.uni-bielefeld.de:443/sparql}
+\end{itemize}
+
+
+\subsection{Training phase}
+
+The training question set comprises 25 questions over the biomedical datasets SIDER, Diseasome and Drugbank. 
+All training questions are provided in an XML format similar to the one explained in Section~\ref{sec:training}. 
+The dataset id is \texttt{qald-4\_biomedical\_train} (and \texttt{qald-4\_biomedical\_test} for the test questions).
+
+Most of the questions require information from at least two of the datasets. 
+Here is an example query (ommitting prefix definitions), 
+representing the question {\sf What are the side effects of drugs used for Tuberculosis?}
+%
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+%PREFIX owl: <http://www.w3.org/2002/07/owl#>
+%PREFIX disease:  
+%<http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/>
+%PREFIX diseasome: 
+%<http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/>
+%PREFIX drugbank:  
+%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/>
+%PREFIX sider:     
+%<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>
+\begin{lstlisting}
+SELECT DISTINCT ?x
+WHERE {
+        disease:1154 diseasome:possibleDrug ?v2 .
+        ?v2 rdf:type drugbank:drugs .
+        ?v3 owl:sameAs ?v2 .
+        ?v3 sider:sideEffect ?x .
+}
+\end{lstlisting}
+%
+Note that the drugs used for Tuberculosis are retrieve from Diseasome, and their side effects are retrieved from SIDER. 
+The link between the relevant resources in these datasets (bound to \texttt{?v2} and \texttt{?v3}) is established using 
+the OWL property \texttt{sameAs}. 
+
+
+\subsection{Test phase}
+
+During test phase, from April 1 to May 1, a set of 25 similar questions is provided at the following location:
+\begin{itemize} 
+\item[] \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_biomedical_test_questions.xml} 
+\end{itemize} 
+
+Results can be submitted from April 1 to May 1, 2014, via the same online form used during training phase 
+(note the drop down box that allows you to specify {\tt test} instead of {\tt training}):
+
+\begin{itemize}
+\item[] \href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=4}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/\\index.php?x=evaltool\&q=4}}
+\end{itemize}
+
+All submissions are required to comply with the XML format used for the training questions. 
+
+Evaluation measures are the same as for the other tasks, cf. Section~\ref{sec:test}.

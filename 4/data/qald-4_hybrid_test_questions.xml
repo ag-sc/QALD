@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<dataset id="qald-4_hybrid_test">
+
+<question answertype="string" id="1" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[For which movie did the daughter of Francis Ford Coppola receive an Oscar?]]></string>
+</question>
+
+<question answertype="resource" id="2" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Which city does the first person to climb all 14 eight-thousanders come from?]]></string>
+</question>
+
+<question answertype="resource" id="3" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[At which college did the only American actor that received the César Award study?]]></string>
+</question>
+
+<question answertype="boolean" id="4" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Did Napoleon's first wife die in France?]]></string>
+</question>
+
+<question answertype="string" id="5" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is the current James Bond?]]></string>
+</question>
+
+<question answertype="resource" id="6" aggregation="false" onlydbo="false">
+<string lang="en"><![CDATA[What eating disorder is characterized by eating substances such as clay and sand?]]></string>
+</question>
+
+<question answertype="resource" id="7" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[What is the birth place of Hollywood's highest-paid actress?]]></string>
+</question>
+
+<question answertype="resource" id="8" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[In which city does the leader of the Xposé girls live?]]></string>
+</question>
+
+<question answertype="resource" id="9" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?]]></string>
+</question>
+
+<question answertype="resource" id="10" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who played the drums in the band that wrote Complete Control?]]></string>
+</question>
+
+</dataset>

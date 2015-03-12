@@ -1,0 +1,236 @@
+\documentclass[a4paper]{article}
+
+\parindent0mm
+\parskip7pt
+
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,pdfstartview=FitV,linkcolor=black,citecolor=black,urlcolor=blue,breaklinks=tru]{hyperref}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,tabsize=2,numbers=left,numberstyle=\tiny,frame=lines,aboveskip=7pt,belowskip=0pt,captionpos=b,breaklines=true}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0mm}
+
+\newcommand{\link}{$\triangleright$}
+\renewcommand*\contentsname{}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+%{\ }
+%
+%\vspace{3cm}
+
+\begin{center}
+
+{\sc\large Question Answering Over Linked Data} 
+
+\vspace{.3cm}
+
+{\huge\bf QALD-4 Open Challenge}
+\end{center}
+
+\hrule
+
+\vspace{.4cm}
+
+{\sc Document Version:} \today
+
+\vspace{.4cm}
+
+QALD-4 is the fourth in a series of evaluation campaigns on multilingual question answering over linked data, 
+with a strong emphasis on interlinked data and hybrid approaches using information from both structured and unstructured data. 
+The challenge is part of the Question Answering Lab at CLEF\,2014 ({\url{http://nlp.uned.es/clef-qa/}). 
+It is aimed at all kinds of systems that mediate between a user, expressing his or her information need in natural language, and semantic data. 
+All relevant information for participating in the challenge are given in this document. 
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsubsection*{Motivation and Goal} 
+
+While more and more structured data is published on the web, the question of how typical web users can access this body of knowledge becomes of crucial importance. Over the past years, there is a growing amount of research on interaction paradigms that allow end users to profit from the expressive power of Semantic Web standards while at the same time hiding their complexity behind an intuitive and easy-to-use interface. Especially, natural language interfaces have received wide attention, as they allow users to express arbitrarily complex information needs in an intuitive fashion and, at least in principle, in their own language. Multilingualism has, in fact, become an issue of major interest for the Semantic Web community, as both the number of actors creating and publishing data all in languages other than English, as well as the amount of users that access this data and speak native languages other than English, is growing substantially.
+
+The key challenge is to translate the users' information needs into a form such that they can be evaluated using standard Semantic Web query processing and inferencing techniques. Over the past years, a range of approaches have been developed to address this challenge, showing significant advances towards answering natural language questions with respect to large, heterogeneous sets of structured data. However, only few systems yet address the fact that the structured data available nowadays is distributed among a large collection of inter- connected datasets, and that answers to questions can often only be provided if information from several sources are combined. In addition, a lot of information is still available only in textual form, both on the web and in the form of labels and abstracts in linked data sources. Therefore approaches are needed that can not only deal with the specific character of structured data but also with finding information in several sources, processing both structured and unstructured information, and combining such gathered information into one answer.
+
+\subsubsection*{Coordinators} 
+
+\begin{itemize}
+\item Philipp Cimiano (CITEC, Universit\"at Bielefeld, Germany)
+\item Vanessa Lopez (IBM Research, Dublin, Ireland)
+\item Christina Unger (CITEC, Universit\"at Bielefeld, Germany)
+\item Elena Cabrio (INRIA Sophia-Antipolis M\'editerran\'ee, Cedex, France)
+\item Axel-Cyrille Ngonga Ngomo (Universit\"at Leipzig, Germany)
+\item Sebastian Walter (CITEC, Universit\"at Bielefeld, Germany)
+\item Corina Forascu (Alexandru Ioan Cuza University, Iasi, Romania)
+\end{itemize}
+
+\newpage
+
+\section{Relevant information in a nutshell}
+
+{\em Workshop Website:} \url{http://www.sc.cit-ec.uni-bielefeld.de/qald/}
+
+\vspace{.4cm}
+
+{\em SPARQL endpoint (for all tasks)}:
+\begin{itemize}
+\item[] \url{http://vtentacle.techfak.uni-bielefeld.de:443/sparql}
+\end{itemize}
+In order to see a list of all graphs loaded in the triple store, send the following query:
+\begin{lstlisting}
+SELECT DISTINCT ?g WHERE {
+  GRAPH ?g { ?s ?p ?o }
+}
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Task 1: Multilingual question answering over DBpedia}
+
+{\em Dataset:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item DBpedia 3.9 (\url{http://downloads.dbpedia.org/3.9/en/})
+\end{itemize} 
+
+{\em Training questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_train.xml} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_train_withanswers.xml}
+\end{itemize} 
+
+{\em Test questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize}
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_test_questions.xml} 
+\end{itemize}
+
+%{\em Participant's challenge}:\\
+%\url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/participants-challenge.xml}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Task 2: Biomedical question answering over interlinked data}
+
+{\em Datasets:}
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item SIDER (\url{http://sideeffects.embl.de})
+\item Diseasome (\url{http://wifo5-03.informatik.uni-mannheim.de/diseasome/})
+\item Drugbank (\url{http://www.drugbank.ca})
+\end{itemize} 
+
+{\em Training questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_biomedical_train.xml} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_biomedical_train_withanswers.xml}
+\end{itemize} 
+
+{\em Test questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize}
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_biomedical_test_questions.xml} 
+\end{itemize}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Task 3: Hybrid question answering}
+
+{\em Dataset:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item DBpedia 3.9 (\url{http://downloads.dbpedia.org/3.9/en/})
+\end{itemize} 
+
+{\em Training questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_hybrid_train.xml} 
+\end{itemize} 
+
+{\em Test questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize}
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_hybrid_test_questions.xml} 
+\end{itemize}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Evaluation}
+
+{\em Submission of results and evaluation} is done by means of an online form:\\
+\url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=4}
+
+Results for the training phase can be uploaded at any time; results for the test phase can be uploaded from April 1 to May 1, 2014.
+
+\subsubsection*{Resources}
+
+You are free to use all resources. A list of potentially useful resources and tools is provided in Section~\ref{sec:resources}.
+
+\subsubsection*{Contact}
+
+Updates on the open challenge will be published on the \emph{Interacting with Linked Data} mailing list: 
+
+\url{https://lists.techfak.uni-bielefeld.de/cit-ec/mailman/listinfo/ild}
+
+In case of question, problems and comments, please contact Christina Unger:
+{\tt cunger@cit-ec.uni-bielefeld.de}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Task 1: Multilingual question answering over DBpedia} 
+
+\input{task1}
+
+\newpage 
+
+\section{Task 2: Biomedical question answering over interlinked data}
+
+\input{task2}
+
+\newpage 
+
+\section{Task 3: Hybrid question answering}
+
+\input{task3}
+
+\newpage
+
+\section{Available resources and tools}
+\label{sec:resources} 
+
+\input{resources}
+
+\newpage 
+\section{Participant's challenge}
+
+\input{participantschallenge}
+
+\end{document}

@@ -1,0 +1,221 @@
+
+\emph{Task:} \\
+Given a natural language question or keywords, either retrieve the correct answer(s) from a given RDF repository, or provide a SPARQL query that retrieves these answer(s). 
+
+The provided dataset is English DBpedia 3.9. 
+The questions and keywords are provided in seven languages: English, German, Spanish, Italian, French, Dutch\footnote{A special thanks to Gosse Bouma.}, and Romanian. 
+Participating systems will be evaluated with respect to precision and recall. 
+Moreover, participants are encouraged to report performance, i.e. the average time their system takes to answer a query.
+
+
+\subsection{Dataset: DBpedia 3.9}
+\label{sec:dbpedia}
+
+DBpedia is a community effort to extract structured information from Wikipedia and to make this information available as RDF data. 
+The RDF dataset provided for the challenge is the official DBpedia 3.9 dataset for English, including links, most importantly to YAGO\footnote{For detailed information on the YAGO class hierarchy, please see \url{http://www.mpi-inf.mpg.de/yago-naga/yago/}.} categories. This dataset comprises all files provided at: 
+\begin{itemize}
+\item \url{http://downloads.dbpedia.org/3.9/en/}
+\item \url{http://downloads.dbpedia.org/3.9/links/}
+\end{itemize}
+In order to work with the dataset, you can either load it into your favorite triple store, or access it via a SPARQL endpoint. 
+The official DBpedia SPARQL endpoint can be accessed at \url{http://dbpedia.org/sparql/}. 
+We also provide an endpoint at the following location, with respect to which evaluation will take place:
+\begin{itemize} 
+\item[] \url{http://vtentacle.techfak.uni-bielefeld.de:443/sparql}
+\end{itemize}
+
+Namespaces that are used in the provided training and test queries are the following ones:
+\begin{itemize}
+\item \emph{DBpedia:}
+  \begin{itemize}
+  \item[] \texttt{dbo: <http://dbpedia.org/ontology/>} 
+  \item[] \texttt{dbp: <http://dbpedia.org/property/>} 
+  \item[] \texttt{res: <http://dbpedia.org/resource/>} 
+  \end{itemize}
+\item \emph{RDF(S) and XSD:}
+  \begin{itemize}
+  \item[] \texttt{rdf:\ \ <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>} 
+  \item[] \texttt{rdfs: <http://www.w3.org/2000/01/rdf-schema\#>} 
+  \item[] \texttt{xsd:\ \ <http://www.w3.org/2001/XMLSchema\#>}
+  \end{itemize}
+\item \emph{Others:}
+  \begin{itemize}
+  \item[] \texttt{yago: <http://dbpedia.org/class/yago/>} 
+  \item[] \texttt{foaf: <http://xmlns.com/foaf/0.1/> } 
+  \end{itemize}
+\end{itemize}
+
+
+\subsection{Training phase}
+\label{sec:training}
+
+In order to get acquainted with the dataset and possible questions, a set of 200 training questions can be downloaded at the following location: 
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_train.xml} (without answers)
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_train_withanswers.xml} (with answers)
+\end{itemize} 
+
+All training questions are annotated with keywords, corresponding SPARQL queries and, if indicated, answers retrieved from the provided SPARQL endpoint. 
+Annotations are provided in the following XML format.
+The overall document is enclosed by a tag that specifies an ID for the dataset indicating the domain 
+and whether it is train or test (i.e. {\tt qald-4\_multilingual\_train} and {\tt qald-4\_multilingual\_test}).
+
+\begin{lstlisting}[escapechar=!]
+<dataset  id="qald-4_train_multilingual">
+<question id="1">   !\ldots! </question>
+!\ldots!
+<question id="200"> !\ldots! </question>
+</dataset>
+\end{lstlisting}
+
+Each of the questions specifies an ID for the question (don't worry if they are not ordered) together with 
+a range of other attributes explained below, the natural language string of the question in seven languages 
+(English, German, Spanish, Italian, French, Dutch, and Romanian), keywords in the same seven languages,
+a corresponding SPARQL query, as well as the answers this query returns. Here is an example:
+
+\begin{lstlisting}[escapechar=|]
+<question id="36" answertype="resource" 
+                  aggregation="false" 
+                  onlydbo="true">
+
+<string lang="en">
+Through which countries does the Yenisei river flow?
+</string>
+|\ldots|
+<keywords lang="en">
+Yenisei river, flow through, country
+</keywords>
+|\ldots|
+
+<query>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Yenisei_River dbo:country ?uri .
+}
+</query>
+
+<answers>
+<answer>
+<uri>http://dbpedia.org/resource/Mongolia</uri>
+</answer>
+<answer>
+<uri>http://dbpedia.org/resource/Russia</uri>
+</answer>
+</answers>
+
+</question>
+\end{lstlisting}
+
+The following attributes are specified for each question along with its ID:
+\begin{itemize}
+\item {\tt answertype} gives the answer type, which can be one the following:
+\begin{itemize}
+\item {\tt resource}: One or many resources, for which the URI is provided.
+\item {\tt string}: A string value such as {\tt Valentina Tereshkova}.
+\item {\tt number}: A numerical value such as {\tt 47} or {\tt 1.8}.
+\item {\tt date}: A date provided in the format {\tt YYYY-MM-DD}, e.g. {\tt 1983-11-02}. 
+This format is also required when you submit results containing a date as answer.
+\item {\tt boolean}: Either {\tt true} or {\tt false}.
+\end{itemize}
+Answer of these types are required to be enclosed by the corresponding tag, i.e. {\tt <number>47</number>}, 
+{\tt <string>Valentina Tereshkova</string>} 
+and {\tt <boolean>true</boolean>}.
+\item {\tt aggregation} indicates whether any operations beyond triple pattern matching are required to answer the question (e.g., counting, filters, ordering, etc.).
+\item {\tt onlydbo} reports whether the query relies solely on concepts from the DBpedia ontology. If the value is {\tt false}, the query possibly relies 
+on the DBpedia property namespace (\texttt{http://dbpedia.org/property/}), FOAF or some YAGO category. 
+\end{itemize}
+
+All question strings and keywords have a language attribute (\texttt{lang}) with one of the following values: 
+\texttt{en} (English), \texttt{de} (German), \texttt{es} (Spanish), \texttt{it} (Italian), \texttt{fr} (French), \texttt{nl} (Dutch), \texttt{ro} (Romanian).
+
+As an additional challenge, a few of the training and test questions are out of scope, i.e. they cannot be answered with respect to the dataset. 
+The query is specified as {\tt OUT OF SCOPE} and the answer set is empty. Here is an example from the DBpedia training question set:
+
+\begin{lstlisting}[escapechar=!]
+<question id="95" answertype="number" 
+                  aggregation="false" 
+                  onlydbo="false">
+
+<string lang="en">
+How many big fires struck Paris during the Middle Ages?
+</string>
+!\ldots!
+
+<query>
+OUT OF SCOPE
+</query>
+
+<answers/>
+
+</question>
+\end{lstlisting}
+
+For evaluation, your system should in these cases specify {\tt OUT OF SCOPE} as query and/or an empty answer set, 
+just like in the example.
+
+
+\subsection{Test phase}
+\label{sec:test}
+
+During test phase, from April 1 to May 1, a set of 50 different questions without annotations is provided at the following location:
+\begin{itemize} 
+\item[] \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_multilingual_test_questions.xml} 
+\end{itemize} 
+
+Results can be submitted from April 1 to May 1, 2014, via the same online form used during training phase 
+(note the drop down box that allows you to specify {\tt test} instead of {\tt training}):
+
+\begin{itemize}
+\item[] \href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=4}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/\\index.php?x=evaltool\&q=4}}
+\end{itemize}
+The only difference is that evaluation results are not displayed. 
+You can upload results as often as you like (e.g., trying different configurations of your system); 
+in this case the file with the best results will count.
+
+All submissions are required to comply with the XML format specified above. 
+For all questions, the dataset ID and question IDs are obligatory. 
+Beyond that, you are free to specify either a SPARQL query or the answers (or both), depending on which of them your system returns.
+You are also allowed to change the natural language question or keywords (insert quotes, reformulate, use some controlled language format, and the like). 
+If you do so, please document these changes, i.e. replace the provided question string or keywords by the input you used. 
+Also, it is preferred if your submission leaves out all question strings and keywords except for the ones in the language your system worked on. 
+So if you have a Dutch question answering system, please only provide the Dutch question string and/or keywords in your submission. 
+Otherwise please mark the language in either the system name or configuration slot, when uploading it. 
+This way we can properly honour your multilinguality efforts.
+
+
+\subsubsection*{Evaluation measures}
+
+For each of the questions, your specified answers, or the answers your specified SPARQL query retrieves,
+will be compared to the answers provided by the gold standard XML document. 
+The evaluation tool computes precision, recall and F-measure for every question $q$:\footnote{In the case of out-of-scope 
+questions, an empty answer set counts as precision and recall 1, while a non-empty answer set counts as 
+precision and recall 0.}
+\begin{align*}
+\text{\em Recall}(q) &\, =\, \begin{array}{c} 
+                  \text{number of correct system answers} \\
+                  \hline 
+                  \text{number of gold standard answers} \\ 
+                  \end{array} \\
+\text{\em Precision}(q) &\, =\, \begin{array}{c} 
+                  \text{number of correct system answers} \\
+                  \hline 
+                  \text{number of system answers} \\ 
+                  \end{array} \\
+\text{\em F-measure}(q) &\, =\, \begin{array}{c}
+                      2\times \text{\em Precision}\times \text{\em Recall} \\
+                      \hline 
+                      \text{\em Precision} + \text{\em Recall} \\
+                      \end{array} \\
+\end{align*}
+
+\vspace*{-.7cm}
+
+The tool then also computes the overall precision and recall taking the average mean of
+all single precision and recall values, as well as the overall F-measure.
+
+All these results are printed in a simple HTML output; additionally you get a list of 
+all question that your tool failed to capture correctly.
+
+You are allowed to submit results as often as you wish.

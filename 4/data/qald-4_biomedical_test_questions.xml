@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<dataset id="qald-4_biomedical_test">
+
+<question id="1">
+<string lang="en"><![CDATA[Which genes are associated with Endothelin receptor type B?]]></string>
+</question>
+
+<question id="2">
+<string lang="en"><![CDATA[Which genes are associated with subtypes of rickets?]]></string>
+</question>
+
+<question id="3">
+<string lang="en"><![CDATA[Which drug has the highest number of side-effects?]]></string>
+</question>
+
+<question id="4">
+<string lang="en"><![CDATA[List drugs that lead to strokes and arthrosis.]]></string>
+</question>
+
+<question id="5">
+<string lang="en"><![CDATA[Which drugs have a water solubility of 2.78e-01 mg/mL?]]></string>
+</question>
+
+<question id="6">
+<string lang="en"><![CDATA[Give me the side-effects drugs with a solubility of 3.24e-02 mg/mL.]]></string>
+</question>
+
+<question id="7">
+<string lang="en"><![CDATA[Which diseases are associated with SAR1B?]]></string>
+</question>
+
+<question id="8">
+<string lang="en"><![CDATA[Which experimental drugs interact with food?]]></string>
+</question>
+
+<question id="9">
+<string lang="en"><![CDATA[Which approved drugs interact with fibers?]]></string>
+</question>
+
+<question id="10">
+<string lang="en"><![CDATA[Which drugs interact with food and have HIV infections as side-effects?]]></string>
+</question>
+
+<question id="11">
+<string lang="en"><![CDATA[Give me diseases whose possible drugs target the elongation factor 2.]]></string>
+</question>
+
+<question id="12">
+<string lang="en"><![CDATA[Which drugs achieve a protein binding of 100%?]]></string>
+</question>
+
+<question id="13">
+<string lang="en"><![CDATA[List illnesses that are treated by drugs whose mechanism of action involves norepinephrine and serotonin.]]></string>
+</question>
+
+<question id="14">
+<string lang="en"><![CDATA[Which is the least common chromosome location?]]></string>
+</question>
+
+<question id="15">
+<string lang="en"><![CDATA[Are there drugs that target the Protein kinase C beta type?]]></string>
+</question>
+
+<question id="16">
+<string lang="en"><![CDATA[Give me all diseases of the connective tissue class.]]></string>
+</question>
+
+<question id="17">
+<string lang="en"><![CDATA[Which targets are involved in blood clotting?]]></string>
+</question>
+
+<question id="18">
+<string lang="en"><![CDATA[List the number of distinct side-effects of drugs which target genes whose general function involves cell division.]]></string>
+</question>
+
+<question id="19">
+<string lang="en"><![CDATA[Which drugs have no side-effects?]]></string>
+</question>
+
+<question id="20">
+<string lang="en"><![CDATA[List diseases whose possible drugs have no side effects.]]></string>
+</question>
+
+<question id="21">
+<string lang="en"><![CDATA[Give me the drug categories of Desoxyn.]]></string>
+</question>
+
+<question id="22">
+<string lang="en"><![CDATA[Give me drugs in the gaseous state.]]></string>
+</question>
+
+<question id="23">
+<string lang="en"><![CDATA[Which disease has the largest size?]]></string>
+</question>
+
+<question id="24">
+<string lang="en"><![CDATA[Which drugs have bipolar disorder as indication?]]></string>
+</question>
+
+<question id="25">
+<string lang="en"><![CDATA[Which diseases have a class degree of 11?]]></string>
+</question>
+
+</dataset>

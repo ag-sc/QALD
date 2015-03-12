@@ -1,0 +1,5055 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dataset id="musicbrainz-train">
+
+<question id="1" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which singles did Slayer release?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Singles hat Slayer herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Que Singles fueron estrenados por Slayer?
+]]></string>
+<string lang="it"><![CDATA[
+Quali singoli ha rilasciato Slayer?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels singles ont été sortis par Slayer?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke singles bracht Slayer uit?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Slayer, single
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Slayer, Single
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Singles, Slayer
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Slayer, singolo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Slayer, singles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+single, Slayer
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album
+WHERE {
+    ?album foaf:maker ?artist .
+    ?artist foaf:name 'Slayer'.
+    ?album mo:release_type mo:single .
+}
+]]></query>
+</question>
+
+<question id="2" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which groups was David Bowie a member of?
+]]></string>
+<string lang="de"><![CDATA[
+In welchen Bands war David Bowie?
+]]></string>
+<string lang="es"><![CDATA[
+En que grupos fue miembro David Bownie?
+]]></string>
+<string lang="it"><![CDATA[
+Di quali gruppi David Bowie è stato membro?
+]]></string>
+<string lang="fr"><![CDATA[
+De quel groupe David Bowie était-il un membre?
+]]></string>
+<string lang="nl"><![CDATA[
+Van welke bands was David Bowie lid?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+David Bowie, member, group
+]]></keywords>
+<keywords lang="de"><![CDATA[
+David Bowie, Band
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+grupos, David Bowie
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+David Bowie, membro, gruppo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupe, David Bowie, membre
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, David Bowie
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band
+WHERE {
+  ?artist foaf:name 'David Bowie' .
+  ?artist mo:member_of ?band .
+}
+]]></query>
+</question>
+
+<question id="3" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When was the band Dover founded?
+]]></string>
+<string lang="de"><![CDATA[
+Wann wurde die Band Dover gegründet?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando fue fundada la banda Dover?
+]]></string>
+<string lang="it"><![CDATA[
+Quando è stata creata la band Dover?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand a été fondé le groupe Dover?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer is de band Dover opgericht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Dover, band, founded
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Dover, Band, gegründet
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Dover, fecha inicio
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Dover, band, creare
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+fondé, groupe, Dover?
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, Dover, opgericht
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date 
+WHERE {
+    ?artist rdf:type mo:MusicGroup .
+    ?artist foaf:name 'Dover'.
+    ?artist bio:event ?event .
+    ?event rdf:type bio:Birth .
+    ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="4" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many albums did Michael Jackson record?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Alben hat Michael Jackson aufgenommen?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos álbumes ha grabado Michael Jackson?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti album ha inciso Michael Jackson?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'albums ont été enregistrés par Michael Jackson?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel albums heeft Michael Jackson opgenomen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Michael Jackson, number of albums
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Michael Jackson, Anzahl Alben
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Michael Jackson, numero de  álbumes
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Michael Jackson, numero di album
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Michael Jackson, nombres d'albums
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Michael Jackson, albums
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+	?album rdf:type mo:Record .
+	?album foaf:maker ?artist .
+	?artist foaf:name 'Michael Jackson' .
+}
+]]></query>
+</question>
+
+<question id="5" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Who composed the Star Wars soundtrack?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat den Soundtrack zu Star Wars komponiert?
+]]></string>
+<string lang="es"><![CDATA[
+Quien compuso la banda sonora de Star Wars?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha composto la colonna sonora di Guerre Stellari?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a composé la bande son de la Guerre des étoiles?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie was de componist van de soundtrack van Star Wars?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Star Wars, soundtrack, composer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Star Wars, Soundtrack, Komponist
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+compositor, banda sonora, Star Wars
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Guerre Stellari, colonna sonora, compositore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+bande son, composé, Guerre des étoiles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+componist, Star Wars, soundtrack
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?composer
+WHERE {
+    ?album mo:release_type mo:soundtrack .
+    ?album dc:title ?title .
+    ?album mo:composer ?composer . 
+FILTER regex(str(?title),"Star Wars")
+}
+]]></query>
+</question>
+
+<question id="6" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which solo artists had their 50th birthday on May 30, 2012?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Solokünstler hatten am 30. Mai 2012 ihren 50. Geburtstag?
+]]></string>
+<string lang="es"><![CDATA[
+Que solitas cumplen su 50 cumpleaños en el 30 de Mayo del 2012?
+]]></string>
+<string lang="it"><![CDATA[
+Quale solista ebbe in suo cinquantesimo compleanno il 30 maggio 2012?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels artistes solos ont eu 50 ans le 30 Mai 2012?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke solo-artiesten werden op 30 mei 2012 50?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+solo artist, 50th birthday, 2012-05-30
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Solokünstler, 50. Geburtstag, 2012-05-30
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+solitas, 50 cumpleaños, 2012-05-30                        
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+solista, cinquantesimo compleanno, 2012-05-30
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+artistes solos, 50 ans, 30 Mai 2012
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+solo-artiest, 50 jaar, 2012-05-30
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date "1962-05-30"^^xsd:dateTime .
+}
+]]></query>
+</question>
+
+<question id="7" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Give me the present members of The Cure.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir die aktuellen Mitglieder von The Cure.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los miembros actuales de The Cure
+]]></string>
+<string lang="it"><![CDATA[
+Dammi i membri attuali dei The Cure.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi la formation actuelle de The Cure.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef de huidige leden van The Cure.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+The Cure, member, present
+]]></keywords>
+<keywords lang="de"><![CDATA[
+The Cure, Mitglieder, aktuell
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+The cure, miembros actuales
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+The Cure, membri, attuali
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+formation actuelle, The Cure
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Cure, huidige leden
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?member
+WHERE { 
+  ?band foaf:name 'The Cure' .
+  ?event rdf:type mo:membership .
+  ?event event:agent ?member .
+  ?event mo:group ?band .
+  OPTIONAL {
+    ?event event:time ?time .
+    ?time tl:end ?enddate .
+  }
+  FILTER (!bound(?enddate))
+}
+]]></query>
+</question>
+
+<question id="8" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all Kraftwerk albums.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Kraftwerk-Alben.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los álbumes de Kraftwerk
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli album dei Kraftwerk.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les albums de Kraftwerk.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef alle albums van Kraftwerk.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Kraftwerk, album
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Kraftwerk, Album
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes, Kraftwerk
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Kraftwerk, album
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums, Kraftwerk
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+album, Kraftwerk
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:album .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Kraftwerk' .
+}
+]]></query>
+</question>
+
+<question id="9" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many bands are called Nirvana? 
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Band heißen Nirvana?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas bandas se llaman Nirvana?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti gruppi musicali si chiamano Nirvana?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de groupes s'appellent Nirvana?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel bands heten Nirvana?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of bands, name, Nirvana
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Bands, Name, Nirvana
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+numero de bandas, nombre, Nirvana
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di gruppi musicali, nome, Nirvana
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Nirvana, nombre de groupes
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal bands, Nirvana
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist)
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist foaf:name 'Nirvana' .
+}
+]]></query>
+</question>
+
+<question id="10" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When did the Sex Pistols break up?
+]]></string>
+<string lang="de"><![CDATA[
+Wann haben sich die Sex Pistols aufgelöst?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando rompieron los Sex Pistols?
+]]></string>
+<string lang="it"><![CDATA[
+Quando si sono separati i Sex Pistols?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand ont été dissous les Sex Pistols?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer hielden de Sex Pistols op te bestaan?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Sex Pistols, end date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Sex Pistols, Enddatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Sex pistols, roptura 
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Sex Pistols, separazione
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+dissous, Sex Pistols
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Sex Pistols, einddatum
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Sex Pistols'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Death .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="11" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Was Quee MacArthur a member of Queen?
+]]></string>
+<string lang="de"><![CDATA[
+War Quee MacArthur Mitglied bei Queen?
+]]></string>
+<string lang="es"><![CDATA[
+Fue Quee MacArthur un miembro de Queen?
+]]></string>
+<string lang="it"><![CDATA[
+Quee MacArthur era un membro dei Queen?
+]]></string>
+<string lang="fr"><![CDATA[
+Quee MacArthur est-il un membre de Queen?
+]]></string>
+<string lang="nl"><![CDATA[
+Was Quee MacArthur lid van Queen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Quee MacArthur, member, Queen
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Quee MacArthur, Mitglied, Queen
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Quee MacArthur, miembro, Queen
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Quee MacArthur, membro, Queen
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+ MacArthur, membre, Queen
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Quee MacArthur, lid, Queen
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK 
+WHERE {
+ ?artist foaf:name 'Quee MacArthur' .
+ ?artist mo:member_of ?band .
+ ?band foaf:name 'Queen' .
+}
+]]></query>
+</question>
+
+<question id="12" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When is the birthday of Tom Waits?
+]]></string>
+<string lang="de"><![CDATA[
+Wann hat Tom Waits Geburtstag?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando es el cumpleaños de Tom Waits?
+]]></string>
+<string lang="it"><![CDATA[
+Quand è il compleanno di Tom Waits?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand est l'anniversaire de Tom Waits?
+]]></string>
+<string lang="nl"><![CDATA[
+Wat is de verjaardag van Tom Waits?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Tom Waits, birthday
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Tom Waits, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+cumpleaños, Tom Waits
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Tom Waits, compleanno
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+anniversaire, Tom Waits
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Tom Waits, verjaardag
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Tom Waits'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="13" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which solo artists were born on the 29th of December 1960?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Solokünstler wurden am 29. Dezember 1960 geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Que solistas han nacido en el 29 de Diciembre de 1960?
+]]></string>
+<string lang="it"><![CDATA[
+Quali solisti sono nati il 29 Dicembre 1960?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels artistes solos sont nés le 29 Décembre 1960?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke solo-artiesten werden op 29 december 1960 geboren?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+solo artist, birth date, 1960-12-29
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Solokünstler, Geburtstag, 1960-12-29
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+solistas, fecha de nacimiento, 1960-12-29
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+solista, data di nascita, 1960-12-29
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+artistes solos, nés, 29 Décembre 1960
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+solo-artiest, geboren, 1960-12-29
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date "1960-12-29"^^xsd:dateTime .
+}
+]]></query>
+</question>
+
+<question id="14" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+How many bands broke up in 2010?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Bands haben sich 2010 aufgelöst?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas bandas se rompieron en el 2010?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti gruppi musicali si sono separati nel 2010?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels groupes ont été dissous en 2010?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel bands zijn gestopt in 2010?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of bands, end date, 2010
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Bands, Enddatum, 2010
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, fecha de ruptura, 2010
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di gruppi musicali, data di separazione, 2010
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, dissous, 2010?
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal bands, gestopt, 2010
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist)
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Death .
+  { ?event bio:date ?date .
+    FILTER ( ?date <= "2010-12-31"^^xsd:date && ?date >= "2010-01-01"^^xsd:date ) 
+  }
+  UNION 
+  { ?event bio:date ?date .
+    FILTER regex (?date,"2010")
+  }
+}
+]]></query>
+</question>
+
+<question id="15" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all albums with the BBC Symphony Orchestra.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Alben mit dem BBC Symphony Orchestra.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los álbumes con la BBC Symphony Orchestra
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli album della BBC Symphony Orchestra.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi les albums de l'Orchestre symphonique de la BBC. 
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle albums waarop het BBC Symphony Orchestra meespeelt.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+BBC Symphony Orchestra, album
+]]></keywords>
+<keywords lang="de"><![CDATA[
+BBC Symphony Orchestra, Album
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes, BBC Symphony Orchestra
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+BBC Symphony Orchestra, album
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums, Orchestre symphonique de la BBC
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+album, BBC Symphony Orchestra
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:performingOrchestra ?orchestra .
+  ?orchestra foaf:name 'BBC Symphony Orchestra' .
+}
+]]></query>
+</question>
+
+<question id="16" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all bands that Michael Stipe is a member of.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Bands, in denen Michael Stipe Mitglied ist.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las bandas en las cuales Michael Stipe es un miembro?
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti i gruppi musicali di cui Michael Stipe è membro.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les groupes dont Michael Stipe a été un membre.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef me alle bands waarin Michael Stipe zat.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Michael Stipe, member, band
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Michael Stipe, Mitglied, Band
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, Michael Stipe
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Michael Stipe, membro, gruppo musicale
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, Michael Stipe, membre
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, Michael Stipe, lid
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band
+WHERE { 
+ ?artist foaf:name 'Michael Stipe' .
+ ?artist mo:member_of ?band .
+}
+]]></query>
+</question>
+
+<question id="17" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many albums did Amy Macdonald release?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Alben hat Amy Macdonald herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos álbumes ha estrado Amy MacDonald?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti album ha rilasciato Amy Macdonald?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'albums ont été créés par Amy Macdonald?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel albums heeft Amy Macdonald uitgebracht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Amy Macdonald, number of albums
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Amy Macdonald, Anzahl Alben
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes, Amy MacDonald
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Amy Macdonald, numero di album
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre d'albums, Amy Macdonald
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal albums, Amy Macdonald
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:album .
+  ?album dc:title ?albumtitle .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Amy Macdonald' .
+}
+]]></query>
+</question>
+
+<question id="18" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all live albums by Michael Jackson.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Live-Alben von Michael Jackson.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los  álbumes en directo de Michael Jackson.
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli album live di Michael Jackson.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les albums live de Michael Jackson.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle live-albums van Michael Jackson.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Michael Jackson, live album
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Michael Jackson, Live-Album
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes en directo, Michael Jackson
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Michael Jackson, album live
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums live, Michael Jackson
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+live-album, Michael Jackson
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+  ?album rdf:type mo:Record . 
+  ?album mo:release_type mo:live .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Michael Jackson' .
+}
+]]></query>
+</question>
+
+<question id="19" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who produced the album In Utero?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat das Album In Utero produziert?
+]]></string>
+<string lang="es"><![CDATA[
+Quien produjo el álbum In Utero?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha prodotto l'album In Utero?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a produit l'album In Utero?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie produceerde het album In Utero?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+album, In Utero, producer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Album, In Utero, Produzent
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+autor, álbum, In Utero
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album, In Utero, produttore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+produit, album, In Utero
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+producent, In Utero
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?producer
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:album .
+  ?album dc:title 'In Utero' .
+  ?album mo:producer ?producer .
+}
+]]></query>
+</question>
+
+<question id="20" answertype="number" aggregation="false">
+<string lang="en"><![CDATA[
+How long is the song Hardcore Kids?
+]]></string>
+<string lang="de"><![CDATA[
+Wie lang ist das Lied Hardcore Kids?
+]]></string>
+<string lang="es"><![CDATA[
+Cual es la duración de la canción Hardcore Kids?
+]]></string>
+<string lang="it"><![CDATA[
+Quanto dura la canzone Hardcore Kids?
+]]></string>
+<string lang="fr"><![CDATA[
+Quelle est la durée du morceau Hardcore Kids?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoe lang duurt het nummer Hardcore Kids?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+song, Hardcore Kids, length
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Lied, Hardcore Kids, Länge
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+duración, canción Hardcore Kids
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+canzone, Hardcore Kids, durata
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+durée, morceau, Hardcore Kids
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+lengte, nummer, Hardcore Kids
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?duration
+WHERE {
+  ?track rdf:type mo:Track . 
+  ?track dc:title 'Hardcore Kids' .
+  ?track tl:duration ?duration .
+}
+]]></query>
+</question>
+
+<question id="21" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When did Dave Grohl join Nirvana?
+]]></string>
+<string lang="de"><![CDATA[
+Wann ist Dave Grohl zu Nirvana gekommen?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando se unió Dave Grohl a Nirvana?
+]]></string>
+<string lang="it"><![CDATA[
+Quando Dave Grohl si è unito ai Nirvana?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand rejoignit Dave Grohl Nirvana?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer trad Dave Grohl toe tot Nirvana?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Dave Grohl, Nirvana, begin date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Davel Grohl, Nirvana, Startdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Dave Grohl, inicio, Nirvana
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Dave Grohl, Nirvana, data d'inizio
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+rejoignit, Dave Grohl, Nirvana
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Dave Grohl, Nirvana, toetredingsdatum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?begindate
+WHERE {
+  ?artist foaf:name 'Dave Grohl' .
+  ?band foaf:name 'Nirvana' .
+  ?event rdf:type mo:membership .
+  ?event event:agent ?artist .
+  ?event mo:group ?band .
+  ?event event:time ?time .
+  ?time tl:start ?begindate .
+}
+]]></query>
+</question>
+
+<question id="22" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all songs by Aretha Franklin.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Lieder von Aretha Franklin.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las canciones de Aretha Franklin
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutte le canzoni di Aretha Franklin.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les morceaux d'Aretha Franklin.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle songs van Aretha Franklin.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Aretha Franklin, song
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Aretha Franklin, Lied
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+canciones, Aretha Franklin
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Aretha Franklin, canzoni
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+morceaux, Aretha Franklin
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+song, Aretha Franklin
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?track
+WHERE {
+  ?artist foaf:name 'Aretha Franklin' .
+  ?track foaf:maker ?artist .
+  ?track rdf:type mo:Track .
+}
+]]></query>
+</question>
+
+<question id="23" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+Since when does Millencolin exist?
+]]></string>
+<string lang="de"><![CDATA[
+Seit wann gibt es Millencolin?
+]]></string>
+<string lang="es"><![CDATA[
+Desde cuando existe el Millencolin?
+]]></string>
+<string lang="it"><![CDATA[
+Da quando esistono i Millencolin?
+]]></string>
+<string lang="fr"><![CDATA[
+Depuis quand existe Millencolin?
+]]></string>
+<string lang="nl"><![CDATA[
+Sinds wanneer bestaat Millencolin?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Millencolin, begin date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Millencolin, Startdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Millencolin, fecha de inicio
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Millencolin, data d'inizio
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+data d'existence, Millencolin
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Millencolin, datum, oprichting
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Millencolin'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="24" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many members does the band Trio have?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Mitglieder hat die Band Trio?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos miembros tiene la banda del Trio?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti membri ha il gruppo musicale Trio?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de membres a le groupe Trio?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel leden heeft de band Trio?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+band, Trio, number of members
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Band, Trio, Anzahl Mitglieder
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Banda, Trio, numero de miembros
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo musicale, Trio, numero di membri
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de membres, groupe Trio
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal leden, band, Trio
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?member)
+WHERE {
+    ?band foaf:name 'Trio' .
+    ?band rdf:type mo:MusicGroup .
+    ?member mo:member_of ?band .
+}
+]]></query>
+</question>
+
+<question id="25" answertype="boolean" aggregation="true">
+<string lang="en"><![CDATA[
+Are there members of the Ramones that are not called Ramone?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es Mitglieder der Ramones, die nicht Ramone heißen?
+]]></string>
+<string lang="es"><![CDATA[
+Hay algún miembro de los Ramones que no se llame Ramon?
+]]></string>
+<string lang="it"><![CDATA[
+Ci sono membri dei Ramones che non si chiamano Ramone?
+]]></string>
+<string lang="fr"><![CDATA[
+Y a-t-il des membres des Ramones qui ne s'appellent pas Ramone?
+]]></string>
+<string lang="nl"><![CDATA[
+Zijn er bandleden van The Ramones die niet Ramone heten?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Ramones, member, not, name, Ramone
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Ramones, Mitglied, nicht, Name, Ramone
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Ramones, miembros, no llamado Ramone
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Ramones, membro, nome diverso da, Ramone
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres des Ramones, s'appellent pas, Ramone
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Ramones, bandlid, niet, naam, Ramone
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK 
+WHERE {
+	?band foaf:name 'Ramones' .
+	?artist foaf:name ?artistname .
+	?artist mo:member_of ?band .
+        FILTER (NOT regex(?artistname,"Ramone"))
+}
+]]></query>
+</question>
+
+<question id="26" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When was Elvis Presley born?
+]]></string>
+<string lang="de"><![CDATA[
+Wann wurde Elvis Presley geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando nació Elvis Presley?
+]]></string>
+<string lang="it"><![CDATA[
+Quando è nato Elvis Presley?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand est né Elvis Presley?
+]]></string>
+<string lang="nl"><![CDATA[
+Wat is de geboortedatum van Elvis Presley?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Elvis Presley, birth date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Elvis Presley, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha de nacimiento, Elvis Presley
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Elvis Presley, data di nascita
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+date de naissance, Elvis Presley
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+geboortedatum, Elvis Presley
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Elvis Presley'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="27" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many artists are called John Williams?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Künstler heißen John Williams?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos artistas se llaman John Williams?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti artisti si chiamano John Williams?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'artistes s'appellent John Williams?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel artiesten met de naam John Williams zijn er?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of artists, name, John Williams
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Künstler, Name, John Williams
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+numero artistas, nombre, John Williams
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di artisti, nome, John Williams
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre d'artistes, appellent, John Williams
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal artiesten, naam, John Williams
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist)
+WHERE {
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?artist foaf:name 'John Williams' .
+}
+]]></query>
+</question>
+
+<question id="28" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+Since when is Tom Araya a member of Slayer?
+]]></string>
+<string lang="de"><![CDATA[
+Seit wann ist Tom Araya bei Slayer?
+]]></string>
+<string lang="es"><![CDATA[
+Desde cuando es Tom Araya un miembro de Slayer?
+]]></string>
+<string lang="it"><![CDATA[
+Da quando Tom Araya è uno dei membri degli Slayer?
+]]></string>
+<string lang="fr"><![CDATA[
+Depuis quand Tom Araya est-il un membre de Slayer?
+]]></string>
+<string lang="nl"><![CDATA[
+Sinds wanneer is Tom Araya lid van Slayer?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Tom Araya, member, Slayer, begin date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Tom Araya, Mitglied, Slayer, Startdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Tom Araya, fecha de inicio, Slayer
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Tom Araya, membro, Slayer, data inizio
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Tom Araya, membre, Slayer, date
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Tom Araya, lid, Slayer, toetredingsdatum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?beginDate
+WHERE {
+  ?artist foaf:name 'Tom Araya' .
+  ?band foaf:name 'Slayer' .
+  ?event rdf:type mo:membership .
+  ?event event:agent ?artist .
+  ?event mo:group ?band .
+  ?event event:time ?eventtime .
+  ?eventtime tl:start ?beginDate .
+}
+]]></query>
+</question>
+
+<question id="29" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all people who were members of The Beatles.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Personen, die jemals bei den Beatles waren.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los miembros de los Beatles
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutte le persone che sono state membri dei Beatles.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les personnes qui ont été membres des Beatles.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle personen die ooit lid van The Beatles waren.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+member, The Beatles
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Mitglied, The Beatles
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros, Beatles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+membro, Beatles
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres, Beatles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+lid, The Beatles
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?artist mo:member_of ?band .
+  ?band foaf:name 'The Beatles' .
+}
+]]></query>
+</question>
+
+<question id="30" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+Give me the birthdays of all members of The Beatles.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir die Geburtstage von allen Mitgliedern der Beatles.
+]]></string>
+<string lang="es"><![CDATA[
+Dame los cumpleaños de todos los miembros de los Beathes
+]]></string>
+<string lang="it"><![CDATA[
+Dammi i compleanni di tutti i membri dei Beatles.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi les dates d'anniversaire des membres des Beatles.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem de geboortedata van alle leden van The Beatles.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+member, The Beatles, birthday
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Mitglied, The Beatles, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+cumpleaños, miembros, Beatles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+membri, Beatles, compleanno
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+dates d'anniversaire, membres, Beatles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+geboortedatum, lid, The Beatles
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist mo:member_of ?band .
+  ?band foaf:name 'The Beatles' .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="31" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When did Pete Best leave The Beatles?
+]]></string>
+<string lang="de"><![CDATA[
+Wann hat Pete Best die Beatles verlassen?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando dejo Pete Best los Beatles?
+]]></string>
+<string lang="it"><![CDATA[
+Quando Pete Best ha lasciato i Beatles?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand a Pete Best quitté les Beatles?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer verliet Pete Best The Beatles?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Pete Best, The Beatles, end date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Pete Best, The Beatles, Enddatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Pete Best, Beatles, dejo
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Pete Best, Beatles, data di fine
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Pete Best, quitté, Beatles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Pete Best, The Beatles, verliet, datum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Pete Best' .
+  ?event rdf:type mo:membership .
+  ?event event:agent ?artist .
+  ?event mo:group ?band .
+  ?band foaf:name 'The Beatles' .
+  ?event event:time ?time .
+  ?time tl:end ?date .
+}
+]]></query>
+</question>
+
+<question id="32" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which solo artists died on the same day as Elvis?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Solokünstler starben am selben Tag wie Elvis?
+]]></string>
+<string lang="es"><![CDATA[
+Que solistas murieron en el mismo día que Elvis?
+]]></string>
+<string lang="it"><![CDATA[
+Quale solista mori lo stesso giorni di Elvis?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels artistes solos sont morts le même jour qu'Elvis Presley?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke solo-artiesten stierven op dezelfde dag als Elvis?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+solo artist, death date, same as, Elvis, death date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Solokünstler, Todesdatum, gleich, Elvis, Todesdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+solistas, fecha de defunción, igual , Elvis
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+solista, data di morte, uguale a, Elvis, data di morte
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+artistes solos, date décès, même, Elvis Presley
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+solo-artiest, sterfdatum, identiek, Elvis
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?elvis foaf:name 'Elvis Presley' .
+  ?elvis bio:event ?event .
+  ?event rdf:type bio:Death .
+  ?event bio:date ?date . 
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?artist bio:event ?event_2 .
+  ?event_2 rdf:type bio:Death .
+  ?event_2 bio:date ?date .
+  FILTER (!sameTerm(?artist,?elvis))
+}
+]]></query>
+</question>
+
+<question id="33" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which singles did the Dead Kennedys release?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Singles haben die Dead Kennedys herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos Singles ha estrenado Dead Kennedys?
+]]></string>
+<string lang="it"><![CDATA[
+Quali singoli ha rilasciato Dead Kennedys?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels singles ont chanté les Dead Kennedys?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke singles hebben Dead Kennedys uitgebracht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Dead Kennedys, single
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Dead Kennedys, Single
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+numero de single, Dead Kennedys
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Dead Kennedys, singolo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+singles, Dead Kennedys
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+single, Dead Kennedys
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?single
+WHERE {
+  ?artist rdf:type mo:MusicArtist .
+  ?artist foaf:name 'Dead Kennedys' .
+  ?single mo:release_type mo:single .
+  ?single foaf:maker ?artist .
+}
+]]></query>
+</question>
+
+<question id="34" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Is Liz Story a person or a group?
+]]></string>
+<string lang="de"><![CDATA[
+Ist Liz Story eine Person oder eine Band?
+]]></string>
+<string lang="es"><![CDATA[
+Es Liz Story una persona o un grupo
+]]></string>
+<string lang="it"><![CDATA[
+Liz Story è una persona o un gruppo musicale?
+]]></string>
+<string lang="fr"><![CDATA[
+Liz Story est-elle une personne ou un groupe?
+]]></string>
+<string lang="nl"><![CDATA[
+Is Liz Story een persoon of een band?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Liz Story, person or group
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Liz Story, Person oder Band
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Liz Story, persona, grupo
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Liz Story, persona o gruppo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Liz Story, personne, group
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Liz Story, persoon of band
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artisttype
+WHERE {
+    ?artist foaf:name 'Liz Story'.
+    ?artist rdf:type ?artisttype .
+    FILTER (?artisttype != mo:MusicArtist)
+}
+]]></query>
+</question>
+
+<question id="35" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who was Frank Sinatra married to?
+]]></string>
+<string lang="de"><![CDATA[
+Mit wem war Frank Sinatra verheiratet?
+]]></string>
+<string lang="es"><![CDATA[
+Con quien se caso Frank Sinatra?
+]]></string>
+<string lang="it"><![CDATA[
+Con chi era sposato Frank Sinatra?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui était l'épouse de Frank Sinatra?
+]]></string>
+<string lang="nl"><![CDATA[
+Met wie was Frank Sinatra getrouwd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Frank Sinatra, spouse
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Frank Sinatra, Ehepartner
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+esposa, Frank Sinatra
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Frank Sinatra, moglie
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+épouse, Frank Sinatra
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Frank Sinatra, echtgenote
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?spouse
+WHERE {
+  ?spouse rel:spouseOf ?artist .
+  ?artist foaf:name 'Frank Sinatra' .
+}
+]]></query>
+</question>
+
+<question id="36" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+In which band did Frank Sinatra sing?
+]]></string>
+<string lang="de"><![CDATA[
+In welcher Band hat Frank Sinatra gesungen?
+]]></string>
+<string lang="es"><![CDATA[
+En que banda ha cantado Frank Sinatra? 
+]]></string>
+<string lang="it"><![CDATA[
+In quale gruppo musicale cantava Frank Sinatra?
+]]></string>
+<string lang="fr"><![CDATA[
+Dans quel groupe chanta Frank Sinatra?
+]]></string>
+<string lang="nl"><![CDATA[
+In welke band heeft Frank Sinatra gezongen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Frank Sinatra, band
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Frank Sinatra, Band
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Frank Sinatra, banda
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Frank Sinatra, gruppo musicale
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupe, Frank Sinatra
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Frank Sinatra, band
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band
+WHERE {
+  ?artist foaf:name 'Frank Sinatra' .
+  ?artist mo:member_of ?band .
+}
+]]></query>
+</question>
+
+<question id="37" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which members of the Beatles are already dead?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Mitglieder der Beatles sind bereits tot?
+]]></string>
+<string lang="es"><![CDATA[
+Que miembros de los Beatles están muertos?
+]]></string>
+<string lang="it"><![CDATA[
+Quali membri dei Beatles sono già morti?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels membres des Beatles sont déjà morts?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke leden van The Beatles zijn overleden?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+member, The Beatles, dead
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Mitglied, The Beatles, tot
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros, Beatles, muertos
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+membro, Beatles, morto
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres, Beatles, morts
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+lid, The Beatles, overleden
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?artist mo:member_of ?band .
+  ?band foaf:name 'The Beatles' .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Death .
+  FILTER (bound(?event))
+}
+]]></query>
+</question>
+
+<question id="38" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Was Keith Richards a member of The Rolling Stones?
+]]></string>
+<string lang="de"><![CDATA[
+War Keith Richards bei den Rolling Stones?
+]]></string>
+<string lang="es"><![CDATA[
+Fue Keith Richards un miembro de los Rolling Stones?
+]]></string>
+<string lang="it"><![CDATA[
+Keith Richards era un componente dei Rolling Stones?
+]]></string>
+<string lang="fr"><![CDATA[
+Keith Richards a-t-il été un membre des Rolling Stones?
+]]></string>
+<string lang="nl"><![CDATA[
+Was Keith Richards lid van The Rolling Stones?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Keith Richards, member, The Rolling Stones
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Keith Richards, Mitglied, The Rolling Stones
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Keith Richard, miembro, Rolling Stones
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Keith Richards, componente, The Rolling Stones
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Keith Richards, membre, Rolling Stones
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+lid, Keith Richards, The Rolling Stones
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK 
+WHERE { 
+  ?artist foaf:name 'Keith Richards' .
+  ?artist mo:member_of ?band . 
+  ?band foaf:name 'The Rolling Stones' .
+}
+]]></query>
+</question>
+
+<question id="39" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Give me all former members of the Berliner Philharmoniker.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle ehemaligen Mitglieder der Berliner Philharmoniker.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los miembros anteriores de la Filarmónica de Berlin
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti i membri precedenti della Berliner Philharmoniker.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les membres passés de la Philharmonie de Berlin.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle voormalige leden van de Berliner Philharmoniker.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Berliner Philharmoniker, former member
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Berliner Philharmoniker, ehemalige Mitglieder
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros anteriores , Filarmónica de Berlin
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Berliner Philharmoniker, membri precedenti
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres, passés, Philharmonie de Berlin.
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+voormalig lid, Berliner Philharmoniker
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?member
+WHERE { 
+  ?orchestra foaf:name 'Berliner Philharmoniker' .
+  ?event rdf:type mo:membership .
+  ?event event:agent ?member .
+  ?event mo:group ?orchestra .
+  ?event event:time ?time .
+  ?time tl:end ?enddate .
+  FILTER (bound(?enddate))
+}
+]]></query>
+</question>
+
+<question id="40" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who created the song Freeway of Love?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat das Lied Freeway of Love geschrieben?
+]]></string>
+<string lang="es"><![CDATA[
+Quien creo la canción Freeway of Love
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha scritto la canzone Freeway of Love?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a composé le morceau Freeway of Love?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie schreef het nummer Freeway of Love?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+song, Freeway of Love, creator
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Lied, Freeway of Love, Urheber
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+autor, canción, Freeway of Love
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+canzone, Freeway of Love, scrittore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+composé, morceau, Freeway of Love
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Freeway of Love, componist
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?track rdf:type mo:Track .
+  ?track dc:title 'Freeway of Love' .
+  ?track foaf:maker ?artist .
+}
+]]></query>
+</question>
+
+<question id="41" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When did Kurt Cobain die?
+]]></string>
+<string lang="de"><![CDATA[
+Wann ist Kurt Cobain gestorben?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando murió Kurt Cobain
+]]></string>
+<string lang="it"><![CDATA[
+Quando mori Kurt Cobain?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand est mort Kurt Cobain?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer overleed Kurt Cobain?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Kurt Cobain, death date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Kurt Cobain, Todesdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha de defunción, Kurt Cobain
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Kurt Cobain, data di morte
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+data de décès, Kurt Cobain
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Kurt Cobain, sterfdatum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Kurt Cobain'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Death .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="42" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who composed the soundtrack of The Virgin Suicides?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat den Soundtrack zu The Virgin Suicides komponiert?
+]]></string>
+<string lang="es"><![CDATA[
+Quien compuso la banda sonora de Virgin Suicides?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha composto la colonna sonora de Il giardino delle vergini suicide?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a composé la bande son de Virgin Suicides?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie heeft de soundtrack van The Virgin Suicides gecomponeerd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+soundtrack, The Virgin Suicides, composer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Soundtrackm The Virgin Suicides, Komponist
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+compositor, banda sonora, Virgin Suicides
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+colonna sonora, Il giardino delle vergini suicide, compositore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+composé, bande son, Virgin Suicides
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+componist, soundtrack, The Virgin Suicides
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?composer
+WHERE {
+    ?album mo:release_type mo:soundtrack .
+    ?album dc:title 'The Virgin Suicides' .
+    ?album mo:composer ?composer . 
+}
+]]></query>
+</question>
+
+<question id="43" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Give me all Thrash Metal albums.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Thrash-Metal-Alben.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los álbumes de Thrash Metal
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli album dei Thrash Metal.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les albums de Trash Metal.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle Thrash Metal albums.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+album, Thrash Metal
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Album, Thrash Metal
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes, Thrash Metal
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album, Thrash Metal
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums, Trash Metal
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+album, Thrash Metal
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+    ?album rdf:type mo:Record .
+    ?album dc:description ?tag .
+    FILTER regex(?tag,"thrash metal","i")
+}
+]]></query>
+</question>
+
+<question id="44" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many versions of the song Smells Like Teen Spirit are there?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Versionen des Liedes Smells Like Teen Spirit gibt es?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas versiones existen de la canción Smells like Teen Spirit?
+]]></string>
+<string lang="it"><![CDATA[
+Quante versioni esistono della canzone Smells Like Teen Spirit?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de versions du morceau Smells Like Teen Spirit existe-t-il?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel versies van het nummer Smells Like Teen Spirit zijn er?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of versions, song, Smells Like Teen Spirit
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Versionen, Lied, Smells Like Teen Spirit
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+versiones, canción Smells like Teen Spirit
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di versioni, canzone, Smells Like Teen Spirit
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de versions, morceau, Smells Like Teen Spirit 
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal versies, nummer, Smells Like Teen Spirit
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?track)
+WHERE { 
+  ?track rdf:type mo:Track .
+  ?track dc:title 'Smells Like Teen Spirit' .
+}
+]]></query>
+</question>
+
+<question id="45" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Is there a group called The Notwist?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es eine Gruppe, die The Notwist heißt?
+]]></string>
+<string lang="es"><![CDATA[
+Existe un grupo que se llama The Notwist?
+]]></string>
+<string lang="it"><![CDATA[
+Esiste un gruppo che si chiama The Notwist?
+]]></string>
+<string lang="fr"><![CDATA[
+Existe-t-il un groupe appelé The Notwist?
+]]></string>
+<string lang="nl"><![CDATA[
+Bestaat er een band met de naam The Notwist?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+group, name, The Notwist
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Gruppe, Name, The Notwist
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+grupo, llamado, Notwist
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo, nome, The Notwist
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupe, appelé, The Notwist
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, naam, The Notwist
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK 
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist foaf:name 'The Notwist' .
+}
+]]></query>
+</question>
+
+<question id="46" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+List all members of The Notwist.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Mitglieder von The Notwist.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los miembros de Notwist
+]]></string>
+<string lang="it"><![CDATA[
+Elenca tutti i membri dei The Notwist
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les membres de The Notwist.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle leden van de band The Notwist.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+The Notwist, member
+]]></keywords>
+<keywords lang="de"><![CDATA[
+The Notwist, Mitglieder
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros, Notwist
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+The Notwist, membri
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres, The Notwist
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Notwist, band, leden
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?artist mo:member_of ?band .
+  ?band foaf:name 'The Notwist' .
+}
+]]></query>
+</question>
+
+<question id="47" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who collaborated on Tocotronic vs. Console?
+]]></string>
+<string lang="de"><![CDATA[
+Wer arbeitete bei Tocotronic vs. Console zusammen?
+]]></string>
+<string lang="es"><![CDATA[
+Quien ha colaborado en Tocotronic vvs. Console?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha collaborato a Tocotronic vs. Console?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a collaboré sur Tocotronic vs. Console?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie werkten samen op Tocotronic vs. Console?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+collaborate, Tocotronic vs. Console
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Zusammenarbeit, Tocotronic vs. Console
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+colaboraciones, Tocotronic vs. Console
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+collaborazione, Tocotronic vs. Console
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+collaboré, Tocotronic vs. Console
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+samenwerking, Tocotronic vs. Console
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?t_vs_c foaf:name 'Tocotronic vs. Console' .
+  ?artist rel:collaboratesWith ?t_vs_c .
+}
+]]></query>
+</question>
+
+<question id="48" answertype="boolean" aggregation="true">
+<string lang="en"><![CDATA[
+Did the Sex Pistols already break up?
+]]></string>
+<string lang="de"><![CDATA[
+Haben sich die Sex Pistols schon aufgelöst?
+]]></string>
+<string lang="es"><![CDATA[
+Se han separado los Sex Pistols?
+]]></string>
+<string lang="it"><![CDATA[
+I Sex Pistols si sono già separati?
+]]></string>
+<string lang="fr"><![CDATA[
+Les Sex Pistols sont-ils dissous?
+]]></string>
+<string lang="nl"><![CDATA[
+Zijn de Sex Pistols al uit elkaar?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Sex Pistols, exists, end date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Sex Pistols, existiert, Enddatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Sex Pistols, existe fecha de separación
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Sex Pistols, eistere, data di fine
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Sex Pistols, existe, date de dissolution
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Sex Pistols, bestaat, einde
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK 
+WHERE {
+  ?artist foaf:name 'Sex Pistols'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Death .
+  FILTER (bound(?event))
+}
+]]></query>
+</question>
+
+<question id="49" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+For how long was Tina Turner married to Ike Turner?
+]]></string>
+<string lang="de"><![CDATA[
+Wie lange war Tina Turner mit Ike Turner verheiratet?
+]]></string>
+<string lang="es"><![CDATA[
+Por cuanto tiempo ha estado Tina Turner casada con Ike Turner
+]]></string>
+<string lang="it"><![CDATA[
+Per quanto tempo Tina Turner è stata sposata con Ike Turner?
+]]></string>
+<string lang="fr"><![CDATA[
+Pour combien de temps Tina Turner était-elle mariée à Ike Turner?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoe lang was Tina Turner met Ike Turner getrouwd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Tina Turner, married, Ike Turner, duration
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Tina Turner, verheiratet, Ike Turner, Dauer
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Tina Turner, duración matrimonio, Ike Turner
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Tina Turner, sposata, Ike Turner, durata
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Tina Turner, mariée, Ike Turner, durée
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Tina Turner, getrouwd, Ike Turner, lengte
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="50" answertype="string" aggregation="false">
+<string lang="en"><![CDATA[
+Give me the names of the children of John Lennon.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir die Namen der Kinder von John Lennon.
+]]></string>
+<string lang="es"><![CDATA[
+Dame los nombres de todos los hijos de John Lennon
+]]></string>
+<string lang="it"><![CDATA[
+Dammi i nomi dei figli di John Lennon.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi les noms des enfants de John Lennon.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef de namen van de kinderen van John Lennon.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+name, child, John Lennon
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Name, Kind, John Lennon
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+nombre, hijos, John Lennon
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+nome, figlio, John Lennon
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+noms, enfants, John Lennon
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+naam, kind, John Lennon
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?name
+WHERE {
+  ?artist foaf:name 'John Lennon' .
+  ?artist rel:parentOf ?child .
+  ?child foaf:name ?name .
+}
+]]></query>
+</question>
+
+<question id="51" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which soundtrack albums did Clannad record?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Soundtrack-Alben hat Clannad aufgenommen?
+]]></string>
+<string lang="es"><![CDATA[
+Que álbumes de bandas sonoras ha grabado Clannad?
+]]></string>
+<string lang="it"><![CDATA[
+Quali album di colonne sonore ha inciso Clannad?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels albums de bandes sons ont été enregistrés par Clannad?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke soundtrack-albums heeft Clannad opgenomen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+sountrack, Clannad
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Soundtrack, Clannad
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes banda sonora, Clannad
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+colonna sonora, Clannad
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums de bandes sons, Clannad 
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+soundtrack, album, Clannad
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album
+WHERE {
+  ?album mo:release_type mo:soundtrack .
+  ?artist foaf:name 'Clannad' .
+  ?album foaf:maker ?artist .
+}
+]]></query>
+</question>
+  
+<question id="52" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which bands were founded in 2010?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Bands wurden 2010 gegründet?
+]]></string>
+<string lang="es"><![CDATA[
+Que bandas fueron fundadas en el 2010?
+]]></string>
+<string lang="it"><![CDATA[
+Quali gruppi musicali si sono creati nel 2010?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels groupes ont été fondés en 2010?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke bands werden in 2010 opgericht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+band, start date, 2010
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Band, Startdatum, 2010
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, fundadas, 2010
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo musicale, data inizio, 2010
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, fondation, 2010
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, opgericht, 2010
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?band
+WHERE {
+  ?band rdf:type mo:MusicGroup .
+  ?band bio:event ?event .
+  ?event rdf:type bio:Birth .
+  { ?event bio:date ?date .
+    FILTER (?date <= '2010-12-31'^^xsd:date && ?date >= '2010-01-01'^^xsd:date) }
+  UNION 
+  { ?event bio:date ?date .
+  FILTER regex(?date,'2010') }
+}
+]]></query>
+</question>  
+
+<question id="53" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Are there any interviews with J.R.R. Tolkien?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es Interviews mit J.R.R. Tolkien?
+]]></string>
+<string lang="es"><![CDATA[
+Existen entrevistas con J.R.R.  Tolkien?
+]]></string>
+<string lang="it"><![CDATA[
+Ci sono interviste a J.R.R. Tolkien?
+]]></string>
+<string lang="fr"><![CDATA[
+Existe-t-il des interviews de J.R.R. Tolkien?
+]]></string>
+<string lang="nl"><![CDATA[
+Bestaan er interviews met J.R.R. Tolkien?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+interview, J.R.R. Tolkien
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Interview, J.R.R. Tolkien
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+entrevistas, J.R.R.  Tolkien
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+intervista, J.R.R. Tolkien
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+interviews, J.R.R. Tolkien
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+interview, J.R.R. Tolkien
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK 
+WHERE {
+  ?album mo:release_type mo:interview .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'J.R.R. Tolkien' .
+}
+]]></query>
+</question>
+
+<question id="54" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many bands are called Queen?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Bands heißen Queen?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas bandas se llaman Queen?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti gruppi musicali si chiamano Queen?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de groupes s'appellent Queen?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel bands heten Queen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of bands, name, Queen
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Bands, Name, Queen
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, llamadas, Queen
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di gruppi musicali, Queen
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de groupes, Queen
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal bands, naam, Queen
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist) 
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist foaf:name 'Queen' .
+}
+]]></query>
+</question>
+
+<question id="55" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who performed the song Over the Rainbow?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat das Lied Over the Rainbow gesungen?
+]]></string>
+<string lang="es"><![CDATA[
+Quien ha cantado la canción Over the Rainbow?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha cantato la canzone Over the Rainbow?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a chanté le morceau Over the Rainbow?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie zong het nummer Over the Rainbow?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+song, Over the Rainbow, performer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Lied, Over the Rainbow, Sänger
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+cantante, Over the Rainbow
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+canzone, Over the Rainbow, cantante
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+chanté, morceau, Over the Rainbow
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+nummer, Over the Rainbow, artiest
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?track rdf:type mo:Track .
+  ?track dc:title 'Over the Rainbow' .
+  ?track foaf:maker ?artist .
+}
+]]></query>
+</question>
+
+<question id="56" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all songs on the album Abbey Road.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Lieder von dem Album Abbey Road.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las canciones del álbum Abbey Road
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutte le canzoni dell'album Abbey Road.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les morceaux de l'album Abbey Road.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef alle nummers van het album Abbey Road.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Abbey Road, song
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Abbey Road, Lied
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+canciones ,  álbum Abbey Road
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Abbey Road, canzoni
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+morceaux, Abbey Road
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Abbey Road, nummer
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?track 
+WHERE {
+  ?album mo:release_type mo:album .
+  ?album dc:title 'Abbey Road' .
+  ?album mo:track ?track .
+}
+]]></query>
+</question>
+
+<question id="57" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+What is the third song on the album In the Wee Small Hours?
+]]></string>
+<string lang="de"><![CDATA[
+Was ist das dritte Lied auf dem Album In the Wee Small Hours?
+]]></string>
+<string lang="es"><![CDATA[
+Cual es la tercera canción del álbum In the Wee Small Hours?
+]]></string>
+<string lang="it"><![CDATA[
+Qual è la terza canzone dell'album In the Wee Small Hours?
+]]></string>
+<string lang="fr"><![CDATA[
+Quel est le troisième morceau de l'album In the Wee Small Hours?
+]]></string>
+<string lang="nl"><![CDATA[
+Wat is het derde nummer op het album In the Wee Small Hours?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+third song, album, In the Wee Small Hours
+]]></keywords>
+<keywords lang="de"><![CDATA[
+drittes Lied, Album, In the Wee Small Hours
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+tercera canción, álbum In the Wee Small Hours
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+terza canzone, album, In the Wee Small Hours
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+troisième morceau, album, In the Wee Small Hours
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+In the Wee Small Hours, album, derde nummer
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?track
+WHERE {
+  ?album dc:title 'In the Wee Small Hours' .
+  ?album mo:track ?track .
+  ?track mo:trackNum '1' .
+}
+]]></query>
+</question>
+
+<question id="58" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many bands are called Air?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Bands heißen Air?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas bandas se llaman Air?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti gruppi musicali si chiamano Air?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de groupes s'appellent Air?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel bands heten Air?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of bands, name, Air
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Bands, Name, Air
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, llamadas Air
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di gruppi musicali, nome, Air
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de groupes, appellent, Air
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal bands, naam, Air
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist)
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist foaf:name 'Air' .
+}
+]]></query>
+</question>
+  
+<question id="59" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Did Elvis Presley record jazz albums?
+]]></string>
+<string lang="de"><![CDATA[
+Hat Elvis Presley Jazz-Alben aufgenommen?
+]]></string>
+<string lang="es"><![CDATA[
+Ha grabado Elvis Presley álbumes de jazz?
+]]></string>
+<string lang="it"><![CDATA[
+Elvis Presley ha inciso album jazz?
+]]></string>
+<string lang="fr"><![CDATA[
+Elvis Presley a-t-il enregistré des albums de jazz?
+]]></string>
+<string lang="nl"><![CDATA[
+Heeft Elvis Presley jazz-albums opgenomen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+jazz album, Elvis Presley
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Jazz-Album, Elvis Presley
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+jazz álbumes, Elvis Presley
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album jazz, Elvis Presley
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Elvis Presley, albums de jazz
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+jazz-album, Elvis Presley
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Elvis Presley' .
+  ?album dc:description 'jazz' .
+}
+]]></query>
+</question>
+
+<question id="60" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which songs by Miles Davis are longer than 20 minutes?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Lieder von Miles Davis sind länger als 20 Minuten?
+]]></string>
+<string lang="es"><![CDATA[
+Que canciones de Miles Davis duran más  de 20 minutos?
+]]></string>
+<string lang="it"><![CDATA[
+Quali canzoni di Miles Davis durano più di 20 minuti?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels morceaux de Miles Davis ont une durée de plus de 20 minutes?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke nummers van Miles Davis duren langer dan 20 minuten?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Miles Davis, song, length over 20 minutes
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Miles Davis, Lied, Länge mehr als 20 Minuten
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+canciones, Miles Davis, más  de 20 minutos
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Miles Davis, canzone, più di 20 minuti
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+morceaux, Miles Davis, plus de 20 minutes
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Miles Davis, nummer, lengte, meer dan 20 minuten
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+SELECT DISTINCT ?track
+WHERE {
+  ?track rdf:type mo:Track .
+  ?track foaf:maker ?artist .
+  ?artist foaf:name 'Miles Davis' .
+  ?track tl:duration ?duration .
+  FILTER( ?duration > 1200 ).
+}
+]]></query>
+</question>
+  
+<question id="61" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all members of The Muppets.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Mitglieder der Muppets.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los miembros de los Muppets
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti i membri dei Muppets.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les membres de The Muppets.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle leden van The Muppets.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+The Muppets, member
+]]></keywords>
+<keywords lang="de"><![CDATA[
+The Muppets, Mitglieder
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros, Muppets
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Muppets, membri
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+membres, The Muppets
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Muppets, lid
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?band foaf:name 'The Muppets' .
+  ?artist mo:member_of ?band.
+}
+]]></query>
+</question>
+ 
+<question id="62" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all siblings of Michael Jackson.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Geschwister von Michael Jackson.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los hermanos de Michael Jackson
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti i fratelli e le sorelle di Michael Jackson.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les frères et soeurs de Michael Jackson.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef alle broers en zusters van Michael Jackson.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Michael Jackson, sibling
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Michael Jackson, Geschwister
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+hermanos, Michael Jackson
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Michael Jackson, fratelli e sorelle
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+frères et soeurs, Michael Jackson
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+broer of zuster, Michael Jackson
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?mj foaf:name 'Michael Jackson' .
+  ?artist rel:siblingOf ?mj .
+}
+]]></query>
+</question>  
+  
+<question id="63" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which albums contain interviews with Queen?
+]]></string>
+<string lang="de"><![CDATA[
+Welchen Alben enthalten Interviews mit Queen?
+]]></string>
+<string lang="es"><![CDATA[
+Que álbumes contienen entrevistas con Queen?
+]]></string>
+<string lang="it"><![CDATA[
+Quali album contengono delle interviste con i Queen?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels albums contiennt des interviews de Queen?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke albums bevatten interviews met Queen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+album, interview, Queen
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Album, Interview, Queen
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes, entrevistas, Queen
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album, intervista, Queen
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums, interviews, Queen
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+album, interview, Queen
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album
+WHERE {
+  ?album mo:release_type mo:interview .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Queen' .
+}
+]]></query>
+</question>
+  
+<question id="64" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many audiobooks by Tolkien are there?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Hörbücher von Tolkien gibt es?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos audiolibros existen de Tolkien
+]]></string>
+<string lang="it"><![CDATA[
+Quanti audiolibri di Tolkien esistono?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de livres audios de Tolkien existe-t-il?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel luisterboeken van Tolkien zijn er?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of audiobooks, Tolkien
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Hörbücher, Tolkien
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+audiolibros, Tolkien
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di audiolibri, Tolkien
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de livres audios, Tolkien
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal luisterboeken, Tolkien
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album mo:release_type mo:audiobook .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'J.R.R. Tolkien' .
+}
+]]></query>
+</question>
+
+<question id="65" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all soundtracks composed by John Williams.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Soundtracks, die von John Williams komponiert wurden.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las bandas sonoras compuestas por John Williams
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutte le colonne sonore composte da John Williams.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi toutes les bandes sons composées par John Williams.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef me alle soundtracks die werden gecomponeerd door John Williams.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+soundtrack, composer, John Williams
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Soundtrack, Komponist, John Williams
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas sonoras, compositor, John Williams
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+colonne sonore, compositore, John Williams
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+bandes sons, composées, John Williams
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+soundtrack, componist, John Williams
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?album
+WHERE {
+  ?album mo:release_type mo:soundtrack .
+  ?album mo:composer ?artist .
+  ?artist foaf:name 'John Williams' .
+}
+]]></query>
+</question>
+
+<question id="66" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which person recorded the most singles?
+]]></string>
+<string lang="de"><![CDATA[
+Wer hat die meisten Singles aufgenommen?
+]]></string>
+<string lang="es"><![CDATA[
+Quien ha grabado la mayoría de los singles
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha composto il maggior numero di singoli?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a enregistré les plus de singles?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke artiest heeft de meeste singles opgenomen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+person, number of singles, maximum
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Person, Anzahl Singles, Maximum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+persona, grabado, mayor numero de singles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+persona, numero di singoli, massimo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+enregistré, nombre de singles, maximum
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+artiest, aantal singles, maximum
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?artist
+WHERE {
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?album foaf:maker ?artist .
+  ?album mo:release_type mo:single .
+}
+GROUP BY ?artist
+ORDER BY DESC(COUNT(?album)) 
+LIMIT 1
+]]></query>
+</question>
+  
+<question id="67" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When was Ludwig van Beethoven born?
+]]></string>
+<string lang="de"><![CDATA[
+Wann wurde Ludwig van Beethoven geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Donde nació Ludwig van Beethoven?
+]]></string>
+<string lang="it"><![CDATA[
+Quando nacque Ludwig van Beethoven?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand est né Ludwig van Beethoven?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer werd Ludwig von Beethoven geboren?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Ludwig van Beethoven, birth date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Ludwig van Beethoven, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+lugar de nacimiento, Ludwig van Beethoven.
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Ludwig van Beethoven, data di nascita
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+date de naissance, Ludwig van Beethoven
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+geboortedatum, Ludwig van Beethoven
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Ludwig van Beethoven'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="68" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who wrote the lyrics for West Side Story?
+]]></string>
+<string lang="de"><![CDATA[
+Wer schrieb die Texte für West Side Story?
+]]></string>
+<string lang="es"><![CDATA[
+Quien escribió la letra de West Side Story?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha scritto il testo di West Side Story?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a écrit le texte de West Side Story?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie schreef de tekst voor West Side Story?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+lyrics, West Side Story, writer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Texte, West Side Story, Urheber
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+escritor, letra, West Side Story
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+testo, West Side Story, scrittore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+auteur, West Side Story
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+West Side Story, tekstschrijver
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?album dc:title 'West Side Story' .
+  ?album mo:lyricist ?artist .
+}
+]]></query>
+</question>
+  
+<question id="69" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all Celldweller EPs.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Celldweller-EPs.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los EP de Celldweller
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli EP dei Celldweller.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi toutes les EP de Celldweller.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef me alle ep's van Celldweller.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Celldweller, EP
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Celldweller, EP
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+EP de Celldweller
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Celldweller, EP
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+EP, Celldweller
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Celldweller, ep
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?album
+WHERE {
+  ?album mo:release_type mo:ep .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Celldweller' .
+}
+]]></query>
+</question>
+
+<question id="70" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+What is the longest song by John Cage?
+]]></string>
+<string lang="de"><![CDATA[
+Was ist das längste Lied von John Cage?
+]]></string>
+<string lang="es"><![CDATA[
+Cual es la canción mas larga de John Cage?
+]]></string>
+<string lang="it"><![CDATA[
+Qual è la canzone più lunga di John Cage?
+]]></string>
+<string lang="fr"><![CDATA[
+Quel est le plus long morceau de John Cage?
+]]></string>
+<string lang="nl"><![CDATA[
+Wat is het langste nummer van John Cage?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+John Cage, song, length, maximum
+]]></keywords>
+<keywords lang="de"><![CDATA[
+John Cage, Lied, Länge, Maximum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+canción, mas larga, John Cage
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+John Cage, canzone, lunghezza massima
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+morceau, John Cage, longueur maximale
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+John Cage, lengte, nummer, maximum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+SELECT ?song
+WHERE {
+  ?song tl:duration ?duration .
+  ?song foaf:maker ?artist .
+  ?artist foaf:name 'John Cage' .
+}
+ORDER BY DESC(?duration)
+LIMIT 1
+]]></query>
+</question>
+  
+<question id="71" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which compilations does the song Waterloo by ABBA appear on?
+]]></string>
+<string lang="de"><![CDATA[
+Auf welchen Kompilationen ist das Lied Waterloo von ABBA?
+]]></string>
+<string lang="es"><![CDATA[
+En que compilaciones aparece la canción de Waterloo de ABBA?
+]]></string>
+<string lang="it"><![CDATA[
+In quale raccolta compare la canzone Waterloo degli ABBA?
+]]></string>
+<string lang="fr"><![CDATA[
+Sur quelles compilations se trouve le morceau Waterloo de ABBA?
+]]></string>
+<string lang="nl"><![CDATA[
+Op welke verzamelalbums staat het nummer Waterloo van ABBA?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+compilation, song, Waterloo, ABBA
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Kompilation, Lied, Waterloo, ABBA
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+compilaciones, canción de Waterloo, ABBA
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+raccolta, canzone, Waterloo, ABBA
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+compilations, morceau, Waterloo, ABBA
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+verzamelalbum, Waterloo, ABBA
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album
+WHERE {
+  ?album mo:release_type mo:compilation .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'ABBA' .
+  ?track dc:title 'Waterloo' .
+  ?album mo:track ?track .
+}
+]]></query>
+</question>
+
+<question id="72" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When did Madonna and Guy Richie get divorced?
+]]></string>
+<string lang="de"><![CDATA[
+Wann haben sich Madonna und Guy Richie scheiden lassen?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando se divorcio Maddonna de Guy Richie?
+]]></string>
+<string lang="it"><![CDATA[
+Quando hanno divorziato Madonna e Guy Richie?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand ont divorcé Guy Ritchie et Madonna?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer zijn Madonna en Guy Richie gescheiden?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Madonna, Guy Richie, divorce
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Madonna, Guy Richie, Scheidung
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha de divorcio, Madonna, Guy Richie
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Madonna, Guy Richie, divorziare
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+divorcé, Guy Ritchie, Madonna
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Madonna, Guy Richie, scheiding, datum
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="73" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me the spouses of all members of The Beatles.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir die Ehepartner aller Mitglieder der Beatles.
+]]></string>
+<string lang="es"><![CDATA[
+Dame las esposas de todos los miembros de los Beatles
+]]></string>
+<string lang="it"><![CDATA[
+Dammi le mogli di tutti i membri dei Beatles.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi les épouses de tous les membres des Beatles.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem de echtgenotes van alle leden van The Beatles.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+member, The Beatles, spouse
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Mitglieder, The Beatles, Ehepartner
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+esposas, miembros, Beatles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+membro, The Beatles, moglie
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+épouses, membres, Beatles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+echtgenote, lid, The Beatles
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?spouse 
+WHERE {
+  ?band foaf:name 'The Beatles' .
+  ?artist mo:member_of ?band .
+  ?artist rel:spouseOf ?spouse .
+}
+]]></query>
+</question>
+
+<question id="74" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Are there bootleg recordings by Pink Floyd?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es Bootleg-Aufnahmen von Pink Floyd?
+]]></string>
+<string lang="es"><![CDATA[
+Cuales son las grabaciones bootleg de Pink Floyd?
+]]></string>
+<string lang="it"><![CDATA[
+Ci sono incisioni bootleg dei Pink Floyd?
+]]></string>
+<string lang="fr"><![CDATA[
+Existe-t-il des bootlegs de Pink Floyd? 
+]]></string>
+<string lang="nl"><![CDATA[
+Bestaan er bootleg-opnamen van Pink Floyd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+bootleg recording, Pink Floyd
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Bootleg-Aufnahme, Pink Floyd
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+grabaciones bootleg, Pink Floyd
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+incisioni bootleg, Pink Floyd
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+bootlegs, Pink Floyd
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+bootleg, Pink Floyd
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK 
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_status mo:bootleg .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Pink Floyd' .
+}
+]]></query>
+</question>
+
+<question id="75" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many members does the largest group have?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Mitglieder hat die größte Gruppe?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos miembros tiene el grupo más largo?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti membri ha il gruppo più grande?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de membres a le groupe le plus large?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel leden heeft de grootste band?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+group, number of members, maximum
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Gruppe, Anzahl Mitglieder, Maximum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+miembros, grupo más largo
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo, numero dei membri massimo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupe, nombre de membres, maximum
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, aantal leden, maximum
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT COUNT(?artist) AS ?number
+WHERE {
+  ?artist mo:member_of ?band .
+}
+GROUP BY ?band
+ORDER BY DESC(?number) 
+LIMIT 1
+]]></query>
+</question>
+
+<question id="76" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which rock album has the most tracks?
+]]></string>
+<string lang="de"><![CDATA[
+Welches Rockalbum hat die meisten Lieder?
+]]></string>
+<string lang="es"><![CDATA[
+Que álbum de rock tiene el mayor numero de canciones?
+]]></string>
+<string lang="it"><![CDATA[
+Quale album rock ha il maggior numero di tracce?
+]]></string>
+<string lang="fr"><![CDATA[
+Quel album de rock a le plus de pistes?
+]]></string>
+<string lang="nl"><![CDATA[
+Welk rock-album bevat de meeste nummers?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+album, rock, number of tracks, maximum
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Rockalbum, Anzahl Lieder, Maximum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbum rock,mayor numero canciones
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album, rock, numero di tracce, massimo
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+album de rock, nombre de pistes, maximum
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+rock-album, aantal nummers, maximum
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT ?album
+WHERE {
+  ?album mo:release_type mo:album .
+  ?album dc:description 'rock' .
+  ?album mo:track ?track .
+}
+GROUP BY ?album
+ORDER BY DESC(COUNT(?track))
+LIMIT 1
+]]></query>
+</question>
+
+<question id="77" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When was the daughter of Elvis Presley born?
+]]></string>
+<string lang="de"><![CDATA[
+Wann wurde die Tochter von Elvis Presley geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando nació la hija de Elvis Presley?
+]]></string>
+<string lang="it"><![CDATA[
+Quando è nata la figlia di Elvis Presley?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand est née la fille d'Elvis Presley?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer werd de dochter van Elvis Presley geboren?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Elvis Presley, daughter, birth date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Elvis Presley, Tochter, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha de nacimiento, hija, Elvis Presley
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Elvis Presley, figlia, data di nascita
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+date de naissance, fille, Elvis Presley
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Elvis Presley, dochter, geboortedatum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Elvis Presley' .
+  ?artist rel:parentOf ?child .
+  ?child bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="78" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many EPs did Muse release?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele EPs hat Muse herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos EPs ha estrenado Muse?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti EP hanno rilasciato i Muse?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'EP a enregistré Muse?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel EPs heeft Muse uitgebracht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Muse, number of EPs
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Muse, Anzahl EPs
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Muse, numero de EPs
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Muse, numero di EP
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre d'EP, Muse
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal EPs, Muse
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album mo:release_type mo:ep .
+  ?artist foaf:name 'Muse' .
+  ?album foaf:maker ?artist .
+}
+]]></query>
+</question>
+  
+<question id="79" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who did the vocals on the album Sabotage?
+]]></string>
+<string lang="de"><![CDATA[
+Wer ist der Sänger auf dem Album Sabotage?
+]]></string>
+<string lang="es"><![CDATA[
+Quienes son los vocales en el álbum de Sabotage?
+]]></string>
+<string lang="it"><![CDATA[
+Chi canta nell'album Sabotage?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui chante sur l'album Sabotage?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie is de zanger op het album Sabotage?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+album, Sabotage, vocals
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Album, Sabotage, Sänger
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+vocales, álbum Sabotage
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album, Sabotage, cantante
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+chante, album, Sabotage
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+zanger, album, Sabotage
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?singer
+WHERE {
+  ?album mo:release_type mo:album . 
+  ?album dc:title 'Sabotage' .
+  ?album mo:singer ?singer .
+}
+]]></query>
+</question>
+  
+<question id="80" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many solo artists were born in 1966?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Solokünstler wurden 1966 geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos solistas nacieron en 1996?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti solisti sono nati nel 1966?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels aristes solos sont nés en 1966?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel solo-artiesten zijn geboren in 1966?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of solo artists, birth date, 1966
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Solokünstler, Geburtstag, 1966
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+solistas, fecha de nacimiento, 1966
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di solisti, data di nascita, 1966
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre d'aristes solos, date de naissance, 1966
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+solo-artiest, geboortejaar, 1966
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?artist)
+WHERE {
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  { ?event bio:date ?date .
+    FILTER ( ?date <= '1966-12-31'^^xsd:date && ?date >= '1966-01-01'^^xsd:date ) }
+  UNION 
+  { ?event bio:date ?date .
+    FILTER regex(?date,'1966') }
+}
+]]></query>
+</question>
+  
+<question id="81" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Is there a group called Michael Jackson?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es eine Band, die Michael Jackson heißt?
+]]></string>
+<string lang="es"><![CDATA[
+Existe un grupo llamado Michael Jackson?
+]]></string>
+<string lang="it"><![CDATA[
+Esiste un gruppo che si chiama Michael Jackson?
+]]></string>
+<string lang="fr"><![CDATA[
+Existe-t-il un groupe appelé Michael Jackson?
+]]></string>
+<string lang="nl"><![CDATA[
+Bestaat er een band met de naam Michael Jackson?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+group, name, Michael Jackson
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Band, Name, Michael Jackson
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+grupo, llamado, Michael Jackson
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo, nome, Michael Jackson
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupe, appelé, Michael Jackson
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, naam, Michael Jackson
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK
+WHERE {
+  ?artist rdf:type mo:MusicGroup .
+  ?artist foaf:name 'Michael Jackson' .
+}
+]]></query>
+</question>
+
+<question id="82" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Which bands was Robbie Williams a member of?
+]]></string>
+<string lang="de"><![CDATA[
+In welchen Bands war Robbie Williams?
+]]></string>
+<string lang="es"><![CDATA[
+En que bandas era miembro Robbie Williams
+]]></string>
+<string lang="it"><![CDATA[
+Di quale gruppo musicale Robbie Williams era membro?
+]]></string>
+<string lang="fr"><![CDATA[
+De quels groupes était Robie Williams un membre?
+]]></string>
+<string lang="nl"><![CDATA[
+Van welke bands was Robbie Williams lid?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+band, member, Robbie Williams
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Band, Mitglied, Robbie Williams
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, miembro, Robbie Williams
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo musicale, membro, Robbie Williams
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, Robie Williams, membre
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, lid, Robbie Williams
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band
+WHERE {
+  ?artist foaf:name 'Robbie Williams' .
+  ?artist mo:member_of ?band .
+}
+]]></query>
+</question>
+
+<question id="83" answertype="boolean" aggregation="true">
+<string lang="en"><![CDATA[
+Was John Lennon married?
+]]></string>
+<string lang="de"><![CDATA[
+War John Lennon verheiratet?
+]]></string>
+<string lang="es"><![CDATA[
+Estaba John Lennon casado?
+]]></string>
+<string lang="it"><![CDATA[
+John Lennon era sposato?
+]]></string>
+<string lang="fr"><![CDATA[
+John Lennon était-il marié?
+]]></string>
+<string lang="nl"><![CDATA[
+Was John Lennon getrouwd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+John Lennon, married
+]]></keywords>
+<keywords lang="de"><![CDATA[
+John Lennon, verheiratet
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+John Lennon, casado
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+John Lennon, sposato
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+John Lennon, marié
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+John Lennon, getrouwd
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+ASK
+WHERE {
+  ?artist foaf:name 'John Lennon' .
+  ?artist rel:spouseOf ?spouse .
+  FILTER (BOUND(?spouse))
+}
+]]></query>
+</question>
+  
+<question id="84" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+In which bands did Kurt Cobain play?
+]]></string>
+<string lang="de"><![CDATA[
+In welchen Bands hat Kurt Cobain gespielt?
+]]></string>
+<string lang="es"><![CDATA[
+En que bandas toco Kurt Cobain?
+]]></string>
+<string lang="it"><![CDATA[
+In quali gruppi musicali suonava Kurt Cobain?
+]]></string>
+<string lang="fr"><![CDATA[
+Dans quels groupes a joué Kurt Cobain?
+]]></string>
+<string lang="nl"><![CDATA[
+In welke bands heeft Kurt Cobain gespeeld?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Kurt Cobain, band
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Kurt Cobain, Band
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Kurt Cobain, bandas
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Kurt Cobain, gruppo musicale
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, Kurt Cobain
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, lid, Kurt Cobain
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band
+WHERE {
+  ?artist foaf:name 'Kurt Cobain' . 
+  ?artist mo:member_of ?band .
+}
+]]></query>
+</question>
+  
+<question id="85" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which bands released more than 100 singles?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Bands haben mehr als 100 Singles herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Que bandas tienen más de 100 singles
+]]></string>
+<string lang="it"><![CDATA[
+Quale gruppo musicale ha rilasciato più di 100 singoli?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels groupes ont publié plus de 100 singles?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke bands hebben meer dan 100 singles uitgebracht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+band, number of singles, greater than 100
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Band, Anzahl Singles, größer als 100
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas, más 100 singles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+gruppo musicale, numero di singoli, maggiore di 100
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+groupes, nombre de singles, plus de 100
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+band, aantal singles, meer dan 100
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?band
+WHERE {
+  ?band rdf:type mo:MusicGroup .
+  ?album mo:release_type mo:single .
+  ?album foaf:maker ?band .
+} 
+GROUP BY ?band
+HAVING (COUNT(?album) > 100)
+]]></query>
+</question>
+ 
+<question id="86" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many live albums did The Rolling Stones release?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Live-Alben haben die Rolling Stones herausgebracht?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos álbumes en directo tienen los Rolling Stones?
+]]></string>
+<string lang="it"><![CDATA[
+Quanti album live hanno rilasciato i Rolling Stones?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'album lives les Rolling Stones ont-ils publié?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel live-albums hebben The Rolling Stones uitgebracht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of live albums, The Rolling Stones
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Live-Alben, The Rolling Stones
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+ álbumes en directo, Rolling Stones
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di album live, The Rolling Stones
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre d'album lives, Rolling Stones
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal live-albums, The Rolling Stones
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:live .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'The Rolling Stones' .
+}
+]]></query>
+</question>
+
+<question id="87" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Are there any live albums by the Beatles?
+]]></string>
+<string lang="de"><![CDATA[
+Gibt es Live-Alben von den Beatles?
+]]></string>
+<string lang="es"><![CDATA[
+Existen álbumes en directo de los Beatles
+]]></string>
+<string lang="it"><![CDATA[
+Ci sono album live dei Beatles?
+]]></string>
+<string lang="fr"><![CDATA[
+Existe-t-il des albums lives des Beatles?
+]]></string>
+<string lang="nl"><![CDATA[
+Bestaan er live-albums van The Beatles?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+live album, The Beatles
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Live-Album, The Beatles
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes en directo, Beatles
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album live, The Beatles
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums lives, Beatles
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+live-album, The Beatles
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:live .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'The Beatles' .
+}
+]]></query>
+</question>  
+
+<question id="88" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many soundtracks did Hans Zimmer compose?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Soundtracks hat Hans Zimmer komponiert?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas bandas sonoras ha compuesto Hans Zimmer?
+]]></string>
+<string lang="it"><![CDATA[
+Quante colonne sonore sono state composte da Hans Zimmer?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de bandes sons a composé Hans Zimmer?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel soundtracks heeft Hans Zimmer gecomponeerd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of soundtracks, composer, Hans Zimmer
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Soundtracks, Komponist, Hans Zimmer
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+bandas sonoras, compositor, Hans Zimmer
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di colonne sonore, compositore, Hans Zimmer
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de bandes sons, composé, Hans Zimmer
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal soundtracks, Hans Zimmer
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:soundtrack .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Hans Zimmer' .
+}
+]]></query>
+</question>
+  
+<question id="89" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+When were The Vertigos founded?
+]]></string>
+<string lang="de"><![CDATA[
+Wann wurden The Vertigos gegründet?
+]]></string>
+<string lang="es"><![CDATA[
+Cuando se fundaron los Vertigos?
+]]></string>
+<string lang="it"><![CDATA[
+Quando sono stati fondati i Vertigos?
+]]></string>
+<string lang="fr"><![CDATA[
+Quand a été fondé The Vertigos?
+]]></string>
+<string lang="nl"><![CDATA[
+Wanneer werden The Vertigos opgericht?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+The Vertigos, start date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+The Vertigos, Startdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fundaron, Vertigos
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+The Vertigos, data di inizio
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+date de fondations, The Vertigos
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Vertigos, opgericht, datum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'The Vertigos'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>
+
+<question id="90" answertype="boolean" aggregation="false">
+<string lang="en"><![CDATA[
+Did Kurt Cobain have children?
+]]></string>
+<string lang="de"><![CDATA[
+Hatte Kurt Cobain Kinder?
+]]></string>
+<string lang="es"><![CDATA[
+Tuvo hijos Kurt Cobain?
+]]></string>
+<string lang="it"><![CDATA[
+Kurt Cobain aveva figli?
+]]></string>
+<string lang="fr"><![CDATA[
+Kurt Cobain avait-il des enfants?
+]]></string>
+<string lang="nl"><![CDATA[
+Had Kurt Cobain kinderen?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Kurt Cobain, child
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Kurt Cobain, Kind
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Kurt Cobain, hijos
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Kurt Cobain, figli
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Kurt Cobain, enfants
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Kurt Cobain, kind
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+ASK
+WHERE {
+  ?artist rel:parentOf ?child .
+  ?child foaf:name ?name .
+  ?artist foaf:name 'Kurt Cobain' .
+}
+]]></query>
+</question>
+
+<question id="91" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who is the creator of the audiobook The Hobbit?
+]]></string>
+<string lang="de"><![CDATA[
+Von wem ist das Hörbuch The Hobbit?
+]]></string>
+<string lang="es"><![CDATA[
+Quien es el creador del audiolibro The Hobbit?
+]]></string>
+<string lang="it"><![CDATA[
+Chi è il creatore dell'audiolibro The Hobbit?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui est le créateur du livre audio The Hobbit?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie is de maker van het luisterboek The Hobbit?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+audiobook, The Hobbit, creator
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Hörbuch, The Hobbit, Urheber
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+creador, audiolibro The Hobbit
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+audiolibro, The Hobbit, creatore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+créateur, livre audio, The Hobbit
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+luisterboek, The Hobbit, maker
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?creator
+WHERE {
+    ?album mo:release_type mo:audiobook .
+    ?album dc:title 'The Hobbit' .
+    ?album foaf:maker ?creator . 
+}
+]]></query>
+</question>
+
+  
+<question id="92" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me the collaborations of Shakira.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Künstler, mit denen Shakira zusammengearbeitet hat.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los colaboradores de Shakira
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli artisti con cui Shakira ha collaborato.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi toutes les collaborations de Shakira.
+]]></string>
+<string lang="nl"><![CDATA[
+Geef me alle artiesten waarmee Shakira heeft samengewerkt.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Shakira, collaboration
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Shakira, Kollaboration
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Shakira, colaboradores
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Shakira, collaborazione
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+collaborations, Shakira
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Shakira, samenwerken, artiest
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?shakira foaf:name 'Shakira'  .
+  ?shakira rel:collaboratesWith ?artist .
+}
+]]></query>
+</question>
+ 
+<question id="93" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Who created the single The Girl Is Mine?
+]]></string>
+<string lang="de"><![CDATA[
+Von wem ist die Single The Girl Is Mine?
+]]></string>
+<string lang="es"><![CDATA[
+Quien ha creado el single The Girl is mine?
+]]></string>
+<string lang="it"><![CDATA[
+Chi ha creato il singolo The Girl Is Mine?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui a créé le single The Girl Is Mine?
+]]></string>
+<string lang="nl"><![CDATA[
+Van wie is de single The Girl Is Mine?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+single, The Girl Is Mine, creator
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Single, The Girl Is Mine, Urheber
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+creador, single Girl is Mine
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+singolo, The Girl Is Mine, creatore
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+créateur, single, The Girl Is Mine
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+single, The Girl Is Mine, artiest
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?album mo:release_type mo:single .
+  ?album dc:title 'The Girl Is Mine' .
+  ?album foaf:maker ?artist .
+}
+]]></query>
+</question>
+  
+<question id="94" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Give me all audiobooks by Paul Auster.
+]]></string>
+<string lang="de"><![CDATA[
+Gib mir alle Hörbücher von Paul Auster.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los audiolibros de Paul Auster
+]]></string>
+<string lang="it"><![CDATA[
+Dammi tutti gli audiolibri di Paul Auster.
+]]></string>
+<string lang="fr"><![CDATA[
+Donnes-moi tous les livres audios de Paul Auster.
+]]></string>
+<string lang="nl"><![CDATA[
+Noem alle luisterboeken van Paul Auster.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+audiobook, Paul Auster
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Hörbuch, Paul Auster
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+audiolibros, Paul Auster
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+audiolibri, Paul Auster
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+livres audios, Paul Auster
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+luisterboek, Paul Auster
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:audiobook .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Paul Auster' .
+}
+]]></query>
+</question>
+  
+<question id="95" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many jazz compilations are there?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Jazz-Kompilationen gibt es?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantas compilaciones de Jazz existen
+]]></string>
+<string lang="it"><![CDATA[
+Quante raccolte jazz esistono?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien de compilations jazz existe-t-il?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel compilaties met jazz-muziek zijn er?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+number of jazz compilations
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Anzahl Jazz-Kompilation
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+numero de compilaciones jazz
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+numero di raccolte jazz
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+nombre de compilations jazz
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+aantal compilaties, jazz-muziek
+]]></keywords>
+<query><![CDATA[
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?album)
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album mo:release_type mo:compilation .
+  ?album dc:description 'jazz' .
+}
+]]></query>
+</question>  
+
+<question id="96" answertype="number" aggregation="true">
+<string lang="en"><![CDATA[
+How many children did John Lennon have?
+]]></string>
+<string lang="de"><![CDATA[
+Wieviele Kinder hatte John Lennon?
+]]></string>
+<string lang="es"><![CDATA[
+Cuantos hijos tiene John Lennon
+]]></string>
+<string lang="it"><![CDATA[
+Quanti figli ha avuto John Lennon?
+]]></string>
+<string lang="fr"><![CDATA[
+Combien d'enfants avait John Lennon?
+]]></string>
+<string lang="nl"><![CDATA[
+Hoeveel kinderen had John Lennon?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+John Lennon, number of children
+]]></keywords>
+<keywords lang="de"><![CDATA[
+John Lennon, Anzahl Kinder
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+John Lennon, numero de hijos
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+John Lennon, numero di figli
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+John Lennon, nombre d'enfants
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+John Lennon, aantal kinderen
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT COUNT(DISTINCT ?child)
+WHERE {
+  ?artist foaf:name 'John Lennon' .
+  ?artist rel:parentOf ?child .
+}
+]]></query>
+</question>
+
+<question id="97" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Which Beatles were married more than once?
+]]></string>
+<string lang="de"><![CDATA[
+Welche Beatles waren mehr als einmal verheiratet?
+]]></string>
+<string lang="es"><![CDATA[
+Que Beatles se han casado más de una vez?
+]]></string>
+<string lang="it"><![CDATA[
+Quali Beatles sono stati sposati più di una volta?
+]]></string>
+<string lang="fr"><![CDATA[
+Quels Beatles se sont mariés plus d'une fois?
+]]></string>
+<string lang="nl"><![CDATA[
+Welke Beatles waren meer dan één keer getrouwd?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+The Beatles, member, number of spouses, greater than 1
+]]></keywords>
+<keywords lang="de"><![CDATA[
+The Beatles, Mitglied, Anzahl Ehepartner, größer als 1
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+Beatles, casado, más una vez
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Beatles, membro, numero di mogli, maggiore di 1
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Beatles, membre, nombre de marriage, plus d'une fois
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+The Beatles, lid, aantal echtgenotes, meer dan 1
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?artist
+WHERE {
+  ?band foaf:name 'The Beatles' .
+  ?artist mo:member_of ?band .
+  ?artist rel:spouseOf ?spouse .
+} 
+GROUP BY ?artist
+HAVING (COUNT(?spouse) > 1)
+]]></query>
+</question>
+
+<question id="98" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[
+Show me all live albums by Nat King Cole.
+]]></string>
+<string lang="de"><![CDATA[
+Zeige mir alle Live-Alben von Nat King Cole.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los álbumes en directo de Nat King Cole
+]]></string>
+<string lang="it"><![CDATA[
+Mostrami tutti gli album live di Nat King Cole.
+]]></string>
+<string lang="fr"><![CDATA[
+Montres-moi tous les albums live de Nat King Cole.
+]]></string>
+<string lang="nl"><![CDATA[
+Toon alle live-albums van Nat King Cole.
+]]></string>
+<keywords lang="en"><![CDATA[ 
+live album, Nat King Cole
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Live-Album, Nat King Cole
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+álbumes en directo, Nat King Cole
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+album live, Nat King Cole
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+albums live, Nat King Cole
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+live-album, Nat King Cole
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?album
+WHERE {
+  ?album rdf:type mo:Record . 
+  ?album mo:release_type mo:live .
+  ?album foaf:maker ?artist .
+  ?artist foaf:name 'Nat King Cole' .
+}
+]]></query>
+</question>
+
+<question id="99" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[
+Who was born on the same day as Frank Sinatra?
+]]></string>
+<string lang="de"><![CDATA[
+Wer wurde am selben Tag wie Frank Sinatra geboren?
+]]></string>
+<string lang="es"><![CDATA[
+Quien nació el mismo día que Frank Sinatra?
+]]></string>
+<string lang="it"><![CDATA[
+Chi è nato lo stesso giorno di Frank Sinatra?
+]]></string>
+<string lang="fr"><![CDATA[
+Qui est né le même jour que Frank Sinatra?
+]]></string>
+<string lang="nl"><![CDATA[
+Wie werd op dezelfde dag geboren als Frank Sinatra?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+birth date, same as, Frank Sinatra, birth date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Geburtstag, gleich, Frank Sinatra, Geburtstag
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha nacimiento, igual, Frank Sinatra
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+data di nascita, uguale, Frank Sinatra, data di nascita
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+date de naissance, même que, Frank Sinatra
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+geboortedatum, identiek, Frank Sinatra
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist
+WHERE {
+  ?sinatra foaf:name 'Frank Sinatra' .
+  ?sinatra bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+  ?artist bio:event ?event_2 .
+  ?event_2 rdf:type bio:Birth .
+  ?event_2 bio:date ?date .
+  FILTER (!sameTerm(?artist,?sinatra))
+}
+]]></query>
+</question>
+
+<question id="100" answertype="date" aggregation="false">
+<string lang="en"><![CDATA[
+Since when does Scattered Earth exist?
+]]></string>
+<string lang="de"><![CDATA[
+Seit wann gibt es Scattered Earth?
+]]></string>
+<string lang="es"><![CDATA[
+Desde cuando existe Scattered Earth?
+]]></string>
+<string lang="it"><![CDATA[
+Da quando esistono gli Scattered Earth?
+]]></string>
+<string lang="fr"><![CDATA[
+Depuis quand existe Scattered Earth?
+]]></string>
+<string lang="nl"><![CDATA[
+Sinds wanneer bestaat Scattered Earth?
+]]></string>
+<keywords lang="en"><![CDATA[ 
+Scattered Earth, start date
+]]></keywords>
+<keywords lang="de"><![CDATA[
+Scattered Earth, Startdatum
+]]></keywords>
+<keywords lang="es"><![CDATA[ 
+fecha de inicio, Scattered Earth
+]]></keywords>
+<keywords lang="it"><![CDATA[ 
+Scattered Earth, data di inizio
+]]></keywords>
+<keywords lang="fr"><![CDATA[ 
+Scattered Earth, date de création
+]]></keywords>
+<keywords lang="nl"><![CDATA[ 
+Scattered Earth, oprichting, datum
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?date
+WHERE {
+  ?artist foaf:name 'Scattered Earth'.
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+}
+]]></query>
+</question>  
+
+</dataset>
+

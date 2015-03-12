@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+\textwidth13cm
+\parindent0mm
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\textsc{\large Question Answering over Linked Data}
+
+\vspace{.2cm}
+
+\textbf{\huge QALD-4: Evaluation results}
+\end{center}
+
+\vspace{.4cm}
+
+\hrule 
+
+\vspace{.4cm}
+
+\emph{Website:} \url{http://www.sc.cit-ec.uni-bielefeld.de/qald}
+
+\vspace{1cm}
+
+\emph{Results\footnotemark[1] for Task 1: Multilingual question answering over DBpedia}
+
+\vspace{.6cm}
+
+\begin{tabular}{rccccccc}
+& Total & Processed & Right & Partially & Recall & Precision & F-measure \\
+\hline \\[1ex]
+Xser & 50 & 40 & 34 & 6 & 0.71 & 0.72 & \textbf{0.72} \\
+gAnswer & 50 & 25 & 16 & 4 & 0.37 & 0.37 & \textbf{0.37} \\
+CASIA & 50 & 26 & 15 & 4 & 0.40 & 0.32 & \textbf{0.36} \\
+Intui3 & 50 & 33 & 10 & 4 & 0.25 & 0.23 & \textbf{0.24} \\
+ISOFT & 50 & 50 & 10 & 3 & 0.26 & 0.21 & \textbf{0.23} \\
+RO\_FII & 50 & 50 & 6 & 0 & 0.12 & 0.12 & \textbf{0.12} \\
+\end{tabular}
+
+\vspace{.8cm}
+
+\emph{Results\footnotemark[1] for Task 2: Biomedical question answering over interlinked data} 
+
+\vspace{.6cm}
+
+\begin{tabular}{rccccccc}
+& Total & Processed & Right & Partially & Recall & Precision & F-measure \\
+\hline \\[1ex]
+GFMed & 25 & 25 & 24 & 1 & 0.99 & 1.0 & \textbf{0.99} \\
+POMELO & 25 & 25 & 19 & 3 & 0.87 & 0.82 & \textbf{0.85} \\
+RO\_FII & 25 & 25 & 4 & 0 & 0.16 & 0.16 & \textbf{0.16} \\
+\end{tabular}
+
+\vspace{.8cm}
+
+\emph{Results for Task 3: Hybrid question answering}
+
+\vspace{.6cm} 
+
+Submissions: 1 (withdrawn) 
+
+\footnotetext[1]{The column \emph{processed} states for how many of the questions the system provided an answer, 
+\emph{right} specifies how many of these questions were answered with an F-measure of 1, 
+and \emph{partially} specifies how many of the questions were answered with an F-measure strictly between 0 and 1.}
+
+\end{document}

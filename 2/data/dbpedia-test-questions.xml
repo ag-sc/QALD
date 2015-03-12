@@ -1,0 +1,894 @@
+<?xml version="1.0" ?>
+<dataset id="dbpedia-test">
+
+<question id="1" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Which German cities have more than 250000 inhabitants?
+]]></string>
+<keywords><![CDATA[
+German, city, more than 250000, inhabitants
+]]></keywords>
+</question>
+
+<question id="2" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who was the successor of John F. Kennedy?
+]]></string>
+<keywords><![CDATA[
+successor, John F. Kennedy
+]]></keywords>
+</question>
+
+<question id="3" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who is the mayor of Berlin?
+]]></string>
+<keywords><![CDATA[
+mayor, Berlin
+]]></keywords>
+</question>
+
+<question id="4" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How many students does the Free University in Amsterdam have?
+]]></string>
+<keywords><![CDATA[
+student, Free University, Amsterdam
+]]></keywords>
+</question>
+
+<question id="5" answertype="resource" aggregation="true" onlydbo="false">
+<string><![CDATA[
+What is the second highest mountain on Earth?
+]]></string>
+<keywords><![CDATA[
+second highest, mountain, Earth
+]]></keywords>
+</question>
+
+<question id="6" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all professional skateboarders from Sweden.
+]]></string>
+<keywords><![CDATA[
+professional, skateboarder, Sweden
+]]></keywords>
+</question>
+
+<question id="7" answertype="date" aggregation="false" onlydbo="false">
+<string><![CDATA[
+When was Alberta admitted as province?
+]]></string>
+<keywords><![CDATA[
+Alberta, admit, province
+]]></keywords>
+</question>
+
+<question id="8" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+To which countries does the Himalayan mountain system extend?
+]]></string>
+<keywords><![CDATA[
+Himalayan mountain system, extend, country
+]]></keywords>
+</question>
+
+<question id="9" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me a list of all trumpet players that were bandleaders.
+]]></string>
+<keywords><![CDATA[
+trumpet player, bandleader
+]]></keywords>
+</question>
+
+<question id="10" answertype="number" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the total amount of men and women serving in the FDNY?
+]]></string>
+<keywords><![CDATA[
+total amount, men, women, serve, FDNY
+]]></keywords>
+</question>
+
+<question id="11" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Who is the Formula 1 race driver with the most races?
+]]></string>
+<keywords><![CDATA[
+Formula 1, race driver, most, races
+]]></keywords>
+</question>
+
+<question id="12" answertype="resource" aggregation="true" onlydbo="false">
+<string><![CDATA[
+Give me all world heritage sites designated within the past five years.
+]]></string>
+<keywords><![CDATA[
+world heritage site, designate, past five years
+]]></keywords>
+</question>
+
+<question id="13" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Who is the youngest player in the Premier League?
+]]></string>
+<keywords><![CDATA[
+youngest, player, Premier League
+]]></keywords>
+</question>
+
+<question id="14" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all members of Prodigy.
+]]></string>
+<keywords><![CDATA[
+member, Prodigy
+]]></keywords>
+</question>
+
+<question id="15" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the longest river?
+]]></string>
+<keywords><![CDATA[
+longest, river
+]]></keywords>
+</question>
+
+<question id="16" answertype="boolean" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Does the new Battlestar Galactica series have more episodes than the old one?
+]]></string>
+<keywords><![CDATA[
+new BattleStar Galactica series, more, episodes, old Battle Star Galactica series
+]]></keywords>
+</question>
+
+<question id="17" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all cars that are produced in Germany.
+]]></string>
+<keywords><![CDATA[
+car, produce, Germany
+]]></keywords>
+</question>
+
+
+<question id="19" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all people that were born in Vienna and died in Berlin.
+]]></string>
+<keywords><![CDATA[
+people, born, Vienna, die, Berlin
+]]></keywords>
+</question>
+
+<question id="20" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How tall is Michael Jordan?
+]]></string>
+<keywords><![CDATA[
+tall, Michael Jordan
+]]></keywords>
+</question>
+
+<question id="21" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+What is the capital of Canada?
+]]></string>
+<keywords><![CDATA[
+capital, Canada
+]]></keywords>
+</question>
+
+<question id="22" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who is the governor of Texas?
+]]></string>
+<keywords><![CDATA[
+governor, Texas
+]]></keywords>
+</question>
+
+<question id="23" answertype="boolean" aggregation="true" onlydbo="false">
+<string><![CDATA[
+Do Harry and William, Princes of Wales, have the same mother?
+]]></string>
+<keywords><![CDATA[
+Harry, William, Prince of Wales, same, mother
+]]></keywords>
+</question>
+
+<question id="24" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who was the father of Queen Elizabeth II?
+]]></string>
+<keywords><![CDATA[
+father, Queen Elizabeth II
+]]></keywords>
+</question>
+
+<question id="25" answertype="resource" aggregation="true" onlydbo="false">
+<string><![CDATA[
+Which U.S. state has been admitted latest?
+]]></string>
+<keywords><![CDATA[
+U.S. state, admit, last
+]]></keywords>
+</question>
+
+<question id="26" answertype="number" aggregation="true" onlydbo="true">
+<string><![CDATA[
+How many official languages are spoken on the Seychelles?
+]]></string>
+<keywords><![CDATA[
+official language, spoken, Seychelles
+]]></keywords>
+</question>
+
+<question id="27" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Sean Parnell is the governor of which U.S. state?
+]]></string>
+<keywords><![CDATA[
+Sean Parnell, governor, U.S. state
+]]></keywords>
+</question>
+
+<question id="28" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all movies directed by Francis Ford Coppola.
+]]></string>
+<keywords><![CDATA[
+movie, direct, Francis Ford Coppola
+]]></keywords>
+</question>
+
+<question id="29" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all actors starring in movies directed by and starring William Shatner.
+]]></string>
+<keywords><![CDATA[
+actor, starring, movie, direct, starring, William Shatner
+]]></keywords>
+</question>
+
+<question id="30" answertype="string" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the birth name of Angela Merkel?
+]]></string>
+<keywords><![CDATA[
+birth name, Angela Merkel
+]]></keywords>
+</question>
+
+<question id="31" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all current Methodist national leaders.
+]]></string>
+<keywords><![CDATA[
+current, Methodist, national leader
+]]></keywords>
+</question>
+
+<question id="32" answertype="number" aggregation="true" onlydbo="true">
+<string><![CDATA[
+How often did Nicole Kidman marry?
+]]></string>
+<keywords><![CDATA[
+Nicole Kidman, marry
+]]></keywords>
+</question>
+
+<question id="33" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all Australian nonprofit organizations.
+]]></string>
+<keywords><![CDATA[
+Australian, nonprofit organization
+]]></keywords>
+</question>
+
+<question id="34" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+In which military conflicts did Lawrence of Arabia participate?
+]]></string>
+<keywords><![CDATA[
+Lawrence of Arabia, participate, military conflict
+]]></keywords>
+</question>
+
+<question id="35" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who developed Skype?
+]]></string>
+<keywords><![CDATA[
+develop, Skype
+]]></keywords>
+</question>
+
+<question id="36" answertype="number" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the melting point of copper?
+]]></string>
+<keywords><![CDATA[
+melting point, copper
+]]></keywords>
+</question>
+
+<question id="37" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all sister cities of Brno.
+]]></string>
+<keywords><![CDATA[
+sister city, Brno
+]]></keywords>
+</question>
+
+<question id="38" answertype="number" aggregation="true" onlydbo="true">
+<string><![CDATA[
+How many inhabitants does Maribor have?
+]]></string>
+</question>
+
+<question id="39" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all companies in Munich.
+]]></string>
+<keywords><![CDATA[
+company, Munich
+]]></keywords>
+</question>
+
+<question id="40" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+List all boardgames by GMT.
+]]></string>
+<keywords><![CDATA[
+boardgame, GMT
+]]></keywords>
+</question>
+
+<question id="41" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who founded Intel?
+]]></string>
+<keywords><![CDATA[
+founded, Intel
+]]></keywords>
+</question>
+
+<question id="42" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who is the husband of Amanda Palmer?
+]]></string>
+<keywords><![CDATA[
+husband, Amanda Palmer
+]]></keywords>
+</question>
+
+<question id="43" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all breeds of the German Shepherd dog.
+]]></string>
+<keywords><![CDATA[
+breed, German Shepherd dog
+]]></keywords>
+</question>
+
+<question id="44" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which cities does the Weser flow through?
+]]></string>
+<keywords><![CDATA[
+Weser, flow through, city
+]]></keywords>
+</question>
+
+<question id="45" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which countries are connected by the Rhine?
+]]></string>
+<keywords><![CDATA[
+contry, connected, Rhine
+]]></keywords>
+</question>
+
+<question id="46" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which professional surfers were born on the Philippines?
+]]></string>
+<keywords><![CDATA[
+professional surfer, born, Philippines
+]]></keywords>
+</question>
+
+<question id="47" answertype="num" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the average temperature on Hawaii?
+]]></string>
+<keywords><![CDATA[
+average temperature, Hawaii
+]]></keywords>
+</question>
+
+<question id="48" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+In which UK city are the headquarters of the MI6?
+]]></string>
+<keywords><![CDATA[
+UK city, headquarters, MI6
+]]></keywords>
+</question>
+
+<question id="49" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Which other weapons did the designer of the Uzi develop?
+]]></string>
+<keywords><![CDATA[
+designer, Uzi, develop, other, weapon
+]]></keywords>
+</question>
+
+<question id="50" answertype="boolean" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+]]></string>
+<keywords><![CDATA[
+Cuban Missile Crisis, earlier, Bay of Pigs Invasion
+]]></keywords>
+</question>
+
+<question id="51" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all Frisian islands that belong to the Netherlands.
+]]></string>
+<keywords><![CDATA[
+Frisian island, belong, Netherlands
+]]></keywords>
+</question>
+
+<question id="52" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who invented the zipper?
+]]></string>
+<keywords><![CDATA[
+invent, zipper
+]]></keywords>
+</question>
+
+<question id="53" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the ruling party in Lisbon?
+]]></string>
+<keywords><![CDATA[
+ruling party, Lisbon
+]]></keywords>
+</question>
+
+<question id="54" answertype="string" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What are the nicknames of San Francisco?
+]]></string>
+<keywords><![CDATA[
+nickname, San Francisco
+]]></keywords>
+</question>
+
+<question id="55" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Which Greek goddesses dwelt on Mount Olympus?
+]]></string>
+<keywords><![CDATA[
+Greek goddess, dwell, Mount Olympys
+]]></keywords>
+</question>
+
+<question id="56" answertype="date" aggregation="false" onlydbo="false">
+<string><![CDATA[
+When were the Hells Angels founded?
+]]></string>
+<keywords><![CDATA[
+Hells Angels, founded
+]]></keywords>
+</question>
+
+<question id="57" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me the Apollo 14 astronauts.
+]]></string>
+<keywords><![CDATA[
+Apollo 14, astronaut
+]]></keywords>
+</question>
+
+<question id="58" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the time zone of Salt Lake City?
+]]></string>
+<keywords><![CDATA[
+time zone, Salt Lake City
+]]></keywords>
+</question>
+
+<question id="59" answertype="resource" aggregation="true" onlydbo="false">
+<string><![CDATA[
+Which U.S. states are in the same timezone as Utah?
+]]></string>
+<keywords><![CDATA[
+U.S. state, same, timezone, Utah
+]]></keywords>
+</question>
+
+<question id="60" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me a list of all lakes in Denmark.
+]]></string>
+<keywords><![CDATA[
+lake, Denmark
+]]></keywords>
+</question>
+
+<question id="61" answertype="number" aggregation="true" onlydbo="true">
+<string><![CDATA[
+How many space missions have there been?
+]]></string>
+<keywords><![CDATA[
+space mission
+]]></keywords>
+</question>
+
+<question id="62" answertype="boolean" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Did Socrates influence Aristotle?
+]]></string>
+<keywords><![CDATA[
+Socrates, influence, Aristotle
+]]></keywords>
+</question>
+
+<question id="63" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all Argentine films.
+]]></string>
+<keywords><![CDATA[
+Argentine, film
+]]></keywords>
+</question>
+
+<question id="64" answertype="list" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Give me all launch pads operated by NASA.
+]]></string>
+<keywords><![CDATA[
+NASA, operate, launch pad
+]]></keywords>
+</question>
+
+<question id="65" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which instruments did John Lennon play?
+]]></string>
+<keywords><![CDATA[
+John Lennon, play, instrument
+]]></keywords>
+</question>
+
+<question id="66" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Which ships were called after Benjamin Franklin?
+]]></string>
+<keywords><![CDATA[
+ship, called after, Benjamin Franklin
+]]></keywords>
+</question>
+
+<question id="67" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who are the parents of the wife of Juan Carlos I?
+]]></string>
+<keywords><![CDATA[
+parents, wife, Juan Carlos I
+]]></keywords>
+</question>
+
+<question id="68" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How many employees does Google have?
+]]></string>
+<keywords><![CDATA[
+employees, Google
+]]></keywords>
+</question>
+
+<question id="69" answertype="boolean" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Did Tesla win a nobel prize in physics?
+]]></string>
+<keywords><![CDATA[
+Tesla, win, nobel prize, physics
+]]></keywords>
+</question>
+
+<question id="70" answertype="boolean" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Is Michelle Obama the wife of Barack Obama?
+]]></string>
+<keywords><![CDATA[
+Michelle Obama, wife, Barack Obama
+]]></keywords>
+</question>
+
+<question id="71" answertype="date" aggregation="false" onlydbo="false">
+<string><![CDATA[
+When was the Statue of Liberty built?
+]]></string>
+<keywords><![CDATA[
+Statue of Liberty, built
+]]></keywords>
+</question>
+
+<question id="72" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+In which U.S. state is Area 51 located?
+]]></string>
+<keywords><![CDATA[
+Area 51, located, U.S. state
+]]></keywords>
+</question>
+
+<question id="73" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How many children did Benjamin Franklin have?
+]]></string>
+<keywords><![CDATA[
+Benjamin Franklin, child
+]]></keywords>
+</question>
+
+<question id="74" answertype="date" aggregation="false" onlydbo="true">
+<string><![CDATA[
+When did Michael Jackson die?
+]]></string>
+<keywords><![CDATA[
+Michael Jackson, die
+]]></keywords>
+</question>
+
+<question id="75" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Which daughters of British earls died in the same place they were born in?
+]]></string>
+<keywords><![CDATA[
+daughter, British earl, die, same, place, born
+]]></keywords>
+</question>
+
+<question id="76" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+List the children of Margaret Thatcher.
+]]></string>
+<keywords><![CDATA[
+Margaret Thatcher, child
+]]></keywords>
+</question>
+
+<question id="77" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who was called Scarface?
+]]></string>
+<keywords><![CDATA[
+called, Scarface
+]]></keywords>
+</question>
+
+<question id="78" answertype="boolean" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Was Margaret Thatcher a chemist?
+]]></string>
+<keywords><![CDATA[
+Margaret Thatcher, chemist
+]]></keywords>
+</question>
+
+<question id="79" answertype="boolean" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Was Dutch Schultz a jew?
+]]></string>
+<keywords><![CDATA[
+Dutch Schultz, jew
+]]></keywords>
+</question>
+
+<question id="80" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Give me all books by William Goldman with more than 300 pages.
+]]></string>
+<keywords><![CDATA[
+book, William Goldman, more than 300, pages
+]]></keywords>
+</question>
+
+<question id="81" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which books by Kerouac were published by Viking Press?
+]]></string>
+<keywords><![CDATA[
+Viking Press, publish, book, Kerouac
+]]></keywords>
+</question>
+
+<question id="82" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me a list of all American inventions.
+]]></string>
+<keywords><![CDATA[
+American invention
+]]></keywords>
+</question>
+
+<question id="83" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How high is the Mount Everest?
+]]></string>
+<keywords><![CDATA[
+high, Mount Everest
+]]></keywords>
+</question>
+
+<question id="84" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who created the comic Captain America?
+]]></string>
+<keywords><![CDATA[
+create, comic, Captain America
+]]></keywords>
+</question>
+
+<question id="85" answertype="number" aggregation="false" onlydbo="true">
+<string><![CDATA[
+How many people live in the capital of Australia?
+]]></string>
+<keywords><![CDATA[
+people, live, capital, Australia
+]]></keywords>
+</question>
+
+<question id="86" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+What is the largest city in Australia?
+]]></string>
+<keywords><![CDATA[
+largest, city, Australia
+]]></keywords>
+</question>
+
+<question id="87" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who composed the music for Harold and Maude?
+]]></string>
+<keywords><![CDATA[
+compose, music, Harold and Maude
+]]></keywords>
+</question>
+
+<question id="88" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which films starring Clint Eastwood did he direct himself?
+]]></string>
+<keywords><![CDATA[
+film, starring, Clint Eastwood, direct
+]]></keywords>
+</question>
+
+<question id="89" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+In which city was the former Dutch queen Juliana buried?
+]]></string>
+<keywords><![CDATA[
+city, former Dutch queen Juliana, burried
+]]></keywords>
+</question>
+
+
+<question id="90" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Where is the residence of the prime minister of Spain?
+]]></string>
+<keywords><![CDATA[
+residence, prime minister, Spain
+]]></keywords>
+</question>
+
+<question id="91" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Which U.S. State has the abbreviation MN?
+]]></string>
+<keywords><![CDATA[
+U.S. state, abbreviation, MN
+]]></keywords>
+</question>
+
+<question id="92" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+]]></string>
+<keywords><![CDATA[
+song, Bruce Springsteen, release, between 1980 and 1990
+]]></keywords>
+</question>
+
+<question id="93" answertype="resource" aggregation="true" onlydbo="false">
+<string><![CDATA[
+Which movies did Sam Raimi direct after Army of Darkness?
+]]></string>
+<keywords><![CDATA[
+Sam Reimi, direct, movie, after, Army of Darkness
+]]></keywords>
+</question>
+
+<question id="94" answertype="number" aggregation="false" onlydbo="false">
+<string><![CDATA[
+What is the founding year of the brewery that produces Pilsner Urquell?
+]]></string>
+<keywords><![CDATA[
+founding year, brewery, produce, Pilsner Urquell
+]]></keywords>
+</question>
+
+<question id="95" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who wrote the lyrics for the Polish national anthem?
+]]></string>
+<keywords><![CDATA[
+write, lyrics, Polish, national anthem
+]]></keywords>
+</question>
+
+<question id="96" answertype="string" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Give me all B-sides of the Ramones. 
+]]></string>
+<keywords><![CDATA[
+B-sides, Ramones
+]]></keywords>
+</question>
+
+<question id="97" answertype="resource" aggregation="false" onlydbo="false">
+<string><![CDATA[
+Who painted The Storm on the Sea of Galilee?
+]]></string>
+<keywords><![CDATA[
+paint, The Storm on the Sea of Galilee
+]]></keywords>
+</question>
+
+<question id="98" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Which country does the creator of Miffy come from?
+]]></string>
+<keywords><![CDATA[
+country, creator, Miffy
+]]></keywords>
+</question>
+
+<question id="99" answertype="resource" aggregation="true" onlydbo="true">
+<string><![CDATA[
+For which label did Elvis record his first album?
+]]></string>
+<keywords><![CDATA[
+Elvis, record, first, album, label
+]]></keywords>
+</question>
+
+<question id="100" answertype="resource" aggregation="false" onlydbo="true">
+<string><![CDATA[
+Who produces Orangina?
+]]></string>
+<keywords><![CDATA[
+produce, Orangina
+]]></keywords>
+</question>
+
+</dataset>

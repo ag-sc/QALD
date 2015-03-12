@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<dataset id="qald-4_hybrid_test">
+
+<question answertype="string" id="1" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[For which movie did the daughter of Francis Ford Coppola receive an Oscar?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string
+WHERE {
+        res:Francis_Ford_Coppola dbo:child ?x .
+        ?x text:"receive Oscar for" ?string .
+}
+]]></pseudoquery>
+<answers>
+<answer>
+<string>Lost in Translation</string>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="2" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Which city does the first person to climb all 14 eight-thousanders come from?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE {
+        ?x text:"is" text:"first person to climb all fourteen eight-thousanders" .
+        ?x dbo:birthPlace ?uri .
+        ?uri rdf:type dbo:Settlement .
+}
+]]></pseudoquery>
+<answers>
+<answer>
+<uri>http://http://dbpedia.org/page/Brixen</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="3" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[At which college did the only American actor that received the César Award study?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string
+WHERE {
+        ?x text:"is" text:"the only American actor that received the César Award" .
+        ?x dbo:almaMater ?uri .
+}
+]]></pseudoquery>
+<answers>
+<answer>
+<uri>http://dbpedia.org/resource/Queens_College,_City_University_of_New_York</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="boolean" id="4" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Did Napoleon's first wife die in France?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE {
+        ?x text:"first wife of" text:"Napoleon" .
+        ?x dbo:deathPlace res:France .	
+}
+]]></pseudoquery>
+<answers>
+<answer>
+<boolean>true</boolean>
+</answer>
+</answers>
+</question>
+
+<question answertype="string" id="5" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is the current James Bond?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE {
+        res:James_Bond dbo:lastAppearance ?x .
+        ?x text:"feature as James Bond" ?string .
+}
+]]></pseudoquery>
+<answers>
+<answer>
+<string>Daniel Craig</string>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="6" aggregation="false" onlydbo="false">
+<string lang="en"><![CDATA[What eating disorder is characterized by eating substances such as clay and sand?]]></string>
+<pseudoquery><![CDATA[
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX yago: <http://dbpedia.org/class/yago/>
+SELECT ?uri WHERE
+{
+  ?uri rdf:type yago:EatingDisorders .
+  ?uri text:"characterized by" "appetite for clay and sand" .
+}
+]]></pseudoquery>
+<answers>  
+<answer>
+<uri>http://dbpedia.org/resource/Pica_(disorder)</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="7" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[What is the birth place of Hollywood's highest-paid actress?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"Hollywood's highest-paid actress" .
+        ?x dbo:birthPlace ?uri .
+}
+]]></pseudoquery>
+<answers>  
+<answer>
+<uri>http://dbpedia.org/resource/Los_Angeles</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="8" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[In which city does the leader of the Xposé girls live?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"leader of the Xposé girls" .
+        ?x dbo:residence ?uri .
+]]></pseudoquery>
+<answers>  
+<answer>
+<uri>http://dbpedia.org/resource/Dublin</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="9" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdfs:label ?l .
+        FILTER regex(?l,"Around the World in 80 Days","i")
+        ?x dbo:director res:Buzz_Kulik .
+        ?x dbo:starring ?uri .
+        ?uri text:"plays" text:"Phileas Fogg" .
+}       
+]]></pseudoquery>
+<answers>  
+<answer>
+<uri>http://dbpedia.org/resource/Pierce_Brosnan</uri>
+</answer>
+</answers>
+</question>
+
+<question answertype="resource" id="10" aggregation="false" onlydbo="true">
+<string lang="en"><![CDATA[Who played the drums in the band that wrote Complete Control?]]></string>
+<pseudoquery><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Complete_Control dbo:musicalArtist ?x .
+        ?x dbo:bandMember ?uri .
+        ?uri text:"plays" text:"drums" .
+}      
+]]></pseudoquery>
+<answers>  
+<answer>
+<uri>http://dbpedia.org/resource/Topper_Headon</uri>
+</answer>
+</answers>
+</question>
+
+</dataset>

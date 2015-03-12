@@ -1,0 +1,64 @@
+
+<h1>Task 2: Ontology lexicalization</h1>
+
+<p>
+Multilingual information access can be facilitated by the availability of lexica in different
+languages, for example allowing for an easy mapping of Spanish, German, and French natural
+language expressions to English ontology labels.
+</p>
+
+<h2>Task</h2>
+
+The task consists in finding English lexicalizations of a set of classes and properties from the
+DBpedia ontology in a Wikipedia corpus.
+The submitted lexicalizations are expected to follow the ontology lexicon format 
+<a href="http://lemon-model.net/"><i>lemon</i></a>.
+
+<p>Full description: <img src="pictures/file.png" border="0"> <a href="3/documents/qald3_openchallenge.pdf">qald3_openchallenge.pdf</a> (Last updated: March 25, 2013)</p>
+
+<h2>Training data</h2>
+
+The training data consists of a set of 10 classes and 30 properties from the DBpedia ontology, 
+as well as a <i>lemon</i> lexicon containing lexicalizations of those classes and properties.
+
+<ul>
+<li><a href="3/data/dbpedia_train_classes_properties.txt">dbpedia_train_classes_properties.txt</a></li>
+<li><a href="3/data/dbpedia_train_lexicon_en.ttl">dbpedia_train_lexicon_en.ttl</a></li>
+</ul>
+
+A suitable corpus for finding lexicalizations is Wikipedia.  
+You can either download one of their <a href="http://en.wikipedia.org/wiki/Wikipedia:Database_download">data dumps</a>,
+or directly download <a href="https://www.dropbox.com/s/chncp9zjy81r42n/wikipediaSentences.tar.bz2">an already cleaned up part of English Wikipedia</a> (1.54 GB).
+
+<br />
+<h2><font color="#ff0000">NEW:</font> Test data</h2>
+
+The test data consists of a similar set of additional 10 classes and 30 properties from the DBpedia ontology, 
+for which lexicalization have to be found. 
+
+<ul>
+<li><a href="3/data/dbpedia_test_classes_properties.txt">dbpedia_test_classes_properties.txt</a></li>
+</ul>
+
+
+<h2>Evaluation</h2>
+
+<p>
+Submitted lexica will be evaluated with respect to the reference data along three main criteria: 
+<ul>
+<li><i>lexical precision</i> (How many of the lexical entries in the submitted
+lexicon are also in the gold standard lexicon?) </li>
+<li><i>lexical recall</i> (How many of the lexical entries in
+the gold standard lexicon are also in the submitted lexicon?)</li> 
+<li><i>lexical accuracy</i> (checking the correctness of the frames 
+and argument mappings for each lexical entry in the submitted lexicon with respect 
+to the gold standard lexicon)</li>
+</ul>
+</p>
+
+<p>For both training and test phase, results can be uploaded with the following evaluation form: </p>
+<ul>
+<li><a href="index.php?x=evaltool&q=3">Evaluation tool</a></li>
+</ul>
+</p>
+

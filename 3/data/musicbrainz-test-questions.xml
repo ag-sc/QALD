@@ -1,0 +1,703 @@
+<?xml version="1.0" ?>
+<dataset id="musicbrainz-test">
+<question aggregation="false" answertype="resource" id="2">
+<string lang="en"><![CDATA[Who produced the album Dookie?]]></string>
+<string lang="de"><![CDATA[Wer produzierte das Album Dookie?]]></string>
+<string lang="es"><![CDATA[¿Quien es el productor del álbum Dookie?]]></string>
+<string lang="it"><![CDATA[Chi ha prodotto l'album Dookie?]]></string>
+<string lang="fr"><![CDATA[Qui a produit l'album Dookie?]]></string>
+<string lang="nl"><![CDATA[Wie produceerde het album Dookie?]]></string>
+<keywords lang="en"><![CDATA[album, Dookie, producer]]></keywords>
+<keywords lang="de"><![CDATA[Album, Dookie, Produzent]]></keywords>
+<keywords lang="es"><![CDATA[productor, álbum, Dookie]]></keywords>
+<keywords lang="it"><![CDATA[album, Dookie, produttore]]></keywords>
+<keywords lang="fr"><![CDATA[produit, album, Dookie]]></keywords>
+<keywords lang="nl"><![CDATA[album, Dookie, producent]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="52">
+<string lang="en"><![CDATA[In which countries was the single Incomplete published?]]></string>
+<string lang="de"><![CDATA[In welchen Ländern kam die Single Incomplete heraus?]]></string>
+<string lang="es"><![CDATA[¿En que países se ha publicado el single Incomplete?]]></string>
+<string lang="it"><![CDATA[In quale stato fu pubblicato il singolo Incomplete?]]></string>
+<string lang="fr"><![CDATA[Dans quels pays a été publié le single Incomplete?]]></string>
+<string lang="nl"><![CDATA[In welke landen is de single Incomplete uitgebracht?]]></string>
+<keywords lang="en"><![CDATA[single, Incomplete, country]]></keywords>
+<keywords lang="de"><![CDATA[Single, Incomplete, Land]]></keywords>
+<keywords lang="es"><![CDATA[países, publicado, single Incomplete]]></keywords>
+<keywords lang="it"><![CDATA[singolo, Incomplete, stato]]></keywords>
+<keywords lang="fr"><![CDATA[pays, single, Incomplete]]></keywords>
+<keywords lang="nl"><![CDATA[single, Incomplete, land]]></keywords>
+</question>
+<question aggregation="false" answertype="boolean" id="8">
+<string lang="en"><![CDATA[Is Bugs a track on the album Vitalogy?]]></string>
+<string lang="de"><![CDATA[Ist Bugs ein Lied auf dem Album Vitalogy?]]></string>
+<string lang="es"><![CDATA[¿Es Bugs un track en el álbum de Vitalogy?]]></string>
+<string lang="it"><![CDATA[Bugs è una traccia dell'album Vitalogy?]]></string>
+<string lang="fr"><![CDATA[Bugs est-il un morceau de l'album Vitalogy?]]></string>
+<string lang="nl"><![CDATA[Staat het nummer Bugs op het album Vitalogy?]]></string>
+<keywords lang="en"><![CDATA[track, Bugs, album, Vitalogy]]></keywords>
+<keywords lang="de"><![CDATA[Lied, Bugs, album, Vitalogy]]></keywords>
+<keywords lang="es"><![CDATA[track, Bugs, álbum, Vitalogy]]></keywords>
+<keywords lang="it"><![CDATA[traccia, Bugs, album, vitalogy]]></keywords>
+<keywords lang="fr"><![CDATA[Bugs, morceau, album, Vitalogy]]></keywords>
+<keywords lang="nl"><![CDATA[nummer, Bugs, album, Vitalogy]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="42">
+<string lang="en"><![CDATA[How many live albums by Elvis Presley are there?]]></string>
+<string lang="de"><![CDATA[Wieviele Live-Alben von Elvis Presley gibt es?]]></string>
+<string lang="es"><![CDATA[¿Cuantos álbumes existen de Elvis Presley?]]></string>
+<string lang="it"><![CDATA[Quanti album di Elvis Presley ci sono?]]></string>
+<string lang="fr"><![CDATA[Combien y a-t-il d'albums live d'Elvis Presley?]]></string>
+<string lang="nl"><![CDATA[Hoeveel live-albums van Elvis Presley zijn er?]]></string>
+<keywords lang="en"><![CDATA[Elvis Presley, number of live albums]]></keywords>
+<keywords lang="de"><![CDATA[Elvis Presley, Anzahl Live-Alben]]></keywords>
+<keywords lang="es"><![CDATA[Elvis Presley, numero de álbumes]]></keywords>
+<keywords lang="it"><![CDATA[Elvis Presley, numero di album live]]></keywords>
+<keywords lang="fr"><![CDATA[nombre d'albums live, Elvis Presley]]></keywords>
+<keywords lang="nl"><![CDATA[Elvis Presley, aantal, live-albums]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="30">
+<string lang="en"><![CDATA[Who was Whitney Houston's husband?]]></string>
+<string lang="de"><![CDATA[Wer war Whitney Houstons Ehemann?]]></string>
+<string lang="es"><![CDATA[¿Quien era el marido de Whitney Houston?]]></string>
+<string lang="it"><![CDATA[Chi era il marito di Whitney Houston?]]></string>
+<string lang="fr"><![CDATA[Qui était l'épou de Whitney Houston?]]></string>
+<string lang="nl"><![CDATA[Wie was de echtgenoot van Whitney Houston?]]></string>
+<keywords lang="en"><![CDATA[Whitney Houston, spouse]]></keywords>
+<keywords lang="de"><![CDATA[Whitney Houston, Ehemann]]></keywords>
+<keywords lang="es"><![CDATA[marido, Whitney Houston]]></keywords>
+<keywords lang="it"><![CDATA[Whitney Houston, marito]]></keywords>
+<keywords lang="fr"><![CDATA[épou, Whitney Houston]]></keywords>
+<keywords lang="nl"><![CDATA[Whitney Houston, echtgenoot]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="50">
+<string lang="en"><![CDATA[On which singles did Robbie Williams collaborate with Nicole Kidman?]]></string>
+<string lang="de"><![CDATA[Bei welchen Singles hat Robbie Williams mit Nicole Kidman zusammengearbeitet?]]></string>
+<string lang="es"><![CDATA[¿En cuantos singles ha colaborado Robbie Williams con Nicole Kidman?]]></string>
+<string lang="it"><![CDATA[In quale singolo Robbie Williams ha collaborato con Nicole Kidman?]]></string>
+<string lang="fr"><![CDATA[Quels sont les singles où Robbie Williams collabore avec Nicole Kidman?]]></string>
+<string lang="nl"><![CDATA[Op hoeveel singles heeft Robbie Williams samengewerkt met Nicole Kidman?]]></string>
+<keywords lang="en"><![CDATA[single, collaboration, Robbie Williams, Nicole Kidman]]></keywords>
+<keywords lang="de"><![CDATA[Single, Kollaboration, Robbie Williams, Nicole Kidman]]></keywords>
+<keywords lang="es"><![CDATA[single, colaborado, Robbie Williams, Nicole Kidman]]></keywords>
+<keywords lang="it"><![CDATA[singolo, collaborazione, Robbie Williams, Nicole Kidman]]></keywords>
+<keywords lang="fr"><![CDATA[singles, Robbie Williams, collabore, Nicole Kidman]]></keywords>
+<keywords lang="nl"><![CDATA[single, artiest, Robbie Williams, Nicole Kidman]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="21">
+<string lang="en"><![CDATA[How many singles did Brian Eno record?]]></string>
+<string lang="de"><![CDATA[Wieviele Singles hat Brian Eno aufgenommen?]]></string>
+<string lang="es"><![CDATA[¿Cuantos singles ha grabado Brian Eno?]]></string>
+<string lang="it"><![CDATA[Quanti songoli ha registrato Brian Eno?]]></string>
+<string lang="fr"><![CDATA[Combien de singles ont été enregistrés par Brian Eno?]]></string>
+<string lang="nl"><![CDATA[Hoeveel singles heeft Brian Eno opgenomen?]]></string>
+<keywords lang="en"><![CDATA[Brian Eno, number of singles]]></keywords>
+<keywords lang="de"><![CDATA[Brian Eno, Anzahl Singles]]></keywords>
+<keywords lang="es"><![CDATA[Brain Eno, numero de singles]]></keywords>
+<keywords lang="it"><![CDATA[Brian Eno, numero di singoli]]></keywords>
+<keywords lang="fr"><![CDATA[nombre de singles, enregistré, Brian Eno]]></keywords>
+<keywords lang="nl"><![CDATA[Brian Eno, aantal singles]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="7">
+<string lang="en"><![CDATA[Which artists turned 60 on May 15, 2011?]]></string>
+<string lang="de"><![CDATA[Welche Künstler sind am 15. Mai 2011 60 geworden?]]></string>
+<string lang="es"><![CDATA[¿Qué artistas cumplieron 60 años el 15 de mayo de 2011?]]></string>
+<string lang="it"><![CDATA[Quale artista ha compiuto 60 anni il 15 maggio 2011?]]></string>
+<string lang="fr"><![CDATA[Quels artistes ont atteint 60 ans le 15 Mai 2011?]]></string>
+<string lang="nl"><![CDATA[Welke artiesten werden 60 op 15 mei 2011?]]></string>
+<keywords lang="en"><![CDATA[artist, age 60, 2011-05-15]]></keywords>
+<keywords lang="de"><![CDATA[Künstler, Alter 60, 2011-05-15]]></keywords>
+<keywords lang="es"><![CDATA[artistas, cumplieron, 60 años, 2011-05-15]]></keywords>
+<keywords lang="it"><![CDATA[artista, 60 anni, 2011-05-15]]></keywords>
+<keywords lang="fr"><![CDATA[artistes, 60 ans, 2011-05-15]]></keywords>
+<keywords lang="nl"><![CDATA[artiesten, 60 jaar, 2011-05-15]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="1">
+<string lang="en"><![CDATA[Which groups were founded in 1924?]]></string>
+<string lang="de"><![CDATA[Welche Gruppen wurden 1924 gegründet?]]></string>
+<string lang="es"><![CDATA[¿Que grupos fueron fundados en el 1924?]]></string>
+<string lang="it"><![CDATA[Quali gruppi sono stati creati nel 1924?]]></string>
+<string lang="fr"><![CDATA[Quels groupes one été fondés en 1924?]]></string>
+<string lang="nl"><![CDATA[Welke bands werden opgericht in 1924?]]></string>
+<keywords lang="en"><![CDATA[group, start date, 1924]]></keywords>
+<keywords lang="de"><![CDATA[Gruppe, Startdatum, 1924]]></keywords>
+<keywords lang="es"><![CDATA[grupos, fundados, 1924]]></keywords>
+<keywords lang="it"><![CDATA[gruppo, data di inizio, 1924]]></keywords>
+<keywords lang="fr"><![CDATA[groupes, fondés, 1924]]></keywords>
+<keywords lang="nl"><![CDATA[band, opgericht, 1924]]></keywords>
+</question>
+<question aggregation="false" answertype="string" id="54">
+<string lang="en"><![CDATA[What is the legal name of Loona?]]></string>
+<string lang="de"><![CDATA[Was ist der bürgerliche Name von Loona?]]></string>
+<string lang="es"><![CDATA[¿Cual es el nombre legal de Loona?]]></string>
+<string lang="it"><![CDATA[Qual è il nome completo di Loona?]]></string>
+<string lang="fr"><![CDATA[Quel est le vrai nom de Loona?]]></string>
+<string lang="nl"><![CDATA[Wat is de echte naam van Loona?]]></string>
+<keywords lang="en"><![CDATA[Loona, legal name]]></keywords>
+<keywords lang="de"><![CDATA[Loona, bürgerlicher Name]]></keywords>
+<keywords lang="es"><![CDATA[nombre legal, Loona]]></keywords>
+<keywords lang="it"><![CDATA[Loona, nome completo]]></keywords>
+<keywords lang="fr"><![CDATA[vrai nom, Loona]]></keywords>
+<keywords lang="nl"><![CDATA[Loona, echte naam]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="14">
+<string lang="en"><![CDATA[How many singles did the Scorpions release?]]></string>
+<string lang="de"><![CDATA[Wieviele Singles haben die Scorpions herausgebracht?]]></string>
+<string lang="es"><![CDATA[¿Cuantos singles han estreando los Scorpions?]]></string>
+<string lang="it"><![CDATA[Quanti singoli sono stati rilasciati dagli Scorpions?]]></string>
+<string lang="fr"><![CDATA[Combien de singles ont été sortis par les Scorpions?]]></string>
+<string lang="nl"><![CDATA[Hoeveel singles hebben de Scorpions uitgebracht?]]></string>
+<keywords lang="en"><![CDATA[Scorpions, number of singles]]></keywords>
+<keywords lang="de"><![CDATA[Scorpions, Anzahl Singles]]></keywords>
+<keywords lang="es"><![CDATA[Scorpions, numero de singles]]></keywords>
+<keywords lang="it"><![CDATA[Scorpions, numero di singoli]]></keywords>
+<keywords lang="fr"><![CDATA[nomber de singles, les Scorpions]]></keywords>
+<keywords lang="nl"><![CDATA[Scorpions, aantal singles]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="27">
+<string lang="en"><![CDATA[What kind of record is Hijo de la luna?]]></string>
+<string lang="de"><![CDATA[Welche Art von Album ist Hijo de la luna?]]></string>
+<string lang="es"><![CDATA[¿Que tipo de disco es Hijo de la luna?]]></string>
+<string lang="it"><![CDATA[Che tipo di album è Hijo de la luna?]]></string>
+<string lang="fr"><![CDATA[Quel genre d'album est Hijo de la Luna?]]></string>
+<string lang="nl"><![CDATA[Wat voor soort album is Hijo de la luna?]]></string>
+<keywords lang="en"><![CDATA[Hijo de la luna, record type]]></keywords>
+<keywords lang="de"><![CDATA[Hijo de la luna, Albumtyp]]></keywords>
+<keywords lang="es"><![CDATA[Hijo de la luna, tipo de disco]]></keywords>
+<keywords lang="it"><![CDATA[Hijo de la luna, tipo di album]]></keywords>
+<keywords lang="fr"><![CDATA[genre d'album, Hijo de la Luna]]></keywords>
+<keywords lang="nl"><![CDATA[Hijo de la luna, albumtype]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="41">
+<string lang="en"><![CDATA[Which albums of Elvis Presley have Elvis in their title?]]></string>
+<string lang="de"><![CDATA[Welche Alben von Elvis Presley haben Elvis in ihrem Titel?]]></string>
+<string lang="es"><![CDATA[¿Que álbumes de Elvis Presley tienen a Elvis en su titulo?]]></string>
+<string lang="it"><![CDATA[Quali album di Elvis Presley hanno Elvis nel loro titolo?]]></string>
+<string lang="fr"><![CDATA[Quels albums d'Elvis Presley contiennent Elvis dans leur titre?]]></string>
+<string lang="nl"><![CDATA[Welke albums van Elvis Presley bevatten het woord Elvis in de titel?]]></string>
+<keywords lang="en"><![CDATA[album, Elvis Presley, title, Elvis]]></keywords>
+<keywords lang="de"><![CDATA[Album, Elvis Presley, Titel, Elvis]]></keywords>
+<keywords lang="es"><![CDATA[álbumes, Elvis Presley, titulo Elvis]]></keywords>
+<keywords lang="it"><![CDATA[album, Elvis Presley, titolo, Elvis]]></keywords>
+<keywords lang="fr"><![CDATA[albums, Elvis Presley, Elvis, titre]]></keywords>
+<keywords lang="nl"><![CDATA[album, Elvis Presley, titel bevat, Elvis]]></keywords>
+</question>
+<question aggregation="false" answertype="string" id="49">
+<string lang="en"><![CDATA[In which language does Marco Borsato sing?]]></string>
+<string lang="de"><![CDATA[In welcher Sprache singt Marco Borsato?]]></string>
+<string lang="es"><![CDATA[¿En que idioma canta Marco Borsato?]]></string>
+<string lang="it"><![CDATA[In quale lingua canta Marco Borsato?]]></string>
+<string lang="fr"><![CDATA[En quelle langue chante Marco Borsato?]]></string>
+<string lang="nl"><![CDATA[In welke taal zingt Marco Borsato?]]></string>
+<keywords lang="en"><![CDATA[Marco Borsato, language]]></keywords>
+<keywords lang="de"><![CDATA[Marco Borsato, Sprache]]></keywords>
+<keywords lang="es"><![CDATA[Marco Borsato, idioma]]></keywords>
+<keywords lang="it"><![CDATA[Marco Borsato, lingua]]></keywords>
+<keywords lang="fr"><![CDATA[langue, Marco Borsato]]></keywords>
+<keywords lang="nl"><![CDATA[Marco Borsato, taal]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="5">
+<string lang="en"><![CDATA[How many tracks does Erotica have?]]></string>
+<string lang="de"><![CDATA[Wieviele Lieder sind auf Erotica?]]></string>
+<string lang="es"><![CDATA[¿Cuantos tracks tiene Erotica?]]></string>
+<string lang="it"><![CDATA[Quante tracce ha Erotica?]]></string>
+<string lang="fr"><![CDATA[Combien de pistes a Erotica?]]></string>
+<string lang="nl"><![CDATA[Hoeveel nummers bevat Erotica?]]></string>
+<keywords lang="en"><![CDATA[Erotica, number of tracks]]></keywords>
+<keywords lang="de"><![CDATA[Erotica, Anzahl Lieder]]></keywords>
+<keywords lang="es"><![CDATA[numero de tracks, Erotica]]></keywords>
+<keywords lang="it"><![CDATA[Erotica, numero di tracce]]></keywords>
+<keywords lang="fr"><![CDATA[nombre de pistes, Erotica]]></keywords>
+<keywords lang="nl"><![CDATA[Erotica, aantal nummers]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="45">
+<string lang="en"><![CDATA[Give me all solo artists born in March.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Solokünstler, die im März geboren wurden.]]></string>
+<string lang="es"><![CDATA[Dame todos los solistas nacidos en Marzo]]></string>
+<string lang="it"><![CDATA[Dammi tutti i solisti nati a marzo.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les artistes solos nés en Mars.]]></string>
+<string lang="nl"><![CDATA[Geef alle soloartiesten die zijn geboren in maart.]]></string>
+<keywords lang="en"><![CDATA[solo artist, birth date, March]]></keywords>
+<keywords lang="de"><![CDATA[Solokünstler, Geburtstag, März]]></keywords>
+<keywords lang="es"><![CDATA[solistas, nacidos, marzo]]></keywords>
+<keywords lang="it"><![CDATA[solista, data di nascita, marzo]]></keywords>
+<keywords lang="fr"><![CDATA[artistes solos, nés en Mars]]></keywords>
+<keywords lang="nl"><![CDATA[soloartiest, geboortedatum, maart]]></keywords>
+</question>
+<question aggregation="false" answertype="date" id="33">
+<string lang="en"><![CDATA[When were the Dixie Chicks founded?]]></string>
+<string lang="de"><![CDATA[Wann wurden die Dixie Chicks gegründet?]]></string>
+<string lang="es"><![CDATA[¿Cuando se formo Dixie Chicks?]]></string>
+<string lang="it"><![CDATA[Quando si sono formati i Dixie Chicks?]]></string>
+<string lang="fr"><![CDATA[Quand a été fondé le groupe les Dixie Chicks?]]></string>
+<string lang="nl"><![CDATA[Wanneer zijn de Dixie Chicks opgericht?]]></string>
+<keywords lang="en"><![CDATA[Dixie Chicks, start date]]></keywords>
+<keywords lang="de"><![CDATA[Dixie Chicks, Startdatum]]></keywords>
+<keywords lang="es"><![CDATA[fecha de inicio, Dixie Chicks]]></keywords>
+<keywords lang="it"><![CDATA[Dixie Chicks, data di inizio]]></keywords>
+<keywords lang="fr"><![CDATA[groupe les Dixie Chicks, data de création]]></keywords>
+<keywords lang="nl"><![CDATA[Dixie Chicks, opgericht]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="16">
+<string lang="en"><![CDATA[Which bands broke up in 2000?]]></string>
+<string lang="de"><![CDATA[Welche Bands haben sich 2000 aufgelöst?]]></string>
+<string lang="es"><![CDATA[¿Cuantas bandas se rompieron en el 2000?]]></string>
+<string lang="it"><![CDATA[Quali gruppi musicali si sono sciolti nel 2000?]]></string>
+<string lang="fr"><![CDATA[Quels groupes ont été dissous en 2000?]]></string>
+<string lang="nl"><![CDATA[Welke bands zijn gestopt in 2000?]]></string>
+<keywords lang="en"><![CDATA[band, end date, 2000]]></keywords>
+<keywords lang="de"><![CDATA[Band, Enddatum, 2000]]></keywords>
+<keywords lang="es"><![CDATA[bandas, rompieron, 2000]]></keywords>
+<keywords lang="it"><![CDATA[gruppo musicale, data di fine, 2000]]></keywords>
+<keywords lang="fr"><![CDATA[groupes, dissous, 2000]]></keywords>
+<keywords lang="nl"><![CDATA[Band, einddatum, 2000]]></keywords>
+</question>
+<question aggregation="false" answertype="boolean" id="39">
+<string lang="en"><![CDATA[Does the song Peggy Sue appear on Buddy Holly's Greatest Hits compilation?]]></string>
+<string lang="de"><![CDATA[Ist das Lied Peggy Sue auf Buddy Hollys Greatest Hits?]]></string>
+<string lang="es"><![CDATA[¿Aparece la canción Peggy Sue en los Greatest Hits de Buddy Holly?]]></string>
+<string lang="it"><![CDATA[La canzone Peggy Sue compare nella raccolta Greatest Hits di Buddy Holly?]]></string>
+<string lang="fr"><![CDATA[Le morceau Peggy Sue se trouve-t-il sur les Greatest Hits de Buddy Holly?]]></string>
+<string lang="nl"><![CDATA[Staat het nummer Peggy Sue op Buddy Holly's Greatest Hits?]]></string>
+<keywords lang="en"><![CDATA[song, Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+<keywords lang="de"><![CDATA[Lied, Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+<keywords lang="es"><![CDATA[canción Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+<keywords lang="it"><![CDATA[canzone, Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+<keywords lang="fr"><![CDATA[Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+<keywords lang="nl"><![CDATA[nummer, Peggy Sue, Greatest Hits, Buddy Holly]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="35">
+<string lang="en"><![CDATA[How many children did Bob Marley have?]]></string>
+<string lang="de"><![CDATA[Wieviele Kinder hatte Bob Marley?]]></string>
+<string lang="es"><![CDATA[¿Cuantos hijos ha tenido Bob Marley?]]></string>
+<string lang="it"><![CDATA[Quanti figli ha avuto Bob Marley?]]></string>
+<string lang="fr"><![CDATA[Combien d'enfants a eu Bob Marley?]]></string>
+<string lang="nl"><![CDATA[Hoeveel kinderen had Bob Marley?]]></string>
+<keywords lang="en"><![CDATA[Bob Marley, number of children]]></keywords>
+<keywords lang="de"><![CDATA[Bob Marley, Anzahl Kinder]]></keywords>
+<keywords lang="es"><![CDATA[Bob Marley, hijos]]></keywords>
+<keywords lang="it"><![CDATA[Bob Marley, numero di figli]]></keywords>
+<keywords lang="fr"><![CDATA[nombre d'enfants, Bob Marley]]></keywords>
+<keywords lang="nl"><![CDATA[Bob Marley, aantal kinderen]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="48">
+<string lang="en"><![CDATA[Give me all soundtracks composed by the Pet Shop Boys.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Soundtracks, die die Pet Shop Boys komponiert haben.]]></string>
+<string lang="es"><![CDATA[Dame todas las bandas sonoras compuestas por Pet Shop Boys]]></string>
+<string lang="it"><![CDATA[Dammi tutte le colonne sonore composta dai Pet Shop Boys.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi toutes les bandes sons composées par les Pet Shop Boys.]]></string>
+<string lang="nl"><![CDATA[Noem alle soundtracks die zijn gemaakt door de Pet Shop Boys.]]></string>
+<keywords lang="en"><![CDATA[soundtrack, composer, Pet Shop Boys]]></keywords>
+<keywords lang="de"><![CDATA[Soundtrack, Komponist, Pet Shop Boys]]></keywords>
+<keywords lang="es"><![CDATA[bandas sonoras, compuestas, Pet Shop Boys]]></keywords>
+<keywords lang="it"><![CDATA[colonne sonore, compositori, Pet Shop Boys]]></keywords>
+<keywords lang="fr"><![CDATA[bandes sons, composées, Pet Shop Boys]]></keywords>
+<keywords lang="nl"><![CDATA[soundtrack, artiest, Pet Shop Boys]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="43">
+<string lang="en"><![CDATA[Which members of The Beatles have more than one child?]]></string>
+<string lang="de"><![CDATA[Welche Mitglieder der Beatles haben mehr als ein Kind?]]></string>
+<string lang="es"><![CDATA[¿Cuantos miembros de los Beatles tienen mas de un hijo?]]></string>
+<string lang="it"><![CDATA[Quali membri dei Beatles hanno più di un figlio?]]></string>
+<string lang="fr"><![CDATA[Combien de membres des Beatles ont plus d'un enfant?]]></string>
+<string lang="nl"><![CDATA[Welke leden van The Beatles hebben meer dan  één kind?]]></string>
+<keywords lang="en"><![CDATA[member, The Beatles, number of children, greater than 1]]></keywords>
+<keywords lang="de"><![CDATA[Mitglied, The Beatles, Anzahl Kinder, größer als 1]]></keywords>
+<keywords lang="es"><![CDATA[miembros, Beatles, mas de un hijo]]></keywords>
+<keywords lang="it"><![CDATA[membro, Beatles, numero di figli, maggiore di 1]]></keywords>
+<keywords lang="fr"><![CDATA[membres, Beatles, plus d'un enfant]]></keywords>
+<keywords lang="nl"><![CDATA[lid, The Beatles, aantal kinderen, groter dan 1]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="37">
+<string lang="en"><![CDATA[Give me all artists who were in a band as well as released a solo album.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Künstler, die sowohl in einer Band waren als auch ein Soloalbum herausgebracht haben.]]></string>
+<string lang="es"><![CDATA[Dame todos los artistas que se encontraban en una banda, así como que lanzarón un álbum en solitario.]]></string>
+<string lang="it"><![CDATA[Dammi tutti gli artisti che pur facendo parte di un gruppo musicale, hanno anche rilasciato album come solisti.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les artistes qui ont été dans un groupe et publié un album solo.]]></string>
+<string lang="nl"><![CDATA[Noem alle artiesten die lid van een band waren maar ook een solo-album hebben uitgebracht.]]></string>
+<keywords lang="en"><![CDATA[artist, band, solo album]]></keywords>
+<keywords lang="de"><![CDATA[Künstler, Band, Soloalbum]]></keywords>
+<keywords lang="es"><![CDATA[artistas, banda, álbum solitario]]></keywords>
+<keywords lang="it"><![CDATA[artista, gruppo musicale, album da solista]]></keywords>
+<keywords lang="fr"><![CDATA[artistes, groupe, album solo]]></keywords>
+<keywords lang="nl"><![CDATA[artiest, bandlid, solo-album]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="23">
+<string lang="en"><![CDATA[Who was born on the same day as Tina Turner?]]></string>
+<string lang="de"><![CDATA[Wer wurde am selben Tag wie Tina Turner geboren?]]></string>
+<string lang="es"><![CDATA[¿Quien nació en el mismo día que Tina Turner?]]></string>
+<string lang="it"><![CDATA[Chi è nato lo stesso giorno di Tina Turner?]]></string>
+<string lang="fr"><![CDATA[Qui est né le même jour que Tina Turner?]]></string>
+<string lang="nl"><![CDATA[Wie is geboren op dezelfde dag als Tina Turner?]]></string>
+<keywords lang="en"><![CDATA[birth date, same as, Tina Turner, birth date]]></keywords>
+<keywords lang="de"><![CDATA[Geburtstag, gleich, Tina Turner, Geburtstag]]></keywords>
+<keywords lang="es"><![CDATA[nacio, mismo dia, Tina Turner]]></keywords>
+<keywords lang="it"><![CDATA[data di nascita, uguale, Tina Turner, data di nascita]]></keywords>
+<keywords lang="fr"><![CDATA[né, même jour, Tina Turner]]></keywords>
+<keywords lang="nl"><![CDATA[geboortedatum, Tina Turner, identiek]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="28">
+<string lang="en"><![CDATA[By whom is the song Everlong?]]></string>
+<string lang="de"><![CDATA[Von wem ist das Lied Everlong?]]></string>
+<string lang="es"><![CDATA[¿De quien es la canción Everlong?]]></string>
+<string lang="it"><![CDATA[Di chi è la canzone Everlong?]]></string>
+<string lang="fr"><![CDATA[De qui est le morceau Everlong?]]></string>
+<string lang="nl"><![CDATA[Van wie is het nummer Everlong?]]></string>
+<keywords lang="en"><![CDATA[song, Everlong, creator]]></keywords>
+<keywords lang="de"><![CDATA[Lied, Everlong, Urheber]]></keywords>
+<keywords lang="es"><![CDATA[autor, canción Everlong]]></keywords>
+<keywords lang="it"><![CDATA[canzone, Everlong, creatore]]></keywords>
+<keywords lang="fr"><![CDATA[morceau, Everlong, créateur]]></keywords>
+<keywords lang="nl"><![CDATA[nummer, Everlong, artiest]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="55">
+<string lang="en"><![CDATA[Which member of Take That recorded the most albums?]]></string>
+<string lang="de"><![CDATA[Welches Mitglied von Take That hat die meisten Alben aufgenommen?]]></string>
+<string lang="es"><![CDATA[¿Que miembros de Take That han grabado la mayoría de los álbumes?]]></string>
+<string lang="it"><![CDATA[Quali membri dei Take That hanno registrato il maggior numero di album?]]></string>
+<string lang="fr"><![CDATA[Quel membre de Take That a enregistré le plus d'albums?]]></string>
+<string lang="nl"><![CDATA[Welk lid van Take That nam de meeste albums op?]]></string>
+<keywords lang="en"><![CDATA[member, Take That, number of albums, maximum]]></keywords>
+<keywords lang="de"><![CDATA[member, Take That, Anzahl Alben, Maximum]]></keywords>
+<keywords lang="es"><![CDATA[miembros, Take That, grabado, mas álbumes]]></keywords>
+<keywords lang="it"><![CDATA[membro, Take That, numero di album, massimo]]></keywords>
+<keywords lang="fr"><![CDATA[membre, Take That, enregistré, plus d'albums]]></keywords>
+<keywords lang="nl"><![CDATA[lid, Take That, aantal albums, maximum]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="22">
+<string lang="en"><![CDATA[How often did Madonna marry?]]></string>
+<string lang="de"><![CDATA[Wie oft hat Madonna geheiratet?]]></string>
+<string lang="es"><![CDATA[¿Cuantas veces ha estado Madonna casada?]]></string>
+<string lang="it"><![CDATA[Quante volte si è sposata Madonna?]]></string>
+<string lang="fr"><![CDATA[Combien de fois Madonna s'est-elle mariée?]]></string>
+<string lang="nl"><![CDATA[Hoe vaak is Madonna getrouwd?]]></string>
+<keywords lang="en"><![CDATA[Madonna, number of spouses]]></keywords>
+<keywords lang="de"><![CDATA[Madonna, Anzahl Ehepartner]]></keywords>
+<keywords lang="es"><![CDATA[Madonna, numero de matrimonios]]></keywords>
+<keywords lang="it"><![CDATA[Madonna, numero di mariti]]></keywords>
+<keywords lang="fr"><![CDATA[Nombre de marriages, Madonna]]></keywords>
+<keywords lang="nl"><![CDATA[Madonna, aantal huwelijken]]></keywords>
+</question>
+<question aggregation="false" answertype="string" id="46">
+<string lang="en"><![CDATA[Give me the titles of all singles by Phil Collins.]]></string>
+<string lang="de"><![CDATA[Gib mir die Titel aller Singles von Phil Collins.]]></string>
+<string lang="es"><![CDATA[Dame los títulos de todos los singles de Phil Collins]]></string>
+<string lang="it"><![CDATA[Dammi i titoli di tutti i singoli di Phil Collins.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi les titres de tous les singles de Phil Collins.]]></string>
+<string lang="nl"><![CDATA[Geef de titels van alle singles van Phil Collins.]]></string>
+<keywords lang="en"><![CDATA[single, Phil Collins, title]]></keywords>
+<keywords lang="de"><![CDATA[Single, Phil Collins, Title]]></keywords>
+<keywords lang="es"><![CDATA[títulos, singles, Phil Collins]]></keywords>
+<keywords lang="it"><![CDATA[singolo, Phil Collins, titolo]]></keywords>
+<keywords lang="fr"><![CDATA[titres, singles, Phil Collins]]></keywords>
+<keywords lang="nl"><![CDATA[single, Phil Collins, titel]]></keywords>
+</question>
+<question aggregation="false" answertype="boolean" id="13">
+<string lang="en"><![CDATA[Was the album Coming Home created by Lionel Richie?]]></string>
+<string lang="de"><![CDATA[Ist das Album Coming Home von Lionel Richie?]]></string>
+<string lang="es"><![CDATA[¿Fue el álbum Coming Home creado por Lionel Richie?]]></string>
+<string lang="it"><![CDATA[L'album Coming Home fu creato da Lionel Richie?]]></string>
+<string lang="fr"><![CDATA[L'album Coming Home a-t-il été créé par Lionel Richie?]]></string>
+<string lang="nl"><![CDATA[Is het album Coming Home van Lionel Richie?]]></string>
+<keywords lang="en"><![CDATA[album, Coming Home, creator, Lionel Richie]]></keywords>
+<keywords lang="de"><![CDATA[Album Coming Home, Urheber, Lionel Richie]]></keywords>
+<keywords lang="es"><![CDATA[álbum, Coming Home, creado, Lionel Richie]]></keywords>
+<keywords lang="it"><![CDATA[album, Coming Home, creatore, Lionel Richie]]></keywords>
+<keywords lang="fr"><![CDATA[Coming Home, créé, Lionel Richie]]></keywords>
+<keywords lang="nl"><![CDATA[album, Coming Home, artiest, Lionel Richie]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="18">
+<string lang="en"><![CDATA[Who produced the albums Out of Time and Automatic for the People?]]></string>
+<string lang="de"><![CDATA[Wer produzierte die Alben Out of Time und Automatic for the People?]]></string>
+<string lang="es"><![CDATA[¿Quien produjo los álbumes de Out of Time y Automatic for the People?]]></string>
+<string lang="it"><![CDATA[Chi ha prodotto gli album Out of Time e Automatic for the People?]]></string>
+<string lang="fr"><![CDATA[Qui a produit les albums Out of Time et  Automatic for the People?]]></string>
+<string lang="nl"><![CDATA[Wie produceerde de albums Out of Time en Automatic for the People?]]></string>
+<keywords lang="en"><![CDATA[album, Out of Time, Automatic for the People, producer]]></keywords>
+<keywords lang="de"><![CDATA[Album, Out of Time, Automatic for the People, Produzent]]></keywords>
+<keywords lang="es"><![CDATA[productor, álbumes Out of Time, Automatic for the People]]></keywords>
+<keywords lang="it"><![CDATA[album, Out of Time, Automatic for the People, produttore]]></keywords>
+<keywords lang="fr"><![CDATA[produit, Out of Time, Automatic for the People?]]></keywords>
+<keywords lang="nl"><![CDATA[album, Out of Time, Automatic for the People, producer]]></keywords>
+</question>
+<question aggregation="true" answertype="number" id="32">
+<string lang="en"><![CDATA[How many pieces of work did Mozart create?]]></string>
+<string lang="de"><![CDATA[Wieviele Stücke hat Mozart komponiert?]]></string>
+<string lang="es"><![CDATA[¿Cuantas piezas musicales creo Mozart?]]></string>
+<string lang="it"><![CDATA[Quanti pezzi musicali ha composto Mozart?]]></string>
+<string lang="fr"><![CDATA[Combien d'oeuvres musicales ont été composées par Mozart?]]></string>
+<string lang="nl"><![CDATA[Hoeveel werken heeft Mozart gecomponeerd?]]></string>
+<keywords lang="en"><![CDATA[Mozart, number of pieces of work]]></keywords>
+<keywords lang="de"><![CDATA[Mozart, Anzahl Stücke]]></keywords>
+<keywords lang="es"><![CDATA[Mozart, numero de piezas musicales]]></keywords>
+<keywords lang="it"><![CDATA[Mozart, numero di pezzi composti]]></keywords>
+<keywords lang="fr"><![CDATA[oeuvres musicales, composées, Mozart]]></keywords>
+<keywords lang="nl"><![CDATA[Mozart, aantal werken]]></keywords>
+</question>
+<question aggregation="false" answertype="date" id="34">
+<string lang="en"><![CDATA[When was That Which Remains founded?]]></string>
+<string lang="de"><![CDATA[Wann wurde That Which Remains gegründet?]]></string>
+<string lang="es"><![CDATA[¿Cuando fue fundado That Which Remains?]]></string>
+<string lang="it"><![CDATA[Quando si sono formati i That Which Remains?]]></string>
+<string lang="fr"><![CDATA[Quand a été fondé le groupe That Which Remains?]]></string>
+<string lang="nl"><![CDATA[Wanneer werd That Which Remains opgericht?]]></string>
+<keywords lang="en"><![CDATA[That Which Remains, start date]]></keywords>
+<keywords lang="de"><![CDATA[That Which Remains, Startdatum]]></keywords>
+<keywords lang="es"><![CDATA[That Which Remains, fecha de inicio]]></keywords>
+<keywords lang="it"><![CDATA[That Which Remains, data di inizio]]></keywords>
+<keywords lang="fr"><![CDATA[date de fondation, That Which Remains]]></keywords>
+<keywords lang="nl"><![CDATA[That Which Remains, opgericht]]></keywords>
+</question>
+<question aggregation="false" answertype="number" id="11">
+<string lang="en"><![CDATA[How long is Louder Than Words by Against All Authority?]]></string>
+<string lang="de"><![CDATA[Wie lang geht Louder Than Words von Against All Authority?]]></string>
+<string lang="es"><![CDATA[¿Cual es la duración de  Louder Than Words de Against All Authority?]]></string>
+<string lang="it"><![CDATA[Quanto dura Louder Than Words degli Against All Authority?]]></string>
+<string lang="fr"><![CDATA[Quel est la durée de Louder Than Words par Against All Authority?]]></string>
+<string lang="nl"><![CDATA[Hoe lang duurt Louder Than Words van Against All Authority?]]></string>
+<keywords lang="en"><![CDATA[Louder Than Words, Against All Authority, length]]></keywords>
+<keywords lang="de"><![CDATA[Louder Than Words, Against All Authority, Länge]]></keywords>
+<keywords lang="es"><![CDATA[Louder Than Words, Against All Authority, duración]]></keywords>
+<keywords lang="it"><![CDATA[Louder Than Words, Against All Authority, durata]]></keywords>
+<keywords lang="fr"><![CDATA[durée, Louder Than Words, Against All Authority]]></keywords>
+<keywords lang="nl"><![CDATA[Louder Than Words, Against All Authority, lengte]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="9">
+<string lang="en"><![CDATA[Who is the singer on the album The Dark Side of the Moon?]]></string>
+<string lang="de"><![CDATA[Wer ist der Sänger bei dem Album The Dark Side of the Moon?]]></string>
+<string lang="es"><![CDATA[¿Quien es el cantante en el álbum The Dark Side of the Moon?]]></string>
+<string lang="it"><![CDATA[Chi è il cantante dell'album The Dark Side of the Moon?]]></string>
+<string lang="fr"><![CDATA[Qui est le chanteur sur l'album The dark Side of the Moon?]]></string>
+<string lang="nl"><![CDATA[Wie is de zanger op het album The Dark Side of the Moon?]]></string>
+<keywords lang="en"><![CDATA[album, The Dark Side of the Moon, singer]]></keywords>
+<keywords lang="de"><![CDATA[Album, The Dark Side of the Moon, Sänger]]></keywords>
+<keywords lang="es"><![CDATA[cantante, álbum, The Dark Side of the Moon?]]></keywords>
+<keywords lang="it"><![CDATA[album, The Dark Side of the Moon, cantante]]></keywords>
+<keywords lang="fr"><![CDATA[chanteur, album, The dark Side of the Moon]]></keywords>
+<keywords lang="nl"><![CDATA[album, The Dark Side of the Moon, zanger]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="17">
+<string lang="en"><![CDATA[By whom is the single Pure Morning?]]></string>
+<string lang="de"><![CDATA[Von wem ist die Single Pure Morning?]]></string>
+<string lang="es"><![CDATA[¿De quien es el single Pure Morning?]]></string>
+<string lang="it"><![CDATA[Di chi è il singolo Pure Morning?]]></string>
+<string lang="fr"><![CDATA[Qui est l'auteur du single Pure Morning?]]></string>
+<string lang="nl"><![CDATA[Van wie is de single Pure Morning?]]></string>
+<keywords lang="en"><![CDATA[single, Pure Morning, creator]]></keywords>
+<keywords lang="de"><![CDATA[Single, Pure Morning, Urheber]]></keywords>
+<keywords lang="es"><![CDATA[autor, single, Pure Morning]]></keywords>
+<keywords lang="it"><![CDATA[singolo, Pure Morning, creatore]]></keywords>
+<keywords lang="fr"><![CDATA[single, Pure Morning, auteur]]></keywords>
+<keywords lang="nl"><![CDATA[single, Pure Morning, artiest]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="6">
+<string lang="en"><![CDATA[Who composed the soundtrack for Blade Runner?]]></string>
+<string lang="de"><![CDATA[Wer hat den Soundtrack für Blade Runner komponiert?]]></string>
+<string lang="es"><![CDATA[¿Quien ha compuesto la banda sonora de Blade Runner?]]></string>
+<string lang="it"><![CDATA[Chi ha composto la colonna sonora di Blade Runner?]]></string>
+<string lang="fr"><![CDATA[Qui a composé la bande son de Blade Runner?]]></string>
+<string lang="nl"><![CDATA[Wie heeft de soundtrack van Bladerunner gecomponeerd?]]></string>
+<keywords lang="en"><![CDATA[Blade Runner, soundtrack, composer]]></keywords>
+<keywords lang="de"><![CDATA[Blade Runner, Sountrack, Komponist]]></keywords>
+<keywords lang="es"><![CDATA[compositor, Banda Sonora, Blade Runner]]></keywords>
+<keywords lang="it"><![CDATA[Blade Runner, colonna sonora. compositore]]></keywords>
+<keywords lang="fr"><![CDATA[bande son, Blade Runner]]></keywords>
+<keywords lang="nl"><![CDATA[Blade Runner, soundtrack, componist]]></keywords>
+</question>
+<question aggregation="false" answertype="number" id="36">
+<string lang="en"><![CDATA[How old is Rod Morgenstein?]]></string>
+<string lang="de"><![CDATA[Wie alt ist Rod Morgenstein?]]></string>
+<string lang="es"><![CDATA[¿Cuantos años tiene Rod Morgenstein?]]></string>
+<string lang="it"><![CDATA[Quanti anni ha Rod Morgenstein?]]></string>
+<string lang="fr"><![CDATA[Quel est l'âge de Rod Morgenstein?]]></string>
+<string lang="nl"><![CDATA[Hoe oud is Rod Morgenstein?]]></string>
+<keywords lang="en"><![CDATA[Rod Morgenstein, age]]></keywords>
+<keywords lang="de"><![CDATA[Rod Morgenstein, Alter]]></keywords>
+<keywords lang="es"><![CDATA[edad, Rod Morgenstein]]></keywords>
+<keywords lang="it"><![CDATA[Rod Morgenstein, età]]></keywords>
+<keywords lang="fr"><![CDATA[âge, Rod Morgenstein]]></keywords>
+<keywords lang="nl"><![CDATA[Rod Morgenstein, leeftijd]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="20">
+<string lang="en"><![CDATA[Give me all bands whose name starts with The.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Bands, deren Name mit The beginnt.]]></string>
+<string lang="es"><![CDATA[Dame todas las bandas cuyo nombre empieza por The]]></string>
+<string lang="it"><![CDATA[Dammi tutti i gruppi musicali il cui nome inizia con The.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les groupes dont le nom commence avec The.]]></string>
+<string lang="nl"><![CDATA[Noem alle bands waarvan de naam met The begint.]]></string>
+<keywords lang="en"><![CDATA[band, name, start, The]]></keywords>
+<keywords lang="de"><![CDATA[Band, Name, Beginn, The]]></keywords>
+<keywords lang="es"><![CDATA[bandas, nombre empieza The]]></keywords>
+<keywords lang="it"><![CDATA[gruppo musicale, nome, inizia, The]]></keywords>
+<keywords lang="fr"><![CDATA[groupes, nom, commence avec The]]></keywords>
+<keywords lang="nl"><![CDATA[band, naam, begin, The]]></keywords>
+</question>
+<question aggregation="false" answertype="boolean" id="51">
+<string lang="en"><![CDATA[Did Kylie Minogue ever collaborate with Mariah Carey?]]></string>
+<string lang="de"><![CDATA[Hat Kylie Minogue jemals mit Mariah Carey zusammengearbeitet?]]></string>
+<string lang="es"><![CDATA[¿Ha colaborado Kylie Minogue con Mariah Carey alguna vez?]]></string>
+<string lang="it"><![CDATA[Kylie Minogue ha mai collaborato con Mariah Carey?]]></string>
+<string lang="fr"><![CDATA[Ont Kylie Minogue et Mariah Carey collaboré?]]></string>
+<string lang="nl"><![CDATA[Heeft Kylie Minogue ooit samengewerkt met Mariah Carey?]]></string>
+<keywords lang="en"><![CDATA[Kylie Minogue, collaboration, Mariah Carey]]></keywords>
+<keywords lang="de"><![CDATA[Kylie Minogue, Kollaboration, Mariah Carey]]></keywords>
+<keywords lang="es"><![CDATA[colaboraciones, Kylie Minogue, Mariah Carey]]></keywords>
+<keywords lang="it"><![CDATA[Kylie Minogue, collaborazione, Mariah Carey]]></keywords>
+<keywords lang="fr"><![CDATA[Kylie Minogue, Mariah Carey, collaboré]]></keywords>
+<keywords lang="nl"><![CDATA[Mariah Carey, Kylie Minogue, samenwerking]]></keywords>
+</question>
+<question aggregation="false" answertype="number" id="25">
+<string lang="en"><![CDATA[How long is the song This Magic Moment by Lou Reed?]]></string>
+<string lang="de"><![CDATA[Wie lang ist das Lied This Magic Moment von Lou Reed?]]></string>
+<string lang="es"><![CDATA[¿Cual es la duración de la canción This Magic Moment de Lou Reed?]]></string>
+<string lang="it"><![CDATA[Quanto dura la canzone This Magic Moment di Lou Reed?]]></string>
+<string lang="fr"><![CDATA[Quelle est la durée du morceau This Magic Moment par Lou Reed?]]></string>
+<string lang="nl"><![CDATA[Hoe lang duurt het nummer This Magic Moment van Lou Reed?]]></string>
+<keywords lang="en"><![CDATA[song, This Magic Moment, Lou Reed, duration]]></keywords>
+<keywords lang="de"><![CDATA[Lied, This Magic Moment, Lou Reed, Länge]]></keywords>
+<keywords lang="es"><![CDATA[duración, canción This Magic Moment, Lou Reed?]]></keywords>
+<keywords lang="it"><![CDATA[canzone, This Magic Moment, Lou Reed, durata]]></keywords>
+<keywords lang="fr"><![CDATA[durée, This Magic Moment, Lou Reed]]></keywords>
+<keywords lang="nl"><![CDATA[Lied, This Magic Moment, Lou Reed, lengte]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="38">
+<string lang="en"><![CDATA[On which albums does the song Because You Loved Me appear?]]></string>
+<string lang="de"><![CDATA[Auf welchen Alben ist das Lied Because You Loved Me?]]></string>
+<string lang="es"><![CDATA[¿En que álbumes aparece la canción Because You Loved Me?]]></string>
+<string lang="it"><![CDATA[In quale album compare la canzone Because You Loved Me?]]></string>
+<string lang="fr"><![CDATA[Dans quels albums se trouve le morceau Because You Loves Me?]]></string>
+<string lang="nl"><![CDATA[Op welk album staat het nummer Because You Loved Me?]]></string>
+<keywords lang="en"><![CDATA[album, song, Because You Loved Me]]></keywords>
+<keywords lang="de"><![CDATA[Album, Lied, Because You Loved Me]]></keywords>
+<keywords lang="es"><![CDATA[Albumes, canción, Because You Loved Me]]></keywords>
+<keywords lang="it"><![CDATA[album, canzone, Because You Loved Me]]></keywords>
+<keywords lang="fr"><![CDATA[albums, morceau, Because You Loves Me]]></keywords>
+<keywords lang="nl"><![CDATA[album, nummer, Because You Loved Me]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="24">
+<string lang="en"><![CDATA[Which compilations contain the song Last Christmas?]]></string>
+<string lang="de"><![CDATA[Auf welchen Kompilationen ist das Lied Last Christmas enthalten?]]></string>
+<string lang="es"><![CDATA[¿Cuantas compilaciones contienen la canción Last Christmas?]]></string>
+<string lang="it"><![CDATA[Quale raccolta contiene la canzone Last Christmas?]]></string>
+<string lang="fr"><![CDATA[Quels compilations contiennent le morceau Last Christmas?]]></string>
+<string lang="nl"><![CDATA[Welke compilaties bevatten het nummer Last Christmas?]]></string>
+<keywords lang="en"><![CDATA[compilation, song, Last Christmas]]></keywords>
+<keywords lang="de"><![CDATA[Kompilation, Lied, Last Christmas]]></keywords>
+<keywords lang="es"><![CDATA[numero de compilaciones, canción, Last Christmas]]></keywords>
+<keywords lang="it"><![CDATA[raccolta, canzone, Last Christmas]]></keywords>
+<keywords lang="fr"><![CDATA[compilations, contiennent, Last Christmas]]></keywords>
+<keywords lang="nl"><![CDATA[compilatie, nummer, Last Christmas]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="53">
+<string lang="en"><![CDATA[Which group had 70 members?]]></string>
+<string lang="de"><![CDATA[Welche Gruppe hatte 70 Mitglieder?]]></string>
+<string lang="es"><![CDATA[¿Que grupo tiene 70 miembros?]]></string>
+<string lang="it"><![CDATA[Che gruppo ha 70 componenti?]]></string>
+<string lang="fr"><![CDATA[Quel groupe avait 70 membres?]]></string>
+<string lang="nl"><![CDATA[Welke groep had 70 leden?]]></string>
+<keywords lang="en"><![CDATA[group, number of members, equals 70]]></keywords>
+<keywords lang="de"><![CDATA[Gruppe, Anzahl Mitglieder, gleich 70]]></keywords>
+<keywords lang="es"><![CDATA[grupo, componentes, igual 70]]></keywords>
+<keywords lang="it"><![CDATA[gruppo, numero di componenti, uguale a 70]]></keywords>
+<keywords lang="fr"><![CDATA[groupe, 70 membres]]></keywords>
+<keywords lang="nl"><![CDATA[groep, aantal leden, 70]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="29">
+<string lang="en"><![CDATA[Which bands recorded more than 50 albums?]]></string>
+<string lang="de"><![CDATA[Welche Bands haben über 50 Alben aufgenommen?]]></string>
+<string lang="es"><![CDATA[¿Cuantas bandas han grabado mas de 50 álbumes?]]></string>
+<string lang="it"><![CDATA[Quale gruppo musicale ha registrato più di 50 album?]]></string>
+<string lang="fr"><![CDATA[Quels groupes ont enregistré plus de 50 albums?]]></string>
+<string lang="nl"><![CDATA[Welke bands hebben meer dan 50 albums opgenomen?]]></string>
+<keywords lang="en"><![CDATA[band, number of albums, greater than 50]]></keywords>
+<keywords lang="de"><![CDATA[Band, Anzahl Alben, größer als 50]]></keywords>
+<keywords lang="es"><![CDATA[numero de bandas, mas de 50 álbumes]]></keywords>
+<keywords lang="it"><![CDATA[gruppo musicale, numero di album, maggiore di 50]]></keywords>
+<keywords lang="fr"><![CDATA[groupes, enregistré, plus de 50 albums]]></keywords>
+<keywords lang="nl"><![CDATA[band, aantal albums, meer dan 50]]></keywords>
+</question>
+<question aggregation="false" answertype="date" id="31">
+<string lang="en"><![CDATA[When did Ludwig van Beethoven die?]]></string>
+<string lang="de"><![CDATA[Wann ist Ludwig van Beethoven gestorben?]]></string>
+<string lang="es"><![CDATA[¿Cuando murió Ludwig van Beethoven]]></string>
+<string lang="it"><![CDATA[Quando mori Ludwig van Beethoven?]]></string>
+<string lang="fr"><![CDATA[Quand est mort Ludwig van Beethoven?]]></string>
+<string lang="nl"><![CDATA[Wanneer is Ludwig van Beethoven gestorven?]]></string>
+<keywords lang="en"><![CDATA[Ludwig van Beethoven, death date]]></keywords>
+<keywords lang="de"><![CDATA[Ludwig van Beethoven, Todesdatum]]></keywords>
+<keywords lang="es"><![CDATA[fecha de defunción, Ludwig van Beethoven.]]></keywords>
+<keywords lang="it"><![CDATA[Ludwig van Beethoven, data di morte]]></keywords>
+<keywords lang="fr"><![CDATA[mort, Ludwig van Beethoven]]></keywords>
+<keywords lang="nl"><![CDATA[Ludwig van Beethoven, overlijdensdatum]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="19">
+<string lang="en"><![CDATA[With whom did Phil Collins work together?]]></string>
+<string lang="de"><![CDATA[Mit wem hat Phil Collins alles zusammengearbeitet?]]></string>
+<string lang="es"><![CDATA[¿Quien ha trabajado junto a Phil Collins?]]></string>
+<string lang="it"><![CDATA[Con chi lavorò Phil Collins?]]></string>
+<string lang="fr"><![CDATA[Qui a travaillé avec Phil Collins?]]></string>
+<string lang="nl"><![CDATA[Met wie heeft Phil Collins samengewerkt?]]></string>
+<keywords lang="en"><![CDATA[Phil Collins, collaboration]]></keywords>
+<keywords lang="de"><![CDATA[Phil Collins, Kollaboration]]></keywords>
+<keywords lang="es"><![CDATA[Phil Collins, collaboraciones]]></keywords>
+<keywords lang="it"><![CDATA[Phil Collins, collaborazione]]></keywords>
+<keywords lang="fr"><![CDATA[travaillé, avec, Phil Collins]]></keywords>
+<keywords lang="nl"><![CDATA[Phil Collins, samenwerking]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="12">
+<string lang="en"><![CDATA[Give me all albums which have the name of their artist as their title.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Alben, die so heißen wie der Künstler, von dem sie stammen.]]></string>
+<string lang="es"><![CDATA[Dame todos los álbumes con el mismo nombre de artista que su titulo.]]></string>
+<string lang="it"><![CDATA[Dammi tutti gli album che hanno come titolo il nome del loro artista.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les albums qui ont le nom de leur artiste comme titre.]]></string>
+<string lang="nl"><![CDATA[Noem alle albums die de naam van de artiest als titel hebben.]]></string>
+<keywords lang="en"><![CDATA[album, title, equals, artist, name]]></keywords>
+<keywords lang="de"><![CDATA[Album, Title, gleich, Künstler, Name]]></keywords>
+<keywords lang="es"><![CDATA[álbumes, mismo, artista, titulo]]></keywords>
+<keywords lang="it"><![CDATA[album, titolo, uguale, artista, nome]]></keywords>
+<keywords lang="fr"><![CDATA[albums, nom de leur artiste comme titre]]></keywords>
+<keywords lang="nl"><![CDATA[album, titel, identiek, artiest, naam]]></keywords>
+</question>
+<question aggregation="true" answertype="resource" id="4">
+<string lang="en"><![CDATA[Give me all solo artists who contributed to more than three collaborations.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Solokünstler mit mehr als drei Kollaborationen.]]></string>
+<string lang="es"><![CDATA[Dame todos los solistas que han contribuido en  más de tres colaboraciones.]]></string>
+<string lang="it"><![CDATA[Dammi tutti i solisti che hanno effettuato più di tre collaborazioni.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les artistes solos qui ont au moins trois collaborations.]]></string>
+<string lang="nl"><![CDATA[Geef alle solo-artiesten die meer dan drie keer een samenwerking aangingen.]]></string>
+<keywords lang="en"><![CDATA[solo artist, number of collaborations, greater than 3]]></keywords>
+<keywords lang="de"><![CDATA[Solokünstler, Anzahl Kollaborationen, größer als 3]]></keywords>
+<keywords lang="es"><![CDATA[solistas, numero de colaboraciones, más de 3]]></keywords>
+<keywords lang="it"><![CDATA[solista, numero di collaborazioni, maggiore di 3]]></keywords>
+<keywords lang="fr"><![CDATA[artistes solos, au moins trois collaborations]]></keywords>
+<keywords lang="nl"><![CDATA[solo-artiest, aantal samenwerkingen, meer dan 3]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="26">
+<string lang="en"><![CDATA[Give me all singles by Donovan.]]></string>
+<string lang="de"><![CDATA[Gib mir alle Singles von Donovan.]]></string>
+<string lang="es"><![CDATA[Dame todos los singles de Donovan]]></string>
+<string lang="it"><![CDATA[Dammi tutti i singoli di Donovan.]]></string>
+<string lang="fr"><![CDATA[Donnes-moi tous les singles de Donovan.]]></string>
+<string lang="nl"><![CDATA[Geef alle singles van Donovan.]]></string>
+<keywords lang="en"><![CDATA[Donovan, single]]></keywords>
+<keywords lang="de"><![CDATA[Donovan, Single]]></keywords>
+<keywords lang="es"><![CDATA[Donovan, singles]]></keywords>
+<keywords lang="it"><![CDATA[Donovan, singolo]]></keywords>
+<keywords lang="fr"><![CDATA[singles, Donovan]]></keywords>
+<keywords lang="nl"><![CDATA[Donovan, single]]></keywords>
+</question>
+<question aggregation="false" answertype="resource" id="15">
+<string lang="en"><![CDATA[Who composed the song Coast to Coast?]]></string>
+<string lang="de"><![CDATA[Wer hat das Lied Coast to Coast komponiert?]]></string>
+<string lang="es"><![CDATA[¿Quien compuso la canción de Coast to Coast?]]></string>
+<string lang="it"><![CDATA[Chi ha composto la canzone Coast to Coast?]]></string>
+<string lang="fr"><![CDATA[Qui a écrit le morceau Coast to Coast?]]></string>
+<string lang="nl"><![CDATA[Wie heeft het nummer Coast to Coast geschreven?]]></string>
+<keywords lang="en"><![CDATA[song, Coast to Coast, composer]]></keywords>
+<keywords lang="de"><![CDATA[Lied, Coast to Coast, Komponist]]></keywords>
+<keywords lang="es"><![CDATA[cancion, Coast to coast, compo]]></keywords>
+<keywords lang="it"><![CDATA[canzone, Coast to Coast, compositore]]></keywords>
+<keywords lang="fr"><![CDATA[écrit, Coast to Coast]]></keywords>
+<keywords lang="nl"><![CDATA[nummer, Coast to Coast, componist]]></keywords>
+</question>
+</dataset>

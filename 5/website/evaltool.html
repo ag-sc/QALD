@@ -1,0 +1,39 @@
+<h2>Evaluation tool</h2>
+
+<p>&nbsp;</p>
+
+        <p>
+	In order to particiate, please make sure that you are <a href="http://clef2015-labs-registration.dei.unipd.it/registrationForm.php">registered</a> for the QA lab at CLEF.
+	</p>
+
+<form action="5/compare_file.php" method="post" enctype="multipart/form-data">
+	<p>
+	System name <font color="ff0000">*</font> <br />
+	<input name="system_name" id="system_name" type="text" size="35" maxlength="100000"></input>
+	<br />
+	Configuration <br />		
+	<input name="configuration" id="configuration" type="text" size="35" maxlength="100000"></input>
+	<br />
+	Team <font color="#ff0000">*</font> <br />
+	<input name="team" id="team" type="text" size="35" maxlength="100000"></input> <br />
+	Email address <br />
+	<input name="email" id="email" type="text" size="35" maxlength="100000"></input> <br />
+        <br />
+        <input name="file" id="file" type="file" size="35" maxlength="100000"></input>
+    	<br /><br />
+	Please select training or test. <br /> 
+	<select name="evaluation" id="evaluation"><option>training</option><option>test</option></select>
+	<br />	
+	</p>
+	<p> <font color="#ff0000">*</font> <font color="#707070">
+	During training phase, all fields are optional. During test phase, please specify at least a system name and a team name (the same as during registration), so we can identify you. 
+	</font>
+        </p>
+	<p>
+	<input type="submit" name="evaluate" value="Start evaluation"></input>	
+	</p>
+</form>
+
+<div id="result">
+&nbsp;
+</div>

@@ -1,0 +1,500 @@
+<?xml version="1.0" ?>
+<dataset id="musicbrainz-test">
+
+<question id="1" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which groups were founded in 1924?
+]]></string>
+<keywords><![CDATA[ 
+group, founded, 1924
+]]></keywords>
+</question>
+
+<question id="2" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who produced the album Dookie?
+]]></string>
+<keywords><![CDATA[
+produce, album, Dookie
+]]></keywords>
+</question>
+
+<question id="3" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which artists were born in July 1904?
+]]></string>
+<keywords><![CDATA[
+artist, born, 1904-07
+]]></keywords>
+</question>
+
+<question id="4" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all artists who contributed to more than three collaborations.
+]]></string>
+<keywords><![CDATA[
+artist, more than three, collaborations
+]]></keywords>
+</question>
+
+<question id="5" answertype="number" aggregation="true">
+<string><![CDATA[
+How many tracks does La Isla Bonita have?
+]]></string>
+<keywords><![CDATA[
+track, La Isla Bonita
+]]></keywords>
+</question>
+
+<question id="6" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who composed The Heroes of Telemark?
+]]></string>
+<keywords><![CDATA[
+compose, The Heroes of Telemark
+]]></keywords>
+</question>
+
+<question id="7" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which artists turn 50 on May 28, 2012?
+]]></string>
+<keywords><![CDATA[
+artist, 50, 2012-05-28
+]]></keywords>
+</question>
+
+<question id="8"  answertype="boolean" aggregation="false">
+<string><![CDATA[
+Is Bugs a track on the album Vitalogy?
+]]></string>
+<keywords><![CDATA[
+track, Bugs, album, Vitalogy
+]]></keywords>
+</question>
+
+<question id="9" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who sang on the album Home Free?
+]]></string>
+<keywords><![CDATA[
+sing, album, Home Free
+]]></keywords>
+</question>
+
+<question id="10" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who made the lyrics of the song Mambo No. 5?
+]]></string>
+<keywords><![CDATA[
+lyrics, Mambo No. 5
+]]></keywords>
+</question>
+
+<question id="11" answertype="number" aggregation="false">
+<string><![CDATA[
+How long is Louder Than Words by Against All Authority?
+]]></string>
+<keywords><![CDATA[
+long, Louder Than Words, Against All Authority
+]]></keywords>
+</question>
+
+<question id="12" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all albums which have the name of their artist as title.
+]]></string>
+<keywords><![CDATA[
+album, artist name, title
+]]></keywords>
+</question>
+
+<question id="13" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Was the album Coming Home created by Lionel Richie?
+]]></string>
+<keywords><![CDATA[
+album, Coming Home, Lionel Richie
+]]></keywords>
+</question>
+
+<question id="14" answertype="number" aggregation="true">
+<string><![CDATA[
+How many singles did the Scorpions produce?
+]]></string>
+<keywords><![CDATA[
+single, Scorpions, produce
+]]></keywords>
+</question>
+
+<question id="15" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who composed the song Coast To Coast?
+]]></string>
+<keywords><![CDATA[
+compose, song, Coast To Coast
+]]></keywords>
+</question>
+
+<question id="16" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which bands broke up in 2000?
+]]></string>
+<keywords><![CDATA[
+band, broke up, 2000
+]]></keywords>
+</question>
+
+<question id="17" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which artist created Last Christmas?
+]]></string>
+<keywords><![CDATA[
+artist, create, Last Christmas
+]]></keywords>
+</question>
+
+<question id="18" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which artist made the albums Blackout and Circus?
+]]></string>
+<keywords><![CDATA[
+artist, album, Blackout, Circus
+]]></keywords>
+</question>
+
+<question id="19" answertype="resource" aggregation="false">
+<string><![CDATA[
+With whom did Phil Collins work together?
+]]></string>
+<keywords><![CDATA[
+work together, Phil Collins
+]]></keywords>
+</question>
+
+<question id="20" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all bands whose name starts with Play.
+]]></string>
+<keywords><![CDATA[
+band, name, start, Play
+]]></keywords>
+</question>
+
+<question id="21" answertype="number" aggregation="true">
+<string><![CDATA[
+How many singles did Peter Gabriel make?
+]]></string>
+<keywords><![CDATA[
+single, Peter Gabriel, make
+]]></keywords>
+</question>
+
+<question id="22" answertype="number" aggregation="true">
+<string><![CDATA[
+To how many persons has Madonna been married?
+]]></string>
+<keywords><![CDATA[
+person, Madonna, married
+]]></keywords>
+</question>
+
+<question id="23" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who was born on the same day as Tina Turner?
+]]></string>
+<keywords><![CDATA[
+born, same day, Tina Turner
+]]></keywords>
+</question>
+
+<question id="24" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which compilations does the song Last Christmas appear on?
+]]></string>
+<keywords><![CDATA[
+compilation, song, Last Christmas, appear
+]]></keywords>
+</question>
+
+<question id="25" answertype="number" aggregation="false">
+<string><![CDATA[
+How long is Last Christmas by Kate and Bob?
+]]></string>
+<keywords><![CDATA[
+long, Last Christman, Kate and Bob
+]]></keywords>
+</question>
+
+<question id="26" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all singles by Loona.
+]]></string>
+<keywords><![CDATA[
+single, Loona
+]]></keywords>
+</question>
+
+<question id="27" answertype="resource" aggregation="false">
+<string><![CDATA[
+What kind of record is Hijo de la luna?
+]]></string>
+<keywords><![CDATA[
+kind of record, Hijo de la luna
+]]></keywords>
+</question>
+
+<question id="28" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who made the song (Everything I Do) I Do It for You?
+]]></string>
+<keywords><![CDATA[
+make, song, (Everything I Do) I Do It for You
+]]></keywords>
+</question>
+
+<question id="29" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who made more than 30 albums?
+]]></string>
+<keywords><![CDATA[
+make, more than 30, album
+]]></keywords>
+</question>
+
+<question id="30" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who was the husband of Whitney Houston?
+]]></string>
+<keywords><![CDATA[
+husband, Whitney Houston
+]]></keywords>
+</question>
+
+<question id="31" answertype="date" aggregation="false">
+<string><![CDATA[
+Give me the death date of Ludwig van Beethoven.
+]]></string>
+<keywords><![CDATA[
+death date, Ludwig van Beethoven
+]]></keywords>
+</question>
+
+<question id="32" answertype="number" aggregation="true">
+<string><![CDATA[
+How many pieces of work did Wolfgang Amadeus Mozart create?
+]]></string>
+<keywords><![CDATA[
+piece of work, Wolfgang Amadeus Mozart, create
+]]></keywords>
+</question>
+
+<question id="33" answertype="date" aggregation="false">
+<string><![CDATA[
+When were the Dixie Chicks founded?
+]]></string>
+<keywords><![CDATA[
+Dixie Chicks, founded
+]]></keywords>
+</question>
+
+<question id="34" answertype="date" aggregation="false">
+<string><![CDATA[
+When was That Which Remains founded? 
+]]></string>
+<keywords><![CDATA[
+That Which Remains, founded
+]]></keywords>
+</question>
+
+<question id="35" answertype="number" aggregation="true">
+<string><![CDATA[
+How many children did Bob Marley have?
+]]></string>
+<keywords><![CDATA[
+children, Bob Marley
+]]></keywords>
+</question>
+
+<question id="36" answertype="number" aggregation="false">
+<string><![CDATA[
+How old is Rod Morgenstein?
+]]></string>
+<keywords><![CDATA[
+old, Rod Morgenstein
+]]></keywords>
+</question>
+
+<question id="37" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all artists who were both in a band and released a solo album.
+]]></string>
+<keywords><![CDATA[
+artist, band, release, solo album
+]]></keywords>
+</question>
+
+<question id="38" answertype="resource" aggregation="false">
+<string><![CDATA[
+In which albums does the song Because You Loved Me appear?
+]]></string>
+<keywords><![CDATA[
+album, song, Because You Loved Me, appear
+]]></keywords>
+</question>
+
+<question id="39" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Is the song Peggy Sue on the Greatest Hits compilation by Buddy Holly?
+]]></string>
+<keywords><![CDATA[
+song, Peggy Sue, Greatest Hits, compilation, Buddy Holly
+]]></keywords>
+</question>
+
+<question id="40" answertype="string" aggregation="false">
+<string><![CDATA[
+What is Beyonce Knowles middle name?
+]]></string>
+<keywords><![CDATA[
+Beyonce Knowles, middle name
+]]></keywords>
+</question>
+
+<question id="41" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which albums of Elvis Presley have Elvis in their title?
+]]></string>
+<keywords><![CDATA[
+album, Elvis Presley, title, Elvis
+]]></keywords>
+</question>
+
+<question id="42" answertype="number" aggregation="true">
+<string><![CDATA[
+How many live albums by Elvis Presley are there?
+]]></string>
+<keywords><![CDATA[
+live album, Elvis Presley
+]]></keywords>
+</question>
+
+<question id="43" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which member of the Beatles has more than one children?
+]]></string>
+<keywords><![CDATA[
+member, Beatles, more than two, child
+]]></keywords>
+</question>
+
+<question id="44" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all songs which are on live albums by Blondie.
+]]></string>
+<keywords><![CDATA[
+song, live album, Blondie
+]]></keywords>
+</question>
+
+<question id="45" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all artists born in March.
+]]></string>
+<keywords><![CDATA[
+artist, born, March
+]]></keywords>
+</question>
+
+<question id="46" answertype="string" aggregation="false">
+<string><![CDATA[
+Give me all titles of singles by Phil Collins.
+]]></string>
+<keywords><![CDATA[
+title, single, Phil Collins
+]]></keywords>
+</question>
+
+<question id="47" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which records did Robbie Williams record together with Martin Slattery?
+]]></string>
+<keywords><![CDATA[
+record, Robbie Williams, record, together, Martin Slattery
+]]></keywords>
+</question>
+
+<question id="48" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all soundtracks made by the Pet Shop Boys.
+]]></string>
+<keywords><![CDATA[
+soundtrack, make, Pet Shop Boys
+]]></keywords>
+</question>
+
+<question id="49" answertype="string" aggregation="false">
+<string><![CDATA[
+In which language does Nyusha sing?
+]]></string>
+<keywords><![CDATA[
+language, sing, Nyusha
+]]></keywords>
+</question>
+
+<question id="50" answertype="resource" aggregation="false">
+<string><![CDATA[
+On which singles did Robbie Williams collaborate with Nicole Kidman?
+]]></string>
+<keywords><![CDATA[
+single, collaborate, Robbie Williams, Nicole Kidman
+]]></keywords>
+</question>
+
+<question id="51" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Did Kylie Minogue ever collaborate with Mariah Carey?
+]]></string>
+<keywords><![CDATA[
+Kylie Minogue, collaborate, Mariah Carey
+]]></keywords>
+</question>
+
+<question id="52" answertype="resource" aggregation="false">
+<string><![CDATA[
+In which countries was the single Incomplete published?
+]]></string>
+<keywords><![CDATA[
+country, single, Incomplete, publish
+]]></keywords>
+</question>
+
+<question id="53" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which group had 70 members?
+]]></string>
+<keywords><![CDATA[
+group, 70, member
+]]></keywords>
+</question>
+
+<question id="54" answertype="string" aggregation="false">
+<string><![CDATA[
+What is the legal name of Loona?
+]]></string>
+<keywords><![CDATA[
+legal name, Loona
+]]></keywords>
+</question>
+
+<question id="55" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which member of Take That recorded the most albums?
+]]></string>
+<keywords><![CDATA[
+member, Take That, the most, album
+]]></keywords>
+</question>
+
+</dataset>
+

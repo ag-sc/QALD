@@ -1,0 +1,98 @@
+
+\emph{Task:} \\
+Given a natural language question or keywords, retrieve the correct answer(s) from a given repository containing both RDF data and free text. 
+
+The provided dataset is English DBpedia 3.9. 
+The focus of the task is on hybrid question answering, i.e. the integration of both structured data (RDF) and unstructured data 
+(free text available in the DBpedia abstracts). 
+The questions thus all require information from both RDF and free text. 
+Participating systems will be evaluated with respect to precision and recall. 
+Moreover, participants are encouraged to report performance, i.e. the average time their system takes to answer a query.
+
+
+\subsection{Dataset: DBpedia 3.9}
+
+The provided dataset is DBpedia 3.9, cf.~Section~\ref{sec:dbpedia} above. 
+It can be accessed via the same SPARQL endpoint:
+\begin{itemize} 
+\item[] \url{http://vtentacle.techfak.uni-bielefeld.de:443/sparql}
+\end{itemize}
+
+However, for this task, not only the RDF triples are relevant, but also the English abstracts. 
+They are related to a resource by means of the property \texttt{abstract}, e.g. as follows:
+
+\begin{itemize}
+\item[] \texttt{res:Australian\_Shelduck dbo:abstract \\[.1cm]
+    `The Australian Shelduck, Tadorna tadornoides, is a shelduck, \\ 
+     a group of large goose-like birds which are part of the bird \\ 
+     family Anatidae. The genus name Tadorna comes from Celtic \\ 
+     roots and means "pied waterfowl". They are protected under \\ 
+     the National Parks and Wildlife Act, 1974.'@en .}
+\end{itemize}
+
+\subsection{Training phase}
+
+In order to get acquainted with the dataset and possible questions, a set of 25 training questions can be downloaded at the following location: 
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_train_hybrid.xml} (with answers)
+\end{itemize} 
+
+The training questions are provided in an XML format that is very similar to the one explained in Section~\ref{sec:training} 
+above\footnote{The question attributes \texttt{aggregation} and \texttt{onlydbo} here refer only to the RDF part of the pseudo query.}. 
+The dataset id is \texttt{qald-4\_hybrid\_train} (and \texttt{qald-4\_hybrid\_test} for the test questions).
+All questions are annotated with a pseudo query and the correct answers. 
+The pseudo query is like an RDF query but can contain free text as subject, property, or object of a triple. 
+This free text is marked as \texttt{text:"\ldots"}. 
+Here is an example pseudo query for the question: \textsf{Which recipients of the Victoria Cross died in the Battle of Arnhem?}
+
+\begin{lstlisting}
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri dbo:award res:Victoria_Cross .
+	?uri text:"died in" text:"Battle of Arnhem" .
+}
+\end{lstlisting}
+
+This pseudo query contains two triples, one an RDF triple and the other containing free text as property and object. 
+The way to answer the question is to retrieve all recipients of the Victoria Cross using the triple 
+\begin{itemize}
+\item[] \texttt{?uri dbo:award res:Victoria\_Cross .} 
+\end{itemize}
+and then check the abstract of all returned URIs whether they contain the information that they died in the Battle of Arnhem. 
+For example, the abstract for John Hollington Grayburn contains the following text: 
+\begin{itemize}
+\item[] \texttt{he went into action in the Battle of Arnhem [\ldots] \\
+but was killed after standing up in full view of a German tank}
+\end{itemize}
+
+All queries are designed in a way that they require both RDF data and free text to be answered. 
+In the case of the above question, for instance, not all abstracts of all recipients of the Victoria Cross mention this award, 
+while the battle in which they died is not explicitely given in the available RDF data.
+
+Note that the free text given in the pseudo query corresponds to the natural language question, 
+not the way the relevant information in the abstract is provided. Retrieving the relevant information  
+from the abstracts thus usually requires some kind of textual entailment.
+
+Also note that the pseudo queries cannot be evaluated against the SPARQL endpoint. 
+Therefore, when submitting results, you are required to provide answers (in the same format as described in Section~\ref{sec:training}).
+
+
+\subsection{Test phase}
+
+During test phase, from April 1 to May 1, a set of 10 similar questions is provided at the following location:
+\begin{itemize} 
+\item[] \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-4_hybrid_test_questions.xml} 
+\end{itemize} 
+
+Results can be submitted from April 1 to May 1, 2014, via the same online form used during training phase 
+(note the drop down box that allows you to specify {\tt test} instead of {\tt training}):
+
+\begin{itemize}
+\item[] \href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=4}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/\\index.php?x=evaltool\&q=4}}
+\end{itemize}
+
+All submissions are required to comply with the XML format used for the training questions. 
+
+Evaluation measures are the same as for the other tasks, cf. Section~\ref{sec:test}.

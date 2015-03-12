@@ -1,0 +1,200 @@
+\documentclass[a4paper]{article}
+
+\parindent0mm
+\parskip7pt
+
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,pdfstartview=FitV,linkcolor=black,citecolor=black,urlcolor=blue,breaklinks=tru]{hyperref}
+\usepackage{graphicx}
+\usepackage[margin=1.3in]{geometry}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,tabsize=2,numbers=left,numberstyle=\tiny,frame=lines,aboveskip=7pt,belowskip=0pt,captionpos=b,breaklines=true}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0mm}
+
+\newcommand{\link}{$\triangleright$}
+\renewcommand*\contentsname{}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+%{\ }
+%
+%\vspace{3cm}
+
+\begin{center}
+
+{\sc\large The Fifth Open Challenge on\\ Question Answering Over Linked Data} 
+
+\vspace{.3cm}
+
+{\huge\bf QALD-5}
+\end{center}
+
+\hrule
+
+\vspace{.4cm}
+
+{\sc Document Version:} \today
+
+\vspace{.4cm}
+
+QALD-5 is the fifth in a series of evaluation campaigns on question answering over linked data, 
+with a strong emphasis on multilinguality and hybrid approaches using information from both structured and unstructured data. 
+The challenge is part of the Question Answering Lab at CLEF 2015 ({\url{http://nlp.uned.es/clef-qa/}). 
+It is aimed at all kinds of systems that mediate between a user, expressing his or her information need in natural language, and semantic data. 
+All relevant information for participating in the challenge are given in this document. 
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsubsection*{Motivation and Goal} 
+
+While more and more structured data is published on the web, the question of how typical web users can access this body of knowledge becomes of crucial importance. Over the past years, there is a growing amount of research on interaction paradigms that allow end users to profit from the expressive power of Semantic Web standards while at the same time hiding their complexity behind an intuitive and easy-to-use interface. Especially natural language interfaces have received wide attention, as they allow users to express arbitrarily complex information needs in an intuitive fashion and, at least in principle, in their own language. Multilingualism has, in fact, become an issue of major interest for the Semantic Web community, as both the number of actors creating and publishing data all in languages other than English, as well as the amount of users that access this data and speak native languages other than English is growing substantially.
+
+The key challenge is to translate the users' information needs into a form such that they can be evaluated using standard Semantic Web query processing and inferencing techniques. Over the past years, a range of approaches have been developed to address this challenge, showing significant advances towards answering natural language questions with respect to large, heterogeneous sets of structured data. However, %only few systems yet address the fact that the structured data available nowadays is distributed among a large collection of interconnected datasets, and that answers to questions can often only be provided if information from several sources are combined. In addition, 
+a lot of information is still available only in textual form, both on the web and in the form of labels and abstracts in linked data sources. Therefore approaches are needed that can not only deal with the specific character of structured data but also with finding information in several sources, processing both structured and unstructured information, and combining such gathered information into one answer.
+
+
+\subsubsection*{Coordinators} 
+
+\begin{itemize}
+\item Philipp Cimiano (CITEC, Universit\"at Bielefeld, Germany)
+\item Vanessa Lopez (IBM Research, Dublin, Ireland)
+\item Christina Unger (CITEC, Universit\"at Bielefeld, Germany)
+\item Elena Cabrio (INRIA Sophia-Antipolis M\'editerran\'ee, Cedex, France)
+\item Axel-Cyrille Ngonga Ngomo (Universit\"at Leipzig, Germany)
+\item Sebastian Walter (CITEC, Universit\"at Bielefeld, Germany)
+\item Corina For\u{a}scu (Alexandru Ioan Cuza University, Iasi, Romania)
+\end{itemize}
+
+\subsubsection*{Sponsor} 
+
+\includegraphics[width=1.6cm]{logo.png}\\ \url{http://www.orange.com/en/home/}
+
+\newpage
+
+\section{Relevant information in a nutshell}
+
+{\em QALD-5:} \url{http://www.sc.cit-ec.uni-bielefeld.de/qald/} \texttt{> QALD-5}
+
+{\em CLEF 2015 QA lab:} \url{http://nlp.uned.es/clef-qa/}
+
+\emph{Registration:} \url{http://clef2015-labs-registration.dei.unipd.it}
+
+
+%%%%%%%%%%%%%%%
+
+\subsubsection*{Task}
+
+Given an RDF dataset and natural language questions, return the correct answer(s). 
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Dataset}
+
+\begin{itemize} 
+\item DBpedia 3.10\\ \url{http://downloads.dbpedia.org/current/en/}
+\end{itemize} 
+
+For training and test, two kinds of questions are provided: 
+\emph{multilingual questions} in seven languages, 
+and \emph{hybrid questions} that require both structured (RDF) and unstructured (free text) data to be answered.
+
+{\em Training questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/5/qald-5_train.xml} 
+\end{itemize} 
+
+{\em Test questions:} 
+
+\vspace{-.3cm}
+
+\begin{itemize}
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/5/qald-5_test_questions.xml} 
+\end{itemize}
+Test questions will be published on April 20.
+
+
+\subsubsection*{SPARQL endpoint}
+
+During training phase, please use the official DBpedia endpoint:
+\begin{itemize}
+\item[] \url{http://dbpedia.org/sparql}
+\end{itemize}
+For test phase we will set up a local endpoint that contains a mirror of DBpedia 3.10, 
+in order to ensure availability and consistency of results among systems. 
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Schedule}
+
+\begin{tabular}{ll}
+Release of training dataset and instructions: & January 30, 2015 \\
+Release of test dataset: & April 20, 2015 \\
+Submission deadline: & May 8, 2015 \\
+Release of evaluation results: & May 15, 2015 \\
+Deadline for working notes submission: & June 7, 2015 \\
+Workshop: & September, 2015 \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Submission and evaluation}
+
+{\em Submission of results and evaluation} is done by means of an online form:\\
+\url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=5}
+
+Results for the training phase can be uploaded at any time; results for the test phase can be uploaded from April 20 to May 8.
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Prizes}
+
+We offer prizes for the top-scoring teams, both in the multilingual and the hybrid track. More details will be announced soon. 
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Resources}
+
+You are free to use any external resources. A list of potentially useful resources and tools is provided in Section~\ref{sec:resources}.
+
+\subsubsection*{Contact}
+
+Updates on the open challenge will be published on the \emph{Interacting with Linked Data} mailing list: 
+\begin{center}
+\url{https://lists.techfak.uni-bielefeld.de/cit-ec/mailman/listinfo/ild}
+\end{center}
+In case of question, problems and comments, please contact Christina Unger:\\
+{\tt cunger@cit-ec.uni-bielefeld.de}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Description of the data}
+
+\input{data}
+
+\newpage 
+
+\section{Description of the task} 
+
+\input{task}
+
+\newpage 
+
+\section{Useful resources and tools}
+\label{sec:resources} 
+
+\input{resources}
+
+
+\end{document}

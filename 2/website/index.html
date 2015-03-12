@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Question Answering over Linked Data</title>
+</head>
+
+<body>
+<form action="compare_file.php" method="post" enctype="multipart/form-data">
+	<p>
+	system: <br />
+	<input name="system_name" id="system_name" type="text" size="35" maxlength="100000"></input>
+	<br />
+	configuration: <br />		
+	<input name="configuration" id="configuration" type="text" size="35" maxlength="100000"></input>
+	<br />
+	file: <br />	
+    	<input name="xml_file" id="xml_file" type="file" size="35" maxlength="100000"></input>
+    	<br />
+	</p>
+	<p>
+	Please select training or test. <br /> 
+	For testing you need to specify the system name. <br />
+	<select name="evaluation" id="evaluation"><option>training</option><option disabled="disabled">test</option></select>
+	<br />	
+	</p>
+	<p>
+	Use "evaluate" for evaluating your system directly.
+	<br />
+	Use "generate" for generating answers before evaluating. Evaluation follows immediately.
+	<br />
+	<input type="submit" name="evaluate" value="evaluate"></input>	
+	<input type="submit" name="generate" value="generate"></input>
+	</p>
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,1136 @@
+<?xml version="1.0" ?>
+<dataset id="musicbrainz-test">
+
+<question id="1" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which groups were founded in 1924?
+]]></string>
+<keywords><![CDATA[ 
+group, founded, 1924
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?band ?bandname
+WHERE {
+  ?band rdf:type mo:MusicGroup .
+  ?band foaf:name ?bandname .
+  ?band bio:event ?birthEvent .
+  ?birthEvent rdf:type bio:Birth .
+  { 
+	?birthEvent bio:date ?date .
+    	FILTER (?date <= '1924-12-31'^^xsd:date && ?date >= '1924-01-01'^^xsd:date) 
+  }
+  UNION 
+  { 
+	?birthEvent bio:date ?date .
+  	FILTER regex(?date,'1924') 
+  }
+}
+]]></query>
+</question>
+
+<question id="2" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who produced the album Dookie?
+]]></string>
+<keywords><![CDATA[
+produce, album, Dookie
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?producer ?name 
+WHERE {
+  ?album mo:release_type mo:album .
+  ?album dc:title ?title .
+  ?album mo:producer ?producer .
+  ?producer foaf:name ?name .
+FILTER regex(str(?title),'Dookie')
+}
+]]></query>
+</question>
+
+<question id="3" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which artists were born in July 1904?
+]]></string>
+<keywords><![CDATA[
+artist, born, 1904-07
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name
+WHERE {
+  ?artist rdf:type mo:SoloMusicArtist .
+  ?artist foaf:name ?name .
+  ?artist bio:event ?event .
+  ?event rdf:type bio:Birth .
+  { 
+	?event bio:date ?date .
+    	FILTER (?date <= '1904-07-31'^^xsd:date && ?date >= '1904-07-01'^^xsd:date) 
+  }
+  UNION 
+  { 
+	?event bio:date ?date .
+  	FILTER regex(?date,'1904-07') 
+  }
+}
+]]></query>
+</question>
+
+<question id="4" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all artists who contributed to more than three collaborations.
+]]></string>
+<keywords><![CDATA[
+artist, more than three, collaborations
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?artist ?name
+WHERE {
+	?artist rdf:type mo:SoloMusicArtist .
+	?artist foaf:name ?name .
+	?artist rel:collaboratesWith ?collaboration .
+} 
+GROUP BY ?artist ?name 
+HAVING (COUNT(?collaboration) > 3)
+]]></query>
+</question>
+
+<question id="5" answertype="number" aggregation="true">
+<string><![CDATA[
+How many tracks does La Isla Bonita have?
+]]></string>
+<keywords><![CDATA[
+track, La Isla Bonita
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?track) as ?number
+WHERE {
+	?track rdf:type mo:Track . 
+	?track dc:title ?title .
+	FILTER regex(str(?title),'La Isla Bonita')
+}
+]]></query>
+</question>
+
+<question id="6" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who composed The Heroes of Telemark?
+]]></string>
+<keywords><![CDATA[
+compose, The Heroes of Telemark
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?composer ?name 
+WHERE {
+	?album mo:release_type mo:soundtrack .
+	?album dc:title 'The Heroes of Telemark' .
+	?album mo:composer ?composer . 
+	?composer foaf:name ?name.
+}
+]]></query>
+</question>
+
+<question id="7" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which artists turn 50 on May 28, 2012?
+]]></string>
+<keywords><![CDATA[
+artist, 50, 2012-05-28
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?artistname
+WHERE {
+        ?artist rdf:type mo:MusicArtist .
+	?artist foaf:name ?artistname .
+	?artist bio:event ?event .
+	?event rdf:type bio:Birth .
+	?event bio:date '1962-05-28'^^xsd:date .
+}
+]]></query>
+</question>
+
+<question id="8"  answertype="boolean" aggregation="false">
+<string><![CDATA[
+Is Bugs a track on the album Vitalogy?
+]]></string>
+<keywords><![CDATA[
+track, Bugs, album, Vitalogy
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK WHERE {
+	?album dc:title 'Vitalogy' .
+	?album mo:track ?track .
+	?track dc:title 'Bugs'
+}
+]]></query>
+</question>
+
+<question id="9" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who sang on the album Home Free?
+]]></string>
+<keywords><![CDATA[
+sing, album, Home Free
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?singer ?name WHERE {
+	?album mo:release_type mo:album .
+	?album dc:title 'Home Free' .
+	?album mo:singer ?singer .
+	?singer foaf:name ?name
+}
+]]></query>
+</question>
+
+<question id="10" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who made the lyrics of the song Mambo No. 5?
+]]></string>
+<keywords><![CDATA[
+lyrics, Mambo No. 5
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?lyricist ?name WHERE {
+	?single mo:release_type mo:single .
+	?single dc:title 'Mambo No. 5' .
+	?single mo:lyricist ?lyricist .
+	?lyricist foaf:name ?name
+}
+]]></query>
+</question>
+
+<question id="11" answertype="number" aggregation="false">
+<string><![CDATA[
+How long is Louder Than Words by Against All Authority?
+]]></string>
+<keywords><![CDATA[
+long, Louder Than Words, Against All Authority
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+SELECT ?time WHERE {
+	?album mo:release_type mo:album . 
+	?album mo:track ?track .
+	?track dc:title 'Louder Than Words' .
+	?track foaf:maker ?artist .
+	?artist foaf:name 'Against All Authority' .
+        ?track tl:duration ?time .
+}
+]]></query>
+</question>
+
+<question id="12" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all albums which have the name of their artist as title.
+]]></string>
+<keywords><![CDATA[
+album, artist name, title
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album ?title WHERE {
+	?album mo:release_type mo:album .
+	?album dc:title ?title .
+	?album foaf:maker ?artist .
+	?artist foaf:name ?name .
+	FILTER (?title = ?name)
+}
+]]></query>
+</question>
+
+<question id="13" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Was the album Coming Home created by Lionel Richie?
+]]></string>
+<keywords><![CDATA[
+album, Coming Home, Lionel Richie
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK WHERE {
+	?album dc:title 'Coming Home' .
+	?album foaf:maker ?artist .
+	?artist foaf:name 'Lionel Richie' .
+}
+]]></query>
+</question>
+
+<question id="14" answertype="number" aggregation="true">
+<string><![CDATA[
+How many singles did the Scorpions produce?
+]]></string>
+<keywords><![CDATA[
+single, Scorpions, produce
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT COUNT(DISTINCT ?single) WHERE {
+	?single mo:release_type mo:single .
+	?single foaf:maker ?artist .
+	?artist foaf:name 'Scorpions'
+}
+]]></query>
+</question>
+
+<question id="15" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who composed the song Coast To Coast?
+]]></string>
+<keywords><![CDATA[
+compose, song, Coast To Coast
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?maker ?name WHERE {
+	?track rdf:type mo:Track .
+	?track dc:title 'Coast to Coast' .
+	?track foaf:maker ?maker .
+	?maker foaf:name ?name
+}
+]]></query>
+</question>
+
+<question id="16" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which bands broke up in 2000?
+]]></string>
+<keywords><![CDATA[
+band, broke up, 2000
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?artist rdf:type mo:MusicGroup .
+	?artist foaf:name ?name .
+	?artist bio:event ?event .
+	?event rdf:type bio:Death .
+	{ ?event bio:date ?date .
+	  FILTER ( ?date <= '2000-12-31'^^xsd:date && ?date >= '2000-01-01'^^xsd:date ) 
+	}
+	UNION 
+	{ ?event bio:date ?date .
+	  FILTER regex (?date,'2000')
+	}
+}
+]]></query>
+</question>
+
+<question id="17" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which artist created Last Christmas?
+]]></string>
+<keywords><![CDATA[
+artist, create, Last Christmas
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?track dc:title 'Last Christmas' .
+	?artist rdf:type mo:MusicArtist .
+	?artist foaf:name ?name .
+	?track foaf:maker ?artist
+}
+]]></query>
+</question>
+
+<question id="18" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which artist made the albums Blackout and Circus?
+]]></string>
+<keywords><![CDATA[
+artist, album, Blackout, Circus
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?maker1 ?name1 WHERE {
+	?album1 dc:title 'Blackout' .
+	?album2 dc:title 'Circus' .
+	?album1 foaf:maker ?maker1 .
+	?album2 foaf:maker ?maker2 .
+	?maker1 foaf:name ?name1 .
+	?maker2 foaf:name ?name2 .
+	FILTER (regex(?name1, ?name2))
+}
+]]></query>
+</question>
+
+<question id="19" answertype="resource" aggregation="false">
+<string><![CDATA[
+With whom did Phil Collins work together?
+]]></string>
+<keywords><![CDATA[
+work together, Phil Collins
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist2 ?name WHERE {
+	?artist foaf:name 'Phil Collins'  .
+	?artist rel:collaboratesWith ?collaboration .
+	?artist2 foaf:name ?name .
+	?artist2 rel:collaboratesWith ?collaboration .
+}
+]]></query>
+</question>
+
+<question id="20" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all bands whose name starts with Play.
+]]></string>
+<keywords><![CDATA[
+band, name, start, Play
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?artist rdf:type mo:MusicGroup .
+	?artist foaf:name ?name .
+	FILTER (regex(?name, '^Play'))
+}
+]]></query>
+</question>
+
+<question id="21" answertype="number" aggregation="true">
+<string><![CDATA[
+How many singles did Peter Gabriel make?
+]]></string>
+<keywords><![CDATA[
+single, Peter Gabriel, make
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT COUNT(?single) as ?number WHERE {
+	?single mo:release_type mo:single .
+	?single foaf:maker ?maker .
+	?maker foaf:name 'Peter Gabriel' .
+}
+]]></query>
+</question>
+
+<question id="22" answertype="number" aggregation="true">
+<string><![CDATA[
+To how many persons has Madonna been married?
+]]></string>
+<keywords><![CDATA[
+person, Madonna, married
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT COUNT(DISTINCT ?spouse) WHERE {
+	?artist foaf:name 'Madonna' .
+	?artist rel:spouseOf ?spouse .
+}
+]]></query>
+</question>
+
+<question id="23" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who was born on the same day as Tina Turner?
+]]></string>
+<keywords><![CDATA[
+born, same day, Tina Turner
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?tina rdf:type mo:SoloMusicArtist .
+	?tina foaf:name 'Tina Turner' .
+	?tina bio:event ?tinaevent .
+	?tinaevent rdf:type bio:Birth .
+	?tinaevent bio:date ?tinadate .
+	?artist rdf:type mo:SoloMusicArtist .
+	?artist foaf:name ?name .
+	?artist bio:event ?event .
+	?event rdf:type bio:Birth .
+	?event bio:date ?date .
+	FILTER (?tinadate = ?date) .
+	FILTER (?name != 'Tina Turner')
+}
+]]></query>
+</question>
+
+<question id="24" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which compilations does the song Last Christmas appear on?
+]]></string>
+<keywords><![CDATA[
+compilation, song, Last Christmas, appear
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?compilation ?title WHERE {
+	?track rdf:type mo:Track .
+	?track dc:title 'Last Christmas' .	
+	?compilation  mo:track ?track .
+	?compilation mo:release_type mo:compilation .
+	?compilation dc:title ?title
+}
+]]></query>
+</question>
+
+<question id="25" answertype="number" aggregation="false">
+<string><![CDATA[
+How long is Last Christmas by Kate and Bob?
+]]></string>
+<keywords><![CDATA[
+long, Last Christman, Kate and Bob
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?time WHERE {
+	?track rdf:type mo:Track .
+	?track dc:title 'Last Christmas' .	
+	?track  foaf:maker ?maker .
+	?maker foaf:name 'Kate & Bob' .
+	?track tl:duration ?time
+}
+]]></query>
+</question>
+
+<question id="26" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all singles by Loona.
+]]></string>
+<keywords><![CDATA[
+single, Loona
+]]></keywords>
+<query><![CDATA[
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?single ?title WHERE {
+	?single mo:release_type mo:single .
+	?single dc:title ?title .
+	?single foaf:maker ?maker .
+        ?maker foaf:name 'Loona' .
+}
+]]></query>
+</question>
+
+<question id="27" answertype="resource" aggregation="false">
+<string><![CDATA[
+What kind of record is Hijo de la luna?
+]]></string>
+<keywords><![CDATA[
+kind of record, Hijo de la luna
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?release_type WHERE {
+	?single mo:release_type ?release_type .
+	?single dc:title 'Hijo de la luna' .
+}
+]]></query>
+</question>
+
+<question id="28" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who made the song (Everything I Do) I Do It for You?
+]]></string>
+<keywords><![CDATA[
+make, song, (Everything I Do) I Do It for You
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?maker ?name WHERE {
+	?single mo:release_type mo:single .
+	?single dc:title '(Everything I Do) I Do It for You' .
+	?single foaf:maker ?maker .
+	?maker foaf:name ?name
+}
+]]></query>
+</question>
+
+<question id="29" answertype="resource" aggregation="true">
+<string><![CDATA[
+Who made more than 30 albums?
+]]></string>
+<keywords><![CDATA[
+make, more than 30, album
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?maker ?name WHERE {
+	?album mo:release_type mo:album .
+	?album foaf:maker ?maker .
+	?maker foaf:name ?name .	
+} 
+GROUP BY ?maker ?name
+HAVING (COUNT(?name) > 30)
+]]></query>
+</question>
+
+<question id="30" answertype="resource" aggregation="false">
+<string><![CDATA[
+Who was the husband of Whitney Houston?
+]]></string>
+<keywords><![CDATA[
+husband, Whitney Houston
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT DISTINCT ?spouse ?name WHERE {
+	?artist foaf:name 'Whitney Houston' .
+	?artist rel:spouseOf ?spouse .
+	?spouse foaf:name ?name
+}
+]]></query>
+</question>
+
+<question id="31" answertype="date" aggregation="false">
+<string><![CDATA[
+Give me the death date of Ludwig van Beethoven.
+]]></string>
+<keywords><![CDATA[
+death date, Ludwig van Beethoven
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?death WHERE {
+	?artist rdf:type mo:SoloMusicArtist .
+	?artist foaf:name 'Ludwig van Beethoven' .
+	?artist bio:event ?eventDeath .
+	?eventDeath rdf:type bio:Death .
+	?eventDeath bio:date ?death .
+}
+]]></query>
+</question>
+
+<question id="32" answertype="number" aggregation="true">
+<string><![CDATA[
+How many pieces of work did Wolfgang Amadeus Mozart create?
+]]></string>
+<keywords><![CDATA[
+piece of work, Wolfgang Amadeus Mozart, create
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?title) WHERE {
+	?artist rdf:type mo:SoloMusicArtist .
+	?artist foaf:name 'Wolfgang Amadeus Mozart' .
+        ?composition foaf:maker ?artist .
+        ?composition dc:title ?title .
+}
+]]></query>
+</question>
+
+<question id="33" answertype="date" aggregation="false">
+<string><![CDATA[
+When were the Dixie Chicks founded?
+]]></string>
+<keywords><![CDATA[
+Dixie Chicks, founded
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?date WHERE {
+	?band foaf:name 'Dixie Chicks' .
+	?event rdf:type bio:Birth .
+	?band bio:event ?event .
+	?event bio:date ?date .
+} 
+]]></query>
+</question>
+
+<question id="34" answertype="date" aggregation="false">
+<string><![CDATA[
+When was That Which Remains founded? 
+]]></string>
+<keywords><![CDATA[
+That Which Remains, founded
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?birth WHERE {
+	?artist rdf:type mo:MusicGroup . 
+	?artist foaf:name 'That Which Remains' .
+	?artist bio:event ?event .
+	?event rdf:type bio:Birth .
+	?event bio:date ?birth
+}
+]]></query>
+</question>
+
+<question id="35" answertype="number" aggregation="true">
+<string><![CDATA[
+How many children did Bob Marley have?
+]]></string>
+<keywords><![CDATA[
+children, Bob Marley
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+SELECT COUNT(DISTINCT ?child) as ?number WHERE {
+	?artist foaf:name 'Bob Marley' .
+	?artist rel:parentOf ?child .
+}
+]]></query>
+</question>
+
+<question id="36" answertype="number" aggregation="false">
+<string><![CDATA[
+How old is Rod Morgenstein?
+]]></string>
+<keywords><![CDATA[
+old, Rod Morgenstein
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="37" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all artists who were both in a band and released a solo album.
+]]></string>
+<keywords><![CDATA[
+artist, band, release, solo album
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist ?name WHERE { 
+	?artist mo:member_of ?band .
+        ?artist foaf:name ?name .
+	?band foaf:name ?bandname .
+        ?album mo:release_type mo:album .
+        ?album foaf:maker ?artist .
+        ?album2 mo:release_type mo:album .
+        ?album2 foaf:maker ?band
+}
+]]></query>
+</question>
+
+<question id="38" answertype="resource" aggregation="false">
+<string><![CDATA[
+In which albums does the song Because You Loved Me appear?
+]]></string>
+<keywords><![CDATA[
+album, song, Because You Loved Me, appear
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album ?title WHERE {
+	?album mo:release_type mo:album .
+	?album dc:title ?title .
+	?album mo:track ?track .
+	?track dc:title 'Because You Loved Me' .
+}
+
+]]></query>
+</question>
+
+<question id="39" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Is the song Peggy Sue on the Greatest Hits compilation by Buddy Holly?
+]]></string>
+<keywords><![CDATA[
+song, Peggy Sue, Greatest Hits, compilation, Buddy Holly
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK WHERE {
+	?album mo:release_type mo:compilation .
+	?album dc:title 'Greatest Hits' .
+	?album foaf:maker ?maker .
+	?maker foaf:name 'Buddy Holly' .
+	?album mo:track ?track .
+	?track rdf:type mo:Track .
+	?track dc:title 'Peggy Sue' .	
+}
+]]></query>
+</question>
+
+<question id="40" answertype="string" aggregation="false">
+<string><![CDATA[
+What is Beyonce Knowles middle name?
+]]></string>
+<keywords><![CDATA[
+Beyonce Knowles, middle name
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="41" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which albums of Elvis Presley have Elvis in their title?
+]]></string>
+<keywords><![CDATA[
+album, Elvis Presley, title, Elvis
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?album ?title WHERE {
+	?album mo:release_type mo:album .
+        ?album dc:title ?title .
+	?album foaf:maker ?maker .
+	?maker foaf:name 'Elvis Presley' .
+	FILTER (regex(?title, 'Elvis'))
+}
+]]></query>
+</question>
+
+<question id="42" answertype="number" aggregation="true">
+<string><![CDATA[
+How many live albums by Elvis Presley are there?
+]]></string>
+<keywords><![CDATA[
+live album, Elvis Presley
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT COUNT(DISTINCT ?live) WHERE {
+	?live mo:release_type mo:live .
+        ?live dc:title ?title .
+	?live foaf:maker ?maker .
+	?maker foaf:name 'Elvis Presley' .
+}
+]]></query>
+</question>
+
+<question id="43" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which member of the Beatles has more than one children?
+]]></string>
+<keywords><![CDATA[
+member, Beatles, more than two, child
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?artist ?name WHERE {
+	?band foaf:name 'The Beatles' .
+  	?artist mo:member_of ?band .
+  	?artist rel:parentOf ?child .
+	?artist foaf:name ?name .
+} 
+GROUP BY ?artist ?name
+HAVING (COUNT(?child) > 1)
+]]></query>
+</question>
+
+<question id="44" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all songs which are on live albums by Blondie.
+]]></string>
+<keywords><![CDATA[
+song, live album, Blondie
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?track ?title WHERE {
+	?album mo:release_type mo:live .
+	?album foaf:maker ?artist .
+	?album mo:track ?track .
+	?track dc:title ?title .
+	?artist foaf:name 'Blondie'.
+}
+]]></query>
+</question>
+
+<question id="45" answertype="resource" aggregation="true">
+<string><![CDATA[
+Give me all artists born in March.
+]]></string>
+<keywords><![CDATA[
+artist, born, March
+]]></keywords>
+<query><![CDATA[
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?artist rdf:type mo:SoloMusicArtist .
+	?artist foaf:name ?name .
+	?event rdf:type bio:Birth .
+	?artist bio:event ?event .
+	?event bio:date ?date .
+	FILTER (regex(?date, '-03-'))
+}
+]]></query>
+</question>
+
+<question id="46" answertype="string" aggregation="false">
+<string><![CDATA[
+Give me all titles of singles by Phil Collins.
+]]></string>
+<keywords><![CDATA[
+title, single, Phil Collins
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?title WHERE {
+	?single mo:release_type mo:single .
+	?single dc:title ?title .
+        ?single foaf:maker ?artist .
+        ?artist foaf:name 'Phil Collins' .
+}
+]]></query>
+</question>
+
+<question id="47" answertype="resource" aggregation="false">
+<string><![CDATA[
+Which records did Robbie Williams record together with Martin Slattery?
+]]></string>
+<keywords><![CDATA[
+record, Robbie Williams, record, together, Martin Slattery
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?record ?title WHERE {
+        ?record rdf:type mo:Record .
+        ?record foaf:maker ?artist .
+        ?record dc:title ?title .
+        ?artist foaf:name 'Robbie Williams' .
+        ?record foaf:maker ?artist2 .
+        ?artist2 foaf:name 'Martin Slattery' .
+}
+]]></query>
+</question>
+
+<question id="48" answertype="resource" aggregation="false">
+<string><![CDATA[
+Give me all soundtracks made by the Pet Shop Boys.
+]]></string>
+<keywords><![CDATA[
+soundtrack, make, Pet Shop Boys
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?soundtrack ?title WHERE {
+	?soundtrack mo:release_type mo:soundtrack .
+        ?soundtrack foaf:maker ?artist .
+        ?soundtrack dc:title ?title .
+        ?artist foaf:name 'Pet Shop Boys' .
+}
+]]></query>
+</question>
+
+<question id="49" answertype="string" aggregation="false">
+<string><![CDATA[
+In which language does Nyusha sing?
+]]></string>
+<keywords><![CDATA[
+language, sing, Nyusha
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="50" answertype="resource" aggregation="false">
+<string><![CDATA[
+On which singles did Robbie Williams collaborate with Nicole Kidman?
+]]></string>
+<keywords><![CDATA[
+single, collaborate, Robbie Williams, Nicole Kidman
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?single ?title WHERE {
+	?artist foaf:name 'Robbie Williams'  .
+	?artist rel:collaboratesWith ?collaboration .
+	?artist2 foaf:name 'Nicole Kidman' .
+	?artist2 rel:collaboratesWith ?collaboration .
+	?single mo:release_type mo:single .
+	?single foaf:maker ?collaboration .
+	?single dc:title ?title
+}
+]]></query>
+</question>
+
+<question id="51" answertype="boolean" aggregation="false">
+<string><![CDATA[
+Did Kylie Minogue ever collaborate with Mariah Carey?
+]]></string>
+<keywords><![CDATA[
+Kylie Minogue, collaborate, Mariah Carey
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rel: <http://purl.org/vocab/relationship/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK WHERE {
+	?artist foaf:name 'Kylie Minogue'  .
+	?artist rel:collaboratesWith ?collaboration .
+	?artist2 foaf:name 'Mariah Carey' .
+	?artist2 rel:collaboratesWith ?collaboration .
+}
+]]></query>
+</question>
+
+<question id="52" answertype="resource" aggregation="false">
+<string><![CDATA[
+In which countries was the single Incomplete published?
+]]></string>
+<keywords><![CDATA[
+country, single, Incomplete, publish
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="53" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which group had 70 members?
+]]></string>
+<keywords><![CDATA[
+group, 70, member
+]]></keywords>
+<query><![CDATA[
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?band ?name WHERE { 
+	?artist mo:member_of ?band .
+	?band foaf:name ?name .
+} 
+GROUP BY ?band ?name 
+HAVING (COUNT(DISTINCT ?artist) = 70)
+]]></query>
+</question>
+
+<question id="54" answertype="string" aggregation="false">
+<string><![CDATA[
+What is the legal name of Loona?
+]]></string>
+<keywords><![CDATA[
+legal name, Loona
+]]></keywords>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="55" answertype="resource" aggregation="true">
+<string><![CDATA[
+Which member of Take That recorded the most albums?
+]]></string>
+<keywords><![CDATA[
+member, Take That, the most, album
+]]></keywords>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?artist ?name WHERE {
+	?band foaf:name 'Take That' .
+  	?artist mo:member_of ?band .
+	?artist foaf:name ?name .
+	?record foaf:maker ?artist .
+        ?record rdf:type mo:Record .
+}
+ORDER BY DESC(COUNT(?record)) LIMIT 1
+]]></query>
+</question>
+
+</dataset>
+

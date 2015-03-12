@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<dataset id="participants-challenge">
+
+<question id="1" answertype="resource" aggregation="false" yago="false">
+<string><![CDATA[
+Give me all people that wrote lyrics for bands from Seattle.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?uri ?string 
+WHERE {
+  ?dbp_band owl:sameAs ?band .
+  ?dbp_band dbo:hometown res:Seattle.
+  ?album foaf:maker ?band .
+  ?album mo:lyricist ?uri .
+  ?uri foaf:name ?string .
+}
+]]></query>
+</question>
+
+<question id="2" answertype="resource" aggregation="true" yago="false">
+<string><![CDATA[
+How many singles were produced by bands under contract with Roadrunner Records.
+]]></string>
+<query> <![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+  ?dbp_band rdf:type dbo:Band .
+  ?dbp_band dbo:recordLabel res:Roadrunner_Records .
+  ?dbp_band owl:sameAs ?mb_band .
+  ?uri rdf:type mo:Record .
+  ?uri mo:release_type mo:single .
+  ?uri foaf:maker ?mb_band .
+}
+]]></query>
+</question>
+
+<question id="3" answertype="number" aggregation="true" yago="false">
+<string><![CDATA[
+Give me all records that were released during the lifetime of John F. Kennedy.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?uri ?string 
+WHERE {
+   ?uri rdf:type mo:Record . 
+   ?uri dc:title ?string .
+   ?album owl:sameAs ?uri .
+   ?album dbo:releaseDate ?date . 
+   res:John_F._Kennedy dbo:birthDate ?start .
+   res:John_F._Kennedy dbo:deathDate ?end .
+   FILTER (?date >= ?start && ?date <= ?end)
+}
+]]></query>
+</question>
+
+<question id="4" answertype="resource" aggregation="true" yago="true">
+<string><![CDATA[
+Give me all anarcho punk bands that were formed in the 80s.
+]]></string>
+<query><![CDATA[
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+SELECT DISTINCT ?uri ?string
+WHERE {
+  ?uri rdf:type yago:Anarcho-punkGroups .
+  ?uri owl:sameAs ?mb_band .
+  ?mb_band bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?date .
+  { ?event bio:date ?date .
+    FILTER (?date <= '1989-12-31'^^xsd:date || ?date >= '1980-01-01'^^xsd:date ) }
+  UNION
+  { ?event bio:date ?date .
+    FILTER regex(?date,'^198') }
+  OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') }
+}
+]]></query>
+</question>
+
+<question id="5" answertype="resource" aggregation="false" yago="false">
+<string><![CDATA[
+Give me all singles released by daughter labels of Sony Music.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?uri ?string
+WHERE {
+  ?label dbp:parent res:Sony_Music_Entertainment .
+  ?dbp_band dbo:recordLabel ?label .
+  ?dbp_band owl:sameAs ?mb_band .
+  ?uri rdf:type mo:Record .
+  ?uri mo:release_type mo:single .
+  ?uri foaf:maker ?mb_band .
+  ?uri dc:title ?string .
+}
+]]></query>
+</question>
+
+<question id="6" answertype="boolean" aggregation="true" yago="false">
+<string><![CDATA[
+Was the Cracow Klezmer Band founded before DJ Tomekk was born?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+ASK
+WHERE {
+  ?mb_band foaf:name 'The Cracow Klezmer Band' .
+  ?mb_band bio:event ?event .
+  ?event rdf:type bio:Birth .
+  ?event bio:date ?birthdate1 . 
+  res:DJ_Tomekk dbo:birthDate ?birthdate2 .
+  FILTER (?birthdate1 <= ?birthdate2)
+}
+]]></query>
+</question>
+
+<question id="7" answertype="resource" aggregation="false" yago="false">
+<string><![CDATA[
+In which country was the singer of the Drunken Lullabies by Flogging Molly born?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+SELECT DISTINCT ?uri ?string 
+WHERE {
+  ?album rdf:type mo:Record .
+  ?album dc:title 'Drunken Lullabies' .
+  ?album mo:singer ?mb_singer .
+  ?album foaf:maker ?mb_band .
+  ?mb_band foaf:name 'Flogging Molly' .
+  ?dbp_singer owl:sameAs ?mb_singer .
+  ?dbp_singer dbo:birthPlace ?city .
+  ?city dbo:country ?uri .
+  ?uri rdf:type dbo:Country .
+  OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') }
+}
+]]>
+</query>
+</question>
+
+</dataset>
+
+

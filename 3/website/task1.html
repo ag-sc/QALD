@@ -1,0 +1,94 @@
+
+<h1>Task 1: Multilingual question answering</h1>
+
+<p>
+The open challenge on <i>multilingual question answering over linked data</i> provides a benchmark for comparing different 
+approaches and systems that mediate between a user, expressing his or her information need in natural 
+language, and semantic data.
+</p>
+
+<h2>Task</h2>
+
+<p>Given a RDF dataset and a natural language question or set of keywords in one of six languages 
+(English, Spanish, German, Italian, French, Dutch), either return the correct answers, or a SPARQL 
+query that retrieves these answers.</p>
+
+<p>Full description: <img src="pictures/file.png" border="0"> <a href="3/documents/qald3_openchallenge.pdf">qald3_openchallenge.pdf</a> (Last updated: March 25, 2013)</p>
+
+<h2>Datasets</h2>
+
+<ul>
+<li>English <a href="http://wiki.dbpedia.org/Downloads38">DBpedia 3.8</a> with multilingual labels</li>
+<li><a href="http://es.dbpedia.org">Spanish DBpedia</a></li>
+<li>RDF export of <a href="http://www.musicbrainz.org">MusicBrainz</a> (English)</li>
+</ul>
+
+<h2>SPARQL endpoint</h2>
+
+<p>
+<ul>
+<li>For English DBpedia and MusicBrainz: 
+<a href="http://vtentacle.techfak.uni-bielefeld.de:443/sparql">http://vtentacle.techfak.uni-bielefeld.de:443/sparql</a></li>
+<li>For Spanish DBpedia: 
+<a href="http://es.dbpedia.org/sparql">http://es.dbpedia.org/sparql</a></li>
+</ul>
+</p>
+
+<h2>Training data</h2>
+
+<p>The training data comprises 100 natural language questions for English DBpedia and MusicBrainz each, 
+annotated with keywords as well as corresponding SPARQL queries and the answers that these queries retrieve.
+The questions are of different complexity and are available in six languages: 
+English, Spanish, German, Italian, French, and Dutch. <br />
+
+<ul>
+<li><a href="3/data/dbpedia-train.xml">dbpedia-train.xml</a></li>
+<li><a href="3/data/dbpedia-train-answers.xml">dbpedia-train-answers.xml</a></li>
+<li><a href="3/data/musicbrainz-train.xml">musicbrainz-train.xml</a></li>
+<li><a href="3/data/musicbrainz-train-answers.xml">musicbrainz-train-answers.xml</a></li>
+</ul>
+
+Furthermore, 50 similar natural language questions are provided for Spanish DBpedia. They are available in English and Spanish, and contain the same annotations.
+
+<ul>
+<li><a href="3/data/esdbpedia-train.xml">esdbpedia-train.xml</a></li>
+<li><a href="3/data/esdbpedia-train-answers.xml">esdbpedia-train-answers.xml</a></li>
+</ul>
+
+<i>Special thanks to Mariano Rico from the esDBpedia team for providing us with these queries!</i>
+
+<h2>Participant's challenge:</h2>
+
+<ul>
+<li> <a href="http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/3/participants-challenge.xml">participants-challenge.xml</a> </li>
+</ul>
+
+<br />
+<h2>Test data</h2>
+
+<p>The test data consists of similar questions and keywords, without annotations, for which answers or SPARQL queries have to be submitted.</p>
+
+<ul>
+<li><a href="3/data/dbpedia-test-questions.xml">dbpedia-test-questions.xml</a></li>
+<li><a href="3/data/esdbpedia-test-questions.xml">esdbpedia-test-questions.xml</a></li>
+<li><a href="3/data/musicbrainz-test-questions.xml">musicbrainz-test-questions.xml</a></li>
+</ul>
+
+<p>Here you can check the gold standard (i.e. with annotations, SPARQL queries and answers):</p>
+
+<ul>
+<li><a href="3/data/dbpedia-test.xml">dbpedia-test.xml</a> (with answers: <a href="3/dbpedia-test-answers.xml">dbpedia-test-answers.xml</a>)</li>
+<li><a href="3/data/esdbpedia-test.xml">esdbpedia-test.xml</a> (with answers: <a href="3/esdbpedia-test-answers.xml">esdbpedia-test-answers.xml</a>)</li>
+<li><a href="3/data/musicbrainz-test.xml">musicbrainz-test.xml</a> (with answers: <a href="3/musicbrainz-test-answers.xml">musicbrainz-test-answers.xml</a>)</li>
+</ul>
+
+
+<h2>Evaluation</h2>
+
+<p>For both training and test phase, results can be uploaded with the following evaluation form: </p>
+<ul>
+<li><a href="index.php?x=evaltool&q=3">Evaluation tool</a></li>
+</ul>
+</p>
+
+<p>Evaluation results: <img src="pictures/file.png" border="0"> <a href="3/documents/qald3_results.pdf">qald3_results.pdf</a></p>

@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<dataset id="musicbrainz-test">
+<question id="47">
+<string>
+Which member of The Beatles was married more than once?
+</string>
+</question>
+<question id="42">
+<string>
+Give me the collaborations of Shakira.
+</string>
+</question>
+<question id="49">
+<string>
+Who was born on the same day as Frank Sinatra?
+</string>
+</question>
+<question id="29">
+<string>
+Who did the vocals on the album Sabotage?
+</string>
+</question>
+<question id="1">
+<string>
+Which soundtrack albums did Clannad record?
+</string>
+</question>
+<question id="15">
+<string>
+Give me all soundtracks composed by John Williams.
+</string>
+</question>
+<question id="40">
+<string>
+Did Kurt Cobain have children?
+</string>
+</question>
+<question id="25">
+<string>
+How many members does the largest group have?
+</string>
+</question>
+<question id="2">
+<string>
+Which bands were founded in 2010?
+</string>
+</question>
+<question id="19">
+<string>
+Give me all Celldweller EPs.
+</string>
+</question>
+<question id="30">
+<string>
+How many artists were born in 1966?
+</string>
+</question>
+<question id="32">
+<string>
+Which bands was Robbie Williams a member of?
+</string>
+</question>
+<question id="5">
+<string>
+Which artists performed the song Over the Rainbow?
+</string>
+</question>
+<question id="12">
+<string>
+Give me all siblings of Michael Jackson.
+</string>
+</question>
+<question id="8">
+<string>
+How many bands are called Air?
+</string>
+</question>
+<question id="37">
+<string>
+Are there any live albums by the Beatles?
+</string>
+</question>
+<question id="45">
+<string>
+How many jazz compilations are there?
+</string>
+</question>
+<question id="38">
+<string>
+How many soundtracks did Hans Zimmer compose?
+</string>
+</question>
+<question id="34">
+<string>
+In which bands did Kurt Cobain play?
+</string>
+</question>
+<question id="20">
+<string>
+What is the longest song by John Cage?
+</string>
+</question>
+<question id="23">
+<string>
+Give me the spouses of all members of The Beatles.
+</string>
+</question>
+<question id="21">
+<string>
+Which compilations does the song Waterloo by ABBA appear on?
+</string>
+</question>
+<question id="14">
+<string>
+How many audiobooks by J.R.R. Tolkien are there?
+</string>
+</question>
+<question id="35">
+<string>
+Which bands released more than 100 singles?
+</string>
+</question>
+<question id="33">
+<string>
+Was John Lennon married?
+</string>
+</question>
+<question id="9">
+<string>
+Did Elvis Presley record jazz albums?
+</string>
+</question>
+<question id="31">
+<string>
+Is there a group called Michael Jackson?
+</string>
+</question>
+<question id="46">
+<string>
+How many children did John Lennon have?
+</string>
+</question>
+<question id="44">
+<string>
+Give me all audiobooks by Paul Auster.
+</string>
+</question>
+<question id="17">
+<string>
+When was Ludwig van Beethoven born?
+</string>
+</question>
+<question id="6">
+<string>
+Give me all songs on the album Abbey Road.
+</string>
+</question>
+<question id="16">
+<string>
+Which person recorded the most singles?
+</string>
+</question>
+<question id="11">
+<string>
+Give me all members of The Muppets.
+</string>
+</question>
+<question id="4">
+<string>
+How many bands are called Queen?
+</string>
+</question>
+<question id="24">
+<string>
+Are there bootleg recordings by Pink Floyd?
+</string>
+</question>
+<question id="27">
+<string>
+When was the daughter of Elvis Presley born?
+</string>
+</question>
+<question id="22">
+<string>
+When did Madonna and Guy Richie get divorced?
+</string>
+</question>
+<question id="36">
+<string>
+How many live albums did The Rolling Stones release?
+</string>
+</question>
+<question id="41">
+<string>
+Who is the creator of the audiobook The Hobbit?
+</string>
+</question>
+<question id="3">
+<string>
+Are there any interviews with Tolkien?
+</string>
+</question>
+<question id="43">
+<string>
+Who created the single The Girl Is Mine?
+</string>
+</question>
+<question id="48">
+<string>
+Show me all live albums by Nat King Cole.
+</string>
+</question>
+<question id="39">
+<string>
+When were The Beatles founded?
+</string>
+</question>
+<question id="28">
+<string>
+How many EPs did Muse release?
+</string>
+</question>
+<question id="26">
+<string>
+Which rock album has the most tracks?
+</string>
+</question>
+<question id="50">
+<string>
+Since when does The Who exist?
+</string>
+</question>
+<question id="7">
+<string>
+What is the third song on the album In the Wee Small Hours?
+</string>
+</question>
+<question id="18">
+<string>
+Who wrote the lyrics for West Side Story?
+</string>
+</question>
+<question id="13">
+<string>
+Which albums contain interviews with Queen?
+</string>
+</question>
+<question id="10">
+<string>
+Which songs by Miles Davis are longer than 20 minutes?
+</string>
+</question>
+</dataset>

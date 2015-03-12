@@ -1,0 +1,907 @@
+<?xml version="1.0" ?>
+<dataset id="esdbpedia-train">
+
+<question id="1" answertype="resource" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+Give me all Russian astronauts.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los astronautas rusos.
+]]></string>
+<query><![CDATA[
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?uri
+WHERE{
+   ?uri dcterms:subject <http://es.dbpedia.org/resource/Categoría:Astronautas_de_Rusia>
+}
+]]></query>
+</question>
+
+<question id="2" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who was the son of Alfonso López Pumarejo married to?
+]]></string>
+<string lang="es"><![CDATA[
+Con quién estaba casado el hijo de Alfonso López Pumarejo?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Alfonso_López_Pumarejo esdbp:hijos ?hijo .
+   ?hijo esdbp:cónyuge ?uri .
+}
+]]></query>
+</question>
+
+<question id="3" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which river does the Brooklyn Bridge cross?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué río cruza el puente de Brooklyn?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Puente_de_Brooklyn esdbp:cruza ?uri . 
+}
+]]></query>
+</question>
+
+<question id="4" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+In which city did Eva Perón die?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué ciudad murió Eva Perón?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+  esres:Eva_Perón esdbp:lugarmuerte ?uri .
+  ?uri rdf:type dbo:PopulatedPlace .
+}
+]]></query>
+</question>
+
+<question id="5" answertype="boolean" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+Is the wife of president Obama called Michelle?
+]]></string>
+<string lang="es"><![CDATA[
+¿La mujer del presidente Obama se llama Michelle?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+ASK 
+WHERE { 
+  esres:Barack_Obama esdbp:cónyuge ?conyuge . 
+  ?conyuge foaf:name ?nombre . 
+  FILTER(regex(?nombre,'Michelle')) 
+}
+]]></query>
+</question>
+
+<question id="6" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Where does the Río Poxté originate?
+]]></string>
+<string lang="es"><![CDATA[
+¿Dónde nace el Río Poxté?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Río_Poxté esdbp:lugarNacimiento ?uri . 
+}
+]]></query>
+</question>
+
+<question id="7" answertype="boolean" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Is proinsulin a protein?
+]]></string>
+<string lang="es"><![CDATA[
+¿La proinsulina es una proteina?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+ASK 
+WHERE { 
+  esres:Proinsulina rdf:type dbo:Protein .
+}
+]]></query>
+</question>
+
+<question id="8" answertype="number" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+How tall is Carmen Electra?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuánto mide Carmen Electra?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?estatura 
+WHERE { 
+   esres:Carmen_Electra esdbp:estatura ?estatura . 
+}
+]]></query>
+</question>
+
+<question id="9" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who created Goofy?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién es el creador de Goofy?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+  esres:Goofy esdbp:creador ?uri . 
+}
+]]></query>
+</question>
+
+<question id="10" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all cities in Germany with more than 500000 inhabitants.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las cuidades en Alemania que tengan más de 500000 habitantes.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri WHERE { 
+   ?uri esdbp:estado ?estado .
+   ?estado dbo:country esres:Alemania .
+   ?uri esdbp:población ?habitantes .
+   FILTER (?habitantes > 500000) .
+}
+]]></query>
+</question>
+
+<question id="11" answertype="string" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which museum exhibits The Starry Night by van Gogh?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué museo se expone La Noche Estrellada de van Gogh?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?museo
+WHERE {
+	esres:La_noche_estrellada esdbp:localización ?museo .
+}
+]]></query>
+</question>
+
+<question id="12" answertype="number" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+How many employees does IBM have?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuántos empleados tiene IBM?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?empleados 
+WHERE { 
+   esres:IBM esdbp:empleados ?empleados .
+}
+]]></query>
+</question>
+
+<question id="13" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+In which province is the Lake of Banyoles?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué provincia se encuentra el Lago de Bañolas?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri
+WHERE {
+	esres:Lago_de_Bañolas esdbp:provincia ?uri .
+}
+]]></query>
+</question>
+
+<question id="14" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which characters were created by Walt Disney?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué personajes ideó Walt Disney?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  ?uri esdbp:creador esres:Walt_Disney . 
+}
+]]></query>
+</question>
+
+<question id="15" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which mountain is the highest after the Annapurna?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuál es la montaña más alta después del Annapurna?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Annapurna esdbp:elevación ?elevacion . 
+   ?uri rdf:type dbo:Mountain . 
+   ?uri esdbp:elevación ?elevacion2 . 
+   FILTER (?elevacion2 < ?elevacion) . 
+} 
+ORDER BY DESC(?elevacion2) LIMIT 1
+]]></query>
+</question>
+
+<question id="16" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+In which films directed by Garry Marshall was Julia Roberts starring?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué películas dirigidas por Garry Mashall actuó Julia Roberts?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:reparto esres:Julia_Roberts . 
+  ?uri esdbp:dirección 'Garry Marshall'@es .
+}
+]]></query>
+</question>
+
+<question id="17" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which bridges are of the same type as the Manhattan Bridge?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué puentes son del mismo tipo que el puente de Manhattan?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri  WHERE { 
+   ?uri rdf:type dbo:Bridge . 
+   ?uri esdbp:tipo ?tipo . 
+   esres:Puente_de_Manhattan esdbp:tipo ?mtipo . 
+   FILTER (regex(?tipo, ?mtipo)).
+   FILTER (?uri != esres:Puente_de_Manhattan) . 
+}
+]]></query>
+</question>
+
+<question id="18" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+What is the currency of Chile?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuál es la moneda de Chile?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Chile esdbp:moneda ?uri .  
+}
+]]></query>
+</question>
+
+<question id="19" answertype="resource" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+Which European countries adopted the Euro?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué países de europa han introducido el Euro?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?uri
+WHERE {
+    ?uri dcterms:subject <http://es.dbpedia.org/resource/Categoría:Países_de_Europa> .
+    { ?uri esdbp:moneda esres:Euro . } UNION
+    { ?uri esdbp:moneda 'Euro'@es . }
+}
+]]></query>
+</question>
+
+<question id="20" answertype="number" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+What is the area code of Barcelona?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuál es el prefijo de Barcelona?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?prefijo 
+WHERE { 
+   esres:Barcelona esdbp:prefijo ?prefijo . 
+}
+]]></query>
+</question>
+
+<question id="21" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+How many official languages does Niger have?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuántos idiomas oficiales hay en Níger?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 
+   esres:Níger esdbp:idiomasOficiales ?uri . 
+}
+]]></query>
+</question>
+
+<question id="22" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Through which country does the Tagil river flow?
+]]></string>
+<string lang="es"><![CDATA[
+¿Por qué país fluye el río Tagil?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+   esres:Río_Tagil esdbp:país ?uri . 
+}
+]]></query>
+</question>
+
+<question id="23" answertype="string" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+When was the Battle of Gettysburg?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuándo tuvo lugar la batalla de Gettysburg?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?fecha 
+WHERE { 
+   esres:Batalla_de_Gettysburg esdbp:fecha ?fecha . 
+}
+]]></query>
+</question>
+
+<question id="24" answertype="string" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who is the mayor of Sevilla?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién es el alcalde de Sevilla?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?alcalde
+WHERE { 
+   esres:Sevilla esdbp:alcalde ?alcalde . 
+}
+]]></query>
+</question>
+
+<question id="25" answertype="boolean" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Is Miguel González Avelar still alive?
+]]></string>
+<string lang="es"><![CDATA[
+¿Todavía vive Miguel González Avelar?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+ASK 
+WHERE {
+	OPTIONAL { esres:Miguel_González_Avelar esdbp:fechamuerte ?fecha . }
+        FILTER (!BOUND(?fecha))
+}
+]]></query>
+</question>
+
+<question id="26" answertype="string" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+Give me the homepage of Bill Gates.
+]]></string>
+<string lang="es"><![CDATA[
+Dame la página de web de Bill Gates.
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?string 
+WHERE {
+	esres:Bill_Gates foaf:homepage ?string .
+}
+]]></query>
+</question>
+
+<question id="27" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who was the wife of U.S. president Lincoln?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién fué la mujer del presidente americano Lincoln?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Abraham_Lincoln esdbp:cónyuge ?uri .
+}
+]]></query>
+</question>
+
+<question id="28" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who developed the video game World of Warcraft?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién desarrolló el videojuego World of Warcraft?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri 
+WHERE {
+	esres:World_of_Warcraft esdbp:desarrollador ?uri . 
+}
+]]></query>
+</question>
+
+<question id="29" answertype="string" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+What is the official website of Tom Cruise?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuál el la página Web oficial de Tom Cruise?
+]]></string>
+<query><![CDATA[
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE { 
+	esres:Tom_Cruise foaf:homepage ?string .
+}
+]]></query>
+</question>
+
+<question id="30" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+List all episodes of the first season of the HBO television series The Sopranos.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los episodios de la primera temporada de la serie de HBO Los Sopranos.
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri esdbp:serie esres:Los_Soprano .
+        ?uri esdbp:temporada 1 .
+}
+]]></query>
+</question>
+
+<question id="31" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who produced the most films?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién ha producido más películas?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+	?pelicula rdf:type dbo:Film .
+        ?pelicula esdbp:producción ?uri .
+} 
+ORDER BY DESC(COUNT(?pelicula)) LIMIT 1
+]]></query>
+</question>
+
+<question id="32" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which mountains are higher than the Lhotse?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué montañas son más altas que el Lhotse?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri rdf:type dbo:Mountain .
+        ?uri esdbp:elevación ?elevacion .
+        esres:Lhotse esdbp:elevación ?elevacion2 .
+        FILTER (?elevacion > ?elevacion2) .
+}
+]]></query>
+</question>
+
+<question id="33" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who created Wikipedia?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién creó Wikipedia?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Wikipedia esdbp:creador ?uri . 
+}
+]]></query>
+</question>
+
+<question id="34" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all actors starring in Last Action Hero.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los actores que hayan actuado en Last Action Hero.
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE {
+  esres:Last_Action_Hero esdbp:reparto ?uri . 
+} 
+]]></query>
+</question>
+
+<question id="35" answertype="boolean" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Is Christian Bale starring in Batman Begins?
+]]></string>
+<string lang="es"><![CDATA[
+¿Actúa Christian Bale en Batman Begins?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+ASK 
+WHERE {
+  esres:Batman_Begins esdbp:reparto esres:Christian_Bale . 
+} 
+]]></query>
+</question>
+
+<question id="36" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which actors were born in Germany?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué actores nacieron en Alemania?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Actor .
+  { ?uri esdbp:lugarDeNacimiento esres:Alemania . }
+  UNION
+  { ?uri esdbp:lugarDeNacimiento ?lugar .
+    FILTER regex(?lugar,'Alemania') }
+}
+]]></query>
+</question>
+
+<question id="37" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all films produced by Pedro Almodóvar.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las películas producidas por Pedro Almodóvar.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:producción esres:Pedro_Almodóvar . 
+}
+]]></query>
+</question>
+
+<question id="38" answertype="string" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Which languages are spoken in Estonia?
+]]></string>
+<string lang="es"><![CDATA[
+¿Qué idiomas se hablan en Estonia?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+      esres:Estonia esdbp:idioma ?uri .
+}
+]]></query>
+</question>
+
+<question id="39" answertype="resource" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all presidents of the United States.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los presidentes de los Estados Unidos de América.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri esdbp:cargo esres:Presidente_de_los_Estados_Unidos .
+        ?uri rdf:type dbo:Person .
+        FILTER(!(regex(str(?uri),'Campaña_presidencial')))
+}
+]]></query>
+</question>
+
+<question id="40" answertype="number" aggregation="true" onlyesdbp="true">
+<string lang="en"><![CDATA[
+How many films did Pedro Almodóvar produce?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuántas películas ha producido Pedro Almodóvar?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri)
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:producción esres:Pedro_Almodóvar . 
+}
+]]></query>
+</question>
+
+<question id="41" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all books written by Danielle Steel.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los libros escritos por Danielle Steel.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri rdf:type dbo:Book .
+        ?uri esdbp:autor esres:Danielle_Steel .
+}
+]]></query>
+</question>
+
+<question id="42" answertype="string" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+In which programming language is GIMP written?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué lenguaje de programación esta escrito GIMP?
+]]></string>
+<query><![CDATA[
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+	esres:GIMP esdbp:lenguajeProgramación ?uri .
+}
+]]></query>
+</question>
+
+<question id="43" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who produced films starring Buster Keaton?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién produjo las películas en las que actua Buster Keaton?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?pelicula rdf:type dbo:Film .
+        ?pelicula esdbp:reparto esres:Buster_Keaton .
+        ?pelicula esdbp:producción ?uri .
+}
+]]></query>
+</question>
+
+<question id="44" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all movies with Tom Cruise.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todas las películas con Tom Cruise.
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+	?uri rdf:type dbo:Film.
+        ?uri esdbp:reparto esres:Tom_Cruise .
+}
+]]></query>
+</question>
+
+<question id="45" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+In which films did Julia Roberts as well as Richard Gere play?
+]]></string>
+<string lang="es"><![CDATA[
+¿En qué películas actúan Julia Roberts y Richard Gere?
+]]></string>
+<query><![CDATA[
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE {
+  ?uri rdf:type dbo:Film .
+  ?uri esdbp:reparto esres:Julia_Roberts . 
+  ?uri esdbp:reparto esres:Richard_Gere .
+}
+]]></query>
+</question>
+
+<question id="46" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Who wrote the book The pillars of the Earth?
+]]></string>
+<string lang="es"><![CDATA[
+¿Quién escribió el libro Los pilares de la tierra?
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/> 
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri 
+WHERE {
+	esres:Los_pilares_de_la_Tierra esdbp:autor ?uri .
+}
+]]></query>
+</question>
+
+<question id="47" answertype="resource" aggregation="false" onlyesdbp="true">
+<string lang="en"><![CDATA[
+Give me all soccer clubs in the Premier League.
+]]></string>
+<string lang="es"><![CDATA[
+Dame todos los equipos de futbol de la Premier League.
+]]></string>
+<query><![CDATA[
+PREFIX esres: <http://es.dbpedia.org/resource/>
+PREFIX esdbp: <http://es.dbpedia.org/property/>
+SELECT DISTINCT ?uri
+WHERE { 
+   ?uri esdbp:liga esres:Premier_League . 
+}
+]]></query>
+</question>
+
+<question id="48" answertype="number" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+How often was Michael Jordan divorced?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuántas veces se ha divorciado Michael Jordan?
+]]></string>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="49" answertype="number" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+How many big fires struck Paris during the Middle Ages?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuántos grandes incendios se produjeron en París en la época medieval?
+]]></string>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+<question id="50" answertype="resource" aggregation="false" onlyesdbp="false">
+<string lang="en"><![CDATA[
+What is the most beautiful painting?
+]]></string>
+<string lang="es"><![CDATA[
+¿Cuál es el cuadro más bello?
+]]></string>
+<query><![CDATA[
+OUT OF SCOPE
+]]></query>
+</question>
+
+</dataset>

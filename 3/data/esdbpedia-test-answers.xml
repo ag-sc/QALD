@@ -1,0 +1,1037 @@
+<?xml version="1.0" ?>
+<dataset id="esdbpedia-test">
+<question aggregation="true" answertype="resource" id="5" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the highest mountain on Gran Canaria?]]></string>
+<string lang="es"><![CDATA[¿Cuál es la montaña más alta de la Gran Canaria?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Pico_de_las_Nieves</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="47" onlyesdbp="true">
+<string lang="en"><![CDATA[How high is the Hogg Rock?]]></string>
+<string lang="es"><![CDATA[¿Qué altura tiene Hogg Rock?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>1548</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="34" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the time zone of Honduras?]]></string>
+<string lang="es"><![CDATA[¿En qué zona horaria se encuentra Honduras?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/UTC-6</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="2" onlyesdbp="true">
+<string lang="en"><![CDATA[Who was the successor of Ramón José Velásquez?]]></string>
+<string lang="es"><![CDATA[¿Quién fué el sucesor de Ramón José Velásquez?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Rafael_Caldera</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="49" onlyesdbp="true">
+<string lang="en"><![CDATA[How many people live in the capital of Greece?]]></string>
+<string lang="es"><![CDATA[¿Cuánta gente vive en la capital de Grecia?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>3158400</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="26" onlyesdbp="true">
+<string lang="en"><![CDATA[List all games by Firaxis.]]></string>
+<string lang="es"><![CDATA[Dame todos los juegos de Firaxis.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sid_Meier's_Alpha_Centauri</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_III</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sid_Meier's_Gettysburg!</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_IV</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/CivCity:_Rome</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sid_Meier's_Pirates!_(videojuego_de_2004)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_IV:_Warlords</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_IV:_Beyond_the_Sword</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_IV:_Colonization</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_Revolution</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_III:_Play_the_World</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_III:_Conquests</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Civilization_V</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sid_Meier's_Railroads!</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="num" id="30" onlyesdbp="false">
+<string lang="en"><![CDATA[What is the average temperature on Hawaii?]]></string>
+<string lang="es"><![CDATA[¿Cuál es la temperature media en Hawaii?]]></string>
+<query><![CDATA[]]></query>
+<answers/>
+</question>
+<question aggregation="false" answertype="number" id="27" onlyesdbp="true">
+<string lang="en"><![CDATA[When was Microsoft founded?]]></string>
+<string lang="es"><![CDATA[¿Cuándo se fundó Microsoft?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>1975</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="50" onlyesdbp="true">
+<string lang="en"><![CDATA[Who composed the music for A Fistful of Dollars?]]></string>
+<string lang="es"><![CDATA[¿Quién compuso la música de Por un puñado de dólares?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ennio_Morricone</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" id="35" onlyesdbp="true">
+<string lang="en"><![CDATA[Is Costa Rica in the same timezone as Honduras?]]></string>
+<string lang="es"><![CDATA[¿Costa Rica se encuentra en la misma zona horaria que Honduras?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<boolean>True</boolean>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="37" onlyesdbp="true">
+<string lang="en"><![CDATA[Which instruments did John Lennon play?]]></string>
+<string lang="es"><![CDATA[¿Qué instrumentos tocaba John Lennon?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Guitarra</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Banjo</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Piano</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Voz_(música)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Bajo_eléctrico</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Armónica</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Instrumentos_de_percusión</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mellotrón</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="17" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all actors starring in movies directed by and starring Woody Allen.]]></string>
+<string lang="es"><![CDATA[Dame todos los actores de películas dirigidas por Woody Allen en las qué también haya actúado él mismo.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Woody_Allen</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/James_Anderson_(actor)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Janet_Margolin</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Marcel_Hillaire</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Jan_Merlin</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Jacquelyn_Hyde</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Grace_Bauer</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Lonny_Chapman</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" id="3" onlyesdbp="true">
+<string lang="en"><![CDATA[Who is the mayor of San Sebastián?]]></string>
+<string lang="es"><![CDATA[¿Quién es el alcalde de San Sebastián?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<string><![CDATA[Juan Carlos Izagirre Hortelano]]></string>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="28" onlyesdbp="true">
+<string lang="en"><![CDATA[Who is the husband of Penélope Cruz?]]></string>
+<string lang="es"><![CDATA[¿Quién es el marido de Penélope Cruz?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Javier_Bardem</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="boolean" id="13" onlyesdbp="true">
+<string lang="en"><![CDATA[Do Prince Harry and Prince William have the same mother?]]></string>
+<string lang="es"><![CDATA[¿Tienen el príncipe Harry y el prínciple William la misma madre?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<boolean>True</boolean>
+</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="resource" id="46" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all books by Borges with more than 300 pages.]]></string>
+<string lang="es"><![CDATA[Dame todos los libros de Borges con más de 300 páginas.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Fervor_de_Buenos_Aires</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/El_espejo_de_tinta</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Las_ruinas_circulares</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/El_impostor_inverosímil_Tom_Castro</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/La_viuda_Ching,_pirata</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="11" onlyesdbp="true">
+<string lang="en"><![CDATA[How tall is Ramón Ramos?]]></string>
+<string lang="es"><![CDATA[¿Qué altura tiene Ramón Ramos?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>205</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="10" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all people that were born in Berlin and died in Vienna.]]></string>
+<string lang="es"><![CDATA[Dame todas las personas que hayan nacido en Berlín y hayan muerto en Viena?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Otto_Wilhelm_Hermann_von_Abich</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="resource" id="7" onlyesdbp="true">
+<string lang="en"><![CDATA[Who is the youngest player of Deportivo de La Coruña?]]></string>
+<string lang="es"><![CDATA[¿Quién es el jugador más jóven de Deportivo de La Coruña?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/José_Luis_Oltra</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" id="44" onlyesdbp="true">
+<string lang="en"><![CDATA[When did Sophocles die?]]></string>
+<string lang="es"><![CDATA[¿Cuándo murió Sófocles?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>406</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="32" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the ruling party in Cadiz?]]></string>
+<string lang="es"><![CDATA[¿Qué partido gobierna en Cádiz?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Partidos_judiciales_de_Andalucía</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="48" onlyesdbp="true">
+<string lang="en"><![CDATA[Who created the comic Captain America?]]></string>
+<string lang="es"><![CDATA[¿Quién creó el comic Capitán América?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Jack_Kirby</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Joe_Simon</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="29" onlyesdbp="false">
+<string lang="en"><![CDATA[Which poets were born in Spain?]]></string>
+<string lang="es"><![CDATA[¿Qué poetas nacieron en España?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gerardo_Diego</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gloria_Fuertes</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Carmen_Conde</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ramón_García_Mateos</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Matilde_Camus</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Agustín_Fernández_Mallo</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ángel_Padilla_(poeta)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/María_Teresa_Cervantes</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ignacio_Escuín_Borao</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ana_Vidal_Egea</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mario_Cuenca_Sandoval</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Raquel_Lanseros</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Rubén_Martín_Díaz</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Juan_Meseguer</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Alfredo_Rodríguez</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Miguel_Hernández</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mauricio_Bacarisse</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Antonio_Gamoneda</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Félix_Grande</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Vicente_Luis_Mora</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Lois_Pereiro</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Pedro_Miguel_Lamet</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Alfonso_Martínez_Garrido</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Hasan_Rashid</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ignacio_Rodríguez_Díaz</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ramon_Picó_i_Campamar</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Joaquim_Ruyra</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Enric_Casasses</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Carlos_Martínez_Aguirre</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Leandro_Fernández_de_Moratín</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gustavo_Adolfo_Bécquer</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/José_de_Echegaray</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Carlos_Barral</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Enrique_de_Mesa</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/José_María_Álvarez_de_Sotomayor</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Tito_Muñoz_(escritor)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Juan_Jesús_León</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ricardo_Bellveser</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/José_Fernández-Arroyo</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Enrique_José_Serrallés</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/David_Fernández_Rivera</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Guillermo_López_Marín</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/José_Ramón_López_de_los_Mozos</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Francisco_López_Serrano</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Antonio_Berral_Cardeñosa</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Antonio_Figuera</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Joan_Maragall</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Luis_Vea_García</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Elisabeth_Mulder</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Francesc_Pelagi_Briz</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Joan_Sales_i_Vallès</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Rafael_Vallbona</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Iria_Fernández_Crespo</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Matilde_González_Palau</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Pedro_Salinas</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Álvaro_Tato</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Jesús_Urceloy</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gaspar_Núñez_de_Arce</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Juan_José_Cuadros_Pérez</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ibn_al-Abbar</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Maria_Beneyto_i_Cuñat</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Lucía_Aldao</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Alfonsa_de_la_Torre</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Maruja_Pino_Piñeiro</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Olalla_Cociña</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sem_Tob</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" id="40" onlyesdbp="true">
+<string lang="en"><![CDATA[Did Darwin influence Richard Dawkins?]]></string>
+<string lang="es"><![CDATA[¿Tuvo Darwin influencia sobre Richard Dawkins?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<boolean>True</boolean>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" id="41" onlyesdbp="true">
+<string lang="en"><![CDATA[Is Michelle Obama the wife of Barack Obama?]]></string>
+<string lang="es"><![CDATA[¿Es Michele Obama la esposa de Barack Obama?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<boolean>True</boolean>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="22" onlyesdbp="true">
+<string lang="en"><![CDATA[Who developed Minecraft?]]></string>
+<string lang="es"><![CDATA[¿Quién desarrolló Minecraft?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mojang_AB</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="21" onlyesdbp="true">
+<string lang="en"><![CDATA[In which military conflicts did Juan José Salvadores participate?]]></string>
+<string lang="es"><![CDATA[¿En qué conflictos militares participó Juan José Salvadores?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Guerra_de_la_Independencia_Española</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Guerras_civiles_argentinas</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Guerra_de_Independencia_de_la_Argentina</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="36" onlyesdbp="false">
+<string lang="en"><![CDATA[Give me a list of all lakes in Argentina.]]></string>
+<string lang="es"><![CDATA[Dame una lista de todos los lagos de Argentina.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Lago_Huechulafquen</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Lago_del_Desierto</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="9" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all cars that are produced in Germany.]]></string>
+<string lang="es"><![CDATA[Dame todos los coches producidos en Alemania.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Orion</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Opel_Kadett</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Volkswagen_Sedán</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_T</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Escort</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Fiesta</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Audi_R8</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_A</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_Clase_S</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Porsche_Carrera_GT</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_Clase_CLK</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_Clase_SLK</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Volkswagen_Scirocco</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Audi_Nuvolari</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Citroën_Traction_Avant</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Y_8_HP</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Taunus</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_SLS_AMG</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Volkswagen_Corrado</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/BMW_328</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_O_321</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_W114/W115</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Ford_Fusion_(Europa)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_O_3500</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mercedes-Benz_L_319</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="number" id="43" onlyesdbp="true">
+<string lang="en"><![CDATA[How many children did Franco have?]]></string>
+<string lang="es"><![CDATA[¿Cuántos hijos tuvo Franco?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>1</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="38" onlyesdbp="true">
+<string lang="en"><![CDATA[Who was the husband of the mother of Juan Carlos I?]]></string>
+<string lang="es"><![CDATA[¿Quién era el marido de la madre de Juan Carlos I?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Juan_de_Borbón</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" id="18" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the full name of Rajoy?]]></string>
+<string lang="es"><![CDATA[¿Cuál es el nombre completo de Rajoy?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<string><![CDATA[Mariano Rajoy Brey]]></string>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" id="6" onlyesdbp="true">
+<string lang="en"><![CDATA[To which countries does the Himalayan mountain system extend?]]></string>
+<string lang="es"><![CDATA[¿Por qué países se extiende el Himalaya?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<string><![CDATA[China]]></string>
+</answer>
+<answer>
+<string><![CDATA[India]]></string>
+</answer>
+<answer>
+<string><![CDATA[Pakistán]]></string>
+</answer>
+<answer>
+<string><![CDATA[Afganistán]]></string>
+</answer>
+<answer>
+<string><![CDATA[Nepal]]></string>
+</answer>
+<answer>
+<string><![CDATA[Tayikistán]]></string>
+</answer>
+<answer>
+<string><![CDATA[Bután]]></string>
+</answer>
+<answer>
+<string><![CDATA[Birmania]]></string>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="12" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the capital of the Republic of the Congo?]]></string>
+<string lang="es"><![CDATA[¿Cuál es la capital de la República del Congo?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Brazzaville</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" id="33" onlyesdbp="true">
+<string lang="en"><![CDATA[What is the nickname of Edinburgh?]]></string>
+<string lang="es"><![CDATA[¿Cuál es el apodo de Edimburgo?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<string><![CDATA[La Atenas del norte.]]></string>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="16" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all movies directed by Francis Ford Coppola.]]></string>
+<string lang="es"><![CDATA[Dame todas las películas que haya dirigido Francis Ford Coppola.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Apocalypse_Now</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/El_padrino_(película)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Tetro</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Cotton_Club_(película)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gardens_of_Stone</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="resource" id="1" onlyesdbp="false">
+<string lang="en"><![CDATA[Which islands have more than 500000 inhabitants?]]></string>
+<string lang="es"><![CDATA[¿Qué islas tienen más de 500000 habitantes?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Bengkalis</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_Masbate</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sumba</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Creta</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Sajalín</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Margarita</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_São_Vicente_(Brasil)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Geografía_de_Chipre</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Gran_Canaria</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mallorca</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Tenerife</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_Bohol</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_São_Luís</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Hong_Kong</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_Bhola</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Flores_(Indonesia)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Montreal</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Irlanda_(isla)</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Nueva_Guinea</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Geografía_de_Cuba</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Kyūshū</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mindanao</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sri_Lanka</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Isla_de_Taiwán</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sumatra</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="45" onlyesdbp="true">
+<string lang="en"><![CDATA[List the children of Vito Corleone.]]></string>
+<string lang="es"><![CDATA[Dame una lista de los hijos de Vito Corleone.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Michael_Corleone</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Fredo_Corleone</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Sonny_Corleone</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Tom_Hagen</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Connie_Corleone</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="23" onlyesdbp="false">
+<string lang="en"><![CDATA[What is the melting point of copper?]]></string>
+<string lang="es"><![CDATA[¿Cúal es el punto de fusión del cobre?]]></string>
+<query><![CDATA[]]></query>
+<answers/>
+</question>
+<question aggregation="true" answertype="number" id="15" onlyesdbp="true">
+<string lang="en"><![CDATA[How many official languages are spoken in Peru?]]></string>
+<string lang="es"><![CDATA[¿Cuántos idiomas oficiales se hablan en Perú?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>1</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" id="42" onlyesdbp="true">
+<string lang="en"><![CDATA[When was El Ángel built?]]></string>
+<string lang="es"><![CDATA[¿Cuándo se construyó El Ángel?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>1900</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="8" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all members of Prodigy.]]></string>
+<string lang="es"><![CDATA[Dame todos los miembros de la banda Prodigy.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Liam_Howlett</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Keith_Flint</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Maxim_Reality</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="14" onlyesdbp="true">
+<string lang="en"><![CDATA[Who was the father of Queen Elizabeth II?]]></string>
+<string lang="es"><![CDATA[¿Quién fue el padre de la reina Isabel II?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/Jorge_VI_del_Reino_Unido</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="4" onlyesdbp="true">
+<string lang="en"><![CDATA[How many students does the University of Seville have?]]></string>
+<string lang="es"><![CDATA[¿Cuántos estudiantes tiene la Universidad de Sevilla?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>69750</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="31" onlyesdbp="true">
+<string lang="en"><![CDATA[Which other cars did the designer of the SEAT Cordoba design?]]></string>
+<string lang="es"><![CDATA[¿Qué otros coches desarrolló el diseñador del SEAT Córdoba?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/SEAT_Toledo</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/SEAT_Salsa</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/SEAT_Tango</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Volkswagen_Scirocco</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Alfa_Romeo_Nuvola</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Volkswagen_Amarok</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/SEAT_León</uri>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="25" onlyesdbp="true">
+<string lang="en"><![CDATA[How many inhabitants does Maribor have?]]></string>
+<string lang="es"><![CDATA[¿Cuántos habitantes tiene Maribor?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>126668</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" id="39" onlyesdbp="true">
+<string lang="en"><![CDATA[How many employees does Apple have?]]></string>
+<string lang="es"><![CDATA[¿Cuántos empleados tiene Apple?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>60400</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="24" onlyesdbp="false">
+<string lang="en"><![CDATA[Give me all sister cities of Brno.]]></string>
+<string lang="es"><![CDATA[Dame las ciudades hermanadas con Brno.]]></string>
+<query><![CDATA[]]></query>
+<answers/>
+</question>
+<question aggregation="true" answertype="number" id="19" onlyesdbp="true">
+<string lang="en"><![CDATA[How often did Nicole Kidman marry?]]></string>
+<string lang="es"><![CDATA[¿Cuántas veces ha estado casada Nicole Kidman?]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<number>2</number>
+</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" id="20" onlyesdbp="true">
+<string lang="en"><![CDATA[Give me all nonprofit organizations.]]></string>
+<string lang="es"><![CDATA[Dame todas las organizaciones sin ánimo de lucro.]]></string>
+<query><![CDATA[]]></query>
+<answers>
+<answer>
+<uri>http://es.dbpedia.org/resource/SIL_International</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/MetaBrainz_Foundation</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Movimiento_de_Integración_y_Liberación_Homosexual</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Fundación_Víctor_Jara</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Répertoire_International_des_Sources_Musicales</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Quackwatch</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Freedom_From_Religion_Foundation</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/SPIE</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mutual_UFO_Network</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Società_Italiana_Organizzazione_Internazionale</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Laboratorio_Draper</uri>
+</answer>
+<answer>
+<uri>http://es.dbpedia.org/resource/Mind_and_Life_Institute</uri>
+</answer>
+</answers>
+</question>
+</dataset>

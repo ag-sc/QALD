@@ -1,0 +1,12 @@
+
+IndexIgnore *
+
+<Files ~ "statistics.txt">
+  AuthUserFile /home/cunger/.htpasswd
+  AuthGroupFile /dev/null
+  AuthName "Sorry!"
+  AuthType Basic
+  Order deny,allow
+  Require valid-user
+</Files>
+
