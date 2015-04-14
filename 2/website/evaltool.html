@@ -8,10 +8,10 @@
 	Configuration (optional): <br />		
 	<input name="configuration" id="configuration" type="text" size="35" maxlength="100000"></input>
 	<br />
-	File: <br />	
     	<input name="xml_file" id="xml_file" type="file" size="35" maxlength="100000"></input>
     	<br />
 	</p>
+	<p>Please note that your file has to include answers (as we are<br /> not maintaining a SPARQL endpoint for QALD-2 anynmore.</p>
 	<p>
 	Please select training or test. <br /> 
 	(For testing you need to specify the system name.) <br />
@@ -19,14 +19,8 @@
 	<br />	
 	</p>
 	<p>
-	Start evaluation:
 	<br />
-	<input type="submit" name="evaluate" value="evaluate"></input>	
-	<input type="submit" name="generate" value="generate and evaluate"></input>
+	<input type="submit" name="evaluate" value="Start evaluation"></input>	
 	</p>
-	<ul>
-	<li>Use "evaluate" if your file includes answers.</li>
-	<li>Use "generate and evaluate" if your file only specifies SPARQL queries.<br /> (This may take a while because answers will be generated before the evaluation starts.)</li>
-	</ul>
 </form>
 

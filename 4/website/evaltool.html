@@ -11,16 +11,21 @@
 	<br />
 	Email address <br />
 	<input name="email" id="email" type="text" size="35" maxlength="100000"></input> <br />
-
+        <br />
         <input name="file" id="file" type="file" size="35" maxlength="100000"></input>
     	<br />
+	</p>	
+	<p>
+        Please note that your file has to include answers (as we are<br /> not maintaining a SPARQL endpoint for QALD-4 anymore).
 	</p>
 	Please select the task. <br /> 
 	<select name="task" id="task"><option value="1">Task 1: Multilingual QA</option><option value="2">Task 2: Biomedical QA over interlinked data</option><option value="3">Task 3: Hybrid QA</option></select>
-	<br />	
-        <input name="generate" id="generate" type="checkbox">Generate answers</input> (applies only to Task 1 and 2) <br />
+	<br />
+        <!-- 
+	<input name="generate" id="generate" type="checkbox">Generate answers</input> (applies only to Task 1 and 2) <br />
 	<font color="#707070">&nbsp;Please check this box if your file only specifies SPARQL queries but no answers.<br /> 
 	&nbsp;Answers will then be retrieved automatically; this may take a while.</font> <br />
+	-->
 	<p>
 	Please select training or test. <br /> 
 	<select name="evaluation" id="evaluation"><option>training</option><option>test</option></select>

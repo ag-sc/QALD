@@ -542,7 +542,7 @@ def main():
     task = sys.argv[3]
 
     # Set gold standard
-    gold = 'qald-4_'
+    gold = '../data/qald-4_'
     if   task == '1': gold += 'multilingual'
     elif task == '2': gold += 'biomedical'
     elif task == '3': gold += 'hybrid'
