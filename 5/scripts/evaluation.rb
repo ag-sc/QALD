@@ -1,6 +1,7 @@
 Gem.path.push '/home/cunger/.gem/ruby/2.0.0'
 require 'nokogiri'
 require 'mustache'
+require 'uri'
 
 #################################################################
 
@@ -26,7 +27,7 @@ def read_answers(file)
       answer_nodes = question.at_xpath("answers").children
 
       if not answer_nodes.nil?
-        answer_nodes.each { |node| answers << node.text }
+        answer_nodes.each { |node| answers << normalize(node.text) }
       end
 
       if question.attr("hybrid") == "true"
@@ -37,6 +38,15 @@ def read_answers(file)
     end
 
     return out
+end
+
+def normalize(answer) 
+
+    if answer =~ /\A\d+\z/ 
+       return answer + ".0"
+    else
+       return URI.unescape(answer)
+    end
 end
 
 def evaluate_answers(answers_user,answers_gold)

@@ -1,12 +1,13 @@
 
 IndexIgnore *
 
-<Files ~ "statistics.txt">
-  AuthUserFile /home/cunger/.htpasswd
-  AuthGroupFile /dev/null
-  AuthName "Sorry"
-  AuthType Basic
+<Files "statistics.txt">
   Order deny,allow
-  Require valid-user
+  Deny from all
+</Files>
+
+<Files "qald-5_test.xml">
+  Order deny,allow
+  Deny from all
 </Files>
 

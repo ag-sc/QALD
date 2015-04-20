@@ -10,7 +10,7 @@ $eval_result = null;
 $system = addslashes($_POST["system_name"]);
 $configuration = addslashes($_POST["configuration"]);
 $email = addslashes($_POST["email"]);
-$team = addslashes($_POST["team_name"]);
+$team = addslashes($_POST["team"]);
 $type = $_POST["evaluation"];
 $err = 0;
 $no_name = "true";
@@ -80,6 +80,7 @@ if ($err != 1)
 	for ($timestamp; (strcmp($no_name, "true") == 0); $timestamp++)
 	{
 		$server_target = "upload/" . $file_name[0] . "_" . $timestamp . "." . $file_name[1];
+                file_put_contents('statistics.txt',">>>> " . $server_target,FILE_APPEND);
 		if (!file_exists($server_target))
 		{
 			$no_name = "false";
@@ -108,10 +109,16 @@ if ($err != 1)
 	@exec(escapeshellcmd($cmd),$eval_result);
         //chmod($server_target,0644);
 
-	// check type of file (html or txt)
         if (isset($eval_result[0])) 
-        { 
-           include($eval_result[0]); 
+        {
+           if (strcmp($type, "training") == 0) 
+	   {
+               include($eval_result[0]); 
+	   }
+	   if (strcmp($type, "test") == 0) 
+	   { 
+	       echo "Thanks for submitting! Evaluation results will be made available on May 15.";
+	   }
 	}
 	else {
 	   // show error message of evaluation script
