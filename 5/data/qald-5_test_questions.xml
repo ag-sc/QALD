@@ -1,0 +1,877 @@
+<?xml version="1.0"?>
+<dataset id="qald-5_test">
+
+<question id="1" hybrid="false" onlydbo="true" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[Give me all ESA astronauts.]]></string>
+<string lang="de"><![CDATA[Gib mir alle ESA-Astronauten.]]></string>
+<string lang="es"><![CDATA[Dame todos los astronautas de la ESA.]]></string>
+<string lang="it"><![CDATA[Dammi tutti gli astronauti dell'ESA.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Geef alle ESA-astronauten.]]></string>
+<string lang="ro"><![CDATA[Dă-mi toți astronauții ESA.]]></string>
+<keywords lang="en"><![CDATA[ESA astronauts]]></keywords>
+<keywords lang="de"><![CDATA[ESA-Astronauten]]></keywords>
+<keywords lang="es"><![CDATA[Astronautas ESA]]></keywords>
+<keywords lang="it"><![CDATA[Astronauti ESA]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[ESA-astronauten]]></keywords>
+<keywords lang="ro"><![CDATA[astronauți ESA]]></keywords>
+</question>
+
+<question id="2" hybrid="false" onlydbo="true" answertype="resource" aggregation="false">
+<string lang="en"><![CDATA[Give me all Swedish holidays.]]></string>
+<string lang="de"><![CDATA[Gib mir alle schwedischen Feiertage.]]></string>
+<string lang="es"><![CDATA[Dame todos los días festivos en Suecia.]]></string>
+<string lang="it"><![CDATA[Dammi tutti i giorni festivi svedesi.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Geef alle Zweedse feestdagen.]]></string>
+<string lang="ro"><![CDATA[Dă toate zilele de sărbătoare din Suedia.]]></string>
+<keywords lang="en"><![CDATA[Swedish holidays]]></keywords>
+<keywords lang="de"><![CDATA[schwedische Feiertage]]></keywords>
+<keywords lang="es"><![CDATA[días festivos, Suecia]]></keywords>
+<keywords lang="it"><![CDATA[giorni festivi svedesi]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Zweedse feestdagen]]></keywords>
+<keywords lang="ro"><![CDATA[zile de sărbătoare, Suedia]]></keywords>
+</question>
+
+<question id="3" hybrid="false" onlydbo="true" answertype="resource" aggregation="true">
+<string lang="en"><![CDATA[Who is the youngest Pulitzer Prize winner?]]></string>
+<string lang="de"><![CDATA[Wer ist der jüngste Pulitzer-Preisträger?]]></string>
+<string lang="es"><![CDATA[¿Quien es el premio Pilitzer mas joven?]]></string>
+<string lang="it"><![CDATA[Chi è il più giovane vincitore del premio Pulitzer?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is de jongste Pulitzerprijs-winnaar?]]></string>
+<string lang="ro"><![CDATA[Cine este cel mai tânăr câștigător al premiului Pulitzer?]]></string>
+<keywords lang="en"><![CDATA[youngest, winner, Pulitzer Prize]]></keywords>
+<keywords lang="de"><![CDATA[jüngster, Pulitzer-Preisträger]]></keywords>
+<keywords lang="es"><![CDATA[mas joven, premio Pulitzer]]></keywords>
+<keywords lang="it"><![CDATA[più giovane, vincitore, premio Pulitzer]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[jongste, Pulitzerprijs-winnaar]]></keywords>
+<keywords lang="ro"><![CDATA[cel mai tânăr, câștigător, premiu Pulitzer]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="4" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which animals are critically endangered?]]></string>
+<string lang="de"><![CDATA[Welche Tierarten sind vom Aussterben bedroht?]]></string>
+<string lang="es"><![CDATA[¿Que animales están en peligro de extinción?]]></string>
+<string lang="it"><![CDATA[Quali animali sono in pericolo di estinzione?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke dieren zijn kritiek bedreigd?]]></string>
+<string lang="ro"><![CDATA[Ce animale sunt pe cale de dispariție?]]></string>
+<keywords lang="en"><![CDATA[animal, critically endangered]]></keywords>
+<keywords lang="de"><![CDATA[Tierart, vom Aussterben bedroht]]></keywords>
+<keywords lang="es"><![CDATA[animales, peligro de extinción]]></keywords>
+<keywords lang="it"><![CDATA[animali, pericolo di estinzione]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[dieren, kritiek bedreigd]]></keywords>
+<keywords lang="ro"><![CDATA[animale, pe cale de dispariție]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="5" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which soccer players were born on Malta?]]></string>
+<string lang="de"><![CDATA[Welche Fußballer wurden auf Malta geboren?]]></string>
+<string lang="es"><![CDATA[¿Que jugadores de futbol han nacido en Malta?]]></string>
+<string lang="it"><![CDATA[Quali calciatori sono nati a Malta?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke voetballers zijn op Malta geboren?]]></string>
+<string lang="ro"><![CDATA[Ce jucători de fotbal s-au născut în Malta?]]></string>
+<keywords lang="en"><![CDATA[soccer player, born on, Malta]]></keywords>
+<keywords lang="de"><![CDATA[Fußballer, geboren auf, Malta]]></keywords>
+<keywords lang="es"><![CDATA[jugadores de futbol, nacidos, Malta]]></keywords>
+<keywords lang="it"><![CDATA[calciatori, nati, Malta]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[voetballers, geboren op, Malta]]></keywords>
+<keywords lang="ro"><![CDATA[jucător de fotbal, născut, Malta]]></keywords>
+</question>
+
+<question aggregation="false" answertype="boolean" id="6" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Did Arnold Schwarzenegger attend a university?]]></string>
+<string lang="de"><![CDATA[Hat Arnold Schwarzenegger eine Universität besucht?]]></string>
+<string lang="es"><![CDATA[¿Fue Arnold Schwarzenegger a la universidad?]]></string>
+<string lang="it"><![CDATA[Arnold Schwarzenegger ha frequentato l'Università?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Had Arnold Schwarzenegger aan een universiteit gestudeerd?]]></string>
+<string lang="ro"><![CDATA[Arnold Schwarzenegger a frecventat o universitate?]]></string>
+<keywords lang="en"><![CDATA[Arnold Schwarzenegger, attend, university]]></keywords>
+<keywords lang="de"><![CDATA[Arnold Schwarzenegger, Universität, besucht]]></keywords>
+<keywords lang="es"><![CDATA[Arnold Schwarzenegger, universidad]]></keywords>
+<keywords lang="it"><![CDATA[Arnold Schwarzenegger, frequentare, Università]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Arnold Schwarzenegger, universiteit, gestudeerd]]></keywords>
+<keywords lang="ro"><![CDATA[Arnold Schwarzenegger, frecventa, universitate]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="7" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which programming languages were influenced by Perl?]]></string>
+<string lang="de"><![CDATA[Welche Programmiersprachen wurden durch Perl beeinflusst?]]></string>
+<string lang="es"><![CDATA[¿Qué lenguajes de programación fueron influenciados por el Perl?]]></string>
+<string lang="it"><![CDATA[Quali linguaggi di programmazione sono stati influenzati da Perl?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke programmeertalen werden beïnvloed door Perl?]]></string>
+<string lang="ro"><![CDATA[Ce limbaje de programare au fost influențate de Perl?]]></string>
+<keywords lang="en"><![CDATA[programming languages, influenced by, Perl]]></keywords>
+<keywords lang="de"><![CDATA[Programmiersprachen, beeinflusst durch, Perl]]></keywords>
+<keywords lang="es"><![CDATA[lenguajes de programación, influenciados, Perl]]></keywords>
+<keywords lang="it"><![CDATA[linguaggi di programmazione, influenzati, Perl]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[programmeertalen, beïnvloed door, Perl]]></keywords>
+<keywords lang="ro"><![CDATA[limbaje de programare, influențat, Perl]]></keywords>
+</question>
+
+<question aggregation="false" answertype="boolean" id="8" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Is Barack Obama a democrat?]]></string>
+<string lang="de"><![CDATA[Ist Barack Obama ein Demokrat?]]></string>
+<string lang="es"><![CDATA[¿Es Barack Obama demócrata?]]></string>
+<string lang="it"><![CDATA[Barack Obama è un democratico?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Is Barack Obama een democraat?]]></string>
+<string lang="ro"><![CDATA[Barack Obama este un democrat?]]></string>
+<keywords lang="en"><![CDATA[Barack Obama, democrat]]></keywords>
+<keywords lang="de"><![CDATA[Barack Obama, Demokrat]]></keywords>
+<keywords lang="es"><![CDATA[Barack Obama, demócrata]]></keywords>
+<keywords lang="it"><![CDATA[Barack Obama, democratico]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Barack Obama, democraat]]></keywords>
+<keywords lang="ro"><![CDATA[Barack Obama, democrat]]></keywords>
+</question>
+
+<question aggregation="false" answertype="number" id="9" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[How many children does Eddie Murphy have?]]></string>
+<string lang="de"><![CDATA[Wieviele Kinder hat Eddie Murphy?]]></string>
+<string lang="es"><![CDATA[¿Cuántos hijos tiene Eddie Murphy?]]></string>
+<string lang="it"><![CDATA[Quanti figli ha Eddie Murphy?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel kinderen heeft Eddie Murphy?]]></string>
+<string lang="ro"><![CDATA[Câți copii are Eddie Murphy?]]></string>
+<keywords lang="en"><![CDATA[children, Eddie Murphy]]></keywords>
+<keywords lang="de"><![CDATA[Kinder, Eddie Murphy]]></keywords>
+<keywords lang="es"><![CDATA[hijos, Eddie Murphy]]></keywords>
+<keywords lang="it"><![CDATA[figli, Eddie Murphy]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[kinderen, Eddie Murphy]]></keywords>
+<keywords lang="ro"><![CDATA[copii, Eddie Murphy]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="10" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is the oldest child of Meryl Streep?]]></string>
+<string lang="de"><![CDATA[Wer ist das älteste Kind von Meryl Streep?]]></string>
+<string lang="es"><![CDATA[¿Cuál es el hijo mas mayor de Meryl Streep?]]></string>
+<string lang="it"><![CDATA[Chi è il figlio maggiore di Meryl Streep?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is het oudste kind van Meryl Streep?]]></string>
+<string lang="ro"><![CDATA[Cine este copilul cel mai mare al lui Meryl Streep?]]></string>
+<keywords lang="en"><![CDATA[oldest child, Meryl Streep]]></keywords>
+<keywords lang="de"><![CDATA[ältestes Kind, Meryl Streep]]></keywords>
+<keywords lang="es"><![CDATA[hijo mas mayor, Meryl Streep]]></keywords>
+<keywords lang="it"><![CDATA[figlio maggiore, Meryl Streep]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[oudste kind, Meryl Streep]]></keywords>
+<keywords lang="ro"><![CDATA[copilul cel mai mare, Meryl Streep]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="11" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who killed John Lennon?]]></string>
+<string lang="de"><![CDATA[Wer hat John Lennon getötet?]]></string>
+<string lang="es"><![CDATA[¿Quién asesino a John Lennon?]]></string>
+<string lang="it"><![CDATA[Chi ha ucciso John Lennon?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie heeft John Lennon vermoord?]]></string>
+<string lang="ro"><![CDATA[Cine l-a ucis pe John Lennon?]]></string>
+<keywords lang="en"><![CDATA[killed, John Lennon]]></keywords>
+<keywords lang="de"><![CDATA[getötet, John Lennon]]></keywords>
+<keywords lang="es"><![CDATA[asesino, John Lennon]]></keywords>
+<keywords lang="it"><![CDATA[assassino, John Lennon]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[John Lennon, vermoord]]></keywords>
+<keywords lang="ro"><![CDATA[ucis, John Lennon]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="13" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Which frequent flyer program has the most airlines?]]></string>
+<string lang="de"><![CDATA[Welches Vielfliegerprogramm hat die meisten Fluggesellschaften?]]></string>
+<string lang="es"><![CDATA[¿Qué programa de viajero frecuente tienen la mayoría de las aerolineas? ]]></string>
+<string lang="it"><![CDATA[Quale programma frequent flyer ha la maggior parte delle compagnie aeree?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wat is het frequent flyer-programma met de meeste luchtvaartmaatschappijen?]]></string>
+<string lang="ro"><![CDATA[Ce program de fidelizare pentru zboruri frecvente are cele mai multe companii aeriene?]]></string>
+<keywords lang="en"><![CDATA[frequent flyer program, most airlines]]></keywords>
+<keywords lang="de"><![CDATA[Vielfliegerprogramm, meisten Fluggesellschaften]]></keywords>
+<keywords lang="es"><![CDATA[programa de viajero frecuente, mayor numero aerolineas]]></keywords>
+<keywords lang="it"><![CDATA[programma frequent flyer, maggior parte delle compagnie aeree]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[frequent flyer-programma, meeste luchtvaartmaatschappijen]]></keywords>
+<keywords lang="ro"><![CDATA[program de fidelizare pentru zboruri frecvente, cele mai multe companii aeriene]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="12" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[In which city is Air China headquartered?]]></string>
+<string lang="de"><![CDATA[In welcher Stadt liegt das Hauptquartier von Air China?]]></string>
+<string lang="es"><![CDATA[¿En que ciudad esta la sede de Air China?]]></string>
+<string lang="it"><![CDATA[In quale città Air China ha il quartier generale?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[In welke stad is het hoofdkantoor van Air China?]]></string>
+<string lang="ro"><![CDATA[În ce oraș este sediul Air China?]]></string>
+<keywords lang="en"><![CDATA[city, headquarter, Air China]]></keywords>
+<keywords lang="de"><![CDATA[Stadt, Hauptquartier, Air China]]></keywords>
+<keywords lang="es"><![CDATA[ciudad, sede Air China]]></keywords>
+<keywords lang="it"><![CDATA[città, Air China, quartier generale]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[stad, hoofdkantoor, Air China]]></keywords>
+<keywords lang="ro"><![CDATA[oraș, sediu, Air China]]></keywords>
+</question>
+
+<question aggregation="true" answertype="date" id="14" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which artists were born on the same date as Rachel Stevens?]]></string>
+<string lang="de"><![CDATA[Welche Künstler sind am gleichen Tag wie Rachel Stevens geboren?]]></string>
+<string lang="es"><![CDATA[¿Qué artistas nacieron en la misma fecha que Rachel Stevens?]]></string>
+<string lang="it"><![CDATA[Quali artisti sono nati la stessa data di Rachel Stevens?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke kunstenaars zijn op dezelfde dag als Rachel Stevens geboren?]]></string>
+<string lang="ro"><![CDATA[Ce artiști s-au născut în aceeași zi cu Rachel Stevens?]]></string>
+<keywords lang="en"><![CDATA[artist, born same date, Rachel Stevens]]></keywords>
+<keywords lang="de"><![CDATA[Künstler,geboren am gleichen Tag, Rachel Stevens]]></keywords>
+<keywords lang="es"><![CDATA[artistas, misma fecha nacimiento, Rachel Stevens]]></keywords>
+<keywords lang="it"><![CDATA[artisti, stessa data di nascita, Rachel Stevens]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[kunstenaars, geboren, op dezelfde dag, Rachel Stevens]]></keywords>
+<keywords lang="ro"><![CDATA[artist, născut în aceeași zi, Rachel Stevens]]></keywords>
+</question>
+
+<question aggregation="false" answertype="number" id="15" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[How many scientists graduated from an Ivy League university?]]></string>
+<string lang="de"><![CDATA[Wieviele Wissenschaftler haben einen Abschluss von einer Ivy-League-Universität?]]></string>
+<string lang="es"><![CDATA[¿Cuántos científicos se han graduado en un Universidad de la Ivy League?]]></string>
+<string lang="it"><![CDATA[Quanti scienziati si sono laureati in un'Università dell'Ivy League?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel wetenschappers hebben afgestudeerd aan een Ivy League-universiteit?]]></string>
+<string lang="ro"><![CDATA[Câți oameni de știință au absolvit la universitatea Ivy League?]]></string>
+<keywords lang="en"><![CDATA[scientists, graduated, Ivy League university]]></keywords>
+<keywords lang="de"><![CDATA[Wissenschaftler, Abschluss von, Ivy-League-Universität]]></keywords>
+<keywords lang="es"><![CDATA[científicos, graduado, Universidad Ivy League]]></keywords>
+<keywords lang="it"><![CDATA[scienziati, laureati, Università dell'Ivy League]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[wetenschappers, afgestudeerd, Ivy League-universiteit]]></keywords>
+<keywords lang="ro"><![CDATA[oameni de știință, absolvit, universitatea Ivy League]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="16" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which types of grapes grow in Oregon?]]></string>
+<string lang="de"><![CDATA[Welche Traubenarten wachsen in Oregon?]]></string>
+<string lang="es"><![CDATA[¿Que tipo de uva crece en Oregon?]]></string>
+<string lang="it"><![CDATA[Quali tipi di uva crescono in Oregon?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke soorten druiven groeien in Oregon?]]></string>
+<string lang="ro"><![CDATA[Ce soiuri de struguri cresc în Oregon?]]></string>
+<keywords lang="en"><![CDATA[grape types, grow, Oregon]]></keywords>
+<keywords lang="de"><![CDATA[Traubenarten, wachsen, Oregon]]></keywords>
+<keywords lang="es"><![CDATA[tipo uva, crece, Oregon]]></keywords>
+<keywords lang="it"><![CDATA[tipi di uva, crescere, Oregon]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[soorten druiven, groeien, Oregon]]></keywords>
+<keywords lang="ro"><![CDATA[soiuri de struguri, cresc, Oregon]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="17" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is starring in Spanish movies produced by Benicio del Toro?]]></string>
+<string lang="de"><![CDATA[Wer spielt alles in spanischen Filmen produziert von Benicio del Toro mit? ]]></string>
+<string lang="es"><![CDATA[¿Quien protagoniza peliculas españolas producidas por Benicio del Toro?]]></string>
+<string lang="it"><![CDATA[Chi recita nei film spagnoli prodotti da Benicio del Toro?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie speeld in Spaanse films geproduceerd door Benicio del Toro?]]></string>
+<string lang="ro"><![CDATA[Cine sunt protagoniști în filmele spaniole produse de Benicio del Toro?]]></string>
+<keywords lang="en"><![CDATA[starring, Spanish movies, produced, Benicio del Toro]]></keywords>
+<keywords lang="de"><![CDATA[mitspielen, spanische Filme, produziert, Benicio del Toro]]></keywords>
+<keywords lang="es"><![CDATA[protagonista, peliculas españolas, productor, Benicio del Toro]]></keywords>
+<keywords lang="it"><![CDATA[attori, film spagnoli, prodotti, Benicio del Toro]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[speeld, Spaanse films, geproduceerd, Benicio del Toro]]></keywords>
+<keywords lang="ro"><![CDATA[protagoniști, filmele spaniole, produse, Benicio del Toro]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="18" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is the manager of Real Madrid?]]></string>
+<string lang="de"><![CDATA[Wer ist der Manager von Real Madrid?]]></string>
+<string lang="es"><![CDATA[¿Quien es el manager de Real Madrid?]]></string>
+<string lang="it"><![CDATA[Chi è il manager del Real Madrid?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is de algemeen directeur van Real Madrid?]]></string>
+<string lang="ro"><![CDATA[Cine este manager la Real Madrid?]]></string>
+<keywords lang="en"><![CDATA[manager, Real Madrid]]></keywords>
+<keywords lang="de"><![CDATA[Manager, Real Madrid]]></keywords>
+<keywords lang="es"><![CDATA[manager, Real Madrid]]></keywords>
+<keywords lang="it"><![CDATA[manager, Real Madrid]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[algemeen directeur, Real Madrid]]></keywords>
+<keywords lang="ro"><![CDATA[manager, Real Madrid]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="19" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Give me the currency of China.]]></string>
+<string lang="de"><![CDATA[Welche Währung benutzt China?]]></string>
+<string lang="es"><![CDATA[¿Cual es la moneda de China?]]></string>
+<string lang="it"><![CDATA[Dammi la valuta della Cina.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wat is de munteenheid van China?]]></string>
+<string lang="ro"><![CDATA[Care este moneda din China?]]></string>
+<keywords lang="en"><![CDATA[currency, China]]></keywords>
+<keywords lang="de"><![CDATA[Währung, China]]></keywords>
+<keywords lang="es"><![CDATA[moneda, China]]></keywords>
+<keywords lang="it"><![CDATA[valuta, Cina]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[munteenheid, China]]></keywords>
+<keywords lang="ro"><![CDATA[moneda, China]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="20" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which movies starring Brad Pitt were directed by Guy Ritchie?]]></string>
+<string lang="de"><![CDATA[Bei welchen Filmen, in denen Brad Pitt mitspielt, hat Guy Ritchie Regie geführt? ]]></string>
+<string lang="es"><![CDATA[¿Que peliculas protagonizadas por Brad Pitt han sido dirigidas por Guy Ritchie?]]></string>
+<string lang="it"><![CDATA[Quali film in cui recita Brad Pitt sono stati diretti da Guy Ritchie?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke films met Brad Pitt werden geregisseerd door Guy Ritchie?]]></string>
+<string lang="ro"><![CDATA[Ce filme cu Brad Pitt ca protagonist au fost regizate de Guy Ritchie?]]></string>
+<keywords lang="en"><![CDATA[movies, starring, Brad Pitt, directed, Guy Ritchie]]></keywords>
+<keywords lang="de"><![CDATA[Filme, mitspielen, Brad Pitt, Regie führen, Guy Ritchie]]></keywords>
+<keywords lang="es"><![CDATA[peliculas, protagonizadas, Brad Pitt, dirigidas, Guy Ritchie]]></keywords>
+<keywords lang="it"><![CDATA[film, attore, Brad Pitt, diretti, Guy Ritchie]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[films, acteur, Brad Pitt, geregisseerd, Guy Ritchie]]></keywords>
+<keywords lang="ro"><![CDATA[filme, Brad Pitt, protagonist, regizate, Guy Ritchie]]></keywords>
+</question>
+
+<question aggregation="true" answertype="number" id="22" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[How many companies were founded by the founder of Facebook?]]></string>
+<string lang="de"><![CDATA[Wieviele Firmen hat der Gründer von Facebook gegründet?]]></string>
+<string lang="es"><![CDATA[¿Cuantas compañías han sido fundadas por el fundador de Facebook?]]></string>
+<string lang="it"><![CDATA[Quante società sono state fondate dal fondatore di Facebook?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel bedrijven werden opgericht door de oprichter van Facebook?]]></string>
+<string lang="ro"><![CDATA[Câte companii au fost înființate de fondatorul Facebook?]]></string>
+<keywords lang="en"><![CDATA[companies, founded by, founder, Facebook]]></keywords>
+<keywords lang="de"><![CDATA[Firmen, gegründet, Gründer, Facebook]]></keywords>
+<keywords lang="es"><![CDATA[compañías, fundadas, fundador Facebook]]></keywords>
+<keywords lang="it"><![CDATA[società, fondate, fondatore, Facebook]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[bedrijven, opgericht, oprichter, Facebook]]></keywords>
+<keywords lang="ro"><![CDATA[companii, înființate, fondator, Facebook]]></keywords>
+</question>
+
+<question aggregation="true" answertype="number" id="23" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[How many companies were founded in the same year as Google?]]></string>
+<string lang="de"><![CDATA[Wieviele Firmen wurden im selben Jahr wie Google gegründet?]]></string>
+<string lang="es"><![CDATA[¿Cuántas compañías fueron fundadas en el mismo año que Google?]]></string>
+<string lang="it"><![CDATA[Quante società sono state fondate nello stesso anno di Google?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel bedrijven werden opgericht in hetzelfde jaar als Google?]]></string>
+<string lang="ro"><![CDATA[Câte companii au fost înființate în același an cu Google?]]></string>
+<keywords lang="en"><![CDATA[companies, founded, same year, Google]]></keywords>
+<keywords lang="de"><![CDATA[Firmen, gegründet, selbes Jahr, Google]]></keywords>
+<keywords lang="es"><![CDATA[compañías, fundadas, mismo año Google]]></keywords>
+<keywords lang="it"><![CDATA[società, fondate, stesso anno, Google]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[bedrijven, opgericht, hetzelfde jaar, Google]]></keywords>
+<keywords lang="ro"><![CDATA[companii, înființate, același an, Google]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="24" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which subsidiary of Lufthansa serves both Dortmund and Berlin Tegel?]]></string>
+<string lang="de"><![CDATA[Welche Tochtergesellschaft von Lufthansa fliegt sowohl Dortmund als auch Berlin Tegel an?]]></string>
+<string lang="es"><![CDATA[¿Qué subsidiario de Lufthansa vuela en Dortmund y en Berlin?]]></string>
+<string lang="it"><![CDATA[Quale società sussidiaria di Lufthansa serve sia Dortmund che Berlin Tegel?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke dochteronderneming van Lufthansa bedient zowel Dortmund en Berlin Tegel?]]></string>
+<string lang="ro"><![CDATA[Care filială a Lufthansa deservește atât Dortmund cât și Berlin Tegel?]]></string>
+<keywords lang="en"><![CDATA[subsidiary, Lufthansa, serve, Dortmund, Berlin Tegel]]></keywords>
+<keywords lang="de"><![CDATA[Tochtergesellschaft, Lufthansa, anfliegen, Dortmund, Berlin Tegel]]></keywords>
+<keywords lang="es"><![CDATA[subsidiario, Lufthansa, vuela, Dortmund y Berlin]]></keywords>
+<keywords lang="it"><![CDATA[società sussidiaria di Lufthansa, servire, Dortmund, Berlin Tegel]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[dochteronderneming, Lufthansa, bedient, Dortmund, Berlin Tegel]]></keywords>
+<keywords lang="ro"><![CDATA[filială, Lufthansa, deservește, Dortmund, Berlin Tegel]]></keywords>
+</question>
+
+<question aggregation="true" answertype="number" id="25" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[How many airlines are members of the Star Alliance?]]></string>
+<string lang="de"><![CDATA[Wieviele Fluggesellschaften sind in der Star Alliance?]]></string>
+<string lang="es"><![CDATA[¿Cuántas compañías son miembros del la Star Alliance?]]></string>
+<string lang="it"><![CDATA[Quante compagnie aeree membri di Star Alliance?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel luchtvaartmaatschappijen zijn lid van Star Alliance?]]></string>
+<string lang="ro"><![CDATA[Câte companii aeriene sunt membre în Star Alliance?]]></string>
+<keywords lang="en"><![CDATA[how many, airlines, member, Star Alliance]]></keywords>
+<keywords lang="de"><![CDATA[Anzahl, Fluggesellschaften, Star Alliance]]></keywords>
+<keywords lang="es"><![CDATA[Cuántas compañías, miembros, Star Alliance]]></keywords>
+<keywords lang="it"><![CDATA[quante, compagnie aeree, membri, Star Alliance]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[hoeveel, luchtvaartmaatschappijen, lid, Star Alliance?]]></keywords>
+<keywords lang="ro"><![CDATA[câte, companii aeriene, membre, Star Alliance]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="26" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Give me all spacecrafts that flew to Mars.]]></string>
+<string lang="de"><![CDATA[Zeig mir alle Raumschiffe, die zum Mars geflogen sind.]]></string>
+<string lang="es"><![CDATA[Dame todas las naves espaciales que han volado a Marte]]></string>
+<string lang="it"><![CDATA[Dammi tutte le astronavi che hanno volato su Marte.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Geef alle ruimtetuigen die naar Mars werden gestuurd.]]></string>
+<string lang="ro"><![CDATA[Dă-mi toate navele spațiale care au zburat spre Marte.]]></string>
+<keywords lang="en"><![CDATA[spacecrafts, flew to, Mars]]></keywords>
+<keywords lang="de"><![CDATA[Raumschiffe, geflogen, Mars]]></keywords>
+<keywords lang="es"><![CDATA[naves espaciales, volado, Marte]]></keywords>
+<keywords lang="it"><![CDATA[astronavi, volare, Marte]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[ruimtetuigen, gestuurd, Mars]]></keywords>
+<keywords lang="ro"><![CDATA[nave spațiale, zburat, Marte]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="27" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which musician wrote the most books?]]></string>
+<string lang="de"><![CDATA[Welcher Musiker hat die meisten Bücher geschrieben?]]></string>
+<string lang="es"><![CDATA[¿Qué músico ha escrito el mayor numero de libros?]]></string>
+<string lang="it"><![CDATA[Quale musicista ha scritto il maggior numero di libri?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke musicus schreef de meeste boeken?]]></string>
+<string lang="ro"><![CDATA[Care muzician a scris cele mai multe cărți?]]></string>
+<keywords lang="en"><![CDATA[musician, wrote, the most books]]></keywords>
+<keywords lang="de"><![CDATA[Musiker, geschrieben, die meisten Bücher]]></keywords>
+<keywords lang="es"><![CDATA[músico, escrito, mayor numero de libros]]></keywords>
+<keywords lang="it"><![CDATA[musicista, scrivere, maggior numero di libri]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[musicus, schreef, de meeste boeken]]></keywords>
+<keywords lang="ro"><![CDATA[muzician, scris, cele mai multe cărți]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="28" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Show me everyone who was born on Halloween.]]></string>
+<string lang="de"><![CDATA[Nenne mir alle Personen, die an Halloween geboren sind.]]> </string>
+<string lang="es"><![CDATA[Muestrame todas las personas nacidas en Halloween]]></string>
+<string lang="it"><![CDATA[Mostrami tutti coloro che sono nati ad Halloween.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Geef een lijst met iedereen die op Halloween is geboren.]]></string>
+<string lang="ro"><![CDATA[Arată-mi toate persoanele care s-au născut de Halloween.]]></string>
+<keywords lang="en"><![CDATA[person, born on, Halloween]]></keywords>
+<keywords lang="de"><![CDATA[Personen, geboren, Halloween]]></keywords>
+<keywords lang="es"><![CDATA[personas nacidas Halloween]]></keywords>
+<keywords lang="it"><![CDATA[nati, Halloween]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[persoon, geboren, Halloween]]></keywords>
+<keywords lang="ro"><![CDATA[persoanele, născut de, Halloween]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="29" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Give me all Swiss non-profit organizations.]]></string>
+<string lang="de"><![CDATA[Nenne mir alle Schweizer Nonprofit-Organisationen?]]></string>
+<string lang="es"><![CDATA[Dame todas las organizaciones Suizas sin animo de lucro]]></string>
+<string lang="it"><![CDATA[Dammi tutte le organizzazioni no-profit svizzere.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Noem alle Zwitserse organisaties zonder winstoogmerk.]]></string>
+<string lang="ro"><![CDATA[Dă-mi toate organizațiile non-profit elvețiene.]]></string>
+<keywords lang="en"><![CDATA[Swiss, non-profit organization]]></keywords>
+<keywords lang="de"><![CDATA[Schweizer, Nonprofit-Organisationen]]></keywords>
+<keywords lang="es"><![CDATA[organizaciones Suizas sin animo de lucro]]></keywords>
+<keywords lang="it"><![CDATA[organizzazioni no-profit, svizzere]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Zwitserse, organisaties zonder winstoogmerk]]></keywords>
+<keywords lang="ro"><![CDATA[organizații non-profit, elvețiene]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="30" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[In which country is Mecca located?]]></string>
+<string lang="de"><![CDATA[In welchem Land liegt Mekka?]]></string>
+<string lang="es"><![CDATA[¿En que país se sitúa la Meca?]]></string>
+<string lang="it"><![CDATA[In quale stato si trova La Mecca?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[In welk land ligt Mekka?]]></string>
+<string lang="ro"><![CDATA[În ce țară se află Mecca?]]></string>
+<keywords lang="en"><![CDATA[country, located, Mecca]]></keywords>
+<keywords lang="de"><![CDATA[Land, Mekka]]></keywords>
+<keywords lang="es"><![CDATA[pais Meca]]></keywords>
+<keywords lang="it"><![CDATA[stato, La Mecca]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[land, Mekka]]></keywords>
+<keywords lang="ro"><![CDATA[țară, se află, Mecca]]></keywords>
+</question>
+
+<question aggregation="false" answertype="number" id="31" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[What is the net income of Apple?]]></string>
+<string lang="de"><![CDATA[Was ist der Nettogewinn von Apple?]]></string>
+<string lang="es"><![CDATA[¿Cual es la ganancia en neto de Apple?]]></string>
+<string lang="it"><![CDATA[Qual è il reddito netto di Apple?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wat is het nettowinst van Apple?]]></string>
+<string lang="ro"><![CDATA[Care este venitul net al Apple?]]></string>
+<keywords lang="en"><![CDATA[net income, Apple]]></keywords>
+<keywords lang="de"><![CDATA[Nettogewinn, Apple]]></keywords>
+<keywords lang="es"><![CDATA[ganancias neta, Apple?]]></keywords>
+<keywords lang="it"><![CDATA[reddito netto, Apple]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[nettowinst, Apple]]></keywords>
+<keywords lang="ro"><![CDATA[venit net, Apple]]></keywords>
+</question>
+
+<question aggregation="false" answertype="string" id="32" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[What does the abbreviation FIFA stand for?]]></string>
+<string lang="de"><![CDATA[Wofür steht die Abkürzung FIFA?]]></string>
+<string lang="es"><![CDATA[¿Qué significa la abreviación FIFA?]]></string>
+<string lang="it"><![CDATA[Cosa significa l'acronimo FIFA?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Waarvoor staat de afkorting FIFA?]]></string>
+<string lang="ro"><![CDATA[Ce semnifică acronimul FIFA?]]></string>
+<keywords lang="en"><![CDATA[abbreviation, FIFA]]></keywords>
+<keywords lang="de"><![CDATA[Abkürzung, FIFA]]></keywords>
+<keywords lang="es"><![CDATA[significado abreviación FIFA]]></keywords>
+<keywords lang="it"><![CDATA[acronimo, FIFA]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[afkorting, FIFA]]></keywords>
+<keywords lang="ro"><![CDATA[acronim FIFA]]></keywords>
+</question>
+
+<question aggregation="false" answertype="date" id="33" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[When did the Ming dynasty dissolve?]]></string>
+<string lang="de"><![CDATA[Wann endete die Ming-Dynastie?]]></string>
+<string lang="es"><![CDATA[¿Cuándo se disolvió la dinastía de Ming?]]></string>
+<string lang="it"><![CDATA[Quando è scomparsa la dinastia Ming?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wanneer werd de Ming-dynastie beëindigd?]]></string>
+<string lang="ro"><![CDATA[Când a dispărut dinastia Ming?]]></string>
+<keywords lang="en"><![CDATA[dissolve, Ming dynasty]]></keywords>
+<keywords lang="de"><![CDATA[Ende, Ming-Dynastie]]></keywords>
+<keywords lang="es"><![CDATA[disolvió, dinastía de Ming]]></keywords>
+<keywords lang="it"><![CDATA[anno scomparsa, dinastia Ming]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Ming-dynastie, beëindigd]]></keywords>
+<keywords lang="ro"><![CDATA[dispărut, dinastia Ming]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="34" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which museum in New York has the most visitors?]]></string>
+<string lang="de"><![CDATA[Welches Museum in New York hat die meisten Besucher?]]></string>
+<string lang="es"><![CDATA[¿Qué museo en Nueva York tiene el mayor numero de visitantes?]]></string>
+<string lang="it"><![CDATA[Quale museo di New York ha il maggior numero di visitatori?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welk museum in New York heeft de meeste bezoekers?]]></string>
+<string lang="ro"><![CDATA[Care muzeu din New York are cei mai mulți vizitatori?]]></string>
+<keywords lang="en"><![CDATA[museum, New York, the most visitors]]></keywords>
+<keywords lang="de"><![CDATA[Museum, New York, die meisten Besucher]]></keywords>
+<keywords lang="es"><![CDATA[museo Nueva York, mayor numero visitantes]]></keywords>
+<keywords lang="it"><![CDATA[museo, New York, maggior numero di visitatori]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[museum, New York, de meeste bezoekers]]></keywords>
+<keywords lang="ro"><![CDATA[muzeu, New York, cei mai mulți vizitatori]]></keywords>
+</question>
+
+<question aggregation="false" answertype="boolean" id="35" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Is Lake Baikal bigger than the Great Bear Lake?]]></string>
+<string lang="de"><![CDATA[Ist der Baikalsee größer als der Große Bärensee?]]></string>
+<string lang="es"><![CDATA[¿Es el lago Baikal mayor que el lago Great Bear?]]></string>
+<string lang="it"><![CDATA[Il lago Baikal è più grande le lago Great Bear?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Is het Baikalmeer groter dan het Groot Berenmeer?]]></string>
+<string lang="ro"><![CDATA[Lacul Baikal este mai mare decât lacul Great Bear?]]></string>
+<keywords lang="en"><![CDATA[Lake Baikal, bigger than, Great Bear Lake]]></keywords>
+<keywords lang="de"><![CDATA[Baikalsee, größer als, Großer Bärensee]]></keywords>
+<keywords lang="es"><![CDATA[lago Baikal mayor que lago Great Bear?]]></keywords>
+<keywords lang="it"><![CDATA[lago Baikal, più grande, lago Great Bear]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Baikalmeer, groter, Groot Berenmeer]]></keywords>
+<keywords lang="ro"><![CDATA[lacul Baikal, mai mare decât, lacul Great Bear]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="36" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Desserts from which country contain fish?]]></string>
+<string lang="de"><![CDATA[Nachspeisen aus welchen Ländern enthalten Fisch?]]></string>
+<string lang="es"><![CDATA[¿Los postres de que país contienen pescado?]]></string>
+<string lang="it"><![CDATA[I dessert di quale stato contengono pesce?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Nagerechten uit welke landen bevatten vis?]]></string>
+<string lang="ro"><![CDATA[Deserturile din ce țară conțin pește?]]></string>
+<keywords lang="en"><![CDATA[country, desserts, contain, fish]]></keywords>
+<keywords lang="de"><![CDATA[Nachspeisen, enthalten, Fisch, Länder]]></keywords>
+<keywords lang="es"><![CDATA[postres, país, contienen pescado]]></keywords>
+<keywords lang="it"><![CDATA[stato, dessert, contenere pesce]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[land, nagerechten, bevatten, vis]]></keywords>
+<keywords lang="ro"><![CDATA[deserturi, țară, conțin, pește]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="37" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[What is the highest mountain in Italy?]]></string>
+<string lang="de"><![CDATA[Was ist der höchste Berg in Italien?]]></string>
+<string lang="es"><![CDATA[¿Cuál es la montaña mas alta en Italia?]]></string>
+<string lang="it"><![CDATA[Qual è la montagna più alta in Italia?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wat is de hoogste berg in Italië?]]></string>
+<string lang="ro"><![CDATA[Care este cel mai înalt munte din Italia?]]></string>
+<keywords lang="en"><![CDATA[highest, mountain, Italy]]></keywords>
+<keywords lang="de"><![CDATA[höchste, Berg, Italien]]></keywords>
+<keywords lang="es"><![CDATA[la montaña mas alta Italia]]></keywords>
+<keywords lang="it"><![CDATA[montagna, più alta, Italia]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[hoogste, berg, Italië]]></keywords>
+<keywords lang="ro"><![CDATA[cel mai înalt, munte, Italia]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="38" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Where did the architect of the Eiffel Tower study?]]></string>
+<string lang="de"><![CDATA[Wo hat der Architekt des Eiffelturms studiert?]]></string>
+<string lang="es"><![CDATA[¿Dónde estudio el arquitecto de la torre Eiffel?]]></string>
+<string lang="it"><![CDATA[Dove ha studiato l'architetto della Tour Eiffel?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Waar heeft de architect van de Eiffeltoren gestudeerd?]]></string>
+<string lang="ro"><![CDATA[Unde a studiat arhitectul turnului Eiffel?]]></string>
+<keywords lang="en"><![CDATA[architect, Eiffel Tower, study]]></keywords>
+<keywords lang="de"><![CDATA[Architeckt, Eiffelturm, studiert]]></keywords>
+<keywords lang="es"><![CDATA[donde estudio, arquitecto, torre Eiffel]]></keywords>
+<keywords lang="it"><![CDATA[luogo, studiato, architetto, Tour Eiffel]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[architect, Eiffeltoren, gestudeerd]]></keywords>
+<keywords lang="ro"><![CDATA[studiat, arhitectul, turn Eiffel]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="39" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which Greek parties are pro-European?]]></string>
+<string lang="de"><![CDATA[Welche griechischen Parteien sind pro-europäisch?]]></string>
+<string lang="es"><![CDATA[¿Qué partidos Griegos están a favor de Europa?]]></string>
+<string lang="it"><![CDATA[Quali partiti greci sono a favore dell'Europa?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke Griekse partijen zijn pro-Europees?]]></string>
+<string lang="ro"><![CDATA[Care partide grecești sunt pro-europene?]]></string>
+<keywords lang="en"><![CDATA[Greek party, pro-European]]></keywords>
+<keywords lang="de"><![CDATA[griechische Parteien, pro-europäisch]]></keywords>
+<keywords lang="es"><![CDATA[partidos Griegos, a favor de Europa]]></keywords>
+<keywords lang="it"><![CDATA[partiti greci, a favore dell'Europa]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Griekse partijen, pro-Europees]]></keywords>
+<keywords lang="ro"><![CDATA[partide grecești, pro-europene]]></keywords>
+</question>
+
+<question aggregation="true" answertype="number" id="40" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[What is the height difference between Mount Everest and K2?]]></string>
+<string lang="de"><![CDATA[Was ist der Höhenunterschied zwischen dem Mount Everest und dem K2?]]></string>
+<string lang="es"><![CDATA[¿Cuál es la diferencia de altura entra el Monte Everest y K2?]]></string>
+<string lang="it"><![CDATA[Qual è la differenza di altezza tra il monte Everest e il K2?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wat is de hoogteverschil tussen Mount Everest en K2?]]></string>
+<string lang="ro"><![CDATA[Care este diferența de înălțime dintre Muntele Everest și K2?]]></string>
+<keywords lang="en"><![CDATA[height difference, Mount Everest, K2]]></keywords>
+<keywords lang="de"><![CDATA[Höhenunterschied, Mount Everest, K2]]></keywords>
+<keywords lang="es"><![CDATA[diferencia altura, Monte Everest, K2]]></keywords>
+<keywords lang="it"><![CDATA[differenza di altezza, monte Everest, K2]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[hoogteverschil, Mount Everest, K2]]></keywords>
+<keywords lang="ro"><![CDATA[diferența de înălțime, Muntele Everest, K2]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="41" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Who is the mayor of Rotterdam?]]></string>
+<string lang="de"><![CDATA[Wer ist der Bürgermeister von Rotterdam?]]></string>
+<string lang="es"><![CDATA[¿Quién es el alcalde de Rotterdam?]]></string>
+<string lang="it"><![CDATA[Chi è il sindaco di Rotterdam?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is de burgemeester van Rotterdam?]]></string>
+<string lang="ro"><![CDATA[Cine este primar în Rotterdam?]]></string>
+<keywords lang="en"><![CDATA[mayor, Rotterdam]]></keywords>
+<keywords lang="de"><![CDATA[Bürgermeister, Rotterdam]]></keywords>
+<keywords lang="es"><![CDATA[alcalde de Rotterdam]]></keywords>
+<keywords lang="it"><![CDATA[sindaco, Rotterdam]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[burgemeester, Rotterdam]]></keywords>
+<keywords lang="ro"><![CDATA[primar, Rotterdam]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="42" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[In which city were the parents of Che Guevara born?]]></string>
+<string lang="de"><![CDATA[In welcher Stadt wurden die Eltern von Che Guevara geboren?]]></string>
+<string lang="es"><![CDATA[¿En que ciudad nacieron los padres de Che Guevara?]]></string>
+<string lang="it"><![CDATA[In quale città sono nati i genitori di Che Guevara?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[In welke stad zijn de ouders van Che Guevara geboren?]]></string>
+<string lang="ro"><![CDATA[În ce oraș s-au născut părinții lui Che Guevara?]]></string>
+<keywords lang="en"><![CDATA[city, parents, Che Guevara, born]]></keywords>
+<keywords lang="de"><![CDATA[Stadt, Eltern von, Che Guevara, geboren]]></keywords>
+<keywords lang="es"><![CDATA[ciudad, nacieron, padres de Che Guevara]]></keywords>
+<keywords lang="it"><![CDATA[città, nati, genitori, Che Guevara]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[stad, ouders, Che Guevara, geboren]]></keywords>
+<keywords lang="ro"><![CDATA[oraș, născut, părinții, Che Guevara]]></keywords>
+</question>
+
+<question aggregation="false" answertype="number" id="43" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[How high is the Yokohama Marine Tower?]]></string>
+<string lang="de"><![CDATA[Wie hoch ist der Yokohama Marine Tower?]]></string>
+<string lang="es"><![CDATA[¿Cómo de alta el la torre Yokohama Marine?]]></string>
+<string lang="it"><![CDATA[Quanto è alta la torre Yokohama Marine?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoe hoog is de Yokohama Marine Tower?]]></string>
+<string lang="ro"><![CDATA[Cât de înalt este Turnul Marine Yokohama?]]></string>
+<keywords lang="en"><![CDATA[high, Yokohama Marine Tower]]></keywords>
+<keywords lang="de"><![CDATA[hoch, Yokohama Marine Tower]]></keywords>
+<keywords lang="es"><![CDATA[alta, torre Yokohama Marine?]]></keywords>
+<keywords lang="it"><![CDATA[altezza, torre Yokohama Marine]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[hoog, Yokohama Marine Tower]]></keywords>
+<keywords lang="ro"><![CDATA[înalt, Turnul Marine Yokohama]]></keywords>
+</question>
+
+<question aggregation="false" answertype="boolean" id="44" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Are Taiko a kind of Japanese musical instruments?]]></string>
+<string lang="de"><![CDATA[Sind Taiko eine Art japanische Musikinstrumente?]]></string>
+<string lang="es"><![CDATA[¿Es el Taiko un tipo de instrumento musical?]]></string>
+<string lang="it"><![CDATA[I Taiko sono una serie di strumenti musicali giapponesi?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Zijn Taiko een soort Japanse musiekinstrumenten?]]></string>
+<string lang="ro"><![CDATA[Sunt Taiko un fel de instrumente muzicale japoneze?]]></string>
+<keywords lang="en"><![CDATA[Taiko, kind of, Japanese musical instrument]]></keywords>
+<keywords lang="de"><![CDATA[Taiko, Art, japanisches Musikinstrument]]></keywords>
+<keywords lang="es"><![CDATA[Taiko, tipo de instrumento musical]]></keywords>
+<keywords lang="it"><![CDATA[Taiko, strumenti musicali, giapponesi]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Taiko, soort, Japanse musiekinstrumenten]]></keywords>
+<keywords lang="ro"><![CDATA[Taiko, un fel de, instrumente muzicale japoneze]]></keywords>
+</question>
+
+<question aggregation="true" answertype="number" id="45" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[How many ethnic groups live in Slovenia?]]></string>
+<string lang="de"><![CDATA[Wieviele ethnische Gruppen leben in Slovenien?]]></string>
+<string lang="es"><![CDATA[¿Cuántos grupos étnicos viven en Eslovenia?]]></string>
+<string lang="it"><![CDATA[Quanti gruppi etnici vivono in Slovenia?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Hoeveel etnische groepen leven in Slovenië?]]></string>
+<string lang="ro"><![CDATA[Câte grupuri etnice trăiesc în Slovenia?]]></string>
+<keywords lang="en"><![CDATA[how many, ethnic groups, Slovenia]]></keywords>
+<keywords lang="de"><![CDATA[Anzahl, ethnische Gruppen, Slovenien]]></keywords>
+<keywords lang="es"><![CDATA[grupos étnicos Eslovenia]]></keywords>
+<keywords lang="it"><![CDATA[numero, gruppi etnici, Slovenia]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[hoeveel, etnische groepen, Slovenië]]></keywords>
+<keywords lang="ro"><![CDATA[câte, grupuri etnice, Slovenia]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="46" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[List the seven kings of Rome.]]></string>
+<string lang="de"><![CDATA[Gib mir eine Liste aller Könige von Rom.]]></string>
+<string lang="es"><![CDATA[Lista los siete reyes de Roma.]]></string>
+<string lang="it"><![CDATA[Elenca i sette re di Roma.]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Geef de seven koningen van Rome.]]></string>
+<string lang="ro"><![CDATA[Enumeră cei șapte regi ai Romei.]]></string>
+<keywords lang="en"><![CDATA[kings, Rome]]></keywords>
+<keywords lang="de"><![CDATA[Könige, Rom]]></keywords>
+<keywords lang="es"><![CDATA[siete reyes Roma]]></keywords>
+<keywords lang="it"><![CDATA[sette re, Roma]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[koningen, Rome]]></keywords>
+<keywords lang="ro"><![CDATA[șapte regi, Roma]]></keywords>
+</question>
+
+<question aggregation="false" answertype="resource" id="47" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who were the parents of Queen Victoria?]]></string>
+<string lang="de"><![CDATA[Wer waren die Eltern von Königin Viktoria?]]></string>
+<string lang="es"><![CDATA[¿Quiénes fueron los padres de la reina Victoria?]]></string>
+<string lang="it"><![CDATA[Chi sono i genitori della regina Vittoria?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie waren de ouders van Koningin Victoria?]]></string>
+<string lang="ro"><![CDATA[Cine au fost părinții reginei Victoria?]]></string>
+<keywords lang="en"><![CDATA[parents, Queen Victoria]]></keywords>
+<keywords lang="de"><![CDATA[Eltern, Königin Viktoria]]></keywords>
+<keywords lang="es"><![CDATA[padres, reina Victoria?]]></keywords>
+<keywords lang="it"><![CDATA[genitori, regina Vittoria]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[ouders, Koningin Victoria]]></keywords>
+<keywords lang="ro"><![CDATA[părinți, regina Victoria]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="48" hybrid="false" onlydbo="false">
+<string lang="en"><![CDATA[Who is the heaviest player of the Chicago Bulls?]]></string>
+<string lang="de"><![CDATA[Wer ist der schwerste Spieler der Chicago Bulls?]]></string>
+<string lang="es"><![CDATA[¿Quien es el jugador mas pesado del los Chicago Bulls?]]></string>
+<string lang="it"><![CDATA[Chi è il giocatore più pesante dei Chicago Bulls?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is de zwaarste speler van de Chicago Bulls?]]></string>
+<string lang="ro"><![CDATA[Cine este cel mai greu jucător de la Chicago Bulls?]]></string>
+<keywords lang="en"><![CDATA[heaviest player, Chicago Bulls]]></keywords>
+<keywords lang="de"><![CDATA[schwerster Spieler, Chicago Bulls]]></keywords>
+<keywords lang="es"><![CDATA[jugador, pesado, Chicago Bulls]]></keywords>
+<keywords lang="it"><![CDATA[giocatore, più pesante, Chicago Bulls]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[zwaarste, speler, Chicago Bulls]]></keywords>
+<keywords lang="ro"><![CDATA[cel mai greu, jucător, Chicago Bulls]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="49" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Which volcanos in Japan erupted since 2000?]]></string>
+<string lang="de"><![CDATA[Welche japanischen Vulkane sind seit 2000 ausgebrochen?]]></string>
+<string lang="es"><![CDATA[¿Que volcanos han erupcionado en Japon desde el 2000?]]></string>
+<string lang="it"><![CDATA[Quali vulcani in Giappone hanno eruttato dal 2000?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Welke Japanse vulkanen zijn uitgebarsten sinds 2000?]]></string>
+<string lang="ro"><![CDATA[Ce vulcani au erupt în Japonia din 2000?]]></string>
+<keywords lang="en"><![CDATA[volcanos, Japan, erupted, since 2000]]></keywords>
+<keywords lang="de"><![CDATA[Vulkan, Japan, ausgebrochen, seit 2000]]></keywords>
+<keywords lang="es"><![CDATA[volcanos, erupcionado Japon desde 2000]]></keywords>
+<keywords lang="it"><![CDATA[vulcani. Giappone, eruzioni dal 2000]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[Japanse vulkanen, uitgebarsten, sinds 2000]]></keywords>
+<keywords lang="ro"><![CDATA[vulcani, erupt, Japonia, din 2000]]></keywords>
+</question>
+
+<question aggregation="true" answertype="resource" id="50" hybrid="false" onlydbo="true">
+<string lang="en"><![CDATA[Who is the tallest basketball player?]]></string>
+<string lang="de"><![CDATA[Wer ist der größte Basketballspieler?]]></string>
+<string lang="es"><![CDATA[Quien es el jugador de baloncesto mas alto?]]></string>
+<string lang="it"><![CDATA[Chi è il giocatore di pallacanestro più alto?]]></string>
+<string lang="fr"><![CDATA[]]></string>
+<string lang="nl"><![CDATA[Wie is de grootste basketballer?]]></string>
+<string lang="ro"><![CDATA[Cine este cel mai înalt jucător de basket?]]></string>
+<keywords lang="en"><![CDATA[tallest, basketball player]]></keywords>
+<keywords lang="de"><![CDATA[größter, Basketballspieler]]></keywords>
+<keywords lang="es"><![CDATA[jugador baloncesto, mas alto]]></keywords>
+<keywords lang="it"><![CDATA[giocatore di pallacanestro, più alto]]></keywords>
+<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="nl"><![CDATA[grootste, basketballer]]></keywords>
+<keywords lang="ro"><![CDATA[cel mai înalt, jucător de basket]]></keywords>
+</question>
+
+<question answertype="resource" id="51" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Where was the "Father of Singapore" born?]]></string>
+</question>
+
+<question answertype="resource" id="52" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?]]></string>
+</question>
+
+<question answertype="resource" id="53" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Who is the architect of the tallest building in Japan?]]></string>
+</question>
+
+<question answertype="string" id="54" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[What is the name of the Viennese newspaper founded by the creator of the croissant?]]></string>
+</question>
+
+<question answertype="resource" id="55" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[In which city where Charlie Chaplin's half brothers born?]]></string>
+</question>
+
+<question answertype="resource" id="56" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Which German mathematicians were members of the von Braun rocket group?]]></string>
+</question>
+
+<question answertype="resource" id="57" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Which writers converted to Islam?]]></string>
+</question>
+
+<question answertype="boolean" id="58" aggregation="true" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Are there man-made lakes in Australia that are deeper than 100 meters?]]></string>
+</question>
+
+<question answertype="resource" id="59" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?]]></string>
+</question>
+
+<question answertype="resource" id="60" aggregation="false" hybrid="true" onlydbo="true">
+<string lang="en"><![CDATA[Which of the volcanoes that erupted in 1550 is still active?]]></string>
+</question>
+
+</dataset>

@@ -9,6 +9,7 @@ doc.xpath("/dataset/question").each do |question|
 
     question.search(".//query").remove
     question.search(".//answers").remove
+    question.search(".//pseudoquery").remove
 
 end
 
