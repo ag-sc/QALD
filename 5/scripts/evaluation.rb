@@ -24,7 +24,12 @@ def read_answers(file)
 
       id           = question["id"]
       answers      = []
-      answer_nodes = question.at_xpath("answers").children
+      answer_nodes = []
+      answers_node = question.at_xpath("answers")
+
+      if not answers_node.nil?
+         answer_nodes = answers_node.children
+      end
 
       if not answer_nodes.nil?
         answer_nodes.each { |node| answers << normalize(node.text) }

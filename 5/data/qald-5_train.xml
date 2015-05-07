@@ -7988,13 +7988,13 @@ WHERE {
 <answers><answer>http://dbpedia.org/resource/Valpara%C3%ADso</answer></answers></question>
 
 <question id="301" answertype="resource" aggregation="false" onlydbo="true" hybrid="true">
-<string lang="en"><![CDATA[Wo has vice-president under the president who authorized atomic weapons against Japan during World War II?]]></string>
+<string lang="en"><![CDATA[Wo has vice president under the president who authorized atomic weapons against Japan during World War II?]]></string>
 <pseudoquery><![CDATA[
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT ?uri
 WHERE {
-        ?x text:"athourized" text:"atomic weapons against Japan" .
+        ?x text:"authorized" text:"atomic weapons against Japan" .
         ?x dbo:vicePresident ?uri .
 }
 ]]></pseudoquery>
