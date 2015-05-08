@@ -34,6 +34,8 @@ def read_answers(file)
         answer_nodes.each { |node| answers << normalize(node.text) }
       end
 
+      answers.delete("")
+
       if question.attr("hybrid") == "true"
          out[:hybrid][id]  = answers 
       else 
