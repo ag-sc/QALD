@@ -49,7 +49,7 @@ def normalize(answer)
     if answer =~ /\A\d+\z/ 
        return answer + ".0"
     else
-       return URI.unescape(answer)
+       return URI.unescape(answer.strip)
     end
 end
 
@@ -78,7 +78,7 @@ def evaluate_answers(answers_user,answers_gold)
              end
           # all other questions 
           else
-                precision = (answers.select {|x| gold.include? x}).length.to_f / gold.length.to_f
+                precision = (answers.select {|x| gold.include? x}).length.to_f / answers.length.to_f
                 recall    = (gold.select    {|x| answers.include? x }).length.to_f / gold.length.to_f
                 f1measure = recall == 0 ? 0 : (2 * precision * recall) / (precision + recall)
           end 
@@ -88,10 +88,6 @@ def evaluate_answers(answers_user,answers_gold)
                         :recall    => recall.round(2),
                         :f1measure => f1measure.round(2) }
        end
-    else 
-       precision = 0
-       recall    = 0
-       f1measure = 0
     end
 
   return results
