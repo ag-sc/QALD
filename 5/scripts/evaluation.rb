@@ -30,7 +30,6 @@ def read_answers(file)
       if not answers_node.nil?
          answer_nodes = answers_node.children
       end
-
       if not answer_nodes.nil?
         answer_nodes.each { |node| answers << normalize(node.text) }
       end
@@ -58,31 +57,41 @@ def evaluate_answers(answers_user,answers_gold)
 
     results = []
 
-    answers_user.each do |id,answers|
-      gold = answers_gold[id]
+    if answers_user.any?
+       answers_user.each do |id,answers|
+          gold = answers_gold[id]
 
-      # OUT OF SCOPE questions
-      if gold.length == 0 
-         if answers.length == 0
-            precision = 1
-            recall    = 1 
-            f1measure = 1
-         else
-            precision = 0
-            recall    = 0
-            f1measure = 0
-         end
-      # all other questions 
-      else
-            precision = (answers.select {|x| gold.include? x}).length.to_f / gold.length.to_f
-            recall    = (gold.select    {|x| answers.include? x }).length.to_f / gold.length.to_f
-            f1measure = recall == 0 ? 0 : (2 * precision * recall) / (precision + recall)
-      end 
+          if gold.nil?
+             STDERR.puts "ERROR The question IDs in your file seem different from the IDs in the benchmark."
+          end
 
-      results <<  { :id        => id.to_i,
-                    :precision => precision.round(2), 
-                    :recall    => recall.round(2),
-                    :f1measure => f1measure.round(2) }
+          # OUT OF SCOPE questions
+          if gold.length == 0 
+             if answers.length == 0
+                precision = 1
+                recall    = 1 
+                f1measure = 1
+             else
+                precision = 0
+                recall    = 0
+                f1measure = 0
+             end
+          # all other questions 
+          else
+                precision = (answers.select {|x| gold.include? x}).length.to_f / gold.length.to_f
+                recall    = (gold.select    {|x| answers.include? x }).length.to_f / gold.length.to_f
+                f1measure = recall == 0 ? 0 : (2 * precision * recall) / (precision + recall)
+          end 
+
+          results <<  { :id        => id.to_i,
+                        :precision => precision.round(2), 
+                        :recall    => recall.round(2),
+                        :f1measure => f1measure.round(2) }
+       end
+    else 
+       precision = 0
+       recall    = 0
+       f1measure = 0
     end
 
   return results
