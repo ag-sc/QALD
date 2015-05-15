@@ -80,7 +80,11 @@ def evaluate_answers(answers_user,answers_gold)
              end
           # all other questions 
           else
-                precision = (answers.select {|x| gold.include? x}).length.to_f / answers.length.to_f
+	        if answers.length == 0 
+		   precision = 1
+		else 
+                   precision = (answers.select {|x| gold.include? x}).length.to_f / answers.length.to_f
+		end
                 recall    = (gold.select    {|x| answers.include? x }).length.to_f / gold.length.to_f
                 f1measure = recall == 0 ? 0 : (2 * precision * recall) / (precision + recall)
           end 
