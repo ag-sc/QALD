@@ -6,8 +6,3 @@ IndexIgnore *
   Deny from all
 </Files>
 
-<Files "qald-5_test.xml">
-  Order deny,allow
-  Deny from all
-</Files>
-

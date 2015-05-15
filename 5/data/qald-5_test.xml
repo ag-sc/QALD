@@ -2140,7 +2140,7 @@ ORDER BY DESC(COUNT(DISTINCT ?airline))
 OFFSET 0 LIMIT 1
 ]]></query>
 <answers>
-<answer>http://dbpedia.org/resource/Miles_&_More</answer>
+<answer>http://dbpedia.org/resource/Miles_%26_More</answer>
 </answers>
 </question>
 
@@ -3366,7 +3366,10 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
+<answer>http://dbpedia.org/resource/Nikken_Sekkei</answer>
+<!-- Also as correct counts:
 <answer>http://dbpedia.org/resource/César_Pelli</answer>
+<-->
 </answers>
 </question>
 
