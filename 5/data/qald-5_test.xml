@@ -6,14 +6,14 @@
 <string lang="de"><![CDATA[Gib mir alle ESA-Astronauten.]]></string>
 <string lang="es"><![CDATA[Dame todos los astronautas de la ESA.]]></string>
 <string lang="it"><![CDATA[Dammi tutti gli astronauti dell'ESA.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Donne-moi tous les astronautes de l'ESA.]]></string>
 <string lang="nl"><![CDATA[Geef alle ESA-astronauten.]]></string>
 <string lang="ro"><![CDATA[Dă-mi toți astronauții ESA.]]></string>
 <keywords lang="en"><![CDATA[ESA astronauts]]></keywords>
 <keywords lang="de"><![CDATA[ESA-Astronauten]]></keywords>
 <keywords lang="es"><![CDATA[Astronautas ESA]]></keywords>
 <keywords lang="it"><![CDATA[Astronauti ESA]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[austronautes, ESA]]></keywords>
 <keywords lang="nl"><![CDATA[ESA-astronauten]]></keywords>
 <keywords lang="ro"><![CDATA[astronauți ESA]]></keywords>
 <query><![CDATA[ 
@@ -62,14 +62,14 @@ WHERE {
 <string lang="de"><![CDATA[Gib mir alle schwedischen Feiertage.]]></string>
 <string lang="es"><![CDATA[Dame todos los días festivos en Suecia.]]></string>
 <string lang="it"><![CDATA[Dammi tutti i giorni festivi svedesi.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Donne-moi tous les jours fériés en Suède.]]></string>
 <string lang="nl"><![CDATA[Geef alle Zweedse feestdagen.]]></string>
 <string lang="ro"><![CDATA[Dă toate zilele de sărbătoare din Suedia.]]></string>
 <keywords lang="en"><![CDATA[Swedish holidays]]></keywords>
 <keywords lang="de"><![CDATA[schwedische Feiertage]]></keywords>
 <keywords lang="es"><![CDATA[días festivos, Suecia]]></keywords>
 <keywords lang="it"><![CDATA[giorni festivi svedesi]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[jours fériés, Suède]]></keywords>
 <keywords lang="nl"><![CDATA[Zweedse feestdagen]]></keywords>
 <keywords lang="ro"><![CDATA[zile de sărbătoare, Suedia]]></keywords>
 <query><![CDATA[ 
@@ -95,14 +95,14 @@ WHERE {
 <string lang="de"><![CDATA[Wer ist der jüngste Pulitzer-Preisträger?]]></string>
 <string lang="es"><![CDATA[¿Quien es el premio Pilitzer mas joven?]]></string>
 <string lang="it"><![CDATA[Chi è il più giovane vincitore del premio Pulitzer?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Qui est le plus jeune personne à obtenir le Prix Pullitzer.]]></string>
 <string lang="nl"><![CDATA[Wie is de jongste Pulitzerprijs-winnaar?]]></string>
 <string lang="ro"><![CDATA[Cine este cel mai tânăr câștigător al premiului Pulitzer?]]></string>
 <keywords lang="en"><![CDATA[youngest, winner, Pulitzer Prize]]></keywords>
 <keywords lang="de"><![CDATA[jüngster, Pulitzer-Preisträger]]></keywords>
 <keywords lang="es"><![CDATA[mas joven, premio Pulitzer]]></keywords>
 <keywords lang="it"><![CDATA[più giovane, vincitore, premio Pulitzer]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[plus jeune, Prix Pullitzer]]></keywords>
 <keywords lang="nl"><![CDATA[jongste, Pulitzerprijs-winnaar]]></keywords>
 <keywords lang="ro"><![CDATA[cel mai tânăr, câștigător, premiu Pulitzer]]></keywords>
 <query><![CDATA[ 
@@ -128,14 +128,14 @@ OFFSET 0 LIMIT 1
 <string lang="de"><![CDATA[Welche Tierarten sind vom Aussterben bedroht?]]></string>
 <string lang="es"><![CDATA[¿Que animales están en peligro de extinción?]]></string>
 <string lang="it"><![CDATA[Quali animali sono in pericolo di estinzione?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels animaux sont en danger de disparition?]]></string>
 <string lang="nl"><![CDATA[Welke dieren zijn kritiek bedreigd?]]></string>
 <string lang="ro"><![CDATA[Ce animale sunt pe cale de dispariție?]]></string>
 <keywords lang="en"><![CDATA[animal, critically endangered]]></keywords>
 <keywords lang="de"><![CDATA[Tierart, vom Aussterben bedroht]]></keywords>
 <keywords lang="es"><![CDATA[animales, peligro de extinción]]></keywords>
 <keywords lang="it"><![CDATA[animali, pericolo di estinzione]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[animaux, danger de disparition]]></keywords>
 <keywords lang="nl"><![CDATA[dieren, kritiek bedreigd]]></keywords>
 <keywords lang="ro"><![CDATA[animale, pe cale de dispariție]]></keywords>
 <query><![CDATA[
@@ -1801,14 +1801,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Fußballer wurden auf Malta geboren?]]></string>
 <string lang="es"><![CDATA[¿Que jugadores de futbol han nacido en Malta?]]></string>
 <string lang="it"><![CDATA[Quali calciatori sono nati a Malta?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels joueurs de football sont nés à Malta?]]></string>
 <string lang="nl"><![CDATA[Welke voetballers zijn op Malta geboren?]]></string>
 <string lang="ro"><![CDATA[Ce jucători de fotbal s-au născut în Malta?]]></string>
 <keywords lang="en"><![CDATA[soccer player, born on, Malta]]></keywords>
 <keywords lang="de"><![CDATA[Fußballer, geboren auf, Malta]]></keywords>
 <keywords lang="es"><![CDATA[jugadores de futbol, nacidos, Malta]]></keywords>
 <keywords lang="it"><![CDATA[calciatori, nati, Malta]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[joueurs de football, né à Malta]]></keywords>
 <keywords lang="nl"><![CDATA[voetballers, geboren op, Malta]]></keywords>
 <keywords lang="ro"><![CDATA[jucător de fotbal, născut, Malta]]></keywords>
 <query><![CDATA[
@@ -1918,14 +1918,14 @@ WHERE {
 <string lang="de"><![CDATA[Hat Arnold Schwarzenegger eine Universität besucht?]]></string>
 <string lang="es"><![CDATA[¿Fue Arnold Schwarzenegger a la universidad?]]></string>
 <string lang="it"><![CDATA[Arnold Schwarzenegger ha frequentato l'Università?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Est-ce que Arnold Schwarzenegger a étudié à une université?]]></string>
 <string lang="nl"><![CDATA[Had Arnold Schwarzenegger aan een universiteit gestudeerd?]]></string>
 <string lang="ro"><![CDATA[Arnold Schwarzenegger a frecventat o universitate?]]></string>
 <keywords lang="en"><![CDATA[Arnold Schwarzenegger, attend, university]]></keywords>
 <keywords lang="de"><![CDATA[Arnold Schwarzenegger, Universität, besucht]]></keywords>
 <keywords lang="es"><![CDATA[Arnold Schwarzenegger, universidad]]></keywords>
 <keywords lang="it"><![CDATA[Arnold Schwarzenegger, frequentare, Università]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[Arnold Schwarzenegger, etudié, université]]></keywords>
 <keywords lang="nl"><![CDATA[Arnold Schwarzenegger, universiteit, gestudeerd]]></keywords>
 <keywords lang="ro"><![CDATA[Arnold Schwarzenegger, frecventa, universitate]]></keywords>
 <query><![CDATA[
@@ -1948,14 +1948,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Programmiersprachen wurden durch Perl beeinflusst?]]></string>
 <string lang="es"><![CDATA[¿Qué lenguajes de programación fueron influenciados por el Perl?]]></string>
 <string lang="it"><![CDATA[Quali linguaggi di programmazione sono stati influenzati da Perl?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels langages de programmation ont été influencés par Perl?]]></string>
 <string lang="nl"><![CDATA[Welke programmeertalen werden beïnvloed door Perl?]]></string>
 <string lang="ro"><![CDATA[Ce limbaje de programare au fost influențate de Perl?]]></string>
 <keywords lang="en"><![CDATA[programming languages, influenced by, Perl]]></keywords>
 <keywords lang="de"><![CDATA[Programmiersprachen, beeinflusst durch, Perl]]></keywords>
 <keywords lang="es"><![CDATA[lenguajes de programación, influenciados, Perl]]></keywords>
 <keywords lang="it"><![CDATA[linguaggi di programmazione, influenzati, Perl]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[langages de programmation, influencés par, Perl]]></keywords>
 <keywords lang="nl"><![CDATA[programmeertalen, beïnvloed door, Perl]]></keywords>
 <keywords lang="ro"><![CDATA[limbaje de programare, influențat, Perl]]></keywords>
 <query><![CDATA[
@@ -1996,14 +1996,14 @@ WHERE {
 <string lang="de"><![CDATA[Ist Barack Obama ein Demokrat?]]></string>
 <string lang="es"><![CDATA[¿Es Barack Obama demócrata?]]></string>
 <string lang="it"><![CDATA[Barack Obama è un democratico?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Barack Obama est-il un démocrate?]]></string>
 <string lang="nl"><![CDATA[Is Barack Obama een democraat?]]></string>
 <string lang="ro"><![CDATA[Barack Obama este un democrat?]]></string>
 <keywords lang="en"><![CDATA[Barack Obama, democrat]]></keywords>
 <keywords lang="de"><![CDATA[Barack Obama, Demokrat]]></keywords>
 <keywords lang="es"><![CDATA[Barack Obama, demócrata]]></keywords>
 <keywords lang="it"><![CDATA[Barack Obama, democratico]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[Barack Obama, démocrate]]></keywords>
 <keywords lang="nl"><![CDATA[Barack Obama, democraat]]></keywords>
 <keywords lang="ro"><![CDATA[Barack Obama, democrat]]></keywords>
 <query><![CDATA[
@@ -2024,14 +2024,14 @@ WHERE {
 <string lang="de"><![CDATA[Wieviele Kinder hat Eddie Murphy?]]></string>
 <string lang="es"><![CDATA[¿Cuántos hijos tiene Eddie Murphy?]]></string>
 <string lang="it"><![CDATA[Quanti figli ha Eddie Murphy?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Combien d'enfants a Eddie Murphy?]]></string>
 <string lang="nl"><![CDATA[Hoeveel kinderen heeft Eddie Murphy?]]></string>
 <string lang="ro"><![CDATA[Câți copii are Eddie Murphy?]]></string>
 <keywords lang="en"><![CDATA[children, Eddie Murphy]]></keywords>
 <keywords lang="de"><![CDATA[Kinder, Eddie Murphy]]></keywords>
 <keywords lang="es"><![CDATA[hijos, Eddie Murphy]]></keywords>
 <keywords lang="it"><![CDATA[figli, Eddie Murphy]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[nombre d'enfants, Eddie Murphy]]></keywords>
 <keywords lang="nl"><![CDATA[kinderen, Eddie Murphy]]></keywords>
 <keywords lang="ro"><![CDATA[copii, Eddie Murphy]]></keywords>
 <query><![CDATA[
@@ -2052,14 +2052,14 @@ WHERE {
 <string lang="de"><![CDATA[Wer ist das älteste Kind von Meryl Streep?]]></string>
 <string lang="es"><![CDATA[¿Cuál es el hijo mas mayor de Meryl Streep?]]></string>
 <string lang="it"><![CDATA[Chi è il figlio maggiore di Meryl Streep?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Qui est l'enfant le plus agé de Merly Streep?]]></string>
 <string lang="nl"><![CDATA[Wie is het oudste kind van Meryl Streep?]]></string>
 <string lang="ro"><![CDATA[Cine este copilul cel mai mare al lui Meryl Streep?]]></string>
 <keywords lang="en"><![CDATA[oldest child, Meryl Streep]]></keywords>
 <keywords lang="de"><![CDATA[ältestes Kind, Meryl Streep]]></keywords>
 <keywords lang="es"><![CDATA[hijo mas mayor, Meryl Streep]]></keywords>
 <keywords lang="it"><![CDATA[figlio maggiore, Meryl Streep]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[enfant le plus agé, Meryl Streep]]></keywords>
 <keywords lang="nl"><![CDATA[oudste kind, Meryl Streep]]></keywords>
 <keywords lang="ro"><![CDATA[copilul cel mai mare, Meryl Streep]]></keywords>
 <query><![CDATA[
@@ -2083,14 +2083,14 @@ OFFSET 0 LIMIT 1
 <string lang="de"><![CDATA[Wer hat John Lennon getötet?]]></string>
 <string lang="es"><![CDATA[¿Quién asesino a John Lennon?]]></string>
 <string lang="it"><![CDATA[Chi ha ucciso John Lennon?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Qui assissina John Lennon?]]></string>
 <string lang="nl"><![CDATA[Wie heeft John Lennon vermoord?]]></string>
 <string lang="ro"><![CDATA[Cine l-a ucis pe John Lennon?]]></string>
 <keywords lang="en"><![CDATA[killed, John Lennon]]></keywords>
 <keywords lang="de"><![CDATA[getötet, John Lennon]]></keywords>
 <keywords lang="es"><![CDATA[asesino, John Lennon]]></keywords>
 <keywords lang="it"><![CDATA[assassino, John Lennon]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[assassin, John Lennon]]></keywords>
 <keywords lang="nl"><![CDATA[John Lennon, vermoord]]></keywords>
 <keywords lang="ro"><![CDATA[ucis, John Lennon]]></keywords>
 <query><![CDATA[
@@ -2114,14 +2114,14 @@ WHERE {
 <string lang="de"><![CDATA[Welches Vielfliegerprogramm hat die meisten Fluggesellschaften?]]></string>
 <string lang="es"><![CDATA[¿Qué programa de viajero frecuente tienen la mayoría de las aerolineas? ]]></string>
 <string lang="it"><![CDATA[Quale programma frequent flyer ha la maggior parte delle compagnie aeree?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quel programme de fidélisation aérien a le plus de companies?]]></string>
 <string lang="nl"><![CDATA[Wat is het frequent flyer-programma met de meeste luchtvaartmaatschappijen?]]></string>
 <string lang="ro"><![CDATA[Ce program de fidelizare pentru zboruri frecvente are cele mai multe companii aeriene?]]></string>
 <keywords lang="en"><![CDATA[frequent flyer program, most airlines]]></keywords>
 <keywords lang="de"><![CDATA[Vielfliegerprogramm, meisten Fluggesellschaften]]></keywords>
 <keywords lang="es"><![CDATA[programa de viajero frecuente, mayor numero aerolineas]]></keywords>
 <keywords lang="it"><![CDATA[programma frequent flyer, maggior parte delle compagnie aeree]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[programme de fidélisation, plus de companies]]></keywords>
 <keywords lang="nl"><![CDATA[frequent flyer-programma, meeste luchtvaartmaatschappijen]]></keywords>
 <keywords lang="ro"><![CDATA[program de fidelizare pentru zboruri frecvente, cele mai multe companii aeriene]]></keywords>
 <query><![CDATA[
@@ -2140,7 +2140,7 @@ ORDER BY DESC(COUNT(DISTINCT ?airline))
 OFFSET 0 LIMIT 1
 ]]></query>
 <answers>
-<answer>http://dbpedia.org/resource/Miles_%26_More</answer>
+<answer>http://dbpedia.org/resource/Miles_&_More</answer>
 </answers>
 </question>
 
@@ -2149,14 +2149,14 @@ OFFSET 0 LIMIT 1
 <string lang="de"><![CDATA[In welcher Stadt liegt das Hauptquartier von Air China?]]></string>
 <string lang="es"><![CDATA[¿En que ciudad esta la sede de Air China?]]></string>
 <string lang="it"><![CDATA[In quale città Air China ha il quartier generale?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Où se trouve le quartier général de Air China?]]></string>
 <string lang="nl"><![CDATA[In welke stad is het hoofdkantoor van Air China?]]></string>
 <string lang="ro"><![CDATA[În ce oraș este sediul Air China?]]></string>
 <keywords lang="en"><![CDATA[city, headquarter, Air China]]></keywords>
 <keywords lang="de"><![CDATA[Stadt, Hauptquartier, Air China]]></keywords>
 <keywords lang="es"><![CDATA[ciudad, sede Air China]]></keywords>
 <keywords lang="it"><![CDATA[città, Air China, quartier generale]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[location, quartier général, Air China]]></keywords>
 <keywords lang="nl"><![CDATA[stad, hoofdkantoor, Air China]]></keywords>
 <keywords lang="ro"><![CDATA[oraș, sediu, Air China]]></keywords>
 <query><![CDATA[
@@ -2180,14 +2180,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Künstler sind am gleichen Tag wie Rachel Stevens geboren?]]></string>
 <string lang="es"><![CDATA[¿Qué artistas nacieron en la misma fecha que Rachel Stevens?]]></string>
 <string lang="it"><![CDATA[Quali artisti sono nati la stessa data di Rachel Stevens?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels artistes ont le même anniversaire que Rachel Stevens?]]></string>
 <string lang="nl"><![CDATA[Welke kunstenaars zijn op dezelfde dag als Rachel Stevens geboren?]]></string>
 <string lang="ro"><![CDATA[Ce artiști s-au născut în aceeași zi cu Rachel Stevens?]]></string>
 <keywords lang="en"><![CDATA[artist, born same date, Rachel Stevens]]></keywords>
 <keywords lang="de"><![CDATA[Künstler,geboren am gleichen Tag, Rachel Stevens]]></keywords>
 <keywords lang="es"><![CDATA[artistas, misma fecha nacimiento, Rachel Stevens]]></keywords>
 <keywords lang="it"><![CDATA[artisti, stessa data di nascita, Rachel Stevens]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[artistes, même anniversaire, Rachel Stevens?]]></keywords>
 <keywords lang="nl"><![CDATA[kunstenaars, geboren, op dezelfde dag, Rachel Stevens]]></keywords>
 <keywords lang="ro"><![CDATA[artist, născut în aceeași zi, Rachel Stevens]]></keywords>
 <query><![CDATA[
@@ -2213,14 +2213,14 @@ WHERE {
 <string lang="de"><![CDATA[Wieviele Wissenschaftler haben einen Abschluss von einer Ivy-League-Universität?]]></string>
 <string lang="es"><![CDATA[¿Cuántos científicos se han graduado en un Universidad de la Ivy League?]]></string>
 <string lang="it"><![CDATA[Quanti scienziati si sono laureati in un'Università dell'Ivy League?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Combien de chercheurs ont étudié à des universités de l'Ivy League?]]></string>
 <string lang="nl"><![CDATA[Hoeveel wetenschappers hebben afgestudeerd aan een Ivy League-universiteit?]]></string>
 <string lang="ro"><![CDATA[Câți oameni de știință au absolvit la universitatea Ivy League?]]></string>
 <keywords lang="en"><![CDATA[scientists, graduated, Ivy League university]]></keywords>
 <keywords lang="de"><![CDATA[Wissenschaftler, Abschluss von, Ivy-League-Universität]]></keywords>
 <keywords lang="es"><![CDATA[científicos, graduado, Universidad Ivy League]]></keywords>
 <keywords lang="it"><![CDATA[scienziati, laureati, Università dell'Ivy League]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[nombre de chercheurs, étudié, universités de l'Ivy League]]></keywords>
 <keywords lang="nl"><![CDATA[wetenschappers, afgestudeerd, Ivy League-universiteit]]></keywords>
 <keywords lang="ro"><![CDATA[oameni de știință, absolvit, universitatea Ivy League]]></keywords>
 <query><![CDATA[
@@ -2243,14 +2243,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Traubenarten wachsen in Oregon?]]></string>
 <string lang="es"><![CDATA[¿Que tipo de uva crece en Oregon?]]></string>
 <string lang="it"><![CDATA[Quali tipi di uva crescono in Oregon?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quelles genres de raisin poussent en Oregon?]]></string>
 <string lang="nl"><![CDATA[Welke soorten druiven groeien in Oregon?]]></string>
 <string lang="ro"><![CDATA[Ce soiuri de struguri cresc în Oregon?]]></string>
 <keywords lang="en"><![CDATA[grape types, grow, Oregon]]></keywords>
 <keywords lang="de"><![CDATA[Traubenarten, wachsen, Oregon]]></keywords>
 <keywords lang="es"><![CDATA[tipo uva, crece, Oregon]]></keywords>
 <keywords lang="it"><![CDATA[tipi di uva, crescere, Oregon]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[genres, raisins, Oregon]]></keywords>
 <keywords lang="nl"><![CDATA[soorten druiven, groeien, Oregon]]></keywords>
 <keywords lang="ro"><![CDATA[soiuri de struguri, cresc, Oregon]]></keywords>
 <query><![CDATA[
@@ -2304,14 +2304,14 @@ WHERE {
 <string lang="de"><![CDATA[Wer spielt alles in spanischen Filmen produziert von Benicio del Toro mit? ]]></string>
 <string lang="es"><![CDATA[¿Quien protagoniza peliculas españolas producidas por Benicio del Toro?]]></string>
 <string lang="it"><![CDATA[Chi recita nei film spagnoli prodotti da Benicio del Toro?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels acteurs jouent dans des films dirigés par Benicio del Toro?]]></string>
 <string lang="nl"><![CDATA[Wie speeld in Spaanse films geproduceerd door Benicio del Toro?]]></string>
 <string lang="ro"><![CDATA[Cine sunt protagoniști în filmele spaniole produse de Benicio del Toro?]]></string>
 <keywords lang="en"><![CDATA[starring, Spanish movies, produced, Benicio del Toro]]></keywords>
 <keywords lang="de"><![CDATA[mitspielen, spanische Filme, produziert, Benicio del Toro]]></keywords>
 <keywords lang="es"><![CDATA[protagonista, peliculas españolas, productor, Benicio del Toro]]></keywords>
 <keywords lang="it"><![CDATA[attori, film spagnoli, prodotti, Benicio del Toro]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[acteurs, directeur, Benicio del Toro]]></keywords>
 <keywords lang="nl"><![CDATA[speeld, Spaanse films, geproduceerd, Benicio del Toro]]></keywords>
 <keywords lang="ro"><![CDATA[protagoniști, filmele spaniole, produse, Benicio del Toro]]></keywords>
 <query><![CDATA[
@@ -2347,14 +2347,14 @@ WHERE {
 <string lang="de"><![CDATA[Wer ist der Manager von Real Madrid?]]></string>
 <string lang="es"><![CDATA[¿Quien es el manager de Real Madrid?]]></string>
 <string lang="it"><![CDATA[Chi è il manager del Real Madrid?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Qui est le manageur de Real Madrid?]]></string>
 <string lang="nl"><![CDATA[Wie is de algemeen directeur van Real Madrid?]]></string>
 <string lang="ro"><![CDATA[Cine este manager la Real Madrid?]]></string>
 <keywords lang="en"><![CDATA[manager, Real Madrid]]></keywords>
 <keywords lang="de"><![CDATA[Manager, Real Madrid]]></keywords>
 <keywords lang="es"><![CDATA[manager, Real Madrid]]></keywords>
 <keywords lang="it"><![CDATA[manager, Real Madrid]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[manageur, Real Madrid?]]></keywords>
 <keywords lang="nl"><![CDATA[algemeen directeur, Real Madrid]]></keywords>
 <keywords lang="ro"><![CDATA[manager, Real Madrid]]></keywords>
 <query><![CDATA[
@@ -2375,14 +2375,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Währung benutzt China?]]></string>
 <string lang="es"><![CDATA[¿Cual es la moneda de China?]]></string>
 <string lang="it"><![CDATA[Dammi la valuta della Cina.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Doone-moi la monnaie chinoise.]]></string>
 <string lang="nl"><![CDATA[Wat is de munteenheid van China?]]></string>
 <string lang="ro"><![CDATA[Care este moneda din China?]]></string>
 <keywords lang="en"><![CDATA[currency, China]]></keywords>
 <keywords lang="de"><![CDATA[Währung, China]]></keywords>
 <keywords lang="es"><![CDATA[moneda, China]]></keywords>
 <keywords lang="it"><![CDATA[valuta, Cina]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[monnaie, chinoise]]></keywords>
 <keywords lang="nl"><![CDATA[munteenheid, China]]></keywords>
 <keywords lang="ro"><![CDATA[moneda, China]]></keywords>
 <query><![CDATA[
@@ -2404,14 +2404,14 @@ WHERE {
 <string lang="de"><![CDATA[Bei welchen Filmen, in denen Brad Pitt mitspielt, hat Guy Ritchie Regie geführt? ]]></string>
 <string lang="es"><![CDATA[¿Que peliculas protagonizadas por Brad Pitt han sido dirigidas por Guy Ritchie?]]></string>
 <string lang="it"><![CDATA[Quali film in cui recita Brad Pitt sono stati diretti da Guy Ritchie?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quels films avec Brad Pitt furent dirigés par Guy Richtie?]]></string>
 <string lang="nl"><![CDATA[Welke films met Brad Pitt werden geregisseerd door Guy Ritchie?]]></string>
 <string lang="ro"><![CDATA[Ce filme cu Brad Pitt ca protagonist au fost regizate de Guy Ritchie?]]></string>
 <keywords lang="en"><![CDATA[movies, starring, Brad Pitt, directed, Guy Ritchie]]></keywords>
 <keywords lang="de"><![CDATA[Filme, mitspielen, Brad Pitt, Regie führen, Guy Ritchie]]></keywords>
 <keywords lang="es"><![CDATA[peliculas, protagonizadas, Brad Pitt, dirigidas, Guy Ritchie]]></keywords>
 <keywords lang="it"><![CDATA[film, attore, Brad Pitt, diretti, Guy Ritchie]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[films, acteur, Brad Pitt, directeur, Guy Richtie?]]></keywords>
 <keywords lang="nl"><![CDATA[films, acteur, Brad Pitt, geregisseerd, Guy Ritchie]]></keywords>
 <keywords lang="ro"><![CDATA[filme, Brad Pitt, protagonist, regizate, Guy Ritchie]]></keywords>
 <query><![CDATA[
@@ -2435,14 +2435,14 @@ WHERE {
 <string lang="de"><![CDATA[Wieviele Firmen hat der Gründer von Facebook gegründet?]]></string>
 <string lang="es"><![CDATA[¿Cuantas compañías han sido fundadas por el fundador de Facebook?]]></string>
 <string lang="it"><![CDATA[Quante società sono state fondate dal fondatore di Facebook?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Combien de companies ont été fondées par le fondateur de Facebook?]]></string>
 <string lang="nl"><![CDATA[Hoeveel bedrijven werden opgericht door de oprichter van Facebook?]]></string>
 <string lang="ro"><![CDATA[Câte companii au fost înființate de fondatorul Facebook?]]></string>
 <keywords lang="en"><![CDATA[companies, founded by, founder, Facebook]]></keywords>
 <keywords lang="de"><![CDATA[Firmen, gegründet, Gründer, Facebook]]></keywords>
 <keywords lang="es"><![CDATA[compañías, fundadas, fundador Facebook]]></keywords>
 <keywords lang="it"><![CDATA[società, fondate, fondatore, Facebook]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[nombre, companies, fondées, fondateur, Facebook]]></keywords>
 <keywords lang="nl"><![CDATA[bedrijven, opgericht, oprichter, Facebook]]></keywords>
 <keywords lang="ro"><![CDATA[companii, înființate, fondator, Facebook]]></keywords>
 <query><![CDATA[
@@ -2464,14 +2464,14 @@ WHERE {
 <string lang="de"><![CDATA[Wieviele Firmen wurden im selben Jahr wie Google gegründet?]]></string>
 <string lang="es"><![CDATA[¿Cuántas compañías fueron fundadas en el mismo año que Google?]]></string>
 <string lang="it"><![CDATA[Quante società sono state fondate nello stesso anno di Google?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Combien de companies ont été fondées la même année que Google?]]></string>
 <string lang="nl"><![CDATA[Hoeveel bedrijven werden opgericht in hetzelfde jaar als Google?]]></string>
 <string lang="ro"><![CDATA[Câte companii au fost înființate în același an cu Google?]]></string>
 <keywords lang="en"><![CDATA[companies, founded, same year, Google]]></keywords>
 <keywords lang="de"><![CDATA[Firmen, gegründet, selbes Jahr, Google]]></keywords>
 <keywords lang="es"><![CDATA[compañías, fundadas, mismo año Google]]></keywords>
 <keywords lang="it"><![CDATA[società, fondate, stesso anno, Google]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[nombre, companies, fondées, même année, Google]]></keywords>
 <keywords lang="nl"><![CDATA[bedrijven, opgericht, hetzelfde jaar, Google]]></keywords>
 <keywords lang="ro"><![CDATA[companii, înființate, același an, Google]]></keywords>
 <query><![CDATA[
@@ -2494,14 +2494,14 @@ WHERE {
 <string lang="de"><![CDATA[Welche Tochtergesellschaft von Lufthansa fliegt sowohl Dortmund als auch Berlin Tegel an?]]></string>
 <string lang="es"><![CDATA[¿Qué subsidiario de Lufthansa vuela en Dortmund y en Berlin?]]></string>
 <string lang="it"><![CDATA[Quale società sussidiaria di Lufthansa serve sia Dortmund che Berlin Tegel?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quelle subsidiaire de Lufhansa vole sur Dortmund et Berlin Tegel?]]></string>
 <string lang="nl"><![CDATA[Welke dochteronderneming van Lufthansa bedient zowel Dortmund en Berlin Tegel?]]></string>
 <string lang="ro"><![CDATA[Care filială a Lufthansa deservește atât Dortmund cât și Berlin Tegel?]]></string>
 <keywords lang="en"><![CDATA[subsidiary, Lufthansa, serve, Dortmund, Berlin Tegel]]></keywords>
 <keywords lang="de"><![CDATA[Tochtergesellschaft, Lufthansa, anfliegen, Dortmund, Berlin Tegel]]></keywords>
 <keywords lang="es"><![CDATA[subsidiario, Lufthansa, vuela, Dortmund y Berlin]]></keywords>
 <keywords lang="it"><![CDATA[società sussidiaria di Lufthansa, servire, Dortmund, Berlin Tegel]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[subsidiaire, Lufhansa, vole sur, Dortmund, Berlin Tegel]]></keywords>
 <keywords lang="nl"><![CDATA[dochteronderneming, Lufthansa, bedient, Dortmund, Berlin Tegel]]></keywords>
 <keywords lang="ro"><![CDATA[filială, Lufthansa, deservește, Dortmund, Berlin Tegel]]></keywords>
 <query><![CDATA[
@@ -2524,14 +2524,14 @@ WHERE {
 <string lang="de"><![CDATA[Wieviele Fluggesellschaften sind in der Star Alliance?]]></string>
 <string lang="es"><![CDATA[¿Cuántas compañías son miembros del la Star Alliance?]]></string>
 <string lang="it"><![CDATA[Quante compagnie aeree membri di Star Alliance?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Combien de companies aériennes sont membres de Star Alliance?]]></string>
 <string lang="nl"><![CDATA[Hoeveel luchtvaartmaatschappijen zijn lid van Star Alliance?]]></string>
 <string lang="ro"><![CDATA[Câte companii aeriene sunt membre în Star Alliance?]]></string>
 <keywords lang="en"><![CDATA[how many, airlines, member, Star Alliance]]></keywords>
 <keywords lang="de"><![CDATA[Anzahl, Fluggesellschaften, Star Alliance]]></keywords>
 <keywords lang="es"><![CDATA[Cuántas compañías, miembros, Star Alliance]]></keywords>
 <keywords lang="it"><![CDATA[quante, compagnie aeree, membri, Star Alliance]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[nombre, companies aériennes, membres de Star Alliance]]></keywords>
 <keywords lang="nl"><![CDATA[hoeveel, luchtvaartmaatschappijen, lid, Star Alliance?]]></keywords>
 <keywords lang="ro"><![CDATA[câte, companii aeriene, membre, Star Alliance]]></keywords>
 <query><![CDATA[
@@ -2555,14 +2555,14 @@ WHERE {
 <string lang="de"><![CDATA[Zeig mir alle Raumschiffe, die zum Mars geflogen sind.]]></string>
 <string lang="es"><![CDATA[Dame todas las naves espaciales que han volado a Marte]]></string>
 <string lang="it"><![CDATA[Dammi tutte le astronavi che hanno volato su Marte.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Donne-moi tous les vaisseaux spatiaux qui ont volé pour Mars.]]></string>
 <string lang="nl"><![CDATA[Geef alle ruimtetuigen die naar Mars werden gestuurd.]]></string>
 <string lang="ro"><![CDATA[Dă-mi toate navele spațiale care au zburat spre Marte.]]></string>
 <keywords lang="en"><![CDATA[spacecrafts, flew to, Mars]]></keywords>
 <keywords lang="de"><![CDATA[Raumschiffe, geflogen, Mars]]></keywords>
 <keywords lang="es"><![CDATA[naves espaciales, volado, Marte]]></keywords>
 <keywords lang="it"><![CDATA[astronavi, volare, Marte]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[vaisseaux spatiaux, volé, Mars]]></keywords>
 <keywords lang="nl"><![CDATA[ruimtetuigen, gestuurd, Mars]]></keywords>
 <keywords lang="ro"><![CDATA[nave spațiale, zburat, Marte]]></keywords>
 <query><![CDATA[
@@ -2590,14 +2590,14 @@ WHERE {
 <string lang="de"><![CDATA[Welcher Musiker hat die meisten Bücher geschrieben?]]></string>
 <string lang="es"><![CDATA[¿Qué músico ha escrito el mayor numero de libros?]]></string>
 <string lang="it"><![CDATA[Quale musicista ha scritto il maggior numero di libri?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quel musicien a écrit le plus de livres?]]></string>
 <string lang="nl"><![CDATA[Welke musicus schreef de meeste boeken?]]></string>
 <string lang="ro"><![CDATA[Care muzician a scris cele mai multe cărți?]]></string>
 <keywords lang="en"><![CDATA[musician, wrote, the most books]]></keywords>
 <keywords lang="de"><![CDATA[Musiker, geschrieben, die meisten Bücher]]></keywords>
 <keywords lang="es"><![CDATA[músico, escrito, mayor numero de libros]]></keywords>
 <keywords lang="it"><![CDATA[musicista, scrivere, maggior numero di libri]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[musicien, écrit, plus de livres]]></keywords>
 <keywords lang="nl"><![CDATA[musicus, schreef, de meeste boeken]]></keywords>
 <keywords lang="ro"><![CDATA[muzician, scris, cele mai multe cărți]]></keywords>
 <query><![CDATA[
@@ -2623,14 +2623,14 @@ OFFSET 0 LIMIT 1
 <string lang="de"><![CDATA[Nenne mir alle Personen, die an Halloween geboren sind.]]> </string>
 <string lang="es"><![CDATA[Muestrame todas las personas nacidas en Halloween]]></string>
 <string lang="it"><![CDATA[Mostrami tutti coloro che sono nati ad Halloween.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Donne-moi toutes les personnes nées à Haloween.]]></string>
 <string lang="nl"><![CDATA[Geef een lijst met iedereen die op Halloween is geboren.]]></string>
 <string lang="ro"><![CDATA[Arată-mi toate persoanele care s-au născut de Halloween.]]></string>
 <keywords lang="en"><![CDATA[person, born on, Halloween]]></keywords>
 <keywords lang="de"><![CDATA[Personen, geboren, Halloween]]></keywords>
 <keywords lang="es"><![CDATA[personas nacidas Halloween]]></keywords>
 <keywords lang="it"><![CDATA[nati, Halloween]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[personnes, nées, Haloween]]></keywords>
 <keywords lang="nl"><![CDATA[persoon, geboren, Halloween]]></keywords>
 <keywords lang="ro"><![CDATA[persoanele, născut de, Halloween]]></keywords>
 <query><![CDATA[
@@ -2663,14 +2663,14 @@ WHERE {
 <string lang="de"><![CDATA[Nenne mir alle Schweizer Nonprofit-Organisationen?]]></string>
 <string lang="es"><![CDATA[Dame todas las organizaciones Suizas sin animo de lucro]]></string>
 <string lang="it"><![CDATA[Dammi tutte le organizzazioni no-profit svizzere.]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Donne-moi toutes les associations à but non lucratif suisses.]]></string>
 <string lang="nl"><![CDATA[Noem alle Zwitserse organisaties zonder winstoogmerk.]]></string>
 <string lang="ro"><![CDATA[Dă-mi toate organizațiile non-profit elvețiene.]]></string>
 <keywords lang="en"><![CDATA[Swiss, non-profit organization]]></keywords>
 <keywords lang="de"><![CDATA[Schweizer, Nonprofit-Organisationen]]></keywords>
 <keywords lang="es"><![CDATA[organizaciones Suizas sin animo de lucro]]></keywords>
 <keywords lang="it"><![CDATA[organizzazioni no-profit, svizzere]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[associations à but non lucratif, suisses]]></keywords>
 <keywords lang="nl"><![CDATA[Zwitserse, organisaties zonder winstoogmerk]]></keywords>
 <keywords lang="ro"><![CDATA[organizații non-profit, elvețiene]]></keywords>
 <query><![CDATA[
@@ -2699,14 +2699,14 @@ WHERE {
 <string lang="de"><![CDATA[In welchem Land liegt Mekka?]]></string>
 <string lang="es"><![CDATA[¿En que país se sitúa la Meca?]]></string>
 <string lang="it"><![CDATA[In quale stato si trova La Mecca?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Dans quel pays se trouve Mecca?]]></string>
 <string lang="nl"><![CDATA[In welk land ligt Mekka?]]></string>
 <string lang="ro"><![CDATA[În ce țară se află Mecca?]]></string>
 <keywords lang="en"><![CDATA[country, located, Mecca]]></keywords>
 <keywords lang="de"><![CDATA[Land, Mekka]]></keywords>
 <keywords lang="es"><![CDATA[pais Meca]]></keywords>
 <keywords lang="it"><![CDATA[stato, La Mecca]]></keywords>
-<keywords lang="fr"><![CDATA[]]></keywords>
+<keywords lang="fr"><![CDATA[pays, Mecca]]></keywords>
 <keywords lang="nl"><![CDATA[land, Mekka]]></keywords>
 <keywords lang="ro"><![CDATA[țară, se află, Mecca]]></keywords>
 <query><![CDATA[
@@ -2727,7 +2727,7 @@ WHERE {
 <string lang="de"><![CDATA[Was ist der Nettogewinn von Apple?]]></string>
 <string lang="es"><![CDATA[¿Cual es la ganancia en neto de Apple?]]></string>
 <string lang="it"><![CDATA[Qual è il reddito netto di Apple?]]></string>
-<string lang="fr"><![CDATA[]]></string>
+<string lang="fr"><![CDATA[Quel est le ]]></string>
 <string lang="nl"><![CDATA[Wat is het nettowinst van Apple?]]></string>
 <string lang="ro"><![CDATA[Care este venitul net al Apple?]]></string>
 <keywords lang="en"><![CDATA[net income, Apple]]></keywords>
@@ -3028,14 +3028,14 @@ WHERE {
 <string lang="es"><![CDATA[¿Quién es el alcalde de Rotterdam?]]></string>
 <string lang="it"><![CDATA[Chi è il sindaco di Rotterdam?]]></string>
 <string lang="fr"><![CDATA[]]></string>
-<string lang="nl"><![CDATA[Wie is de burgermeester van Rotterdam?]]></string>
+<string lang="nl"><![CDATA[Wie is de burgemeester van Rotterdam?]]></string>
 <string lang="ro"><![CDATA[Cine este primar în Rotterdam?]]></string>
 <keywords lang="en"><![CDATA[mayor, Rotterdam]]></keywords>
 <keywords lang="de"><![CDATA[Bürgermeister, Rotterdam]]></keywords>
 <keywords lang="es"><![CDATA[alcalde de Rotterdam]]></keywords>
 <keywords lang="it"><![CDATA[sindaco, Rotterdam]]></keywords>
 <keywords lang="fr"><![CDATA[]]></keywords>
-<keywords lang="nl"><![CDATA[burgermeester, Rotterdam]]></keywords>
+<keywords lang="nl"><![CDATA[burgemeester, Rotterdam]]></keywords>
 <keywords lang="ro"><![CDATA[primar, Rotterdam]]></keywords>
 <query><![CDATA[
 PREFIX dbo: <http://dbpedia.org/ontology/>
