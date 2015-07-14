@@ -963,7 +963,7 @@ WHERE {
 </query>
 </question>
 
-<question id="13" onlydbo="true" answertype="resource" aggregation="false" hybrid="false">
+<question id="13" onlydbo="true" answertype="boolean" aggregation="false" hybrid="false">
 <string lang="en"><![CDATA[Are tree frogs a type of amphibian?]]></string>
 <string lang="de"><![CDATA[Sind Laubfrösche Amphibien?]]></string>
 <string lang="es"><![CDATA[¿Son las ranas verdes un tipo de anfibio?]]></string>
@@ -6524,7 +6524,7 @@ OFFSET 0 LIMIT 1
 ]]></query>
 </question>
 
-<question aggregation="false" hybrid="false" answertype="resource" id="245" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="boolean" id="245" onlydbo="true">
 <string lang="en"><![CDATA[Is James Bond married?]]></string>
 <string lang="de"><![CDATA[Ist James Bond verheiratet?]]></string>
 <string lang="es"><![CDATA[¿Está James Bond casado?]]></string>
@@ -8372,7 +8372,7 @@ WHERE {
 </answers>
 </question>
 
-<question id="321" answertype="resource" aggregation="true" onlydbo="true" hybrid="true">
+<question id="321" answertype="boolean" aggregation="true" onlydbo="true" hybrid="true">
 <string lang="en"><![CDATA[Are the Rosetta Stone and the Gayer-Andersen cat exhibited in the same museum?]]></string>
 <pseudoquery><![CDATA[
 PREFIX dbo: <http://dbpedia.org/ontology/>
