@@ -7988,7 +7988,7 @@ WHERE {
 </question>
 
 <question id="301" answertype="resource" aggregation="false" onlydbo="true" hybrid="true">
-<string lang="en"><![CDATA[Wo has vice-president under the president who authorized atomic weapons against Japan during World War II?]]></string>
+<string lang="en"><![CDATA[Who was vice-president under the president who authorized atomic weapons against Japan during World War II?]]></string>
 <pseudoquery><![CDATA[
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7999,7 +7999,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Alben_W._Barkley</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Alben_W._Barkley]]></answer>
 </question>
 
 <question id="302" answertype="resource" aggregation="false" onlydbo="false" hybrid="true">
@@ -8016,7 +8016,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Alton,_Illinois</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Alton,_Illinois]]></answer>
 </answers>
 </question>
 
@@ -8033,7 +8033,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Nelson_Mandela</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Nelson_Mandela]]></answer>
 </answers>
 </question>
 
@@ -8049,7 +8049,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>7</answer>
+<answer><![CDATA[7]]></answer>
 </answers>
 </question>
 
@@ -8065,8 +8065,8 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/John_Hollington_Grayburn</answer>
-<answer>http://dbpedia.org/resource/John_Baskeyfield</answer>
+<answer><![CDATA[http://dbpedia.org/resource/John_Hollington_Grayburn]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/John_Baskeyfield]]></answer>
 </answers>
 </question>
 
@@ -8082,7 +8082,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Kirzhach</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Kirzhach]]></answer>
 </answers>
 </question>
 
@@ -8098,7 +8098,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>25</answer>
+<answer><![CDATA[25]]></answer>
 </question>
 
 <question id="308" answertype="resource" aggregation="false" onlydbo="true" hybrid="true">
@@ -8115,8 +8115,8 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Ghostface_Killah</answer>
-<answer>http://dbpedia.org/resource/Method_Man</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Ghostface_Killah]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Method_Man]]></answer>
 </answers>
 </question>
 
@@ -8134,7 +8134,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Gustave_Flaubert</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Gustave_Flaubert]]></answer>
 </answers>
 </question>
 
@@ -8152,7 +8152,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/George_VI</answer>
+<answer><![CDATA[http://dbpedia.org/resource/George_VI]]></answer>
 </answers>
 </question>
 
@@ -8169,7 +8169,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Adrian_Johnston</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Adrian_Johnston]]></answer>
 </answers>
 </question>
 
@@ -8186,7 +8186,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Pope_John_Paul_II</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Pope_John_Paul_II]]></answer>
 </answers>
 </question>
 
@@ -8204,7 +8204,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Corfu</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Corfu]]></answer>
 </answers>
 </question>
 
@@ -8220,20 +8220,20 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/St._Paddy</answer>
-<answer>http://dbpedia.org/resource/Petite_Etoile</answer>
-<answer>http://dbpedia.org/resource/Alleged_(horse)</answer>
-<answer>http://dbpedia.org/resource/Crepello</answer>
-<answer>http://dbpedia.org/resource/Sir_Ivor</answer>
-<answer>http://dbpedia.org/resource/Empery</answer>
-<answer>http://dbpedia.org/resource/Nijinsky_(horse)</answer>
-<answer>http://dbpedia.org/resource/The_Minstrel</answer>
-<answer>http://dbpedia.org/resource/Roberto_(horse)</answer>
-<answer>http://dbpedia.org/resource/Never_Say_Die_(horse)</answer>
-<answer>http://dbpedia.org/resource/Teenoso</answer>
-<answer>http://dbpedia.org/resource/Royal_Academy_(horse)</answer>
-<answer>http://dbpedia.org/resource/Rodrigo_de_Triano</answer>
-<answer>http://dbpedia.org/resource/Shadeed</answer>
+<answer><![CDATA[http://dbpedia.org/resource/St._Paddy]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Petite_Etoile]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Alleged_(horse)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Crepello]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Sir_Ivor]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Empery]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Nijinsky_(horse)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/The_Minstrel]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Roberto_(horse)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Never_Say_Die_(horse)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Teenoso]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Royal_Academy_(horse)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Rodrigo_de_Triano]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Shadeed]]></answer>
 </answers>
 </question>
 
@@ -8251,8 +8251,8 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Louis_Slotin</answer>
-<answer>http://dbpedia.org/resource/Harry_K._Daghlian,_Jr.</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Louis_Slotin]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Harry_K._Daghlian,_Jr.]]></answer>
 </answers>
 </question>
 
@@ -8270,7 +8270,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/page/Bank_of_America_Tower_(New_York_City)</answer>
+<answer><![CDATA[http://dbpedia.org/page/Bank_of_America_Tower_(New_York_City)]]></answer>
 </answers>
 </question>
 
@@ -8290,10 +8290,10 @@ WHERE {
 ]]>
 </pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Empire_State_Building</answer>
-<answer>http://dbpedia.org/resource/Joel_W._Solomon_Federal_Building_and_United_States_Courthouse</answer>
-<answer>http://dbpedia.org/resource/Hill_Building</answer>
-<answer>http://dbpedia.org/resource/500_Fifth_Avenue</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Empire_State_Building]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Joel_W._Solomon_Federal_Building_and_United_States_Courthouse]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Hill_Building]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/500_Fifth_Avenue]]></answer>
 </answers>
 </question>
 
@@ -8309,12 +8309,12 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Australian_Shelduck</answer>
-<answer>http://dbpedia.org/resource/Chestnut_Teal</answer>
-<answer>http://dbpedia.org/resource/Bar-shouldered_Dove</answer>
-<answer>http://dbpedia.org/resource/Black-faced_Cuckoo-shrike</answer>
-<answer>http://dbpedia.org/resource/Yellow_Thornbill</answer>
-<answer>http://dbpedia.org/resource/Australian_Shoveler</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Australian_Shelduck]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Chestnut_Teal]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Bar-shouldered_Dove]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Black-faced_Cuckoo-shrike]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Yellow_Thornbill]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Australian_Shoveler]]></answer>
 </answers>
 </question>
 
@@ -8331,7 +8331,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/United_States</answer>
+<answer><![CDATA[http://dbpedia.org/resource/United_States]]></answer>
 </answers>
 </question>
 
@@ -8347,28 +8347,28 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Battle_of_Pharsalus</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Gergovia</answer>
-<answer>http://dbpedia.org/resource/Avaricum</answer>
-<answer>http://dbpedia.org/resource/Gallic_Wars</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Zela</answer>
-<answer>http://dbpedia.org/resource/Siege_of_Uxellodunum</answer>
-<answer>http://dbpedia.org/resource/Siege_of_Alexandria_(47_BC)</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Dyrrhachium_(48_BC)</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Munda</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Thapsus</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Alesia</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Vosges_(58_BC)</answer>
-<answer>http://dbpedia.org/resource/Battle_of_the_Sabis</answer>
-<answer>http://dbpedia.org/resource/Siege_of_Massilia</answer>
-<answer>http://dbpedia.org/resource/Battle_of_the_Arar</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Bibracte</answer>
-<answer>http://dbpedia.org/resource/Battle_of_the_Axona</answer>
-<answer>http://dbpedia.org/resource/Caesar's_Civil_War</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Ruspina</answer>
-<answer>http://dbpedia.org/resource/Battle_of_the_Nile_(47_BC)</answer>
-<answer>http://dbpedia.org/resource/Battle_of_Ilerda</answer>
-<answer>http://dbpedia.org/resource/Caesar's_invasions_of_Britain</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Pharsalus]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Gergovia]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Avaricum]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Gallic_Wars]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Zela]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Siege_of_Uxellodunum]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Siege_of_Alexandria_(47_BC)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Dyrrhachium_(48_BC)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Munda]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Thapsus]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Alesia]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Vosges_(58_BC)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_the_Sabis]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Siege_of_Massilia]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_the_Arar]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Bibracte]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_the_Axona]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Caesar's_Civil_War]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Ruspina]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_the_Nile_(47_BC)]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Battle_of_Ilerda]]></answer>
+<answer><![CDATA[http://dbpedia.org/resource/Caesar's_invasions_of_Britain]]></answer>
 </answers>
 </question>
 
@@ -8386,7 +8386,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>true</answer>
+<answer><![CDATA[true]]></answer>
 </answers>
 </question>
 
@@ -8402,7 +8402,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Courteney_Cox</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Courteney_Cox]]></answer>
 </answers>
 </question>
 
@@ -8418,7 +8418,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Botswana</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Botswana]]></answer>
 </answers>
 </question>
 
@@ -8434,7 +8434,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>1858-12-22</answer>
+<answer><![CDATA[1858-12-22]]></answer>
 </answers>
 </question>
 
@@ -8452,7 +8452,7 @@ WHERE {
 ]]>
 </pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Slick_Watts</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Slick_Watts]]></answer>
 </answers>
 </question>
 
@@ -8468,7 +8468,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Lost_in_Translation_(film)</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Lost_in_Translation_(film)]]></answer>
 </answers>
 </question>
 
@@ -8485,7 +8485,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://http://dbpedia.org/page/Brixen</answer>
+<answer><![CDATA[http://http://dbpedia.org/page/Brixen]]></answer>
 </answers>
 </question>
 
@@ -8501,7 +8501,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Queens_College,_City_University_of_New_York</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Queens_College,_City_University_of_New_York]]></answer>
 </answers>
 </question>
 
@@ -8517,7 +8517,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>true</answer>
+<answer><![CDATA[true]]></answer>
 </answers>
 </question>
 
@@ -8534,7 +8534,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>45</answer>
+<answer><![CDATA[45]]></answer>
 </answers>
 </question>
 
@@ -8550,7 +8550,7 @@ SELECT ?uri WHERE
 }
 ]]></pseudoquery>
 <answers>  
-<answer>http://dbpedia.org/resource/Pica_(disorder)</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Pica_(disorder)]]></answer>
 </answers>
 </question>
 
@@ -8568,7 +8568,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>  
-<answer>http://dbpedia.org/resource/Los_Angeles</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Los_Angeles]]></answer>
 </answers>
 </question>
 
@@ -8583,7 +8583,7 @@ WHERE {
         ?x dbo:residence ?uri .
 ]]></pseudoquery>
 <answers>  
-<answer>http://dbpedia.org/resource/Dublin</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Dublin]]></answer>
 </answers>
 </question>
 
@@ -8603,7 +8603,7 @@ WHERE {
 }       
 ]]></pseudoquery>
 <answers>  
-<answer>http://dbpedia.org/resource/Pierce_Brosnan</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Pierce_Brosnan]]></answer>
 </answers>
 </question>
 
@@ -8619,7 +8619,7 @@ WHERE {
 }      
 ]]></pseudoquery>
 <answers>  
-<answer>http://dbpedia.org/resource/Damon_Albarn</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Damon_Albarn]]></answer>
 </answers>
 </question>
 
@@ -8635,7 +8635,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Macau</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Macau]]></answer>
 </answers>
 </question>
 
@@ -8651,7 +8651,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Oxford,_Mississippi</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Oxford,_Mississippi]]></answer>
 </answers>
 </question>
 
@@ -8666,7 +8666,7 @@ WHERE {
         ?x text:"made his first movie in" ?year .
 ]]></pseudoquery>
 <answers>
-<answer>1917</answer>
+<answer><![CDATA[1917]]></answer>
 </answers>
 </question>
 
@@ -8682,7 +8682,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>Boz</answer>
+<answer><![CDATA[Boz]]></answer>
 </answers>
 </question>
 
@@ -8698,7 +8698,7 @@ WHERE {
 }
 ]]></pseudoquery>
 <answers>
-<answer>http://dbpedia.org/resource/Paris</answer>
+<answer><![CDATA[http://dbpedia.org/resource/Paris]]></answer>
 </answers>
 </question>
 
