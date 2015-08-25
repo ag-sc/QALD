@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'json'
 require 'mustache'
 require 'uri'
 
@@ -45,7 +46,7 @@ doc.xpath("/dataset/question").each do |question|
 
       strings.each do |l,s|
         b = { "language" => l, "string" => s } 
-        not keywords.include?(l) ? b["keywords"] = keywords[l] : b
+        not keywords.key?(l) ? b["keywords"] = keywords[l] : b
         q["body"] << b
       end
 
@@ -67,11 +68,12 @@ doc.xpath("/dataset/question").each do |question|
          answer_nodes = answers_node.children
       end
       if not answer_nodes.nil?
-        answer_nodes.each { |node| answers << node.text }
+         answer_nodes.each do |node| 
+            if node.text.gsub("\n","").strip != ""
+               answers << node.text
+            end 
+         end
       end
-
-      answers.delete("")
-      answers.delete("\n")
 
       answers.each { |a| q["answers"] << { "string" => a } }
 
@@ -81,4 +83,4 @@ doc.xpath("/dataset/question").each do |question|
       
 end
 
-File.write(inputXML.sub(".xml",".json"),outputJSON)
+File.write(inputXML.sub(".xml",".json"),JSON.pretty_generate(outputJSON))

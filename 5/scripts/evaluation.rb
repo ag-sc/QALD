@@ -1,5 +1,5 @@
-Gem.path.push '/home/cunger/.gem/ruby/2.0.0'
 require 'nokogiri'
+require 'json'
 require 'mustache'
 require 'uri'
 
@@ -16,6 +16,16 @@ template   = "../scripts/evaluation_result_html.mustache"
 
 
 def read_answers(file)
+
+    if file.end_with? ".xml" 
+       return read_answers_fromXML(file)
+    end
+    if file.end_with? ".json"
+       return read_answers_fromJSON(file)
+    end
+end
+
+def read_answers_fromXML(file)
 
     out = { :dbpedia => {}, :hybrid => {} }
 
@@ -37,6 +47,30 @@ def read_answers(file)
       answers.delete("")
 
       if question.attr("hybrid") == "true"
+         out[:hybrid][id]  = answers 
+      else 
+         out[:dbpedia][id] = answers
+      end
+    end
+
+    return out
+end
+
+def read_answers_fromJSON(file)
+
+    out = { :dbpedia => {}, :hybrid => {} }
+
+    doc = JSON.parse(File.read(file))
+    doc["questions"].each do |question|
+
+      id = question["id"]
+      
+      answers = []
+      if question.key? "answers" 
+         question["answers"].each { |answer| answers << normalize(answer["string"]) }
+      end
+
+      if question["hybrid"] == "true"
          out[:hybrid][id]  = answers 
       else 
          out[:dbpedia][id] = answers
