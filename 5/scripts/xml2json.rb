@@ -25,10 +25,14 @@ doc.xpath("/dataset/question").each do |question|
       # question attributes
 
       q["id"]          = question["id"]
-      q["hybrid"]      = question["hybrid"]
       q["answertype"]  = question["answertype"]
       q["aggregation"] = question["aggregation"]
       q["onlydbo"]     = question["onlydbo"] 
+      if question["hybrid"].nil?
+         q["hybrid"]   = "false"
+      else 
+         q["hybrid"]   = question["hybrid"]
+      end      
 
       # strings and keywords
 
@@ -70,7 +74,7 @@ doc.xpath("/dataset/question").each do |question|
       if not answer_nodes.nil?
          answer_nodes.each do |node| 
             if node.text.gsub("\n","").strip != ""
-               answers << node.text
+               answers << node.text.strip
             end 
          end
       end
