@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="landing-2.2.xsl"?>
+
+<resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+
+ <!-- Obligatorische Angaben: -->
+
+      <identifier identifierType="DOI"></identifier>
+      <creators>
+		<creator>
+			<creatorName>Unger, Christina</creatorName>
+			<nameIdentifier nameIdentifierScheme="personIdUniBi">15477016</nameIdentifier>
+		</creator>
+	</creators>
+	<titles>
+		<title>Multilingual Question Answering over Linked Data: QALD-5 Dataset</title>
+	</titles>
+	<publisher>Bielefeld University</publisher>
+	<publicationYear>2015</publicationYear>
+
+
+ <!-- Die folgenden Angaben sind optional: -->
+
+	<subjects>
+		<subject>Question Answering</subject>
+		<subject>Linked Data</subject>
+		<subject>Natural Language Processing</subject>
+	</subjects>
+
+	<contributors>
+		<contributor contributorType="HostingInstitution">
+			<contributorName>CITEC</contributorName>
+		</contributor>
+		<contributor contributorType="HostingInstitution">
+			<contributorName>Bielefeld University, CITEC, AG Semantic Computing</contributorName>
+		</contributor>
+		<contributor contributorType="RegistrationAgency">
+			<contributorName>Universitätsbibliothek Bielefeld</contributorName>
+		</contributor>
+		<contributor contributorType="ContactPerson">
+			<contributorName>Unger, Christina</contributorName>
+			<nameIdentifier nameIdentifierScheme="personIdUniBi">15477016</nameIdentifier>
+		</contributor>
+		<contributor contributorType="ProjectLeader">
+			<contributorName>Unger, Christina</contributorName>
+			<nameIdentifier nameIdentifierScheme="personIdUniBi">15477016</nameIdentifier>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Walter, Sebastian</contributorName>
+			<nameIdentifier nameIdentifierScheme="personIdUniBi">32983951</nameIdentifier>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Forascu, Corina</contributorName>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Cimiano, Philipp</contributorName>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Ngonga Ngomo, Axel-Cyrille</contributorName>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Cabrio, Elena</contributorName>
+		</contributor>
+		<contributor contributorType="ProjectMember">
+			<contributorName>Lopez, Vanessa</contributorName>
+		</contributor>
+	</contributors>
+
+
+	<dates>
+		<date dateType="Accepted"></date>
+		<date dateType="Available"></date>
+	</dates>
+
+	<language>EN</language>
+    <language>DE</language>
+    <language>ES</language>
+    <language>IT</language>
+    <language>FR</language>
+    <language>NL</language>
+    <language>RO</language>
+
+	<resourceType resourceTypeGeneral="Collection">SPARQL-query</resourceType>
+
+	<formats>
+		<format>text/xml</format>
+	</formats>
+
+	<!--<version>v1.0.0</version>-->
+
+	<relatedIdentifiers>
+		<relatedIdentifier relatedIdentifierType="URL" relationType="IsDocumentedBy">https://github.com/ag-sc/QALD/blob/master/5/documents/qald-5.pdf</relatedIdentifier>
+        </relatedIdentifiers>
+
+	<descriptions>
+		<description descriptionType="Abstract">
+                   This dataset comprises 399 natural language questions over DBpedia 2014, annotated with SPARQL queries and answers. It was part of the QALD-5 open challenge: questions 1-340 constitute the training question set and questions 341-400 constitute the test question set. 
+		</description>
+	</descriptions>
+
+</resource>

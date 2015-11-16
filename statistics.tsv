@@ -2,7 +2,7 @@
 Edition	Year	Venue	Datasets	Participants
 
 QALD-1	2011	ESWC, Crete	DBpedia 3.6, MusicBrainz	3
-QALD-2	2012	ESWC, Crete	DBpedia3.7, MusicBrainz	4
+QALD-2	2012	ESWC, Crete	DBpedia 3.7, MusicBrainz	4
 QALD-3	2013	CLEF, Valencia	DBpedia 3.8, Spanish DBpedia, MusicBrainz	6
 QALD-4	2014	CLEF, Sheffield	DBpedia 3.9, SIDER, Diseasome, DrugBank	8
 QALD-5	2015	CLEF, Toulouse	DBpedia 2014	DBpedia 2014	7
