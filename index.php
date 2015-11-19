@@ -93,8 +93,9 @@ if (isset($_GET['q'])) {
 
  <?php
  echo "<p><b>Current challenge:</b></p>
- <p><a href='index.php?x=".$x."&q=5'>QALD-5</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> QALD-6 <img src='pictures/list_arrow_gray.gif'> </p>
  <p><b>Previous challenges:</b></p>
+ <p> <a href='index.php?x=".$x."&q=5'>QALD-5</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=1'>QALD-1</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=2'>QALD-2</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=3'>QALD-3</a> <img src='pictures/list_arrow_gray.gif'> </p>
