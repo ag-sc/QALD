@@ -1,0 +1,13 @@
+
+Precision
+Recall
+F-measure 
+
+global (all questions)
+local (only processed questions)
+
+both: 
+micro 
+macro
+
+# Performance (time)

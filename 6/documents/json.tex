@@ -1,0 +1,144 @@
+\documentclass[a4paper,xcolor=dvipsnames]{article}
+
+\parindent0mm
+\parskip7pt
+
+\usepackage{amsmath,amssymb}
+
+\usepackage[colorlinks=true,pdfstartview=FitV,linkcolor=black,citecolor=black,urlcolor=blue,breaklinks=tru]{hyperref}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,tabsize=2,numbers=left,numberstyle=\tiny,frame=lines,aboveskip=7pt,belowskip=0pt,captionpos=b,breaklines=true}
+
+\usepackage{xcolor}
+\definecolor{IndianRed}{rgb}{0.54,0.04,0.31}
+\newcommand{\rot}[1]{{\color{IndianRed}#1}}
+
+
+\begin{document}
+
+\thispagestyle{empty} 
+
+\begin{lstlisting}[escapechar=!]
+{
+  !\rot{"dataset"}!: 
+  {
+    !\rot{"id"}!: "...",
+    ...
+  },
+  !\rot{"questions"}!: [
+    {
+      !\rot{"id"}!: "...",
+      ...,
+      !\rot{"question"}!: [
+        {
+          !\rot{"language"}!: "...", -- ISO 639-1 code
+          !\rot{"string"}!: "...",
+          "keywords": "...",
+          "annotations": [
+            { 
+              "char_begin": "...",
+              "char_end": "...", 
+              "URI": "..." 
+            } 
+          ],
+        }
+      ],
+      "query": 
+        { 
+          "schemaless": "...",
+          "SPARQL": "..." 
+        },
+      !\rot{"answers"}!: [
+        { -- http://www.w3.org/TR/sparql11-results-json/
+          !\rot{"head"}!: { "vars": [ ... ] },
+          !\rot{"bindings"}!: [ 
+            {
+              "<var>": { "type": "...", "value": "..." } 
+            }
+          ], 
+          "confidence": "..."
+        }
+      ]
+    } 
+  ]
+}
+\end{lstlisting}
+
+\newpage
+
+\begin{lstlisting}[escapechar=!]
+{
+  !\rot{"dataset"}!: 
+  {
+    !\rot{"id"}!: "qald-6", 
+    "data": "http://dbpedia.org/downloads/DBpedia2015", 
+    "creator": "..." 
+  },
+  !\rot{"questions"}!: [
+    {
+      !\rot{"id"}!: "10",
+      "hybrid":      "false",
+      "answertype":  "resource",
+      "aggregation": "false",
+      "onlydbo":     "true",
+      !\rot{"question"}!: [
+        {
+          !\rot{"language"}!: "en",
+          !\rot{"string"}!: "In which country does the Ganges start?",
+          "keywords": "Ganges, start, country", 
+          "annotations": [
+            { 
+              "char_begin": "26",
+              "char_end": "32", 
+              "URI": "<http://dbpedia.org/resource/Ganges>" 
+            }
+          ]
+        },
+        {
+          !\rot{"language"}!: "de",
+          !\rot{"string"}!: "In welchem Land entspringt der Ganges?",
+          "keywords": "Ganges, entspringen, Land",
+          "annotations": [
+            { 
+              "char_begin": "26",
+              "char_end": "32", 
+              "URI": "<http://dbpedia.org/resource/Ganges>" 
+            }
+          ]
+        }
+      ],
+      "query": 
+        { 
+          "schemaless": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type <country> . <Ganges> <start in> ?uri . }",
+          "SPARQL": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Ganges> <http://dbpedia.org/ontology/sourceCountry> ?uri . }"
+        },
+      !\rot{"answers"}!: [ 
+        { 
+          !\rot{"head"}!: { "vars": [ "uri" ] },
+          !\rot{"bindings"}!: [
+            { 
+              "uri": { "type": "uri", "value": "http://dbpedia.org/resource/India" } 
+            }, 
+          ]
+        }
+      ]
+    } 
+  ]
+}
+\end{lstlisting}
+
+% TODO allow for alternative bindings (e.g. both answer X and answer Y will count as correct)?
+
+% evaluation on multiset of binding values
+
+% provide test questions with and without NE annotations
+% or provide multilingual FOX + AGDISTIS to add NE annotations
+% TODO properties sometimes hard to link to specific NL expression (and often discontinuous)
+
+% Scripts: 
+% * answer generation from JSON
+% * automatic adding of metadata (using simple regexes)
+% * adding annotations based on FOX+AGDISTIS
+
+\end{document}

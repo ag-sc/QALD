@@ -1,0 +1,2 @@
+SPARQL endpoint: http://linkedspending.aksw.org/sparql
+Data graph: http://linkedspending.aksw.org/finland-aid-persistent
