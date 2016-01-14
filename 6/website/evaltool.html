@@ -1,0 +1,43 @@
+<h2>Evaluation tool</h2>
+
+<p>&nbsp;</p>
+
+  <p>
+	In order to particiate in the test phase, please make sure that you are registered. (More information about this soon.)
+	</p>
+
+  <p>
+  <font color="#ff0000">Note:</font> The evaluation tool is being set up and might not work properly yet.
+  </p>
+
+<form action="6/website/compare_file.php" method="post" enctype="multipart/form-data">
+	<p>
+	System name <font color="ff0000">*</font> <br />
+	<input name="system_name" id="system_name" type="text" size="35" maxlength="100000"></input>
+	<br />
+	Configuration <br />
+	<input name="configuration" id="configuration" type="text" size="35" maxlength="100000"></input>
+	<br />
+	Team <font color="#ff0000">*</font> <br />
+	<input name="team" id="team" type="text" size="35" maxlength="100000"></input> <br />
+	Email address <br />
+	<input name="email" id="email" type="text" size="35" maxlength="100000"></input> <br />
+        <br />
+        <input name="file" id="file" type="file" size="35" maxlength="100000"></input>
+    	<br /><br />
+	Please select training or test. <br />
+	<select name="evaluation" id="evaluation"><option>training</option><option>test</option></select>
+	<br />
+	</p>
+	<p> <font color="#ff0000">*</font> <font color="#707070">
+	During training phase, all fields are optional. During test phase, please specify at least a system name and a team name (the same as during registration), so we can identify you.
+	</font>
+        </p>
+	<p>
+	<input type="submit" name="evaluate" value="Start evaluation"></input>
+	</p>
+</form>
+
+<div id="result">
+&nbsp;
+</div>

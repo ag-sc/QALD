@@ -21,14 +21,14 @@ if (isset($_GET['q'])) {
     else { $x = "motivation"; }
  }
 
- $link = $q . "/website/" . $x . ".html"; 
+ $link = $q . "/website/" . $x . ".html";
 
 ?>
 
 <div id="container">
 
 <div id="menu">
-  
+
  <p> <a href='index.php?x=home&q=home'>Home</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>
 
@@ -40,7 +40,7 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
- if ($q == "5") {
+ if ($q == "6" || $q == "5") {
  echo "
  <p> <a href='index.php?x=motivation&q=".$q."'>Motivation</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=organization&q=".$q."'>Organization</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -76,7 +76,7 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
- if ($q == "2" || $q == "1") { 
+ if ($q == "2" || $q == "1") {
  echo "
  <p> <a href='index.php?x=motivation&q=".$q."'>Motivation</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=organization&q=".$q."'>Organization</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -89,11 +89,11 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
- ?> 
+ ?>
 
  <?php
  echo "<p><b>Current challenge:</b></p>
- <p> QALD-6 <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=".$x."&q=5'>QALD-6</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p><b>Previous challenges:</b></p>
  <p> <a href='index.php?x=".$x."&q=5'>QALD-5</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=4'>QALD-4</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -114,15 +114,15 @@ if (isset($_GET['q'])) {
  <div id="head">
  <?php
 {
-   echo "<img src='pictures/qald_header.png' width='800px' height='250px' border='0' 
+   echo "<img src='pictures/qald_header.png' width='800px' height='250px' border='0'
          alt='QALD : Question Answering Over Linked Data' />"; }
  ?>
 </div>
- 
+
  <div id="bar">
- 
+
  <div class="alignleft">
- <?php 
+ <?php
   switch ($x) {
   	case "cfp": $nav = "Call for Papers"; break;
 	case "challenge": $nav = "Open Challenge"; break;
@@ -138,9 +138,9 @@ if (isset($_GET['q'])) {
  ?>
  </div>
  <div class="alignright">
- 
- <?php 
-  if ($q == "1") 
+
+ <?php
+  if ($q == "1")
     echo "May 30, 2011 &sdot; Co-located with: <a href='http://www.eswc2011.org' class='sel'><b>ESWC 2011&nbsp;&nbsp;</b></a>";
   if ($q == "2")
     echo "May 28, 2012 &sdot; Co-located with: <a href='http://2012.eswc-conferences.org' class='sel'><b>ESWC 2012&nbsp;&nbsp;</b></a>";
@@ -154,7 +154,7 @@ if (isset($_GET['q'])) {
  ?>
  </div>
  <div style="clear: both;"></div>
- 
+
  </div>
 
  <div id="main">
@@ -163,16 +163,16 @@ if (isset($_GET['q'])) {
  <?php
 
   if ($q == "3" and ($x == "submission" or $x == "cfp")) {
-      $link = "3/website/motivation.html"; 
+      $link = "3/website/motivation.html";
   }
   if (($q == "1" or $q == "2") and ($x == "task1" or $x == "task2")) {
-      $link = $q . "/website/motivation.html"; 
+      $link = $q . "/website/motivation.html";
   }
   if ($q != "home" and ($x == "home" or $x == "benchmark" or $x == "publications")) {
      $link = $q . "/website/motivation.html";
   }
 
-  include $link; 
+  include $link;
  ?>
  </div>
 
