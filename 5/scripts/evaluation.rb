@@ -160,7 +160,6 @@ end
 
 #################################################################
 
-
 answers_gold    = read_answers(input_gold)
 answers_user    = read_answers(input_user)
 
