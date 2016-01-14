@@ -2,6 +2,7 @@ require 'sparql/client'
 require 'json'
 
 
+#endpoint = SPARQL::Client.new('http://linkedspending.aksw.org/sparql')
 endpoint = SPARQL::Client.new("http://dbpedia.org/sparql/")
 
 input    = ARGV[0]
@@ -18,22 +19,27 @@ doc["questions"].each do |question|
      sparql = question["query"]["sparql"]
 
      begin
-       results = endpoint.query(sparql)
+       results = endpoint.query(sparql,{ "Accept" => "application/sparql-results+json" })
 
        if results.inspect == "true"
           answers << { "head" => {}, "boolean" => true }
        elsif results.inspect == "false"
           answers << { "head" => {}, "boolean" => false }
        else
+         r = { "head" => { "vars" => [] }, "results" => { "bindings" => [] }}
          results.each do |result|
+            b = {}
             result.each_binding do |var,value|
+              if not r["head"]["vars"].include? var then r["head"]["vars"] << var end
               if value.uri?
-                 answers << { "head" => { "vars" => [ var.inspect.gsub(":","") ] }, "bindings" => [ { var.inspect.gsub(":","") => { "type" => "uri", "value" => value.to_rdf } } ] }
+                 b[var.inspect.gsub(":","")] = { "type" => "uri", "value" => value.to_rdf }
               elsif value.literal?
-                 answers << { "head" => { "vars" => [ var.inspect.gsub(":","") ] }, "bindings" => [ { var.inspect.gsub(":","") => { "type" => "literal", "value" => value.to_rdf } } ] }
+                 b[var.inspect.gsub(":","")] = { "type" => "literal", "value" => value.to_rdf }
               end
             end
+            r["results"]["bindings"] << b
           end
+          answers << r
         end
 
     rescue Exception=>e
