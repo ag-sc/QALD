@@ -1,0 +1,210 @@
+\documentclass[a4paper]{article}
+
+\parindent0mm
+\parskip7pt
+
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{xcolor}
+\definecolor{IndianRed}{rgb}{0.54,0.04,0.31}
+\newcommand{\rot}[1]{{\color{IndianRed}#1}}
+
+\usepackage[colorlinks=true,pdfstartview=FitV,linkcolor=black,citecolor=black,urlcolor=blue,breaklinks=tru]{hyperref}
+
+\usepackage{graphicx}
+
+\usepackage[margin=1.3in]{geometry}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,tabsize=2,aboveskip=7pt,belowskip=0pt,captionpos=b,breaklines=true}
+% numbers=left,numberstyle=\tiny,frame=lines,
+
+\usepackage{enumitem}
+\setitemize{itemsep=0mm}
+
+\newcommand{\link}{$\triangleright$}
+\renewcommand*\contentsname{}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+%{\ }
+%
+%\vspace{3cm}
+
+\begin{center}
+
+{\sc\large The 6th Open Challenge on\\ Question Answering Over Linked Data}
+
+\vspace{.3cm}
+
+{\huge\bf QALD-6}
+\end{center}
+
+\hrule
+
+\vspace{.4cm}
+
+{\sc Document Version:} \today
+
+\vspace{.4cm}
+
+QALD-6 is the sixth in a series of evaluation campaigns on question answering over linked data,
+with a strong emphasis on multilinguality, hybrid approaches using information from both structured and unstructured data, and question answering over RDF data cubes.
+QALD-6 is organized as a challenge at ESWC 2016 ({\url{http://2016.eswc-conferences.org}).
+It is aimed at all kinds of systems that mediate between a user, expressing his or her information need in natural language, and semantic data.
+All relevant information for participating in the challenge are given in this document.
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsection*{Motivation and Goal}
+
+The past years have seen a growing amount of research on question answering over Semantic Web data, shaping an interaction paradigm that allows end users to profit from the expressive power of Semantic Web standards while at the same time hiding their complexity behind an intuitive and easy-to-use interface. The Question Answering over Linked Data challenge provides an up-to-date benchmark for assessing and comparing systems that mediate between a user, expressing his or her information need in natural language, and RDF data. It thus targets all researchers and practitioners working on querying linked data, natural language processing for question answering, multilingual information retrieval and related topics.
+
+The key challenge for question answering over linked data is to translate a user's information need into a form such that it can be evaluated using standard Semantic Web query processing and inferencing techniques. In order to focus on specific aspects and involved challenges, QALD comprises three tasks: multilingual question answering over DBpedia, hybrid question answering over both RDF and free text data, and question answering over RDF data cubes.
+The main goal is to gain insights into the strengths and shortcomings of different approaches and into possible solutions for coping with the heterogeneous and distributed nature of Semantic Web data.
+
+\subsection*{Organization}
+
+\begin{itemize}
+\item {\em Elena Cabrio}, University of Nice Sophia Antipolis, France
+\item {\em Axel-Cyrille Ngonga Ngomo}, University of Leipzig, Germany
+\item {\em Christina Unger}, CITEC, Bielefeld University, Germany
+\end{itemize}
+
+In addition, the following organization committee members support the construction of the benchmark data and question sets, as well as the dissemination of the challenge.
+
+\begin{itemize}
+\item {\em Philipp Cimiano}, CITEC, Bielefeld University, Germany
+\item {\em Hady Elsahar}, Laboratoire Hubert Curien, Saint-Etienne, France
+\item {\em Corina Forascu}, Alexandru Ioan Cuza University, Iasi, Romania
+\item {\em Konrad H\"offner}, AKSW, University of Leipzig, Germany
+\item {\em Vanessa Lopez}, IBM Research, Dublin, Ireland
+\item {\em Ricardo Usbeck}, AKSW, University of Leipzig, Germany
+\item {\em Amir Veyseh}, University of Tehran, Iran
+\item {\em Sebastian Walter}, CITEC, Bielefeld University, Germany
+\end{itemize}
+
+% \subsubsection*{Sponsor}
+%
+% \includegraphics[width=1.6cm]{logo.png}\\ \url{http://www.orange.com/en/home/}
+
+\newpage
+
+\section{Relevant information in a nutshell}
+
+{\em Challenge website:} \url{http://www.sc.cit-ec.uni-bielefeld.de/qald/} \texttt{> QALD-6}
+
+{\em ESWC 2016:} \url{http://2016.eswc-conferences.org}
+
+% \emph{Registration:} \url{http://clef2015-labs-registration.dei.unipd.it}
+
+
+%%%%%%%%%%%%%%%
+
+\subsubsection*{Task 1: Multilingual question answering over RDF data}
+\begin{itemize}
+\item \emph{Dataset:} DBpedia 2015\\ \url{http://downloads.dbpedia.org/2015-10/}
+\item \emph{Endpoint:} \url{http://dbpedia.org/sparql}
+\item \emph{Training data:} 350 annotated questions in eight languages (English, Spanish, Italian, German, French, Dutch, Romanian, Farsi) \\
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-multilingual.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-multilingual.json}}
+\item \emph{Test data:} to be published on April 8, 2016
+\end{itemize}
+
+\subsubsection*{Task 2: Hybrid question answering over RDF and free text data}
+\begin{itemize}
+\item \emph{Dataset:} DBpedia 2015 with free text abstracts\\ \url{http://downloads.dbpedia.org/2015-10/}
+\item[] \emph{Optional:} English Wikipedia\\ \url{https://dumps.wikimedia.org}
+\item \emph{Training data:} 50 annotated questions in English \\
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-hybrid.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-hybrid.json}}
+\item \emph{Test data:} to be published on April 8, 2016
+\end{itemize}
+
+\subsubsection*{Task 3: Statistical question answering over RDF data cubes}
+\begin{itemize}
+\item \emph{Dataset:} LinkedSpending\\ \url{http://linkedspending.aksw.org}
+\item \emph{Endpoint:} \url{http://linkedspending.aksw.org/sparql}
+\item \emph{Training data:} 100 annotated questions in English \\
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-datacube.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-datacube.json}}
+\item \emph{Test data:} to be published on April 8, 2016
+\end{itemize}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Schedule}
+
+\begin{tabular}{ll}
+Release of training data and instructions: & January 15, 2016\\
+Paper submission deadline: & March 11, 2016\\
+Release of test data: & April 8, 2016\\
+Deadline for submission of system answers: & April 15, 2016 \\
+Release of evaluation results: & April 18, 2016 \\
+Submission of camera-ready papers: & April 24, 2016 \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Submission and evaluation}
+
+Submission of results and evaluation is done by means of an online form:\\
+\url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/index.php?x=evaltool&q=6}
+
+Results for the training phase can be uploaded at any time; results for the test phase can be uploaded from April 8 to May 6.
+
+%%%%%%%%%%%%%%%
+% \subsubsection*{Prizes}
+%
+% We offer prizes for the top-scoring teams, both in the multilingual and the hybrid track:
+% \begin{itemize}
+% \item 200 EUR for the best system in the multilingual track (\texttt{hybrid="false"})
+% \item 100 EUR for the best system in the multilingual track (\texttt{hybrid="false"}) that worked on another language than English
+% \item 200 EUR for the best system in the hybrid track (\texttt{hybrid="true"})
+% \end{itemize}
+
+%%%%%%%%%%%%%%%
+\subsubsection*{Resources}
+
+You are free to use any external resources. A list of potentially useful resources and tools is provided in Section~\ref{sec:resources}.
+
+\subsubsection*{Contact}
+
+Updates on the open challenge will be published on the \emph{Interacting with Linked Data} mailing list:
+\begin{center}
+\url{https://lists.techfak.uni-bielefeld.de/cit-ec/mailman/listinfo/ild}
+\end{center}
+In case of question, problems and comments, please contact Christina Unger:\\
+{\tt \href{mailto::cunger@cit-ec.uni-bielefeld.de?subject=QALD-6}{cunger@cit-ec.uni-bielefeld.de}}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Description of the tasks}
+
+\input{tasks}
+
+\newpage
+
+\section{Format of training and test data}
+
+\input{format}
+
+\newpage
+
+\section{Submission and evaluation}
+
+\input{eval}
+
+\newpage
+
+\section{Useful resources and tools}
+\label{sec:resources}
+
+\input{resources}
+
+\end{document}

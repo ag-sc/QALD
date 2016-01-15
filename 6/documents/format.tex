@@ -1,0 +1,102 @@
+
+Annotations are provided in JSON format. This format is currently developed as the standard format for all question answering benchmarks.
+Its general structure is as follows (red marking the obligatory fields):
+
+\begin{lstlisting}[escapechar=!]
+{
+  !\rot{"dataset"}!:
+  {
+    !\rot{"id"}!:
+  },
+  !\rot{"questions"}!: [
+    {
+      !\rot{"id"}!:
+      "answertype":
+      "aggregation":
+      "onlydbo":
+      "hybrid":
+      !\rot{"question"}!: [
+        {
+          !\rot{"language"}!:
+          !\rot{"string"}!:
+          "keywords":
+          "annotations": [
+
+          ],
+        }
+      ],
+      "query":
+        {
+          "SPARQL":
+          "pseudo":
+          "schemaless":
+        },
+      !\rot{"answers"}!: [
+
+      ]
+    }
+  ]
+}
+\end{lstlisting}
+
+The ID of the dataset in our case indicates the task and whether it is train or test (i.e. {\tt qald-6-train-multilingual}, {\tt qald-6-train-hybrid}, and {\tt qald-6-train-datacube}).
+
+Each of the questions specifies an ID together with the following attributes:
+\begin{itemize}
+\item {\tt answertype} gives the expected answer type, which can be one the following:
+\begin{itemize}
+\item {\tt resource}: One or many resources, for which the URI is provided.
+\item {\tt string}: A string value such as {\tt Valentina Tereshkova}.
+\item {\tt number}: A numerical value such as {\tt 47} or {\tt 1.8}.
+\item {\tt date}: A date provided in the format {\tt YYYY-MM-DD}, e.g. {\tt 1983-11-02}.
+\item {\tt boolean}: Either {\tt true} or {\tt false}.
+\end{itemize}
+\item {\tt hybrid} specifies whether the question is a hybrid question, i.e. requires the use of both RDF and free text data
+\item {\tt aggregation} indicates whether any operations beyond triple pattern matching are required to answer the question (e.g., counting, filters, ordering, etc.).
+\item {\tt onlydbo} reports whether the query relies solely on concepts from the DBpedia ontology. If the value is {\tt false}, the query might rely on
+the DBpedia property namespace (\texttt{http://dbpedia.org/property/}), FOAF or some YAGO category.
+\end{itemize}
+Note that for hybrid questions, the attributes {\tt aggregation} and {\tt onlydbo} refer to the RDF part of the query only.
+
+Most importantly, for each question the dataset specifies the language, a question string and keywords,
+together with a corresponding query as well as the correct answer(s).
+The language is provided as an ISO 639-1 code, in our case:
+\texttt{en} (English), \texttt{de} (German), \texttt{es} (Spanish), \texttt{it} (Italian), \texttt{fr} (French), \texttt{nl} (Dutch), \texttt{ro} (Romanian), \texttt{fa} (Farsi).
+The query is in the case of tasks 1 and 3 a SPARQL query, in case of task 2 a pseudo query. Schemaless queries might be provided in the course of the training phase.
+The answers follow the JSON format of SPARQL results, cf. the W3C specification at \url{http://www.w3.org/TR/sparql11-results-json/} and the next section.
+% For \texttt{SELECT} queries the structure looks as follows:
+%
+% \begin{lstlisting}[escapechar=!]
+%   {
+%     "head": { "vars": [ ] },
+%     !\rot{"bindings"}!: [
+%       {
+%         !\rot{"<var>"}!: {
+%           "type":
+%           !\rot{"value"}!:
+%         }
+%       }
+%     ],
+%   }
+% \end{lstlisting}
+%
+% For \texttt{ASK} queries, it looks as follows:
+%
+% \begin{lstlisting}[escapechar=!]
+%   {
+%     "head": { },
+%     !\rot{"boolean"}: true | false
+%   }
+% \end{lstlisting}
+
+In addition, systems can provide a double value $0\leq d\leq 1$ as confidence measure, for example:
+
+\begin{lstlisting}
+{
+  "id": "42",
+  "answers": [ ],
+  "confidence": 0.9
+}
+\end{lstlisting}
+
+The score for each question will be multiplied by the specified confidence value (or with \texttt{1.0} if none is specified).

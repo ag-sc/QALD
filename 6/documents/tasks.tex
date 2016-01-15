@@ -1,0 +1,176 @@
+The main task of QALD is to retrieve answers to natural language questions or keywords from a given RDF dataset.
+In order to focus on specific aspects and challenges involved, QALD-6 comprises three tasks.
+
+\subsection{Task 1: Multilingual question answering over RDF data}
+
+Given the diversity of languages used on the web, there is an impeding need to facilitate multilingual access to semantic data.
+The core task of QALD is thus to retrieve answers from an RDF data repository given an information need expressed in a variety of natural languages.
+
+The underlying RDF dataset is DBpedia, a community effort to extract structured information from Wikipedia and to make this information available as RDF data.
+The RDF dataset relevant for the challenge is the official DBpedia 2015 dataset for English, including links, most importantly to YAGO\footnote{For detailed information on the YAGO class hierarchy, please see \url{http://www.mpi-inf.mpg.de/yago-naga/yago/}.} categories. This dataset comprises the following files:
+\begin{itemize}
+\item \url{http://downloads.dbpedia.org/2015-10/core-i18n/en/}
+  \begin{itemize}
+  \item \texttt{infobox\_property\_definitions\_en.ttl}
+  \item \texttt{infobox\_properties\_unredirected\_en.ttl}
+  \item \texttt{instance\_types\_en.ttl}
+  \item \texttt{instance\_types\_transitive\_en.ttl}
+  \item \texttt{labels\_en.ttl}
+  \item \texttt{mappingbased\_literals\_en.ttl}
+  \item \texttt{mappingbased\_properties\_en.ttl}
+  \item \texttt{specific\_mappingbased\_properties\_en.ttl}
+  \item \texttt{persondata\_en.ttl}
+  \item \texttt{interlanguage\_links\_en.ttl} (if you work on a language other than English)
+\end{itemize}
+\item Ontology: \url{http://wiki.dbpedia.org/services-resources/ontology}
+\end{itemize}
+In order to work with the dataset, you can either load this data into your favorite triple store, or access it via a SPARQL endpoint.
+The official DBpedia SPARQL endpoint can be accessed at \url{http://dbpedia.org/sparql/}.
+
+The training data consists of the 350 questions compiled from previous instantiations of the challenge. The questions are available in eight different languages: English, Spanish, German, Italian, French, Dutch, Romanian, and Farsi.
+Those questions are general, open-domain factual questions, such as \emph{Which book has the most pages?}
+% (de) \emph{Welches Buch hat die meisten Seiten?}\\
+% (es) \emph{\textquestiondown Que libro tiene el mayor numero de paginas?}\\
+% (it) \emph{Quale libro ha il maggior numero di pagine?}\\
+% (fr) \emph{Quel livre a le plus de pages?}\\
+% (nl) \emph{Welk boek heeft de meeste pagina's?}\\
+% (ro) \emph{Ce carte are cele mai multe pagini?} % \\
+% % چه کتابی بیشترین صفحه را دارد؟
+% \end{quote}
+
+The questions vary with respect to their complexity, including questions with counts (e.g., \emph{How many children does Eddie Murphy have?}), superlatives (e.g., \emph{Which museum in New York has the most visitors?}), comparatives (e.g., \emph{Is Lake Baikal bigger than the Great Bear Lake?}), and temporal aggregators  (e.g., \emph{How many companies were founded in the same year as Google?}). % and Boolean queries (e.g., \emph{Does the Isar flow into a lake?}).
+Each question is annotated with a manually specified SPARQL query and answers.
+% In the above case, the SPARQL query looks as follows:
+% \begin{lstlisting}
+% SELECT DISTINCT ?uri
+% WHERE {
+%     ?uri a <http://dbpedia.org/ontology/Book> .
+%     ?uri <http://dbpedia.org/ontology/numberOfPages> ?n .
+% }
+% ORDER BY DESC(?n)
+% OFFSET 0 LIMIT 1
+% \end{lstlisting}
+% And the answer is \texttt{<http://dbpedia.org/resource/The\_Tolkien\_Reader>}.
+
+As an additional challenge, a few of the training and test questions are out of scope, i.e. they cannot be answered with respect to DBpedia.
+The query is specified as {\tt OUT OF SCOPE} and the answer set is empty.
+
+The test dataset will consist of 100 similar questions compiled from existing question and query logs, in order to provide unbiased questions expressing real-world information needs.
+
+\textbf{Training data}
+
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-multilingual.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-multilingual.json}}
+
+\textbf{Test data}
+
+to be published on April 8, 2016
+
+
+\subsection{Task 2: Hybrid question answering over RDF and free text data}
+
+A lot of information is still available only in textual form, both on the web and in the form of labels and abstracts in linked data sources.
+Therefore, approaches are needed that can not only deal with the specific character of structured data but also with finding information in several sources, processing both structured and unstructured information, and combining such gathered information into one answer.
+
+QALD therefore includes a task on hybrid question answering, asking systems to retrieve answers for questions that required the integration of data both from RDF and from textual sources.
+The task builds on DBpedia 2015 as RDF knowledge base, together with free text abstracts contained in DBpedia as well as, optionally, the English Wikipedia as textual data source.
+The relevant DBpedia files are the following:
+\begin{itemize}
+\item \url{http://downloads.dbpedia.org/2015-10/core-i18n/en/}
+  \begin{itemize}
+  \item \texttt{infobox\_property\_definitions\_en.ttl}
+  \item \texttt{infobox\_properties\_unredirected\_en.ttl}
+  \item \texttt{instance\_types\_en.ttl}
+  \item \texttt{instance\_types\_transitive\_en.ttl}
+  \item \texttt{labels\_en.ttl}
+  \item \texttt{mappingbased\_literals\_en.ttl}
+  \item \texttt{mappingbased\_properties\_en.ttl}
+  \item \texttt{specific\_mappingbased\_properties\_en.ttl}
+  \item \texttt{persondata\_en.ttl}
+  \item \texttt{long\_abstracts\_en.ttl.bz2}
+\end{itemize}
+\item Ontology: \url{http://wiki.dbpedia.org/services-resources/ontology}
+\end{itemize}
+
+A dump of the English Wikipedia can be found at \url{https://dumps.wikimedia.org}.
+
+As training data, we build on the 50 English questions compiled for last year's challenge (partly based on questions used in the INEX Linked Data track\footnote{\url{http://inex.mmci.uni-saarland.de/tracks/dc/index.html}}).
+The questions are annotated with answers as well as a pseudo query that indicates which information can be obtained from RDF data and which from free text.
+The pseudo query is like an RDF query but can contain free text as subject, property, or object of a triple.
+As test questions, we will provide 50 similar questions.
+
+An example is the question \emph{Who is the front man of the band that wrote Coffee \& TV?}, with the following corresponding pseudo query
+containing three triples, two RDF triples and a triple containing free text as property and object:
+
+\begin{lstlisting}
+SELECT DISTINCT ?uri
+WHERE {
+    <http://dbpedia.org/resource/Coffee_&_TV>
+    <http://dbpedia.org/ontology/musicalArtist> ?x .
+    ?x <http://dbpedia.org/ontology/bandMember> ?uri .
+    ?uri text:"is" text:"frontman" .
+}
+\end{lstlisting}
+And the manually specified answer is \texttt{<http://dbpedia.org/resource/Damon\_Albarn>}.
+
+One way to answer the question is to first retrieve the band members of the musical artist associated with the song Coffee \& TV
+from the RDF data using the first two triples, and then check the abstract of the returned URIs for the information whether they are the frontman of the band.
+In this case, the abstract of Damon Albarn contains the following sentence:
+\begin{itemize}
+\item[] \texttt{He is best known for being the frontman of the Britpop/alternative rock band Blur [\ldots]}
+\end{itemize}
+
+All queries are designed in a way that they require both RDF data and free text to be answered.
+The main goal is not to take into account the vast amount of data available and problems arising from noisy, duplicate and conflicting information, but rather to enable a controlled and fair evaluation, given that hybrid question answering is a still very young line of research.
+
+Note that the pseudo queries only provide one possible way of answering the question, and they might still require some form of textual similarity and entailment.
+Also note that the pseudo queries cannot be evaluated against the SPARQL endpoint.
+
+\textbf{Training data}
+
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-hybrid.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-hybrid.json}}
+
+\textbf{Test data}
+
+to be published on April 8, 2016
+
+
+\subsection{Task 3: Statistical question answering over RDF data cubes}
+
+With this new task, QALD aims to stimulate the development of approaches that can handle multi-dimensional, statistical data modelled using the RDF data cube vocabulary.
+The provided data consists of a selection of 50 data cubes from the LinkedSpending\footnote{\url{http://linkedspending.aksw.org}} government spending knowledge base.
+It can be downloaded from \url{http://linkedspending.aksw.org/extensions/page/page/export/qbench2datasets.zip}
+or accessed through the endpoint at \url{http://linkedspending.aksw.org/sparql}.
+
+Question answering over RDF data cubes poses challenges that are different from general, open-domain question answering as represented by the above two tasks, such as the different data structure, explicit or implied aggregations and intervals.
+%Some common challenges are aggravated: the lexical gap
+%and ambiguity numeric values
+As an example consider the question \emph{How much did the Philippines receive in 2007?} with the following SPARQL query:
+
+\begin{lstlisting}
+select SUM(xsd:decimal(?v1))
+{
+ ?o a qb:Observation.
+ ?o :recipient-country :ph.
+ ?o qb:dataSet :finland-aid.
+ ?o :refYear ?v0.
+ filter(year(?v0)=2007).
+ ?o :finland-aid-amount ?v1.
+}
+\end{lstlisting}
+The example illustrates the following challenges:
+\begin{itemize}
+\item \emph{Implied aggregation:} The expected sum total is not directly mentioned.
+\item \emph{Lexical gap:} The knowledge that an \emph{amount} can be \emph{received} is not given, so the measure \emph{amount} can only be indirectly ascertained as the only measure with the correct answer type through the question word (\emph{How much}).
+\item \emph{Ambiguity:} Data cubes can contain large amounts of numerical values, impeding the conclusion that \emph{2007} references a time period.
+\item \emph{Data cube identification:} There is no reference to the description of the correct data cube (\emph{Finland Aid Data}) but it can be matched to both the Phillipines and the year of 2007.
+\end{itemize}
+
+The training question set consists of the 100 question benchmark compiled in the CubeQA project,\footnote{\url{http://aksw.org/Projects/CubeQA.html}} annotated with SPARQL queries, answers and the correct data cube for each question. As test data, we will provide 50 additional questions, each answerable using a single data cube.
+
+\textbf{Training data}
+
+\href{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/6/data/qald-6-train-datacube.json}{\texttt{http://greententacle.techfak.uni-bielefeld.de/\textasciitilde cunger/qald/6/data/\\qald-6-train-datacube.json}}
+
+\textbf{Test data}
+
+to be published on April 8, 2016

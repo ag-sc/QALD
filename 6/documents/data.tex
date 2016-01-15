@@ -1,0 +1,239 @@
+
+
+\subsection{DBpedia 3.10}
+\label{sec:dbpedia}
+
+DBpedia is a community effort to extract structured information from Wikipedia and to make this information available as RDF data. 
+The RDF dataset provided for the challenge is the official DBpedia 3.10 dataset for English, including links, most importantly to YAGO\footnote{For detailed information on the YAGO class hierarchy, please see \url{http://www.mpi-inf.mpg.de/yago-naga/yago/}.} categories. This dataset comprises all files provided at: 
+\begin{itemize}
+\item \url{http://downloads.dbpedia.org/current/en/}
+\item \url{http://downloads.dbpedia.org/current/links/}
+\end{itemize}
+In order to work with the dataset, you can either load it into your favorite triple store, or access it via a SPARQL endpoint. 
+The official DBpedia SPARQL endpoint can be accessed at \url{http://dbpedia.org/sparql/}. 
+%\begin{itemize} 
+%\item[] \url{http://vtentacle.techfak.uni-bielefeld.de:443/sparql}
+%\end{itemize}
+
+Namespaces that are used in the provided training and test queries are the following ones:
+\begin{itemize}
+\item \emph{DBpedia:}
+  \begin{itemize}
+  \item[] \texttt{dbo: <http://dbpedia.org/ontology/>} 
+  \item[] \texttt{dbp: <http://dbpedia.org/property/>} 
+  \item[] \texttt{res: <http://dbpedia.org/resource/>} 
+  \end{itemize}
+\item \emph{RDF(S) and XSD:}
+  \begin{itemize}
+  \item[] \texttt{rdf:\ \ <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>} 
+  \item[] \texttt{rdfs: <http://www.w3.org/2000/01/rdf-schema\#>} 
+  \item[] \texttt{xsd:\ \ <http://www.w3.org/2001/XMLSchema\#>}
+  \end{itemize}
+\item \emph{Others:}
+  \begin{itemize}
+  \item[] \texttt{yago: <http://dbpedia.org/class/yago/>} 
+  \item[] \texttt{foaf: <http://xmlns.com/foaf/0.1/> } 
+  \end{itemize}
+\end{itemize}
+
+
+\subsection{The questions}
+
+In order to get acquainted with the dataset and possible questions, a set of training questions can be downloaded at the following location: 
+\begin{itemize} 
+\item \url{http://greententacle.techfak.uni-bielefeld.de/~cunger/qald/4/qald-5_train.xml} 
+\end{itemize} 
+This set comprises:
+\begin{itemize}
+\item 300 \emph{multilingual questions} 
+\item 40 \emph{hybrid questions} 
+\end{itemize}
+
+\emph{Multilingual questions} are provided in seven different languages (English, German, Spanish, Italian, French, Dutch, and Romanian) 
+and can be answered with respect to DBpedia 3.10. 
+They are annotated with corresponding SPARQL queries and answers retrieved from the provided SPARQL endpoint. 
+
+\emph{Hybrid questions} are provided in English and can be answered only by integrating structured data (RDF) and unstructured data 
+(free text available in the DBpedia abstracts). The questions thus all require information from both RDF and free text. 
+They are annotated with pseudo-queries that show which part is contained in the RDF data and which part has ti be retrieved  
+from the free text abstracts. 
+
+
+\subsubsection{Annotations}
+
+Annotations are provided in the following XML format.
+The overall document is enclosed by a tag that specifies an ID for the dataset indicating the domain 
+and whether it is train or test (i.e. {\tt qald-4\_train} and {\tt qald-4\_test}).
+
+\begin{lstlisting}[escapechar=!]
+<dataset  id="qald-5_train">
+<question id="1">   !\ldots! </question>
+!\ldots!
+<question id="340"> !\ldots! </question>
+</dataset>
+\end{lstlisting}
+
+Each of the questions specifies an ID (don't worry if they are not ordered) together with the following attributes:
+\begin{itemize}
+\item {\tt answertype} gives the expected answer type, which can be one the following:
+\begin{itemize}
+\item {\tt resource}: One or many resources, for which the URI is provided.
+\item {\tt string}: A string value such as {\tt Valentina Tereshkova}.
+\item {\tt number}: A numerical value such as {\tt 47} or {\tt 1.8}.
+\item {\tt date}: A date provided in the format {\tt YYYY-MM-DD}, e.g. {\tt 1983-11-02}. 
+This format is also required when you submit results containing a date as answer.
+\item {\tt boolean}: Either {\tt true} or {\tt false}.
+\end{itemize}
+% Answer of these types are required to be enclosed by the corresponding tag, i.e. {\tt <number>47</number>}, 
+% {\tt <string>Valentina Tereshkova</string>} 
+% and {\tt <boolean>true</boolean>}.
+\item {\tt hybrid} specifies whether the question is a hybrid question, i.e. requires the use of both RDF and free text data 
+\item {\tt aggregation} indicates whether any operations beyond triple pattern matching are required to answer the question (e.g., counting, filters, ordering, etc.).
+\item {\tt onlydbo} reports whether the query relies solely on concepts from the DBpedia ontology. If the value is {\tt false}, the query might rely on 
+the DBpedia property namespace (\texttt{http://dbpedia.org/property/}), FOAF or some YAGO category. 
+\end{itemize}
+Note that for hybrid questions, the attributes {\tt aggregation} and {\tt onlydbo} refer to the RDF part of the query only. 
+
+Most importantly, each question specifies a question string and a corresponding query (both enclosed in {\tt <![CDATA[\ldots]]>} tags) 
+as well as the correct answer(s). 
+They slightly differ for multilingual and hybrid questions.
+
+
+\subsubsection{Multilingual questions}
+
+For multilingual questions, the question string is provided in seven languages: English, German, Spanish, Italian, French, Dutch, and Romanian, 
+together with keywords in the same seven languages. The corresponding SPARQL query can be executed against the DBpedia endpoint in order to 
+retrieve the specified answers. 
+Here is an example:
+
+\begin{lstlisting}[escapechar=|]
+<question id="272" answertype="resource" 
+                    aggregation="true" 
+                    onlydbo="true"
+                    hybrid="false">
+
+<string lang="en">Which book has the most pages?</string>
+<string lang="de">Welches Buch hat die meisten Seiten?</string>
+<string lang="es">|\textquestiondown|Que libro tiene el mayor numero de paginas?</string>
+<string lang="it">Quale libro ha il maggior numero di pagine?</string>
+<string lang="fr">Quel livre a le plus de pages?</string>
+<string lang="nl">Welk boek heeft de meeste pagina's?</string>
+<string lang="ro">Ce carte are cele mai multe pagini?</string>
+
+<keywords lang="en">book, the most pages</keywords>
+<keywords lang="de">Buch, meisten Seiten</keywords>
+<keywords lang="es">libro, mayor numero paginas</keywords>
+<keywords lang="it">libro, maggior numero di pagine</keywords>
+<keywords lang="fr">livre, le plus de pages</keywords>
+<keywords lang="nl">boek, meeste pagina's</keywords>
+<keywords lang="ro">carte, cele mai multe pagini</keywords>
+
+<query>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Book . 
+        ?uri dbo:numberOfPages ?n .
+}
+ORDER BY DESC(?n)
+OFFSET 0 LIMIT 1
+</query>
+
+</question>
+\end{lstlisting}
+
+That is, all question strings and keywords have a language attribute (\texttt{lang}) with one of the following values: 
+\texttt{en} (English), \texttt{de} (German), \texttt{es} (Spanish), \texttt{it} (Italian), \texttt{fr} (French), \texttt{nl} (Dutch), \texttt{ro} (Romanian).
+
+As an additional challenge, a few of the training and test questions are out of scope, i.e. they cannot be answered with respect to DBpedia. 
+The query is specified as {\tt OUT OF SCOPE} and the answer set is empty. Here is an example:
+
+\begin{lstlisting}[escapechar=!]
+<question id="99" answertype="resource" 
+                  aggregation="false" 
+                  onlydbo="false"
+                  hybrid="false">
+
+<string lang="en">
+Give me all animal species that live in the Amazon rainforest.
+</string>
+!\ldots!
+
+<query>
+OUT OF SCOPE
+</query>
+
+<answers/>
+
+</question>
+\end{lstlisting}
+
+
+\subsubsection{Hybrid questions}
+
+The hybrid questions are partly based on the questions used in the INEX Linked Data track\footnote{\url{https://inex.mmci.uni-saarland.de/}} 2013. 
+For a description of the track and the corresponding data, 
+see \url{http://www.clef-initiative.eu/documents/71612/2b349f08-de37-41a9-bb62-40c91f1daa0b}.
+
+For the hybrid questions, not only the RDF triples comprised by DBpedia are relevant, but also the English abstracts. 
+They are related to a resource by means of the property \texttt{abstract}, e.g. as follows:
+
+\begin{itemize}
+\item[] \texttt{res:Australian\_Shelduck dbo:abstract \\[.1cm]
+    `The Australian Shelduck, Tadorna tadornoides, is a shelduck, \\ 
+     a group of large goose-like birds which are part of the bird \\ 
+     family Anatidae. The genus name Tadorna comes from Celtic \\ 
+     roots and means "pied waterfowl". They are protected under \\ 
+     the National Parks and Wildlife Act, 1974.'@en .}
+\end{itemize}
+
+The questions are annotated with answers as well as a pseudo query that indicates which information from the RDF and which information 
+from the free text abstracts have to be combined in order to find the answer(s). 
+The pseudo query is like an RDF query but can contain free text as subject, property, or object of a triple. 
+This free text is marked as \texttt{text:"\ldots"}. 
+Here is an example: 
+
+\begin{lstlisting}
+<question id="335" answertype="resource" 
+                   aggregation="false" 
+                   onlydbo="true" 
+                   hybrid="true">
+
+<string lang="en">
+Who is the front man of the band that wrote Coffee & TV?
+</string>
+
+<pseudoquery>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        <http://dbpedia.org/page/Coffee_&_TV> dbo:musicalArtist ?x .
+        ?x dbo:bandMember ?uri .
+        ?uri text:"is" text:"frontman" .
+}      
+</pseudoquery>
+<answers>  
+<answer>http://dbpedia.org/resource/Damon_Albarn</answer>
+</answers>
+</question>
+\end{lstlisting}
+
+The pseudo query contains three triples---two RDF triples and the third containing free text as property and object. 
+The way to answer the question is to first retrieve the band members of the musical artist associated with the song Coffee \& TV 
+using the triples
+\begin{itemize}
+\item[] \texttt{<http://dbpedia.org/page/Coffee\_\&\_TV> dbo:musicalArtist ?x .} \\
+        \texttt{?x dbo:bandMember ?uri .} 
+\end{itemize}
+and then check the abstract of the returned URIs for the information whether they are the frontman of the band.
+In this case, the abstract of Damon Albarn contains the following sentence: 
+\begin{itemize}
+\item[] \texttt{He is best known for being the frontman of the Britpop/alternative rock band Blur [\ldots]}
+\end{itemize}
+
+All queries are designed in a way that they require both RDF data and free text to be answered. 
+Note that the free text given in the pseudo query corresponds to the natural language question, 
+not the way the relevant information in the abstract is provided. Retrieving the relevant information  
+from the abstracts thus usually requires some kind of textual entailment.
+Also note that the pseudo queries cannot be evaluated against the SPARQL endpoint. 
