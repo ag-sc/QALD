@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+<title>QALD-6 Evaluation Results</title>
+</head>
+
+<body>
+
+<h1>QALD-6 Evaluation Results</h1>
+
+<p>
+<table>
+<tr><td><b>System:</b></td>        <td>{{system}}</td></tr>
+<tr><td><b>Configuration:</b></td> <td>{{config}}</td></tr>
+<tr><td><b>Timestamp:</b></td>     <td>{{time}}</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>Gold standard:</b></td> <td><a href="{{gold}}">{{gold}}</a></td></tr>
+</table>
+</p>
+
+
+<h2>Results over all questions</h2>
+
+<h3>Micro</h3>
+
+<p>
+<table>
+<tr><td><b>Recall:</b></td>     <td>{{results.all.micro.recall}}</td><tr>
+<tr><td><b>Precision:</b></td>  <td>{{results.all.micro.precision}}</td><tr>
+<tr><td><b>F1:</b></td>         <td>{{results.all.micro.f1}}</td><tr>
+</table>
+</p>
+
+<h3>Macro</h3>
+
+<p>
+<table>
+<tr><td><b>Recall:</b></td>     <td>{{results.all.macro.recall}}</td><tr>
+<tr><td><b>Precision:</b></td>  <td>{{results.all.macro.precision}}</td><tr>
+<tr><td><b>F1:</b></td>         <td>{{results.all.macro.f1}}</td><tr>
+</table>
+</p>
+
+<h2>Results over processed questions only</h2>
+
+<h3>Micro</h3>
+
+<p>
+<table>
+<tr><td><b>Recall:</b></td>     <td>{{results.processed.micro.recall}}</td><tr>
+<tr><td><b>Precision:</b></td>  <td>{{results.processed.micro.precision}}</td><tr>
+<tr><td><b>F1:</b></td>         <td>{{results.processed.micro.f1}}</td><tr>
+</table>
+</p>
+
+<h3>Macro</h3>
+
+<p>
+<table>
+<tr><td><b>Recall:</b></td>     <td>{{results.processed.macro.recall}}</td><tr>
+<tr><td><b>Precision:</b></td>  <td>{{results.processed.macro.precision}}</td><tr>
+<tr><td><b>F1:</b></td>         <td>{{results.processed.macro.f1}}</td><tr>
+</table>
+</p>
+
+<h2>Detailed results per question</h2>
+
+<p>
+<table>
+<tr> <td><b>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Recall&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>Precision&nbsp;&nbsp;&nbsp;&nbsp;</b></td> <td><b>F1-measure</b></td> </tr>
+{{#results.breakdown}}
+<tr> <td>{{id}}</td> <td>{{recall}}</td> <td>{{precision}}</td> <td>{{f1}}</td> </tr>
+{{/results.breakdown}}
+</table>
+</p>
+
+
+</body>
+</html>
