@@ -5,11 +5,15 @@ require 'uri'
 
 #################################################################
 
-system     = ARGV[2].nil? ? "" : ARGV[2]
-config     = ARGV[3].nil? ? "" : ARGV[3]
+system     = ARGV[3].nil? ? "" : ARGV[3]
+config     = ARGV[4].nil? ? "" : ARGV[4]
 mode       = ARGV[1] 
 input_user = ARGV[0]
-input_gold = mode == "test" ? "../data/qald-5_test.xml" : "../data/qald-5_train.xml"
+input_gold = if ARGV[2].nil? 
+                mode == "test" ? "../data/qald-5_test.xml" : "../data/qald-5_train.xml"
+             else 
+                ARGV[2]
+             end
 template   = "../scripts/evaluation_result_html.mustache"
 
 #################################################################
