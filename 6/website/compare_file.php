@@ -23,7 +23,7 @@ file_put_contents('statistics.txt',$line,FILE_APPEND);
 // check file
 if ($file_name_in !== "") {
 
-	$ending = 'xml';
+	$ending = 'json';
 
 	if (strcmp($file_name[1], $ending) == 0)
 	{
@@ -32,7 +32,7 @@ if ($file_name_in !== "") {
 	else
 	{
 		$err = 1;
-		echo "Error: Please upload an XML file.<br /> ";
+		echo "Error: Please upload a JSON file.<br /> ";
 		exit();		
 	}
 }
@@ -61,7 +61,13 @@ if (strcmp($type,"test") == 0)
   // check team name
   if (strcmp($team, "") == 0)
   {
-	echo "Error: Please provide a team name.<br />";
+	echo "Error: Please provide a team name or affiliation.<br />";
+	exit();
+  } 
+  // check email
+  if (strcmp($email, "") == 0)
+  {
+	echo "Error: Please provide an email address.<br />";
 	exit();
   }  
 }
@@ -105,7 +111,7 @@ if ($err != 1)
 
 	//chmod($server_target,0666);
 	// execute python file
-	$cmd = 'ruby20 ../scripts/evaluation.rb "' . $server_target . '" ' . $type . ' "' . $system . '" "' . $configuration . '"';
+	$cmd = 'ruby20 ../scripts/evaluation.rb "' . $server_target . '" "' . $system . '" "' . $configuration . '"';
 	@exec(escapeshellcmd($cmd),$eval_result);
         //chmod($server_target,0644);
 
