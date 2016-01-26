@@ -3,1006 +3,1402 @@
     "id": "qald-6-train-datacube"
   },
   "questions": [
-    { "id": "1",
+    {
+      "id": "1",
       "question": [
         {
           "language": "en",
-          "string": "What was the average aid to environment per month in year 2010?"
+          "string": "How much was spent on public works and utilities by the Town of Cary in 2011?"
         }
       ],
       "query": {
-        "sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select (sum(xsd:decimal(?aid))/12) as ?result { ?obs lso:finland-aid-aid-to-environment ?aid. ?obs lso:refYear \"2010\"^^xsd:gYear. }"
-      }
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-amount ?amount. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
     },
-{ "id": "2",
-  "question" : [
-  { "language": "en",
-    "string": "What is the average yearly aid over the Finnfund channel?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select avg(?yearly) as ?result{ select sum(xsd:decimal(?aid)) as ?yearly ?year{ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear ?year. ?obs lso:finland-aid-channel-of-delivery-name \"Finnfund\". } }"
-}
-},
-{ "id": "3",
-  "question" : [
-  { "language": "en",
-    "string": "How much money was given to strengthen civil society in Yemen?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15150>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ye>.}"
-}
-},
-{ "id": "4",
-  "question" : [
-  { "language": "en",
-    "string": "How much is committed in Ethiopia?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?c)) as ?result{ ?obs lso:finland-aid-commitments ?c. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/et>.}"
-}
-},
-{ "id": "5",
-  "question" : [
-  { "language": "en",
-    "string": "How much does Peru receive for fishery research a year?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select avg(?sum) as ?result{ select sum(xsd:decimal(?aid)) as ?sum ?year{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/pe>. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31382>. ?obs lso:refYear ?year.}}"
-}
-},
-{ "id": "6",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries have extended amounts of  > 1000000 $?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?country) as ?result{ select ?country{ ?obs lso:finland-aid-amounts-extended ?extended. ?obs lso:finland-aid-recipient-country ?country. } group by ?country having sum(xsd:decimal(?extended))>1000000}"
-}
-},
-{ "id": "7",
-  "question" : [
-  { "language": "en",
-    "string": "What is the total aid to Egypt?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/eg>.}"
-}
-},
-{ "id": "8",
-  "question" : [
-  { "language": "en",
-    "string": "Which were the top 10 aided countries in 2011?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-recipient-country ?result. ?obs lso:refYear \"2011\"^^xsd:gYear. } order by desc(sum(xsd:decimal(?aid))) limit 10"
-}
-},
-{ "id": "9",
-  "question" : [
-  { "language": "en",
-    "string": "How much money give Finnish Red Cross on health education?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12261>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnish Red Cross\".}"
-}
-},
-{ "id": "10",
-  "question" : [
-  { "language": "en",
-    "string": "What is the amount of aid and the amount of commitments per country per year?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?total_aid sum(xsd:decimal(?commitments)) as ?total_commitments ?country{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-commitments ?commitments. ?obs lso:finland-aid-recipient-country ?country. } group by ?country"
-}
-},
-{ "id": "11",
-  "question" : [
-  { "language": "en",
-    "string": "How much money did the Egyptian government receive for rural development?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/43040>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/eg>.}"
-}
-},
-{ "id": "12",
-  "question" : [
-  { "language": "en",
-    "string": "What's are the 10 highest aid amounts?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select xsd:decimal(?result){ ?obs lso:finland-aid-amount ?result. } order by desc(xsd:decimal(?result)) limit 10"
-}
-},
-{ "id": "13",
-  "question" : [
-  { "language": "en",
-    "string": "How much did Uruguay receive?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/uy>.}"
-}
-},
-{ "id": "14",
-  "question" : [
-  { "language": "en",
-    "string": "How much money goes into food crop production over time?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31161>. ?obs lso:refDate ?date. } group by ?date"
-}
-},
-{ "id": "15",
-  "question" : [
-  { "language": "en",
-    "string": "In South and Central Asia, how much aid was given to the regional FLEG programme in Mekong?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-short-description-project-title \"Regional FLEG Programme in Mekong\". ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/0>.}"
-}
-},
-{ "id": "16",
-  "question" : [
-  { "language": "en",
-    "string": "How much money Embassy of Finland contribute to Egyptian projects?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-channel-of-delivery-name \"Embassy of Finland\". ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/eg>.}"
-}
-},
-{ "id": "17",
-  "question" : [
-  { "language": "en",
-    "string": "Are there observations whose start date is after their end date?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> ask{ ?obs lso:finland-aid-start-date ?sd. ?obs lso:finland-aid-end-date ?ed. filter(?sd>?ed).}"
-}
-},
-{ "id": "18",
-  "question" : [
-  { "language": "en",
-    "string": "What is average aid amount per aid sector?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?sector avg(xsd:decimal(?amount)) as ?average{ ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector ?sector.}"
-}
-},
-{ "id": "19",
-  "question" : [
-  { "language": "en",
-    "string": "How much money gets each country in 2008?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country sum(xsd:decimal(?amount)) as ?sum{ ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:refYear \"2008\"^^xsd:gYear.}"
-}
-},
-{ "id": "20",
-  "question" : [
-  { "language": "en",
-    "string": "How much extended amounts are given to Tajikistan for rescheduling and refinancing?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs lso:finland-aid-amounts-extended ?amount. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/tj>. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/60040>.}"
-}
-},
-{ "id": "21",
-  "question" : [
-  { "language": "en",
-    "string": "How much aid receives a country?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country sum(xsd:decimal(?amount)) as ?sum{ ?obs lso:finland-aid-amounts-extended ?amount. ?obs lso:finland-aid-recipient-country ?country.}"
-}
-},
-{ "id": "22",
-  "question" : [
-  { "language": "en",
-    "string": "What is the total Dignity International aid from all sectors?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-channel-of-delivery-name \"Dignity International\".}"
-}
-},
-{ "id": "23",
-  "question" : [
-  { "language": "en",
-    "string": "How much money Nepal receives for Environmental policy and administrative management?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs lso:finland-aid-amounts-extended ?amount. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/np>. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/41010>.}"
-}
-},
-{ "id": "24",
-  "question" : [
-  { "language": "en",
-    "string": "Top 10 aid receiving geographic areas in south east and central asia?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-geographical-target-area ?result. filter(?aid!=0 && ?result!=\"\"). } order by desc(sum(xsd:decimal(?aid))) limit 10"
-}
-},
-{ "id": "25",
-  "question" : [
-  { "language": "en",
-    "string": "Which country has the lowest amount of commitments?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-commitments ?c. ?obs lso:finland-aid-recipient-country ?result.} order by asc(sum(xsd:decimal(?c))) limit 1"
-}
-},
-{ "id": "26",
-  "question" : [
-  { "language": "en",
-    "string": "Which countries received more than they were committed?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-commitments ?c. ?obs lso:finland-aid-recipient-country ?result.} group by ?result having sum(xsd:decimal(?aid))>sum(xsd:decimal(?c))"
-}
-},
-{ "id": "27",
-  "question" : [
-  { "language": "en",
-    "string": "Where is the biggest aid for medical services?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-commitments ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12191>. ?obs lso:finland-aid-recipient-country ?result. } order by desc(sum(xsd:decimal(?aid))) limit 1"
-}
-},
-{ "id": "28",
-  "question" : [
-  { "language": "en",
-    "string": "Which country receives the biggest share of its aid from Fida International?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country{ select ?country sum(xsd:decimal(?aid_fida))/sum(xsd:decimal(?aid_all)) as ?fida_share{ ?obs lso:finland-aid-recipient-country ?country.{ ?obs lso:finland-aid-amount ?aid_fida. ?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Fida International\".} UNION { ?obs lso:finland-aid-amount ?aid_all. }}} order by desc(?fida_share) limit 1"
-}
-},
-{ "id": "29",
-  "question" : [
-  { "language": "en",
-    "string": "Which types of flow are there?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?result){ ?obs lso:finland-aid-type-of-flow-main-dac-1-category ?result.}"
-}
-},
-{ "id": "30",
-  "question" : [
-  { "language": "en",
-    "string": "For which sectors is the money, invested into Sierra Leona, used for?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/sl>. ?obs lso:finland-aid-sector ?result.}"
-}
-},
-{ "id": "31",
-  "question" : [
-  { "language": "en",
-    "string": "How many percent aid of a country is for that countries administrative costs?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country sum(xsd:decimal(?aid_admin))/sum(xsd:decimal(?aid_all))*100 as ?admin_percent{ ?obs lso:finland-aid-recipient-country ?country.{ ?obs lso:finland-aid-amount ?aid_admin. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/91010>. } UNION { ?obs lso:finland-aid-amount ?aid_all. }}"
-}
-},
-{ "id": "32",
-  "question" : [
-  { "language": "en",
-    "string": "Which type of sector is receiving the most in India?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/in>. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector ?sector. } order by desc(sum(xsd:decimal(?amount))) limit 1"
-}
-},
-{ "id": "33",
-  "question" : [
-  { "language": "en",
-    "string": "How much aid is received by Zambia on a single day?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?total/?years/365.242 {{ select count(distinct(?year)) as ?years{ ?obs lso:refYear ?year. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/zm>. } }{ select sum(xsd:decimal(?amount)) as ?total{ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/zm>. ?obs lso:finland-aid-amount ?amount. } }}"
-}
-},
-{ "id": "34",
-  "question" : [
-  { "language": "en",
-    "string": "What was the total amount recieved by Yemen in 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)){ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2010\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ye>.}"
-}
-},
-{ "id": "35",
-  "question" : [
-  { "language": "en",
-    "string": "Which countries got more than 1000000 € but less than 10000000 € in 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country{ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2010\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country. } group by ?country having (sum(xsd:decimal(?aid))>1000000&&sum(xsd:decimal(?aid))<10000000)"
-}
-},
-{ "id": "36",
-  "question" : [
-  { "language": "en",
-    "string": "Which countries got between 10000 € and 100000 € in 2011?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country{ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2011\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country.} group by ?country having (sum(xsd:decimal(?aid))>10000&&sum(xsd:decimal(?aid))<100000)"
-}
-},
-{ "id": "37",
-  "question" : [
-  { "language": "en",
-    "string": "How much money did Pyongyang receive for health education?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12261>. ?obs lso:finland-aid-geographical-target-area \"Pyongyang\".}"
-}
-},
-{ "id": "38",
-  "question" : [
-  { "language": "en",
-    "string": "What types of aid did Mexico receive?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?result){ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/mx>. ?obs lso:finland-aid-type-of-aid ?result}"
-}
-},
-{ "id": "39",
-  "question" : [
-  { "language": "en",
-    "string": "What types of aid did Belarus receive in 2007?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?result){ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/by>. ?obs lso:finland-aid-type-of-aid ?result. ?obs lso:refYear \"2007\"^^xsd:gYear.}"
-}
-},
-{ "id": "40",
-  "question" : [
-  { "language": "en",
-    "string": "What types of aid did the Maldives receive in 2011 for Oil-fired power plants?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?result){ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/mv>. ?obs lso:finland-aid-type-of-aid ?result. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/23061>. ?obs lso:refYear \"2011\"^^xsd:gYear.}"
-}
-},
-{ "id": "41",
-  "question" : [
-  { "language": "en",
-    "string": "What is the total amount of Gambia in 2008?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?aid)) as ?result{ ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/gm>. ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2008\"^^xsd:gYear.}"
-}
-},
-{ "id": "42",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries had amounts of more than 1000000 € in 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?country) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2010\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country.} group by ?country having sum(xsd:decimal(?aid))>1000000"
-}
-},
-{ "id": "43",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries received more than 1000000 € for government administration in 2006?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?country) as ?result{ ?obs lso:finland-aid-amount ?aid. ?obs lso:refYear \"2006\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15140>.} group by ?country having sum(xsd:decimal(?aid))>1000000"
-}
-},
-{ "id": "44",
-  "question" : [
-  { "language": "en",
-    "string": "How much does Crisis Management Initiative spend on strengthening civil society compared to legal and judicial development?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?society)) as ?society_total sum(xsd:decimal(?legal)) as ?legal_total{ ?obs lso:finland-aid-channel-of-delivery-name \"Crisis Management Initiative\".{ ?obs lso:finland-aid-amount ?society. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15150>.} UNION{ ?obs lso:finland-aid-amount ?legal. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15130>.}}"
-}
-},
-{ "id": "45",
-  "question" : [
-  { "language": "en",
-    "string": "How much money, does the UNDP spend on elections compared to post-conflict peace building?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?elections)) as ?elections_total sum(xsd:decimal(?peace)) as ?peace_total{ ?obs lso:finland-aid-channel-of-delivery-name \"UNDP\".{ ?obs lso:finland-aid-amount ?elections. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15161>.} UNION{ ?obs lso:finland-aid-amount ?peace. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15230>.} }"
-}
-},
-{ "id": "46",
-  "question" : [
-  { "language": "en",
-    "string": "What is the type of aid with the lowest total amount?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?type{ ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-type-of-aid ?type.} order by asc(sum(xsd:decimal(?amount))) limit 1"
-}
-},
-{ "id": "47",
-  "question" : [
-  { "language": "en",
-    "string": "What are the top 5 types of aid regarding the amount?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?type{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-type-of-aid ?type.} order by desc(sum(xsd:decimal(?amount))) limit 5"
-}
-},
-{ "id": "48",
-  "question" : [
-  { "language": "en",
-    "string": "What total amount did Zimbabwe get?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/zw>. ?obs lso:finland-aid-amount ?amount.}"
-}
-},
-{ "id": "49",
-  "question" : [
-  { "language": "en",
-    "string": "What is the average commitment for chemicals?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select avg(xsd:decimal(?commitment)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-commitments ?commitment. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/32164>.}"
-}
-},
-{ "id": "50",
-  "question" : [
-  { "language": "en",
-    "string": "What was the largest aid for debt forgiveness in 2007?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select max(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/60020>. ?obs lso:refYear \"2008\"^^xsd:gYear.}"
-}
-},
-{ "id": "51",
-  "question" : [
-  { "language": "en",
-    "string": "How much is the total aid amount by the World Health Organization?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-channel-of-delivery-name \"World Health Organisation\".}"
-}
-},
-{ "id": "52",
-  "question" : [
-  { "language": "en",
-    "string": "How much did Nepal receive for agricultural extension?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31166>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/np>.}"
-}
-},
-{ "id": "53",
-  "question" : [
-  { "language": "en",
-    "string": "How much did the Philippines receive in 2007?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:refYear \"2007\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ph>.}"
-}
-},
-{ "id": "54",
-  "question" : [
-  { "language": "en",
-    "string": "How much was spent for strenthening civil society in 2007?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:refYear \"2007\"^^xsd:gYear. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15150>.}"
-}
-},
-{ "id": "55",
-  "question" : [
-  { "language": "en",
-    "string": "What is the total amount given over the World Vision Colombia channel in 2007?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:refYear \"2007\"^^xsd:gYear. ?obs lso:finland-aid-channel-of-delivery-name \"World Vision Colombia\".}"
-}
-},
-{ "id": "56",
-  "question" : [
-  { "language": "en",
-    "string": "What is the amount given to Tajikistan in 2007 for Rescheduling and refinancing?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:refYear \"2007\"^^xsd:gYear. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/60040>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/tj>.}"
-}
-},
-{ "id": "57",
-  "question" : [
-  { "language": "en",
-    "string": "How much was committed in total for Namibia over Martinus-säätiö for Basic health infrastructure?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?c)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-commitments ?c. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12230>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/na>. ?obs lso:finland-aid-channel-of-delivery-name  \"Finnish NGO, Martinus-säätiö\".}"
-}
-},
-{ "id": "58",
-  "question" : [
-  { "language": "en",
-    "string": "What were the average extended amounts for Pakistan over Suomen Lähetysseura ry in 2009?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select avg(xsd:decimal(?ae)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amounts-extended ?ae. ?obs lso:refYear \"2009\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/pk>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Suomen Lähetysseura ry\".}"
-}
-},
-{ "id": "59",
-  "question" : [
-  { "language": "en",
-    "string": "What were the total commitments for Agricultural extension by the Embassy of Finland before 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?c)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-commitments ?c. ?obs lso:refYear ?year. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31166>. ?obs lso:finland-aid-channel-of-delivery-name \"Embassy of Finland\". filter(year(?year)<2010)}"
-}
-},
-{ "id": "60",
-  "question" : [
-  { "language": "en",
-    "string": "What was the highest commitment for support to local and regional NGOs for Guatemala after 2005 and before 2010 given by the Embassy of Finland?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select max(xsd:decimal(?c)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-commitments ?c. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/gt>. ?obs lso:refYear ?year. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/92030>. ?obs lso:finland-aid-channel-of-delivery-name \"Embassy of Finland\". filter(year(?year)>2005&&year(?year)<2010) }"
-}
-},
-{ "id": "61",
-  "question" : [
-  { "language": "en",
-    "string": "How much money does Uruguay get from Finnfund for forest industries?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/uy>. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/32162>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnfund\".}"
-}
-},
-{ "id": "62",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries were aided by World Vision Peru?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(distinct(?country)){ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-channel-of-delivery-name \"World Vision Peru\". ?obs lso:finland-aid-recipient-country ?country.}"
-}
-},
-{ "id": "63",
-  "question" : [
-  { "language": "en",
-    "string": "How many sectors does Kvaerner Tamturbine Ltd fund?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(distinct(?sector)){ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-channel-of-delivery-name \"Kvaerner Tamturbine Ltd\". ?obs lso:finland-aid-sector ?sector.}"
-}
-},
-{ "id": "64",
-  "question" : [
-  { "language": "en",
-    "string": "When was money committed for vocational training?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?date){ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:finland-aid-commitments ?commitment. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/11330>. ?obs lso:refDate ?date. filter(xsd:decimal(?commitment>0))}"
-}
-},
-{ "id": "65",
-  "question" : [
-  { "language": "en",
-    "string": "Which year had the highest total commitment for agricultural research?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?result{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:refYear ?result. ?obs lso:finland-aid-commitments ?commitment. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31182>.} order by desc(sum(xsd:decimal(?commitment))) limit 1"
-}
-},
-{ "id": "66",
-  "question" : [
-  { "language": "en",
-    "string": "When was the highest commitment for agricultural research and what was its amount?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date xsd:decimal(?commitment){ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:refDate ?date. ?obs lso:finland-aid-commitments ?commitment. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31182>. } order by desc(xsd:decimal(?commitment)) limit 1"
-}
-},
-{ "id": "67",
-  "question" : [
-  { "language": "en",
-    "string": "When was money committed for supporting state-tribe dialogue in Yemen?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date{ ?obs a qb:Observation. ?obs qb:dataSet ls:finland-aid. ?obs lso:refDate ?date. ?obs lso:finland-aid-commitments ?commitment. ?obs lso:finland-aid-short-description-project-title \"Supporting State-Tribe Dialogue in Yemen\" . ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ye>. filter(xsd:decimal(?commitment)>0).}"
-}
-},
-{ "id": "68",
-  "question" : [
-  { "language": "en",
-    "string": "In which years was the total amount given for medical services higher than that for basic nutrition?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?year { { select ?year sum(xsd:integer(?amount1)) as ?sum1 sum(xsd:integer(?amount2)) as ?sum2 { ?obs1 lso:refYear ?year. ?obs2 lso:refYear ?year. ?obs1 lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12191>. ?obs2 lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12240>. ?obs1 lso:finland-aid-amount ?amount1. ?obs2 lso:finland-aid-amount ?amount2. } group by ?year } filter(?sum1>?sum2).}"
-}
-},
-{ "id": "69",
-  "question" : [
-  { "language": "en",
-    "string": "In which years did Bhutan get aid?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?year { ?obs lso:refYear ?year. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/bt>. } group by ?year"
-}
-},
-{ "id": "70",
-  "question" : [
-  { "language": "en",
-    "string": "How many of the countries got more than 100000000 € in 2011?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(distinct(?country)) {{ select ?country { ?obs lso:refYear \"2011\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-amount ?amount.} group by ?country having (sum(xsd:decimal(?amount)) > 1000000) }}"
-}
-},
-{ "id": "71",
-  "question" : [
-  { "language": "en",
-    "string": "How many sectors per recipient country?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?sector) ?country {?obs lso:finland-aid-sector ?sector. ?obs lso:finland-aid-recipient-country ?country.} group by ?country"
-}
-},
-{ "id": "72",
-  "question" : [
-  { "language": "en",
-    "string": "How much money was given each country for Health education?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) ?country { ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12261>. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-amount ?amount. } group by ?country"
-}
-},
-{ "id": "73",
-  "question" : [
-  { "language": "en",
-    "string": "How many sectors does WFP fund?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?sector) {?obs lso:finland-aid-sector ?sector. ?obs lso:finland-aid-channel-of-delivery-name \"WFP\".}"
-}
-},
-{ "id": "74",
-  "question" : [
-  { "language": "en",
-    "string": "How much did the top 10 aided countries get in 2008?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?amount)) as ?total ?country { ?obs lso:refYear \"2008\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-amount ?amount.} group by ?country order by desc(?total) limit 10"
-}
-},
-{ "id": "75",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries received aid in 2009?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(distinct(?country)) { ?obs lso:refYear \"2009\"^^xsd:gYear. ?obs lso:finland-aid-recipient-country ?country }"
-}
-},
-{ "id": "76",
-  "question" : [
-  { "language": "en",
-    "string": "Which country received aid for the most sectors?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country count(distinct(?sector)) { ?obs lso:finland-aid-sector ?sector. ?obs lso:finland-aid-recipient-country ?country } group by ?country order by desc(count(?sector)) limit 1"
-}
-},
-{ "id": "77",
-  "question" : [
-  { "language": "en",
-    "string": "When did Namibia get aid for basic health infrastructure?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date{ ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12230>. ?obs lso:refDate ?date. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/na>.}"
-}
-},
-{ "id": "78",
-  "question" : [
-  { "language": "en",
-    "string": "When did Kenya receive aid in the year 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?date){ ?obs lso:refYear \"2010\"^^xsd:gYear. ?obs lso:refDate ?date. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ke>.}"
-}
-},
-{ "id": "79",
-  "question" : [
-  { "language": "en",
-    "string": "When did Paraguy get money from the Finish Red Cross?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date{ ?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Finnish Red Cross\". ?obs lso:refDate ?date. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/py>.}"
-}
-},
-{ "id": "80",
-  "question" : [
-  { "language": "en",
-    "string": "When was the earliest start date for agricultural extension aid in 2009?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?date){ ?obs lso:finland-aid-start-date ?date. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/31166>. ?obs lso:refYear \"2009\"^^xsd:gYear. } order by asc(xsd:date(?date)) limit 1"
-}
-},
-{ "id": "81",
-  "question" : [
-  { "language": "en",
-    "string": "What is the latest start date of disaster prevention and preparedness aid over the Suomen Punainen Risti channel?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?date){ ?obs lso:finland-aid-start-date ?date. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/74010>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Suomen Punainen Risti\".} order by desc(xsd:date(?date)) limit 1"
-}
-},
-{ "id": "82",
-  "question" : [
-  { "language": "en",
-    "string": "When are the end dates of aid from Finnfund to Ethiopia for Energy policy and administrative management?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?date){ ?obs lso:finland-aid-end-date ?date. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/23010>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnfund\". ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/et>.}"
-}
-},
-{ "id": "83",
-  "question" : [
-  { "language": "en",
-    "string": "What are the titles of projects which teach basic life skills for youth and adults in Tanzania?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?title){ ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/11230>. ?obs lso:finland-aid-short-description-project-title ?title. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/tz>.}"
-}
-},
-{ "id": "84",
-  "question" : [
-  { "language": "en",
-    "string": "How much did UNDSS commit in 2006?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select sum(xsd:decimal(?commit)){ ?obs lso:finland-aid-commitments ?commit. ?obs lso:refYear \"2006\"^^xsd:gYear. ?obs lso:finland-aid-channel-of-delivery-name \"UNDSS\". ?obs lso:finland-aid-recipient-country ?country.}"
-}
-},
-{ "id": "85",
-  "question" : [
-  { "language": "en",
-    "string": "In which countries was education on sexual and reproductive health in evening schools funded?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country{ ?obs lso:finland-aid-description \"Education on sexual and reproductive health in evening schools of Lima.\". ?obs lso:finland-aid-recipient-country ?country.}"
-}
-},
-{ "id": "86",
-  "question" : [
-  { "language": "en",
-    "string": "What types of aid were given to the Project to support the Geological Survey of Tanzania?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?type){ ?obs lso:finland-aid-short-description-project-title \"Project to support the Geological Survey of Tanzania\". ?obs lso:finland-aid-type-of-aid ?type.}"
-}
-},
-{ "id": "87",
-  "question" : [
-  { "language": "en",
-    "string": "When were commitments made to the area of Lusaka and Ndola?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct ?date {?obs lso:finland-aid-geographical-target-area \"Lusaka and Ndola\". ?obs lso:refDate ?date.}"
-}
-},
-{ "id": "88",
-  "question" : [
-  { "language": "en",
-    "string": "When was the first start date of aid by the Crisis Management Initiative in Liberia?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?date {?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Crisis Management Initiative\". ?obs lso:finland-aid-start-date ?date. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/lr>} order by asc(?date) limit 1"
-}
-},
-{ "id": "89",
-  "question" : [
-  { "language": "en",
-    "string": "Did the Ukraine receive money in 2009?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> ask{?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/ua>. ?obs lso:refYear \"2009\"^^xsd:gYear.}"
-}
-},
-{ "id": "90",
-  "question" : [
-  { "language": "en",
-    "string": "Was Ethiopia given money for primary education?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> ask {?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/et>. ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/11220>.}"
-}
-},
-{ "id": "91",
-  "question" : [
-  { "language": "en",
-    "string": "Did Finnish Church Aid give money to Somalia?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> ask {?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/so>. ?obs lso:finland-aid-channel-of-delivery-name \"Finnish NGO, Finnish Church Aid\".}"
-}
-},
-{ "id": "92",
-  "question" : [
-  { "language": "en",
-    "string": "Which countries got aid for human rights as well as for nuclear power plants?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?co) { ?obs1 lso:finland-aid-sector <https://openspending.org/finland-aid/sector/15162>. ?obs2 lso:finland-aid-sector <https://openspending.org/finland-aid/sector/23064>. ?obs1 lso:finland-aid-recipient-country ?co. ?obs2 lso:finland-aid-recipient-country ?co.}"
-}
-},
-{ "id": "93",
-  "question" : [
-  { "language": "en",
-    "string": "What is the average number of full years between between the start and end date?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select avg(year(?end)-year(?start)){ ?obs lso:finland-aid-start-date ?start. ?obs lso:finland-aid-end-date ?end.}"
-}
-},
-{ "id": "94",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries recieved more aid in 2011 than in 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?country){ select distinct(?country) {{ ?obs1 lso:finland-aid-amount ?amount1. ?obs1 lso:refYear \"2010\"^^xsd:gYear. ?obs1 lso:finland-aid-recipient-country ?country. } UNION{ ?obs2 lso:finland-aid-amount ?amount2. ?obs2 lso:refYear \"2011\"^^xsd:gYear. ?obs2 lso:finland-aid-recipient-country ?country.} } group by ?country having (sum(xsd:decimal(?amount1))<sum(xsd:decimal(?amount2)))}"
-}
-},
-{ "id": "95",
-  "question" : [
-  { "language": "en",
-    "string": "What are the 10 sectors with the highest total amount?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct ?sector{ ?obs lso:finland-aid-amount ?amount. ?obs  lso:finland-aid-sector ?sector. } order by desc(sum(xsd:decimal(?amount))) limit 10"
-}
-},
-{ "id": "96",
-  "question" : [
-  { "language": "en",
-    "string": "How many countries recieve aid both in 2006 and in 2010?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(?country){ select distinct(?country) {{ ?obs1 lso:finland-aid-amount ?amount1. ?obs1 lso:refYear \"2006\"^^xsd:gYear. ?obs1 lso:finland-aid-recipient-country ?country. } UNION{ ?obs2 lso:finland-aid-amount ?amount2. ?obs2 lso:refYear \"2010\"^^xsd:gYear. ?obs2 lso:finland-aid-recipient-country ?country. } } group by ?country having (sum(xsd:decimal(?amount1))>0&&sum(xsd:decimal(?amount2))>0)}"
-}
-},
-{ "id": "97",
-  "question" : [
-  { "language": "en",
-    "string": "What is the country with the lowest average aid amount?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select ?country{ ?obs lso:finland-aid-recipient-country ?country. ?obs lso:finland-aid-amount ?amount. } order by asc(avg(xsd:decimal(?amount))) limit 1"
-}
-},
-{ "id": "98",
-  "question" : [
-  { "language": "en",
-    "string": "Which are the sectors of aid to the geographical area of Dhaka?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct(?sector){ ?obs lso:finland-aid-sector ?sector. ?obs lso:finland-aid-geographical-target-area \"Dhaka\".}"
-}
-},
-{ "id": "99",
-  "question" : [
-  { "language": "en",
-    "string": "In how many years did Sierra Leona recieve aid for malaria control?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select count(distinct(?year)){ ?obs lso:finland-aid-sector <https://openspending.org/finland-aid/sector/12262>. ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/sl>. ?obs lso:refYear ?year.}"
-}
-},
-{ "id": "100",
-  "question" : [
-  { "language": "en",
-    "string": "Which sectors have Paraguay and the Central African Republic in common?"
-}
-],
-"query": {
-"sparql": "prefix ls: <http://linkedspending.aksw.org/instance/>  prefix qb: <http://purl.org/linked-data/cube#> prefix lso: <http://linkedspending.aksw.org/ontology/> select distinct ?sector{ ?obs1 lso:finland-aid-sector ?sector. ?obs1 lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/cf>. ?obs2 lso:finland-aid-sector ?sector. ?obs2 lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/py>.}"
-}
-}
-]
+    {
+      "id": "2",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which programs were done under the class of public works and utilities in the expenditure of the Town of Cary?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?program from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-Program ?program. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. }"
+      },
+      "aggregation": false,
+      "answertype": "resource"
+    },
+    {
+      "id": "3",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the Town of Cary earn in 2009?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:refYear ?year. filter(year(?year)=2009). ?obs lso:town_of_cary_revenues-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "4",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which program earned the most for the Town of Cary?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?program from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:town_of_cary_revenues-Program ?program. ?obs lso:town_of_cary_revenues-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1 "
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "5",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which department of whiteacre spent the most in 2010?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?dep from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-to ?dep. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. filter (year(?year)=2010). } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "6",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much does the general district court of Whiteacre receive for court appointed attorney fees a year?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?year sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-object <https://openspending.org/city-of-whiteacre-spending/object/3150.0>. ?obs lso:city-of-whiteacre-spending-to <https://openspending.org/city-of-whiteacre-spending/to/210708>. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. } group by ?year order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true
+    },
+    {
+      "id": "7",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which agencies in the Maldives have proposed expenditure amounts of more than 1 billion Maldivian rufiyaa in 2015?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?agency from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency ?agency. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. filter(xsd:decimal(?amount)>1000000000). }"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "8",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the total aid to the Anti Corruption Commission in the Maldives in 2015?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency <https://openspending.org/maldives_proposed_expenditure_2015/Agency/anti-corruption-commission>. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "9",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which Ugandan district had the highest budget in 2014?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?district from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "10",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the average Uganda health budget over all districts in 2014?"
+        }
+      ],
+      "query": {
+        "sparql": " select avg(?sum) as ?sum { select ?district sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "11",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the highest Newcastle city council payment for supplies and services?"
+        }
+      ],
+      "query": {
+        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-expenditure-category \"Supplies & Services\". ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "12",
+      "question": [
+        {
+          "language": "en",
+          "string": "What's are the 10 highest payments of the Newcastle city council?"
+        }
+      ],
+      "query": {
+        "sparql": " select xsd:decimal(?amount) as ?amount from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. } order by desc(xsd:decimal(?amount)) limit 10"
+      },
+      "aggregation": false,
+      "answertype": "number"
+    },
+    {
+      "id": "13",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the Waltham Forest Council spend on Environment and Regeneration?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-ExpenseArea <https://openspending.org/uk-local-walthamforest/ExpenseArea/environment-regeneration>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "14",
+      "question": [
+        {
+          "language": "en",
+          "string": "On the Waltham Forest Council, how much money was given to Synarbor Global Solutions Ltd?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-to <https://openspending.org/uk-local-walthamforest/to/15519>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "15",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much money give Cheshire West and Chester on Adult Social Care and Health?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-service-label \"Adult Social Care & Health\". ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "16",
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the top 5 narratives in Cheshire West and Chester?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?narrative) from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-narrative ?narrative. ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 5"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "17",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the City of Redacre expend from the insurance fund?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-from <https://openspending.org/city-of-redacre-spending/from/510>. ?obs lso:city-of-redacre-spending-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "18",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much receives each division in the City of Redacre?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?division sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-to ?division. ?obs lso:city-of-redacre-spending-amount ?amount. }"
+      },
+      "aggregation": true
+    },
+    {
+      "id": "19",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the total Wandsworth spending from all departments?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-Department ?dep. ?obs lso:wandsworthspending_2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "20",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much money Wandsworth spends on the criminal records bureau ?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-DetailedExpenses \"CRIMINAL RECORDS BUREAU\". ?obs lso:wandsworthspending_2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "21",
+      "question": [
+        {
+          "language": "en",
+          "string": "Top 10 IW Council Spending expense types?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?et from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-expensestype ?et. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 10"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "22",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which IW Council service area has the highest spending?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?area from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-servicearea ?area. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "23",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which departments of the city of Springfield had a higher budget in 2005 then in 2006?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?dep { select ?dep sum(xsd:decimal(?amount5)) as ?sum5 sum(xsd:decimal(?amount6)) as ?sum6 from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-to ?dep. { ?obs lso:city-of-springfield-budget-amount ?amount5. ?obs lso:refYear ?year5. filter(year(?year5)=2005). } union { ?obs lso:city-of-springfield-budget-amount ?amount6. ?obs lso:refYear ?year6. filter(year(?year6)=2006). } } } group by ?dep having(?sum5>?sum6)"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "24",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the highest single budget amount in the city of Springfield for public works?"
+        }
+      ],
+      "query": {
+        "sparql": " select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-deptgroup <https://openspending.org/city-of-springfield-budget/deptgroup/public-works>. ?obs lso:city-of-springfield-budget-amount ?amount. }"
+      },
+      "aggregation": false,
+      "answertype": "number"
+    },
+    {
+      "id": "25",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many percent of the amount spent on Californian cities in 2010 went to Fullerton?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?sum_fullerton/?sum_all { select sum(xsd:decimal(?fullerton)) as ?sum_fullerton sum(xsd:decimal(?all)) as ?sum_all from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. { ?obs lso:pscs_ca_cities-gov-full-name \"Fullerton\". ?obs lso:pscs_ca_cities-amount ?fullerton. } union { ?obs lso:pscs_ca_cities-amount ?all. } } }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "26",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many categories are there for californian cities?"
+        }
+      ],
+      "query": {
+        "sparql": " select count(distinct(?category)) from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. ?obs lso:pscs_ca_cities-caption ?category. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "27",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the highest Washington DC employee salary in 2011?"
+        }
+      ],
+      "query": {
+        "sparql": " select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011). } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "28",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the average salary of an Engineering Technician in Washington DC?"
+        }
+      ],
+      "query": {
+        "sparql": " select avg(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:dc-city-salaries-position \"Engineering Technician\". }"
+      },
+      "aggregation": false,
+      "answertype": "number"
+    },
+    {
+      "id": "29",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the amount recieved by King George's Field from Big Lottery Fund grants?"
+        }
+      ],
+      "query": {
+        "sparql": " select xsd:decimal(?amount) from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-amount ?amount. ?obs lso:big-lottery-fund-grants-to <https://openspending.org/big-lottery-fund-grants/to/king-george-s-field>. } "
+      },
+      "aggregation": false,
+      "answertype": "number"
+    },
+    {
+      "id": "30",
+      "question": [
+        {
+          "language": "en",
+          "string": "Over which programmes more than 1000000 pound but less than 10000000 pound in grants were given by the Big Lottery Fund?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?programme from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-programme-name ?programme. ?obs lso:big-lottery-fund-grants-amount ?amount. } group by ?programme having (sum(xsd:decimal(?amount))>1000000&&sum(xsd:decimal(?amount))<10000000)"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "31",
+      "question": [
+        {
+          "language": "en",
+          "string": "On which service areas of Gloucestershire was spent more than 1000000 pound in total?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?area from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-service-area ?area. ?obs lso:uk-local-gloucestershirev1-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>1000000)"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "32",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much money did the Gloucestershire Police Authority receive?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-to <https://openspending.org/uk-local-gloucestershirev1/to/gloucestershire-police-authority>. ?obs lso:uk-local-gloucestershirev1-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "33",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the department for education pay for extra education services in Scotland?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-region <https://openspending.org/ukgov-finances-cra/region/scotland>. ?obs lso:ukgov-finances-cra-cofog2 <https://openspending.org/ukgov-finances-cra/cofog2/09.6>. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept022>. ?obs lso:ukgov-finances-cra-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "34",
+      "question": [
+        {
+          "language": "en",
+          "string": "What HTM functions are paid from the department for education the UK?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?function) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-hmt1 ?function. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept047>. }"
+      },
+      "aggregation": false,
+      "answertype": "resource"
+    },
+    {
+      "id": "35",
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the activity statuses of basic health care in Urozgan?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?status) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Unique <https://openspending.org/iati_cordaid_af/Unique/195>. ?obs lso:iati_cordaid_af-Activity_Status ?status. }"
+      },
+      "aggregation": false,
+      "answertype": "string"
+    },
+    {
+      "id": "36",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the total amount of basic nutrition aid by Cordaid in Afghanistan?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Sector <https://openspending.org/iati_cordaid_af/Sector/12240>. ?obs lso:iati_cordaid_af-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "37",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the total Outlook on Technical Services in City of Toronto in 2009?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division \"Technical Services\". ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "38",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many divisions of the City of Toronto received more than 10000000 canadian dollar in 2010?\n"
+        }
+      ],
+      "query": {
+        "sparql": " select ?division from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division ?division. ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010). } group by ?division having (sum(xsd:decimal(?amount)) > 10000000)"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "39",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the Sightsavers charity in Ireland pay in total?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/15437>. ?obs lso:ie_charity_exp-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "40",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much money does the Special Olympics Ireland charity spend on generating funds?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/7556>. ?obs lso:ie_charity_exp-Level3 <https://openspending.org/ie_charity_exp/Level3/b1-5100>. ?obs lso:ie_charity_exp-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "41",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the frontex budget for administrative expenditure?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Heading <https://openspending.org/frontex/Heading/a-2>. ?obs lso:frontex-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "42",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the average frontex budget chapter budget?"
+        }
+      ],
+      "query": {
+        "sparql": " select avg(?sum) { select ?chapter sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Chapter ?chapter. ?obs lso:frontex-amount ?amount. } }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "43",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the largest amount spent on housing and building in the Dublin City Council Expenditure Budget of 2013?"
+        }
+      ],
+      "query": {
+        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-Division <https://openspending.org/dcc_exp_budget2013/Division/a>. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "44",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was the budget amount of the Dublin City Council in 2013?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "45",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much financial crisis aid did Austria receive in Guaranetees?\n"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/austria>. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "46",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much financial crisis aid did Belgium receive in the year of 2011?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/belgium>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "47",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was charity spending was expended for charitable activities in Bangladesh?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level1 <https://openspending.org/concern2012/Level1/expended>. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/charitable-activities>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/bangladesh>. ?obs lso:concern2012-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "48",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the total cost of generating funds for public appeals events?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/costs-of-generating-funds>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/public-appeals-events>. ?obs lso:concern2012-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "49",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the amount given by the Department of Health to VWR International LLC?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-from <https://openspending.org/dc-vendors-contractors/from/department-of-health>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/vwr-international-llc>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "50",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was given in total to the Riverside Publishing vendor for educational purposes."
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-objecttitle <https://openspending.org/dc-vendors-contractors/objecttitle/educational>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/the-riverside-publishing>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "51",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the highest amount for materials and supplies used in Cameroon in 2008?"
+        }
+      ],
+      "query": {
+        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-head_account <https://openspending.org/cameroon_visualisation/head_account/610-xxx>. ?obs lso:cameroon_visualisation-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2008). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "52",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much is the total expenditure of the Tigerne Council in Cameroon?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-revenue_expenditure \"EXPENDITURE\". ?obs lso:cameroon_visualisation-council_name <https://openspending.org/cameroon_visualisation/council_name/tignere-council>. ?obs lso:cameroon_visualisation-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "53",
+      "question": [
+        {
+          "language": "en",
+          "string": "When did London get Nominet Trust funding?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-region <https://openspending.org/nominettrust_funding/region/london>. ?obs lso:refDate ?date. }"
+      },
+      "aggregation": false,
+      "answertype": "date"
+    },
+    {
+      "id": "54",
+      "question": [
+        {
+          "language": "en",
+          "string": "When did the Web in Society programme get Nominet Trust funding?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-programme <https://openspending.org/nominettrust_funding/programme/web-in-society>. ?obs lso:refDate ?date. }"
+      },
+      "aggregation": false,
+      "answertype": "date"
+    },
+    {
+      "id": "55",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did Armenia spent in 2009 on general public services?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-cofog1 <https://openspending.org/618ac3ec98384f44a9ef142356ce476d/cofog1/01>. ?obs lso:618ac3ec98384f44a9ef142356ce476d-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "56",
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the budgetary classifications of running expenses in Armenia?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?type) from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-type ?type. ?obs lso:618ac3ec98384f44a9ef142356ce476d-economiclevel1 \"Running expenses\". }"
+      },
+      "aggregation": false,
+      "answertype": "string"
+    },
+    {
+      "id": "57",
+      "question": [
+        {
+          "language": "en",
+          "string": "In Nigerias proposed budget of 2013, how much is assigned to total overhead costs?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-to <https://openspending.org/propbudg13/to/total-overhead-cost>. ?obs lso:propbudg13-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "58",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did Nigernian Ministry of Petroleum Resources receive from ministries and department agencies?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-from <https://openspending.org/propbudg13/from/ministries-and-department-agencies>. ?obs lso:propbudg13-recipient <https://openspending.org/propbudg13/recipient/ministry-of-petroleum-resources>. ?obs lso:propbudg13-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "59",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the New York City Council Members give to the Gun Hill Basketball Association?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/gun-hill-basketball-association-inc>. ?obs lso:nyc-council-member-items-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "60",
+      "question": [
+        {
+          "language": "en",
+          "string": "In how many years did Dickens give money to American Performing Arts Collaborative, Inc.?"
+        }
+      ],
+      "query": {
+        "sparql": " select count(distinct(year(?year))) as ?years from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-from <https://openspending.org/nyc-council-member-items/from/dickens>. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/american-performing-arts-collaborative-inc>. ?obs lso:refYear ?year. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "61",
+      "question": [
+        {
+          "language": "en",
+          "string": "How high were the service support costs of the Fingal County Council Expenditure Budget of 2011?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-ref2-desc \"Service Support Costs\". ?obs lso:fingal_exp_budget-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "62",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the lowest amount for the veterinary service in the Fingal County Council expenditure budget?\n"
+        }
+      ],
+      "query": {
+        "sparql": " select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-Service <https://openspending.org/fingal_exp_budget/Service/g04>. ?obs lso:fingal_exp_budget-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "63",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the total investment budget for basic education in Mezam, Cameroon?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area <https://openspending.org/cm-nwr-investments/area/mezam>. ?obs lso:cm-nwr-investments-chapter <https://openspending.org/cm-nwr-investments/chapter/15>. ?obs lso:cm-nwr-investments-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "64",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which areas in Cameroon had an investment budget of more than 5 billion CFA in 2010?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?area from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area ?area. ?obs lso:cm-nwr-investments-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>5000000000)"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "65",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much money was given to works and transport in the Ugandan budget?\n"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/works-and-transport>. ?obs lso:ug_budget_subcategories-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "66",
+      "question": [
+        {
+          "language": "en",
+          "string": "In which years did the Uganda budget contain money for Education?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(year(?year)) as ?year from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/education>. ?obs lso:ug_budget_subcategories-amount ?amount. ?obs lso:refYear ?year. }"
+      },
+      "aggregation": false,
+      "answertype": "number"
+    },
+    {
+      "id": "67",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many donor entities provided foreign aid for Typhoon Yolanda?"
+        }
+      ],
+      "query": {
+        "sparql": " select count(distinct(?entity)) from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-target <https://openspending.org/faith/target/typhoon-yolanda>. ?obs lso:faith-from ?entity. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "68",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much foreign aid went over the Red Cross from China?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-conduit <https://openspending.org/faith/conduit/red-cross>. ?obs lso:faith-from <https://openspending.org/faith/from/china>. ?obs lso:faith-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "69",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which type of sector is receiving the most Finland foreign aid in India?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?result { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/in>. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector ?result. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "70",
+      "question": [
+        {
+          "language": "en",
+          "string": "What types of foreign aid from Finland did Belarus receive in 2011?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?result) { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/by>. ?obs lso:finland-aid-type-of-aid ?result. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "71",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the proposed City of Providence budget amount for City Courts by the Muncipal Court?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-acct-dept \"101-106: Muncipal Court\". ?obs lso:pvd2014proposed-acct-div \"City Courts\". ?obs lso:pvd2014proposed-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "72",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was the City of Providence budget for educational materials?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-gl-account \"54625: EDUCATIONAL MATERIALS\". ?obs lso:pvd2014proposed-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "73",
+      "question": [
+        {
+          "language": "en",
+          "string": "When was upgrading and greening in ward 49 payed?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Category <https://openspending.org/pbw-ct/Category/upgrading-and-greening-in-ward-49>. ?obs lso:refDate ?date. }"
+      },
+      "aggregation": false,
+      "answertype": "date"
+    },
+    {
+      "id": "74",
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the funding sources for Cape Town Electricity?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?source) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Department <https://openspending.org/pbw-ct/Department/cape-town-electricity>. ?obs lso:pbw-ct-FundingSource ?source. }"
+      },
+      "aggregation": false,
+      "answertype": "resource"
+    },
+    {
+      "id": "75",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which investor type using CKAN technology received the most funding?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?type from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-tech \"CKAN\". ?obs lso:trends_in_civi_tech_open_gov-amount ?amount. ?obs lso:trends_in_civi_tech_open_gov-investor_type ?type. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "76",
+      "question": [
+        {
+          "language": "en",
+          "string": "When did Pew Charitable Trust invest?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?date from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-from <https://openspending.org/trends_in_civi_tech_open_gov/from/pew-charitable-trust>. ?obs lso:refDate ?date. }"
+      },
+      "aggregation": false,
+      "answertype": "date"
+    },
+    {
+      "id": "77",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did Armenia spend in 2006 for buildings and edifices?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economiclevel3 \"Buildings and edifices\". ?obs lso:e27f4ef7601446798cfa733a06cea8d9-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "78",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which were the admins for personal and catering materials in Armenia in 2006?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?admin) from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economic <https://openspending.org/e27f4ef7601446798cfa733a06cea8d9/economic/4267>. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-from ?admin. }"
+      },
+      "aggregation": false,
+      "answertype": "resource"
+    },
+    {
+      "id": "79",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was spent on public utilities in Armenia in 2007?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economic <https://openspending.org/f0bd947d9854445987d6ece304840a3c/economic/4213>. ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "80",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the total cost of running expenses for Armenia in 2007?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economiclevel1 \"Running expenses\". ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "81",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the total Scottish Government expenditure of 2013-01-09?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:refDate ?date. filter(strstarts(str(?date), \"2013-01-09\")). }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "82",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the smallest amount expended for Environment and Forestry by the Scottish Government in January of 2013?"
+        }
+      ],
+      "query": {
+        "sparql": " select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:scottish-spending-jan13-directorate \"Environment and Forestry\". }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "83",
+      "question": [
+        {
+          "language": "en",
+          "string": "In which year did the City of Oakland have the highest total expenditure budget?"
+        }
+      ],
+      "query": {
+        "sparql": " select year(?year) from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "84",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the total City of Oakland budget for the Administrative Unit in 2012?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-unit \"Administrative Unit\". ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011) }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "85",
+      "question": [
+        {
+          "language": "en",
+          "string": "How high was the recurrent expenditure for the Sierra Leona Government budget in 2013?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level0 \"RECURRENT EXPENDITURE\". ?obs lso:allexp13budg-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "86",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was budgeted for general services for the Office of the President of Sierra Leona in 2013?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level1 \"GENERAL SERVICES\". ?obs lso:allexp13budg-level2 \"Office of the President\". ?obs lso:allexp13budg-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "87",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which clients received lobbying contributions of more than 50000000 $?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?client sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-client ?client. ?obs lso:lobbying_dataset_qy-amount ?amount. } group by ?client having sum(xsd:decimal(?amount))>50000000"
+      },
+      "aggregation": true
+    },
+    {
+      "id": "88",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which industry received the most lobbying contributions?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?industry from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-industry ?industry. ?obs lso:lobbying_dataset_qy-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+      },
+      "aggregation": true,
+      "answertype": "string"
+    },
+    {
+      "id": "89",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the Manchester City Council give for  Learning Disabilities to SLC Paragon?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-amount ?amount. ?obs lso:mcc_spend-supplier-name \"SLC Paragon\". }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "90",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which service areas do the Manchester City Council spendings contain?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?area) from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-service-area ?area. }"
+      },
+      "aggregation": false,
+      "answertype": "string"
+    },
+    {
+      "id": "91",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much was Albanias 2013 budget for education?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/09>. ?obs lso:alb_planned_budget_2013-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "92",
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the identification numbers of housing and community amenities in Albanias 2013 budget?"
+        }
+      ],
+      "query": {
+        "sparql": " select distinct(?id) from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/06>. ?obs lso:alb_planned_budget_2013-UniqueID ?id. }"
+      },
+      "aggregation": false,
+      "answertype": "string"
+    },
+    {
+      "id": "93",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the total Kenya County Expenditure in Kiambu by the Thika administration?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration <https://openspending.org/ke-county-exp/administration/thika>. ?obs lso:ke-county-exp-county <https://openspending.org/ke-county-exp/county/kiambu>. ?obs lso:ke-county-exp-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "94",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which Kenya country administration had the highest expenditure budget?"
+        }
+      ],
+      "query": {
+        "sparql": " select ?admin from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration ?admin. ?obs lso:ke-county-exp-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1 "
+      },
+      "aggregation": true,
+      "answertype": "resource"
+    },
+    {
+      "id": "95",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the Albania budget for public order and safety in 2007?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/public-order-and-safety>. ?obs lso:refYear ?year. filter(year(?year)=2007). ?obs lso:al_planned_budget_2007to2013-amount ?amount. } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "96",
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the combined Albania budget for health from 2007 to 2010?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/health>. ?obs lso:al_planned_budget_2007to2013-amount ?amount. ?obs lso:refYear ?year. filter((year(?year)>=2007)&&year(?year)<=2010) } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "97",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the external debt amount of Kwara?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/kwara>. ?obs lso:external-debts-amount ?amount. } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "98",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much external debt did rivers have in 2010?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/rivers>. ?obs lso:external-debts-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010) } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "99",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many admins were responsible for mandatory payments in the Armenian approved budget of 2010?"
+        }
+      ],
+      "query": {
+        "sparql": " select count(distinct(?admin)) from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economic <https://openspending.org/ddc94682cc95482a8deefc60596686fc/economic/4823>. ?obs lso:ddc94682cc95482a8deefc60596686fc-from ?admin. } "
+      },
+      "aggregation": true,
+      "answertype": "number"
+    },
+    {
+      "id": "100",
+      "question": [
+        {
+          "language": "en",
+          "string": "How much total running expenses under budgetary classification did the Armenian approved budget of 2010 have?"
+        }
+      ],
+      "query": {
+        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economiclevel1 \"Running expenses\". ?obs lso:ddc94682cc95482a8deefc60596686fc-type \"personnel\". ?obs lso:ddc94682cc95482a8deefc60596686fc-amount ?amount. }"
+      },
+      "aggregation": true,
+      "answertype": "number"
+    }
+  ]
 }

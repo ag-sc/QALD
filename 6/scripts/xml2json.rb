@@ -24,6 +24,11 @@ def rewrite(sparql)
     return sparql
 end
 
+def contains_aggregation?(sparql)
+
+    ["sum","count","filter"].any? { |s| sparql.include? s }
+end
+
 #################################################################
 
 outputJSON = { "dataset" => {}, "questions" => [] }
@@ -39,15 +44,13 @@ doc.xpath("/dataset/question").each do |question|
 
       q = {}
 
-      # question attributes
+      # question attributes (part 1)
 
       q["id"]          = question["id"]
-      q["answertype"]  = question["answertype"]
-      q["aggregation"] = question["aggregation"]
-      q["onlydbo"]     = question["onlydbo"]
-      if question["hybrid"].nil?
-         q["hybrid"]   = "false"
-      else
+      if not question["onlydbo"].nil?
+         q["onlydbo"]  = question["onlydbo"]
+      end
+      if not question["hybrid"].nil?
          q["hybrid"]   = question["hybrid"]
       end
 
@@ -84,26 +87,38 @@ doc.xpath("/dataset/question").each do |question|
         q["query"]["pseudo"] = query.text.gsub("\n"," ")
       end
 
-      # answers
+      # question attributes (part 2)
 
-      # q["answers"] = []
-      #
-      # answers      = []
-      # answer_nodes = []
-      # answers_node = question.at_xpath("answers")
-      #
-      # if not answers_node.nil?
-      #    answer_nodes = answers_node.children
-      # end
-      # if not answer_nodes.nil?
-      #    answer_nodes.each do |node|
-      #       if node.text.gsub("\n","").strip != ""
-      #          answers << node.text.strip
+      if not question["aggregation"].nil?
+         q["aggregation"] = question["aggregation"]
+      else
+         if contains_aggregation? q["query"]["sparql"]
+             q["aggregation"] = true
+         else
+             q["aggregation"] = false
+         end
+      end
+
+      if not question["answertype"].nil?
+         q["answertype"] = question["answertype"]
+      # else
+      #    answertype = nil
+      #    answers_node = question.at_xpath("answers")
+      #    if not answers_node.nil?
+      #       answer_nodes = answers_node.children
+      #    end
+      #    if not answer_nodes.nil?
+      #       answer_nodes.each do |node|
+      #          if not node["answerType"].nil?
+      #             answertype = node["answerType"]
+      #             break
+      #          end
       #       end
       #    end
+      end
+      # if not answertype.nil?
+      #    q["answertype"] = answertype
       # end
-      #
-      # answers.each { |a| q["answers"] << { "head" => { "vars" => [ "uri" ] }, "bindings" => [ "uri" => { "type" => "uri", "value" => a } ] } }
 
       # add question to JSON output
 

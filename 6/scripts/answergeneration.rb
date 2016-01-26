@@ -2,8 +2,8 @@ require 'sparql/client'
 require 'json'
 
 
-#endpoint = SPARQL::Client.new('http://linkedspending.aksw.org/sparql')
-endpoint = SPARQL::Client.new("http://dbpedia.org/sparql/")
+endpoint = SPARQL::Client.new("http://cubeqa.aksw.org/sparql")
+#endpoint = SPARQL::Client.new("http://dbpedia.org/sparql/")
 
 input    = ARGV[0]
 output   = input + ".answers"
