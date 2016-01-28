@@ -25,7 +25,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "23831652"
                 }
@@ -317,7 +317,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "116661346"
                 }
@@ -518,7 +518,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "32499312"
                 }
@@ -1751,7 +1751,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "629023"
                 }
@@ -1783,7 +1783,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "0.004635691512599"
                 }
@@ -1815,7 +1815,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "566"
                 }
@@ -1847,7 +1847,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "295000"
                 }
@@ -1879,7 +1879,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "69094.233644859813084"
                 }
@@ -1911,7 +1911,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "10000"
                 }
@@ -2133,7 +2133,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "704367.42"
                 }
@@ -2165,7 +2165,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "26661.01"
                 }
@@ -2273,7 +2273,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "1421532"
                 }
@@ -2305,7 +2305,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "55929294"
                 }
@@ -2549,7 +2549,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "28813314.666666666666667"
                 }
@@ -3655,7 +3655,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "59"
                 }
@@ -4245,7 +4245,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "2011"
                 }
@@ -4942,7 +4942,7 @@
           "results": {
             "bindings": [
               {
-                "\"callret-0\"": {
+                "callret-0": {
                   "type": "literal",
                   "value": "36"
                 }
