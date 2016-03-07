@@ -624,7 +624,7 @@
         }
       ],
       "query": {
-        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE {         ?uri dbo:architect <http://dbpedia.org/resource/Shreve,_Lamb_&_Harmon> .       { ?uri dbo:architecturalStyle res:Art_Deco . }       UNION       { ?uri text:\"style\" text:\"Art Deco\" . } UNION { ?uri text:\"ornamentation\" text:\"Art Deco\" . } }  "   
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE {         ?uri dbo:architect <http://dbpedia.org/resource/Shreve,_Lamb_&_Harmon> .       { ?uri dbo:architecturalStyle res:Art_Deco . }       UNION       { ?uri text:\"style\" text:\"Art Deco\" . } UNION { ?uri text:\"ornamentation\" text:\"Art Deco\" . } }  "
       },
       "answers": [
         {
@@ -768,7 +768,7 @@
         }
       ],
       "query": {
-        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE {     ?x text:\"love affair\" text:\"Cleopatra\".     ?uri dbo:commander ?x . } "  
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE {     ?x text:\"love affair\" text:\"Cleopatra\".     ?uri dbo:commander ?x . } "
       },
       "answers": [
         {
@@ -1095,9 +1095,9 @@
                 "type": "uri",
                 "value": "http://dbpedia.org/resource/Françoise_Arnoul"
               }
-             } 
+             }
 	    ]
-          } 
+          }
         }
       ]
     },
@@ -1484,11 +1484,11 @@
       "question": [
         {
           "language": "en",
-          "string": "Where was the \"Father of Singapore\" born?"
+          "string": "In which British territories was the \"Father of Singapore\" born?"
         }
       ],
       "query": {
-        "pseudo": "SELECT DISTINCT ?uri WHERE { text:\"Father of modern Singapore\" <http://dbpedia.org/ontology/birthPlace> ?uri . }"
+        "pseudo": "SELECT DISTINCT ?uri WHERE { text:\"Father of modern Singapore\" <http://dbpedia.org/ontology/birthPlace> ?uri . ?uri rdf:type text:\"British territories\" . }"
       },
       "answers": [
         {
@@ -1501,7 +1501,7 @@
             {
               "uri": {
                 "type": "uri",
-                "value": "http://dbpedia.org/resource/Jamaica"
+                "value": "http://dbpedia.org/resource/Straits_Settlements"
               }
             } ] }
         }
@@ -1573,7 +1573,7 @@
                 "type": "uri",
                 "value": "http://dbpedia.org/resource/César_Pelli"
               }
-            } 
+            }
             ] }
         }
       ]
