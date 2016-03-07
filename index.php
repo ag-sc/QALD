@@ -40,7 +40,18 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
- if ($q == "6" || $q == "5") {
+ if ($q == "6") {
+ echo "
+ <p> <a href='index.php?x=motivation&q=".$q."'>Motivation</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=organization&q=".$q."'>Organization</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=challenge&q=".$q."'>Lab overview</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=evaltool&q=".$q."'>Evaluation tool</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=submission&q=".$q."'>Paper submission</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=proceedings&q=".$q."'>Proceedings</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> &nbsp; </p>";
+ }
+ if ($q == "5") {
  echo "
  <p> <a href='index.php?x=motivation&q=".$q."'>Motivation</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=organization&q=".$q."'>Organization</a> <img src='pictures/list_arrow_gray.gif'> </p>
