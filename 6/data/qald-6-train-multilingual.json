@@ -17875,8 +17875,13 @@
       "question": [
         {
           "language": "en",
-          "string": "آی.بی.آم. چند کارمند دارد؟",
+          "string": "How many employees does IBM have?",
           "keywords": "IBM, employees"
+        },
+        {
+          "language": "fa",
+          "string": "آی.بی.آم. چند کارمند دارد؟",
+          "keywords": "آی.بی.ام.، کارمند"
         },
         {
           "language": "de",
