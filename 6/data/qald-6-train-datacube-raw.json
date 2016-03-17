@@ -584,7 +584,8 @@
         }
       ],
       "query": {
-        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-aid \"Guarantees (1)\". ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/austria>. }"  },
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-aid \"Guarantees (1)\". ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/austria>. }"
+      },
       "aggregation": true
     },
     {
