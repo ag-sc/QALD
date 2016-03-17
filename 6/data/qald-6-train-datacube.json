@@ -12,7 +12,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-amount ?amount. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-amount ?amount. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
       },
       "aggregation": true,
       "answers": [
@@ -44,7 +44,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?program from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-Program ?program. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. }"
+        "sparql": "select ?program from <http://linkedspending.aksw.org/town_of_cary_expenditures> { ?obs qb:dataSet ls:town_of_cary_expenditures. ?obs lso:town_of_cary_expenditures-Program ?program. ?obs lso:town_of_cary_expenditures-Class <https://openspending.org/town_of_cary_expenditures/Class/6>. }"
       },
       "aggregation": false,
       "answers": [
@@ -304,7 +304,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:refYear ?year. filter(year(?year)=2009). ?obs lso:town_of_cary_revenues-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:refYear ?year. filter(year(?year)=2009). ?obs lso:town_of_cary_revenues-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -336,7 +336,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?program from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:town_of_cary_revenues-Program ?program. ?obs lso:town_of_cary_revenues-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?program from <http://linkedspending.aksw.org/town_of_cary_revenues> { ?obs qb:dataSet ls:town_of_cary_revenues. ?obs lso:town_of_cary_revenues-Program ?program. ?obs lso:town_of_cary_revenues-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -368,7 +368,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?dep from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-to ?dep. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. filter (year(?year)=2010). } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?dep from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-to ?dep. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. filter (year(?year)=2010). } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -400,7 +400,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?year sum(xsd:decimal(?amount)) as ?result from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-object <https://openspending.org/city-of-whiteacre-spending/object/3150.0>. ?obs lso:city-of-whiteacre-spending-to <https://openspending.org/city-of-whiteacre-spending/to/210708>. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. } group by ?year order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?year sum(xsd:decimal(?amount)) as ?result from <http://linkedspending.aksw.org/city-of-whiteacre-spending> { ?obs qb:dataSet ls:city-of-whiteacre-spending. ?obs lso:city-of-whiteacre-spending-object <https://openspending.org/city-of-whiteacre-spending/object/3150.0>. ?obs lso:city-of-whiteacre-spending-to <https://openspending.org/city-of-whiteacre-spending/to/210708>. ?obs lso:city-of-whiteacre-spending-amount ?amount. ?obs lso:refYear ?year. } group by ?year"
       },
       "aggregation": true,
       "answers": [
@@ -422,6 +422,16 @@
                   "type": "literal",
                   "value": "78478.5"
                 }
+              },
+              {
+                "year": {
+                  "type": "literal",
+                  "value": "2011"
+                },
+                "result": {
+                  "type": "literal",
+                  "value": "61012.5"
+                }
               }
             ]
           }
@@ -437,7 +447,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?agency from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency ?agency. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. filter(xsd:decimal(?amount)>1000000000). }"
+        "sparql": "select ?agency from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency ?agency. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. filter(xsd:decimal(?amount)>1000000000). }"
       },
       "aggregation": true,
       "answers": [
@@ -505,7 +515,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency <https://openspending.org/maldives_proposed_expenditure_2015/Agency/anti-corruption-commission>. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/maldives_proposed_expenditure_2015> { ?obs qb:dataSet ls:maldives_proposed_expenditure_2015. ?obs lso:maldives_proposed_expenditure_2015-Agency <https://openspending.org/maldives_proposed_expenditure_2015/Agency/anti-corruption-commission>. ?obs lso:maldives_proposed_expenditure_2015-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -537,7 +547,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?district from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?district from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -569,7 +579,7 @@
         }
       ],
       "query": {
-        "sparql": " select avg(?sum) as ?sum { select ?district sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } }"
+        "sparql": "select avg(?sum) as ?sum { select ?district sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ministry_of_health> { ?obs qb:dataSet ls:ministry_of_health. ?obs lso:ministry_of_health-District ?district. ?obs lso:ministry_of_health-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2014). } }"
       },
       "aggregation": true,
       "answers": [
@@ -601,7 +611,7 @@
         }
       ],
       "query": {
-        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-expenditure-category \"Supplies & Services\". ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. }"
+        "sparql": "select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-expenditure-category \"Supplies & Services\". ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -633,7 +643,7 @@
         }
       ],
       "query": {
-        "sparql": " select xsd:decimal(?amount) as ?amount from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. } order by desc(xsd:decimal(?amount)) limit 10"
+        "sparql": "select xsd:decimal(?amount) as ?amount from <http://linkedspending.aksw.org/newcastle-city-council-payments-over-500> { ?obs qb:dataSet ls:newcastle-city-council-payments-over-500. ?obs lso:newcastle-city-council-payments-over-500-amount ?amount. } order by desc(xsd:decimal(?amount)) limit 10"
       },
       "aggregation": false,
       "answers": [
@@ -719,7 +729,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-ExpenseArea <https://openspending.org/uk-local-walthamforest/ExpenseArea/environment-regeneration>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-ExpenseArea <https://openspending.org/uk-local-walthamforest/ExpenseArea/environment-regeneration>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -751,7 +761,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-to <https://openspending.org/uk-local-walthamforest/to/15519>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/uk-local-walthamforest> { ?obs qb:dataSet ls:uk-local-walthamforest. ?obs lso:uk-local-walthamforest-to <https://openspending.org/uk-local-walthamforest/to/15519>. ?obs lso:uk-local-walthamforest-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -783,7 +793,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-service-label \"Adult Social Care & Health\". ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-service-label \"Adult Social Care & Health\". ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -815,7 +825,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?narrative) from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-narrative ?narrative. ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 5"
+        "sparql": "select distinct(?narrative) from <http://linkedspending.aksw.org/cheshire_west_and_chester_april_2013> { ?obs qb:dataSet ls:cheshire_west_and_chester_april_2013. ?obs lso:cheshire_west_and_chester_april_2013-narrative ?narrative. ?obs lso:cheshire_west_and_chester_april_2013-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 5"
       },
       "aggregation": true,
       "answers": [
@@ -871,7 +881,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-from <https://openspending.org/city-of-redacre-spending/from/510>. ?obs lso:city-of-redacre-spending-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-from <https://openspending.org/city-of-redacre-spending/from/510>. ?obs lso:city-of-redacre-spending-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -903,7 +913,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?division sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-to ?division. ?obs lso:city-of-redacre-spending-amount ?amount. }"
+        "sparql": "select ?division sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/city-of-redacre-spending> { ?obs qb:dataSet ls:city-of-redacre-spending. ?obs lso:city-of-redacre-spending-to ?division. ?obs lso:city-of-redacre-spending-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -1500,7 +1510,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -1532,7 +1542,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-DetailedExpenses \"CRIMINAL RECORDS BUREAU\". ?obs lso:wandsworthspending_2013-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?amount from <http://linkedspending.aksw.org/wandsworthspending_2013> { ?obs qb:dataSet ls:wandsworthspending_2013. ?obs lso:wandsworthspending_2013-DetailedExpenses \"CRIMINAL RECORDS BUREAU\". ?obs lso:wandsworthspending_2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -1564,7 +1574,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?et from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-expensestype ?et. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 10"
+        "sparql": "select ?et from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-expensestype ?et. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 10"
       },
       "aggregation": true,
       "answers": [
@@ -1650,7 +1660,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?area from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-servicearea ?area. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?area from <http://linkedspending.aksw.org/iw-council-spending-2012-13-test> { ?obs qb:dataSet ls:iw-council-spending-2012-13-test. ?obs lso:iw-council-spending-2012-13-test-servicearea ?area. ?obs lso:iw-council-spending-2012-13-test-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -1682,7 +1692,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?dep { select ?dep sum(xsd:decimal(?amount5)) as ?sum5 sum(xsd:decimal(?amount6)) as ?sum6 from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-to ?dep. { ?obs lso:city-of-springfield-budget-amount ?amount5. ?obs lso:refYear ?year5. filter(year(?year5)=2005). } union { ?obs lso:city-of-springfield-budget-amount ?amount6. ?obs lso:refYear ?year6. filter(year(?year6)=2006). } } } group by ?dep having(?sum5>?sum6)"
+        "sparql": "select ?dep { select ?dep sum(xsd:decimal(?amount5)) as ?sum5 sum(xsd:decimal(?amount6)) as ?sum6 from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-to ?dep. { ?obs lso:city-of-springfield-budget-amount ?amount5. ?obs lso:refYear ?year5. filter(year(?year5)=2005). } union { ?obs lso:city-of-springfield-budget-amount ?amount6. ?obs lso:refYear ?year6. filter(year(?year6)=2006). } } } group by ?dep having(?sum5>?sum6)"
       },
       "aggregation": true,
       "answers": [
@@ -1738,7 +1748,7 @@
         }
       ],
       "query": {
-        "sparql": " select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-deptgroup <https://openspending.org/city-of-springfield-budget/deptgroup/public-works>. ?obs lso:city-of-springfield-budget-amount ?amount. }"
+        "sparql": "select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/city-of-springfield-budget> { ?obs qb:dataSet ls:city-of-springfield-budget. ?obs lso:city-of-springfield-budget-deptgroup <https://openspending.org/city-of-springfield-budget/deptgroup/public-works>. ?obs lso:city-of-springfield-budget-amount ?amount. }"
       },
       "aggregation": false,
       "answers": [
@@ -1770,7 +1780,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?sum_fullerton/?sum_all { select sum(xsd:decimal(?fullerton)) as ?sum_fullerton sum(xsd:decimal(?all)) as ?sum_all from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. { ?obs lso:pscs_ca_cities-gov-full-name \"Fullerton\". ?obs lso:pscs_ca_cities-amount ?fullerton. } union { ?obs lso:pscs_ca_cities-amount ?all. } } }"
+        "sparql": "select ?sum_fullerton/?sum_all { select sum(xsd:decimal(?fullerton)) as ?sum_fullerton sum(xsd:decimal(?all)) as ?sum_all from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. { ?obs lso:pscs_ca_cities-gov-full-name \"Fullerton\". ?obs lso:pscs_ca_cities-amount ?fullerton. } union { ?obs lso:pscs_ca_cities-amount ?all. } } }"
       },
       "aggregation": true,
       "answers": [
@@ -1802,7 +1812,7 @@
         }
       ],
       "query": {
-        "sparql": " select count(distinct(?category)) from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. ?obs lso:pscs_ca_cities-caption ?category. }"
+        "sparql": "select count(distinct(?category)) from <http://linkedspending.aksw.org/pscs_ca_cities> { ?obs qb:dataSet ls:pscs_ca_cities. ?obs lso:pscs_ca_cities-caption ?category. }"
       },
       "aggregation": true,
       "answers": [
@@ -1834,7 +1844,7 @@
         }
       ],
       "query": {
-        "sparql": " select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011). } "
+        "sparql": "select max(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011). } "
       },
       "aggregation": true,
       "answers": [
@@ -1866,7 +1876,7 @@
         }
       ],
       "query": {
-        "sparql": " select avg(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:dc-city-salaries-position \"Engineering Technician\". }"
+        "sparql": "select avg(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/dc-city-salaries> { ?obs qb:dataSet ls:dc-city-salaries. ?obs lso:dc-city-salaries-amount ?amount. ?obs lso:dc-city-salaries-position \"Engineering Technician\". }"
       },
       "aggregation": false,
       "answers": [
@@ -1898,7 +1908,7 @@
         }
       ],
       "query": {
-        "sparql": " select xsd:decimal(?amount) from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-amount ?amount. ?obs lso:big-lottery-fund-grants-to <https://openspending.org/big-lottery-fund-grants/to/king-george-s-field>. } "
+        "sparql": "select xsd:decimal(?amount) from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-amount ?amount. ?obs lso:big-lottery-fund-grants-to <https://openspending.org/big-lottery-fund-grants/to/king-george-s-field>. } "
       },
       "aggregation": false,
       "answers": [
@@ -1930,7 +1940,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?programme from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-programme-name ?programme. ?obs lso:big-lottery-fund-grants-amount ?amount. } group by ?programme having (sum(xsd:decimal(?amount))>1000000&&sum(xsd:decimal(?amount))<10000000)"
+        "sparql": "select ?programme from <http://linkedspending.aksw.org/big-lottery-fund-grants> { ?obs qb:dataSet ls:big-lottery-fund-grants. ?obs lso:big-lottery-fund-grants-programme-name ?programme. ?obs lso:big-lottery-fund-grants-amount ?amount. } group by ?programme having (sum(xsd:decimal(?amount))>1000000&&sum(xsd:decimal(?amount))<10000000)"
       },
       "aggregation": true,
       "answers": [
@@ -2034,7 +2044,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?area from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-service-area ?area. ?obs lso:uk-local-gloucestershirev1-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>1000000)"
+        "sparql": "select ?area from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-service-area ?area. ?obs lso:uk-local-gloucestershirev1-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>1000000)"
       },
       "aggregation": true,
       "answers": [
@@ -2120,7 +2130,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-to <https://openspending.org/uk-local-gloucestershirev1/to/gloucestershire-police-authority>. ?obs lso:uk-local-gloucestershirev1-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/uk-local-gloucestershirev1> { ?obs qb:dataSet ls:uk-local-gloucestershirev1. ?obs lso:uk-local-gloucestershirev1-to <https://openspending.org/uk-local-gloucestershirev1/to/gloucestershire-police-authority>. ?obs lso:uk-local-gloucestershirev1-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2152,7 +2162,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-region <https://openspending.org/ukgov-finances-cra/region/scotland>. ?obs lso:ukgov-finances-cra-cofog2 <https://openspending.org/ukgov-finances-cra/cofog2/09.6>. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept022>. ?obs lso:ukgov-finances-cra-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-region <https://openspending.org/ukgov-finances-cra/region/scotland>. ?obs lso:ukgov-finances-cra-cofog2 <https://openspending.org/ukgov-finances-cra/cofog2/09.6>. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept022>. ?obs lso:ukgov-finances-cra-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2184,7 +2194,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?function) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-hmt1 ?function. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept047>. }"
+        "sparql": "select distinct(?function) from <http://linkedspending.aksw.org/ukgov-finances-cra> { ?obs qb:dataSet ls:ukgov-finances-cra. ?obs lso:ukgov-finances-cra-hmt1 ?function. ?obs lso:ukgov-finances-cra-from <https://openspending.org/ukgov-finances-cra/from/Dept022>. }"
       },
       "aggregation": false,
       "answers": [
@@ -2196,6 +2206,18 @@
           },
           "results": {
             "bindings": [
+              {
+                "function": {
+                  "type": "uri",
+                  "value": "https://openspending.org/ukgov-finances-cra/hmt1/9-education"
+                }
+              },
+              {
+                "function": {
+                  "type": "uri",
+                  "value": "https://openspending.org/ukgov-finances-cra/hmt1/7-health"
+                }
+              },
               {
                 "function": {
                   "type": "uri",
@@ -2213,6 +2235,12 @@
                   "type": "uri",
                   "value": "https://openspending.org/ukgov-finances-cra/hmt1/10-social-protection"
                 }
+              },
+              {
+                "function": {
+                  "type": "uri",
+                  "value": "https://openspending.org/ukgov-finances-cra/hmt1/4-economic-affairs-of-which%3A-employment-policies"
+                }
               }
             ]
           }
@@ -2228,7 +2256,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?status) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Unique <https://openspending.org/iati_cordaid_af/Unique/195>. ?obs lso:iati_cordaid_af-Activity_Status ?status. }"
+        "sparql": "select distinct(?status) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Unique <https://openspending.org/iati_cordaid_af/Unique/195>. ?obs lso:iati_cordaid_af-Activity_Status ?status. }"
       },
       "aggregation": false,
       "answers": [
@@ -2260,7 +2288,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Sector <https://openspending.org/iati_cordaid_af/Sector/12240>. ?obs lso:iati_cordaid_af-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/iati_cordaid_af> { ?obs qb:dataSet ls:iati_cordaid_af. ?obs lso:iati_cordaid_af-Sector <https://openspending.org/iati_cordaid_af/Sector/12240>. ?obs lso:iati_cordaid_af-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2288,11 +2316,11 @@
       "question": [
         {
           "language": "en",
-          "string": "What was the total Outlook on Technical Services in City of Toronto in 2009?"
+          "string": "What was the total budget on Technical Services in City of Toronto in 2009?"
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division \"Technical Services\". ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
+        "sparql": "select sum(xsd:decimal(?amount)) from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division \"Technical Services\". ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
       },
       "aggregation": true,
       "answers": [
@@ -2324,7 +2352,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?division from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division ?division. ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010). } group by ?division having (sum(xsd:decimal(?amount)) > 10000000)"
+        "sparql": "select ?division from <http://linkedspending.aksw.org/ca-local-toronto> { ?obs qb:dataSet ls:ca-local-toronto. ?obs lso:ca-local-toronto-division ?division. ?obs lso:ca-local-toronto-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010). } group by ?division having (sum(xsd:decimal(?amount)) > 10000000)"
       },
       "aggregation": true,
       "answers": [
@@ -2440,7 +2468,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/15437>. ?obs lso:ie_charity_exp-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/15437>. ?obs lso:ie_charity_exp-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2472,7 +2500,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/7556>. ?obs lso:ie_charity_exp-Level3 <https://openspending.org/ie_charity_exp/Level3/b1-5100>. ?obs lso:ie_charity_exp-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ie_charity_exp> { ?obs qb:dataSet ls:ie_charity_exp. ?obs lso:ie_charity_exp-Charity <https://openspending.org/ie_charity_exp/Charity/7556>. ?obs lso:ie_charity_exp-Level3 <https://openspending.org/ie_charity_exp/Level3/b1-5100>. ?obs lso:ie_charity_exp-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2504,7 +2532,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Heading <https://openspending.org/frontex/Heading/a-2>. ?obs lso:frontex-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Heading <https://openspending.org/frontex/Heading/a-2>. ?obs lso:frontex-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2536,7 +2564,7 @@
         }
       ],
       "query": {
-        "sparql": " select avg(?sum) { select ?chapter sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Chapter ?chapter. ?obs lso:frontex-amount ?amount. } }"
+        "sparql": "select avg(?sum) { select ?chapter sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/frontex> { ?obs qb:dataSet ls:frontex. ?obs lso:frontex-Chapter ?chapter. ?obs lso:frontex-amount ?amount. } }"
       },
       "aggregation": true,
       "answers": [
@@ -2568,7 +2596,7 @@
         }
       ],
       "query": {
-        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-Division <https://openspending.org/dcc_exp_budget2013/Division/a>. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
+        "sparql": "select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-Division <https://openspending.org/dcc_exp_budget2013/Division/a>. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2600,7 +2628,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dcc_exp_budget2013> { ?obs qb:dataSet ls:dcc_exp_budget2013. ?obs lso:dcc_exp_budget2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2632,7 +2660,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/austria>. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-aid \"Guarantees (1)\". ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/austria>. }"  },
       },
       "aggregation": true,
       "answers": [
@@ -2647,7 +2675,7 @@
               {
                 "sum": {
                   "type": "literal",
-                  "value": "27.11"
+                  "value": "19.33"
                 }
               }
             ]
@@ -2664,7 +2692,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/belgium>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/financial_aid> { ?obs qb:dataSet ls:financial_aid. ?obs lso:financial_aid-amount ?amount. ?obs lso:financial_aid-country <https://openspending.org/financial_aid/country/belgium>. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
       },
       "aggregation": true,
       "answers": [
@@ -2696,7 +2724,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level1 <https://openspending.org/concern2012/Level1/expended>. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/charitable-activities>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/bangladesh>. ?obs lso:concern2012-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level1 <https://openspending.org/concern2012/Level1/expended>. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/charitable-activities>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/bangladesh>. ?obs lso:concern2012-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2728,7 +2756,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/costs-of-generating-funds>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/public-appeals-events>. ?obs lso:concern2012-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/concern2012> { ?obs qb:dataSet ls:concern2012. ?obs lso:concern2012-Level3 <https://openspending.org/concern2012/Level3/costs-of-generating-funds>. ?obs lso:concern2012-Level4 <https://openspending.org/concern2012/Level4/public-appeals-events>. ?obs lso:concern2012-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2760,7 +2788,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-from <https://openspending.org/dc-vendors-contractors/from/department-of-health>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/vwr-international-llc>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-from <https://openspending.org/dc-vendors-contractors/from/department-of-health>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/vwr-international-llc>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2792,7 +2820,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-objecttitle <https://openspending.org/dc-vendors-contractors/objecttitle/educational>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/the-riverside-publishing>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/dc-vendors-contractors> { ?obs qb:dataSet ls:dc-vendors-contractors. ?obs lso:dc-vendors-contractors-objecttitle <https://openspending.org/dc-vendors-contractors/objecttitle/educational>. ?obs lso:dc-vendors-contractors-to <https://openspending.org/dc-vendors-contractors/to/the-riverside-publishing>. ?obs lso:dc-vendors-contractors-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2824,7 +2852,7 @@
         }
       ],
       "query": {
-        "sparql": " select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-head_account <https://openspending.org/cameroon_visualisation/head_account/610-xxx>. ?obs lso:cameroon_visualisation-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2008). }"
+        "sparql": "select max(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-head_account <https://openspending.org/cameroon_visualisation/head_account/610-xxx>. ?obs lso:cameroon_visualisation-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2008). }"
       },
       "aggregation": true,
       "answers": [
@@ -2856,7 +2884,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-revenue_expenditure \"EXPENDITURE\". ?obs lso:cameroon_visualisation-council_name <https://openspending.org/cameroon_visualisation/council_name/tignere-council>. ?obs lso:cameroon_visualisation-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cameroon_visualisation> { ?obs qb:dataSet ls:cameroon_visualisation. ?obs lso:cameroon_visualisation-revenue_expenditure \"EXPENDITURE\". ?obs lso:cameroon_visualisation-council_name <https://openspending.org/cameroon_visualisation/council_name/tignere-council>. ?obs lso:cameroon_visualisation-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -2888,7 +2916,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-region <https://openspending.org/nominettrust_funding/region/london>. ?obs lso:refDate ?date. }"
+        "sparql": "select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-region <https://openspending.org/nominettrust_funding/region/london>. ?obs lso:refDate ?date. }"
       },
       "aggregation": false,
       "answers": [
@@ -3040,7 +3068,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-programme <https://openspending.org/nominettrust_funding/programme/web-in-society>. ?obs lso:refDate ?date. }"
+        "sparql": "select distinct(?date) from <http://linkedspending.aksw.org/nominettrust_funding> { ?obs qb:dataSet ls:nominettrust_funding. ?obs lso:nominettrust_funding-programme <https://openspending.org/nominettrust_funding/programme/web-in-society>. ?obs lso:refDate ?date. }"
       },
       "aggregation": false,
       "answers": [
@@ -3144,7 +3172,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-cofog1 <https://openspending.org/618ac3ec98384f44a9ef142356ce476d/cofog1/01>. ?obs lso:618ac3ec98384f44a9ef142356ce476d-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-cofog1 <https://openspending.org/618ac3ec98384f44a9ef142356ce476d/cofog1/01>. ?obs lso:618ac3ec98384f44a9ef142356ce476d-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2009). }"
       },
       "aggregation": true,
       "answers": [
@@ -3176,7 +3204,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?type) from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-type ?type. ?obs lso:618ac3ec98384f44a9ef142356ce476d-economiclevel1 \"Running expenses\". }"
+        "sparql": "select distinct(?type) from <http://linkedspending.aksw.org/618ac3ec98384f44a9ef142356ce476d> { ?obs qb:dataSet ls:618ac3ec98384f44a9ef142356ce476d. ?obs lso:618ac3ec98384f44a9ef142356ce476d-type ?type. ?obs lso:618ac3ec98384f44a9ef142356ce476d-economiclevel1 \"Running expenses\". }"
       },
       "aggregation": false,
       "answers": [
@@ -3214,7 +3242,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-to <https://openspending.org/propbudg13/to/total-overhead-cost>. ?obs lso:propbudg13-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-to <https://openspending.org/propbudg13/to/total-overhead-cost>. ?obs lso:propbudg13-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3246,7 +3274,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-from <https://openspending.org/propbudg13/from/ministries-and-department-agencies>. ?obs lso:propbudg13-recipient <https://openspending.org/propbudg13/recipient/ministry-of-petroleum-resources>. ?obs lso:propbudg13-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/propbudg13> { ?obs qb:dataSet ls:propbudg13. ?obs lso:propbudg13-from <https://openspending.org/propbudg13/from/ministries-and-department-agencies>. ?obs lso:propbudg13-recipient <https://openspending.org/propbudg13/recipient/ministry-of-petroleum-resources>. ?obs lso:propbudg13-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3278,7 +3306,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/gun-hill-basketball-association-inc>. ?obs lso:nyc-council-member-items-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/gun-hill-basketball-association-inc>. ?obs lso:nyc-council-member-items-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3310,7 +3338,7 @@
         }
       ],
       "query": {
-        "sparql": " select count(distinct(year(?year))) as ?years from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-from <https://openspending.org/nyc-council-member-items/from/dickens>. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/american-performing-arts-collaborative-inc>. ?obs lso:refYear ?year. }"
+        "sparql": "select count(distinct(year(?year))) as ?years from <http://linkedspending.aksw.org/nyc-council-member-items> { ?obs qb:dataSet ls:nyc-council-member-items. ?obs lso:nyc-council-member-items-from <https://openspending.org/nyc-council-member-items/from/dickens>. ?obs lso:nyc-council-member-items-to <https://openspending.org/nyc-council-member-items/to/american-performing-arts-collaborative-inc>. ?obs lso:refYear ?year. }"
       },
       "aggregation": true,
       "answers": [
@@ -3342,7 +3370,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-ref2-desc \"Service Support Costs\". ?obs lso:fingal_exp_budget-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-ref2-desc \"Service Support Costs\". ?obs lso:fingal_exp_budget-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
       },
       "aggregation": true,
       "answers": [
@@ -3357,7 +3385,7 @@
               {
                 "sum": {
                   "type": "literal",
-                  "value": "208379400"
+                  "value": "43489300"
                 }
               }
             ]
@@ -3374,7 +3402,7 @@
         }
       ],
       "query": {
-        "sparql": " select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-Service <https://openspending.org/fingal_exp_budget/Service/g04>. ?obs lso:fingal_exp_budget-amount ?amount. }"
+        "sparql": "select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/fingal_exp_budget> { ?obs qb:dataSet ls:fingal_exp_budget. ?obs lso:fingal_exp_budget-Service <https://openspending.org/fingal_exp_budget/Service/g04>. ?obs lso:fingal_exp_budget-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3406,7 +3434,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area <https://openspending.org/cm-nwr-investments/area/mezam>. ?obs lso:cm-nwr-investments-chapter <https://openspending.org/cm-nwr-investments/chapter/15>. ?obs lso:cm-nwr-investments-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area <https://openspending.org/cm-nwr-investments/area/mezam>. ?obs lso:cm-nwr-investments-chapter <https://openspending.org/cm-nwr-investments/chapter/15>. ?obs lso:cm-nwr-investments-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3438,7 +3466,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?area from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area ?area. ?obs lso:cm-nwr-investments-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>5000000000)"
+        "sparql": "select ?area from <http://linkedspending.aksw.org/cm-nwr-investments> { ?obs qb:dataSet ls:cm-nwr-investments. ?obs lso:cm-nwr-investments-area ?area. ?obs lso:cm-nwr-investments-amount ?amount. } group by ?area having (sum(xsd:decimal(?amount))>5000000000)"
       },
       "aggregation": true,
       "answers": [
@@ -3470,7 +3498,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/works-and-transport>. ?obs lso:ug_budget_subcategories-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/works-and-transport>. ?obs lso:ug_budget_subcategories-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3502,7 +3530,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(year(?year)) as ?year from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/education>. ?obs lso:ug_budget_subcategories-amount ?amount. ?obs lso:refYear ?year. }"
+        "sparql": "select distinct(year(?year)) as ?year from <http://linkedspending.aksw.org/ug_budget_subcategories> { ?obs qb:dataSet ls:ug_budget_subcategories. ?obs lso:ug_budget_subcategories-to <https://openspending.org/ug_budget_subcategories/to/education>. ?obs lso:ug_budget_subcategories-amount ?amount. ?obs lso:refYear ?year. }"
       },
       "aggregation": false,
       "answers": [
@@ -3642,7 +3670,7 @@
         }
       ],
       "query": {
-        "sparql": " select count(distinct(?entity)) from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-target <https://openspending.org/faith/target/typhoon-yolanda>. ?obs lso:faith-from ?entity. }"
+        "sparql": "select count(distinct(?entity)) from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-target <https://openspending.org/faith/target/typhoon-yolanda>. ?obs lso:faith-from ?entity. }"
       },
       "aggregation": true,
       "answers": [
@@ -3674,7 +3702,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-conduit <https://openspending.org/faith/conduit/red-cross>. ?obs lso:faith-from <https://openspending.org/faith/from/china>. ?obs lso:faith-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/faith> { ?obs qb:dataSet ls:faith. ?obs lso:faith-conduit <https://openspending.org/faith/conduit/red-cross>. ?obs lso:faith-from <https://openspending.org/faith/from/china>. ?obs lso:faith-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3706,7 +3734,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?result { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/in>. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector ?result. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?result { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/in>. ?obs lso:finland-aid-amount ?amount. ?obs lso:finland-aid-sector ?result. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -3738,7 +3766,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?result) { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/by>. ?obs lso:finland-aid-type-of-aid ?result. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
+        "sparql": "select distinct(?result) { ?obs lso:finland-aid-recipient-country <https://openspending.org/finland-aid/recipient-country/by>. ?obs lso:finland-aid-type-of-aid ?result. ?obs lso:refYear ?year. filter(year(?year)=2011). }"
       },
       "aggregation": true,
       "answers": [
@@ -3782,7 +3810,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-acct-dept \"101-106: Muncipal Court\". ?obs lso:pvd2014proposed-acct-div \"City Courts\". ?obs lso:pvd2014proposed-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-acct-dept \"101-106: Muncipal Court\". ?obs lso:pvd2014proposed-acct-div \"City Courts\". ?obs lso:pvd2014proposed-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3814,7 +3842,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-gl-account \"54625: EDUCATIONAL MATERIALS\". ?obs lso:pvd2014proposed-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/pvd2014proposed> { ?obs qb:dataSet ls:pvd2014proposed. ?obs lso:pvd2014proposed-gl-account \"54625: EDUCATIONAL MATERIALS\". ?obs lso:pvd2014proposed-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -3846,7 +3874,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?date) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Category <https://openspending.org/pbw-ct/Category/upgrading-and-greening-in-ward-49>. ?obs lso:refDate ?date. }"
+        "sparql": "select distinct(?date) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Category <https://openspending.org/pbw-ct/Category/upgrading-and-greening-in-ward-49>. ?obs lso:refDate ?date. }"
       },
       "aggregation": false,
       "answers": [
@@ -3878,7 +3906,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?source) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Department <https://openspending.org/pbw-ct/Department/cape-town-electricity>. ?obs lso:pbw-ct-FundingSource ?source. }"
+        "sparql": "select distinct(?source) from <http://linkedspending.aksw.org/pbw-ct> { ?obs qb:dataSet ls:pbw-ct. ?obs lso:pbw-ct-Department <https://openspending.org/pbw-ct/Department/cape-town-electricity>. ?obs lso:pbw-ct-FundingSource ?source. }"
       },
       "aggregation": false,
       "answers": [
@@ -3928,7 +3956,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?type from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-tech \"CKAN\". ?obs lso:trends_in_civi_tech_open_gov-amount ?amount. ?obs lso:trends_in_civi_tech_open_gov-investor_type ?type. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?type from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-tech \"CKAN\". ?obs lso:trends_in_civi_tech_open_gov-amount ?amount. ?obs lso:trends_in_civi_tech_open_gov-investor_type ?type. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -3960,7 +3988,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?date from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-from <https://openspending.org/trends_in_civi_tech_open_gov/from/pew-charitable-trust>. ?obs lso:refDate ?date. }"
+        "sparql": "select ?date from <http://linkedspending.aksw.org/trends_in_civi_tech_open_gov> { ?obs qb:dataSet ls:trends_in_civi_tech_open_gov. ?obs lso:trends_in_civi_tech_open_gov-from <https://openspending.org/trends_in_civi_tech_open_gov/from/pew-charitable-trust>. ?obs lso:refDate ?date. }"
       },
       "aggregation": false,
       "answers": [
@@ -3998,7 +4026,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economiclevel3 \"Buildings and edifices\". ?obs lso:e27f4ef7601446798cfa733a06cea8d9-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economiclevel3 \"Buildings and edifices\". ?obs lso:e27f4ef7601446798cfa733a06cea8d9-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4030,7 +4058,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?admin) from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economic <https://openspending.org/e27f4ef7601446798cfa733a06cea8d9/economic/4267>. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-from ?admin. }"
+        "sparql": "select distinct(?admin) from <http://linkedspending.aksw.org/e27f4ef7601446798cfa733a06cea8d9> { ?obs qb:dataSet ls:e27f4ef7601446798cfa733a06cea8d9. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-economic <https://openspending.org/e27f4ef7601446798cfa733a06cea8d9/economic/4267>. ?obs lso:e27f4ef7601446798cfa733a06cea8d9-from ?admin. }"
       },
       "aggregation": false,
       "answers": [
@@ -4104,7 +4132,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economic <https://openspending.org/f0bd947d9854445987d6ece304840a3c/economic/4213>. ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economic <https://openspending.org/f0bd947d9854445987d6ece304840a3c/economic/4213>. ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4136,7 +4164,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economiclevel1 \"Running expenses\". ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/f0bd947d9854445987d6ece304840a3c> { ?obs qb:dataSet ls:f0bd947d9854445987d6ece304840a3c. ?obs lso:f0bd947d9854445987d6ece304840a3c-economiclevel1 \"Running expenses\". ?obs lso:f0bd947d9854445987d6ece304840a3c-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4168,7 +4196,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:refDate ?date. filter(strstarts(str(?date), \"2013-01-09\")). }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:refDate ?date. filter(strstarts(str(?date), \"2013-01-09\")). }"
       },
       "aggregation": true,
       "answers": [
@@ -4200,7 +4228,7 @@
         }
       ],
       "query": {
-        "sparql": " select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:scottish-spending-jan13-directorate \"Environment and Forestry\". }"
+        "sparql": "select min(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/scottish-spending-jan13> { ?obs qb:dataSet ls:scottish-spending-jan13. ?obs lso:scottish-spending-jan13-amount ?amount. ?obs lso:scottish-spending-jan13-directorate \"Environment and Forestry\". }"
       },
       "aggregation": true,
       "answers": [
@@ -4232,7 +4260,7 @@
         }
       ],
       "query": {
-        "sparql": " select year(?year) from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select year(?year) from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -4264,7 +4292,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-unit \"Administrative Unit\". ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2011) }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/oakland-adopted-budget-fy-2011-13-expenditures> { ?obs qb:dataSet ls:oakland-adopted-budget-fy-2011-13-expenditures. ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-unit \"Administrative Unit\". ?obs lso:oakland-adopted-budget-fy-2011-13-expenditures-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2012) }"
       },
       "aggregation": true,
       "answers": [
@@ -4279,7 +4307,7 @@
               {
                 "sum": {
                   "type": "literal",
-                  "value": "1136233"
+                  "value": "1168770"
                 }
               }
             ]
@@ -4296,7 +4324,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level0 \"RECURRENT EXPENDITURE\". ?obs lso:allexp13budg-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level0 \"RECURRENT EXPENDITURE\". ?obs lso:allexp13budg-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4328,7 +4356,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level1 \"GENERAL SERVICES\". ?obs lso:allexp13budg-level2 \"Office of the President\". ?obs lso:allexp13budg-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/allexp13budg> { ?obs qb:dataSet ls:allexp13budg. ?obs lso:allexp13budg-level1 \"GENERAL SERVICES\". ?obs lso:allexp13budg-level2 \"Office of the President\". ?obs lso:allexp13budg-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4360,7 +4388,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?client sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-client ?client. ?obs lso:lobbying_dataset_qy-amount ?amount. } group by ?client having sum(xsd:decimal(?amount))>50000000"
+        "sparql": "select ?client sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-client ?client. ?obs lso:lobbying_dataset_qy-amount ?amount. } group by ?client having sum(xsd:decimal(?amount))>50000000"
       },
       "aggregation": true,
       "answers": [
@@ -4427,7 +4455,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?industry from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-industry ?industry. ?obs lso:lobbying_dataset_qy-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
+        "sparql": "select ?industry from <http://linkedspending.aksw.org/lobbying_dataset_qy> { ?obs qb:dataSet ls:lobbying_dataset_qy. ?obs lso:lobbying_dataset_qy-industry ?industry. ?obs lso:lobbying_dataset_qy-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1"
       },
       "aggregation": true,
       "answers": [
@@ -4459,7 +4487,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-amount ?amount. ?obs lso:mcc_spend-supplier-name \"SLC Paragon\". }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-amount ?amount. ?obs lso:mcc_spend-supplier-name \"SLC Paragon\". }"
       },
       "aggregation": true,
       "answers": [
@@ -4491,7 +4519,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?area) from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-service-area ?area. }"
+        "sparql": "select distinct(?area) from <http://linkedspending.aksw.org/mcc_spend> { ?obs qb:dataSet ls:mcc_spend. ?obs lso:mcc_spend-service-area ?area. }"
       },
       "aggregation": false,
       "answers": [
@@ -4673,7 +4701,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/09>. ?obs lso:alb_planned_budget_2013-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/09>. ?obs lso:alb_planned_budget_2013-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4705,7 +4733,7 @@
         }
       ],
       "query": {
-        "sparql": " select distinct(?id) from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/06>. ?obs lso:alb_planned_budget_2013-UniqueID ?id. }"
+        "sparql": "select distinct(?id) from <http://linkedspending.aksw.org/alb_planned_budget_2013> { ?obs qb:dataSet ls:alb_planned_budget_2013. ?obs lso:alb_planned_budget_2013-cofog1 <https://openspending.org/alb_planned_budget_2013/cofog1/06>. ?obs lso:alb_planned_budget_2013-UniqueID ?id. }"
       },
       "aggregation": false,
       "answers": [
@@ -4737,7 +4765,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration <https://openspending.org/ke-county-exp/administration/thika>. ?obs lso:ke-county-exp-county <https://openspending.org/ke-county-exp/county/kiambu>. ?obs lso:ke-county-exp-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration <https://openspending.org/ke-county-exp/administration/thika>. ?obs lso:ke-county-exp-county <https://openspending.org/ke-county-exp/county/kiambu>. ?obs lso:ke-county-exp-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
@@ -4769,7 +4797,7 @@
         }
       ],
       "query": {
-        "sparql": " select ?admin from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration ?admin. ?obs lso:ke-county-exp-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1 "
+        "sparql": "select ?admin from <http://linkedspending.aksw.org/ke-county-exp> { ?obs qb:dataSet ls:ke-county-exp. ?obs lso:ke-county-exp-administration ?admin. ?obs lso:ke-county-exp-amount ?amount. } order by desc(sum(xsd:decimal(?amount))) limit 1 "
       },
       "aggregation": true,
       "answers": [
@@ -4801,7 +4829,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/public-order-and-safety>. ?obs lso:refYear ?year. filter(year(?year)=2007). ?obs lso:al_planned_budget_2007to2013-amount ?amount. } "
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/public-order-and-safety>. ?obs lso:refYear ?year. filter(year(?year)=2007). ?obs lso:al_planned_budget_2007to2013-amount ?amount. } "
       },
       "aggregation": true,
       "answers": [
@@ -4833,7 +4861,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/health>. ?obs lso:al_planned_budget_2007to2013-amount ?amount. ?obs lso:refYear ?year. filter((year(?year)>=2007)&&year(?year)<=2010) } "
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/al_planned_budget_2007to2013> { ?obs qb:dataSet ls:al_planned_budget_2007to2013. ?obs lso:al_planned_budget_2007to2013-cofog1 <https://openspending.org/al_planned_budget_2007to2013/cofog1/health>. ?obs lso:al_planned_budget_2007to2013-amount ?amount. ?obs lso:refYear ?year. filter((year(?year)>=2007)&&year(?year)<=2010) } "
       },
       "aggregation": true,
       "answers": [
@@ -4865,7 +4893,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/kwara>. ?obs lso:external-debts-amount ?amount. } "
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/kwara>. ?obs lso:external-debts-amount ?amount. } "
       },
       "aggregation": true,
       "answers": [
@@ -4897,7 +4925,7 @@
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/rivers>. ?obs lso:external-debts-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010) } "
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/external-debts> { ?obs qb:dataSet ls:external-debts. ?obs lso:external-debts-to <https://openspending.org/external-debts/to/rivers>. ?obs lso:external-debts-amount ?amount. ?obs lso:refYear ?year. filter(year(?year)=2010) } "
       },
       "aggregation": true,
       "answers": [
@@ -4929,7 +4957,7 @@
         }
       ],
       "query": {
-        "sparql": " select count(distinct(?admin)) from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economic <https://openspending.org/ddc94682cc95482a8deefc60596686fc/economic/4823>. ?obs lso:ddc94682cc95482a8deefc60596686fc-from ?admin. } "
+        "sparql": "select count(distinct(?admin)) from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economic <https://openspending.org/ddc94682cc95482a8deefc60596686fc/economic/4823>. ?obs lso:ddc94682cc95482a8deefc60596686fc-from ?admin. } "
       },
       "aggregation": true,
       "answers": [
@@ -4957,11 +4985,11 @@
       "question": [
         {
           "language": "en",
-          "string": "How much total running expenses under budgetary classification did the Armenian approved budget of 2010 have?"
+          "string": "How much total running expenses under budgetary classification did the Armenian approved budget of 2010 have for personnel?"
         }
       ],
       "query": {
-        "sparql": " select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economiclevel1 \"Running expenses\". ?obs lso:ddc94682cc95482a8deefc60596686fc-type \"personnel\". ?obs lso:ddc94682cc95482a8deefc60596686fc-amount ?amount. }"
+        "sparql": "select sum(xsd:decimal(?amount)) as ?sum from <http://linkedspending.aksw.org/ddc94682cc95482a8deefc60596686fc> { ?obs qb:dataSet ls:ddc94682cc95482a8deefc60596686fc. ?obs lso:ddc94682cc95482a8deefc60596686fc-economiclevel1 \"Running expenses\". ?obs lso:ddc94682cc95482a8deefc60596686fc-type \"personnel\". ?obs lso:ddc94682cc95482a8deefc60596686fc-amount ?amount. }"
       },
       "aggregation": true,
       "answers": [
