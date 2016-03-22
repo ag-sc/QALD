@@ -85,7 +85,7 @@ if ($err != 1)
 	$timestamp = mktime(time());	
 	for ($timestamp; (strcmp($no_name, "true") == 0); $timestamp++)
 	{
-		$server_target = "upload/" . $file_name[0] . "_" . $timestamp . "." . $file_name[1];
+		$server_target = "upload/" . $system . "_" . $file_name[0] . "_" . $timestamp . "." . $file_name[1];
                 file_put_contents('statistics.txt',">>>> " . $server_target,FILE_APPEND);
 		if (!file_exists($server_target))
 		{
