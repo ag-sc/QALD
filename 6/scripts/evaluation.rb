@@ -139,12 +139,12 @@ def compute_results(results,answers_gold)
 
     number_of_processed_questions = (results.select { |_,comp| comp[:processed] }).length
 
-    micro_precision1 = sum_correct.to_f / sum_total_user.to_f
-    micro_recall1    = sum_correct.to_f / sum_total_gold_proc.to_f
+    micro_precision1 = if sum_total_user == 0 then 0 else sum_correct.to_f / sum_total_user.to_f
+    micro_recall1    = if sum_total_gold_proc == 0 then 0 else sum_correct.to_f / sum_total_gold_proc.to_f
 
     measures[:processed][:micro] = { :precision => micro_precision1,
                                      :recall    => micro_recall1,
-                                     :f1        => (2 * micro_precision1 * micro_recall1) / (micro_precision1 + micro_recall1) }
+                                     :f1        => if micro_precision1 == 0 and micro_recall1 == 0 then 0 else (2 * micro_precision1 * micro_recall1) / (micro_precision1 + micro_recall1) }
 
     measures[:processed][:macro] = { :precision => sum_precision.to_f / number_of_processed_questions.to_f,
                                      :recall    => sum_recall.to_f / number_of_processed_questions.to_f,
@@ -156,12 +156,12 @@ def compute_results(results,answers_gold)
 
     total_number_of_questions = answers_gold.keys.length
 
-    micro_precision2 = sum_correct.to_f / sum_total_user.to_f
-    micro_recall2    = sum_correct.to_f / sum_total_gold_all.to_f
+    micro_precision2 = if sum_total_user == 0 then 0 else sum_correct.to_f / sum_total_user.to_f
+    micro_recall2    = if sum_total_gold_all == 0 then 0 else sum_correct.to_f / sum_total_gold_all.to_f
 
     measures[:all][:micro] = { :precision => micro_precision2,
                                :recall    => micro_recall2,
-                               :f1        => (2 * micro_precision2 * micro_recall2) / (micro_precision2 + micro_recall2) }
+                               :f1        => if micro_precision2 == 0 and micro_recall2 == 0 then 0 else (2 * micro_precision2 * micro_recall2) / (micro_precision2 + micro_recall2) }
 
     # Macro
 
