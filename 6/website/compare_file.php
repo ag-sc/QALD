@@ -11,14 +11,11 @@ $system = addslashes($_POST["system_name"]);
 $configuration = addslashes($_POST["configuration"]);
 $email = addslashes($_POST["email"]);
 $team = addslashes($_POST["team"]);
+$affiliation = addslashes($_POST["affiliation"]);
 $type = $_POST["evaluation"];
 $err = 0;
 $no_name = "true";
 $method = 0;
-
-// save information
-$line = $system . " ( " . $configuration . " ) FROM " . $team . " (" . $email . "): " . $file_name_in . "\n";
-file_put_contents('statistics.txt',$line,FILE_APPEND);
 
 // check file
 if ($file_name_in !== "") {
@@ -61,7 +58,7 @@ if (strcmp($type,"test") == 0)
   // check team name
   if (strcmp($team, "") == 0)
   {
-	echo "Error: Please provide a team name or affiliation.<br />";
+	echo "Error: Please provide a developer or team name.<br />";
 	exit();
   } 
   // check email
@@ -69,7 +66,13 @@ if (strcmp($type,"test") == 0)
   {
 	echo "Error: Please provide an email address.<br />";
 	exit();
-  }  
+  } 
+  // check affiliation
+  if (strcmp($affiliation, "") == 0)
+  {
+	echo "Error: Please provide an affiliation.<br />";
+	exit();
+  }   
 }
 
 // create default configuration name if none exists
@@ -86,7 +89,7 @@ if ($err != 1)
 	for ($timestamp; (strcmp($no_name, "true") == 0); $timestamp++)
 	{
 		$server_target = "upload/" . $system . "_" . $file_name[0] . "_" . $timestamp . "." . $file_name[1];
-                file_put_contents('statistics.txt',">>>> " . $server_target,FILE_APPEND);
+                file_put_contents('statistics.txt',"     " . $server_target,FILE_APPEND);
 		if (!file_exists($server_target))
 		{
 			$no_name = "false";
@@ -103,6 +106,12 @@ if ($err != 1)
 		}
 	}
 }
+
+
+// save information
+$line = PHP_EOL . $system . " ( " . $configuration . " )" . PHP_EOL . $team . " FROM " . $affiliation . " (" . $email . "):" . PHP_EOL ;
+file_put_contents('statistics.txt',$line,FILE_APPEND);
+
 
 // compare file
 if ($err != 1)

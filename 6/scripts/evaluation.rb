@@ -140,17 +140,17 @@ def compute_results(results,answers_gold)
     micro_recall1    = if sum_total_gold_proc == 0 then 0 else sum_correct.to_f / sum_total_gold_proc.to_f end
     micro_f1         = if micro_precision1 == 0 and micro_recall1 == 0 then 0 else (2 * micro_precision1 * micro_recall1) / (micro_precision1 + micro_recall1) end
 
-    measures[:processed][:micro] = { :precision => micro_precision1.round(2),
-                                     :recall    => micro_recall1.round(2),
-                                     :f1        => micro_f1.round(2) }
+    measures[:processed][:micro] = { :precision => micro_precision1,
+                                     :recall    => micro_recall1,
+                                     :f1        => micro_f1 }
 
     macro_precision1 = if number_of_processed_questions == 0 then 0 else sum_precision.to_f / number_of_processed_questions.to_f end
     macro_recall1    = if number_of_processed_questions == 0 then 0 else sum_recall.to_f / number_of_processed_questions.to_f end
     macro_f1         = if number_of_processed_questions == 0 then 0 else sum_f1.to_f / number_of_processed_questions.to_f end
 
-    measures[:processed][:macro] = { :precision => macro_precision1.round(2),
-                                     :recall    => macro_recall1.round(2),
-                                     :f1        => macro_f1.round(2) }
+    measures[:processed][:macro] = { :precision => macro_precision1,
+                                     :recall    => macro_recall1,
+                                     :f1        => macro_f1 }
 
     ## Measures on all questions
 
@@ -162,18 +162,18 @@ def compute_results(results,answers_gold)
     micro_recall2    = if sum_total_gold_all == 0 then 0 else sum_correct.to_f / sum_total_gold_all.to_f end
     micro_f2         = if micro_precision2 == 0 and micro_recall2 == 0 then 0 else (2 * micro_precision2 * micro_recall2) / (micro_precision2 + micro_recall2) end
 
-    measures[:all][:micro] = { :precision => micro_precision2.round(2),
-                               :recall    => micro_recall2.round(2),
-                               :f1        => micro_f2.round(2) }
+    measures[:all][:micro] = { :precision => micro_precision2,
+                               :recall    => micro_recall2,
+                               :f1        => micro_f2 }
 
     # Macro
     macro_precision2 = if total_number_of_questions == 0 then 0 else sum_precision.to_f / total_number_of_questions.to_f end
     macro_recall2    = if total_number_of_questions == 0 then 0 else sum_recall.to_f / total_number_of_questions.to_f end
     macro_f2         = if total_number_of_questions == 0 then 0 else sum_f1.to_f / total_number_of_questions.to_f end
 
-    measures[:all][:macro] = { :precision => macro_precision2.round(2),
-                               :recall    => macro_recall2.round(2),
-                               :f1        => macro_f2.round(2) }
+    measures[:all][:macro] = { :precision => macro_precision2,
+                               :recall    => macro_recall2,
+                               :f1        => macro_f2 }
 
     return measures
 end
