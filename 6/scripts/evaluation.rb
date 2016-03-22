@@ -25,15 +25,13 @@ def read_answers(file)
       answers = []
       if question.key? "answers"
          question["answers"].each do |answer|
-           bs = Multiset.new
            if answer.key? "results" and answer["results"].key? "bindings"
               answer["results"]["bindings"].each do |bind|
                 b = Multiset.new
                 bind.each { |_,value| b << normalize(value["value"]) }
-                bs << b
+                answers << b
               end
-              answers << bs
-           end
+            end
          end
       end
 
@@ -116,7 +114,7 @@ def compute_results(results,answers_gold)
            recall = comp[:correct].to_f / comp[:total_gold].to_f
            f1 = if precision == 0 and recall == 0 then 0 else (2 * precision * recall) / (precision + recall) end
         end
-      else 
+      else
         precision = 0
 	recall    = 0
 	f1        = 0
@@ -140,17 +138,17 @@ def compute_results(results,answers_gold)
 
     micro_precision1 = if sum_total_user == 0 then 0 else sum_correct.to_f / sum_total_user.to_f end
     micro_recall1    = if sum_total_gold_proc == 0 then 0 else sum_correct.to_f / sum_total_gold_proc.to_f end
-    micro_f1         = if micro_precision1 == 0 and micro_recall1 == 0 then 0 else (2 * micro_precision1 * micro_recall1) / (micro_precision1 + micro_recall1) end 
+    micro_f1         = if micro_precision1 == 0 and micro_recall1 == 0 then 0 else (2 * micro_precision1 * micro_recall1) / (micro_precision1 + micro_recall1) end
 
     measures[:processed][:micro] = { :precision => micro_precision1.round(2),
                                      :recall    => micro_recall1.round(2),
                                      :f1        => micro_f1.round(2) }
 
-    macro_precision1 = if number_of_processed_questions == 0 then 0 else sum_precision.to_f / number_of_processed_questions.to_f end 
-    macro_recall1    = if number_of_processed_questions == 0 then 0 else sum_recall.to_f / number_of_processed_questions.to_f end 
-    macro_f1         = if number_of_processed_questions == 0 then 0 else sum_f1.to_f / number_of_processed_questions.to_f end 
+    macro_precision1 = if number_of_processed_questions == 0 then 0 else sum_precision.to_f / number_of_processed_questions.to_f end
+    macro_recall1    = if number_of_processed_questions == 0 then 0 else sum_recall.to_f / number_of_processed_questions.to_f end
+    macro_f1         = if number_of_processed_questions == 0 then 0 else sum_f1.to_f / number_of_processed_questions.to_f end
 
-    measures[:processed][:macro] = { :precision => macro_precision1.round(2), 
+    measures[:processed][:macro] = { :precision => macro_precision1.round(2),
                                      :recall    => macro_recall1.round(2),
                                      :f1        => macro_f1.round(2) }
 
@@ -169,9 +167,9 @@ def compute_results(results,answers_gold)
                                :f1        => micro_f2.round(2) }
 
     # Macro
-    macro_precision2 = if total_number_of_questions == 0 then 0 else sum_precision.to_f / total_number_of_questions.to_f end 
+    macro_precision2 = if total_number_of_questions == 0 then 0 else sum_precision.to_f / total_number_of_questions.to_f end
     macro_recall2    = if total_number_of_questions == 0 then 0 else sum_recall.to_f / total_number_of_questions.to_f end
-    macro_f2         = if total_number_of_questions == 0 then 0 else sum_f1.to_f / total_number_of_questions.to_f end 
+    macro_f2         = if total_number_of_questions == 0 then 0 else sum_f1.to_f / total_number_of_questions.to_f end
 
     measures[:all][:macro] = { :precision => macro_precision2.round(2),
                                :recall    => macro_recall2.round(2),
@@ -186,7 +184,7 @@ end
 dataset, answers_user = read_answers(input_user)
 _,       answers_gold = read_answers("../data/"+dataset+".json")
 
-if answers_user.nil? 
+if answers_user.nil?
    html = { :error => "Error when reading input file: " + input_user }
 else
 
@@ -197,7 +195,7 @@ else
                                                :config  => config,
                                                :time    => Time.now,
                                                :results => results })
-end 
+end
 
 file = input_user + ".html"
 File.write(file,html)
