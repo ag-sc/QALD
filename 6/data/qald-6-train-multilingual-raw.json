@@ -3795,7 +3795,7 @@
     },
     {
       "id": "164",
-      "answertype": "list",
+      "answertype": "resource",
       "aggregation": "false",
       "onlydbo": "true",
       "hybrid": "false",
@@ -11743,7 +11743,7 @@
     },
     {
       "id": "246",
-      "answertype": "uri",
+      "answertype": "resource",
       "aggregation": "false",
       "onlydbo": "true",
       "hybrid": "false",
