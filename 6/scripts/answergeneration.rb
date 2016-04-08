@@ -2,8 +2,8 @@ require 'sparql/client'
 require 'json'
 
 
-endpoint = SPARQL::Client.new("http://cubeqa.aksw.org/sparql")
-#endpoint = SPARQL::Client.new("http://dbpedia.org/sparql/")
+#endpoint = SPARQL::Client.new("http://cubeqa.aksw.org/sparql")
+endpoint = SPARQL::Client.new("http://dbpedia.org/sparql/")
 
 input    = ARGV[0]
 output   = input + ".answers"
@@ -43,7 +43,7 @@ doc["questions"].each do |question|
         end
 
     rescue Exception=>e
-        puts "Oops, something went wrong with question " + question["id"] + "..."
+        puts "Oops, something went wrong with question " + question["id"].to_s + "..."
         puts e
     end
 
