@@ -18,7 +18,7 @@ def read_answers(file)
 
     out = {}
 
-    doc = JSON.parse(File.read(file))
+    doc = JSON.parse(File.read(file, :encoding => 'utf-8'))
 
     doc["questions"].each do |question|
 

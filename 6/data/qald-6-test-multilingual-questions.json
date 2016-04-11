@@ -1,0 +1,4507 @@
+{
+  "dataset": {
+    "id": "qald-6-test-multilingual"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the doctoral supervisor of Albert Einstein?",
+          "keywords": "doctoral supervisor, Albert Einstein"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی استاد راهنمای دکترای آلبرت اینشتین بود؟",
+          "keywords": "استاد راهنما، دکترا، آلبرت اینشتین"
+        },
+        {
+          "language": "de",
+          "string": "Wer war der Doktorvater von Albert Einstein?",
+          "keywords": "Doktorvater, Albert Einstein"
+        },
+        {
+          "language": "es",
+          "string": "¿Quien es el supervisor de doctorado de Albert Einstein?",
+          "keywords": "supervisor doctoral, Albert Einstein"
+        },
+        {
+          "language": "it",
+          "string": "Chi era il supervisore della tesi di dottorato di Albert Einstein?",
+          "keywords": "supervisore della tesi di dottorato, Albert Einstein "
+        },
+        {
+          "language": "fr",
+          "string": "Qui était le directeur de thèse d'Albert Einstein",
+          "keywords": "directeur, these, Albert Einstein"
+        },
+        {
+          "language": "nl",
+          "string": "Wie was de promotor van Albert Einsteins doctoraatsonderzoek?",
+          "keywords": "Albert Einstein, promotor"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a fost conducătorul de doctorat al lui Albert Einstein?",
+          "keywords": "conducător de doctorat, Albert Einstein"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": [
+        {
+          "language": "en",
+          "string": "Did Kaurismäki ever win the Grand Prix at Cannes?",
+          "keywords": "Kaurismäki, winner, Grand Prix at Cannes"
+        },
+        {
+          "language": "fa",
+          "string": "آیا کوریسماکی تا بحال جایزه بزرگ  جشنواره کن را برده است؟",
+          "keywords": "کوریسماکی، جایزه بزرگ جشنواره کن"
+        },
+        {
+          "language": "de",
+          "string": "Hat Kaurismäki jemals den Großen Preis der Jury in Cannes gewonnen?",
+          "keywords": "Kaurismäki, Großer Preis der Jury, Cannes"
+        },
+        {
+          "language": "es",
+          "string": "¿Gano Kaurismäki alguna vez el Gran Prix de Cannes?",
+          "keywords": "Kaurismäki, ganador, Grand Prix de Cannes"
+        },
+        {
+          "language": "it",
+          "string": "Kaurismäki ha mai vinto il Grand Prix a Cannes?",
+          "keywords": "Kaurismäki, vincitore, Grand Prix a Cannes"
+        },
+        {
+          "language": "fr",
+          "string": "A Kaurismäki gagné le Grand Prix de Cannes?",
+          "keywords": "Kaurismäki, gagné, Grand Prix de Cannes"
+        },
+        {
+          "language": "nl",
+          "string": "Heeft Kaurismäki ooit de Grand Prix op het filmfestival van Cannes gewonnen?",
+          "keywords": "Kaurismäki, winnaar, Grand Prix, Cannes"
+        },
+        {
+          "language": "ro",
+          "string": "Kaurismäki a câștigat vreodată premiul Grand Prix la Cannes?",
+          "keywords": "Kaurismäki, câștigător, Grand Prix la Cannes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who wrote the song Hotel California?",
+          "keywords": "write, song, Hotel California"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی آهنگ هتل کالیفرنیا را نوشت؟",
+          "keywords": "اهنگ هتل کالیفرنیا، نوشت"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat das Lied Hotel California geschrieben?",
+          "keywords": "Lied, Hotel California, geschrieben"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién escribió la canción Hotel California?",
+          "keywords": "autor, canción Hotel California"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha scritto la canzone Hotel California?",
+          "keywords": "scrivere, canzone, Hotel California"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a composé la chanson Hotel California?",
+          "keywords": "compositeur, Hotel California, chanson"
+        },
+        {
+          "language": "nl",
+          "string": "Wie schreef het lied Hotel California?",
+          "keywords": "lied, Hotel California, schrijver"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a compus cântecul Hotel California?",
+          "keywords": "scrie, cântec, Hotel California"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was on the Apollo 11 mission?",
+          "keywords": "involved people, Apollo 11 mission"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسانی در مأموریت آپولو 11 جضور داشتند؟",
+          "keywords": "کسانی، آپولو 11، حضور"
+        },
+        {
+          "language": "de",
+          "string": "Wer war bei der Apollo-11-Mission dabei?",
+          "keywords": "Teilnehmer, Apollo 11"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién estuvo en la misión Apollo 11?",
+          "keywords": "presente, misión Apollo 11"
+        },
+        {
+          "language": "it",
+          "string": "Chi c'era nella missione Apollo 11?",
+          "keywords": "presenti, missione Apollo 11"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a participé à la misson Apollo 11?",
+          "keywords": "participant, mission Apollo 11"
+        },
+        {
+          "language": "nl",
+          "string": "Uit wie bestond de bemanning van Apollo 11?",
+          "keywords": "Apollo 11, bemanning"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a fost în misiunea Apollo 11?",
+          "keywords": "oameni implicați, misiunea Apollo 11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which electronics companies were founded in Beijing?",
+          "keywords": "electronics companies, founded, Beijing"
+        },
+        {
+          "language": "fa",
+          "string": "چه شرکت های الکترونیکی در پکن تأسیس شدند؟",
+          "keywords": "شرکت های الکترونیکی، پکن، تأسیس"
+        },
+        {
+          "language": "de",
+          "string": "Welche Elektronikunternehmen wurden in Peking gegründet?",
+          "keywords": "Elektronikunternehmen, gegründet in, Peking"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué compañías de electrónica fueron fundadas en Pekín?",
+          "keywords": "compañías de electrónica, fundadas, Pekín"
+        },
+        {
+          "language": "it",
+          "string": "Quali società di elettronica sono state fondate a Pechino?",
+          "keywords": "società di elettronica, fondate, Pechino"
+        },
+        {
+          "language": "fr",
+          "string": "Quelles sont les companies d'électronique fondées à Beijing?",
+          "keywords": "companies d'électronique, fondées, Beijing"
+        },
+        {
+          "language": "nl",
+          "string": "Welke elektronica bedrijven zijn opgericht in Peking?",
+          "keywords": "elektronica bedrijven, opgericht in, Peking"
+        },
+        {
+          "language": "ro",
+          "string": "Care companii de electronice au fost fondate în Beijing?",
+          "keywords": "companii de electronice, fondat, Beijing"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is in a chocolate chip cookie?",
+          "keywords": "ingredients, chocolate chip cookie"
+        },
+        {
+          "language": "fa",
+          "string": "چه چیزهایی در یک کیک شکلاتی هست؟",
+          "keywords": "کیک شکلاتی"
+        },
+        {
+          "language": "de",
+          "string": "Was ist in Chocolate Chip Cookies drin?",
+          "keywords": "Zutaten, Chocolate Chip Cookie"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué contiene una galleta de chocolate?",
+          "keywords": "ingredientes, galleta de chocolate"
+        },
+        {
+          "language": "it",
+          "string": "Cosa c'e' in un biscotto con gocce di cioccolato?",
+          "keywords": "ingredienti, biscotto con gocce di cioccolato"
+        },
+        {
+          "language": "fr",
+          "string": "Quels sont les ingrédients d'un cookie au chocolat",
+          "keywords": "ingrédients, cookie au chocolat"
+        },
+        {
+          "language": "nl",
+          "string": "Wat heb je nodig voor chocolate chip cookies?",
+          "keywords": "ingrediënten, chocolate chip cookie"
+        },
+        {
+          "language": "ro",
+          "string": "Ce conține un biscuit cu fulgi de ciocolată?",
+          "keywords": "ingrediente, biscuit cu fulgi de ciocolată"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the atmosphere of the Moon composed of?",
+          "keywords": "atmosphere, Moon, composed of"
+        },
+        {
+          "language": "fa",
+          "string": "اتمسفر ماه از چه چیزهایی تشکیل شده است؟",
+          "keywords": "اتمسفر، ماه، تشکیل"
+        },
+        {
+          "language": "de",
+          "string": "Woraus besteht die Atmosphäre des Mondes?",
+          "keywords": "Bestandteile, Atmosphäre, Mond"
+        },
+        {
+          "language": "es",
+          "string": "¿De que se compone la atmósfera de la Luna?",
+          "keywords": "composición, atmósfera de la Luna "
+        },
+        {
+          "language": "it",
+          "string": "Da che cosa è composta l'atmosfera della luna",
+          "keywords": "atmosfera, luna, composta"
+        },
+        {
+          "language": "fr",
+          "string": "De quoi consiste l'atmosphère de la lune?",
+          "keywords": "composant, atmosphère, lune"
+        },
+        {
+          "language": "nl",
+          "string": "Waaruit bestaat de atmosfeer van de maan?",
+          "keywords": "maan, atmosfeer, bestanddelen"
+        },
+        {
+          "language": "ro",
+          "string": "Din ce e compusă atmosfera lunii?",
+          "keywords": "atmosferă, luna, compoziție"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many movies did Park Chan-wook direct?",
+          "keywords": "how many movies, directed, Park Chan-wook"
+        },
+        {
+          "language": "fa",
+          "string": "پارک چان-ووک چه تعداد فیلم را کارگردانی کرده است؟",
+          "keywords": "پارک چان-ووک، تعداد فیلم، کارگردانی"
+        },
+        {
+          "language": "de",
+          "string": "Bei wievielen Filmen hat Park Chan-wook Regie geführt?",
+          "keywords": "wieviele, Filme, Regie, Park Chan-wook"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántas películas dirigió Park Chan-wook?",
+          "keywords": "películas, dirigió, Park Chan-wook"
+        },
+        {
+          "language": "it",
+          "string": "Quanti film ha diretto Park Chan-wook?",
+          "keywords": "quanti film, diretti da, Park Chan-wook"
+        },
+        {
+          "language": "fr",
+          "string": "Combien de films ont été dirigé par Park Chan-wook?",
+          "keywords": "films, directeur, Partk Chan-wook"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel films heeft Park Chan-wook geregisseerd?",
+          "keywords": "hoeveel, films, Park Chan-wook, regisseur"
+        },
+        {
+          "language": "ro",
+          "string": "Câte filme a regizat Park Chan-wook?",
+          "keywords": "câte filme, regizat, Park Chan-wook"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who are the developers of DBpedia?",
+          "keywords": "developers, DBpedia"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسانی توسعه دهندگان دی.بی.پدیا هستند؟",
+          "keywords": "توسعه دهندگان، دی.بی.پدیا"
+        },
+        {
+          "language": "de",
+          "string": "Wer sind die Entwickler von DBpedia?",
+          "keywords": "Entwickler, DBpedia"
+        },
+        {
+          "language": "es",
+          "string": "¿Quiénes son los desarrolladores de DBpedia?",
+          "keywords": "desarrolladores, DBpedia"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha sviluppato DBpedia?",
+          "keywords": "sviluppatori, DBpedia"
+        },
+        {
+          "language": "fr",
+          "string": "Qui sont les développeurs de DBpedia?",
+          "keywords": "développeurs, DBpedia"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft DBpedia ontwikkeld?",
+          "keywords": "DBpedia, ontwikkelaar"
+        },
+        {
+          "language": "ro",
+          "string": "Cine sunt dezvoltatorii DBpedia?",
+          "keywords": "dezvoltatori, DBpedia"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which Indian company has the most employees?",
+          "keywords": "Indian company, the most employees"
+        },
+        {
+          "language": "fa",
+          "string": "کدام شرکت هندی بیشترین تعداد کارمند را دارد؟",
+          "keywords": "شرکت هندی، بیشترین تعداد کارمند"
+        },
+        {
+          "language": "de",
+          "string": "Welches indische Unternehmen hat die meisten Angestellten?",
+          "keywords": "Unternehmen, Indien, die meisten Angestellten"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué empresa de la India tiene el mayor número de empleados?",
+          "keywords": "empresa India, mayor número empleados"
+        },
+        {
+          "language": "it",
+          "string": "Quale società indiana ha il maggior numero di dipendenti?",
+          "keywords": "società indiana, maggior numero di dipendenti"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle companie indienne a le plus d'employés?",
+          "keywords": "companie indienne, maximum d'employés"
+        },
+        {
+          "language": "nl",
+          "string": "Welke Indiase bedrijf heeft de meeste werknemers?",
+          "keywords": "Indiase bedrijf, de meeste werknemers"
+        },
+        {
+          "language": "ro",
+          "string": "Ce companie indiană are cei mai mulți angajați?",
+          "keywords": "companie indiană, cei mai mulți angajați"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the name of the school where Obama's wife studied?",
+          "keywords": "school name, Obama's wife, study"
+        },
+        {
+          "language": "fa",
+          "string": "نام مدرسه ای که همسر اوباما تحصیل کرده است چیست؟",
+          "keywords": "نام مدرسه، همسر اوباما، تحصیل"
+        },
+        {
+          "language": "de",
+          "string": "Wie heißt die Hochschule, an der Obamas Frau studiert hat?",
+          "keywords": "Obama, Frau, studiert, Hochschule"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el nombre de la escuela donde la esposa de Obama estudió?",
+          "keywords": "escuela, esposa de Obama, estudió"
+        },
+        {
+          "language": "it",
+          "string": "Qual è il nome della scuola in cui ha studiato la moglie di Obama?",
+          "keywords": "nome, scuola, moglie di Obama, studiare"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le nom de l'université òu la femme de Barack Obama a étudié?",
+          "keywords": "nom, université, femme, Barack Obama"
+        },
+        {
+          "language": "nl",
+          "string": "Hoe heet de school waar Obamas vrouw heeft gestudeerd?",
+          "keywords": "school, Obama, vrouw, gestudeerd"
+        },
+        {
+          "language": "ro",
+          "string": "Care este numele școlii unde a studiat soția lui Obama?",
+          "keywords": "numele școlii, soția lui Obama, studia"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": [
+        {
+          "language": "en",
+          "string": "Where does Piccadilly start?",
+          "keywords": "Piccadilly, start"
+        },
+        {
+          "language": "fa",
+          "string": "پیکدیلی از کجا شروع می شود؟",
+          "keywords": "پیکدیلی، شروع"
+        },
+        {
+          "language": "de",
+          "string": "Wo fängt Piccadilly an?",
+          "keywords": "Start, Piccadilly"
+        },
+        {
+          "language": "es",
+          "string": "¿Dónde empieza Piccadilly?",
+          "keywords": "principio, Piccadilly"
+        },
+        {
+          "language": "it",
+          "string": "Dove inizia Piccadilly?",
+          "keywords": "Piccadilly, iniziare"
+        },
+        {
+          "language": "fr",
+          "string": "Où commence Piccadilly?",
+          "keywords": "début, Piccadilly"
+        },
+        {
+          "language": "nl",
+          "string": "Waar begint Piccadilly?",
+          "keywords": "Piccadilly, begin"
+        },
+        {
+          "language": "ro",
+          "string": "Unde începe Piccadilly?",
+          "keywords": "Piccadilly, început"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the capital of Cameroon?",
+          "keywords": "capital, Cameroon"
+        },
+        {
+          "language": "fa",
+          "string": "پایتخت کامرون کجاست؟",
+          "keywords": "پایتخت، کامرون"
+        },
+        {
+          "language": "de",
+          "string": "Was ist die Hauptstadt von Kamerun?",
+          "keywords": "Hauptstadt, Kamerun"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es la capital de Camerún?",
+          "keywords": "capital, Camerún"
+        },
+        {
+          "language": "it",
+          "string": "Qual è la capitale del Cameroon",
+          "keywords": "capitale, Cameroon"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la capitale du Cameroun?",
+          "keywords": "capitale, Cameroun"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is de hoofdstad van Kameroen?",
+          "keywords": "hoofdstad, Kameroen"
+        },
+        {
+          "language": "ro",
+          "string": "Care este capitala Camerunului?",
+          "keywords": "capitală, Camerun"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": [
+        {
+          "language": "en",
+          "string": "When did the Boston Tea Party take place?",
+          "keywords": "Boston Tea Party, take place"
+        },
+        {
+          "language": "fa",
+          "string": "مهمانی چای بوستون کی رخ داد؟",
+          "keywords": "مهمانی چای بوستون، رخ داد"
+        },
+        {
+          "language": "de",
+          "string": "Wann fand die Boston Tea Party statt?",
+          "keywords": "Datum, Boston Tea Party"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuándo tiene lugar el Boston Tea Party?",
+          "keywords": "Boston Tea party, fecha"
+        },
+        {
+          "language": "it",
+          "string": "Dove ha avuto luogo il Boston Tea Party",
+          "keywords": "Boston Tea Party, aver luogo"
+        },
+        {
+          "language": "fr",
+          "string": "Quand se passa le Boston Tea Party?",
+          "keywords": "data, Boston Tea Party"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer vond de Boston Tea Party plaats?",
+          "keywords": "Boston Tea Party, datum"
+        },
+        {
+          "language": "ro",
+          "string": "Când a avut loc Partida de ceai de la Boston",
+          "keywords": "Partida de ceai de la Boston, avut loc"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who played Gus Fring in Breaking Bad?",
+          "keywords": "play, Gus Fring, Breaking Bad"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی گوستاوو فرینگ را در بریکینگ بد بازی کرد؟",
+          "keywords": "گوستاوو فرینگ، بریکینگ بد، بازی"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat Gus Fring in Breaking Bad gespielt?",
+          "keywords": "Gus Fring, Breaking Bad, Schauspieler"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién interpreto a Gus Fring en Breaking Bad?",
+          "keywords": "actor, Gus Fring, Breaking Bad"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha interpretato Gustavo Fring in Breaking Bad - Reazioni collaterali?",
+          "keywords": "interpretare, Gustavo Fring, Breaking Bad - Reazioni collaterali"
+        },
+        {
+          "language": "fr",
+          "string": "Qui joua Gus Fring dans Breaking Bad?",
+          "keywords": "acteur, Gus Fring, Breaking Bad"
+        },
+        {
+          "language": "nl",
+          "string": "Wie speelt Gus Fring in Breaking Bad?",
+          "keywords": "Gus Fring, acteur, Breaking Bad"
+        },
+        {
+          "language": "ro",
+          "string": "Cine l-a jucat pe Gus Fring în Breaking Bad?",
+          "keywords": "jucat, Gus Fring, Breaking Bad"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who wrote Harry Potter?",
+          "keywords": "wrote, Harry Potter"
+        },
+        {
+          "language": "fa",
+          "string": "هری پاتر را چه کسی نوشت؟",
+          "keywords": "هری پاتر، نوشت"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat Harry Potter geschrieben?",
+          "keywords": "Harry Potter, Autor"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién escribió Harry Potter?",
+          "keywords": "escritor, Harry Potter"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha scritto Harry Potter?",
+          "keywords": "scrivere, Harry Potter"
+        },
+        {
+          "language": "fr",
+          "string": "Qui écrivit Harry Potter?",
+          "keywords": "écrivain, Harry Potter"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft Harry Potter geschreven?",
+          "keywords": "Harry Potter, schrijfster"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a scris Harry Potter?",
+          "keywords": "scris, Harry Potter"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which actors play in Big Bang Theory?",
+          "keywords": "actors, Big Bang Theory"
+        },
+        {
+          "language": "fa",
+          "string": "چه بازیگرانی در تئوری بیگ بنگ بازی کردند؟",
+          "keywords": "بازیگرانی، تئوری بیگ بنگ"
+        },
+        {
+          "language": "de",
+          "string": "Welche Schauspieler spielen bei Big Bang Theory mit?",
+          "keywords": "Schauspieler, Big Bang Theory"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué actores participan en Big Bang Theory?",
+          "keywords": "actores, Big Bang Theory"
+        },
+        {
+          "language": "it",
+          "string": "Quali attori recitano in Big Bang Theory?",
+          "keywords": "attori, Big Bang Theory"
+        },
+        {
+          "language": "fr",
+          "string": "Quels acteurs jouent dans la Théorie du Big Bang?",
+          "keywords": "acteurs, Théorie du Big Bang"
+        },
+        {
+          "language": "nl",
+          "string": "Welke acteurs spelem mee in Big Bang Theory?",
+          "keywords": "Big Bang Theory, acteurs"
+        },
+        {
+          "language": "ro",
+          "string": "Care actori joacă în Big Bang Theory?",
+          "keywords": "actori, Big Bang Theory"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the largest country in the world?",
+          "keywords": "largest country, world"
+        },
+        {
+          "language": "fa",
+          "string": "بزرگترین کشور در دنیا کدام است؟",
+          "keywords": "بزرگترین کشور، دنیا"
+        },
+        {
+          "language": "de",
+          "string": "Was ist das größte Land der Welt?",
+          "keywords": "größtes Land"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el país más grande del mundo?",
+          "keywords": "país, más grande mundo"
+        },
+        {
+          "language": "it",
+          "string": "Qual è la nazione più grande al mondo?",
+          "keywords": "nazione, più grande al mondo"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le pays le plus grand du monde?",
+          "keywords": "Pays, grandeur maximale"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is het grootse land ter wereld?",
+          "keywords": "grootste land"
+        },
+        {
+          "language": "ro",
+          "string": "Care este cea mai mare țară din lume?",
+          "keywords": "cea mai mare țară, lume"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the most powerful Jedi?",
+          "keywords": "most powerful, Jedi"
+        },
+        {
+          "language": "fa",
+          "string": "قدرتمندترین جدی کیست؟",
+          "keywords": "قدرتمندترین، جدی"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist der mächtigste Jedi?",
+          "keywords": "mächtigster Jedi"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el más poderoso Jedi?",
+          "keywords": "Jedi, más poderoso"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il Jedi più potente?",
+          "keywords": "Jedi, più potente"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le Jedi le plus puissant?",
+          "keywords": "Jedi, puissance maximale"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de sterkste Jedi?",
+          "keywords": "sterkste Jedi"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este cel mai puternic Jedi?",
+          "keywords": "cel mai puternic, Jedi"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many goals did Pelé score?",
+          "keywords": "how many, goal, Pelé"
+        },
+        {
+          "language": "fa",
+          "string": "پله چند گل به ثمر رسانده است؟",
+          "keywords": "پله، گل"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Tore hat Pelé geschossen?",
+          "keywords": "wieviele, Tore, Pelé"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántos goles ha marcado Pelé?",
+          "keywords": "goles, marcado, Pelé"
+        },
+        {
+          "language": "it",
+          "string": "Quanti goal ha segnato Pelé?",
+          "keywords": "Quanti, goal, Pelé"
+        },
+        {
+          "language": "fr",
+          "string": "Combien de buts a marqué Pélé?",
+          "keywords": "nombre de buts, Pélé"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel doelpunten heeft Pelé gemaakt?",
+          "keywords": "doelpunten, Pelé"
+        },
+        {
+          "language": "ro",
+          "string": "Cîte goluri a marcat Pelé?",
+          "keywords": "câte, gol, Pelé"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the president of Eritrea?",
+          "keywords": "president, Eritrea"
+        },
+        {
+          "language": "fa",
+          "string": "رئیس جمهور اریتره کیست؟",
+          "keywords": "رئیس جمهور، اریتره"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist der Präsident von Eritrea?",
+          "keywords": "Präsident, Eritrea"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el presidente de Eritrea?",
+          "keywords": "presidente Eritrea"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il presidente dell'Eritrea?",
+          "keywords": "presidente, Eritrea"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le président de l'Érytrée?",
+          "keywords": "président, Erythrée"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de president van Eritrea?",
+          "keywords": "president, Eritrea"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este președintele Eritreei?",
+          "keywords": "președinte, Eritreea"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which computer scientist won an oscar?",
+          "keywords": "computer scientist, win, oscar"
+        },
+        {
+          "language": "fa",
+          "string": "کدام دانشمند کامپیوتر اسکار برده است؟",
+          "keywords": "دانشمند کامپیوتر، اسکار"
+        },
+        {
+          "language": "de",
+          "string": "Welcher Informatiker hat einen Oscar gewonnen?",
+          "keywords": "Informatiker, Oscar, gewonnen"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué ingeniero informático ganó un Oscar?",
+          "keywords": "ingeniero informático, ganó, Oscar"
+        },
+        {
+          "language": "it",
+          "string": "Quale informatico ha vinto un Oscar?",
+          "keywords": "informatico, vincere, Oscar"
+        },
+        {
+          "language": "fr",
+          "string": "Quel informaticien a gagné un Oscar?",
+          "keywords": "informaticient, gagné, Oscar"
+        },
+        {
+          "language": "nl",
+          "string": "Welke informaticus won een Oscar?",
+          "keywords": "informaticus, winnen, Oscar"
+        },
+        {
+          "language": "ro",
+          "string": "Care informatician a câștigat un Oscar?",
+          "keywords": "informatician, câștigat, Oscar"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who created Family Guy?",
+          "keywords": "create, Family Guy"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی مرد خانواده را ساخته است؟",
+          "keywords": "مرد خانواده، ساخته"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat sich Family Guy ausgedacht?",
+          "keywords": "Family Guy, Erschaffer"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién creó Family Guy?",
+          "keywords": "creador, Family Guy"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha creato I Griffin?",
+          "keywords": "creare, I Griffin"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le créateur de Family Guy?",
+          "keywords": "créateur, Family Guy?"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft Family Guy bedacht?",
+          "keywords": "Family Guy, schepper"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a creat Family Guy?",
+          "keywords": "creat, Family Guy"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many people live in Poland?",
+          "keywords": "How many people, Poland"
+        },
+        {
+          "language": "fa",
+          "string": "چند نفر در لهستان زندگی می کنند؟",
+          "keywords": "نفر، لهستان، زندگی"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Menschen leben in Polen?",
+          "keywords": "Polen, Einwohner"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántas personas viven en Polonia?",
+          "keywords": "Cuántas personas, habitan, Polonia"
+        },
+        {
+          "language": "it",
+          "string": "Quante persone vivono in Polonia?",
+          "keywords": "quante persone, Polonia"
+        },
+        {
+          "language": "fr",
+          "string": "Combien de personnes vivent en Pologne?",
+          "keywords": "nombre de personnnes, Pologne"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel mensen wonen er in Polen?",
+          "keywords": "Polen, inwoners"
+        },
+        {
+          "language": "ro",
+          "string": "Câți oameni locuiesc în Polonia?",
+          "keywords": "câți oameni, Polonia"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": [
+        {
+          "language": "en",
+          "string": "To which party does the mayor of Paris belong?",
+          "keywords": "party, mayor of Paris, belong"
+        },
+        {
+          "language": "fa",
+          "string": "شهردار پاریس عضو چه حزبی است؟",
+          "keywords": "شهردار پاریس، حزب"
+        },
+        {
+          "language": "de",
+          "string": "Welcher Partei gehört die Bürgermeisterin von Paris an?",
+          "keywords": "Paris, Bürgermeisterin, Partei"
+        },
+        {
+          "language": "es",
+          "string": "¿A qué partido politico pertenece el alcalde de París?",
+          "keywords": "partido politico, alcalde de París"
+        },
+        {
+          "language": "it",
+          "string": "A quale partito polito appartiene il sindaco di Parigi?",
+          "keywords": "partito politico, sindaco di Parigi, appartiene"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le parti politique du maire de Paris?",
+          "keywords": "parti politique, maire, Paris"
+        },
+        {
+          "language": "nl",
+          "string": "Tot welke partij behoort de burgemeester van Parijs?",
+          "keywords": "partij, burgemeester, Parijs"
+        },
+        {
+          "language": "ro",
+          "string": "Cărui partid aparține primarul Parisului?",
+          "keywords": "partid, primarul Parisului, aparține"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who does the voice of Bart Simpson?",
+          "keywords": "voice, Bart Simpson"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی بارت سیمپسون را دوبله کرده است؟",
+          "keywords": "بارت سیمپسون، دوبله"
+        },
+        {
+          "language": "de",
+          "string": "Wer spricht Bart Simpson?",
+          "keywords": "Bart Simpson, Sprecher"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién interpreta la voz de Bart Simpson?",
+          "keywords": "interprete, voz, Bart Simpson"
+        },
+        {
+          "language": "it",
+          "string": "Chi interpreta la voce di Bart Simpson?",
+          "keywords": "interpretare, voce, Bart Simpson"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est la voix de Bart Simpson?",
+          "keywords": "voix, Bart Simpson"
+        },
+        {
+          "language": "nl",
+          "string": "Wie spreekt de stem van Bart Simpson?",
+          "keywords": "Bart Simpson, stem"
+        },
+        {
+          "language": "ro",
+          "string": "Cine interpretează vocea lui Bart Simpson?",
+          "keywords": "voce, Bart Simpson"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who composed the soundtrack for Cameron's Titanic?",
+          "keywords": "compose, soundtrack, Cameron's Titanic"
+        },
+        {
+          "language": "fa",
+          "string": "چه کسی موسیقی متن تایتانیک کامرون را نوشته است؟",
+          "keywords": "موسیقی متن، تایتانیک کامرون، نوشته"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat den Soundtrack für Camerons Titanic geschrieben?",
+          "keywords": "Cameron, Titanic, Soundtrack, geschrieben"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién compuso la banda sonora del Titanic de Cameron?",
+          "keywords": "compositor, banda sonora, Titanic de Cameron"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha composto la colonna sonora di Titanic di Cameron?",
+          "keywords": "comporre, colonna sonora, Titanic, Cameron"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a composé le soundtrack du Titanic de Cameron?",
+          "keywords": "compositeur, sountrack, Titanic, Cameron"
+        },
+        {
+          "language": "nl",
+          "string": "Door wie is de filmmuziek van Camerons Titanic geschreven?",
+          "keywords": "filmmuziek, Camerons Titanic, componist"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a compus coloana sonoră pentru Titanicul lui Cameron?",
+          "keywords": "compus, coloana sonoră, Titanicul lui Cameron"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": [
+        {
+          "language": "en",
+          "string": "When did Boris Becker end his active career?",
+          "keywords": "Boris Becker, end career"
+        },
+        {
+          "language": "fa",
+          "string": "بوریس بکر کی به فعالیت هنری اش خاتمه داد؟",
+          "keywords": "بوریس بکر، فعالیت حرفه ای، خاتمه"
+        },
+        {
+          "language": "de",
+          "string": "Wann hat Boris Becker seine aktive Karriere beendet?",
+          "keywords": "Boris Becker, aktive Karriere, beendet"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuándo termino Boris Becker su carrera como actor?",
+          "keywords": "fin carrera, actor Boris Becker"
+        },
+        {
+          "language": "it",
+          "string": "Boris Becker quando ha concluso la sua carriera?",
+          "keywords": "Boris Becker, fine, carriera"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la date de terminaison de la carrière de Boris Becker?",
+          "keywords": "Date de terminaison, carrière, Boris Becker"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer stopte Boris Becker zijn actieve loopbaan?",
+          "keywords": "Boris Becker, actieve loopbaan, einde"
+        },
+        {
+          "language": "ro",
+          "string": "Când și-a încheiat Boris Becker cariera activă?",
+          "keywords": "încheia cariera, Boris Becker"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me all basketball players that are higher than 2 meters.",
+          "keywords": "basketball players, higher than 2 meters"
+        },
+        {
+          "language": "fa",
+          "string": "تمام بازیکنان بسکتبال که بلندتر از 2 متر هستند را لیست کن.",
+          "keywords": "بازیکنان بسکتبال، بلندتر از 2 متر"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir alle Basketballspieler, die größer als 2 Meter sind.",
+          "keywords": "Basketballspieler, größer als 2 Meter"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame todos los jugadores de baloncesto que tienes mas de 2 metros de altura",
+          "keywords": "jugadores baloncesto, mas 2 metros altura"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami i giocatori di pallacanestro più alti di 2 metri.",
+          "keywords": "giocatori di pallacanestro, più alti di 2 metri"
+        },
+        {
+          "language": "fr",
+          "string": "Donnes-moi tous les joueurs de basketball qui ont au moins 2 mètres de taille.",
+          "keywords": "joueurs de basketball, taille, plus de 2 mètres"
+        },
+        {
+          "language": "nl",
+          "string": "Toen alle basketbalspelers die grooter zijn dan 2 meter.",
+          "keywords": "basketbalspelers, groter dan, 2 meter"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi toți jucătorii de basket care sunt mai înalți de 2 metri.",
+          "keywords": "jucători de basket, mai înalți de 2 metri"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": [
+        {
+          "language": "en",
+          "string": "What country is Sitecore from?",
+          "keywords": "country, Sitecore"
+        },
+        {
+          "language": "fa",
+          "string": "سایتکور در کدام کشور تأسیس شد؟",
+          "keywords": "سایتکور، کشور، تأسیس"
+        },
+        {
+          "language": "de",
+          "string": "Aus welchem Land kommt Sitecore?",
+          "keywords": "Sitecore, Land"
+        },
+        {
+          "language": "es",
+          "string": "¿De qué país es Sitecore?",
+          "keywords": "país origen, Sitecore"
+        },
+        {
+          "language": "it",
+          "string": "Di che nazione è Sitecore?",
+          "keywords": "nazione, Sitecore"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le pays d'origine de Sitecore?",
+          "keywords": "pays, Sitecore"
+        },
+        {
+          "language": "nl",
+          "string": "Uit welke land komt Sitecore?",
+          "keywords": "land, Sitecore"
+        },
+        {
+          "language": "ro",
+          "string": "Din ce țară este Sitecore?",
+          "keywords": "țară, Sitecore"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which country was Bill Gates born in?",
+          "keywords": "country, born, Bill Gates"
+        },
+        {
+          "language": "fa",
+          "string": "بیل گیت در کدام کشور متولد آمد؟",
+          "keywords": "بیل گیت، کشور، متولد"
+        },
+        {
+          "language": "de",
+          "string": "In welchem Land ist Bill Gates geboren?",
+          "keywords": "Bill Gates, Land, geboren"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué país nació Bill Gates?",
+          "keywords": "país nacimiento, Bill Gates"
+        },
+        {
+          "language": "it",
+          "string": "In quale stato è nato Bill Gates?",
+          "keywords": "stato, nato, Bill Gates"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est l'état de naissance de Bill Gates?",
+          "keywords": "état, naissance, Bill Gates"
+        },
+        {
+          "language": "nl",
+          "string": "In welke land is Bill Gates geboren?",
+          "keywords": "Bill Gates, geboorteland"
+        },
+        {
+          "language": "ro",
+          "string": "În ce țară s-a născut Bill Gates?",
+          "keywords": "țară, născut, Bill Gates"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who developed Slack?",
+          "keywords": "developer, Slack"
+        },
+        {
+          "language": "fa",
+          "string": "اسلک را چه کسی توسعه داد؟",
+          "keywords": "اسلک، توسعه"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat Slack entwickelt?",
+          "keywords": "Slack, Entwickler"
+        },
+        {
+          "language": "es",
+          "string": "¿Quien desarrolló Slack?",
+          "keywords": "desarrollador, Slack"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha sviluppato Slack?",
+          "keywords": "sviluppatore, Slack"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le développeur de Slack?",
+          "keywords": "développeur, Slack"
+        },
+        {
+          "language": "nl",
+          "string": "Wie ontwikkelde Slack?",
+          "keywords": "Slack, ontwikkelaar"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a dezvoltat Slack?",
+          "keywords": "dezvoltator, Slack"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city did Nikos Kazantzakis die?",
+          "keywords": "city, Nikos Kazantzakis, die"
+        },
+        {
+          "language": "fa",
+          "string": "نیکوس کازانتزاکیس در کدام کشور مرد؟",
+          "keywords": "نیکوس کازانتزاکیس، کشور، مرد"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Stadt ist Nikos Kazantzakis gestorben?",
+          "keywords": "Nikos Kazantzakis, Stadt, gestorben"
+        },
+        {
+          "language": "es",
+          "string": "¿En que ciudad murió Nikos Kazantzakis?",
+          "keywords": "ciudad, murió, Nikos Kazantzakis?"
+        },
+        {
+          "language": "it",
+          "string": "In quale città è morto Nikos Kazantzakis",
+          "keywords": "città, Nikos Kazantzakis, morto"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quelle ville est mort Kazantsakis?",
+          "keywords": "ville de décès, Kazantsakis"
+        },
+        {
+          "language": "nl",
+          "string": "In welke stad is Nikos Kazantzakis overleden?",
+          "keywords": "Nikos Kazantzakis, overleden, stad"
+        },
+        {
+          "language": "ro",
+          "string": "În ce oraș a murit Nikos Kazantsakis?",
+          "keywords": "oraș, Nikos Kazantsakis, murit"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many grand-children did Jacques Cousteau have?",
+          "keywords": "how many, grand-children, Jacques Cousteau"
+        },
+        {
+          "language": "fa",
+          "string": "ژاک کوستو چند نوه دارد؟",
+          "keywords": "ژاک کوستو، نوه، چند"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Enkel hatte Jacques Cousteau?",
+          "keywords": "wieviele, Enkel, Jacques Cousteau"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántos nietos tuvo Jacques Cousteau?",
+          "keywords": "numero nietos, Jacques Cousteau"
+        },
+        {
+          "language": "it",
+          "string": "Quanti nipoti aveva Jacques Cousteau?",
+          "keywords": "quanti, nipoti, Jacques Cousteau"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi le nombre de petit-fils de Jacques Cousteau.",
+          "keywords": "nombre de petit-fils, Jacques Cousteau"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel kleinkinderen had Jacques Cousteau?",
+          "keywords": "Jacques Cousteau, kleinkinderen"
+        },
+        {
+          "language": "ro",
+          "string": "Câți nepoți a avut Jacques Cousteau?",
+          "keywords": "cați, nepoți, Jacques Cousteau"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which films did Stanley Kubrick direct?",
+          "keywords": "film, Stanley Kubrick, direct"
+        },
+        {
+          "language": "fa",
+          "string": "چه فیلم هایی را استنلی کوبریک کارگردانی کرده است؟",
+          "keywords": "فیلم هایی، استنلی کوبریک، کارگردانی"
+        },
+        {
+          "language": "de",
+          "string": "Bei wievielen Filmen hat Stanley Kubrick Regie geführt?",
+          "keywords": "wieviele, Filme, Stanley Kubrick, Regie"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué películas dirigio Stanley Kubrick?",
+          "keywords": "películas, director, Stanley Kubrick"
+        },
+        {
+          "language": "it",
+          "string": "Quanti film ha diretto Stanley Kubrick?",
+          "keywords": "film, Stanley Kubrick, dirigere"
+        },
+        {
+          "language": "fr",
+          "string": "Quels films ont été dirigés par Stanley Kubrick?",
+          "keywords": "films, directeur, Stanley Kubrick"
+        },
+        {
+          "language": "nl",
+          "string": "Hoveel films heeft Stanley Kubrick geregisseerd?",
+          "keywords": "films, Stanley Kubrick, regisseur"
+        },
+        {
+          "language": "ro",
+          "string": "Ce filme a regizat Stanley Kubrick?",
+          "keywords": "film, Stanley Kubrick, regiza"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": [
+        {
+          "language": "en",
+          "string": "Does Neymar play for Real Madrid?",
+          "keywords": "Neymar, play, Real Madrid"
+        },
+        {
+          "language": "fa",
+          "string": "آیا نیمار برای رئال مادرید بازی می کند؟",
+          "keywords": "نیمار، رئال مادرید، بازی"
+        },
+        {
+          "language": "de",
+          "string": "Spielt Neymar für Real Madrid?",
+          "keywords": "Neymar, spielen für, Real Madrid"
+        },
+        {
+          "language": "es",
+          "string": "¿juega Neymar en el Real Madrid?",
+          "keywords": "Neymar, jugador, Real Madrid"
+        },
+        {
+          "language": "it",
+          "string": "Neymar gioca per il Real Madrid?",
+          "keywords": "Neymar, giocare, Real Madrid"
+        },
+        {
+          "language": "fr",
+          "string": "Est-ce que Neymar joue pour Madrid?",
+          "keywords": "Neymar, joueur, Madrid"
+        },
+        {
+          "language": "nl",
+          "string": "Speelt Neymar bij Real Madrid?",
+          "keywords": "Neymar, spelen bij, Real Madrid"
+        },
+        {
+          "language": "ro",
+          "string": "Neymar joacă pentru Real Madrid?",
+          "keywords": "Neymar, joacă, Real Madrid"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many seats does the home stadium of FC Porto have?",
+          "keywords": "How many seats, stadium of FC Porto"
+        },
+        {
+          "language": "fa",
+          "string": "ورزشگاه باشگاه پورتو چند صندلی دارد؟",
+          "keywords": "ورزشگاه باشگاه پورتو، چند صندلی"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Plätze hat das Heimstadium des FC Porto?",
+          "keywords": "FC Porto, Heimstadium, wieviele, Plätze"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántos asientos tiene el estadio del FC Porto?",
+          "keywords": "asientos, estadio FC Porto"
+        },
+        {
+          "language": "it",
+          "string": "Quanti posti a sedere ha lo stadio del FC Porto",
+          "keywords": "posti a sedere, stadio del FC Porto"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le nombre de sièges dans le stade de FC Porto?",
+          "keywords": "nombre de sièges, stade, FC Porto"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel plaatsen heeft het stadion van FC Porto?",
+          "keywords": "plaatsen, stadion, FC Porto"
+        },
+        {
+          "language": "ro",
+          "string": "Câte locuri are stadionul lui FC Porto?",
+          "keywords": "Câte locuri, stadionul lui FC Porto"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me all books in Asimov's Foundation series.",
+          "keywords": "books, Asimov, Foundation series"
+        },
+        {
+          "language": "fa",
+          "string": "مجموعه کتاب های آسیموف چند کتاب دارد؟",
+          "keywords": "مجموعه کتاب های، آسیموف، کتاب"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir alle Bücher in Asimovs Foundation-Serie.",
+          "keywords": "Asimov, Foundation-Serie, Bücher"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame todos los libros en la serie Fundación de Asimov",
+          "keywords": "libros, serie Fundación Asimov"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami tutti i libri del Ciclo della Fondazione di Asimov",
+          "keywords": "libri, Ciclo della Fondazione, Asimov"
+        },
+        {
+          "language": "fr",
+          "string": "Montres-moi tous les livres du Cycle de Fondation d'Asimov.",
+          "keywords": "livres, Cycle de Fondation, Asimov"
+        },
+        {
+          "language": "nl",
+          "string": "Toon alle boeken die bij de Foundation-serie horen.",
+          "keywords": "boeken, Foundation-serie"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi toate cărțile din seria Fundația de Asimov",
+          "keywords": "cărți, seria Fundația, Asimov"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which movies star both Liz Taylor and Richard Burton?",
+          "keywords": "movies, star, Liz Taylor, Richard Burton?"
+        },
+        {
+          "language": "fa",
+          "string": "لیز تیلور و ریچارد برتون در چه فیلم هایی هم بازی بوده اند؟",
+          "keywords": "لیز تیلور، ریچارد برتون، فیلم هایی، هم بازی"
+        },
+        {
+          "language": "de",
+          "string": "In welchen Filmen spielen sowohl Liz Taylor als auch Richard Burton mit?",
+          "keywords": "Film, spielen, Liz Taylor, Richard Burton"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué películas protagonizan juntos Liz Taylor y Richard Burton?",
+          "keywords": "películas, protagonizan juntos, Liz Taylor, Richard Burton"
+        },
+        {
+          "language": "it",
+          "string": "Quali film sono interpretati da Liz Taylor e Richard Burton?",
+          "keywords": "film, interpretati, Liz Taylor, Richard Burton?"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quels films jouent Liz Taylor et Richard Burton?",
+          "keywords": "films, acteurs, Liz Taylor, Richard Burton"
+        },
+        {
+          "language": "nl",
+          "string": "In welke films spelen zowel Liz Taylor als Richard Burton mee?",
+          "keywords": "films, acteur, Liz Taylor, Richard Burton"
+        },
+        {
+          "language": "ro",
+          "string": "În ce filme joacă atât Liz Taylor cât și Richard Burton?",
+          "keywords": "filme, joacă, Liz Taylor, Richard Burton"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city are the headquarters of the United Nations?",
+          "keywords": "city, headquarters of the United Nations"
+        },
+        {
+          "language": "fa",
+          "string": "مقر سازمان ملل در کدام شهر قرار دارد؟",
+          "keywords": "مقر، سازمان ملل، شهر"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Stadt ist das Hauptquartier der Vereinten Nationen?",
+          "keywords": "Vereinte Nationen, Hauptquartier, Stadt"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué ciudad se encuentra la sede de las Naciones Unidas?",
+          "keywords": "ciudad, la sede de las Naciones Unidas"
+        },
+        {
+          "language": "it",
+          "string": "In quale città si trova il quartier generale delle Nazioni Unite?",
+          "keywords": "città, quartier generale delle Nazioni Unite"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quelle ville se trouvé les quartiers généraux des Nations Unies?",
+          "keywords": "ville, quartiers généraux, Nations Unies?"
+        },
+        {
+          "language": "nl",
+          "string": "In welke stad bevindt zich het hoofdkwartier van de Verenigde Naties?",
+          "keywords": "stad, hoofdkwartier, Verenigde Naties"
+        },
+        {
+          "language": "ro",
+          "string": "În ce oraș se află cartierul general al Națiunilor Unite?",
+          "keywords": "oraș, cartierul general al Națiunilor Unite"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city was the president of Montenegro born?",
+          "keywords": "city, born, president of Montenegro"
+        },
+        {
+          "language": "fa",
+          "string": "رئیس جمهور مونتنگرو در کدام شهر متولد شد؟",
+          "keywords": "رئیس جمهور، مونتنگرو، کشور، متولد"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Stadt ist der Präsident von Montenegro geboren?",
+          "keywords": "Präsident, Montenegro, Geburtsstadt"
+        },
+        {
+          "language": "es",
+          "string": "¿En que ciudad nació el presidente de Montenegro?",
+          "keywords": "ciudad, nació, presidente de Montenegro"
+        },
+        {
+          "language": "it",
+          "string": "In quale città è nato il presidente del Montenegro?",
+          "keywords": "città, nato, presidente del Montenegro"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la ville de naissance du président du Monténégro?",
+          "keywords": "ville, naissance, président, Monténégro"
+        },
+        {
+          "language": "nl",
+          "string": "In welke stad is de president van Montenegro geboren?",
+          "keywords": "president, Montenegro, geboortestad"
+        },
+        {
+          "language": "ro",
+          "string": "În ce oraș s-a născut președintele Muntenegrului?",
+          "keywords": "oraș, născut, președintele Muntenegrului"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which writers studied in Istanbul?",
+          "keywords": "writers, studied, Istanbul"
+        },
+        {
+          "language": "fa",
+          "string": "چه نویسندگانی در استانبول تحصیل کردند؟",
+          "keywords": "نویسندگانی، استانبول، تحصیل"
+        },
+        {
+          "language": "de",
+          "string": "Welche Schriftsteller haben in Istanbul studiert?",
+          "keywords": "Schriftsteller, studiert, Istanbul"
+        },
+        {
+          "language": "es",
+          "string": "¿Que escritores estudiaron en Estambul?",
+          "keywords": "escritores, estudiaron, Estambul"
+        },
+        {
+          "language": "it",
+          "string": "Quali scrittori hanno studiato a Istanbul?",
+          "keywords": "scrittori, studiato, Istanbul"
+        },
+        {
+          "language": "fr",
+          "string": "Quels écrivains ont étudié à Istanbul?",
+          "keywords": "écrivains, études, Istanbul"
+        },
+        {
+          "language": "nl",
+          "string": "Welke schrijvers hebben in Istanbul gestudeerd?",
+          "keywords": "schrijvers, Istanbul, gestudeerd"
+        },
+        {
+          "language": "ro",
+          "string": "Care scriitori au studiat în Istanbul?",
+          "keywords": "sciitori, studiat, Istanbul"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the mayor of Paris?",
+          "keywords": "mayor of Paris"
+        },
+        {
+          "language": "fa",
+          "string": "شهردار پاریس کیست؟",
+          "keywords": "شهردار، پاریس"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist Bürgermeister von Paris?",
+          "keywords": "Paris, Bürgermeister"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el alcalde de París?",
+          "keywords": "alcalde París"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il sindaco di Parigi?",
+          "keywords": "sindaco di Parigi"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le maire de Paris?",
+          "keywords": "maire, Paris"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de burgemeester van Parijs?",
+          "keywords": "burgemeester, Parijs"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este primarul Parisului?",
+          "keywords": "primarul Parisului"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the full name of Prince Charles?",
+          "keywords": "full name, Prince Charles"
+        },
+        {
+          "language": "fa",
+          "string": "نام کامل شاهزاده چارلز چیست؟",
+          "keywords": "نام کامل، شاهزاده چالز"
+        },
+        {
+          "language": "de",
+          "string": "Wie ist der vollständige Name von Prinz Charles?",
+          "keywords": "Prinz Charles, vollständiger Name"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el nombre completo del príncipe Carlos?",
+          "keywords": "nombre completo, príncipe Carlos"
+        },
+        {
+          "language": "it",
+          "string": "Qual è il nome completo del principe Carlo?",
+          "keywords": "nome completo, principe Carlo"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le nom complet de Prince Charles?",
+          "keywords": "nom complet, Prince Charles"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is de volledige naam van prins Charles?",
+          "keywords": "prins Charles, volledige naam"
+        },
+        {
+          "language": "ro",
+          "string": "Care este numele complet al Prințului Charles?",
+          "keywords": "fume complet, Prințul Charles"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the longest river in China?",
+          "keywords": "longest river, China"
+        },
+        {
+          "language": "fa",
+          "string": "بلندترین رود در چین کدام است؟",
+          "keywords": "بلندترین رود، چین"
+        },
+        {
+          "language": "de",
+          "string": "Was ist der längste Fluss in China?",
+          "keywords": "China, längster Fluss"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el río más largo de China?",
+          "keywords": "río más largo China"
+        },
+        {
+          "language": "it",
+          "string": "Qual è il fiume più lungo della Cina?",
+          "keywords": "fiume più lungo, Cina"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la plus longue rivière de Chine?",
+          "keywords": "rivière, longueur maximale, Chine"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is de langste rivier in China?",
+          "keywords": "langste rivier, China"
+        },
+        {
+          "language": "ro",
+          "string": "Care este cel mai lung râu din China?",
+          "keywords": "cel mai lung râu, China"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who discovered Ceres?",
+          "keywords": "discoverer, Ceres"
+        },
+        {
+          "language": "fa",
+          "string": "سرس را چه کسی کشف کرد؟",
+          "keywords": "سرس، کشف"
+        },
+        {
+          "language": "de",
+          "string": "Wer entdeckte Ceres?",
+          "keywords": "Ceres, Entdecker"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién descubrió Ceres?",
+          "keywords": "descubridor, Ceres"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha scoperto Cerere?",
+          "keywords": "scopritore, Cerere"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a découvert Cérès?",
+          "keywords": "découvreur, Cérès"
+        },
+        {
+          "language": "nl",
+          "string": "Wie ontdekte Ceres?",
+          "keywords": "Ceres, ontdekker"
+        },
+        {
+          "language": "ro",
+          "string": "Cine l-a descoperit pe Ceres?",
+          "keywords": "descoperitor, Ceres"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "question": [
+        {
+          "language": "en",
+          "string": "When did princess Diana die?",
+          "keywords": "date, princess Diana, died"
+        },
+        {
+          "language": "fa",
+          "string": "شاهزاده دیانا کی فوت کرد؟",
+          "keywords": "شاهزاده دیانا، فوت"
+        },
+        {
+          "language": "de",
+          "string": "Wann ist Prinzessin Diana gestorben?",
+          "keywords": "Prinzessin Diana, Todestag"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuándo murió la princesa Diana?",
+          "keywords": "fecha fallecimiento, princesa Diana"
+        },
+        {
+          "language": "it",
+          "string": "Quando è morta la principessa Diana?",
+          "keywords": "data di morte, principessa Diana"
+        },
+        {
+          "language": "fr",
+          "string": "Donne moi la date de décès de Princesse Diana.",
+          "keywords": "date de décès, Princesse Diana"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer is prinses Diana overleden?",
+          "keywords": "prinses Diana, overleden, datum"
+        },
+        {
+          "language": "ro",
+          "string": "Când a murit prințesa Diana?",
+          "keywords": "data morții, prințesa Diana"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "question": [
+        {
+          "language": "en",
+          "string": "What do ants eat?",
+          "keywords": "food, ants"
+        },
+        {
+          "language": "fa",
+          "string": "مورچه ها چه چیزی می خورند؟",
+          "keywords": "مورچه ها، می خورند"
+        },
+        {
+          "language": "de",
+          "string": "Was essen Ameisen?",
+          "keywords": "Ameisen, essen"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué comen las hormigas?",
+          "keywords": "alimento, hormigas"
+        },
+        {
+          "language": "it",
+          "string": "Cosa mangiano le formiche?",
+          "keywords": "cibo, formiche"
+        },
+        {
+          "language": "fr",
+          "string": "De quoi se nourrissent les fourmis?",
+          "keywords": "nourriture, fourmis"
+        },
+        {
+          "language": "nl",
+          "string": "Wat eten mieren?",
+          "keywords": "eten, mieren"
+        },
+        {
+          "language": "ro",
+          "string": "Ce mănâncă furnicile?",
+          "keywords": "mâncare, furnici"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the host of the BBC Wildlife Specials?",
+          "keywords": "host, BBC Wildlife Specials"
+        },
+        {
+          "language": "fa",
+          "string": "مجری مجموعه حیات وحش بی.بی.سی چه کسی است؟",
+          "keywords": "مجری، مجموعه حیات وحش بی.بی.سی"
+        },
+        {
+          "language": "de",
+          "string": "Wer moderiert die BBC Wildlife Specials?",
+          "keywords": "BBC Wildlife Specials, Moderator"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el anfitrión de los especiales de la BBC Wildlife?",
+          "keywords": "anfitrión, BBC Wildlife"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il presentatore degli speciali della BBC Wildlife?",
+          "keywords": "presentatore, speciali, BBC Wildlife"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le présentateur de BBC Wildlife Specials?",
+          "keywords": "présentateur, BBC Wildlife Specials?"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de presentator van de BBC Wildlife Specials?",
+          "keywords": "presentator, BBC Wildlife Specials"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este prezentatorul pentru BBC Wildlife Specials?",
+          "keywords": "prezentator, BBC Wildlife Specials"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many moons does Mars have?",
+          "keywords": "how many, moons, Mars"
+        },
+        {
+          "language": "fa",
+          "string": "مریخ چند ماه دارد؟",
+          "keywords": "مریخ، ماه"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Monde hat der Mars?",
+          "keywords": "wieviele, Monde, Mars"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántas lunas tiene Marte?",
+          "keywords": "Numero lunas, Marte"
+        },
+        {
+          "language": "it",
+          "string": "Quanti satelliti ha Marte?",
+          "keywords": "quanti, satelliti, Marte"
+        },
+        {
+          "language": "fr",
+          "string": "Combien de lunes a Mars?",
+          "keywords": "nombre de lunes, Mars"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel manen heeft Mars?",
+          "keywords": "antaal, manen, Mars"
+        },
+        {
+          "language": "ro",
+          "string": "Câte luni are Marte?",
+          "keywords": "câte, luni, Marte"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the first Queen album?",
+          "keywords": "first album, Queen"
+        },
+        {
+          "language": "fa",
+          "string": "اولین آلبوم کوئین چه بود؟",
+          "keywords": "اولین، آلبوم، کوئین"
+        },
+        {
+          "language": "de",
+          "string": "Was war das erste Queen-Album?",
+          "keywords": "erstes Queen-Album"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál fue el primer álbum de Queen?",
+          "keywords": "primer álbum, Queen"
+        },
+        {
+          "language": "it",
+          "string": "Qual è stato il primo album dei Queen?",
+          "keywords": "primo album, Queen"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le premier album de Queen?",
+          "keywords": "premier album, Queen"
+        },
+        {
+          "language": "nl",
+          "string": "Wat was het eerste Queen-album?",
+          "keywords": "eerste Queen-album"
+        },
+        {
+          "language": "ro",
+          "string": "Care a fost primul album Queen?",
+          "keywords": "primul album, Queen"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "question": [
+        {
+          "language": "en",
+          "string": "Did Elvis Presley have children?",
+          "keywords": "Elvis Presley, children"
+        },
+        {
+          "language": "fa",
+          "string": "آیا الویس پرسلی فرزند دارد؟",
+          "keywords": "الویس پرسلی، فرزند"
+        },
+        {
+          "language": "de",
+          "string": "Hatte Elvis Presley Kinder?",
+          "keywords": "Elvis Presley, Kinder"
+        },
+        {
+          "language": "es",
+          "string": "Tuvo hijos Elvis Presley?",
+          "keywords": "hijos, Elvis Presley"
+        },
+        {
+          "language": "it",
+          "string": "Elvis Presley ha avuto dei figli?",
+          "keywords": "Elvis Presley, figli"
+        },
+        {
+          "language": "fr",
+          "string": "Elvis Presley a-t-il eu des enfants?",
+          "keywords": "enfants, Elvis Presley"
+        },
+        {
+          "language": "nl",
+          "string": "Had Elvis Presley kinderen?",
+          "keywords": "Elvis Presley, kinderen"
+        },
+        {
+          "language": "ro",
+          "string": "A avut Elvis Presley copii?",
+          "keywords": "Elvis Presly, copii"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "question": [
+        {
+          "language": "en",
+          "string": "Give me a list of all Canadians that reside in the U.S.",
+          "keywords": "list, Canadians, residing in the U.S."
+        },
+        {
+          "language": "fa",
+          "string": "لیست تمام کانادایی های مقیم ایالات متحده را بده.",
+          "keywords": "کانادایی، مقیم، ایالات متحده"
+        },
+        {
+          "language": "de",
+          "string": "Gib mir eine Liste mit allen Kanadiern, die in den USA wohnen.",
+          "keywords": "Kanadier, wohnen, USA"
+        },
+        {
+          "language": "es",
+          "string": "Dame una lista de todos los canadienses que residen en los EE.UU.",
+          "keywords": "canadienses, residentes EE.UU."
+        },
+        {
+          "language": "it",
+          "string": "Dammi una lista di tutti i canadesi che risiedono negli Stati Uniti.",
+          "keywords": "lista, canadesi, residenti negli Stati Uniti"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi une liste de tous les canadiens qui vivent aux États-Unis.",
+          "keywords": "canadiens, vivant, États-Unis."
+        },
+        {
+          "language": "nl",
+          "string": "Toen een lijst van alle Canadeze die in de VS wonen.",
+          "keywords": "Canadeze, wonen in, VS"
+        },
+        {
+          "language": "ro",
+          "string": "Dă-mi o listă cu toți canadienii care locuiesc în Statele Unite.",
+          "keywords": "listă, canadieni, locuiesc în Statele Unite"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "question": [
+        {
+          "language": "en",
+          "string": "Where is Syngman Rhee buried?",
+          "keywords": "where, Syngman Rhee, buried"
+        },
+        {
+          "language": "fa",
+          "string": "ایسونگمن ری گجا دفن شده است؟",
+          "keywords": "ایسونگمن ری، دفن"
+        },
+        {
+          "language": "de",
+          "string": "Wo liegt Syngman Rhee begraben?",
+          "keywords": "Syngman Rhee, begraben"
+        },
+        {
+          "language": "es",
+          "string": "¿Dónde está enterrado Syngman Rhee?",
+          "keywords": "Dónde, enterrado, Syngman Rhee"
+        },
+        {
+          "language": "it",
+          "string": "Dove è sepolto Syngman Rhee?",
+          "keywords": "dove, sepolto, Syngman Rhee"
+        },
+        {
+          "language": "fr",
+          "string": "Où est enterré Syngman Rhee?",
+          "keywords": "lieu d'enterrement, Syngman Rhee"
+        },
+        {
+          "language": "nl",
+          "string": "Waar ligt Syngman Rhee begraven?",
+          "keywords": "Syngman Rhee, begrafplaats"
+        },
+        {
+          "language": "ro",
+          "string": "Unde este înmormântat Syngman Rhee?",
+          "keywords": "unde, înmormântat, Syngman Rhee"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which countries do people speak Japanese?",
+          "keywords": "which countries, speak, Japanese"
+        },
+        {
+          "language": "fa",
+          "string": "در چه کشورهایی مردم ژاپنی صحبت می کنند؟",
+          "keywords": "کشورهایی، ژاپنی، صحبت"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Ländern wird Japanisch gesprochen?",
+          "keywords": "Länder, Sprache, Japanisch"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué países se habla japonés?",
+          "keywords": "países, habla, japonés"
+        },
+        {
+          "language": "it",
+          "string": "In quali stati si parla giapponese?",
+          "keywords": "stati, parlare, giapponese"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quels pays parle-t-on japonais?",
+          "keywords": "pays, language, japonais"
+        },
+        {
+          "language": "nl",
+          "string": "In welke landen wordt Japans gesproken?",
+          "keywords": "landen, taal, Japans"
+        },
+        {
+          "language": "ro",
+          "string": "În ce țari se vorbește japoneza?",
+          "keywords": "ce țări, vorbește, japoneza"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the king of the Netherlands?",
+          "keywords": "king, the Netherlands"
+        },
+        {
+          "language": "fa",
+          "string": "پادشاه هلند کیست؟",
+          "keywords": "پادشاه، هلند"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist der König der Niederlande?",
+          "keywords": "König, Niederlande"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el rey de los Países Bajos?",
+          "keywords": "rey, Países Bajos"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il re dei Paesi Bassi?",
+          "keywords": "re, Paesi Bassi"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le roi des Pays-Bas?",
+          "keywords": "roi, pays-bas"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de koning van Nederland?",
+          "keywords": "koning, Nederland"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este regele Țărilor de Jos?",
+          "keywords": "rege, Țările de Jos"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "question": [
+        {
+          "language": "en",
+          "string": "When did the Dodo become extinct?",
+          "keywords": "when, Dodo, extinct"
+        },
+        {
+          "language": "fa",
+          "string": "دودو کی منقرض شد؟",
+          "keywords": "دودو، منقرض"
+        },
+        {
+          "language": "de",
+          "string": "Wann sind die Dodos ausgestorben?",
+          "keywords": "Dodo, ausgestorben"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuándo se extinguió el Dodo?",
+          "keywords": "fecha extinción Dodo"
+        },
+        {
+          "language": "it",
+          "string": "Quando si è estinto il Dodo?",
+          "keywords": "data estinzione, Dodo"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi la date d'extinction du dodo.",
+          "keywords": "date d'extinction, dodo"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer is de dodo uitgestorven?",
+          "keywords": "dodo, uitgestorven"
+        },
+        {
+          "language": "ro",
+          "string": "Când a dispărut pasărea Dodo?",
+          "keywords": "când, dispărut, pasărea Dodo"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me all Czech movies.",
+          "keywords": "Czech movies"
+        },
+        {
+          "language": "fa",
+          "string": "تمام فیلم های چک را لیست کن.",
+          "keywords": "فیلم های، چک"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir alle tschechischen Filme.",
+          "keywords": "Filme, Tschechien"
+        },
+        {
+          "language": "es",
+          "string": "Muestrame todas las películas checas",
+          "keywords": "películas checas"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami tutti i film cechi.",
+          "keywords": "film cechi"
+        },
+        {
+          "language": "fr",
+          "string": "Montre-moi tous les films tchèques.",
+          "keywords": "films tchèques"
+        },
+        {
+          "language": "nl",
+          "string": "Toen alle Tsjechische films.",
+          "keywords": "Tsjechische films"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi toate filmele cehe.",
+          "keywords": "filme cehe"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which rivers flow into the North Sea?",
+          "keywords": "rivers, flow, North Sea"
+        },
+        {
+          "language": "fa",
+          "string": "چه رودهایی به دریای شمال می ریزند؟",
+          "keywords": "رودهایی، دریاچه شمال، می ریزند"
+        },
+        {
+          "language": "de",
+          "string": "Welche Flüsse fließen in die Nordsee?",
+          "keywords": "Flüsse, fließen, Nordsee"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué ríos desembocan en el Mar del Norte?",
+          "keywords": "ríos, desembocan, Mar del Norte"
+        },
+        {
+          "language": "it",
+          "string": "Quali fiumi sfociano nel mare del Nord",
+          "keywords": "fiumi, sfociare, mare del Nord"
+        },
+        {
+          "language": "fr",
+          "string": "Quelles rivières aboutissent dans la mer du Nord?",
+          "keywords": "rivières, aboutissent, mer du Nord?"
+        },
+        {
+          "language": "nl",
+          "string": "Welke rivieren stromen in de Noordzee?",
+          "keywords": "rivieren, stromen in, Nordzee"
+        },
+        {
+          "language": "ro",
+          "string": "Ce râuri se varsă în Marea Nordului?",
+          "keywords": "râuri, varsă, Marea Nordului"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "question": [
+        {
+          "language": "en",
+          "string": "When did Operation Overlord commence?",
+          "keywords": "when, Operation Overlord, commence"
+        },
+        {
+          "language": "fa",
+          "string": "نبرد خان بزرگ کی شروع شد؟",
+          "keywords": "نبرد خان بزرگ، شروع"
+        },
+        {
+          "language": "de",
+          "string": "Wann wurde die Operation Overlord durchgeführt?",
+          "keywords": "Operation Overlord, Datum"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuándo comenzó la operación Overlord?",
+          "keywords": "comienzo, operación Overlord "
+        },
+        {
+          "language": "it",
+          "string": "Quando è iniziata l'operatione Overlord?",
+          "keywords": "data di inizio, operatione Overlord"
+        },
+        {
+          "language": "fr",
+          "string": "Quand a commencé l'opération Overlord?",
+          "keywords": "date de commencement, opération Overlord"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer vond Operatie Overlord plaats?",
+          "keywords": "Operatie Overlord, datum"
+        },
+        {
+          "language": "ro",
+          "string": "Când a început operațiunea Overlord?",
+          "keywords": "când, început, operațiunea Overlord"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "question": [
+        {
+          "language": "en",
+          "string": "Where do the Red Sox play?",
+          "keywords": "where, Red Sox, play"
+        },
+        {
+          "language": "fa",
+          "string": "رد ساکس در کجا بازی می کند؟",
+          "keywords": "رد ساکس، بازی"
+        },
+        {
+          "language": "de",
+          "string": "Wo spielen die Red Sox?",
+          "keywords": "Red Sox, spielen"
+        },
+        {
+          "language": "es",
+          "string": "¿Dónde juegan los Red Sox?",
+          "keywords": ""
+        },
+        {
+          "language": "it",
+          "string": "Dove suonano i Red Sox?",
+          "keywords": "dove, suonano, Red Sox"
+        },
+        {
+          "language": "fr",
+          "string": "Où jouent les Red Sox?",
+          "keywords": "lieu, Red Sox"
+        },
+        {
+          "language": "nl",
+          "string": "Waar spelen de Red Sox?",
+          "keywords": "Red Sox, spelen"
+        },
+        {
+          "language": "ro",
+          "string": "Unde joacă Red Sox?",
+          "keywords": "unde, joacă, Red Sox"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which time zone is Rome?",
+          "keywords": "time zone, Rome"
+        },
+        {
+          "language": "fa",
+          "string": "رم در چه ناحیه زمانی قرار دارد؟",
+          "keywords": "رم، ناحیه زمانی"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Zeitzone liegt Rom?",
+          "keywords": "Rom, Zeitzone"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué zona horaria esta Roma?",
+          "keywords": "zona horaria, Roma"
+        },
+        {
+          "language": "it",
+          "string": "Qual è il fuso orario di Roma?",
+          "keywords": "fuso orario, Roma"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la zone horaire de Rome?",
+          "keywords": "zone horaire, Rome"
+        },
+        {
+          "language": "nl",
+          "string": "In welke tijdzone zit Rome?",
+          "keywords": "Rome, tijdzone"
+        },
+        {
+          "language": "ro",
+          "string": "Pe ce fus orar este Roma?",
+          "keywords": "fus orar, Roma"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "question": [
+        {
+          "language": "en",
+          "string": "Give me a list of all critically endangered birds.",
+          "keywords": "list, critically endangered birds"
+        },
+        {
+          "language": "fa",
+          "string": "لیستی از پرندگان روبه انقراض را بده.",
+          "keywords": "پرندگان، روبه انقراض"
+        },
+        {
+          "language": "de",
+          "string": "Gib mir eine Liste aller stark bedrohten Vogelarten.",
+          "keywords": "Vogel, stark gefährdet"
+        },
+        {
+          "language": "es",
+          "string": "Dame una lista de todas las aves en peligro de extinción.",
+          "keywords": "aves, peligro de extinción"
+        },
+        {
+          "language": "it",
+          "string": "Dammi la lista di tutti gli uccelli in via di estinzione.",
+          "keywords": "lista, uccelli in via di estinzione"
+        },
+        {
+          "language": "fr",
+          "string": "Donnes-moi la liste des oiseaux en voie de disparition.",
+          "keywords": "oiseaux, voie de disparition"
+        },
+        {
+          "language": "nl",
+          "string": "Geef een lijst met alle ernstig bedreigde vogelsoorten.",
+          "keywords": "vogels, ernstig bedreigd"
+        },
+        {
+          "language": "ro",
+          "string": "Dă-mi o listă cu toate păsările în pericol ridicat de dispariție.",
+          "keywords": "listă, păsări în pericol ridicat de dispariție"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "question": [
+        {
+          "language": "en",
+          "string": "How much did the Lego Movie cost?",
+          "keywords": "Lego Movie, cost"
+        },
+        {
+          "language": "fa",
+          "string": "فیلم لگو چقدر هزینه داشت؟",
+          "keywords": "فیلم لگو، هزینه"
+        },
+        {
+          "language": "de",
+          "string": "Wieviel hat der Legofilm gekostet?",
+          "keywords": "Legofilm, Budget"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuánto cuesta la película de Lego?",
+          "keywords": "precio, película de Lego"
+        },
+        {
+          "language": "it",
+          "string": "Quanto è costato il Lego Movie?",
+          "keywords": "costo, Lego Movie"
+        },
+        {
+          "language": "fr",
+          "string": "Combien a coûté le film de Légo",
+          "keywords": "prix, film de Légo"
+        },
+        {
+          "language": "nl",
+          "string": "Hoveel heeft de Lego Movie gekost?",
+          "keywords": "Lego Movie, kosten"
+        },
+        {
+          "language": "ro",
+          "string": "Cât de mult a costat filmul Lego?",
+          "keywords": "filmul Lego, costa"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "question": [
+        {
+          "language": "en",
+          "string": "What was the original occupation of the inventor of Lego?",
+          "keywords": "original occupation, inventor, Lego"
+        },
+        {
+          "language": "fa",
+          "string": "شغل رسمی مبدع لگو چه بود؟",
+          "keywords": "شغل رسمی، مبدع لگو"
+        },
+        {
+          "language": "de",
+          "string": "Welchen Beruf hatte der Erfinder von Lego ursprünglich?",
+          "keywords": "Erfinder, Lego, Beruf"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál era la ocupación original del inventor de Lego?",
+          "keywords": "ocupación original, inventor Lego"
+        },
+        {
+          "language": "it",
+          "string": "Qual era l'impiego originario dell'inventore dei Lego?",
+          "keywords": "impiego originario, inventore, Lego"
+        },
+        {
+          "language": "fr",
+          "string": "Quel était l'occupation original du créateur des Légos?",
+          "keywords": "occupation original, créateur, Légo"
+        },
+        {
+          "language": "nl",
+          "string": "Wat was het oorsponkelijke beroep van de uitvinder van Lego?",
+          "keywords": "oorsponkelijke beroep, uitvinder, Lego"
+        },
+        {
+          "language": "ro",
+          "string": "Care era ocupația inițială a inventatorului Lego?",
+          "keywords": "ocapație inițială, inventator, Lego"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which countries have more than ten volcanoes?",
+          "keywords": "countries, more than ten volcanoes"
+        },
+        {
+          "language": "fa",
+          "string": "کدام کشور بیشتر از ده آتش فشان دارد؟",
+          "keywords": "کشور، بیشتر از ده، آتش فشان"
+        },
+        {
+          "language": "de",
+          "string": "Welche Länder haben mehr als zehn Vulkane?",
+          "keywords": "Land, mehr als 10, Vulkane"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué países tienen más de diez volcanes?",
+          "keywords": "países, más diez volcanes"
+        },
+        {
+          "language": "it",
+          "string": "Quali stati hanno più di dieci vulcani?",
+          "keywords": "stati, più di dieci vulcani"
+        },
+        {
+          "language": "fr",
+          "string": "Quels pays ont plus de dix volcans?",
+          "keywords": "pays, plus de dix, volcans"
+        },
+        {
+          "language": "nl",
+          "string": "Welke landen hebben meer dan tien vulkanen?",
+          "keywords": "landen, meer dan tien, vulkanen"
+        },
+        {
+          "language": "ro",
+          "string": "Care țări au mai mult de zece vulcani?",
+          "keywords": "țări, mai mult de zece vulcani"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me all U.S. states.",
+          "keywords": "U.S. states"
+        },
+        {
+          "language": "fa",
+          "string": "تمام ایالات ایالات متحده را لیست کن.",
+          "keywords": "ایالات، ایالات متحده"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir alle US-Staaten.",
+          "keywords": "US-Staaten"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame todos los estados de EE.UU.",
+          "keywords": "estados EE.UU."
+        },
+        {
+          "language": "it",
+          "string": "Mostrami tutti gli stati degli Stati Uniti.",
+          "keywords": "stati, Stati Uniti"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi tous les états américains.",
+          "keywords": "états américains"
+        },
+        {
+          "language": "nl",
+          "string": "Toon alle staten van de VS.",
+          "keywords": "staten, VS"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi toate statele din Statele Unite.",
+          "keywords": "state din Statele Unite"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who wrote the Game of Thrones theme?",
+          "keywords": "writer, Game of Thrones"
+        },
+        {
+          "language": "fa",
+          "string": "طرح بازی تاج و تخت را چه کسی نوشت؟",
+          "keywords": "طرح، بازی تاج و تخت، نوشت"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat das Titellied für Games of Thrones geschrieben?",
+          "keywords": "Game of Thrones, Titellied, Autor"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién escribió el tema del Juego de Tronos?",
+          "keywords": "escritor, tema Juego de Tronos"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha scritto Game of Thrones?",
+          "keywords": "scrittore, Game of Thrones"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a écrit le thème de Game of Thrones?",
+          "keywords": "compositeur, thème, Game of Thrones"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft de titelmuziek van Game of Thrones gekomponeerd?",
+          "keywords": "titelmuziek, Game of Thrones, componist"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a scris tema din Urzeala Tronurilor?",
+          "keywords": "scriitor, Urzeala Tronurilor"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many calories does a baguette have?",
+          "keywords": "calories, baguette"
+        },
+        {
+          "language": "fa",
+          "string": "یک باگت چقدر کالری دارد؟",
+          "keywords": "باگت، کالری"
+        },
+        {
+          "language": "de",
+          "string": "Wieviel Kalorien hat ein Baguette?",
+          "keywords": "Baguett, Kalorien"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántas calorías tiene una baguette?",
+          "keywords": "calorías, baguette"
+        },
+        {
+          "language": "it",
+          "string": "Quante calorie ha una baguette?",
+          "keywords": "calorie, baguette"
+        },
+        {
+          "language": "fr",
+          "string": "Combien de calories a une baguette?",
+          "keywords": "nombre de calories, baguette"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel calorieën heeft een baguette?",
+          "keywords": "calorieën, baguette"
+        },
+        {
+          "language": "ro",
+          "string": "Câte calorii are o baghetă?",
+          "keywords": "calorii, baghetă"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "question": [
+        {
+          "language": "en",
+          "string": "Can you cry underwater?",
+          "keywords": "cry, underwater"
+        },
+        {
+          "language": "fa",
+          "string": "آیا زیر آب می توان گریه کرد؟",
+          "keywords": "زیر آب، گریه"
+        },
+        {
+          "language": "de",
+          "string": "Kann man unter Wasser weinen?",
+          "keywords": "unter Wasser, weinen"
+        },
+        {
+          "language": "es",
+          "string": "¿Puedes llorar debajo del agua?",
+          "keywords": "llorar, bajo el agua"
+        },
+        {
+          "language": "it",
+          "string": "Si può piangere sott'acqua?",
+          "keywords": "piangere, sott'acqua"
+        },
+        {
+          "language": "fr",
+          "string": "Peut-on pleurer quand submergé?",
+          "keywords": "pleurer, submergé?"
+        },
+        {
+          "language": "nl",
+          "string": "Kun je onder water huilen?",
+          "keywords": "onder water, huilen"
+        },
+        {
+          "language": "ro",
+          "string": "Poți plânge sub apă?",
+          "keywords": "plânge, sub apă"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which companies produce hovercrafts?",
+          "keywords": "companies, produce, hovercrafts"
+        },
+        {
+          "language": "fa",
+          "string": "چه شرکت هایی هواناو تولید می کنند؟",
+          "keywords": "شرکت هایی، هواناو، تولید"
+        },
+        {
+          "language": "de",
+          "string": "Welche Firmen stellen Hovercrafts her?",
+          "keywords": "Firma, herstellen, Hovercraft"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué compañías producen aerodeslizadores?",
+          "keywords": "compañías, producen, aerodeslizadores"
+        },
+        {
+          "language": "it",
+          "string": "Quali società producono aeroscafi?",
+          "keywords": "società produrre, aeroscafi"
+        },
+        {
+          "language": "fr",
+          "string": "Quelles companies produisent des aéroglisseurs?",
+          "keywords": "companies, aéroglisseurs"
+        },
+        {
+          "language": "nl",
+          "string": "Welke bedrijven produceren hovercrafts?",
+          "keywords": "bedrijven, produceren, hovercrafts"
+        },
+        {
+          "language": "ro",
+          "string": "Care companii produc aeroglisoare?",
+          "keywords": "companii, produc, aeroglisoare"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "question": [
+        {
+          "language": "en",
+          "string": "How many emperors did China have?",
+          "keywords": "How many emperors, China"
+        },
+        {
+          "language": "fa",
+          "string": "چین چند امپراتور داشته است؟",
+          "keywords": "چین، امپراتور"
+        },
+        {
+          "language": "de",
+          "string": "Wieviele Kaiser hatte China?",
+          "keywords": "wieviele, Kaiser, China"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuántos emperadores tuvo China?",
+          "keywords": "Numero, emperadores China"
+        },
+        {
+          "language": "it",
+          "string": "Quanti imperatori ci sono stati in Cina?",
+          "keywords": "quanti, imperatori, Cina"
+        },
+        {
+          "language": "fr",
+          "string": "Combien d'empereurs a eu la Chine?",
+          "keywords": "nombre d'empereurs, Chine"
+        },
+        {
+          "language": "nl",
+          "string": "Hoeveel keizers heeft China gehad?",
+          "keywords": "antaal, keizers, China"
+        },
+        {
+          "language": "ro",
+          "string": "Câți împărați a avut China?",
+          "keywords": "câți împărați, China"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods.",
+          "keywords": "hiking trails, Grand Canyon, no danger of flash floods"
+        },
+        {
+          "language": "fa",
+          "string": "تمام مسیرهای پیاده روی در گرند کنیون که خطر سیل ناگهانی در آنجا وجود ندارد را لیست کن.",
+          "keywords": "مسیر پیاده روی، گرند کنیون، خطر سیل ناگهانی، وجود ندارد"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir die Wanderwege im Grand Canyon, wo keine Gefahr von Sturzfluten besteht.",
+          "keywords": "Wanderweg, Grand Canyon, keine Sturzflut"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame rutas de senderismo en el Gran Cañón donde no hay peligro de inundaciones repentinas.",
+          "keywords": "rutas senderismo, Gran Cañón, no peligro, inundaciones repentinas"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami i percorsi nel Grand Canyon in cui non ci sono pericoli di inondazioni istantanee.",
+          "keywords": "percorsi, Grand Canyon, senza pericoli di inondazioni istantanee"
+        },
+        {
+          "language": "fr",
+          "string": "Montre-moi les routes sans risque de crue soudaine sur le Grand Canyon.",
+          "keywords": "routes, sans risque de crue soudaine, le Grand Canyon"
+        },
+        {
+          "language": "nl",
+          "string": "Toen alle wandelroutes in de Grand Canyon zonder gevaar van stortvloeden.",
+          "keywords": "wandelroutes, Grand Canyon, gevaar, stortvloed"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi cărări din Marele Canion unde nu există pericol de inundații instantanee.",
+          "keywords": "cărări, Marele Canion, fără pericol de inundații instantanee"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which ancient empire could you pay with cocoa beans?",
+          "keywords": "ancient empire, pay, cocoa beans"
+        },
+        {
+          "language": "fa",
+          "string": "در کدام امپراتوری باستانی می توان با دانه های کاکائو داد و ستد کرد؟",
+          "keywords": "امپراتوری باستانی، دانه های کاکائو، داد و ستد"
+        },
+        {
+          "language": "de",
+          "string": "In welchem alten Reich konnte man mit Kakaobohnen bezahlen?",
+          "keywords": "altes Reich, bezahlen, Kakaobohnen"
+        },
+        {
+          "language": "es",
+          "string": "En que imperio antiguo pagaría con granos de cacao?",
+          "keywords": "imperio antiguo, pagar, granos cacao"
+        },
+        {
+          "language": "it",
+          "string": "In quale antico impero era possibile pagare con le fave di cacao?",
+          "keywords": "antico impero, pagare, fave di cacao"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quel empire ancien payait-on avec des fèves de cacao?",
+          "keywords": "empire ancien, monnaie, fève de cacao"
+        },
+        {
+          "language": "nl",
+          "string": "In welke oude imperium kon je met cacaobonen betalen?",
+          "keywords": "oude imperium, betalen, cacaobonen"
+        },
+        {
+          "language": "ro",
+          "string": "În ce imperiu antic puteai plăti cu boabe de cacao?",
+          "keywords": "imperiu antic, plăti, boabe de cacao"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "question": [
+        {
+          "language": "en",
+          "string": "How did Michael Jackson die?",
+          "keywords": "how, Michael Jackson, die"
+        },
+        {
+          "language": "fa",
+          "string": "مایکل جکسون چگونه مرد؟",
+          "keywords": "مایکل جکسون، مرد"
+        },
+        {
+          "language": "de",
+          "string": "Woran ist Michael Jackson gestorben?",
+          "keywords": "Michael Jackson, Todesursache"
+        },
+        {
+          "language": "es",
+          "string": "¿Cómo murió Michael Jackson?",
+          "keywords": "tipo de muerte, Michael Jackson"
+        },
+        {
+          "language": "it",
+          "string": "Come è morto Michael Jackson?",
+          "keywords": "tipo di morte, Michael Jackson"
+        },
+        {
+          "language": "fr",
+          "string": "Comment est mort Michael Jackson?",
+          "keywords": "type de mort, Michael Jackson"
+        },
+        {
+          "language": "nl",
+          "string": "Hoe is Michael Jackson overleden?",
+          "keywords": "Michael Jackson, doodsoorzaak"
+        },
+        {
+          "language": "ro",
+          "string": "Cum a murit Michael Jackson?",
+          "keywords": "cum, murit, Michael Jackson"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "question": [
+        {
+          "language": "en",
+          "string": "Which space probes were sent into orbit around the sun?",
+          "keywords": "space probes, orbit around the sun"
+        },
+        {
+          "language": "fa",
+          "string": "کدام کاوشگر فضایی به مداری دور خورشید ارسال شده است؟",
+          "keywords": "کاوشگر فضایی، مداری دور خورشید"
+        },
+        {
+          "language": "de",
+          "string": "Welche Weltraumsonden wurden in den Orbit um die Sonne geschickt?",
+          "keywords": "Weltraumsonden, Orbit, Sonne"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué sondas espaciales fueron enviadas en órbita alrededor del sol?",
+          "keywords": "sondas espaciales, órbita alrededor sol"
+        },
+        {
+          "language": "it",
+          "string": "Quali sonde spaziali sono state inviate in orbita intorno al sole?",
+          "keywords": "sonde spaziali, intorno al sole"
+        },
+        {
+          "language": "fr",
+          "string": "Quelles navettes spatiales ont été envoyées en orbite autour de la lune?",
+          "keywords": "navettes spatiales, orbite, lune"
+        },
+        {
+          "language": "nl",
+          "string": "Welke ruimtesonden vlogen in een baan om de zon?",
+          "keywords": "ruimtesonden, baan om, zon"
+        },
+        {
+          "language": "ro",
+          "string": "Ce sonde spațiale au fost trimise în orbită în jurul soarelui?",
+          "keywords": "sonde spațiale, orbită în jurul soarelui"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "question": [
+        {
+          "language": "en",
+          "string": "When was Coca Cola invented?",
+          "keywords": "date, invention, Coca Cola"
+        },
+        {
+          "language": "fa",
+          "string": "کوکا کولا کی معرفی شد؟",
+          "keywords": "کوکا کولا، معرفی"
+        },
+        {
+          "language": "de",
+          "string": "Wann wurde Coca Cola erfunden?",
+          "keywords": "Coca Cola, erfunden"
+        },
+        {
+          "language": "es",
+          "string": "Cuando se inventó la Coca Cola?",
+          "keywords": "Fecha invención, Coca Cola"
+        },
+        {
+          "language": "it",
+          "string": "Quando è stata inventata la Coca Cola?",
+          "keywords": "data, invenzione, Coca Cola"
+        },
+        {
+          "language": "fr",
+          "string": "Quand a été inventé la Coca Cola?",
+          "keywords": "date d'invention, Coca Cola"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer werd Coca-Cola uitgevonden?",
+          "keywords": "Cocal-Cola, uitgevonden"
+        },
+        {
+          "language": "ro",
+          "string": "Când a fost inventată Coca Cola?",
+          "keywords": "dată, invenție, Coca Cola"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the biggest stadium in Spain?",
+          "keywords": "biggest stadium, Spain"
+        },
+        {
+          "language": "fa",
+          "string": "بزرگترین استادیوم در اسپانیا کدام است؟",
+          "keywords": "بزرگترین استادیوم، اسپانیا"
+        },
+        {
+          "language": "de",
+          "string": "Was ist das größte Stadion in Spanien?",
+          "keywords": "Spanien, größtes Stadium"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el estadio más grande de España?",
+          "keywords": "estadio más grande España"
+        },
+        {
+          "language": "it",
+          "string": "Qual è lo stadio più grande in Spagna?",
+          "keywords": "stadio più grande, Spagna"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le plus grand stade d'Espagne?",
+          "keywords": "plus grand stade, Espagne"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is het grootste stadion van Spanje?",
+          "keywords": "grootste stadion, Spanje"
+        },
+        {
+          "language": "ro",
+          "string": "Care este cel mai mare stadion din Spania?",
+          "keywords": "cel mai mare stadion, Spania"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "question": [
+        {
+          "language": "en",
+          "string": "On which day is Columbus Day?",
+          "keywords": "day, Columbus Day"
+        },
+        {
+          "language": "fa",
+          "string": "روز کلمب کی است؟",
+          "keywords": "روز کلمب"
+        },
+        {
+          "language": "de",
+          "string": "Wann ist der Columbus-Tag?",
+          "keywords": "Columbus-Tag"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué día se celebra el Dia de Colombo?",
+          "keywords": "Dia de Colombo"
+        },
+        {
+          "language": "it",
+          "string": "Quando si celebra il Columbus Day?",
+          "keywords": "Columbus Day"
+        },
+        {
+          "language": "fr",
+          "string": "Quand est Columbus Day?",
+          "keywords": "date, Columbus Day"
+        },
+        {
+          "language": "nl",
+          "string": "Wanneer is Columbusdag?",
+          "keywords": "Columbusdag"
+        },
+        {
+          "language": "ro",
+          "string": "Pe ce dată este Ziua lui Columbus?",
+          "keywords": "dată, Ziua lui Columbus"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "question": [
+        {
+          "language": "en",
+          "string": "How short is the shortest active NBA player?",
+          "keywords": "How short, shortest active player, NBA"
+        },
+        {
+          "language": "fa",
+          "string": "کوتاه ترین بازیکن فعال در ان.بی.ای چقدر کوتاه است؟",
+          "keywords": "کوتاه ترین بازیکن، فعال، ان.بی.ای"
+        },
+        {
+          "language": "de",
+          "string": "Wie klein ist der kleinste aktive NBA-Spieler?",
+          "keywords": "Größe, kleinster NBA-Spieler"
+        },
+        {
+          "language": "es",
+          "string": "¿Como de bajo es el jugador activo mas bajo de la NBA?",
+          "keywords": "tamaño, jugador mas bajo, NBA?"
+        },
+        {
+          "language": "it",
+          "string": "Quanto è basso il giocatore attivo più basso dell'NBA?",
+          "keywords": "statura, giocatore attivo più basso, NBA"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la taille du plus petit joueur actif de la NBA?",
+          "keywords": "taille, plus petit joueur, actif, NBA"
+        },
+        {
+          "language": "nl",
+          "string": "Hoe klein is de kleinste NBA speler?",
+          "keywords": "grote, kleinste NBA speler"
+        },
+        {
+          "language": "ro",
+          "string": "Cât de scund este cel mai scund jucător activ din NBA?",
+          "keywords": "cât de scund, cel mai scund jucător activ, NBA"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "question": [
+        {
+          "language": "en",
+          "string": "Whom did Lance Bass marry?",
+          "keywords": "wife, Lance Bass"
+        },
+        {
+          "language": "fa",
+          "string": "لنس بس با چه کسی ازدواج کرده است؟",
+          "keywords": "لنس بس، ازدواج"
+        },
+        {
+          "language": "de",
+          "string": "Wen hat Lance Bass geheiratet?",
+          "keywords": "Lance Bass, Ehemann"
+        },
+        {
+          "language": "es",
+          "string": "¿Con quien se casó Lance Bass?",
+          "keywords": "esposa, Lance Bass"
+        },
+        {
+          "language": "it",
+          "string": "Chi ha sposato Lance Bass?",
+          "keywords": "moglie, Lance Bass"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est l'épouse de Lance Bass?",
+          "keywords": "épouse, Lance Bass"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft Lance Baas getrouwd?",
+          "keywords": "Lance Baas, getrouwd"
+        },
+        {
+          "language": "ro",
+          "string": "Cu cine s-a căsătorit Lance Bass?",
+          "keywords": "soție, Lance Bass"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "question": [
+        {
+          "language": "en",
+          "string": "What form of government does Russia have?",
+          "keywords": "form of government, Russia"
+        },
+        {
+          "language": "fa",
+          "string": "روسیه چه نوع حکومتی دارد؟",
+          "keywords": "روسیه، نوع حکومت"
+        },
+        {
+          "language": "de",
+          "string": "Welche Regierungsform hat Russland?",
+          "keywords": "Russland, Regierungsform"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué forma de gobierno tiene Rusia?",
+          "keywords": "forma de gobierno, Rusia"
+        },
+        {
+          "language": "it",
+          "string": "Quale forma di governo ha la Russia?",
+          "keywords": "forma di governo, Russia"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est la forme de gouvernement de la Russie?",
+          "keywords": "forme de gouvernement, Russie?"
+        },
+        {
+          "language": "nl",
+          "string": "Welke regeringsvorm heeft Rusland?",
+          "keywords": "regeringsvorm, Rusland"
+        },
+        {
+          "language": "ro",
+          "string": "Ce formă de guvern are Rusia?",
+          "keywords": "formă de guvern, Rusia"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "question": [
+        {
+          "language": "en",
+          "string": "What movies does Jesse Eisenberg play in?",
+          "keywords": "movies, Jesse Eisenberg"
+        },
+        {
+          "language": "fa",
+          "string": "جسی آیزنبرگ در چه فیلم هایی بازی کرده است؟",
+          "keywords": "جسی آیزنبرگ، فیلم هایی، بازی"
+        },
+        {
+          "language": "de",
+          "string": "In welchen Filmen spielt Jesse Eisenberg mit?",
+          "keywords": "Jesse Eisenberg, spielen, Filme"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué películas participa Jesse Eisenberg?",
+          "keywords": "películas, Jesse Eisenberg"
+        },
+        {
+          "language": "it",
+          "string": "In quali film recita Jesse Eisenberg?",
+          "keywords": "film, Jesse Eisenberg"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quels films joue Jesse Eisenberg?",
+          "keywords": "films, Jesse Eisenberg"
+        },
+        {
+          "language": "nl",
+          "string": "In welke films speelt Jesse Eisenberg?",
+          "keywords": "films, acteur, Jesse Eisenberg"
+        },
+        {
+          "language": "ro",
+          "string": "În ce filme joacă Jesse Eisenberg?",
+          "keywords": "filme, Jesse Eisenberg"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "question": [
+        {
+          "language": "en",
+          "string": "What color expresses loyalty?",
+          "keywords": "color, express, loyalty"
+        },
+        {
+          "language": "fa",
+          "string": "چه رنگی وفاداری را بیان می کند؟",
+          "keywords": "رنگی، وفاداری، بیان"
+        },
+        {
+          "language": "de",
+          "string": "Welche Farbe steht für Loyalität?",
+          "keywords": "Farbe, stehen für, Loyalität"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué color expresa lealtad?",
+          "keywords": "color, expresa, lealtad"
+        },
+        {
+          "language": "it",
+          "string": "Quale colore esprime lealtà?",
+          "keywords": "colore, esprimere, lealtà"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle couleur exprime la loyalité?",
+          "keywords": "couleur, loyalité"
+        },
+        {
+          "language": "nl",
+          "string": "Welke kleur staat voor loyaliteit?",
+          "keywords": "kleur, loyaliteit"
+        },
+        {
+          "language": "ro",
+          "string": "Ce culoare exprimă loialitate?",
+          "keywords": "culoare, exprimă, loialitate"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me all museums in London.",
+          "keywords": "museums, London"
+        },
+        {
+          "language": "fa",
+          "string": "تمام موزه های لندن را لیست کن.",
+          "keywords": "موزه های لندن"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir alle Museen in London.",
+          "keywords": "London, Museen"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame todos los museos en Londres",
+          "keywords": "museos Londres"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami tutti i musei di Londra.",
+          "keywords": "musei, Londra"
+        },
+        {
+          "language": "fr",
+          "string": "Montre-moi tous les musées de Londres.",
+          "keywords": " musées, Londres"
+        },
+        {
+          "language": "nl",
+          "string": "Toen alle museums in Londen.",
+          "keywords": "Londen, museums"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi toate muzeele din Londra",
+          "keywords": "muzee, Londra"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "question": [
+        {
+          "language": "en",
+          "string": "Give me all South American countries.",
+          "keywords": "countries, South American"
+        },
+        {
+          "language": "fa",
+          "string": "تمام کشورهای آمریکای جنوبی را لیست کن.",
+          "keywords": "کشورهای آمریکای جنوبی"
+        },
+        {
+          "language": "de",
+          "string": "Gib mir alle Länder Südamerikas.",
+          "keywords": "Südamerika, Länder"
+        },
+        {
+          "language": "es",
+          "string": "Dame todos los países de América del Sur",
+          "keywords": "países, América del Sur"
+        },
+        {
+          "language": "it",
+          "string": "Dammi tutti gli stati sudamericani.",
+          "keywords": "stati sudamericani"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi tous les états de l'Amérique du Sud.",
+          "keywords": "états, Amérique du Sud"
+        },
+        {
+          "language": "nl",
+          "string": "Geef alle Zuid-Amerikaanse landen.",
+          "keywords": "Zuid-Amerika, landen"
+        },
+        {
+          "language": "ro",
+          "string": "Dă-mi toate țările din America de Sud",
+          "keywords": "țări, America de Sud"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the coach of Ankara's ice hockey team?",
+          "keywords": "coach, ice hockey team, Ankara"
+        },
+        {
+          "language": "fa",
+          "string": "سرمربی تیم هاکی آنکارا کیست؟",
+          "keywords": "سرمربی، تیم هاکی آنکارا"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist der Trainer von Ankaras Eishockeymannschaft?",
+          "keywords": "Ankara, Eishockeymannschaft, Trainer"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el entrenador del equipo de hockey sobre hielo de Ankara?",
+          "keywords": "entrenador, equipo hockey sobre hielo, Ankara"
+        },
+        {
+          "language": "it",
+          "string": "Chi è l'allenatore della squadra di hockey di Ankara?",
+          "keywords": "allenatore, squadra di hockey, Ankara"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le coach de l'équipe d'hockey sur glace d'Ankara?",
+          "keywords": "coach, hockey sur glace, Ankara"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de coach van het ijshockey team van Ankara.",
+          "keywords": "coach, ijshockey team, Ankara"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este antrenorul echipei de hochei pe gheață din Ankara?",
+          "keywords": "antrenor, echipa de hochei pe gheață, Ankara"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the son of Sonny and Cher?",
+          "keywords": "son, Sonny and Cher"
+        },
+        {
+          "language": "fa",
+          "string": "پسر سونی و چر چه کسی بود؟",
+          "keywords": "پسر، سونی و چر"
+        },
+        {
+          "language": "de",
+          "string": "Wer ist der Sohn von Sonny und Cher?",
+          "keywords": "Sonny, Cher, Sohn"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién es el hijo de Sonny y Cher?",
+          "keywords": "hijo, Sonny y Cher?"
+        },
+        {
+          "language": "it",
+          "string": "Chi è il figlio di Sonny e Cher",
+          "keywords": "figlio, Sonny e Cher"
+        },
+        {
+          "language": "fr",
+          "string": "Qui est le fils de Sonny et Cher?",
+          "keywords": "fils, Sonny, Cher"
+        },
+        {
+          "language": "nl",
+          "string": "Wie is de zoon van Sonny en Cher?",
+          "keywords": "zoon, Sonny, Cher"
+        },
+        {
+          "language": "ro",
+          "string": "Cine este fiul lui Sonny și Cher?",
+          "keywords": "fiu, Sonny și Cher"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the five boroughs of New York?",
+          "keywords": "five boroughs, New York"
+        },
+        {
+          "language": "fa",
+          "string": "پنج منطقه نیویورک کدام است؟",
+          "keywords": "پنج، منطقه، نیویورک"
+        },
+        {
+          "language": "de",
+          "string": "Was sind die fünf Stadtteile von New York?",
+          "keywords": "New York, Stadtteile"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuáles son los cinco condados de Nueva York?",
+          "keywords": "cinco condados, Nueva York"
+        },
+        {
+          "language": "it",
+          "string": "Quali sono i cinque quartieri di New York?",
+          "keywords": "cinque quartieri, New York"
+        },
+        {
+          "language": "fr",
+          "string": "Donne-moi cinq quartiers de New York.",
+          "keywords": "quartiers, New York"
+        },
+        {
+          "language": "nl",
+          "string": "Wat zijn de fijv wijken van New York?",
+          "keywords": "New York, wijken"
+        },
+        {
+          "language": "ro",
+          "string": "Care sunt cele cinci cartiere din New York?",
+          "keywords": "cinci cartiere, New York"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "question": [
+        {
+          "language": "en",
+          "string": "Show me Hemingway's autobiography.",
+          "keywords": "autobiography, Hemingway"
+        },
+        {
+          "language": "fa",
+          "string": "خود زندگی نامه همینگوی را بده.",
+          "keywords": "خود زندگی نامه، همینگوی"
+        },
+        {
+          "language": "de",
+          "string": "Zeig mir Hemmingways Autobiographie.",
+          "keywords": "Hemmingway, Autobiographie"
+        },
+        {
+          "language": "es",
+          "string": "Muéstrame la autobiografía Hemingway.",
+          "keywords": "autobiografía Hemingway"
+        },
+        {
+          "language": "it",
+          "string": "Mostrami l'autobiografia di Hemingway.",
+          "keywords": "autobiorafia, Hemingway"
+        },
+        {
+          "language": "fr",
+          "string": "Montre l'autobiographie de Hemingway.",
+          "keywords": "autobiographie, Hemingway"
+        },
+        {
+          "language": "nl",
+          "string": "Toen de autobiografie van Hemmingway.",
+          "keywords": "Hemmingway, autobiografie"
+        },
+        {
+          "language": "ro",
+          "string": "Arată-mi autobiografia lui Hemingway",
+          "keywords": "autobiografie, Hemingway"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "question": [
+        {
+          "language": "en",
+          "string": "What kind of music did Lou Reed play?",
+          "keywords": "kind of music, Lou Reed, play"
+        },
+        {
+          "language": "fa",
+          "string": "لو رید چه نوع موسیقی می نواخت؟",
+          "keywords": "لو رید، نوع موسیقی"
+        },
+        {
+          "language": "de",
+          "string": "Was für Musik hat Lou Reed gemacht?",
+          "keywords": "Lou Reed, Genre"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué tipo de música tocaba Lou Reed?",
+          "keywords": "tipo música, tocaba, Lou Reed?"
+        },
+        {
+          "language": "it",
+          "string": "Quale tipo di musica suonava Lou Reed?",
+          "keywords": "tipo di musica, suonava, Lou Reed"
+        },
+        {
+          "language": "fr",
+          "string": "Quelle est le genre de musique joué par Lou Reed?",
+          "keywords": "genre de musique, Lou Reed"
+        },
+        {
+          "language": "nl",
+          "string": "Welke soort muziek heeft Lou Reed gemaakt?",
+          "keywords": "Lou Reed, soort muziek"
+        },
+        {
+          "language": "ro",
+          "string": "Ce fel de muzică a cântat Lou Reed?",
+          "keywords": "fel de muzică, Lou Reed, cântat"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city does Sylvester Stallone live?",
+          "keywords": "city, live, Sylvester Stallone"
+        },
+        {
+          "language": "fa",
+          "string": "سیلوستر استالونه در کدام شهر زندگی می کند؟",
+          "keywords": "سیلوستر استالونه، شهر، زندگی"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Stadt wohnt Sylvester Stallone?",
+          "keywords": "Sylvester Stallone, wohnen, Stadt"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué ciudad vive Sylvester Stallone?",
+          "keywords": "ciudad, vive, Sylvester Stallone"
+        },
+        {
+          "language": "it",
+          "string": "In quale città vive Sylvester Stallone?",
+          "keywords": "città, vive, Sylvester Stallone"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quelle ville vit Sylvester Stallone?",
+          "keywords": "ville, Sylvester Stallone"
+        },
+        {
+          "language": "nl",
+          "string": "In welke stad woont Sylvester Stallone?",
+          "keywords": "stad, wonen, Sylvester Stallone"
+        },
+        {
+          "language": "ro",
+          "string": "În ce oraș trăiește Sylvester Stallone?",
+          "keywords": "oraș, trăiește, Sylvester Stallone"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was Vincent van Gogh inspired by?",
+          "keywords": "person, inspiring, Vincent van Gogh"
+        },
+        {
+          "language": "fa",
+          "string": "ونسان ون گوگ از چه کسی الهام گرفته است؟",
+          "keywords": "ونسان ون گوگ، الهام"
+        },
+        {
+          "language": "de",
+          "string": "Wer hat Vincent van Gogh inspiriert?",
+          "keywords": "Vincent van Gogh, Inspiration"
+        },
+        {
+          "language": "es",
+          "string": "¿Quién inspiro a Vincent van Gogh?",
+          "keywords": "persona, inpiracion, Vincent van Gogh"
+        },
+        {
+          "language": "it",
+          "string": "Da chi fu inspirato Vincent van Gogh?",
+          "keywords": "persona, ispirare, Vincent van Gogh"
+        },
+        {
+          "language": "fr",
+          "string": "Qui a inspiré Victor van Gogh?",
+          "keywords": "inspiration, Victor van Gogh"
+        },
+        {
+          "language": "nl",
+          "string": "Wie heeft van Gogh geinspireerd?",
+          "keywords": "van Gogh, geinspireerd"
+        },
+        {
+          "language": "ro",
+          "string": "De către cine a fost Vincent van Gogh inspirat?",
+          "keywords": "persoană, inspirație, Vincent van Gogh"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the names of the Teenage Mutant Ninja Turtles?",
+          "keywords": "names, Teenage Mutant Ninja Turtles"
+        },
+        {
+          "language": "fa",
+          "string": "نام لاک پشت های نینجا چیست؟",
+          "keywords": "نام، لاک پشت های نینجا"
+        },
+        {
+          "language": "de",
+          "string": "Wie heißen die Teenage Mutant Ninja Turtles?",
+          "keywords": "Teenage Mutant Ninja Turtles, Namen"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuáles son los nombres de las Tortugas Ninja Mutantes Adolescentes?",
+          "keywords": "nombres, Tortugas Ninja Mutantes Adolescentes"
+        },
+        {
+          "language": "it",
+          "string": "Quali sono i nomi delle Tartarughe Ninja?",
+          "keywords": "nomi, Tartarughe Ninja"
+        },
+        {
+          "language": "fr",
+          "string": "Quels sont les noms des Teenage Mutant Ninja Turtles?",
+          "keywords": "noms, Teenage Mutant Ninja Turtles"
+        },
+        {
+          "language": "nl",
+          "string": "Wat zijn de namen van de Teenage Mutant Ninja Turtles?",
+          "keywords": "Teenage Mutant Ninja Turtles, namen"
+        },
+        {
+          "language": "ro",
+          "string": "Care sunt numele Țestoaselor Ninja?",
+          "keywords": "fume, Țestoase Ninja"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "question": [
+        {
+          "language": "en",
+          "string": "What are the zodiac signs?",
+          "keywords": "zodiac signs"
+        },
+        {
+          "language": "fa",
+          "string": "علائم زودیاک چیست؟",
+          "keywords": "علائم زودیاک"
+        },
+        {
+          "language": "de",
+          "string": "Welche Sternzeichen gibt es?",
+          "keywords": "Sternzeichen"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuáles son los signos del zodiaco?",
+          "keywords": "signos zodiaco"
+        },
+        {
+          "language": "it",
+          "string": "Quali sono i segni dello zodiaco?",
+          "keywords": "segni dello zodiaco"
+        },
+        {
+          "language": "fr",
+          "string": "Quels sont les signes du zodiaque?",
+          "keywords": "signes, zodiaque"
+        },
+        {
+          "language": "nl",
+          "string": "Welke sterrenbelden zijn er?",
+          "keywords": "sterrenbelden"
+        },
+        {
+          "language": "ro",
+          "string": "Care sunt semnele zodiacului?",
+          "keywords": "semnele zodiacului"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "question": [
+        {
+          "language": "en",
+          "string": "What languages do they speak in Pakistan?",
+          "keywords": "languages, Pakistan"
+        },
+        {
+          "language": "fa",
+          "string": "در پاکستان به چه زبان هایی صحبت می کنند؟",
+          "keywords": "پاکستان، زبان هایی"
+        },
+        {
+          "language": "de",
+          "string": "Welche Sprachen werden in Pakistan gesprochen?",
+          "keywords": "Pakistan, Sprachen"
+        },
+        {
+          "language": "es",
+          "string": "¿Qué idiomas se hablan en Pakistán?",
+          "keywords": "idiomas, Pakistán"
+        },
+        {
+          "language": "it",
+          "string": "Quali lingue parlano in Pakistan?",
+          "keywords": "lingue, Pakistan"
+        },
+        {
+          "language": "fr",
+          "string": "Quelles langues parle-t-on au Pakistan?",
+          "keywords": "langues, Pakistan"
+        },
+        {
+          "language": "nl",
+          "string": "Welke talen spreken ze in Pakistan?",
+          "keywords": "Pakistan, talen"
+        },
+        {
+          "language": "ro",
+          "string": "Ce limbi se vorbesc în Pakistan?",
+          "keywords": "limbi, Pakistan"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "question": [
+        {
+          "language": "en",
+          "string": "Who became president after JFK died?",
+          "keywords": "president, after JFK death"
+        },
+        {
+          "language": "fa",
+          "string": "پس از مرگ جان اف. کندی چه کسی رئیس جمهور شد؟",
+          "keywords": "پس از، مرگ جان اف. کندی، رئیس جمهور"
+        },
+        {
+          "language": "de",
+          "string": "Wer wurde nach dem Tod von JFK Präsident?",
+          "keywords": "Präsident, nach, Tod, JFK"
+        },
+        {
+          "language": "es",
+          "string": "Quien se convirtió en presidente después de la muerte de JFK?",
+          "keywords": "presidente, tras la muerte, JFK"
+        },
+        {
+          "language": "it",
+          "string": "Chi diventò presidente dopo la morte di JFK?",
+          "keywords": "presidente, dopo la morte di JFK"
+        },
+        {
+          "language": "fr",
+          "string": "Qui devenu président après la mort de JFK?",
+          "keywords": "président, après, mort, JFK"
+        },
+        {
+          "language": "nl",
+          "string": "Wie werd president naar de dood van JFK?",
+          "keywords": "president, naar, dood, JFK"
+        },
+        {
+          "language": "ro",
+          "string": "Cine a devenit președinte după moartea lui JFK?",
+          "keywords": "președinte, după moartea lui JFK"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "question": [
+        {
+          "language": "en",
+          "string": "In what city is the Heineken brewery?",
+          "keywords": "city, Heineken brewery"
+        },
+        {
+          "language": "fa",
+          "string": "آبجوسازی هینکن در کدام شهر قرار دارد؟",
+          "keywords": "آبجوسازی هینکن، شهر"
+        },
+        {
+          "language": "de",
+          "string": "In welcher Stadt ist die Heinekenbrauerei?",
+          "keywords": "Stadt, Heinekenbrauerei"
+        },
+        {
+          "language": "es",
+          "string": "¿En qué ciudad esta la fábrica de cerveza Heineken?",
+          "keywords": "ciudad, fábrica cerveza Heineken"
+        },
+        {
+          "language": "it",
+          "string": "In quale città si trova il birrificio della Heiniken?",
+          "keywords": "città, birrificio della Heiniken"
+        },
+        {
+          "language": "fr",
+          "string": "Dans quelle ville se trouve la brasserie de Heineken?",
+          "keywords": "ville, brasserie, Heineken?"
+        },
+        {
+          "language": "nl",
+          "string": "In welke stad bevindt zich de Heineken brouwerij?",
+          "keywords": "stad, Heineken, brouwerij"
+        },
+        {
+          "language": "ro",
+          "string": "În ce oraș este fabrica de bere Heineken?",
+          "keywords": "oraș, fabrica de bere Heineken"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is Elon Musk famous for?",
+          "keywords": "famous for, Elon Musk"
+        },
+        {
+          "language": "fa",
+          "string": "ایلان ماسک برای چه چیزی مشهور بود؟",
+          "keywords": "ایلان ماسک، مشهور"
+        },
+        {
+          "language": "de",
+          "string": "Wofür ist Elon Musk bekannt?",
+          "keywords": "Elon Musk, bekannt für"
+        },
+        {
+          "language": "es",
+          "string": "¿Por que es famoso Elon Musk?",
+          "keywords": "famoso por, Elon Musk"
+        },
+        {
+          "language": "it",
+          "string": "Per cosa è famoso Elon Musk?",
+          "keywords": "famoso per, Elon Musk"
+        },
+        {
+          "language": "fr",
+          "string": "Pour quelle raison est Elon Musk connu?",
+          "keywords": "Elon Musk, raison, connu"
+        },
+        {
+          "language": "nl",
+          "string": "Waarvoor is Elon Musk beroemd?",
+          "keywords": "Elon Musk, beroemd voor"
+        },
+        {
+          "language": "ro",
+          "string": "Pentru ce este Elon Musk faimos?",
+          "keywords": "faimos pentru, Elon Musk"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "question": [
+        {
+          "language": "en",
+          "string": "What is Batman's real name?",
+          "keywords": "real name, Batman"
+        },
+        {
+          "language": "fa",
+          "string": "نام واقعی بتمن چیست؟",
+          "keywords": "نام واقعی، بتمن"
+        },
+        {
+          "language": "de",
+          "string": "Was ist Batmans richtiger Name?",
+          "keywords": "Batman, richtiger Name"
+        },
+        {
+          "language": "es",
+          "string": "¿Cuál es el verdadero nombre de Batman?",
+          "keywords": "verdadero nombre Batman"
+        },
+        {
+          "language": "it",
+          "string": "Qual è il vero nome di Batman?",
+          "keywords": "Batman, vero nome"
+        },
+        {
+          "language": "fr",
+          "string": "Quel est le vrai nom de Batman?",
+          "keywords": "vrai nom, Batman"
+        },
+        {
+          "language": "nl",
+          "string": "Wat is de echte naam van Batman?",
+          "keywords": "Batman, echte naam"
+        },
+        {
+          "language": "ro",
+          "string": "Care este numele real al lui Batman?",
+          "keywords": "nume real, Batman"
+        }
+      ]
+    }
+  ]
+}

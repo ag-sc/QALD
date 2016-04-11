@@ -1,0 +1,223 @@
+{
+  "dataset": {
+    "id": "qald-6-hybrid-test"
+  },
+  "questions": [
+    {
+      "id": "1",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the president by whom 20 million Americans had gained health insurance?"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": [
+        {
+          "language": "en",
+          "string": "When was the European President known as the decider born?"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the Answer to The Ultimate Question of Life, the Universe, and Everything?"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which movie established a second carrier for Bill Murray?"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many floors does the world's only 7 star hotel have?"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many awards achieved the creator of the world's most famous equation?"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who are the sons of the songwriter of the Beatles?"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who of those resting in Westminster Abbey wrote a book set in London and Paris?"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "question": [
+        {
+          "language": "en",
+          "string": "Where was the first race for the greatest Formula One driver of all times?"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which books of the laureate of American lowlife are published by Black Sparrow Books?"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which astronauts died at the Columbia disaster also known as STS-107?"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which princess died in a car crash in Paris?"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the mayor of London during the olympic games?"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the president of the USSR during the cold war?"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who were generals of the battle of gettysburg?"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city was the mother of Bill Gates born?"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the name of the school where obama's wife is studied?"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who first deciphered the Egyptian hieroglyphs?"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who invented the World Wide Web?"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the founder of the Turkish Republic?"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the architect of the tallest building in Japan?"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the last man on the moon?"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+        }
+      ]
+    }
+  ]
+}

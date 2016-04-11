@@ -2,9 +2,9 @@
 // files
 $file_name_in = $_FILES["file"]["name"];
 $file_name = explode(".", $file_name_in);
-
+error_reporting(E_ALL);
 // evaluation result
-$eval_result = null;
+//$eval_result = null;
 
 // variables
 $system = addslashes($_POST["system_name"]);
@@ -90,6 +90,7 @@ if ($err != 1)
 	{
 		$server_target = "upload/" . $system . "_" . $file_name[0] . "_" . $timestamp . "." . $file_name[1];
                 file_put_contents('statistics.txt',"     " . $server_target,FILE_APPEND);
+		
 		if (!file_exists($server_target))
 		{
 			$no_name = "false";
@@ -120,7 +121,7 @@ if ($err != 1)
 
 	//chmod($server_target,0666);
 	// execute python file
-	$cmd = 'ruby20 ../scripts/evaluation.rb "' . $server_target . '" "' . $system . '" "' . $configuration . '"';
+	$cmd = 'ruby2.0 ../scripts/evaluation.rb "' . $server_target . '" "' . $system . '" "' . $configuration . '"';
 	@exec(escapeshellcmd($cmd),$eval_result);
         //chmod($server_target,0644);
 
@@ -132,8 +133,8 @@ if ($err != 1)
 	   }
 	   if (strcmp($type, "test") == 0) 
 	   { 
-	       // echo "Thanks for submitting! Evaluation results will be made available on May 15.";
-	       include($eval_result[0]);
+	       echo "Thanks for submitting! Evaluation results will be made available on April 20.";
+	       //include($eval_result[0]);
 	   }
 	}
 	else {
