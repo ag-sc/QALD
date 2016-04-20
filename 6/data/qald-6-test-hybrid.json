@@ -1,0 +1,1574 @@
+{
+  "dataset": {
+    "id": "qald-6-test-hybrid"
+  },
+  "questions": [
+	{
+      "id": "1",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the president by whom 20 million Americans had gained health insurance?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?proj WHERE { ?uri text:\"20 million Americans had gained health insurance\" . ?uri dbp:signedPresident ?proj . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Barack_Obama"
+              }
+            } ] }
+        }
+      ]
+    },
+	{
+      "id": "2",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "false",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "When was the European President known as the decider born?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"the decider\" . ?uri dbo:birthDate ?proj. ?uri rdf:type http://dbpedia.org/class/yago/PresidentsOfTheEuropeanCouncil . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Angela_Merkel"
+              }
+            } ] }
+        }
+      ]
+    },
+
+	{
+      "id": "3",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the Answer to The Ultimate Question of Life, the Universe, and Everything?"
+        }
+      ],
+      "query": {
+        "pseudo": " SELECT DISTINCT ?proj WHERE { ?uri text:\"Answer to The Ultimate Question of Life, the Universe, and Everything\" . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/42_(number)"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "4",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which movie established a second carrier for Bill Murray?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri text:\"second carrier\" . ?uri rdf:type dbo:Film . ?uri dbo:starring dbr:Bill_Murray . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "uri"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "uri": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Rushmore_(film)"
+              }
+            } ] }
+        }
+      ]
+    },
+
+			{
+      "id": "5",
+      "answertype": "number",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many floors does the world's only 7 star hotel have?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"world's only 7 star hotel\" . ?uri dbo:floorCount ?proj . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "number",
+                "value": "70"
+              }
+            } ] }
+        }
+      ]
+    },
+
+
+			{
+      "id": "6",
+      "answertype": "number",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "How many awards achieved the creator of the world's most famous equation?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT COUNT(?proj) WHERE { ?uri text:\"the world's most famous equation\" . ?uri dbo:awards ?proj . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "number",
+                "value": "6"
+              }
+            } ] }
+        }
+      ]
+    },
+
+			{
+      "id": "7",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who are the sons of the songwriter of the Beatles?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?proj WHERE { ?uri text:\"songwriter\" . dbr:The_Beatles dbo:bandMember ?uri. ?uri dbo:child ?proj . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Julian_Lennon"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Sean_Lennon"
+              }
+            } ] }
+        }
+      ]
+    },
+
+
+		{
+      "id": "8",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who of those resting in Westminster Abbey wrote a book set in London and Paris?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri text:\"set in London and Paris\" . dbr:Westminster_Abbey dbo:restingPlace ?uri . } "
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "uri"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "uri": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Charles_Dickens"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "9",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Where was the first race for the greatest Formula One driver of all times?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"greatest Formula One driver of all times\" . ?uri dbo:firstRace ?proj . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/1991_Belgian_Grand_Prix"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "10",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which books of the laureate of American lowlife are published by Black Sparrow Books?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"laureate of American lowlife\" . ?proj dbo:author ?uri . ?proj dbo:publisher dbr:Black_Sparrow_Books . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Factotum_(novel)"
+              }
+            },
+	    {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Women_(novel)"
+              }
+            },
+	    {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Pulp_(novel)"
+              }
+            },
+	    {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Post_Office_(novel)"
+              }
+            },
+	    {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Hollywood_(Bukowski_novel)"
+              }
+            },
+	    {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Ham_on_Rye"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "11",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which astronauts died at the Columbia disaster also known as STS-107?"
+        }
+      ],
+      "query": {
+        "pseudo": " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { { ?uri text:\"Columbia disaster\" . } UNION { ?uri text:\"STS-107\" }  ?proj rdf:type dbo:Astronaut . ?proj dbo:deathDate ?date. FILTER (bound (?date))}"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Rick_Husband"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_C._McCool"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Michael_P._Anderson"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Ilan_Ramon"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Kalpana_Chawla"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/David_M._Brown"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Laurel_Clark"
+              }
+            } ] }
+        }
+      ]
+    },
+
+
+		{
+      "id": "12",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which princess died in a car crash in Paris?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"car crash\" . ?proj rdf:type dbo:Royalty . ?proj dbo:deathPlace dbr:Paris }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Diana_Princess_of_Wales"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "14",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the mayor of London during the olympic games?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"Olympic Games\" . ?proj rdf:type dbo:Person . ?proj dbp:office dbr:Mayor_of_London . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Boris_Johnson"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "15",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the president of the USSR during the cold war?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"cold war\" . ?proj rdf:type dbo:Person . ?proj dbp:title dbr:President_of_the_Soviet_Union . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Mikhail_Gorbachev"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "16",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who were generals of the battle of gettysburg?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"general\" . ?proj rdf:type dbo:Person . ?proj dbo:battle dbr:Battle_of_Gettysburg . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Charles_Powell_Adams"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Ira_Coray_Abbott"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Horatio_Wright"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_L._Kemper"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_Bell_Hood"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Stephen_Dodson_Ramseur"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_Barksdale"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_Mahone"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_T._Anderson"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_W._Hyde"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Carle_Augustus_Woodruff"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Leroy_Augustus_Stafford"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_Montrose_Graham,_Jr."
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Armistead_Lindsay_Long"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Orpheus_S._Woodward"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Benjamin_G._Humphreys"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Beverly_Robertson"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_F._Reynolds"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Richard_S._Ewell"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_Newton_(engineer)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Paul_Jones_Semmes"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alexander_Schimmelfennig"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_H._Steuart_(brigadier_general)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_Conner_(general)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Ranald_S._Mackenzie"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Richard_B._Garnett"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Junius_Daniel"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Oliver_O._Howard"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Daniel_Butterfield"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Elwell_Stephen_Otis"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_Jackson_Hunt"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_Brown_Gordon"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/W%C5%82odzimierz_Krzy%C5%BCanowski"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Gouverneur_K._Warren"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_Heth"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_Henry_Lane_(Confederate_general)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Lafayette_McLaws"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_J._Archer"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Adolph_von_Steinwehr"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Charles_K._Graham"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alfred_Moore_Scales"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_Doby_Kennedy"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_L._Eustis"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_S._Huidekoper"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Winfield_Scott_Hancock"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_Dorsey_Pender"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Richard_L._T._Beale"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_Warner_Slocum"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Lysander_Cutler"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_C._Oates"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_Buford"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Harry_T._Hays"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Samuel_W._Crawford"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Archibald_C._Godwin"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_Livermore_Abbott"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Albion_P._Howe"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Ellis_Spear"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alexander_S._Webb"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Napoleon_B._McLaughlen"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_Armstrong_Custer"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Abner_Monroe_Perrin"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Isaac_R._Trimble"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Daniel_Sickles"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Isaac_R._Trimble"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/J._Johnston_Pettigrew"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Joshua_Chamberlain"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Lucius_Fairchild"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Elon_J._Farnsworth"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_T._Wofford"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_C._Bates"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_R._Chambliss"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Samuel_K._Zook"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_H._Ruger"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Henry_Baxter"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_L._Rosser"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_Devin"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_P._Foster"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Gabriel_Ren%C3%A9_Paul"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/R%C3%A9gis_de_Trobriand"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Joseph_B._Kershaw"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alfred_Iverson,_Jr."
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Charles_Griffin"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Robert_O._Tyler"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alexander_Hays"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/J._H._Hobart_Ward"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_C._Caldwell"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_C._Robinson"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Robert_D._Lilley"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Lewis_Armistead"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_Meade"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/George_Pickett"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Romeyn_B._Ayres"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Francis_C._Barlow"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Augustus_Pearl_Martin"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Edward_Lloyd_Thomas"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_Algeo_Rowley"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_Smith_(Virginia_governor)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Harry_C._Egbert"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Clement_A._Evans"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_Barnes_(general)"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_Alfred_Smyth"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Birkett_D._Fry"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Moxley_Sorrel"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Collett_Leventhorpe"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Peter_A.S._McGlashan"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Laurence_S._Baker"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/John_M._Jones"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_Clay_Rice"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Thomas_W._Egan"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Joseph_G._Sanders"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/William_L._Brandon"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Alonzo_W._Adams"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/James_Gwyn"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Richard_Napoleon_Batchelder"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Charles_Saalmann"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Adrian_R._Root"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "17",
+      "answertype": "text",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "In which city was the mother of Bill Gates born?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?mother text:\"mother\" . ?mother rdf:type dbo:Person . ?mother dbp:children dbr:Bill_Gates . ?mother dbp:birthPlace ?proj}"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "text",
+                "value": "\"Seattle, Washington, U.S.\" @en"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "18",
+      "answertype": "text",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "false",
+      "question": [
+        {
+          "language": "en",
+          "string": "What is the name of the school where obama's wife is studied?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?x rdf:type dbo:Person . dbr:Barack_Obama dbp:spouse ?x . ?x dbp:almaMater ?proj }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "text",
+                "value": "\"Harward Law School\" @en"
+              }
+            },
+	    {
+              "proj": {
+                "type": "text",
+                "value": "\"Princeton University\" @en"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "19",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who first deciphered the Egyptian hieroglyphs?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"first deciphered\" . ?proj rdf:type dbo:Person . ?mother dbp:field dbr:Egyptian_hieroglyphs . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Jean-Fran%C3%A7ois_Champollion"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "20",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "false",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who invented the World Wide Web?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   SELECT DISTINCT ?proj WHERE { ?proj text:\"world wide web\" . ?proj rdf:type <http://dbpedia.org/class/yago/Inventor110214637> . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Tim_Berners-Lee"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "21",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "false",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the founder of the Turkish Republic?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   SELECT DISTINCT ?proj WHERE { ?proj text:\"founder\" . ?proj rdf:type <http://dbpedia.org/class/yago/PresidentsOfTurkey> . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Mustafa_Kemal_Atat%C3%BCrk"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "22",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who is the architect of the tallest building in Japan?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/>   SELECT DISTINCT ?proj WHERE { ?x text:\"tallest building\" . ?x dbp:title dbr:List_of_tallest_structures_in_Japan . ?x <http://dbpedia.org/ontology/architect> ?proj . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Takenaka_Corporation"
+              }
+            },
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/C%C3%A9sar_Pelli"
+              }
+            } ] }
+        }
+      ]
+    },
+
+		{
+      "id": "23",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who was the last man on the moon?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { dbr:Last_man_on_the_moon dbo:wikiPageRedirects ?proj . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Eugene_Cernan"
+              }
+            }] }
+        }
+      ]
+    },
+
+		{
+      "id": "24",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?role dbo:portrayer ?proj . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_schoolteachers> . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_drug_dealers> . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Bryan_Cranston"
+              }
+            }] }
+        }
+      ]
+    },
+
+		{
+      "id": "25",
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "true",
+      "hybrid": "true",
+      "question": [
+        {
+          "language": "en",
+          "string": "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+        }
+      ],
+      "query": {
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/>   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?father dbo:portrayer ?proj . ?father dbp:children dbr:Austin_Powers_(character) . }"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "proj"
+            ]
+          },
+          "results": { "bindings": [
+            {
+              "proj": {
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Bryan_Cranston"
+              }
+            }] }
+        }
+      ]
+    }
+]
+}
