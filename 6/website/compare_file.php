@@ -133,8 +133,8 @@ if ($err != 1)
 	   }
 	   if (strcmp($type, "test") == 0) 
 	   { 
-	       echo "Thanks for submitting! Evaluation results will be made available on April 20.";
-	       //include($eval_result[0]);
+	       //echo "Thanks for submitting! Evaluation results will be made available on April 20.";
+	       include($eval_result[0]);
 	   }
 	}
 	else {
