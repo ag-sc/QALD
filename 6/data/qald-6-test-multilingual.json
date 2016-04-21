@@ -182,7 +182,7 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Hotel_California> <http://dbpedia.org/ontology/musicalArtist> ?uri . }"
+        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Hotel_California> <http://dbpedia.org/ontology/writer> ?uri . }"
       },
       "answers": [
         {
@@ -196,7 +196,19 @@
               {
                 "uri": {
                   "type": "uri",
-                  "value": "http://dbpedia.org/resource/Eagles_(band)"
+                  "value": "http://dbpedia.org/resource/Glenn_Frey"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Don_Felder"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Don_Henley"
                 }
               }
             ]
@@ -253,18 +265,35 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/mission> <http://dbpedia.org/resource/Apollo_11> . }"
+        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Apollo_11> <http://dbpedia.org/property/crewMembers> ?uri . }"
       },
       "answers": [
         {
           "head": {
             "vars": [
-
+              "uri"
             ]
           },
           "results": {
             "bindings": [
-
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Buzz_Aldrin"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Michael_Collins_(astronaut)"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Neil_Armstrong"
+                }
+              }
             ]
           }
         }
@@ -930,12 +959,17 @@
         {
           "head": {
             "vars": [
-
+              "uri"
             ]
           },
           "results": {
             "bindings": [
-
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Dover_Street"
+                }
+              }
             ]
           }
         }
@@ -25718,18 +25752,23 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?uri . ?uri a <http://dbpedia.org/ontology/Country> . }"
+        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bill_Gates> <http://dbpedia.org/ontology/birthPlace> ?x . ?x <http://dbpedia.org/ontology/country> ?uri . }"
       },
       "answers": [
         {
           "head": {
             "vars": [
-
+              "uri"
             ]
           },
           "results": {
             "bindings": [
-
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/United_States"
+                }
+              }
             ]
           }
         }
@@ -27374,7 +27413,7 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/artist> <http://dbpedia.org/resource/Queen_(band)> . ?uri <http://dbpedia.org/ontology/releaseDate> ?d . } ORDER BY ASC(?d) OFFSET 0 LIMIT 1"
+        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Album> . ?uri <http://dbpedia.org/ontology/artist> <http://dbpedia.org/resource/Queen_(band)> . ?uri <http://dbpedia.org/ontology/releaseDate> ?d . } ORDER BY ASC(?d) OFFSET 0 LIMIT 1"
       },
       "answers": [
         {
@@ -27388,7 +27427,7 @@
               {
                 "uri": {
                   "type": "uri",
-                  "value": "http://dbpedia.org/resource/Doing_All_Right"
+                  "value": "http://dbpedia.org/resource/Queen_(Queen_album)"
                 }
               }
             ]
@@ -30070,7 +30109,7 @@
     },
     {
       "id": 75,
-      "answertype": "resource",
+      "answertype": "string",
       "aggregation": "false",
       "onlydbo": "true",
       "hybrid": "false",
@@ -30117,18 +30156,23 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/ontology/deathCause> ?uri . }"
+        "sparql": "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Michael_Jackson> <http://dbpedia.org/property/deathCause> ?s . }"
       },
       "answers": [
         {
           "head": {
             "vars": [
-
+              "s"
             ]
           },
           "results": {
             "bindings": [
-
+              {
+                 "s": {
+                   "type": "literal",
+                   "value": "Cardiac arrest induced by propofol and benzodiazepine intoxication"
+                 }
+               }
             ]
           }
         }
