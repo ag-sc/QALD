@@ -35,7 +35,9 @@ def read_answers(file)
          end
       end
 
-      out[question["id"]] = answers
+      id = question["id"]
+      if (id.is_a? String) then id = id.to_i end
+      out[id] = answers
     end
 
     return doc["dataset"]["id"], out
