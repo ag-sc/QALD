@@ -26731,7 +26731,7 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Writer> . ?uri <http://dbpedia.org/ontology/almaMater> ?x . { ?x <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/Istanbul> . } UNION { ?x <http://dbpedia.org/property/city> <http://dbpedia.org/resource/Istanbul> . } } "
+        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri a <http://dbpedia.org/ontology/Writer> . { ?uri <http://dbpedia.org/ontology/almaMater> ?x . } UNION { ?uri <http://dbpedia.org/ontology/education> ?x . } { ?x <http://dbpedia.org/ontology/city> <http://dbpedia.org/resource/Istanbul> . } UNION { ?x <http://dbpedia.org/property/city> <http://dbpedia.org/resource/Istanbul> . } } "
       },
       "answers": [
         {
@@ -26806,6 +26806,30 @@
                 "uri": {
                   "type": "uri",
                   "value": "http://dbpedia.org/resource/Hikmet_Temel_Akarsu"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Mehmet_Yaşın"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Niyazi_Berkes"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Halide_Edip_Adıvar"
+                }
+              },
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://dbpedia.org/resource/Leyla_Erbil"
                 }
               }
             ]
