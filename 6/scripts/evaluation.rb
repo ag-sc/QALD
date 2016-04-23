@@ -41,7 +41,7 @@ def read_answers(file)
 
       id = question["id"]
       if (id.is_a? String) then id = id.to_i end
-      out[id] = answers
+      out[id] = answers.uniq
     end
 
     return doc["dataset"]["id"], out
@@ -117,7 +117,7 @@ def compute_results(results,answers_gold)
               precision = comp[:correct].to_f / comp[:total_user].to_f
            end
            recall = comp[:correct].to_f / comp[:total_gold].to_f
-           f1 = fscore(precision,recall) 
+           f1 = fscore(precision,recall)
         end
       else
         precision = 0

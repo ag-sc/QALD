@@ -953,7 +953,7 @@
         }
       ],
       "query": {
-        "sparql": "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Piccadilly> <http://dbpedia.org/ontology/routeStart> ?uri. } "
+        "sparql": "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/routeStart> <http://dbpedia.org/resource/Piccadilly>. } "
       },
       "answers": [
         {
