@@ -37,7 +37,7 @@
     },
 	{
       "id": "2",
-      "answertype": "resource",
+      "answertype": "date",
       "aggregation": "false",
       "onlydbo": "false",
       "hybrid": "true",
@@ -60,8 +60,8 @@
           "results": { "bindings": [
             {
               "proj": {
-                "type": "uri",
-                "value": "http://dbpedia.org/resource/Angela_Merkel"
+                "type": "literal",
+                "value": "1954-07-17"
               }
             } ] }
         }
@@ -159,8 +159,8 @@
           "results": { "bindings": [
             {
               "proj": {
-                "type": "number",
-                "value": "70"
+                "type": "literal",
+                "value": "56"
               }
             } ] }
         }
@@ -1264,7 +1264,7 @@
 
 		{
       "id": "17",
-      "answertype": "text",
+      "answertype": "resource",
       "aggregation": "false",
       "onlydbo": "true",
       "hybrid": "true",
@@ -1275,7 +1275,7 @@
         }
       ],
       "query": {
-        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?mother text:\"mother\" . ?mother rdf:type dbo:Person . ?mother dbp:children dbr:Bill_Gates . ?mother dbp:birthPlace ?proj}"
+        "pseudo": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?mother text:\"mother\" . ?mother rdf:type dbo:Person . ?mother dbo:child dbr:Bill_Gates . ?mother dbo:birthPlace ?proj . }"
       },
       "answers": [
         {
@@ -1287,8 +1287,8 @@
           "results": { "bindings": [
             {
               "proj": {
-                "type": "text",
-                "value": "\"Seattle, Washington, U.S.\" @en"
+                "type": "uri",
+                "value": "http://dbpedia.org/resource/Seattle"
               }
             } ] }
         }

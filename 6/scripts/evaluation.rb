@@ -35,7 +35,9 @@ def read_answers(file)
                 bind.each { |_,value| b << normalize(value["value"]) }
                 answers << b
               end
-            end
+           elsif answer.key? "boolean"
+              answers << answer["boolean"]
+           end
          end
       end
 
