@@ -1,0 +1,121 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+\textwidth13cm
+\parindent0mm
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\textsc{\large Question Answering over Linked Data}
+
+\vspace{.2cm}
+
+\textbf{\huge QALD-6: Evaluation results}
+
+\vspace{.4cm}
+
+\url{http://www.sc.cit-ec.uni-bielefeld.de/qald}
+
+\end{center}
+
+\hrule
+
+\subsubsection*{Column descriptions}
+
+\begin{itemize}
+\item The first column specifies the system name and the language it processed. Systems marked with a $\ast$ constitute late submissions (i.e. after the official end of the test phase).
+\item \emph{Processed} states for how many of the questions the system provided an answer.
+%\item \emph{Right} specifies how many of these questions were answered with an F-1 measure of 1.
+%\item \emph{Partial} specifies how many of the questions were answered with an F-1 measure strictly between 0 and 1.
+\item \emph{Recall}, \emph{Precision} and \emph{F-1} report the macro-measures with respect to the number of processed questions.
+\item \emph{F-1 Global} in addition reports the macro F-1 measure with respect to the total number of questions.
+\end{itemize}
+
+\hrule
+
+\vspace{.4cm}
+
+\subsection*{Hybrid question answering}
+
+\emph{Total:} 25
+
+\vspace{.6cm}
+
+\begin{tabular}{p{4cm}ccccc}
+& Processed & Recall & Precision & F-1 & F-1 Global \\
+\hline \\[1ex]
+Xser           & 23 & \textbf{0.38} & 0.43 & \textbf{0.41} & \textbf{0.39} \\
+askDBpedia     & 21 & 0.33 & 0.51 & 0.40 & 0.35 \\
+FirstRun LIMSI & 24 & 0.04 & \textbf{0.61} & 0.08 & 0.08 \\
+\end{tabular}
+
+\vspace{1cm}
+
+\subsection*{Statistical question answering over RDF datacubes}
+
+\emph{Total:} 50
+
+\vspace{.6cm}
+
+\begin{tabular}{p{4cm}ccccc}
+& Processed & Recall & Precision & F-1 & F-1 Global \\
+\hline \\[1ex]
+SPARKLIS (expert)   & 50 & \textbf{0.94} & \textbf{0.96} & \textbf{0.95} & \textbf{0.95} \\
+SPARKLIS (beginner) & 50 & 0.76 & 0.88 & 0.82 & 0.82 \\
+QA$^3$              & 44 & 0.62 & 0.59 & 0.60 & 0.53 \\
+CubeQA              & 49 & 0.41 & 0.49 & 0.45 & 0.44 \\
+\end{tabular}
+
+\newpage
+
+\subsection*{Multilingual question answering over DBpedia}
+
+\emph{Total:} 100
+
+\vspace{.6cm}
+
+\emph{Sorted by global F-1 score (over all questions):}
+
+\vspace{.6cm}
+
+\begin{tabular}{llccccc}
+& & Processed & Recall & Precision & F-1 & F-1 Global \\
+\hline \\[1ex]
+CANaLI      & (en) & 100 & \textbf{0.89} & \textbf{0.89} & \textbf{0.89} & \textbf{0.89} \\
+UTQA        & (en) & 100 & 0.69 & 0.82 & 0.75 & 0.75 \\
+KWGAnswer   & (en) & 100 & 0.59 & 0.85 & 0.70 & 0.70 \\
+UTQA        & (es) & 100 & 0.62 & 0.76 & 0.68 & 0.68 \\
+UTQA        & (fa) & 100 & 0.61 & 0.70 & 0.65 & 0.65 \\
+NbFramework & (en) & 63 & 0.85 & 0.87 & 0.86 & 0.54 \\
+SemGraphQA  & (en) & 100 & 0.25 & 0.70 & 0.37 & 0.37 \\
+PersianQA$\ast$ & (fa) & 100 & 0.19 & 0.91 & 0.31 & 0.31 \\
+UIQA (with manual) & (en) & 44 & 0.63 & 0.54 & 0.58 & 0.25 \\
+UIQA (without manual) & (en) & 36 & 0.53 & 0.43 & 0.48 & 0.17 \\
+\end{tabular}
+
+\vspace{.6cm}
+
+\emph{Sorted by local F-1 score (over processed questions):}
+
+\vspace{.6cm}
+
+\begin{tabular}{llccccc}
+& & Processed & Recall & Precision & F-1 & F-1 Global \\
+\hline \\[1ex]
+CANaLI      & (en) & 100 & \textbf{0.89} & \textbf{0.89} & \textbf{0.89} & \textbf{0.89} \\
+NbFramework & (en) & 63 & 0.85 & 0.87 & 0.86 & 0.54 \\
+UTQA        & (en) & 100 & 0.69 & 0.82 & 0.75 & 0.75 \\
+KWGAnswer   & (en) & 100 & 0.59 & 0.85 & 0.70 & 0.70 \\
+UTQA        & (es) & 100 & 0.62 & 0.76 & 0.68 & 0.68 \\
+UTQA        & (fa) & 100 & 0.61 & 0.70 & 0.65 & 0.65 \\
+UIQA (with manual) & (en) & 44 & 0.63 & 0.54 & 0.58 & 0.25 \\
+UIQA (without manual) & (en) & 36 & 0.53 & 0.43 & 0.48 & 0.17 \\
+SemGraphQA  & (en) & 100 & 0.25 & 0.70 & 0.37 & 0.37 \\
+PersianQA$\ast$ & (fa) & 100 & 0.19 & 0.91 & 0.31 & 0.31 \\
+\end{tabular}
+
+\end{document}
