@@ -11303,7 +11303,7 @@
         }
       ],
       "query": {
-        "sparql": "ASK WHERE {  <http://dbpedia.org/resource/Cuban_missile_crisis> <http://dbpedia.org/ontology/date> ?x .  <http://dbpedia.org/resource/Bay_of_Pigs_Invasion> <http://dbpedia.org/ontology/date> ?y .  FILTER (?x < ?y) } "
+        "sparql": "ASK WHERE {  <http://dbpedia.org/resource/Cuban_Missile_Crisis> <http://dbpedia.org/ontology/date> ?x .  <http://dbpedia.org/resource/Bay_of_Pigs_Invasion> <http://dbpedia.org/ontology/date> ?y .  FILTER (?x < ?y) } "
       },
       "answers": [
         {
