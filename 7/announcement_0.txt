@@ -1,0 +1,56 @@
+
+QALD2017 CHALLENGE – ESWC 2017
+ESWC 2017, May 28th, 2016 to June 1st​, 2017 Portoroz, Slovenia.
+https://project-hobbit.eu/challenges/qald2017/
+
+The Question Answering over Linked Data (QALD) challenge aims at providing an up-to-date benchmark for assessing and comparing state-of-the-art-systems that mediate between a user, expressing his or her information need in natural language, and RDF data. It thus targets all researchers and practitioners working on querying Linked Data, natural language processing for question answering, multilingual information retrieval and related topics. The main goal is to gain insights into the strengths and shortcomings of different approaches and into possible solutions for coping with the large, heterogeneous and distributed nature of Semantic Web data.
+
+The key challenge for QA over Linked Data is to translate a user’s information need into a form such that it can be evaluated using standard Semantic Web query processing and inferencing techniques. The main task of QALD therefore is the following:
+
+Given one or several RDF dataset(s) as well as additional knowledge sources and natural language questions or keywords, return the correct answers or a SPARQL query that retrieves these answers.
+In order to focus on specific aspects and challenges, we propose the following three tasks:
+
+Task 1: Multilingual question answering over DBpedia
+Task 2: Hybrid question answering
+Task 3: Large-Scale Question answering over RDF
+More details on the evaluation are provided here and on the provided resources are here.
+
+More details on the different tasks can be found here: https://project-hobbit.eu/challenges/qald2017/
+
+Preliminary Schedule
+
+Paper submission deadline:	Friday March 10th, 2017
+Challenge paper reviews:	Tuesday April 5th, 2017
+Paper Notifications and invitation to task:	Friday April 7th, 2017
+Camera ready papers (5 pages document):	Sunday April 23rd, 2017
+Release of training data and instructions:	Friday January 13th, 2017
+Release of test dataset:	Friday April 7th, 2017
+Deadline for submission of system answers:	TBA
+Release of evaluation results:	TBA
+Submission of camera-ready papers:	April 24, 2014
+Camera ready challenge proceedings version:	Friday June 30th, 2017 (tentative deadline)
+Proclamation of winners:	During ESWC2017 closing ceremony
+
+Organization
+
+Ricardo Usbeck, University of Leipzig, Germany
+Axel-Cyrille Ngonga Ngomo, Institute for Applied Informatics, Germany
+Bastian Haarmann, Fraunhofer-Institute IAIS, Germany
+Anastasia Krithara, National Center for Scientific Research “Demokritos”
+
+PC Members
+
+Corina Forascu, Alexandru Ioan Cuza University, Iasi, Romania
+Sebastian Walter, CITEC, Bielefeld University, Germany
+Bernd Müller, ZBMed, Germany
+Christoph Lange, Fraunhofer Gesellschaft, Germany
+Dennis Diefenbach, Universit de Saint-Etienne, France
+Edgard Marx, AKSW, University Leipzig, Germany
+Hady Elsahar, Universit de Saint-Etienne, France
+Harsh Thakkar, University of Bonn, Germany
+Ioanna Lytra, University of Bonn, Germany
+John McCrae, INSIGHT – The Centre for Data Analytics, Ireland
+Konrad Höffner, AKSW, University Leipzig, Germany
+Kuldeep Singh, University of Bonn, Germany
+Saeedeh Shekarpour, Kno.e.sis Center, Ohio Center of Excellence in Knowledge-enabled Computing, USA
+Sherzod Hakimov, CITEC, Bielefeld University, Germany
