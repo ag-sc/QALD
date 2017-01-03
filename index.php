@@ -40,6 +40,10 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
+if ($q == "7") {
+    echo "<meta http-equiv=\"refresh\" content=\"5; URL=https://project-hobbit.eu/challenges/qald2017/\">";
+     }
+     
  if ($q == "6") {
  echo "
  <p> <a href='index.php?x=motivation&q=".$q."'>Motivation</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -104,8 +108,9 @@ if (isset($_GET['q'])) {
 
  <?php
  echo "<p><b>Current challenge:</b></p>
- <p> <a href='index.php?x=".$x."&q=6'>QALD-6</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='https://project-hobbit.eu/challenges/qald2017/'>QALD-7</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p><b>Previous challenges:</b></p>
+ <p> <a href='index.php?x=".$x."&q=6'>QALD-6</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=5'>QALD-5</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=4'>QALD-4</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=3'>QALD-3</a> <img src='pictures/list_arrow_gray.gif'> </p>
