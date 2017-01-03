@@ -41,7 +41,7 @@ if (isset($_GET['q'])) {
  <p> &nbsp; </p>";
  }
 if ($q == "7") {
-    echo "<meta http-equiv=\"refresh\" content=\"5; URL=https://project-hobbit.eu/challenges/qald2017/\">";
+    header("location:https://project-hobbit.eu/challenges/qald2017/");
      }
      
  if ($q == "6") {
@@ -108,7 +108,7 @@ if ($q == "7") {
 
  <?php
  echo "<p><b>Current challenge:</b></p>
- <p> <a href='https://project-hobbit.eu/challenges/qald2017/'>QALD-7</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=".$x."&q=7'>QALD-7</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p><b>Previous challenges:</b></p>
  <p> <a href='index.php?x=".$x."&q=6'>QALD-6</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=5'>QALD-5</a> <img src='pictures/list_arrow_gray.gif'> </p>
