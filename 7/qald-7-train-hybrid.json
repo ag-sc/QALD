@@ -1,0 +1,3690 @@
+{
+  "dataset" : {
+    "id" : "qald-7-train-hybrid"
+  },
+  "questions" : [ {
+    "id" : "0",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo:  <http://dbpedia.org/ontology/>\nPREFIX res:  <http://dbpedia.org/resource/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x rdfs:label ?l .\n        FILTER regex(?l,\"Around the World in 80 Days\",\"i\")\n        ?x dbo:director res:Buzz_Kulik .\n        ?x dbo:starring ?uri .\n        ?uri text:\"plays\" text:\"Phileas Fogg\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pierce_Brosnan"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "1",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "At which college did the only American actor that received the César Award study?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?string\nWHERE {\n        ?x text:\"is\" text:\"the only American actor that received the César Award\" .\n        ?x dbo:almaMater ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Queens_College,_City_University_of_New_York"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "2",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Where did the first man in space die?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri\nWHERE {\n        ?x text:\"is\" text:\"first man in space\" .\n        ?x dbo:deathPlace ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Kirzhach"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "3",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which Chinese-speaking country is a former Portguese colony?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE { \n        res:Chinese_language dbo:spokenIn ?uri . \n        ?uri text:\"is\" text:\"former Portuguese colony\" . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Macau"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "4",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the largest city in the county in which Faulkner spent most of his life?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE { \n        res:William_Faulkner text:\"spent most of his life in\" ?x . \n        ?x dbo:largestCity ?uri . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Oxford,_Mississippi"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "5",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?uri rdf:type dbo:Film . \n        ?uri dbo:director res:Coen_brothers .\n        ?uri dbo:starring res:John_Turturro .\n        res:John_Turturro text:\"role\" text:\"New York City playwright\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Barton_Fink"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "6",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Dakar is the capital of which country member of the African Union?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n\t?uri text:\"member of\" text:\"the African Union\" .\t\n\t?uri dbo:capital res:Dakar .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Senegal"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "7",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which city does the first person to climb all 14 eight-thousanders come from?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \nSELECT DISTINCT ?uri\nWHERE {\n        ?x text:\"is\" text:\"first person to climb all fourteen eight-thousanders\" .\n        ?x dbo:birthPlace ?uri .\n        ?uri rdf:type dbo:Settlement .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://http://dbpedia.org/page/Brixen"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "8",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Under which king did the British prime minister that signed the Munich agreement serve?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX yago: <http://dbpedia.org/class/yago/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x rdf:type yago:PrimeMinistersOfTheUnitedKingdom .\n        ?x text:\"sign\" text:\"Munich Agreement\" .\n        ?x dbo:monarch ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_VI"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "9",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who succeeded the pope that reigned only 33 days?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX yago: <http://dbpedia.org/class/yago/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x rdf:type yago:Popes .\n        ?x text:\"reign\" text:\"33 days\" .\n        ?x dbo:successor ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pope_John_Paul_II"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "10",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "A landmark of which city is the home of the Mona Lisa?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri\nWHERE {\n        res:Mona_Lisa dbo:museum ?x .\n        ?x text:\"landmark in\" ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Paris"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "11",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which street basketball player was diagnosed with Sarcoidosis?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX yago: <http://dbpedia.org/class/yago/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n  ?uri rdf:type yago:StreetBasketballPlayers .\n  ?uri text:\"diagnosed with\" text:\"Sarcoidosis\".\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Slick_Watts"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "12",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the composer of the opera Madame Butterfly born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?date \nWHERE {\n    res:Madama_Butterfly text:\"composer\" ?x .\n    ?x dbo:birthDate ?date .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "date" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "date" : {
+            "type" : "literal",
+            "value" : "1858-12-22"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "13",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which anti-apartheid activist graduated from the University of South Africa?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n\t?uri rdf:type text:\"anti-apartheid activist\" .\n        ?uri dbo:almaMater res:University_of_South_Africa .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "14",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the front man of the band that wrote Coffee & TV?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nSELECT DISTINCT ?uri \nWHERE {\n        <http://dbpedia.org/page/Coffee_&_TV> dbo:musicalArtist ?x .\n        ?x dbo:bandMember ?uri .\n        ?uri text:\"is\" text:\"frontman\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Damon_Albarn"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "15",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which recipients of the Victoria Cross died in the Battle of Arnhem?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n\t?uri dbo:award res:Victoria_Cross .\n\t?uri text:\"died in\" text:\"Battle of Arnhem\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Baskeyfield"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Hollington_Grayburn"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "16",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Gaborone is the capital of which country member of the African Union?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n    ?uri text:\"member of\" text:\"African Union\" .    \n    ?uri dbo:capital res:Gaborone .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Botswana"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "17",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which German mathematicians were members of the von Braun rocket group?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri ?abstract\nWHERE {\n        ?uri dbo:field res:Mathematics .\n        ?uri dbo:birthPlace res:Germany .\n        ?uri text:\"member of\" text:\"von Braun rocket group\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Walter_Haeussermann"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Oswald_Lange"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "18",
+    "answertype" : "boolean",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are there man-made lakes in Australia that are deeper than 100 meters?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nASK\nWHERE {\n        ?uri rdf:type dbo:Lake . \n        ?uri dbo:country res:Australia . \n        ?uri text:\"is\" text:\"man-made\" . \n        ?uri dbo:depth ?num . \n        FILTER(?num > 100.0)\n}"
+    },
+    "answers" : [ {
+      "head" : { },
+      "results" : { },
+      "boolean" : false
+    } ]
+  }, {
+    "id" : "19",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which Secretary of State policies lead to the United States' acquisition of Pacific colonies?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { ?uri <http://dbpedia.org/ontology/office> \"United States Secretary of State\" . ?uri text:\"policies lead\" text:\"United States' acquisition of Pacific colonies\" . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_G._Blaine"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "20",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?uri dbo:office \"United States Secretary of State\" . \n        ?uri text:\"significiantly involved in\" text:\"United States' dominance of the Caribbean\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_G._Blaine"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "21",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who played the drums in the band that wrote Complete Control?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        res:Complete_Control dbo:musicalArtist ?x .\n        ?x dbo:bandMember ?uri .\n        ?uri text:\"plays\" text:\"drums\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Topper_Headon"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "22",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which horses did The Long Fellow ride?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"known as\" text:\"The Long Fellow\" .\n        ?x dbo:raceHorse ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alleged_(horse)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nijinsky_II"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Crepello"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Sir_Ivor"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Empery"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/St._Paddy"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/The_Minstrel"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Never_Say_Die_(horse)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Petite_Etoile"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Teenoso"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Roberto_(horse)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "23",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many awards achieved the creator of the world's most famous equation?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT COUNT(?proj) WHERE { ?uri text:\"the world's most famous equation\" . ?uri dbo:awards ?proj . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "6"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "24",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Of the people that died of radiation in Los Alamos, whose death was an accident?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?rui dbo:deathPlace <http://dbpedia.org/resource/Los_Alamos,_New_Mexico> .\n        ?uri dbo:deathCause res:Acute_radiation_syndrome .\n        ?uri text:\"death circumstance\" text:\"accident\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Louis_Slotin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Harry_K._Daghlian,_Jr."
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "25",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which writers converted to Islam?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri\nWHERE {\n        ?uri rdf:type dbo:Writer . \n        ?uri text:\"converted to\" text:\"Islam\" . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Jamilah_Kolocotronis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lev_Nussimbaum"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ismael_Urbain"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Jacky_Trevane"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Aukai_Collins"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "26",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the last man on the moon?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { dbr:Last_man_on_the_moon dbo:wikiPageRedirects ?proj . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Eugene_Cernan"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "27",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Under which pseudonym did Charles Dickens publish some of his books?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?s\nWHERE { \n        ?x dbo:author res:Charles_Dickens . \n        ?x text:\"published under pseudonyn\" ?s . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "string" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "string" : {
+            "type" : "literal",
+            "value" : "Boz"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "28",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "For which movie did the daughter of Francis Ford Coppola receive an Oscar?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri\nWHERE {\n        res:Francis_Ford_Coppola dbo:child ?x .\n        ?x text:\"receive Oscar for\" ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lost_in_Translation_(film)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "29",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the president by whom 20 million Americans had gained health insurance?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?proj WHERE { ?uri text:\"20 million Americans had gained health insurance\" . ?uri dbp:signedPresident ?proj . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Barack_Obama"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "30",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who invented the World Wide Web?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   SELECT DISTINCT ?proj WHERE { ?proj text:\"world wide web\" . ?proj rdf:type <http://dbpedia.org/class/yago/Inventor110214637> . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Tim_Berners-Lee"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "31",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which astronauts died at the Columbia disaster also known as STS-107?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { { ?uri text:\"Columbia disaster\" . } UNION { ?uri text:\"STS-107\" }  ?proj rdf:type dbo:Astronaut . ?proj dbo:deathDate ?date. FILTER (bound (?date))}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/David_M._Brown"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Rick_Husband"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Laurel_Clark"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ilan_Ramon"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Michael_P._Anderson"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_C._McCool"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Kalpana_Chawla"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "32",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city was the assassin of Martin Luther King born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri\nWHERE {\n        res:Martin_Luther_King,_Jr. text:\"assassin\" ?x . \n        ?x dbo:birthPlace ?uri .\n        ?uri rdf:type dbo:Settlement .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "33",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the name of the Viennese newspaper founded by the creator of the croissant?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?name \nWHERE {\n        res:Croissant dbo:creator ?x .\n        ?x text:\"founder of\" ?name . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "string" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "string" : {
+            "type" : "literal",
+            "value" : "Die Presse"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "34",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which members of the Wu-Tang Clan took their stage name from a movie?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        res:Wu-Tang_Clan dbo:bandMember ?uri .\n        ?uri text:\"stage name\" ?x .\n        ?x text:\"from\" text:\"movie\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Method_Man"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ghostface_Killah"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "35",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which actress starring in the TV series Friends owns the production company Coquette Productions?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n\tres:Friends dbo:starring ?uri .\t\n\t?uri text:\"own\" text:\"the production company Coquette Productions\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Courteney_Cox"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "36",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who of those resting in Westminster Abbey wrote a book set in London and Paris?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri text:\"set in London and Paris\" . dbr:Westminster_Abbey dbo:restingPlace ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charles_Dickens"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "37",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "List all the battles commanded by the lover of Cleopatra."
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE { \n    ?x text:\"lover\" text:\"Cleopatra\".   \n    ?uri dbo:commander ?x .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Avaricum"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Alesia"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Siege_of_Uxellodunum"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_the_Axona"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Zela"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Siege_of_Massilia"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Gergovia"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gallic_Wars"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Siege_of_Alexandria_(47_BC)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Thapsus"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Vosges_(58_BC)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Dyrrhachium_(48_BC)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Pharsalus"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Caesar's_invasions_of_Britain"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_the_Nile_(47_BC)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Caesar's_Civil_War"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Munda"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Bibracte"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_the_Sabis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Ilerda"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_the_Arar"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Ruspina"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "38",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was vice president under the president who authorized atomic weapons against Japan during World War II?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri\nWHERE {\n        ?x text:\"authorized\" text:\"atomic weapons against Japan\" .\n        ?x dbo:vicePresident ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alben_W._Barkley"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "39",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Daniel Craig"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?string \nWHERE {\n        res:James_Bond dbo:lastAppearance ?x .\n        ?x text:\"feature as James Bond\" ?string .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "string" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "string" : {
+            "type" : "literal",
+            "value" : "Daniel Craig"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "40",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which anti-apartheid activist was born in Mvezo?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?uri rdf:type text:\"anti-apartheid activist\" .\n        ?uri dbo:birthPlace res:Mvezo .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "41",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "The home of the Mona Lisa is a landmark of which city?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Mona_Lisa> <http://dbpedia.org/ontology/museum> ?x . ?x text:\"landmark of\" ?uri . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Paris"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "42",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "On which island did the national poet of Greece die?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX yago: <http://dbpedia.org/class/yago/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"considered\" text:\"national poet of Greece\" .\n        ?x dbo:deathPlace ?uri .\n        ?uri rdf:type yago:Island109316454 .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Corfu"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "43",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which books of the laureate of American lowlife are published by Black Sparrow Books?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"laureate of American lowlife\" . ?proj dbo:author ?uri . ?proj dbo:publisher dbr:Black_Sparrow_Books . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Factotum_(novel)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Women_(novel)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Post_Office_(novel)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ham_on_Rye"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pulp_(novel)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Hollywood_(Bukowski_novel)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "44",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many floors does the world's only 7 star hotel have?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"world's only 7 star hotel\" . ?uri dbo:floorCount ?proj . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "56"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "45",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many children does the actor who plays Dan White in Milk have?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT ?n WHERE { <http://dbpedia.org/resource/Milk_(film)> <http://dbpedia.org/ontology/starring> ?uri . ?uri text:\"play\" text:\"Dan White\" . ?uri <http://dbpedia.org/property/children> ?n . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "2"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "46",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who are the architects of the tallest building in Japan?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { text:\"tallest building in Japan\" <http:/dbpedia.org/ontology/architect> ?uri . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/César_Pelli"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nikken_Sekkei"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "47",
+    "answertype" : "text",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the name of the school where obama's wife is studied?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?x rdf:type dbo:Person . dbr:Barack_Obama dbp:spouse ?x . ?x dbp:almaMater ?proj }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "text" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "text" : {
+            "type" : "text",
+            "value" : "\"Harward Law School\" @en"
+          }
+        }, {
+          "text" : {
+            "type" : "text",
+            "value" : "\"Princeton University\" @en"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "48",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which recipients of the Victoria Cross fought in the Battle of Arnhem?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE {     ?uri dbo:award res:Victoria_Cross .    { ?uri text:\"fought in\" text:\"Battle of Arnhem\" . } UNION {?uri text:\"went into action\" text:\"Battle of Arnhem\"} } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Baskeyfield"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Hollington_Grayburn"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "49",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which buildings in art deco style did Shreve, Lamb and Harmon design?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?uri dbo:architect res:Shreve,_Lamb_&_Harmon .\n      { ?uri dbo:architecturalStyle res:Art_Deco . }\n      UNION\n      { ?uri text:\"style text:\"art deco\" . } \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Empire_State_Building"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/500_Fifth_Avenue"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Joel_W._Solomon_Federal_Building_and_United_States_Courthouse"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Hill_Building"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "50",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which country did the first known photographer of snowflakes come from?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n\t?uri text:\"is\" text:\"first known photographer of snowflakes\" .\n\t?uri dbo:birthPlace ?x .\n        ?x rdf:type dbo:Country .\t\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/United_States"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "51",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the Answer to The Ultimate Question of Life, the Universe, and Everything?"
+    } ],
+    "query" : {
+      "pseudo" : " SELECT DISTINCT ?proj WHERE { ?uri text:\"Answer to The Ultimate Question of Life, the Universe, and Everything\" . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/42_(number)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "52",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which building owned by the Bank of America was featured in the TV series MegaStructures?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?uri \nWHERE {\n        ?uri rdf:type dbo:Building.\n        ?uri dbo:owner res:Bank_of_America . \n        ?uri text:\"featured in\" text:\"MegaStructures\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/page/Bank_of_America_Tower_(New_York_City)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "53",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How old is James Bond in the latest Bond book by William Boyd?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        res:James_Bond dbo:lastAppearance ?x .\n        ?x dbo:author <http://dbpedia.org/resource/William_Boyd_(writer)> .\n        ?x text:\"age of Bond\" ?n .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "45"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "54",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which of the volcanoes that erupted in 1550 was named after an explorer?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http:/dbpedia.org/ontology/Volcano> . ?uri <http:/dbpedia.org/ontology/eruptionYear> ?y . ?uri text:\"named after\" text:\"explorer\" . FILTER (year(?y) = 1550)  }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Krasheninnikov_(volcano)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "55",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which British territories was the \"Father of Singapore\" born?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { text:\"Father of modern Singapore\" <http://dbpedia.org/ontology/birthPlace> ?uri . ?uri rdf:type text:\"British territories\" . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Straits_Settlements"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "56",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many Golden Globe awards did the daughter of Henry Fonda win?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT ?n\nWHERE {\n        ?uri dbo:parent res:Henry_Fonda .\n        ?uri text:\"number of Golden Globe awards\" ?n .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "7"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "57",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who are the sons of the songwriter of the Beatles?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?proj WHERE { ?uri text:\"songwriter\" . dbr:The_Beatles dbo:bandMember ?uri. ?uri dbo:child ?proj . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Sean_Lennon"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Julian_Lennon"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "58",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Where did the first human in space die?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE {         ?x dbp:type text:\"first human in space\" .         ?x dbo:deathPlace ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Kirzhach"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "59",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which daughter of Francis Ford Coppola received an Academy Award for Lost in Translation?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Francis_Ford_Coppola> <http://dbpedia.org/ontology/child> ?x . ?x text:\"receive the Academy Award  for\" text:\"Lost in Translation\" . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Sofia_Coppola"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "60",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which year did the Hungarian-American actor called \"The King of Horror\" make his first film?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nSELECT DISTINCT ?year\nWHERE {\n        ?x rdf:type dbo:Actor .\n        ?x dbo:alias \"The King Of Horror\" .\n        ?x text:\"made his first movie in\" ?year ."
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "1917"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "61",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the native city of Hollywood's highest-paid actress?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"is\" text:\"Hollywood's highest-paid actress\" .\n        ?x dbo:birthPlace ?uri .\n        ?x rdf:type dbo:City .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Los_Angeles"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "62",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the currencies of all G8 countries."
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri\nWHERE {\n        ?x text:\"member of\" text:\"G8\" . \n        ?x dbo:currency ?uri . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Euro_sign"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/United_States_dollar"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Japanese_yen"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Russian_ruble"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Canadian_dollar"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pound_sterling"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Euro"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "63",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?role dbo:portrayer ?proj . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_schoolteachers> . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_drug_dealers> . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Bryan_Cranston"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "64",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Did Napoleon's first wife die in France?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nASK \nWHERE {\n        ?x text:\"first wife of\" text:\"Napoleon\" .\n        ?x dbo:deathPlace res:France .\t\n}"
+    },
+    "answers" : [ {
+      "head" : { },
+      "results" : { },
+      "boolean" : false
+    } ]
+  }, {
+    "id" : "65",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city does the leader of the Xposé girls live?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"is\" text:\"leader of the Xposé girls\" .\n        ?x dbo:residence ?uri ."
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Dublin"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "66",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the composer of the opera Madama Butterfly born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?date \nWHERE {\n\tres:Madama_Butterfly text:\"composer\" ?x .\n\t?x dbo:birthDate ?date .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "date" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "date" : {
+            "type" : "literal",
+            "value" : "1858-12-22"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "67",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many Golden Globe awards did the husband of Katie Holmes win?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX dbp: <http://dbpedia.org/property/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT COUNT(DISTINCT ?awards)\nWHERE {\n\tres:Katie_Holmes dbp:spouse ?uri .\n \t?uri text:\"win\" ?award .\n        ?award rdf:type text:\"Golden Globe\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "3"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "68",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are the Rosetta Stone and the Gayer-Andersen cat exhibited in the same museum?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nASK\nWHERE {\n\t?m1 text:\"exhibits\" res:Rosetta_Stone .\t\n\tres:Gayer-Anderson_Cat dbo:museum ?x .\n        ?m2 rdfs:label ?m2 .\n        FILTER (?m1=?m2)\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "true"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "69",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city was the mother of Bill Gates born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?mother text:\"mother\" . ?mother rdf:type dbo:Person . ?mother dbo:child dbr:Bill_Gates . ?mother dbo:birthPlace ?proj . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Seattle"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "70",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What eating disorder is characterized by an appetite for substances such as clay and sand?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \nPREFIX yago: <http://dbpedia.org/class/yago/>\nSELECT ?uri WHERE\n{\n  ?uri rdf:type yago:EatingDisorders .\n  ?uri text:\"characterized by\" \"appetite for clay and sand\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pica_(disorder)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "71",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Lost in Translation"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?string\nWHERE {\n        res:Francis_Ford_Coppola dbo:child ?x .\n        ?x text:\"receive Oscar for\" ?string .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "string" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "string" : {
+            "type" : "literal",
+            "value" : "Lost in Translation"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "72",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which movie established a second carrier for Bill Murray?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri text:\"second carrier\" . ?uri rdf:type dbo:Film . ?uri dbo:starring dbr:Bill_Murray . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Rushmore_(film)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "73",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which anti-apartheid revolutionary was born in Mvezo?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE {         ?uri text:\"was a\" text:\"anti-apartheid revolutionary\" .         ?uri dbo:birthPlace res:Mvezo . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "74",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which town was the man convicted of killing Martin Luther King born?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE {         res:Martin_Luther_King,_Jr. text:\"the man convicted of killing King\" ?x .         ?x dbo:birthPlace ?uri .         ?uri dbp:districtType \"Township\"@en . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "75",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Under which king did the British prime minister that had a reputation as a playboy serve?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX yago: <http://dbpedia.org/class/yago/> SELECT DISTINCT ?uri WHERE {         ?x rdf:type yago:PrimeMinistersOfTheUnitedKingdom .         ?x text:\"reputation as a\" text:\"playboy\" .         ?x dbo:monarch ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_VI"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "76",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How old was Steve Job's sister when she first met him?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT ?n \nWHERE {\n        res:Steve_Jobs dbo:relative ?uri .\n        ?uri text:\"did not meet until she was\" ?n .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "25"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "77",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the the greatest composer of Italian opera after Verdi born?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?date WHERE { <http:/dbpedia.org/resource/Madama_Butterfly> text:\"called\" text:\"the greatest composer of Italian opera after Verdi\" . ?x <http:/dbpedia.org/ontology/birthDate> ?date . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "date" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "date" : {
+            "type" : "literal",
+            "value" : "1858-12-22"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "78",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who composed the music for the film that depicts the early life of Jane Austen?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE {         ?x rdf:type dbo:Film .         ?x text:\"depicts the early life of\" text:\"Jane Austen\" .         ?x dbo:musicComposer ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Adrian_Johnston"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "79",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which writers had influenced the philosopher that refused a Nobel Prize?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x rdf:type dbo:Philosopher .\n        ?x text:\"refuse\" text:\"Nobel Prize\" .\n        ?x dbo:influencedBy ?uri .\n        ?uri rdf:type dbo:Writer .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Dos_Passos"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Fyodor_Dostoyevsky"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Voltaire"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gustave_Flaubert"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Louis-Ferdinand_Céline"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "80",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who composed the music for the film that depicts the early life of Jane Austin?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x rdf:type dbo:Film .\n        ?x text:\"depicts the early life of\" text:\"Jane Austin\" .\n        ?x dbo:musicComposer ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "dbpedia.org/resource/Adrian_Johnston"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "81",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Under which pseudonym did Charles Dickens write some of his books?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?string WHERE { ?x <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Charles_Dickens> . ?x text:\"writing under the pseudonym of\" ?string . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "string" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "string" : {
+            "type" : "literal",
+            "value" : "Boz"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "82",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which princess died in a car crash in Paris?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"car crash\" . ?proj rdf:type dbo:Royalty . ?proj dbo:deathPlace dbr:Paris }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Diana_Princess_of_Wales"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "83",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which birds are protected under the National Parks and Wildlife Act?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n\t?uri rdf:type dbo:Bird .\t\n\t?uri text:\"protected under\" text:\"National Parks and Wildlife Act\".\n\t\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Yellow_Thornbill"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Bar-shouldered_Dove"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Chestnut_Teal"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Black-faced_Cuckoo-shrike"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Australian_Shelduck"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "84",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "List all the battles fought by the lover of Cleopatra."
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\t\n\t?x text:\"lover\" text:\"Cleopatra\".\t\n\t?x dbo:battle ?uri .\t\t\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Pharsalus"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Final_War_of_the_Roman_Republic"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Philippi"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Caesar's_Civil_War"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Liberators'_civil_war"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Actium"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Antony's_Parthian_War"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Roman–Parthian_Wars"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gallic_Wars"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Battle_of_Mutina"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "85",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the founder of the Turkish Republic?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   SELECT DISTINCT ?proj WHERE { ?proj text:\"founder\" . ?proj rdf:type <http://dbpedia.org/class/yago/PresidentsOfTurkey> . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Mustafa_Kemal_Atat%C3%BCrk"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "86",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which buildings owned by the crown overlook the North Sea?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?uri \nWHERE {\n        ?uri rdf:type dbo:Building.\n        ?uri dbo:owner res:The_Crown . \n        ?uri text:\"overlook\" text:\"North Sea\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Scarborough_Castle"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "87",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which of the volcanoes that erupted in 1550 is still active?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?uri rdf:type dbo:Volcano . \n        ?uri dbo:eruptionYear ?y .\n        FILTER (year(?y) = 1550)\n        ?uri text:\"is\" text:\"active\" . \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/page/Volc%C3%A1n_Bar%C3%BA"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "88",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Where was the \"Father of Singapore\" born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nSELECT DISTINCT ?uri \nWHERE {\n        text:\"Father of Singapore\" dbo:birthPlace ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Jamaica"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "89",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the president of the USSR during the cold war?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"cold war\" . ?proj rdf:type dbo:Person . ?proj dbp:title dbr:President_of_the_Soviet_Union . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Mikhail_Gorbachev"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "90",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the birth place of Hollywood's highest-paid actress?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"is\" text:\"Hollywood's highest-paid actress\" .\n        ?x dbo:birthPlace ?uri .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Los_Angeles"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "91",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Where was the first race for the greatest Formula One driver of all times?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"greatest Formula One driver of all times\" . ?uri dbo:firstRace ?proj . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/1991_Belgian_Grand_Prix"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "92",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the wife of the creator of the César Award?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/César_Award> text:\"created by\" <http://dbpedia.org/resource/Georges_Cravenne> . <http://dbpedia.org/resource/Georges_Cravenne> <http://dbpedia.org/ontology/spouse> ?uri . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Françoise_Arnoul"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "93",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who were generals of the battle of gettysburg?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"general\" . ?proj rdf:type dbo:Person . ?proj dbo:battle dbr:Battle_of_Gettysburg . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_Warner_Slocum"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_Barnes_(general)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Archibald_C._Godwin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alexander_Hays"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Romeyn_B._Ayres"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/R%C3%A9gis_de_Trobriand"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Orpheus_S._Woodward"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Clement_A._Evans"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_Dorsey_Pender"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Robert_O._Tyler"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Paul_Jones_Semmes"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Buford"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_L._Kemper"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_Armstrong_Custer"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_R._Chambliss"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Samuel_K._Zook"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Stephen_Dodson_Ramseur"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charles_K._Graham"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Abner_Monroe_Perrin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/J._H._Hobart_Ward"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_Mahone"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Carle_Augustus_Woodruff"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Robert_D._Lilley"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Oliver_O._Howard"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Richard_L._T._Beale"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lafayette_McLaws"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Isaac_R._Trimble"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_T._Anderson"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Richard_B._Garnett"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_H._Steuart_(brigadier_general)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lucius_Fairchild"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_Devin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alfred_Iverson,_Jr."
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_Barksdale"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gabriel_Ren%C3%A9_Paul"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Harry_C._Egbert"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_L._Rosser"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_Pickett"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Doby_Kennedy"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Newton_(engineer)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lewis_Armistead"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alexander_Schimmelfennig"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/J._Johnston_Pettigrew"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_F._Reynolds"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_Baxter"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Elwell_Stephen_Otis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gouverneur_K._Warren"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_T._Wofford"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charles_Powell_Adams"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ira_Coray_Abbott"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_C._Oates"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Lysander_Cutler"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ranald_S._Mackenzie"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Augustus_Pearl_Martin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Birkett_D._Fry"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_C._Caldwell"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_Montrose_Graham,_Jr."
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Armistead_Lindsay_Long"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_P._Foster"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_M._Jones"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Benjamin_G._Humphreys"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_Algeo_Rowley"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Junius_Daniel"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charles_Griffin"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Adrian_R._Root"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alonzo_W._Adams"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Daniel_Butterfield"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_L._Eustis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_Conner_(general)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_Livermore_Abbott"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Napoleon_B._McLaughlen"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_Alfred_Smyth"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/W%C5%82odzimierz_Krzy%C5%BCanowski"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_Henry_Lane_(Confederate_general)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Joshua_Chamberlain"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charles_Saalmann"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Brown_Gordon"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Leroy_Augustus_Stafford"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_Gwyn"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Winfield_Scott_Hancock"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Albion_P._Howe"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Joseph_G._Sanders"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Peter_A.S._McGlashan"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alexander_S._Webb"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Richard_Napoleon_Batchelder"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Laurence_S._Baker"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Ellis_Spear"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Daniel_Sickles"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_Clay_Rice"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Harry_T._Hays"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_W._Egan"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_W._Hyde"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_L._Brandon"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Edward_Lloyd_Thomas"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_C._Bates"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/George_Meade"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Richard_S._Ewell"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Thomas_H._Ruger"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Adolph_von_Steinwehr"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Collett_Leventhorpe"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_Bell_Hood"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Moxley_Sorrel"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/John_C._Robinson"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_Heth"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Joseph_B._Kershaw"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Beverly_Robertson"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alfred_Moore_Scales"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Elon_J._Farnsworth"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Francis_C._Barlow"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Horatio_Wright"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Samuel_W._Crawford"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_S._Huidekoper"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/William_Smith_(Virginia_governor)"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Henry_Jackson_Hunt"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/James_J._Archer"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "94",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city where Charlie Chaplin's half brothers born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nASK \nWHERE {\n        res:Charlie_Chaplin dbo:relative ?x . \n        ?x text:\"half brother of\" ?res:Charlie_Chaplin . \n        ?x dbo:birthPlace ?y . \n        ?y text:\"is a\" text:\"city\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/London"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "95",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the mayor of London during the olympic games?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"Olympic Games\" . ?proj rdf:type dbo:Person . ?proj dbp:office dbr:Mayor_of_London . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Boris_Johnson"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "96",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the architect of the tallest building in Japan?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?name \nWHERE {\n        text:\"tallest building in Japan\" dbo:architect ?uri .  \n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nikken_Sekkei"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "97",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city does the sports commentator know as Memory Man live?"
+    } ],
+    "query" : {
+      "pseudo" : "SELECT DISTINCT ?uri WHERE { ?x text:\"is\" text:\"sports commentator\" . ?x text:\"known as\" text:\"Memory Man\" . ?x <http:/dbpedia.org/ontology/residence> ?uri ."
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Dublin"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "98",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the European President known as the decider born?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri text:\"the decider\" . ?uri dbo:birthDate ?proj. ?uri rdf:type http://dbpedia.org/class/yago/PresidentsOfTheEuropeanCouncil . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "date" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "date" : {
+            "type" : "literal",
+            "value" : "1954-07-17"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "99",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How old was Steve Jobs' sister when she first met him?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT ?n \nWHERE {\n        res:Steve_Jobs dbo:relative ?uri .\n        ?uri text:\"first met him when she was\" ?n .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "25"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "100",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was vice president under the president who approved the use of atomic weapons against Japan during World War II?"
+    } ],
+    "query" : {
+      "pseudo" : " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?x text:\"approved the use of\" text:\"atomic weapons against Japan\" . ?x dbo:vicePresident ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alben_W._Barkley"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "101",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What eating disorder is characterized by eating substances such as clay and sand?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \nPREFIX yago: <http://dbpedia.org/class/yago/>\nSELECT ?uri WHERE\n{\n  ?uri rdf:type yago:EatingDisorders .\n  ?uri text:\"characterized by\" \"appetite for clay and sand\" .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Pica_(disorder)"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "102",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who first deciphered the Egyptian hieroglyphs?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?proj text:\"first deciphered\" . ?proj rdf:type dbo:Person . ?mother dbp:field dbr:Egyptian_hieroglyphs . }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Jean-Fran%C3%A7ois_Champollion"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "103",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city does the former main presenter of the Xposé girls live?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri \nWHERE {\n        ?x text:\"is\" text:\"former presenter of the Xposé girls\" .\n        ?x dbo:residence ?uri ."
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Dublin"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "104",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which town was the assassin of Martin Luther King born?"
+    } ],
+    "query" : {
+      "pseudo" : "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX dbp: <http://dbpedia.org/property/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?uri\nWHERE {\n        res:Martin_Luther_King,_Jr. text:\"assassin\" ?x . \n        ?x dbo:birthPlace ?uri .\n        ?uri dbp:districtType \"Township\"@en .\n}"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+          }
+        } ]
+      }
+    } ]
+  } ]
+}
