@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dataset id="qald-7-train-hybrid">
+<question aggregation="false" answertype="resource" hybrid="true" id="0" onlydbo="true">
+<string lang="en">Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?</string>
+<pseudoquery>PREFIX dbo:  &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res:  &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdfs:label ?l .
+        FILTER regex(?l,"Around the World in 80 Days","i")
+        ?x dbo:director res:Buzz_Kulik .
+        ?x dbo:starring ?uri .
+        ?uri text:"plays" text:"Phileas Fogg" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Pierce_Brosnan</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1" onlydbo="true">
+<string lang="en">At which college did the only American actor that received the César Award study?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?string
+WHERE {
+        ?x text:"is" text:"the only American actor that received the César Award" .
+        ?x dbo:almaMater ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Queens_College,_City_University_of_New_York</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="2" onlydbo="true">
+<string lang="en">Where did the first man in space die?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        ?x text:"is" text:"first man in space" .
+        ?x dbo:deathPlace ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Kirzhach</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="3" onlydbo="true">
+<string lang="en">Which Chinese-speaking country is a former Portguese colony?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Chinese_language dbo:spokenIn ?uri . 
+        ?uri text:"is" text:"former Portuguese colony" . 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Macau</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="4" onlydbo="true">
+<string lang="en">What is the largest city in the county in which Faulkner spent most of his life?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:William_Faulkner text:"spent most of his life in" ?x . 
+        ?x dbo:largestCity ?uri . 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Oxford,_Mississippi</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="5" onlydbo="true">
+<string lang="en">Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Film . 
+        ?uri dbo:director res:Coen_brothers .
+        ?uri dbo:starring res:John_Turturro .
+        res:John_Turturro text:"role" text:"New York City playwright" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Barton_Fink</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="6" onlydbo="true">
+<string lang="en">Dakar is the capital of which country member of the African Union?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri text:"member of" text:"the African Union" .	
+	?uri dbo:capital res:Dakar .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Senegal</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="7" onlydbo="true">
+<string lang="en">Which city does the first person to climb all 14 eight-thousanders come from?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+SELECT DISTINCT ?uri
+WHERE {
+        ?x text:"is" text:"first person to climb all fourteen eight-thousanders" .
+        ?x dbo:birthPlace ?uri .
+        ?uri rdf:type dbo:Settlement .
+}</pseudoquery>
+<answers>
+<answer>http://http://dbpedia.org/page/Brixen</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="8" onlydbo="false">
+<string lang="en">Under which king did the British prime minister that signed the Munich agreement serve?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdf:type yago:PrimeMinistersOfTheUnitedKingdom .
+        ?x text:"sign" text:"Munich Agreement" .
+        ?x dbo:monarch ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/George_VI</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="9" onlydbo="false">
+<string lang="en">Who succeeded the pope that reigned only 33 days?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdf:type yago:Popes .
+        ?x text:"reign" text:"33 days" .
+        ?x dbo:successor ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Pope_John_Paul_II</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="10" onlydbo="true">
+<string lang="en">A landmark of which city is the home of the Mona Lisa?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        res:Mona_Lisa dbo:museum ?x .
+        ?x text:"landmark in" ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Paris</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="11" onlydbo="false">
+<string lang="en">Which street basketball player was diagnosed with Sarcoidosis?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+  ?uri rdf:type yago:StreetBasketballPlayers .
+  ?uri text:"diagnosed with" text:"Sarcoidosis".
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Slick_Watts</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="12" onlydbo="true">
+<string lang="en">When was the composer of the opera Madame Butterfly born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?date 
+WHERE {
+    res:Madama_Butterfly text:"composer" ?x .
+    ?x dbo:birthDate ?date .
+}</pseudoquery>
+<answers>
+<answer>1858-12-22</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="13" onlydbo="true">
+<string lang="en">Which anti-apartheid activist graduated from the University of South Africa?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri rdf:type text:"anti-apartheid activist" .
+        ?uri dbo:almaMater res:University_of_South_Africa .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Nelson_Mandela</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="14" onlydbo="true">
+<string lang="en">Who is the front man of the band that wrote Coffee &amp; TV?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        &lt;http://dbpedia.org/page/Coffee_&amp;_TV&gt; dbo:musicalArtist ?x .
+        ?x dbo:bandMember ?uri .
+        ?uri text:"is" text:"frontman" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Damon_Albarn</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="15" onlydbo="true">
+<string lang="en">Which recipients of the Victoria Cross died in the Battle of Arnhem?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri dbo:award res:Victoria_Cross .
+	?uri text:"died in" text:"Battle of Arnhem" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/John_Baskeyfield</answer>
+<answer>http://dbpedia.org/resource/John_Hollington_Grayburn</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="16" onlydbo="true">
+<string lang="en">Gaborone is the capital of which country member of the African Union?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+    ?uri text:"member of" text:"African Union" .    
+    ?uri dbo:capital res:Gaborone .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Botswana</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="17" onlydbo="true">
+<string lang="en">Which German mathematicians were members of the von Braun rocket group?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri ?abstract
+WHERE {
+        ?uri dbo:field res:Mathematics .
+        ?uri dbo:birthPlace res:Germany .
+        ?uri text:"member of" text:"von Braun rocket group" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Walter_Haeussermann</answer>
+<answer>http://dbpedia.org/resource/Oswald_Lange</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="boolean" hybrid="true" id="18" onlydbo="true">
+<string lang="en">Are there man-made lakes in Australia that are deeper than 100 meters?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+ASK
+WHERE {
+        ?uri rdf:type dbo:Lake . 
+        ?uri dbo:country res:Australia . 
+        ?uri text:"is" text:"man-made" . 
+        ?uri dbo:depth ?num . 
+        FILTER(?num &gt; 100.0)
+}</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="19" onlydbo="true">
+<string lang="en">Which Secretary of State policies lead to the United States' acquisition of Pacific colonies?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/office&gt; "United States Secretary of State" . ?uri text:"policies lead" text:"United States' acquisition of Pacific colonies" . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/James_G._Blaine</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="20" onlydbo="true">
+<string lang="en">Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:office "United States Secretary of State" . 
+        ?uri text:"significiantly involved in" text:"United States' dominance of the Caribbean" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/James_G._Blaine</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="21" onlydbo="true">
+<string lang="en">Who played the drums in the band that wrote Complete Control?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Complete_Control dbo:musicalArtist ?x .
+        ?x dbo:bandMember ?uri .
+        ?uri text:"plays" text:"drums" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Topper_Headon</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="22" onlydbo="true">
+<string lang="en">Which horses did The Long Fellow ride?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"known as" text:"The Long Fellow" .
+        ?x dbo:raceHorse ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alleged_(horse)</answer>
+<answer>http://dbpedia.org/resource/Nijinsky_II</answer>
+<answer>http://dbpedia.org/resource/Crepello</answer>
+<answer>http://dbpedia.org/resource/Sir_Ivor</answer>
+<answer>http://dbpedia.org/resource/Empery</answer>
+<answer>http://dbpedia.org/resource/St._Paddy</answer>
+<answer>http://dbpedia.org/resource/The_Minstrel</answer>
+<answer>http://dbpedia.org/resource/Never_Say_Die_(horse)</answer>
+<answer>http://dbpedia.org/resource/Petite_Etoile</answer>
+<answer>http://dbpedia.org/resource/Teenoso</answer>
+<answer>http://dbpedia.org/resource/Roberto_(horse)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="23" onlydbo="true">
+<string lang="en">How many awards achieved the creator of the world's most famous equation?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT COUNT(?proj) WHERE { ?uri text:"the world's most famous equation" . ?uri dbo:awards ?proj . } </pseudoquery>
+<answers>
+<answer>6</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="24" onlydbo="true">
+<string lang="en">Of the people that died of radiation in Los Alamos, whose death was an accident?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?rui dbo:deathPlace &lt;http://dbpedia.org/resource/Los_Alamos,_New_Mexico&gt; .
+        ?uri dbo:deathCause res:Acute_radiation_syndrome .
+        ?uri text:"death circumstance" text:"accident" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Louis_Slotin</answer>
+<answer>http://dbpedia.org/resource/Harry_K._Daghlian,_Jr.</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="25" onlydbo="true">
+<string lang="en">Which writers converted to Islam?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Writer . 
+        ?uri text:"converted to" text:"Islam" . 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Jamilah_Kolocotronis</answer>
+<answer>http://dbpedia.org/resource/Lev_Nussimbaum</answer>
+<answer>http://dbpedia.org/resource/Ismael_Urbain</answer>
+<answer>http://dbpedia.org/resource/Jacky_Trevane</answer>
+<answer>http://dbpedia.org/resource/Aukai_Collins</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="26" onlydbo="true">
+<string lang="en">Who was the last man on the moon?</string>
+<pseudoquery>PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;   SELECT DISTINCT ?proj WHERE { dbr:Last_man_on_the_moon dbo:wikiPageRedirects ?proj . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Eugene_Cernan</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="27" onlydbo="true">
+<string lang="en">Under which pseudonym did Charles Dickens publish some of his books?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?s
+WHERE { 
+        ?x dbo:author res:Charles_Dickens . 
+        ?x text:"published under pseudonyn" ?s . 
+}</pseudoquery>
+<answers>
+<answer>Boz</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="28" onlydbo="true">
+<string lang="en">For which movie did the daughter of Francis Ford Coppola receive an Oscar?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        res:Francis_Ford_Coppola dbo:child ?x .
+        ?x text:"receive Oscar for" ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Lost_in_Translation_(film)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="29" onlydbo="true">
+<string lang="en">Who is the president by whom 20 million Americans had gained health insurance?</string>
+<pseudoquery> PREFIX dbp: &lt;http://dbpedia.org/property/&gt; SELECT DISTINCT ?proj WHERE { ?uri text:"20 million Americans had gained health insurance" . ?uri dbp:signedPresident ?proj . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Barack_Obama</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="30" onlydbo="false">
+<string lang="en">Who invented the World Wide Web?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;   SELECT DISTINCT ?proj WHERE { ?proj text:"world wide web" . ?proj rdf:type &lt;http://dbpedia.org/class/yago/Inventor110214637&gt; . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Tim_Berners-Lee</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="31" onlydbo="true">
+<string lang="en">Which astronauts died at the Columbia disaster also known as STS-107?</string>
+<pseudoquery> PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { { ?uri text:"Columbia disaster" . } UNION { ?uri text:"STS-107" }  ?proj rdf:type dbo:Astronaut . ?proj dbo:deathDate ?date. FILTER (bound (?date))}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/David_M._Brown</answer>
+<answer>http://dbpedia.org/resource/Rick_Husband</answer>
+<answer>http://dbpedia.org/resource/Laurel_Clark</answer>
+<answer>http://dbpedia.org/resource/Ilan_Ramon</answer>
+<answer>http://dbpedia.org/resource/Michael_P._Anderson</answer>
+<answer>http://dbpedia.org/resource/William_C._McCool</answer>
+<answer>http://dbpedia.org/resource/Kalpana_Chawla</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="32" onlydbo="true">
+<string lang="en">In which city was the assassin of Martin Luther King born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        res:Martin_Luther_King,_Jr. text:"assassin" ?x . 
+        ?x dbo:birthPlace ?uri .
+        ?uri rdf:type dbo:Settlement .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alton,_Illinois</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="33" onlydbo="true">
+<string lang="en">What is the name of the Viennese newspaper founded by the creator of the croissant?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?name 
+WHERE {
+        res:Croissant dbo:creator ?x .
+        ?x text:"founder of" ?name . 
+}</pseudoquery>
+<answers>
+<answer>Die Presse</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="34" onlydbo="true">
+<string lang="en">Which members of the Wu-Tang Clan took their stage name from a movie?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Wu-Tang_Clan dbo:bandMember ?uri .
+        ?uri text:"stage name" ?x .
+        ?x text:"from" text:"movie" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Method_Man</answer>
+<answer>http://dbpedia.org/resource/Ghostface_Killah</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="35" onlydbo="true">
+<string lang="en">Which actress starring in the TV series Friends owns the production company Coquette Productions?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	res:Friends dbo:starring ?uri .	
+	?uri text:"own" text:"the production company Coquette Productions" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Courteney_Cox</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="36" onlydbo="true">
+<string lang="en">Who of those resting in Westminster Abbey wrote a book set in London and Paris?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?uri WHERE { ?uri text:"set in London and Paris" . dbr:Westminster_Abbey dbo:restingPlace ?uri . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Charles_Dickens</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="37" onlydbo="true">
+<string lang="en">List all the battles commanded by the lover of Cleopatra.</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE { 
+    ?x text:"lover" text:"Cleopatra".   
+    ?uri dbo:commander ?x .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Avaricum</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Alesia</answer>
+<answer>http://dbpedia.org/resource/Siege_of_Uxellodunum</answer>
+<answer>http://dbpedia.org/resource/Battle_of_the_Axona</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Zela</answer>
+<answer>http://dbpedia.org/resource/Siege_of_Massilia</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Gergovia</answer>
+<answer>http://dbpedia.org/resource/Gallic_Wars</answer>
+<answer>http://dbpedia.org/resource/Siege_of_Alexandria_(47_BC)</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Thapsus</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Vosges_(58_BC)</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Dyrrhachium_(48_BC)</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Pharsalus</answer>
+<answer>http://dbpedia.org/resource/Caesar's_invasions_of_Britain</answer>
+<answer>http://dbpedia.org/resource/Battle_of_the_Nile_(47_BC)</answer>
+<answer>http://dbpedia.org/resource/Caesar's_Civil_War</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Munda</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Bibracte</answer>
+<answer>http://dbpedia.org/resource/Battle_of_the_Sabis</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Ilerda</answer>
+<answer>http://dbpedia.org/resource/Battle_of_the_Arar</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Ruspina</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="38" onlydbo="true">
+<string lang="en">Who was vice president under the president who authorized atomic weapons against Japan during World War II?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        ?x text:"authorized" text:"atomic weapons against Japan" .
+        ?x dbo:vicePresident ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alben_W._Barkley</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="39" onlydbo="true">
+<string lang="en">Daniel Craig</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?string 
+WHERE {
+        res:James_Bond dbo:lastAppearance ?x .
+        ?x text:"feature as James Bond" ?string .
+}</pseudoquery>
+<answers>
+<answer>Daniel Craig</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="40" onlydbo="true">
+<string lang="en">Which anti-apartheid activist was born in Mvezo?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type text:"anti-apartheid activist" .
+        ?uri dbo:birthPlace res:Mvezo .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Nelson_Mandela</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="41" onlydbo="true">
+<string lang="en">The home of the Mona Lisa is a landmark of which city?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Mona_Lisa&gt; &lt;http://dbpedia.org/ontology/museum&gt; ?x . ?x text:"landmark of" ?uri . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Paris</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="42" onlydbo="false">
+<string lang="en">On which island did the national poet of Greece die?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"considered" text:"national poet of Greece" .
+        ?x dbo:deathPlace ?uri .
+        ?uri rdf:type yago:Island109316454 .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Corfu</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="43" onlydbo="true">
+<string lang="en">Which books of the laureate of American lowlife are published by Black Sparrow Books?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri text:"laureate of American lowlife" . ?proj dbo:author ?uri . ?proj dbo:publisher dbr:Black_Sparrow_Books . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Factotum_(novel)</answer>
+<answer>http://dbpedia.org/resource/Women_(novel)</answer>
+<answer>http://dbpedia.org/resource/Post_Office_(novel)</answer>
+<answer>http://dbpedia.org/resource/Ham_on_Rye</answer>
+<answer>http://dbpedia.org/resource/Pulp_(novel)</answer>
+<answer>http://dbpedia.org/resource/Hollywood_(Bukowski_novel)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="44" onlydbo="true">
+<string lang="en">How many floors does the world's only 7 star hotel have?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri text:"world's only 7 star hotel" . ?uri dbo:floorCount ?proj . } </pseudoquery>
+<answers>
+<answer>56</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="45" onlydbo="false">
+<string lang="en">How many children does the actor who plays Dan White in Milk have?</string>
+<pseudoquery>SELECT ?n WHERE { &lt;http://dbpedia.org/resource/Milk_(film)&gt; &lt;http://dbpedia.org/ontology/starring&gt; ?uri . ?uri text:"play" text:"Dan White" . ?uri &lt;http://dbpedia.org/property/children&gt; ?n . }</pseudoquery>
+<answers>
+<answer>2</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="46" onlydbo="true">
+<string lang="en">Who are the architects of the tallest building in Japan?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { text:"tallest building in Japan" &lt;http:/dbpedia.org/ontology/architect&gt; ?uri . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/César_Pelli</answer>
+<answer>http://dbpedia.org/resource/Nikken_Sekkei</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="text" hybrid="true" id="47" onlydbo="true">
+<string lang="en">What is the name of the school where obama's wife is studied?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?x rdf:type dbo:Person . dbr:Barack_Obama dbp:spouse ?x . ?x dbp:almaMater ?proj }</pseudoquery>
+<answers>
+<answer>"Harward Law School" @en</answer>
+<answer>"Princeton University" @en</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="48" onlydbo="true">
+<string lang="en">Which recipients of the Victoria Cross fought in the Battle of Arnhem?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX res: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?uri WHERE {     ?uri dbo:award res:Victoria_Cross .    { ?uri text:"fought in" text:"Battle of Arnhem" . } UNION {?uri text:"went into action" text:"Battle of Arnhem"} } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/John_Baskeyfield</answer>
+<answer>http://dbpedia.org/resource/John_Hollington_Grayburn</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="49" onlydbo="true">
+<string lang="en">Which buildings in art deco style did Shreve, Lamb and Harmon design?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:architect res:Shreve,_Lamb_&amp;_Harmon .
+      { ?uri dbo:architecturalStyle res:Art_Deco . }
+      UNION
+      { ?uri text:"style text:"art deco" . } 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Empire_State_Building</answer>
+<answer>http://dbpedia.org/resource/500_Fifth_Avenue</answer>
+<answer>http://dbpedia.org/resource/Joel_W._Solomon_Federal_Building_and_United_States_Courthouse</answer>
+<answer>http://dbpedia.org/resource/Hill_Building</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="50" onlydbo="true">
+<string lang="en">Which country did the first known photographer of snowflakes come from?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri text:"is" text:"first known photographer of snowflakes" .
+	?uri dbo:birthPlace ?x .
+        ?x rdf:type dbo:Country .	
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/United_States</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="51" onlydbo="true">
+<string lang="en">What is the Answer to The Ultimate Question of Life, the Universe, and Everything?</string>
+<pseudoquery> SELECT DISTINCT ?proj WHERE { ?uri text:"Answer to The Ultimate Question of Life, the Universe, and Everything" . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/42_(number)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="52" onlydbo="true">
+<string lang="en">Which building owned by the Bank of America was featured in the TV series MegaStructures?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Building.
+        ?uri dbo:owner res:Bank_of_America . 
+        ?uri text:"featured in" text:"MegaStructures" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/page/Bank_of_America_Tower_(New_York_City)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="53" onlydbo="true">
+<string lang="en">How old is James Bond in the latest Bond book by William Boyd?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        res:James_Bond dbo:lastAppearance ?x .
+        ?x dbo:author &lt;http://dbpedia.org/resource/William_Boyd_(writer)&gt; .
+        ?x text:"age of Bond" ?n .
+}</pseudoquery>
+<answers>
+<answer>45</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="54" onlydbo="true">
+<string lang="en">Which of the volcanoes that erupted in 1550 was named after an explorer?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http:/dbpedia.org/ontology/Volcano&gt; . ?uri &lt;http:/dbpedia.org/ontology/eruptionYear&gt; ?y . ?uri text:"named after" text:"explorer" . FILTER (year(?y) = 1550)  }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Krasheninnikov_(volcano)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="55" onlydbo="true">
+<string lang="en">In which British territories was the "Father of Singapore" born?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { text:"Father of modern Singapore" &lt;http://dbpedia.org/ontology/birthPlace&gt; ?uri . ?uri rdf:type text:"British territories" . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Straits_Settlements</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="56" onlydbo="true">
+<string lang="en">How many Golden Globe awards did the daughter of Henry Fonda win?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT ?n
+WHERE {
+        ?uri dbo:parent res:Henry_Fonda .
+        ?uri text:"number of Golden Globe awards" ?n .
+}</pseudoquery>
+<answers>
+<answer>7</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="57" onlydbo="true">
+<string lang="en">Who are the sons of the songwriter of the Beatles?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT ?proj WHERE { ?uri text:"songwriter" . dbr:The_Beatles dbo:bandMember ?uri. ?uri dbo:child ?proj . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Sean_Lennon</answer>
+<answer>http://dbpedia.org/resource/Julian_Lennon</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="58" onlydbo="true">
+<string lang="en">Where did the first human in space die?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX res: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?uri WHERE {         ?x dbp:type text:"first human in space" .         ?x dbo:deathPlace ?uri . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Kirzhach</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="59" onlydbo="true">
+<string lang="en">Which daughter of Francis Ford Coppola received an Academy Award for Lost in Translation?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Francis_Ford_Coppola&gt; &lt;http://dbpedia.org/ontology/child&gt; ?x . ?x text:"receive the Academy Award  for" text:"Lost in Translation" . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Sofia_Coppola</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="60" onlydbo="true">
+<string lang="en">In which year did the Hungarian-American actor called "The King of Horror" make his first film?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+SELECT DISTINCT ?year
+WHERE {
+        ?x rdf:type dbo:Actor .
+        ?x dbo:alias "The King Of Horror" .
+        ?x text:"made his first movie in" ?year .</pseudoquery>
+<answers>
+<answer>1917</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="61" onlydbo="true">
+<string lang="en">What is the native city of Hollywood's highest-paid actress?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"Hollywood's highest-paid actress" .
+        ?x dbo:birthPlace ?uri .
+        ?x rdf:type dbo:City .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Los_Angeles</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="62" onlydbo="true">
+<string lang="en">Give me the currencies of all G8 countries.</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        ?x text:"member of" text:"G8" . 
+        ?x dbo:currency ?uri . 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Euro_sign</answer>
+<answer>http://dbpedia.org/resource/United_States_dollar</answer>
+<answer>http://dbpedia.org/resource/Japanese_yen</answer>
+<answer>http://dbpedia.org/resource/Russian_ruble</answer>
+<answer>http://dbpedia.org/resource/Canadian_dollar</answer>
+<answer>http://dbpedia.org/resource/Pound_sterling</answer>
+<answer>http://dbpedia.org/resource/Euro</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="63" onlydbo="true">
+<string lang="en">Who portrays a chemistry teacher and drug dealer in a famous TV series?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?role dbo:portrayer ?proj . ?role &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Fictional_schoolteachers&gt; . ?role &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Fictional_drug_dealers&gt; . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Bryan_Cranston</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="64" onlydbo="true">
+<string lang="en">Did Napoleon's first wife die in France?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+ASK 
+WHERE {
+        ?x text:"first wife of" text:"Napoleon" .
+        ?x dbo:deathPlace res:France .	
+}</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="65" onlydbo="true">
+<string lang="en">In which city does the leader of the Xposé girls live?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"leader of the Xposé girls" .
+        ?x dbo:residence ?uri .</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Dublin</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="66" onlydbo="true">
+<string lang="en">When was the composer of the opera Madama Butterfly born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?date 
+WHERE {
+	res:Madama_Butterfly text:"composer" ?x .
+	?x dbo:birthDate ?date .
+}</pseudoquery>
+<answers>
+<answer>1858-12-22</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="number" hybrid="true" id="67" onlydbo="true">
+<string lang="en">How many Golden Globe awards did the husband of Katie Holmes win?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX dbp: &lt;http://dbpedia.org/property/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT COUNT(DISTINCT ?awards)
+WHERE {
+	res:Katie_Holmes dbp:spouse ?uri .
+ 	?uri text:"win" ?award .
+        ?award rdf:type text:"Golden Globe" .
+}</pseudoquery>
+<answers>
+<answer>3</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="resource" hybrid="true" id="68" onlydbo="true">
+<string lang="en">Are the Rosetta Stone and the Gayer-Andersen cat exhibited in the same museum?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+ASK
+WHERE {
+	?m1 text:"exhibits" res:Rosetta_Stone .	
+	res:Gayer-Anderson_Cat dbo:museum ?x .
+        ?m2 rdfs:label ?m2 .
+        FILTER (?m1=?m2)
+}</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="69" onlydbo="true">
+<string lang="en">In which city was the mother of Bill Gates born?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?mother text:"mother" . ?mother rdf:type dbo:Person . ?mother dbo:child dbr:Bill_Gates . ?mother dbo:birthPlace ?proj . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Seattle</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="70" onlydbo="false">
+<string lang="en">What eating disorder is characterized by an appetite for substances such as clay and sand?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+SELECT ?uri WHERE
+{
+  ?uri rdf:type yago:EatingDisorders .
+  ?uri text:"characterized by" "appetite for clay and sand" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Pica_(disorder)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="71" onlydbo="true">
+<string lang="en">Lost in Translation</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?string
+WHERE {
+        res:Francis_Ford_Coppola dbo:child ?x .
+        ?x text:"receive Oscar for" ?string .
+}</pseudoquery>
+<answers>
+<answer>Lost in Translation</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="72" onlydbo="true">
+<string lang="en">Which movie established a second carrier for Bill Murray?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri text:"second carrier" . ?uri rdf:type dbo:Film . ?uri dbo:starring dbr:Bill_Murray . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Rushmore_(film)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="73" onlydbo="true">
+<string lang="en">Which anti-apartheid revolutionary was born in Mvezo?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX res: &lt;http://dbpedia.org/resource/&gt; PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; SELECT DISTINCT ?uri WHERE {         ?uri text:"was a" text:"anti-apartheid revolutionary" .         ?uri dbo:birthPlace res:Mvezo . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Nelson_Mandela</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="74" onlydbo="false">
+<string lang="en">In which town was the man convicted of killing Martin Luther King born?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX res: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?uri WHERE {         res:Martin_Luther_King,_Jr. text:"the man convicted of killing King" ?x .         ?x dbo:birthPlace ?uri .         ?uri dbp:districtType "Township"@en . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alton,_Illinois</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="75" onlydbo="false">
+<string lang="en">Under which king did the British prime minister that had a reputation as a playboy serve?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt; SELECT DISTINCT ?uri WHERE {         ?x rdf:type yago:PrimeMinistersOfTheUnitedKingdom .         ?x text:"reputation as a" text:"playboy" .         ?x dbo:monarch ?uri . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/George_VI</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="76" onlydbo="true">
+<string lang="en">How old was Steve Job's sister when she first met him?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT ?n 
+WHERE {
+        res:Steve_Jobs dbo:relative ?uri .
+        ?uri text:"did not meet until she was" ?n .
+}</pseudoquery>
+<answers>
+<answer>25</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="77" onlydbo="true">
+<string lang="en">When was the the greatest composer of Italian opera after Verdi born?</string>
+<pseudoquery>SELECT DISTINCT ?date WHERE { &lt;http:/dbpedia.org/resource/Madama_Butterfly&gt; text:"called" text:"the greatest composer of Italian opera after Verdi" . ?x &lt;http:/dbpedia.org/ontology/birthDate&gt; ?date . }</pseudoquery>
+<answers>
+<answer>1858-12-22</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="78" onlydbo="true">
+<string lang="en">Who composed the music for the film that depicts the early life of Jane Austen?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; SELECT DISTINCT ?uri WHERE {         ?x rdf:type dbo:Film .         ?x text:"depicts the early life of" text:"Jane Austen" .         ?x dbo:musicComposer ?uri . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Adrian_Johnston</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="79" onlydbo="true">
+<string lang="en">Which writers had influenced the philosopher that refused a Nobel Prize?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdf:type dbo:Philosopher .
+        ?x text:"refuse" text:"Nobel Prize" .
+        ?x dbo:influencedBy ?uri .
+        ?uri rdf:type dbo:Writer .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/John_Dos_Passos</answer>
+<answer>http://dbpedia.org/resource/Fyodor_Dostoyevsky</answer>
+<answer>http://dbpedia.org/resource/Voltaire</answer>
+<answer>http://dbpedia.org/resource/Gustave_Flaubert</answer>
+<answer>http://dbpedia.org/resource/Louis-Ferdinand_Céline</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="80" onlydbo="true">
+<string lang="en">Who composed the music for the film that depicts the early life of Jane Austin?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdf:type dbo:Film .
+        ?x text:"depicts the early life of" text:"Jane Austin" .
+        ?x dbo:musicComposer ?uri .
+}</pseudoquery>
+<answers>
+<answer>dbpedia.org/resource/Adrian_Johnston</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="81" onlydbo="true">
+<string lang="en">Under which pseudonym did Charles Dickens write some of his books?</string>
+<pseudoquery>SELECT DISTINCT ?string WHERE { ?x &lt;http://dbpedia.org/ontology/author&gt; &lt;http://dbpedia.org/resource/Charles_Dickens&gt; . ?x text:"writing under the pseudonym of" ?string . }</pseudoquery>
+<answers>
+<answer>Boz</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="82" onlydbo="true">
+<string lang="en">Which princess died in a car crash in Paris?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?proj text:"car crash" . ?proj rdf:type dbo:Royalty . ?proj dbo:deathPlace dbr:Paris }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Diana_Princess_of_Wales</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="83" onlydbo="true">
+<string lang="en">Which birds are protected under the National Parks and Wildlife Act?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+	?uri rdf:type dbo:Bird .	
+	?uri text:"protected under" text:"National Parks and Wildlife Act".
+	
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Yellow_Thornbill</answer>
+<answer>http://dbpedia.org/resource/Bar-shouldered_Dove</answer>
+<answer>http://dbpedia.org/resource/Chestnut_Teal</answer>
+<answer>http://dbpedia.org/resource/Black-faced_Cuckoo-shrike</answer>
+<answer>http://dbpedia.org/resource/Australian_Shelduck</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="84" onlydbo="true">
+<string lang="en">List all the battles fought by the lover of Cleopatra.</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {	
+	?x text:"lover" text:"Cleopatra".	
+	?x dbo:battle ?uri .		
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Battle_of_Pharsalus</answer>
+<answer>http://dbpedia.org/resource/Final_War_of_the_Roman_Republic</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Philippi</answer>
+<answer>http://dbpedia.org/resource/Caesar's_Civil_War</answer>
+<answer>http://dbpedia.org/resource/Liberators'_civil_war</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Actium</answer>
+<answer>http://dbpedia.org/resource/Antony's_Parthian_War</answer>
+<answer>http://dbpedia.org/resource/Roman–Parthian_Wars</answer>
+<answer>http://dbpedia.org/resource/Gallic_Wars</answer>
+<answer>http://dbpedia.org/resource/Battle_of_Mutina</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="85" onlydbo="false">
+<string lang="en">Who is the founder of the Turkish Republic?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;   SELECT DISTINCT ?proj WHERE { ?proj text:"founder" . ?proj rdf:type &lt;http://dbpedia.org/class/yago/PresidentsOfTurkey&gt; . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Mustafa_Kemal_Atat%C3%BCrk</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="86" onlydbo="true">
+<string lang="en">Which buildings owned by the crown overlook the North Sea?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+SELECT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Building.
+        ?uri dbo:owner res:The_Crown . 
+        ?uri text:"overlook" text:"North Sea" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Scarborough_Castle</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="87" onlydbo="true">
+<string lang="en">Which of the volcanoes that erupted in 1550 is still active?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Volcano . 
+        ?uri dbo:eruptionYear ?y .
+        FILTER (year(?y) = 1550)
+        ?uri text:"is" text:"active" . 
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/page/Volc%C3%A1n_Bar%C3%BA</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="88" onlydbo="true">
+<string lang="en">Where was the "Father of Singapore" born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        text:"Father of Singapore" dbo:birthPlace ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Jamaica</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="89" onlydbo="true">
+<string lang="en">Who was the president of the USSR during the cold war?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?proj text:"cold war" . ?proj rdf:type dbo:Person . ?proj dbp:title dbr:President_of_the_Soviet_Union . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Mikhail_Gorbachev</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="90" onlydbo="true">
+<string lang="en">What is the birth place of Hollywood's highest-paid actress?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"Hollywood's highest-paid actress" .
+        ?x dbo:birthPlace ?uri .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Los_Angeles</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="91" onlydbo="true">
+<string lang="en">Where was the first race for the greatest Formula One driver of all times?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri text:"greatest Formula One driver of all times" . ?uri dbo:firstRace ?proj . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/1991_Belgian_Grand_Prix</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="92" onlydbo="true">
+<string lang="en">Who is the wife of the creator of the César Award?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/César_Award&gt; text:"created by" &lt;http://dbpedia.org/resource/Georges_Cravenne&gt; . &lt;http://dbpedia.org/resource/Georges_Cravenne&gt; &lt;http://dbpedia.org/ontology/spouse&gt; ?uri . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Françoise_Arnoul</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="93" onlydbo="true">
+<string lang="en">Who were generals of the battle of gettysburg?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?proj text:"general" . ?proj rdf:type dbo:Person . ?proj dbo:battle dbr:Battle_of_Gettysburg . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Henry_Warner_Slocum</answer>
+<answer>http://dbpedia.org/resource/James_Barnes_(general)</answer>
+<answer>http://dbpedia.org/resource/Archibald_C._Godwin</answer>
+<answer>http://dbpedia.org/resource/Alexander_Hays</answer>
+<answer>http://dbpedia.org/resource/Romeyn_B._Ayres</answer>
+<answer>http://dbpedia.org/resource/R%C3%A9gis_de_Trobriand</answer>
+<answer>http://dbpedia.org/resource/Orpheus_S._Woodward</answer>
+<answer>http://dbpedia.org/resource/Clement_A._Evans</answer>
+<answer>http://dbpedia.org/resource/William_Dorsey_Pender</answer>
+<answer>http://dbpedia.org/resource/Robert_O._Tyler</answer>
+<answer>http://dbpedia.org/resource/Paul_Jones_Semmes</answer>
+<answer>http://dbpedia.org/resource/John_Buford</answer>
+<answer>http://dbpedia.org/resource/James_L._Kemper</answer>
+<answer>http://dbpedia.org/resource/George_Armstrong_Custer</answer>
+<answer>http://dbpedia.org/resource/John_R._Chambliss</answer>
+<answer>http://dbpedia.org/resource/Samuel_K._Zook</answer>
+<answer>http://dbpedia.org/resource/Stephen_Dodson_Ramseur</answer>
+<answer>http://dbpedia.org/resource/Charles_K._Graham</answer>
+<answer>http://dbpedia.org/resource/Abner_Monroe_Perrin</answer>
+<answer>http://dbpedia.org/resource/J._H._Hobart_Ward</answer>
+<answer>http://dbpedia.org/resource/William_Mahone</answer>
+<answer>http://dbpedia.org/resource/Carle_Augustus_Woodruff</answer>
+<answer>http://dbpedia.org/resource/Robert_D._Lilley</answer>
+<answer>http://dbpedia.org/resource/Oliver_O._Howard</answer>
+<answer>http://dbpedia.org/resource/Richard_L._T._Beale</answer>
+<answer>http://dbpedia.org/resource/Lafayette_McLaws</answer>
+<answer>http://dbpedia.org/resource/Isaac_R._Trimble</answer>
+<answer>http://dbpedia.org/resource/George_T._Anderson</answer>
+<answer>http://dbpedia.org/resource/Richard_B._Garnett</answer>
+<answer>http://dbpedia.org/resource/George_H._Steuart_(brigadier_general)</answer>
+<answer>http://dbpedia.org/resource/Lucius_Fairchild</answer>
+<answer>http://dbpedia.org/resource/Thomas_Devin</answer>
+<answer>http://dbpedia.org/resource/Alfred_Iverson,_Jr.</answer>
+<answer>http://dbpedia.org/resource/William_Barksdale</answer>
+<answer>http://dbpedia.org/resource/Gabriel_Ren%C3%A9_Paul</answer>
+<answer>http://dbpedia.org/resource/Harry_C._Egbert</answer>
+<answer>http://dbpedia.org/resource/Thomas_L._Rosser</answer>
+<answer>http://dbpedia.org/resource/George_Pickett</answer>
+<answer>http://dbpedia.org/resource/John_Doby_Kennedy</answer>
+<answer>http://dbpedia.org/resource/John_Newton_(engineer)</answer>
+<answer>http://dbpedia.org/resource/Lewis_Armistead</answer>
+<answer>http://dbpedia.org/resource/Alexander_Schimmelfennig</answer>
+<answer>http://dbpedia.org/resource/J._Johnston_Pettigrew</answer>
+<answer>http://dbpedia.org/resource/John_F._Reynolds</answer>
+<answer>http://dbpedia.org/resource/Henry_Baxter</answer>
+<answer>http://dbpedia.org/resource/Elwell_Stephen_Otis</answer>
+<answer>http://dbpedia.org/resource/Gouverneur_K._Warren</answer>
+<answer>http://dbpedia.org/resource/William_T._Wofford</answer>
+<answer>http://dbpedia.org/resource/Charles_Powell_Adams</answer>
+<answer>http://dbpedia.org/resource/Ira_Coray_Abbott</answer>
+<answer>http://dbpedia.org/resource/William_C._Oates</answer>
+<answer>http://dbpedia.org/resource/Lysander_Cutler</answer>
+<answer>http://dbpedia.org/resource/Ranald_S._Mackenzie</answer>
+<answer>http://dbpedia.org/resource/Augustus_Pearl_Martin</answer>
+<answer>http://dbpedia.org/resource/Birkett_D._Fry</answer>
+<answer>http://dbpedia.org/resource/John_C._Caldwell</answer>
+<answer>http://dbpedia.org/resource/William_Montrose_Graham,_Jr.</answer>
+<answer>http://dbpedia.org/resource/Armistead_Lindsay_Long</answer>
+<answer>http://dbpedia.org/resource/George_P._Foster</answer>
+<answer>http://dbpedia.org/resource/John_M._Jones</answer>
+<answer>http://dbpedia.org/resource/Benjamin_G._Humphreys</answer>
+<answer>http://dbpedia.org/resource/Thomas_Algeo_Rowley</answer>
+<answer>http://dbpedia.org/resource/Junius_Daniel</answer>
+<answer>http://dbpedia.org/resource/Charles_Griffin</answer>
+<answer>http://dbpedia.org/resource/Adrian_R._Root</answer>
+<answer>http://dbpedia.org/resource/Alonzo_W._Adams</answer>
+<answer>http://dbpedia.org/resource/Daniel_Butterfield</answer>
+<answer>http://dbpedia.org/resource/Henry_L._Eustis</answer>
+<answer>http://dbpedia.org/resource/James_Conner_(general)</answer>
+<answer>http://dbpedia.org/resource/Henry_Livermore_Abbott</answer>
+<answer>http://dbpedia.org/resource/Napoleon_B._McLaughlen</answer>
+<answer>http://dbpedia.org/resource/Thomas_Alfred_Smyth</answer>
+<answer>http://dbpedia.org/resource/W%C5%82odzimierz_Krzy%C5%BCanowski</answer>
+<answer>http://dbpedia.org/resource/James_Henry_Lane_(Confederate_general)</answer>
+<answer>http://dbpedia.org/resource/Joshua_Chamberlain</answer>
+<answer>http://dbpedia.org/resource/Charles_Saalmann</answer>
+<answer>http://dbpedia.org/resource/John_Brown_Gordon</answer>
+<answer>http://dbpedia.org/resource/Leroy_Augustus_Stafford</answer>
+<answer>http://dbpedia.org/resource/James_Gwyn</answer>
+<answer>http://dbpedia.org/resource/Winfield_Scott_Hancock</answer>
+<answer>http://dbpedia.org/resource/Albion_P._Howe</answer>
+<answer>http://dbpedia.org/resource/Joseph_G._Sanders</answer>
+<answer>http://dbpedia.org/resource/Peter_A.S._McGlashan</answer>
+<answer>http://dbpedia.org/resource/Alexander_S._Webb</answer>
+<answer>http://dbpedia.org/resource/Richard_Napoleon_Batchelder</answer>
+<answer>http://dbpedia.org/resource/Laurence_S._Baker</answer>
+<answer>http://dbpedia.org/resource/Ellis_Spear</answer>
+<answer>http://dbpedia.org/resource/Daniel_Sickles</answer>
+<answer>http://dbpedia.org/resource/James_Clay_Rice</answer>
+<answer>http://dbpedia.org/resource/Harry_T._Hays</answer>
+<answer>http://dbpedia.org/resource/Thomas_W._Egan</answer>
+<answer>http://dbpedia.org/resource/Thomas_W._Hyde</answer>
+<answer>http://dbpedia.org/resource/William_L._Brandon</answer>
+<answer>http://dbpedia.org/resource/Edward_Lloyd_Thomas</answer>
+<answer>http://dbpedia.org/resource/John_C._Bates</answer>
+<answer>http://dbpedia.org/resource/George_Meade</answer>
+<answer>http://dbpedia.org/resource/Richard_S._Ewell</answer>
+<answer>http://dbpedia.org/resource/Thomas_H._Ruger</answer>
+<answer>http://dbpedia.org/resource/Adolph_von_Steinwehr</answer>
+<answer>http://dbpedia.org/resource/Collett_Leventhorpe</answer>
+<answer>http://dbpedia.org/resource/John_Bell_Hood</answer>
+<answer>http://dbpedia.org/resource/Moxley_Sorrel</answer>
+<answer>http://dbpedia.org/resource/John_C._Robinson</answer>
+<answer>http://dbpedia.org/resource/Henry_Heth</answer>
+<answer>http://dbpedia.org/resource/Joseph_B._Kershaw</answer>
+<answer>http://dbpedia.org/resource/Beverly_Robertson</answer>
+<answer>http://dbpedia.org/resource/Alfred_Moore_Scales</answer>
+<answer>http://dbpedia.org/resource/Elon_J._Farnsworth</answer>
+<answer>http://dbpedia.org/resource/Francis_C._Barlow</answer>
+<answer>http://dbpedia.org/resource/Horatio_Wright</answer>
+<answer>http://dbpedia.org/resource/Samuel_W._Crawford</answer>
+<answer>http://dbpedia.org/resource/Henry_S._Huidekoper</answer>
+<answer>http://dbpedia.org/resource/William_Smith_(Virginia_governor)</answer>
+<answer>http://dbpedia.org/resource/Henry_Jackson_Hunt</answer>
+<answer>http://dbpedia.org/resource/James_J._Archer</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="94" onlydbo="true">
+<string lang="en">In which city where Charlie Chaplin's half brothers born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+ASK 
+WHERE {
+        res:Charlie_Chaplin dbo:relative ?x . 
+        ?x text:"half brother of" ?res:Charlie_Chaplin . 
+        ?x dbo:birthPlace ?y . 
+        ?y text:"is a" text:"city" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/London</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="95" onlydbo="true">
+<string lang="en">Who was the mayor of London during the olympic games?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?proj text:"Olympic Games" . ?proj rdf:type dbo:Person . ?proj dbp:office dbr:Mayor_of_London . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Boris_Johnson</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="96" onlydbo="true">
+<string lang="en">Who is the architect of the tallest building in Japan?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?name 
+WHERE {
+        text:"tallest building in Japan" dbo:architect ?uri .  
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Nikken_Sekkei</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="97" onlydbo="true">
+<string lang="en">In which city does the sports commentator know as Memory Man live?</string>
+<pseudoquery>SELECT DISTINCT ?uri WHERE { ?x text:"is" text:"sports commentator" . ?x text:"known as" text:"Memory Man" . ?x &lt;http:/dbpedia.org/ontology/residence&gt; ?uri .</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Dublin</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="98" onlydbo="false">
+<string lang="en">When was the European President known as the decider born?</string>
+<pseudoquery> PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri text:"the decider" . ?uri dbo:birthDate ?proj. ?uri rdf:type http://dbpedia.org/class/yago/PresidentsOfTheEuropeanCouncil . } </pseudoquery>
+<answers>
+<answer>1954-07-17</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="99" onlydbo="true">
+<string lang="en">How old was Steve Jobs' sister when she first met him?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT ?n 
+WHERE {
+        res:Steve_Jobs dbo:relative ?uri .
+        ?uri text:"first met him when she was" ?n .
+}</pseudoquery>
+<answers>
+<answer>25</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="100" onlydbo="true">
+<string lang="en">Who was vice president under the president who approved the use of atomic weapons against Japan during World War II?</string>
+<pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; SELECT DISTINCT ?uri WHERE { ?x text:"approved the use of" text:"atomic weapons against Japan" . ?x dbo:vicePresident ?uri . } </pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alben_W._Barkley</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="101" onlydbo="false">
+<string lang="en">What eating disorder is characterized by eating substances such as clay and sand?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX yago: &lt;http://dbpedia.org/class/yago/&gt;
+SELECT ?uri WHERE
+{
+  ?uri rdf:type yago:EatingDisorders .
+  ?uri text:"characterized by" "appetite for clay and sand" .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Pica_(disorder)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="102" onlydbo="true">
+<string lang="en">Who first deciphered the Egyptian hieroglyphs?</string>
+<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?proj text:"first deciphered" . ?proj rdf:type dbo:Person . ?mother dbp:field dbr:Egyptian_hieroglyphs . }</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Jean-Fran%C3%A7ois_Champollion</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="103" onlydbo="true">
+<string lang="en">In which city does the former main presenter of the Xposé girls live?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x text:"is" text:"former presenter of the Xposé girls" .
+        ?x dbo:residence ?uri .</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Dublin</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="104" onlydbo="false">
+<string lang="en">In which town was the assassin of Martin Luther King born?</string>
+<pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX dbp: &lt;http://dbpedia.org/property/&gt;
+PREFIX res: &lt;http://dbpedia.org/resource/&gt;
+SELECT DISTINCT ?uri
+WHERE {
+        res:Martin_Luther_King,_Jr. text:"assassin" ?x . 
+        ?x dbo:birthPlace ?uri .
+        ?uri dbp:districtType "Township"@en .
+}</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Alton,_Illinois</answer>
+</answers>
+</question>
+</dataset>
