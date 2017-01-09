@@ -1794,6 +1794,61 @@
     } ]
   }, {
     "id" : "33",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many languages are spoken in Turkmenistan?",
+      "keywords" : "languages, Turkmenistan"
+    }, {
+      "language" : "fa",
+      "string" : "چند زبان در ترکمنستان صحبت می شود؟]",
+      "keywords" : "زبان، ترکمنستان"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele Sprachen werden in Turkmenistan gesprochen?",
+      "keywords" : "Sprachen, Turkmenistan"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántos idiomas se hablan en Turkmenistán?",
+      "keywords" : "idiomas, Turkmenistán"
+    }, {
+      "language" : "it",
+      "string" : "Quante lingue sono parlate in Turkmenistan?",
+      "keywords" : "lingue, Turkmenistan"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de langues sont parlées au Turkménistan?",
+      "keywords" : "langues, Turkménistan"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel talen worden er gesproken in Turkmenistan?",
+      "keywords" : "talen, Turkmenistan"
+    }, {
+      "language" : "ro",
+      "string" : "Câte limbi sunt vorbite în Turkmenistan?",
+      "keywords" : "limbi, Turkmenistan"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?x) as ?c) WHERE {  <http://dbpedia.org/resource/Turkmenistan> <http://dbpedia.org/ontology/language> ?x . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "2"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "34",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -1853,7 +1908,7 @@
       }
     } ]
   }, {
-    "id" : "34",
+    "id" : "35",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -1904,7 +1959,7 @@
       }
     } ]
   }, {
-    "id" : "35",
+    "id" : "36",
     "answertype" : "date",
     "aggregation" : false,
     "onlydbo" : true,
@@ -1959,7 +2014,7 @@
       }
     } ]
   }, {
-    "id" : "36",
+    "id" : "37",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2002,7 +2057,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "37",
+    "id" : "38",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2053,7 +2108,62 @@
       }
     } ]
   }, {
-    "id" : "38",
+    "id" : "39",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How often did Jane Fonda marry?",
+      "keywords" : "Jane Fonda, marry, how often"
+    }, {
+      "language" : "fa",
+      "string" : "جین فوندا چند بار ازدواج کرد؟",
+      "keywords" : "جین فوندا، ازدواج"
+    }, {
+      "language" : "de",
+      "string" : "Wie oft hat Jane Fonda geheiratet?",
+      "keywords" : "Jane Fonda, heiraten, wie oft"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántas veces ha estado casada Jane Fonda?",
+      "keywords" : "Jane Fonda, casada, cuántas veces"
+    }, {
+      "language" : "it",
+      "string" : "Quante volte si è sposata Jane Fonda?",
+      "keywords" : "Jane Fonda, sposata, quante volte"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de fois s'est mariée Jane Fonda?",
+      "keywords" : "Jane Fonda, marriages, nombre de fois"
+    }, {
+      "language" : "nl",
+      "string" : "Hoe vaak is Jane Fonda getrouwd?",
+      "keywords" : "Jane Fonda, getrouwd, hoe vaak"
+    }, {
+      "language" : "ro",
+      "string" : "Cât de des s-a măritat Jane Fonda?",
+      "keywords" : "Jane Fonda, mărita, cât de des"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  <http://dbpedia.org/resource/Jane_Fonda> <http://dbpedia.org/ontology/spouse> ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "3"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "40",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2119,7 +2229,7 @@
       }
     } ]
   }, {
-    "id" : "39",
+    "id" : "41",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2174,7 +2284,7 @@
       }
     } ]
   }, {
-    "id" : "40",
+    "id" : "42",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2244,7 +2354,7 @@
       }
     } ]
   }, {
-    "id" : "41",
+    "id" : "43",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2283,7 +2393,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "42",
+    "id" : "44",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2330,7 +2440,7 @@
       }
     } ]
   }, {
-    "id" : "43",
+    "id" : "45",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -2385,7 +2495,7 @@
       }
     } ]
   }, {
-    "id" : "44",
+    "id" : "46",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -2432,7 +2542,7 @@
       }
     } ]
   }, {
-    "id" : "45",
+    "id" : "47",
     "answertype" : "boolean",
     "aggregation" : true,
     "onlydbo" : true,
@@ -2471,7 +2581,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "46",
+    "id" : "48",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2526,7 +2636,7 @@
       }
     } ]
   }, {
-    "id" : "47",
+    "id" : "49",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2577,7 +2687,7 @@
       }
     } ]
   }, {
-    "id" : "48",
+    "id" : "50",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2642,7 +2752,7 @@
       }
     } ]
   }, {
-    "id" : "49",
+    "id" : "51",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2752,7 +2862,7 @@
       }
     } ]
   }, {
-    "id" : "50",
+    "id" : "52",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2852,7 +2962,7 @@
       }
     } ]
   }, {
-    "id" : "51",
+    "id" : "53",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -2904,7 +3014,7 @@
       }
     } ]
   }, {
-    "id" : "52",
+    "id" : "54",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -2984,7 +3094,7 @@
       }
     } ]
   }, {
-    "id" : "53",
+    "id" : "55",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3039,7 +3149,7 @@
       }
     } ]
   }, {
-    "id" : "54",
+    "id" : "56",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3094,7 +3204,62 @@
       }
     } ]
   }, {
-    "id" : "55",
+    "id" : "57",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many companies were founded in the same year as Google?",
+      "keywords" : "companies, founded, same year, Google"
+    }, {
+      "language" : "fa",
+      "string" : "چه تعداد شرکت در سال یکسانی با گوگل تأسیس شدند؟",
+      "keywords" : "شرکت، سال یکسانی، گوگل، تأسیس"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele Firmen wurden im selben Jahr wie Google gegründet?",
+      "keywords" : "Firmen, gegründet, selbes Jahr, Google"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántas compañías fueron fundadas en el mismo año que Google?",
+      "keywords" : "compañías, fundadas, mismo año Google"
+    }, {
+      "language" : "it",
+      "string" : "Quante società sono state fondate nello stesso anno di Google?",
+      "keywords" : "società, fondate, stesso anno, Google"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de companies ont été fondées la même année que Google?",
+      "keywords" : "nombre, companies, fondées, même année, Google"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel bedrijven werden opgericht in hetzelfde jaar als Google?",
+      "keywords" : "bedrijven, opgericht, hetzelfde jaar, Google"
+    }, {
+      "language" : "ro",
+      "string" : "Câte companii au fost înființate în același an cu Google?",
+      "keywords" : "companii, înființate, același an, Google"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .  ?uri <http://dbpedia.org/ontology/foundingYear> ?year .  <http://dbpedia.org/resource/Google> <http://dbpedia.org/ontology/foundingYear> ?year . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "0"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "58",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3145,7 +3310,7 @@
       }
     } ]
   }, {
-    "id" : "56",
+    "id" : "59",
     "answertype" : "boolean",
     "aggregation" : true,
     "onlydbo" : true,
@@ -3184,7 +3349,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "57",
+    "id" : "60",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3235,7 +3400,7 @@
       }
     } ]
   }, {
-    "id" : "58",
+    "id" : "61",
     "answertype" : "date",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3284,7 +3449,7 @@
       }
     } ]
   }, {
-    "id" : "59",
+    "id" : "62",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3391,7 +3556,7 @@
       }
     } ]
   }, {
-    "id" : "60",
+    "id" : "63",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3442,7 +3607,7 @@
       }
     } ]
   }, {
-    "id" : "61",
+    "id" : "64",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3485,7 +3650,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "62",
+    "id" : "65",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3541,7 +3706,7 @@
       }
     } ]
   }, {
-    "id" : "63",
+    "id" : "66",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3588,7 +3753,7 @@
       }
     } ]
   }, {
-    "id" : "64",
+    "id" : "67",
     "answertype" : "list",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3669,7 +3834,7 @@
       }
     } ]
   }, {
-    "id" : "65",
+    "id" : "68",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3720,7 +3885,7 @@
       }
     } ]
   }, {
-    "id" : "66",
+    "id" : "69",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3831,7 +3996,7 @@
       }
     } ]
   }, {
-    "id" : "67",
+    "id" : "70",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3891,7 +4056,7 @@
       }
     } ]
   }, {
-    "id" : "68",
+    "id" : "71",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3946,7 +4111,7 @@
       }
     } ]
   }, {
-    "id" : "69",
+    "id" : "72",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -3998,7 +4163,7 @@
       }
     } ]
   }, {
-    "id" : "70",
+    "id" : "73",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4058,7 +4223,7 @@
       }
     } ]
   }, {
-    "id" : "71",
+    "id" : "74",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4109,7 +4274,7 @@
       }
     } ]
   }, {
-    "id" : "72",
+    "id" : "75",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4160,7 +4325,7 @@
       }
     } ]
   }, {
-    "id" : "73",
+    "id" : "76",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4216,7 +4381,7 @@
       }
     } ]
   }, {
-    "id" : "74",
+    "id" : "77",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4271,7 +4436,7 @@
       }
     } ]
   }, {
-    "id" : "75",
+    "id" : "78",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4327,7 +4492,7 @@
       }
     } ]
   }, {
-    "id" : "76",
+    "id" : "79",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4382,7 +4547,7 @@
       }
     } ]
   }, {
-    "id" : "77",
+    "id" : "80",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4437,7 +4602,7 @@
       }
     } ]
   }, {
-    "id" : "78",
+    "id" : "81",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4476,7 +4641,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "79",
+    "id" : "82",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4519,7 +4684,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "80",
+    "id" : "83",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4729,7 +4894,7 @@
       }
     } ]
   }, {
-    "id" : "81",
+    "id" : "84",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -4780,7 +4945,7 @@
       }
     } ]
   }, {
-    "id" : "82",
+    "id" : "85",
     "answertype" : "boolean",
     "aggregation" : true,
     "onlydbo" : true,
@@ -4823,7 +4988,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "83",
+    "id" : "86",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -4874,7 +5039,7 @@
       }
     } ]
   }, {
-    "id" : "84",
+    "id" : "87",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4913,7 +5078,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "85",
+    "id" : "88",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -4968,7 +5133,7 @@
       }
     } ]
   }, {
-    "id" : "86",
+    "id" : "89",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5023,7 +5188,7 @@
       }
     } ]
   }, {
-    "id" : "87",
+    "id" : "90",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5078,7 +5243,7 @@
       }
     } ]
   }, {
-    "id" : "88",
+    "id" : "91",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5125,7 +5290,7 @@
       }
     } ]
   }, {
-    "id" : "89",
+    "id" : "92",
     "answertype" : "string",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5180,7 +5345,7 @@
       }
     } ]
   }, {
-    "id" : "90",
+    "id" : "93",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5235,7 +5400,62 @@
       }
     } ]
   }, {
-    "id" : "91",
+    "id" : "94",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many companies were founded by the founder of Facebook?",
+      "keywords" : "companies, founded by, founder, Facebook"
+    }, {
+      "language" : "fa",
+      "string" : "چه تعداد شرکت توسط مؤسس فیسبوک تأسیس شدند؟",
+      "keywords" : "شرکت، مؤسس، فیسبوک، تأسیس"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele Firmen hat der Gründer von Facebook gegründet?",
+      "keywords" : "Firmen, gegründet, Gründer, Facebook"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuantas compañías han sido fundadas por el fundador de Facebook?",
+      "keywords" : "compañías, fundadas, fundador Facebook"
+    }, {
+      "language" : "it",
+      "string" : "Quante società sono state fondate dal fondatore di Facebook?",
+      "keywords" : "società, fondate, fondatore, Facebook"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de companies ont été fondées par le fondateur de Facebook?",
+      "keywords" : "nombre, companies, fondées, fondateur, Facebook"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel bedrijven werden opgericht door de oprichter van Facebook?",
+      "keywords" : "bedrijven, opgericht, oprichter, Facebook"
+    }, {
+      "language" : "ro",
+      "string" : "Câte companii au fost înființate de fondatorul Facebook?",
+      "keywords" : "companii, înființate, fondator, Facebook"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  <http://dbpedia.org/resource/Facebook> <http://dbpedia.org/ontology/foundedBy> ?uri .  ?uri <http://dbpedia.org/ontology/foundedBy> ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "0"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "95",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5282,7 +5502,62 @@
       }
     } ]
   }, {
-    "id" : "92",
+    "id" : "96",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many children did Benjamin Franklin have?",
+      "keywords" : "Benjamin Franklin, child"
+    }, {
+      "language" : "fa",
+      "string" : "بنجامین فرانکلین چند فرزند دارد؟",
+      "keywords" : "بنجامین فرانکلین، فرزند"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele Kinder hatte Benjamin Franklin?",
+      "keywords" : "Benjamin Franklin, Kind"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántos hijos tuvo Benjamin Franklin?",
+      "keywords" : "Benjamin Franklin, hijos"
+    }, {
+      "language" : "it",
+      "string" : "Quanti figli ebbe Benjamin Franklin?",
+      "keywords" : "Benjamin Franklin, figlio"
+    }, {
+      "language" : "fr",
+      "string" : "Combien d'enfants Benjamin Franklin avait-il?",
+      "keywords" : "nombre d'enfants, Benjamin Franklin"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel kinderen had Benjamin Franklin?",
+      "keywords" : "Benjamin Franklin, kinderen, hoeveel"
+    }, {
+      "language" : "ro",
+      "string" : "Câți copii a avut Benjamin Franklin?",
+      "keywords" : "Benjamin Franklin, copil"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  <http://dbpedia.org/resource/Benjamin_Franklin> <http://dbpedia.org/ontology/child> ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "3"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "97",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5334,7 +5609,7 @@
       }
     } ]
   }, {
-    "id" : "93",
+    "id" : "98",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5400,7 +5675,7 @@
       }
     } ]
   }, {
-    "id" : "94",
+    "id" : "99",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -5451,7 +5726,7 @@
       }
     } ]
   }, {
-    "id" : "95",
+    "id" : "100",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5494,7 +5769,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "96",
+    "id" : "101",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5537,7 +5812,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "97",
+    "id" : "102",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5614,7 +5889,7 @@
       }
     } ]
   }, {
-    "id" : "98",
+    "id" : "103",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5657,7 +5932,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "99",
+    "id" : "104",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5722,7 +5997,7 @@
       }
     } ]
   }, {
-    "id" : "100",
+    "id" : "105",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -5777,7 +6052,7 @@
       }
     } ]
   }, {
-    "id" : "101",
+    "id" : "106",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5832,7 +6107,7 @@
       }
     } ]
   }, {
-    "id" : "102",
+    "id" : "107",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -5883,7 +6158,7 @@
       }
     } ]
   }, {
-    "id" : "103",
+    "id" : "108",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5935,7 +6210,7 @@
       }
     } ]
   }, {
-    "id" : "104",
+    "id" : "109",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -5978,7 +6253,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "105",
+    "id" : "110",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6017,7 +6292,62 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "106",
+    "id" : "111",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many ethnic groups live in Slovenia?",
+      "keywords" : "how many, ethnic groups, Slovenia"
+    }, {
+      "language" : "fa",
+      "string" : "چند گروه نژادی در اسلوونی زندگی می کنند؟",
+      "keywords" : "گروه نژادی، اسلوونی"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele ethnische Gruppen leben in Slovenien?",
+      "keywords" : "Anzahl, ethnische Gruppen, Slovenien"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántos grupos étnicos viven en Eslovenia?",
+      "keywords" : "grupos étnicos Eslovenia"
+    }, {
+      "language" : "it",
+      "string" : "Quanti gruppi etnici vivono in Slovenia?",
+      "keywords" : "numero, gruppi etnici, Slovenia"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de groupes ethniques vivent en Slovénie?",
+      "keywords" : "nombre, groupes ethniques, Slovénie"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel etnische groepen leven in Slovenië?",
+      "keywords" : "hoeveel, etnische groepen, Slovenië"
+    }, {
+      "language" : "ro",
+      "string" : "Câte grupuri etnice trăiesc în Slovenia?",
+      "keywords" : "câte, grupuri etnice, Slovenia"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  <http://dbpedia.org/resource/Slovenia> <http://dbpedia.org/ontology/ethnicGroup> ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "4"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "112",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6072,7 +6402,7 @@
       }
     } ]
   }, {
-    "id" : "107",
+    "id" : "113",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6202,7 +6532,7 @@
       }
     } ]
   }, {
-    "id" : "108",
+    "id" : "114",
     "answertype" : "date",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6253,7 +6583,7 @@
       }
     } ]
   }, {
-    "id" : "109",
+    "id" : "115",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6304,7 +6634,7 @@
       }
     } ]
   }, {
-    "id" : "110",
+    "id" : "116",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -6355,7 +6685,7 @@
       }
     } ]
   }, {
-    "id" : "111",
+    "id" : "117",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6404,7 +6734,7 @@
       }
     } ]
   }, {
-    "id" : "112",
+    "id" : "118",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6451,7 +6781,7 @@
       }
     } ]
   }, {
-    "id" : "113",
+    "id" : "119",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6502,7 +6832,7 @@
       }
     } ]
   }, {
-    "id" : "114",
+    "id" : "120",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6553,7 +6883,7 @@
       }
     } ]
   }, {
-    "id" : "115",
+    "id" : "121",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6610,7 +6940,7 @@
       }
     } ]
   }, {
-    "id" : "116",
+    "id" : "122",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6665,7 +6995,7 @@
       }
     } ]
   }, {
-    "id" : "117",
+    "id" : "123",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -6871,7 +7201,7 @@
       }
     } ]
   }, {
-    "id" : "118",
+    "id" : "124",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -6922,7 +7252,7 @@
       }
     } ]
   }, {
-    "id" : "119",
+    "id" : "125",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -6977,7 +7307,7 @@
       }
     } ]
   }, {
-    "id" : "120",
+    "id" : "126",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7028,7 +7358,7 @@
       }
     } ]
   }, {
-    "id" : "121",
+    "id" : "127",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7093,7 +7423,7 @@
       }
     } ]
   }, {
-    "id" : "122",
+    "id" : "128",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7136,7 +7466,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "123",
+    "id" : "129",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7191,7 +7521,7 @@
       }
     } ]
   }, {
-    "id" : "124",
+    "id" : "130",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7246,7 +7576,7 @@
       }
     } ]
   }, {
-    "id" : "125",
+    "id" : "131",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -7293,7 +7623,7 @@
       }
     } ]
   }, {
-    "id" : "126",
+    "id" : "132",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7348,7 +7678,7 @@
       }
     } ]
   }, {
-    "id" : "127",
+    "id" : "133",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7399,7 +7729,7 @@
       }
     } ]
   }, {
-    "id" : "128",
+    "id" : "134",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7495,7 +7825,7 @@
       }
     } ]
   }, {
-    "id" : "129",
+    "id" : "135",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -7546,7 +7876,7 @@
       }
     } ]
   }, {
-    "id" : "130",
+    "id" : "136",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7598,7 +7928,7 @@
       }
     } ]
   }, {
-    "id" : "131",
+    "id" : "137",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -7653,7 +7983,7 @@
       }
     } ]
   }, {
-    "id" : "132",
+    "id" : "138",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7718,7 +8048,7 @@
       }
     } ]
   }, {
-    "id" : "133",
+    "id" : "139",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7765,7 +8095,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "134",
+    "id" : "140",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7820,7 +8150,7 @@
       }
     } ]
   }, {
-    "id" : "135",
+    "id" : "141",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7875,7 +8205,7 @@
       }
     } ]
   }, {
-    "id" : "136",
+    "id" : "142",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7940,7 +8270,7 @@
       }
     } ]
   }, {
-    "id" : "137",
+    "id" : "143",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -7991,7 +8321,7 @@
       }
     } ]
   }, {
-    "id" : "138",
+    "id" : "144",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8030,7 +8360,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "139",
+    "id" : "145",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8077,7 +8407,7 @@
       }
     } ]
   }, {
-    "id" : "140",
+    "id" : "146",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8168,7 +8498,7 @@
       }
     } ]
   }, {
-    "id" : "141",
+    "id" : "147",
     "answertype" : "string",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8223,7 +8553,7 @@
       }
     } ]
   }, {
-    "id" : "142",
+    "id" : "148",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -8278,7 +8608,7 @@
       }
     } ]
   }, {
-    "id" : "143",
+    "id" : "149",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -8330,7 +8660,7 @@
       }
     } ]
   }, {
-    "id" : "144",
+    "id" : "150",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8387,7 +8717,7 @@
       }
     } ]
   }, {
-    "id" : "145",
+    "id" : "151",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -8438,7 +8768,7 @@
       }
     } ]
   }, {
-    "id" : "146",
+    "id" : "152",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8493,7 +8823,7 @@
       }
     } ]
   }, {
-    "id" : "147",
+    "id" : "153",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8548,7 +8878,7 @@
       }
     } ]
   }, {
-    "id" : "148",
+    "id" : "154",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8595,7 +8925,7 @@
       }
     } ]
   }, {
-    "id" : "149",
+    "id" : "155",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8655,7 +8985,7 @@
       }
     } ]
   }, {
-    "id" : "150",
+    "id" : "156",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8702,7 +9032,7 @@
       }
     } ]
   }, {
-    "id" : "151",
+    "id" : "157",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8741,7 +9071,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "152",
+    "id" : "158",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8796,7 +9126,7 @@
       }
     } ]
   }, {
-    "id" : "153",
+    "id" : "159",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8847,7 +9177,7 @@
       }
     } ]
   }, {
-    "id" : "154",
+    "id" : "160",
     "answertype" : "date",
     "aggregation" : false,
     "onlydbo" : true,
@@ -8902,7 +9232,7 @@
       }
     } ]
   }, {
-    "id" : "155",
+    "id" : "161",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9122,7 +9452,7 @@
       }
     } ]
   }, {
-    "id" : "156",
+    "id" : "162",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9169,7 +9499,7 @@
       }
     } ]
   }, {
-    "id" : "157",
+    "id" : "163",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9224,7 +9554,7 @@
       }
     } ]
   }, {
-    "id" : "158",
+    "id" : "164",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9275,7 +9605,7 @@
       }
     } ]
   }, {
-    "id" : "159",
+    "id" : "165",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9326,7 +9656,7 @@
       }
     } ]
   }, {
-    "id" : "160",
+    "id" : "166",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9373,7 +9703,7 @@
       }
     } ]
   }, {
-    "id" : "161",
+    "id" : "167",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9428,7 +9758,7 @@
       }
     } ]
   }, {
-    "id" : "162",
+    "id" : "168",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9483,7 +9813,7 @@
       }
     } ]
   }, {
-    "id" : "163",
+    "id" : "169",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9530,7 +9860,7 @@
       }
     } ]
   }, {
-    "id" : "164",
+    "id" : "170",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9569,7 +9899,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "165",
+    "id" : "171",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -9616,7 +9946,7 @@
       }
     } ]
   }, {
-    "id" : "166",
+    "id" : "172",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9671,7 +10001,7 @@
       }
     } ]
   }, {
-    "id" : "167",
+    "id" : "173",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9726,7 +10056,7 @@
       }
     } ]
   }, {
-    "id" : "168",
+    "id" : "174",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9777,7 +10107,7 @@
       }
     } ]
   }, {
-    "id" : "169",
+    "id" : "175",
     "answertype" : "date",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9832,7 +10162,7 @@
       }
     } ]
   }, {
-    "id" : "170",
+    "id" : "176",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9881,7 +10211,7 @@
       }
     } ]
   }, {
-    "id" : "171",
+    "id" : "177",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9932,7 +10262,7 @@
       }
     } ]
   }, {
-    "id" : "172",
+    "id" : "178",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -9987,7 +10317,7 @@
       }
     } ]
   }, {
-    "id" : "173",
+    "id" : "179",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10043,7 +10373,7 @@
       }
     } ]
   }, {
-    "id" : "174",
+    "id" : "180",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10082,7 +10412,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "175",
+    "id" : "181",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -10137,7 +10467,7 @@
       }
     } ]
   }, {
-    "id" : "176",
+    "id" : "182",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -10192,7 +10522,7 @@
       }
     } ]
   }, {
-    "id" : "177",
+    "id" : "183",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10231,7 +10561,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "178",
+    "id" : "184",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10285,7 +10615,7 @@
       }
     } ]
   }, {
-    "id" : "179",
+    "id" : "185",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10328,7 +10658,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "180",
+    "id" : "186",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10369,7 +10699,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "181",
+    "id" : "187",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10416,7 +10746,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "182",
+    "id" : "188",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -10512,7 +10842,7 @@
       }
     } ]
   }, {
-    "id" : "183",
+    "id" : "189",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10567,7 +10897,7 @@
       }
     } ]
   }, {
-    "id" : "184",
+    "id" : "190",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : false,
@@ -10614,7 +10944,7 @@
       }
     } ]
   }, {
-    "id" : "185",
+    "id" : "191",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10669,7 +10999,7 @@
       }
     } ]
   }, {
-    "id" : "186",
+    "id" : "192",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10724,7 +11054,7 @@
       }
     } ]
   }, {
-    "id" : "187",
+    "id" : "193",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10784,7 +11114,7 @@
       }
     } ]
   }, {
-    "id" : "188",
+    "id" : "194",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10835,7 +11165,7 @@
       }
     } ]
   }, {
-    "id" : "189",
+    "id" : "195",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -10940,7 +11270,7 @@
       }
     } ]
   }, {
-    "id" : "190",
+    "id" : "196",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : false,
@@ -11002,7 +11332,7 @@
       }
     } ]
   }, {
-    "id" : "191",
+    "id" : "197",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -11057,7 +11387,7 @@
       }
     } ]
   }, {
-    "id" : "192",
+    "id" : "198",
     "answertype" : "number",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11106,7 +11436,7 @@
       }
     } ]
   }, {
-    "id" : "193",
+    "id" : "199",
     "answertype" : "boolean",
     "aggregation" : true,
     "onlydbo" : true,
@@ -11145,7 +11475,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "194",
+    "id" : "200",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -11196,7 +11526,7 @@
       }
     } ]
   }, {
-    "id" : "195",
+    "id" : "201",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11243,7 +11573,7 @@
       }
     } ]
   }, {
-    "id" : "196",
+    "id" : "202",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11294,7 +11624,7 @@
       }
     } ]
   }, {
-    "id" : "197",
+    "id" : "203",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11341,7 +11671,7 @@
       }
     } ]
   }, {
-    "id" : "198",
+    "id" : "204",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11406,7 +11736,7 @@
       }
     } ]
   }, {
-    "id" : "199",
+    "id" : "205",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11461,7 +11791,7 @@
       }
     } ]
   }, {
-    "id" : "200",
+    "id" : "206",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11516,7 +11846,7 @@
       }
     } ]
   }, {
-    "id" : "201",
+    "id" : "207",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11567,7 +11897,62 @@
       }
     } ]
   }, {
-    "id" : "202",
+    "id" : "208",
+    "answertype" : "number",
+    "aggregation" : true,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many languages are spoken in Colombia?",
+      "keywords" : "languages, Colombia"
+    }, {
+      "language" : "fa",
+      "string" : "چه تعداد زبان در کلمبیا صحبت می شود؟",
+      "keywords" : "زبان، کلمبیا"
+    }, {
+      "language" : "de",
+      "string" : "Wieviele Sprachen werden in Kolumbien gesprochen?",
+      "keywords" : "Sprachen, Kolumbien"
+    }, {
+      "language" : "es",
+      "string" : "¿Cuántos idiomas se hablan en Colombia?",
+      "keywords" : "idiomas, Colombia"
+    }, {
+      "language" : "it",
+      "string" : "Quante lingue sono parlate in Colombia?",
+      "keywords" : "lingue, Colombia"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de langues sont parlées au Colombie?",
+      "keywords" : "langues, Colombie"
+    }, {
+      "language" : "nl",
+      "string" : "Hoeveel talen worden er in Colombia gesproken?",
+      "keywords" : "talen, Columbia"
+    }, {
+      "language" : "ro",
+      "string" : "Câte limbi sunt vorbite în Columbia?",
+      "keywords" : "limbi, Columbia"
+    } ],
+    "query" : {
+      "sparql" : "SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Language> .  <http://dbpedia.org/resource/Colombia> <http://dbpedia.org/ontology/language> ?uri . } "
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "c" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "c" : {
+            "type" : "literal",
+            "value" : "2"
+          }
+        } ]
+      }
+    } ]
+  }, {
+    "id" : "209",
     "answertype" : "resource",
     "aggregation" : true,
     "onlydbo" : true,
@@ -11622,7 +12007,7 @@
       }
     } ]
   }, {
-    "id" : "203",
+    "id" : "210",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11669,7 +12054,7 @@
       }
     } ]
   }, {
-    "id" : "204",
+    "id" : "211",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11744,7 +12129,7 @@
       }
     } ]
   }, {
-    "id" : "205",
+    "id" : "212",
     "answertype" : "boolean",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11787,7 +12172,7 @@
       "boolean" : false
     } ]
   }, {
-    "id" : "206",
+    "id" : "213",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,
@@ -11842,7 +12227,7 @@
       }
     } ]
   }, {
-    "id" : "207",
+    "id" : "214",
     "answertype" : "resource",
     "aggregation" : false,
     "onlydbo" : true,

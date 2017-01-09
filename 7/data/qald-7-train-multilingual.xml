@@ -776,7 +776,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ian_Bliss</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="33" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="33" onlydbo="true">
+<string lang="en">How many languages are spoken in Turkmenistan?</string>
+<string lang="fa">چند زبان در ترکمنستان صحبت می شود؟]</string>
+<string lang="de">Wieviele Sprachen werden in Turkmenistan gesprochen?</string>
+<string lang="es">¿Cuántos idiomas se hablan en Turkmenistán?</string>
+<string lang="it">Quante lingue sono parlate in Turkmenistan?</string>
+<string lang="fr">Combien de langues sont parlées au Turkménistan?</string>
+<string lang="nl">Hoeveel talen worden er gesproken in Turkmenistan?</string>
+<string lang="ro">Câte limbi sunt vorbite în Turkmenistan?</string>
+<keywords lang="en">languages, Turkmenistan</keywords>
+<keywords lang="fa">زبان، ترکمنستان</keywords>
+<keywords lang="de">Sprachen, Turkmenistan</keywords>
+<keywords lang="es">idiomas, Turkmenistán</keywords>
+<keywords lang="it">lingue, Turkmenistan</keywords>
+<keywords lang="fr">langues, Turkménistan</keywords>
+<keywords lang="nl">talen, Turkmenistan</keywords>
+<keywords lang="ro">limbi, Turkmenistan</keywords>
+<query>SELECT (COUNT(DISTINCT ?x) as ?c) WHERE {  &lt;http://dbpedia.org/resource/Turkmenistan&gt; &lt;http://dbpedia.org/ontology/language&gt; ?x . } </query>
+<answers>
+<answer>2</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="34" onlydbo="true">
 <string lang="en">In which films did Julia Roberts as well as Richard Gere play?</string>
 <string lang="fa">در چه فیلم هایی جولیا رابرتس همچنین ریچارد گییر بازی کردند؟</string>
 <string lang="de">In welchen Filmen spielen sowohl Julia Roberts als auch Richard Gere mit?</string>
@@ -799,7 +821,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Pretty_Woman</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="34" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="35" onlydbo="true">
 <string lang="en">In which country does the Ganges start?</string>
 <string lang="de">In welchem Land entspringt der Ganges?</string>
 <string lang="es">¿En qué país nace el Ganges?</string>
@@ -824,7 +846,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/India</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="date" hybrid="false" id="35" onlydbo="true">
+<question aggregation="false" answertype="date" hybrid="false" id="36" onlydbo="true">
 <string lang="en">In which year was Rachel Stevens born?</string>
 <string lang="fa">ریچل استیونز در چه سالی متولد شد؟</string>
 <string lang="de">In welchem Jahr wurde Rachel Stevens geboren?</string>
@@ -846,7 +868,7 @@ WHERE {
 <answer>1978</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="36" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="37" onlydbo="true">
 <string lang="en">Is Barack Obama a democrat?</string>
 <string lang="de">Ist Barack Obama ein Demokrat?</string>
 <string lang="es">¿Es Barack Obama demócrata?</string>
@@ -871,7 +893,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="37" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="38" onlydbo="true">
 <string lang="en">Where was Bach born?</string>
 <string lang="de">Wo wurde Bach geboren?</string>
 <string lang="es">¿Dónde nació Bach?</string>
@@ -896,7 +918,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Eisenach</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="38" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="39" onlydbo="true">
+<string lang="en">How often did Jane Fonda marry?</string>
+<string lang="fa">جین فوندا چند بار ازدواج کرد؟</string>
+<string lang="de">Wie oft hat Jane Fonda geheiratet?</string>
+<string lang="es">¿Cuántas veces ha estado casada Jane Fonda?</string>
+<string lang="it">Quante volte si è sposata Jane Fonda?</string>
+<string lang="fr">Combien de fois s'est mariée Jane Fonda?</string>
+<string lang="nl">Hoe vaak is Jane Fonda getrouwd?</string>
+<string lang="ro">Cât de des s-a măritat Jane Fonda?</string>
+<keywords lang="en">Jane Fonda, marry, how often</keywords>
+<keywords lang="fa">جین فوندا، ازدواج</keywords>
+<keywords lang="de">Jane Fonda, heiraten, wie oft</keywords>
+<keywords lang="es">Jane Fonda, casada, cuántas veces</keywords>
+<keywords lang="it">Jane Fonda, sposata, quante volte</keywords>
+<keywords lang="fr">Jane Fonda, marriages, nombre de fois</keywords>
+<keywords lang="nl">Jane Fonda, getrouwd, hoe vaak</keywords>
+<keywords lang="ro">Jane Fonda, mărita, cât de des</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  &lt;http://dbpedia.org/resource/Jane_Fonda&gt; &lt;http://dbpedia.org/ontology/spouse&gt; ?uri . } </query>
+<answers>
+<answer>3</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="40" onlydbo="true">
 <string lang="en">Who was the first to climb Mount Everest?</string>
 <string lang="de">Wer hat als erstes den Mount Everest bestiegen?</string>
 <string lang="es">¿Quién fue el primero en ascender al Monte Everest?</string>
@@ -924,7 +968,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Leszek_Cichy</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="39" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="41" onlydbo="true">
 <string lang="en">How many people live in Poland?</string>
 <string lang="fa">چند نفر در لهستان زندگی می کنند؟</string>
 <string lang="de">Wieviele Menschen leben in Polen?</string>
@@ -946,7 +990,7 @@ WHERE {
 <answer>38483957</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="40" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="42" onlydbo="true">
 <string lang="en">What is the location of the Houses of Parliament?</string>
 <string lang="fa">مکان کاخ وستمینستر کجاست؟</string>
 <string lang="de">Wo ist der Westminster-Palast?</string>
@@ -971,7 +1015,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/City_of_Westminster</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="41" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="43" onlydbo="true">
 <string lang="en">Is Christian Bale starring in Batman Begins?</string>
 <string lang="de">Spielt Christian Bale in Batman Begins mit?</string>
 <string lang="es">¿Actúa Christian Bale en Batman Begins?</string>
@@ -994,7 +1038,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="42" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="44" onlydbo="true">
 <string lang="en">In which country is the Limerick Lake?</string>
 <string lang="de">In welchem Land befindet sich der Limerick Lake?</string>
 <string lang="es">¿En qué país se encuentra el lago Limerick?</string>
@@ -1017,7 +1061,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Canada</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="43" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="45" onlydbo="true">
 <string lang="en">What was the last movie with Alec Guinness?</string>
 <string lang="fa">آخرین فیلم الک گینس چه بود؟</string>
 <string lang="de">Was war der letzte Film mit Alec Guinness?</string>
@@ -1039,7 +1083,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Kafka_(film)</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="44" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="46" onlydbo="true">
 <string lang="en">What is the highest mountain in Australia?</string>
 <string lang="de">Was ist der höchste Berg in Australien?</string>
 <string lang="es">¿Cuál es la montaña más alta de Australia?</string>
@@ -1066,7 +1110,7 @@ ORDER BY DESC(?elevation) LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Mawson_Peak</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="boolean" hybrid="false" id="45" onlydbo="true">
+<question aggregation="true" answertype="boolean" hybrid="false" id="47" onlydbo="true">
 <string lang="en">Is Frank Herbert still alive?</string>
 <string lang="de">Lebt Frank Herbert noch?</string>
 <string lang="es">¿Todavía vive Frank Herbert?</string>
@@ -1090,7 +1134,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="46" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="48" onlydbo="true">
 <string lang="en">Who created Family Guy?</string>
 <string lang="fa">چه کسی مرد خانواده را ساخته است؟</string>
 <string lang="de">Wer hat sich Family Guy ausgedacht?</string>
@@ -1112,7 +1156,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Seth_MacFarlane</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="47" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="49" onlydbo="true">
 <string lang="en">What is the official language of Suriname?</string>
 <string lang="de">Was ist die Amtssprache Von Surinam?</string>
 <string lang="es">¿Cuál es la idioma oficial de Surinam?</string>
@@ -1137,7 +1181,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Dutch_language</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="48" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="50" onlydbo="true">
 <string lang="en">Who wrote the song Hotel California?</string>
 <string lang="fa">چه کسی آهنگ هتل کالیفرنیا را نوشت؟</string>
 <string lang="de">Wer hat das Lied Hotel California geschrieben?</string>
@@ -1161,7 +1205,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Don_Henley</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="49" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="51" onlydbo="true">
 <string lang="en">Give me all actors starring in movies directed by William Shatner.</string>
 <string lang="fa">تمام بازیگرانی که در فیلم های کارگردانی شده توسط ویلیام شاتنر بازی کرده اند را لیست کن.</string>
 <string lang="de">Gib mir alle Schauspieler von Filmen, in denen William Shatner Regie geführt hat.</string>
@@ -1194,7 +1238,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Rickey_Medlocke</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="50" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="52" onlydbo="true">
 <string lang="en">What is in a chocolate chip cookie?</string>
 <string lang="fa">چه چیزهایی در یک کیک شکلاتی هست؟</string>
 <string lang="de">Was ist in Chocolate Chip Cookies drin?</string>
@@ -1225,7 +1269,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Sugar</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="51" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="53" onlydbo="false">
 <string lang="en">Give me all professional skateboarders from Sweden.</string>
 <string lang="de">Gib mir alle Profiskateboarder aus Schweden.</string>
 <string lang="es">Dame todos las skateboarders profesionales de Suecia.</string>
@@ -1254,7 +1298,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Tony_Magnusson</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="52" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="54" onlydbo="true">
 <string lang="en">Which ingredients do I need for carrot cake?</string>
 <string lang="fa">چه مواد اولیه ای را من برای کیک هویج نیاز دارم؟</string>
 <string lang="de">Welche Zutaten brauche ich für Möhrenkuchen?</string>
@@ -1281,7 +1325,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Sugar</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="53" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="55" onlydbo="true">
 <string lang="en">Does Neymar play for Real Madrid?</string>
 <string lang="fa">آیا نیمار برای رئال مادرید بازی می کند؟</string>
 <string lang="de">Spielt Neymar für Real Madrid?</string>
@@ -1303,7 +1347,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="54" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="56" onlydbo="true">
 <string lang="en">Which computer scientist won an oscar?</string>
 <string lang="fa">کدام دانشمند کامپیوتر اسکار برده است؟</string>
 <string lang="de">Welcher Informatiker hat einen Oscar gewonnen?</string>
@@ -1325,7 +1369,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Edwin_Catmull</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="55" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="57" onlydbo="true">
+<string lang="en">How many companies were founded in the same year as Google?</string>
+<string lang="fa">چه تعداد شرکت در سال یکسانی با گوگل تأسیس شدند؟</string>
+<string lang="de">Wieviele Firmen wurden im selben Jahr wie Google gegründet?</string>
+<string lang="es">¿Cuántas compañías fueron fundadas en el mismo año que Google?</string>
+<string lang="it">Quante società sono state fondate nello stesso anno di Google?</string>
+<string lang="fr">Combien de companies ont été fondées la même année que Google?</string>
+<string lang="nl">Hoeveel bedrijven werden opgericht in hetzelfde jaar als Google?</string>
+<string lang="ro">Câte companii au fost înființate în același an cu Google?</string>
+<keywords lang="en">companies, founded, same year, Google</keywords>
+<keywords lang="fa">شرکت، سال یکسانی، گوگل، تأسیس</keywords>
+<keywords lang="de">Firmen, gegründet, selbes Jahr, Google</keywords>
+<keywords lang="es">compañías, fundadas, mismo año Google</keywords>
+<keywords lang="it">società, fondate, stesso anno, Google</keywords>
+<keywords lang="fr">nombre, companies, fondées, même année, Google</keywords>
+<keywords lang="nl">bedrijven, opgericht, hetzelfde jaar, Google</keywords>
+<keywords lang="ro">companii, înființate, același an, Google</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Company&gt; .  ?uri &lt;http://dbpedia.org/ontology/foundingYear&gt; ?year .  &lt;http://dbpedia.org/resource/Google&gt; &lt;http://dbpedia.org/ontology/foundingYear&gt; ?year . } </query>
+<answers>
+<answer>0</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="58" onlydbo="true">
 <string lang="en">In which UK city are the headquarters of the MI6?</string>
 <string lang="de">In welcher Stadt im Vereinigten Königreich ist das Hauptquartier des MI6?</string>
 <string lang="es">¿En qué ciudad del reino unido se encuentra el cuartel genetal del MI6?</string>
@@ -1352,7 +1418,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/London</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="boolean" hybrid="false" id="56" onlydbo="true">
+<question aggregation="true" answertype="boolean" hybrid="false" id="59" onlydbo="true">
 <string lang="en">Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?</string>
 <string lang="de">War die Kubakrise vor der Schweinebuchtinvasion?</string>
 <string lang="es">¿Fué la crisis de cuba antes de la invasión de bahía de cochinos?</string>
@@ -1377,7 +1443,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="57" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="60" onlydbo="true">
 <string lang="en">What does IYCM stand for?</string>
 <string lang="de">Wofür steht IYCM?</string>
 <string lang="es">¿Qué abrevia IYCM?</string>
@@ -1402,7 +1468,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Youth_Climate_Movement</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="date" hybrid="false" id="58" onlydbo="true">
+<question aggregation="false" answertype="date" hybrid="false" id="61" onlydbo="true">
 <string lang="en">When did the Ming dynasty dissolve?</string>
 <string lang="de">Wann endete die Ming-Dynastie?</string>
 <string lang="es">¿Cuándo se disolvió la dinastía de Ming?</string>
@@ -1427,7 +1493,7 @@ WHERE {
 <answer>1644-04-25</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="59" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="62" onlydbo="true">
 <string lang="en">List all episodes of the first season of the HBO television series The Sopranos!</string>
 <string lang="de">Liste alle Episoden der ersten Staffel der HBO-Fernsehserie Die Sopranos auf.</string>
 <string lang="es">Dame todos los episodios de la prímera época de la serie de HBO Los Sporanos.</string>
@@ -1463,7 +1529,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Down_Neck</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="60" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="63" onlydbo="true">
 <string lang="en">What is the total population of Melbourne, Florida?</string>
 <string lang="de">Was ist die Gesamteinwohnerzahl von Melbourne, Florida?</string>
 <string lang="es">¿Cuál es la población total de Melbourne, Florida?</string>
@@ -1487,7 +1553,7 @@ WHERE {
 <answer>76068</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="61" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="64" onlydbo="true">
 <string lang="en">Did Arnold Schwarzenegger attend a university?</string>
 <string lang="de">Hat Arnold Schwarzenegger eine Universität besucht?</string>
 <string lang="es">¿Fue Arnold Schwarzenegger a la universidad?</string>
@@ -1514,7 +1580,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="62" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="65" onlydbo="true">
 <string lang="en">What country is Mount Everest in?</string>
 <string lang="de">In welchem Land ist der Mount Everest?</string>
 <string lang="es">¿En que país esta el monte Everest?</string>
@@ -1542,7 +1608,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Nepal</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="63" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="66" onlydbo="true">
 <string lang="en">What is the largest city in Australia?</string>
 <string lang="de">Was ist die größte Stadt in Australien?</string>
 <string lang="es">¿Cuál es la cuidad más grande de Australia?</string>
@@ -1565,7 +1631,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Sydney</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="list" hybrid="false" id="64" onlydbo="true">
+<question aggregation="false" answertype="list" hybrid="false" id="67" onlydbo="true">
 <string lang="en">Give me all launch pads operated by NASA.</string>
 <string lang="de">Gib mir alle von der NASA betriebenen Startrampen.</string>
 <string lang="es">Dame todas las plataformas de lanzamiento operadas por la NASA.</string>
@@ -1598,7 +1664,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Cape_Canaveral_Air_Force_Station_Launch_Complex_13</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="65" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="68" onlydbo="true">
 <string lang="en">Who is the mayor of Tel Aviv?</string>
 <string lang="de">Wer ist der Bürgermeister von Tel Aviv?</string>
 <string lang="es">¿Quién es el alcalde de Tel Aviv?</string>
@@ -1623,7 +1689,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ron_Huldai</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="66" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="69" onlydbo="true">
 <string lang="en">List all episodes of the first season of the HBO television series The Sopranos.</string>
 <string lang="de">Liste alle Episoden der ersten Staffel der HBO-Fernsehserie Die Sopranos auf.</string>
 <string lang="es">Dame todos los episodios de la prímera época de la serie de HBO Los Sporanos.</string>
@@ -1661,7 +1727,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Down_Neck</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="67" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="70" onlydbo="true">
 <string lang="en">Who created Batman?</string>
 <string lang="fa">چه کسی بتمن را ساخت؟</string>
 <string lang="de">Wer hat Batman erfunden?</string>
@@ -1684,7 +1750,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Bob_Kane</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="68" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="71" onlydbo="true">
 <string lang="en">Who played Gus Fring in Breaking Bad?</string>
 <string lang="fa">چه کسی گوستاوو فرینگ را در بریکینگ بد بازی کرد؟</string>
 <string lang="de">Wer hat Gus Fring in Breaking Bad gespielt?</string>
@@ -1706,7 +1772,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Giancarlo_Esposito</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="69" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="72" onlydbo="true">
 <string lang="en">In which programming language is GIMP written?</string>
 <string lang="de">In welcher Programmiersprache wurde GIMP geschrieben?</string>
 <string lang="es">¿En qué lenguaje de programación esta programado GIMP?</string>
@@ -1730,7 +1796,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/GTK+</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="70" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="73" onlydbo="true">
 <string lang="en">In which ancient empire could you pay with cocoa beans?</string>
 <string lang="fa">در کدام امپراتوری باستانی می توان با دانه های کاکائو داد و ستد کرد؟</string>
 <string lang="de">In welchem alten Reich konnte man mit Kakaobohnen bezahlen?</string>
@@ -1753,7 +1819,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Tabasco_(former_state)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="71" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="74" onlydbo="true">
 <string lang="en">Who is the editor of Forbes?</string>
 <string lang="de">Wer ist der Herausgeber von Forbes?</string>
 <string lang="es">¿Quién es el editor de Forbes?</string>
@@ -1778,7 +1844,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Steve_Forbes</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="72" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="75" onlydbo="true">
 <string lang="en">How many people live in the capital of Australia?</string>
 <string lang="de">Wieviele Menschen leben in der Hauptstadt Australiens?</string>
 <string lang="es">¿Cuánta gente vive en la capital de Australia?</string>
@@ -1804,7 +1870,7 @@ WHERE {
 <answer>381488</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="73" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="76" onlydbo="true">
 <string lang="en">Which professional surfers were born in Australia?</string>
 <string lang="de">Welche Profisurfer wurden in Australien geboren?</string>
 <string lang="es">¿Qué surfistas profesionales nacieron en Australia?</string>
@@ -1831,7 +1897,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Midget_Farrelly</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="74" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="77" onlydbo="true">
 <string lang="en">Which electronics companies were founded in Beijing?</string>
 <string lang="fa">چه شرکت های الکترونیکی در پکن تأسیس شدند؟</string>
 <string lang="de">Welche Elektronikunternehmen wurden in Peking gegründet?</string>
@@ -1853,7 +1919,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Lenovo</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="75" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="78" onlydbo="true">
 <string lang="en">Give me all video games published by Mean Hamster Software.</string>
 <string lang="de">Gib mir alle Videospiele von Mean Hamster Software.</string>
 <string lang="es">Dame todos los videojuegos de Mean Hamster Software.</string>
@@ -1881,7 +1947,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Riven</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="76" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="79" onlydbo="true">
 <string lang="en">How many Aldi stores are there?</string>
 <string lang="fa">چه تعداد فروشگاه آلدی وجود دارد؟</string>
 <string lang="de">Wieviele Aldi-Filialen gibt es?</string>
@@ -1903,7 +1969,7 @@ WHERE {
 <answer>9600</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="77" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="80" onlydbo="true">
 <string lang="en">What is the capital of Cameroon?</string>
 <string lang="fa">پایتخت کامرون کجاست؟</string>
 <string lang="de">Was ist die Hauptstadt von Kamerun?</string>
@@ -1925,7 +1991,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Yaoundé</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="78" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="81" onlydbo="true">
 <string lang="en">Is there a video game called Battle Chess?</string>
 <string lang="de">Gibt es ein Videospiel, das Battle Chess heißt?</string>
 <string lang="es">¿Hay algún videojuego que se llame Battle Chess?</string>
@@ -1950,7 +2016,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="79" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="82" onlydbo="true">
 <string lang="en">Was the wife of president Lincoln called Mary?</string>
 <string lang="de">Hieß die Frau von Präsident Lincoln Mary?</string>
 <string lang="es">¿La mujer del presidente Lincoln se llama Mary?</string>
@@ -1978,7 +2044,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="80" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="83" onlydbo="true">
 <string lang="en">Give me all movies directed by Francis Ford Coppola.</string>
 <string lang="fa">تمام فیلم های کارگردانی شده توسط فرانسیس فورد کوپولا را لیست کن.</string>
 <string lang="de">Gib mir alle Filme, bei denen Francis Ford Coppola Regie geführt hat.</string>
@@ -2031,7 +2097,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Jack_(1996_film)</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="81" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="84" onlydbo="true">
 <string lang="en">Which of Tim Burton's films had the highest budget?</string>
 <string lang="de">Welcher von Tim Burtons Filmen hatte das höchste Budget?</string>
 <string lang="es">¿Cuál es la película de Tim Burton con el mayor presupuesto?</string>
@@ -2059,7 +2125,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Big_Eyes</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="boolean" hybrid="false" id="82" onlydbo="true">
+<question aggregation="true" answertype="boolean" hybrid="false" id="85" onlydbo="true">
 <string lang="en">Does Breaking Bad have more episodes than Game of Thrones?</string>
 <string lang="de">Hat Breaking Bad mehr Episoden als Game of Thrones?</string>
 <string lang="es">¿Tiene Breaking Bad más episodios que Game of Thrones?</string>
@@ -2086,7 +2152,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="83" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="86" onlydbo="false">
 <string lang="en">Who was called Rodzilla?</string>
 <string lang="de">Wer wurde Rodzilla genannt?</string>
 <string lang="es">¿Quien se llamaba Rodzilla?</string>
@@ -2110,7 +2176,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Rodney_Blake</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="84" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="87" onlydbo="true">
 <string lang="en">Was Natalie Portman born in the United States?</string>
 <string lang="de">Wurde Natalie Portman in den Vereinigten Staaten geboren?</string>
 <string lang="es">¿Nació Natalie Portman en los estados unidos de américa?</string>
@@ -2134,7 +2200,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="85" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="88" onlydbo="true">
 <string lang="en">Give me the grandchildren of Elvis Presley.</string>
 <string lang="fa">نوه های الویس پرسلی را لیست کن.</string>
 <string lang="de">Gib mir die Enkel von Elvis Presley.</string>
@@ -2156,7 +2222,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Riley_Keough</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="86" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="89" onlydbo="true">
 <string lang="en">Which movies starring Mickey Rourke were directed by Guy Ritchie?</string>
 <string lang="fa">چه فیلم هایی با بازی میکی رورک توسط گای ریچی کارگردانی شدند؟</string>
 <string lang="de">Bei welchen Filmen, in denen Mickey Rourke mitspielt, hat Guy Ritchie Regie geführt?</string>
@@ -2178,7 +2244,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/The_Hire</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="87" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="90" onlydbo="true">
 <string lang="en">When did Dracula's creator die?</string>
 <string lang="fa">چه زمانی خالق دراکولا فوت کرد؟</string>
 <string lang="de">Wann ist Draculas Schöpfer gestorben?</string>
@@ -2200,7 +2266,7 @@ WHERE {
 <answer>1912-04-20</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="88" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="91" onlydbo="true">
 <string lang="en">Which country does the creator of Miffy come from?</string>
 <string lang="de">Aus welchem Land kommt der Erfinder von Nijntje?</string>
 <string lang="es">¿De qué país viene el creador de Nijntje?</string>
@@ -2224,7 +2290,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Netherlands</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="string" hybrid="false" id="89" onlydbo="true">
+<question aggregation="false" answertype="string" hybrid="false" id="92" onlydbo="true">
 <string lang="en">What is Batman's real name?</string>
 <string lang="fa">نام واقعی بتمن چیست؟</string>
 <string lang="de">Was ist Batmans richtiger Name?</string>
@@ -2246,7 +2312,7 @@ WHERE {
 <answer>Bruce Wayne</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="90" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="93" onlydbo="true">
 <string lang="en">What form of government does Russia have?</string>
 <string lang="fa">روسیه چه نوع حکومتی دارد؟</string>
 <string lang="de">Welche Regierungsform hat Russland?</string>
@@ -2268,7 +2334,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Federalism</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="91" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="94" onlydbo="true">
+<string lang="en">How many companies were founded by the founder of Facebook?</string>
+<string lang="fa">چه تعداد شرکت توسط مؤسس فیسبوک تأسیس شدند؟</string>
+<string lang="de">Wieviele Firmen hat der Gründer von Facebook gegründet?</string>
+<string lang="es">¿Cuantas compañías han sido fundadas por el fundador de Facebook?</string>
+<string lang="it">Quante società sono state fondate dal fondatore di Facebook?</string>
+<string lang="fr">Combien de companies ont été fondées par le fondateur de Facebook?</string>
+<string lang="nl">Hoeveel bedrijven werden opgericht door de oprichter van Facebook?</string>
+<string lang="ro">Câte companii au fost înființate de fondatorul Facebook?</string>
+<keywords lang="en">companies, founded by, founder, Facebook</keywords>
+<keywords lang="fa">شرکت، مؤسس، فیسبوک، تأسیس</keywords>
+<keywords lang="de">Firmen, gegründet, Gründer, Facebook</keywords>
+<keywords lang="es">compañías, fundadas, fundador Facebook</keywords>
+<keywords lang="it">società, fondate, fondatore, Facebook</keywords>
+<keywords lang="fr">nombre, companies, fondées, fondateur, Facebook</keywords>
+<keywords lang="nl">bedrijven, opgericht, oprichter, Facebook</keywords>
+<keywords lang="ro">companii, înființate, fondator, Facebook</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  &lt;http://dbpedia.org/resource/Facebook&gt; &lt;http://dbpedia.org/ontology/foundedBy&gt; ?uri .  ?uri &lt;http://dbpedia.org/ontology/foundedBy&gt; ?uri . } </query>
+<answers>
+<answer>0</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="95" onlydbo="true">
 <string lang="en">Give me all Canadian Grunge record labels.</string>
 <string lang="de">Gib mir alle kanadischen Grunge-Plattenfirmen.</string>
 <string lang="es">Dame todos las empresas canadienses productoras de música Grunge.</string>
@@ -2294,7 +2382,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Murderecords</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="92" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="96" onlydbo="true">
+<string lang="en">How many children did Benjamin Franklin have?</string>
+<string lang="fa">بنجامین فرانکلین چند فرزند دارد؟</string>
+<string lang="de">Wieviele Kinder hatte Benjamin Franklin?</string>
+<string lang="es">¿Cuántos hijos tuvo Benjamin Franklin?</string>
+<string lang="it">Quanti figli ebbe Benjamin Franklin?</string>
+<string lang="fr">Combien d'enfants Benjamin Franklin avait-il?</string>
+<string lang="nl">Hoeveel kinderen had Benjamin Franklin?</string>
+<string lang="ro">Câți copii a avut Benjamin Franklin?</string>
+<keywords lang="en">Benjamin Franklin, child</keywords>
+<keywords lang="fa">بنجامین فرانکلین، فرزند</keywords>
+<keywords lang="de">Benjamin Franklin, Kind</keywords>
+<keywords lang="es">Benjamin Franklin, hijos</keywords>
+<keywords lang="it">Benjamin Franklin, figlio</keywords>
+<keywords lang="fr">nombre d'enfants, Benjamin Franklin</keywords>
+<keywords lang="nl">Benjamin Franklin, kinderen, hoeveel</keywords>
+<keywords lang="ro">Benjamin Franklin, copil</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  &lt;http://dbpedia.org/resource/Benjamin_Franklin&gt; &lt;http://dbpedia.org/ontology/child&gt; ?uri . } </query>
+<answers>
+<answer>3</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="97" onlydbo="true">
 <string lang="en">List the children of Margaret Thatcher.</string>
 <string lang="de">Liste die Kinder von Margaret Thatcher auf.</string>
 <string lang="es">Dame una lista de los hijos de Margaret Thatcher.</string>
@@ -2318,7 +2428,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Mark_Thatcher</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="93" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="98" onlydbo="true">
 <string lang="en">From which region is the Melon de Bourgogne?</string>
 <string lang="de">Aus welcher Region ist der Melon de Bourgogne?</string>
 <string lang="es">¿De que región es el vino Melon de Bourgogne?</string>
@@ -2346,7 +2456,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Washington_(state)</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="94" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="99" onlydbo="true">
 <string lang="en">Who is the oldest child of Meryl Streep?</string>
 <string lang="de">Wer ist das älteste Kind von Meryl Streep?</string>
 <string lang="es">¿Cuál es el hijo mas mayor de Meryl Streep?</string>
@@ -2374,7 +2484,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Henry_Wolfe_Gummer</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="95" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="100" onlydbo="true">
 <string lang="en">Are tree frogs a type of amphibian?</string>
 <string lang="de">Sind Laubfrösche Amphibien?</string>
 <string lang="es">¿Son las ranas verdes un tipo de anfibio?</string>
@@ -2399,7 +2509,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="96" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="101" onlydbo="true">
 <string lang="en">Is Christian Bale starring in Velvet Goldmine?</string>
 <string lang="de">Spielt Christian Bale in Velvet Goldmine mit?</string>
 <string lang="es">¿Actúa Christian Bale en Velvet Goldmine?</string>
@@ -2424,7 +2534,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="97" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="102" onlydbo="true">
 <string lang="en">List all games by GMT.</string>
 <string lang="de">Liste alle Spiele von GMT auf.</string>
 <string lang="es">Dame todos los juegos de GMT.</string>
@@ -2453,7 +2563,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Chandragupta_(board_game)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="98" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="103" onlydbo="true">
 <string lang="en">Does the Isar flow into a lake?</string>
 <string lang="de">Fließt die Isar in einen See?</string>
 <string lang="es">¿Desemboca el Isar en un lago?</string>
@@ -2480,7 +2590,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="99" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="104" onlydbo="true">
 <string lang="en">Which airports does Yeti Airlines serve?</string>
 <string lang="fa">یتی ایرلاینرز در چه فرودگاه هایی فعالیت می کند؟</string>
 <string lang="de">Welche Flughäfen fliegt Yeti Airlines an?</string>
@@ -2504,7 +2614,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Biratnagar</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="100" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="105" onlydbo="true">
 <string lang="en">Which Indian company has the most employees?</string>
 <string lang="fa">کدام شرکت هندی بیشترین تعداد کارمند را دارد؟</string>
 <string lang="de">Welches indische Unternehmen hat die meisten Angestellten?</string>
@@ -2526,7 +2636,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Indian_Railways</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="101" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="106" onlydbo="true">
 <string lang="en">What color expresses loyalty?</string>
 <string lang="fa">چه رنگی وفاداری را بیان می کند؟</string>
 <string lang="de">Welche Farbe steht für Loyalität?</string>
@@ -2548,7 +2658,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Indigo</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="102" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="107" onlydbo="true">
 <string lang="en">Which city has the most inhabitants?</string>
 <string lang="de">Welche Stadt hat die meisten Einwohner?</string>
 <string lang="es">¿Que ciudad tiene la mayor población?</string>
@@ -2577,7 +2687,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Karachi</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="103" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="108" onlydbo="true">
 <string lang="en">Who created Wikipedia?</string>
 <string lang="de">Wer hat Wikipedia gegründet?</string>
 <string lang="es">¿Quién creó Wikipedia?</string>
@@ -2601,7 +2711,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Larry_Sanger</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="104" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="109" onlydbo="true">
 <string lang="en">Is Rita Wilson the wife of Tom Hanks?</string>
 <string lang="de">Ist Rita Wilson die Frau von Tom Hanks?</string>
 <string lang="es">¿Es Rita Wilson la esposa de Tom Hanks?</string>
@@ -2626,7 +2736,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="105" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="110" onlydbo="true">
 <string lang="en">Is the wife of president Obama called Michelle?</string>
 <string lang="de">Heißt die Frau von Präsident Obama Michelle?</string>
 <string lang="es">¿La mujer del presidente Obama se llama Michelle?</string>
@@ -2652,7 +2762,29 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="106" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="111" onlydbo="true">
+<string lang="en">How many ethnic groups live in Slovenia?</string>
+<string lang="fa">چند گروه نژادی در اسلوونی زندگی می کنند؟</string>
+<string lang="de">Wieviele ethnische Gruppen leben in Slovenien?</string>
+<string lang="es">¿Cuántos grupos étnicos viven en Eslovenia?</string>
+<string lang="it">Quanti gruppi etnici vivono in Slovenia?</string>
+<string lang="fr">Combien de groupes ethniques vivent en Slovénie?</string>
+<string lang="nl">Hoeveel etnische groepen leven in Slovenië?</string>
+<string lang="ro">Câte grupuri etnice trăiesc în Slovenia?</string>
+<keywords lang="en">how many, ethnic groups, Slovenia</keywords>
+<keywords lang="fa">گروه نژادی، اسلوونی</keywords>
+<keywords lang="de">Anzahl, ethnische Gruppen, Slovenien</keywords>
+<keywords lang="es">grupos étnicos Eslovenia</keywords>
+<keywords lang="it">numero, gruppi etnici, Slovenia</keywords>
+<keywords lang="fr">nombre, groupes ethniques, Slovénie</keywords>
+<keywords lang="nl">hoeveel, etnische groepen, Slovenië</keywords>
+<keywords lang="ro">câte, grupuri etnice, Slovenia</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  &lt;http://dbpedia.org/resource/Slovenia&gt; &lt;http://dbpedia.org/ontology/ethnicGroup&gt; ?uri . } </query>
+<answers>
+<answer>4</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="false" id="112" onlydbo="true">
 <string lang="en">Who is the president of Eritrea?</string>
 <string lang="fa">رئیس جمهور اریتره کیست؟</string>
 <string lang="de">Wer ist der Präsident von Eritrea?</string>
@@ -2674,7 +2806,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Isaias_Afwerki</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="107" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="113" onlydbo="true">
 <string lang="en">Which films did Stanley Kubrick direct?</string>
 <string lang="fa">چه فیلم هایی را استنلی کوبریک کارگردانی کرده است؟</string>
 <string lang="de">Bei wievielen Filmen hat Stanley Kubrick Regie geführt?</string>
@@ -2711,7 +2843,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Lolita_(1962_film)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="date" hybrid="false" id="108" onlydbo="true">
+<question aggregation="false" answertype="date" hybrid="false" id="114" onlydbo="true">
 <string lang="en">When was the Titanic completed?</string>
 <string lang="de">Wann wurde die Titanic fertiggestellt?</string>
 <string lang="es">¿Cuando se completo el Titanic?</string>
@@ -2736,7 +2868,7 @@ WHERE {
 <answer>1912-04-02</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="109" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="115" onlydbo="true">
 <string lang="en">How many pages does War and Peace have?</string>
 <string lang="de">Wieviele Seiten hat Krieg und Frieden?</string>
 <string lang="es">¿Cuántas páginas tiene Guerra y Paz?</string>
@@ -2761,7 +2893,7 @@ WHERE {
 <answer>1225</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="110" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="116" onlydbo="true">
 <string lang="en">Who is the youngest player in the Premier League?</string>
 <string lang="de">Wer ist der jüngste Spieler in der Premier League?</string>
 <string lang="es">¿Quién es el jugador más jóven de la Premier League?</string>
@@ -2790,7 +2922,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Ernie_Pinkney</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="111" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="117" onlydbo="true">
 <string lang="en">What is the highest mountain in Italy?</string>
 <string lang="de">Was ist der höchste Berg in Italien?</string>
 <string lang="es">¿Cuál es la montaña mas alta en Italia?</string>
@@ -2820,7 +2952,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Mont_Blanc</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="112" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="118" onlydbo="true">
 <string lang="en">How tall is Claudia Schiffer?</string>
 <string lang="de">Wie groß ist Claudia Schiffer?</string>
 <string lang="es">¿Cómo de alta es Claudia Schiffer?</string>
@@ -2843,7 +2975,7 @@ WHERE {
 <answer>1.81</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="113" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="119" onlydbo="true">
 <string lang="en">Who was John F. Kennedy's vice president?</string>
 <string lang="de">Wer war der Vizepräsident unter John F. Kennedy?</string>
 <string lang="es">¿Quién fué el vicepresidente de John F. Kennedy?</string>
@@ -2867,7 +2999,7 @@ WHERE { res:John_F._Kennedy dbo:vicePresident ?uri .
 <answer>http://dbpedia.org/resource/Lyndon_B._Johnson</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="114" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="120" onlydbo="true">
 <string lang="en">Which subsidiary of Lufthansa serves both Dortmund and Berlin Tegel?</string>
 <string lang="de">Welche Tochtergesellschaft von Lufthansa fliegt sowohl Dortmund als auch Berlin Tegel an?</string>
 <string lang="es">¿Qué subsidiario de Lufthansa vuela en Dortmund y en Berlin?</string>
@@ -2894,7 +3026,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Germanwings</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="115" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="121" onlydbo="true">
 <string lang="en">Who was the successor of John F. Kennedy?</string>
 <string lang="de">Wer war der Nachfolger von John F. Kennedy?</string>
 <string lang="es">¿Quién fué el sucesor de John F. Kennedy?</string>
@@ -2919,7 +3051,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Tip_O'Neill</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="116" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="122" onlydbo="true">
 <string lang="en">Who composed the soundtrack for Cameron's Titanic?</string>
 <string lang="fa">چه کسی موسیقی متن تایتانیک کامرون را نوشته است؟</string>
 <string lang="de">Wer hat den Soundtrack für Camerons Titanic geschrieben?</string>
@@ -2941,7 +3073,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/James_Horner</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="117" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="123" onlydbo="true">
 <string lang="en">Which movies did Kurosawa direct?</string>
 <string lang="de">Welche Filme hat Kurosawa gedreht?</string>
 <string lang="es">¿Qué películas ha rodado Kurosawa?</string>
@@ -2999,7 +3131,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/The_Men_Who_Tread_on_the_Tiger's_Tail</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="118" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="124" onlydbo="true">
 <string lang="en">For which label did Elvis record his first album?</string>
 <string lang="de">Welche Plattenfirma hat Elvis' erstes Album aufgenommen?</string>
 <string lang="es">¿Qué discográfica grabó el primer album de Elvis?</string>
@@ -3030,7 +3162,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Pickwick_Records</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="119" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="125" onlydbo="true">
 <string lang="en">In which time zone is Rome?</string>
 <string lang="fa">رم در چه ناحیه زمانی قرار دارد؟</string>
 <string lang="de">In welcher Zeitzone liegt Rom?</string>
@@ -3052,7 +3184,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Central_European_Time</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="120" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="126" onlydbo="true">
 <string lang="en">Give me the currency of China.</string>
 <string lang="de">Welche Währung benutzt China?</string>
 <string lang="es">¿Cual es la moneda de China?</string>
@@ -3077,7 +3209,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Renminbi</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="121" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="127" onlydbo="true">
 <string lang="en">Who are the developers of DBpedia?</string>
 <string lang="fa">چه کسانی توسعه دهندگان دی.بی.پدیا هستند؟</string>
 <string lang="de">Wer sind die Entwickler von DBpedia?</string>
@@ -3101,7 +3233,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/OpenLink_Software</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="122" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="128" onlydbo="true">
 <string lang="en">Does Abraham Lincoln's death place have a website?</string>
 <string lang="de">Hat Abraham Lincolns Sterbeort eine Webseite?</string>
 <string lang="es">¿Tiene el lugar de nacimiento de Abraham Lincol una página web?</string>
@@ -3127,7 +3259,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="123" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="129" onlydbo="true">
 <string lang="en">Who is the king of the Netherlands?</string>
 <string lang="fa">پادشاه هلند کیست؟</string>
 <string lang="de">Wer ist der König der Niederlande?</string>
@@ -3149,7 +3281,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Willem-Alexander_of_the_Netherlands</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="124" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="130" onlydbo="true">
 <string lang="en">In which city did Nikos Kazantzakis die?</string>
 <string lang="fa">نیکوس کازانتزاکیس در کدام کشور مرد؟</string>
 <string lang="de">In welcher Stadt ist Nikos Kazantzakis gestorben?</string>
@@ -3171,7 +3303,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Freiburg_im_Breisgau</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="125" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="131" onlydbo="false">
 <string lang="en">Who was the father of Queen Elizabeth II?</string>
 <string lang="de">Wer war der Vater von Königin Elizabeth II?</string>
 <string lang="es">¿Quién fue el padre de la reina Isabel II?</string>
@@ -3194,7 +3326,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/George_VI</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="126" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="132" onlydbo="true">
 <string lang="en">Give me a list of all critically endangered birds.</string>
 <string lang="fa">لیستی از پرندگان روبه انقراض را بده.</string>
 <string lang="de">Gib mir eine Liste aller stark bedrohten Vogelarten.</string>
@@ -3216,7 +3348,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Chatham_pigeon</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="127" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="133" onlydbo="true">
 <string lang="en">How many inhabitants does the largest city in Canada have?</string>
 <string lang="de">Wieviele Einwohner hat die größte Stadt in Kanada?</string>
 <string lang="es">¿Cuántos habitantes tiene la ciudad más grande de Canadá?</string>
@@ -3242,7 +3374,7 @@ WHERE {
 <answer>2615060</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="128" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="134" onlydbo="true">
 <string lang="en">In which military conflicts did Lawrence of Arabia participate?</string>
 <string lang="de">An welchen militärischen Auseinandersetzungen war Lawrence von Arabien beteiligt?</string>
 <string lang="es">¿En qué conflictos militares participó Lawrence de Arabia?</string>
@@ -3276,7 +3408,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Battle_of_Aba_el_Lissan</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="129" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="135" onlydbo="true">
 <string lang="en">Which book has the most pages?</string>
 <string lang="de">Welches Buch hat die meisten Seiten?</string>
 <string lang="es">¿Que libro tiene el mayor numero de paginas?</string>
@@ -3304,7 +3436,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/The_Tolkien_Reader</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="130" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="136" onlydbo="true">
 <string lang="en">In which country does the Nile start?</string>
 <string lang="de">In welchem Land entspringt der Nil?</string>
 <string lang="es">¿En qué país nace el Nilo?</string>
@@ -3328,7 +3460,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ethiopia</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="131" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="137" onlydbo="true">
 <string lang="en">Who is the Formula 1 race driver with the most races?</string>
 <string lang="fa">چه کسی راننده فرمول 1 با بیشترین مسابقه است؟</string>
 <string lang="de">Wer ist der Formel-1-Fahrer mit den meisten Rennen?</string>
@@ -3350,7 +3482,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Michael_Schumacher</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="132" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="138" onlydbo="true">
 <string lang="en">Which companies produce hovercrafts?</string>
 <string lang="fa">چه شرکت هایی هواناو تولید می کنند؟</string>
 <string lang="de">Welche Firmen stellen Hovercrafts her?</string>
@@ -3374,7 +3506,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/British_Hovercraft_Corporation</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="133" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="139" onlydbo="true">
 <string lang="en">Did Elvis Presley have children?</string>
 <string lang="fa">آیا الویس پرسلی فرزند دارد؟</string>
 <string lang="de">Hatte Elvis Presley Kinder?</string>
@@ -3396,7 +3528,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="134" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="140" onlydbo="true">
 <string lang="en">In which city was the president of Montenegro born?</string>
 <string lang="fa">رئیس جمهور مونتنگرو در کدام شهر متولد شد؟</string>
 <string lang="de">In welcher Stadt ist der Präsident von Montenegro geboren?</string>
@@ -3418,7 +3550,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Belgrade</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="135" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="141" onlydbo="true">
 <string lang="en">Which country was Bill Gates born in?</string>
 <string lang="fa">بیل گیت در کدام کشور متولد آمد؟</string>
 <string lang="de">In welchem Land ist Bill Gates geboren?</string>
@@ -3440,7 +3572,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/United_States</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="136" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="142" onlydbo="true">
 <string lang="en">In which countries do people speak Japanese?</string>
 <string lang="fa">در چه کشورهایی مردم ژاپنی صحبت می کنند؟</string>
 <string lang="de">In welcher Ländern wird Japanisch gesprochen?</string>
@@ -3464,7 +3596,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Allied_Military_Government_for_Occupied_Territories</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="137" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="143" onlydbo="true">
 <string lang="en">Show me the book that Muhammad Ali wrote.</string>
 <string lang="de">Zeig mir das Buch, das Muhammad Ali geschrieben hat.</string>
 <string lang="es">Muéstrame el libro escrito por Muhammad Ali.</string>
@@ -3491,7 +3623,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/The_Soul_of_a_Butterfly</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="138" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="144" onlydbo="true">
 <string lang="en">Is Michelle Obama the wife of Barack Obama?</string>
 <string lang="de">Ist Michelle Obama die Frau von Barack Obama?</string>
 <string lang="es">¿Es Michele Obama la esposa de Barack Obama?</string>
@@ -3514,7 +3646,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="139" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="145" onlydbo="true">
 <string lang="en">What is the area code of Berlin?</string>
 <string lang="de">Was ist die Vorwahl von Berlin?</string>
 <string lang="es">¿Cuál es el prefijo de Berlin?</string>
@@ -3537,7 +3669,7 @@ WHERE {
 <answer>030</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="140" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="146" onlydbo="true">
 <string lang="en">Give me all actors starring in Last Action Hero.</string>
 <string lang="de">Gib mir alle Schauspieler, die in Last Action Hero mitgespielt haben.</string>
 <string lang="es">Dame todos los actores que hayan actuado en Last Action Hero.</string>
@@ -3570,7 +3702,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Anthony_Quinn</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="string" hybrid="false" id="141" onlydbo="true">
+<question aggregation="false" answertype="string" hybrid="false" id="147" onlydbo="true">
 <string lang="en">What are the nicknames of San Francisco?</string>
 <string lang="fa">اسم های مستعار سانفرانسیسکو چیست؟</string>
 <string lang="de">Was sind die Spitznamen von San Francisco?</string>
@@ -3592,7 +3724,7 @@ WHERE {
 <answer>The City by the Bay; Fog City; San Fran; Frisco ; The City that Knows How ; Baghdad by the Bay ; The Paris of the West</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="142" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="148" onlydbo="true">
 <string lang="en">What was the first Queen album?</string>
 <string lang="fa">اولین آلبوم کوئین چه بود؟</string>
 <string lang="de">Was war das erste Queen-Album?</string>
@@ -3614,7 +3746,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Queen_(Queen_album)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="143" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="149" onlydbo="false">
 <string lang="en">Through which countries does the Yenisei river flow?</string>
 <string lang="de">Durch welche Länder fließt der Yenisei?</string>
 <string lang="es">¿Por qué países fluye el río Yenisei?</string>
@@ -3638,7 +3770,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Mongolia</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="144" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="150" onlydbo="true">
 <string lang="en">Which television shows were created by Walt Disney?</string>
 <string lang="de">Welche Fernsehserien hat Walt Disney entworfen?</string>
 <string lang="es">¿Qué series televisivas ideó Walt Disney?</string>
@@ -3665,7 +3797,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/The_Mickey_Mouse_Club</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="145" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="151" onlydbo="true">
 <string lang="en">What is the bridge with the longest span?</string>
 <string lang="de">Welche Brücke hat die längste Spannweite?</string>
 <string lang="es">¿Qué puente tiene el mayor largo del vano?</string>
@@ -3694,7 +3826,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Overseas_Highway</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="146" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="152" onlydbo="true">
 <string lang="en">What country is Sitecore from?</string>
 <string lang="fa">سایتکور در کدام کشور تأسیس شد؟</string>
 <string lang="de">Aus welchem Land kommt Sitecore?</string>
@@ -3716,7 +3848,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Denmark</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="147" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="153" onlydbo="true">
 <string lang="en">Whom did Lance Bass marry?</string>
 <string lang="fa">لنس بس با چه کسی ازدواج کرده است؟</string>
 <string lang="de">Wen hat Lance Bass geheiratet?</string>
@@ -3738,7 +3870,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Michael_Turchin</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="148" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="154" onlydbo="true">
 <string lang="en">What is the capital of Canada?</string>
 <string lang="de">Was ist die Hauptstadt von Kanada?</string>
 <string lang="es">¿Cuál es la capital de Canadá?</string>
@@ -3761,7 +3893,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ottawa</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="149" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="155" onlydbo="true">
 <string lang="en">Who was Vincent van Gogh inspired by?</string>
 <string lang="fa">ونسان ون گوگ از چه کسی الهام گرفته است؟</string>
 <string lang="de">Wer hat Vincent van Gogh inspiriert?</string>
@@ -3784,7 +3916,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Anton_Mauve</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="150" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="156" onlydbo="true">
 <string lang="en">In which city did John F. Kennedy die?</string>
 <string lang="de">In welcher Stadt ist John F. Kennedy gestorben?</string>
 <string lang="es">¿En qué ciudad murió John F. Kennedy?</string>
@@ -3809,7 +3941,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Dallas</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="151" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="157" onlydbo="true">
 <string lang="en">Was U.S. president Jackson involved in a war?</string>
 <string lang="de">War US-Präsident Jackson in einen Krieg verwickelt?</string>
 <string lang="es">¿Estuvo el el presidente de los estados unidos Jackson involucrado en una guerra?</string>
@@ -3832,7 +3964,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="152" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="158" onlydbo="true">
 <string lang="en">Who wrote the Game of Thrones theme?</string>
 <string lang="fa">طرح بازی تاج و تخت را چه کسی نوشت؟</string>
 <string lang="de">Wer hat das Titellied für Games of Thrones geschrieben?</string>
@@ -3854,7 +3986,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ramin_Djawadi</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="153" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="159" onlydbo="true">
 <string lang="en">Who designed the Brooklyn Bridge?</string>
 <string lang="de">Wer hat die Brooklyn Bridge entworfen?</string>
 <string lang="es">¿Quién diseñó la Brooklyn Bridge?</string>
@@ -3879,7 +4011,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/John_A._Roebling</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="date" hybrid="false" id="154" onlydbo="true">
+<question aggregation="false" answertype="date" hybrid="false" id="160" onlydbo="true">
 <string lang="en">When did Boris Becker end his active career?</string>
 <string lang="fa">بوریس بکر کی به فعالیت هنری اش خاتمه داد؟</string>
 <string lang="de">Wann hat Boris Becker seine aktive Karriere beendet?</string>
@@ -3901,7 +4033,7 @@ WHERE {
 <answer>1999-06-25</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="155" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="161" onlydbo="true">
 <string lang="en">Which types of grapes grow in Oregon?</string>
 <string lang="fa">چه انواعی از انگور در اورگن رشد می کند؟</string>
 <string lang="de">Welche Traubenarten wachsen in Oregon?</string>
@@ -3956,7 +4088,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Barbera</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="156" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="162" onlydbo="true">
 <string lang="en">How tall is Michael Jordan?</string>
 <string lang="de">Wie groß ist Michael Jordan?</string>
 <string lang="es">¿Qué altura tiene Michael Jordan?</string>
@@ -3979,7 +4111,7 @@ WHERE {
 <answer>1.9812</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="157" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="163" onlydbo="true">
 <string lang="en">To which party does the mayor of Paris belong?</string>
 <string lang="fa">شهردار پاریس عضو چه حزبی است؟</string>
 <string lang="de">Welcher Partei gehört die Bürgermeisterin von Paris an?</string>
@@ -4001,7 +4133,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Socialist_Party_(France)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="158" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="164" onlydbo="true">
 <string lang="en">Who wrote the book The Pillars of the Earth?</string>
 <string lang="de">Wer schrieb das Buch Die Säulen der Erde?</string>
 <string lang="es">¿Quen escribió el libro Los pilares de la Tierra?</string>
@@ -4026,7 +4158,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ken_Follett</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="159" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="165" onlydbo="true">
 <string lang="en">Who was the 16th president of the United States?</string>
 <string lang="de">Wer war der 16. Präsident der Vereinigten Staaten?</string>
 <string lang="es">¿Quién fue el 16th presidente de los Estados Unidos?</string>
@@ -4052,7 +4184,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Abraham_Lincoln</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="160" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="166" onlydbo="true">
 <string lang="en">How high is the Mount Everest?</string>
 <string lang="de">Wie hoch ist der Mount Everest?</string>
 <string lang="es">¿Qué alto es el Monte Everest?</string>
@@ -4075,7 +4207,7 @@ WHERE {
 <answer>8848.0</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="161" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="167" onlydbo="true">
 <string lang="en">Who was the doctoral supervisor of Albert Einstein?</string>
 <string lang="fa">چه کسی استاد راهنمای دکترای آلبرت اینشتین بود؟</string>
 <string lang="de">Wer war der Doktorvater von Albert Einstein?</string>
@@ -4097,7 +4229,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Alfred_Kleiner</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="162" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="168" onlydbo="true">
 <string lang="en">In which city does Sylvester Stallone live?</string>
 <string lang="fa">سیلوستر استالونه در کدام شهر زندگی می کند؟</string>
 <string lang="de">In welcher Stadt wohnt Sylvester Stallone?</string>
@@ -4119,7 +4251,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Beverly_Hills,_California</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="163" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="169" onlydbo="true">
 <string lang="en">What is the currency of the Czech Republic?</string>
 <string lang="de">Was ist die Währung der Tschechischen Republik?</string>
 <string lang="es">¿Cuál es la moneda de la república checa?</string>
@@ -4142,7 +4274,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Czech_koruna</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="164" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="170" onlydbo="true">
 <string lang="en">Did Socrates influence Aristotle?</string>
 <string lang="de">Hat Sokrates Aristoteles beeinflusst?</string>
 <string lang="es">¿Tuvo Sócrates influencia sobre Aristóteles?</string>
@@ -4165,7 +4297,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="165" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="171" onlydbo="false">
 <string lang="en">What is the time zone of Salt Lake City?</string>
 <string lang="de">In welcher Zeitzone liegt Salt Lake City?</string>
 <string lang="es">¿En qué zona horaria se encuentra Salt Lake City?</string>
@@ -4188,7 +4320,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Mountain_Time_Zone</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="166" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="172" onlydbo="true">
 <string lang="en">Who is the son of Sonny and Cher?</string>
 <string lang="fa">پسر سونی و چر چه کسی بود؟</string>
 <string lang="de">Wer ist der Sohn von Sonny und Cher?</string>
@@ -4210,7 +4342,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Chaz_Bono</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="167" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="173" onlydbo="true">
 <string lang="en">In which city are the headquarters of the United Nations?</string>
 <string lang="fa">مقر سازمان ملل در کدام شهر قرار دارد؟</string>
 <string lang="de">In welcher Stadt ist das Hauptquartier der Vereinten Nationen?</string>
@@ -4232,7 +4364,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/New_York_City</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="168" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="174" onlydbo="true">
 <string lang="en">Who is the founder of Penguin Books?</string>
 <string lang="de">Wer hat Penguin Books gegründet?</string>
 <string lang="es">¿Quien es el fundador de Penguin Books?</string>
@@ -4258,7 +4390,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Allen_Lane</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="date" hybrid="false" id="169" onlydbo="true">
+<question aggregation="false" answertype="date" hybrid="false" id="175" onlydbo="true">
 <string lang="en">When was Jack Wolfskin founded?</string>
 <string lang="fa">جک ولفیش کی تأسیس شد؟</string>
 <string lang="de">Wann wurde Jack Wolfskin gegründet?</string>
@@ -4280,7 +4412,7 @@ WHERE {
 <answer>1981</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="170" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="176" onlydbo="true">
 <string lang="en">Who is the mayor of Rotterdam?</string>
 <string lang="de">Wer ist der Bürgermeister von Rotterdam?</string>
 <string lang="es">¿Quién es el alcalde de Rotterdam?</string>
@@ -4305,7 +4437,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ahmed_Aboutaleb</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="171" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="177" onlydbo="true">
 <string lang="en">Give me all Swedish oceanographers.</string>
 <string lang="de">Gib mir alle Schwedischen Ozeanographen.</string>
 <string lang="es">Dame todos los oceanógrafos suecos.</string>
@@ -4331,7 +4463,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Vagn_Walfrid_Ekman</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="172" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="178" onlydbo="true">
 <string lang="en">Show me Hemingway's autobiography.</string>
 <string lang="fa">خود زندگی نامه همینگوی را بده.</string>
 <string lang="de">Zeig mir Hemmingways Autobiographie.</string>
@@ -4353,7 +4485,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/A_Moveable_Feast</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="173" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="179" onlydbo="true">
 <string lang="en">Who are the parents of the wife of Juan Carlos I?</string>
 <string lang="de">Wer sind die Eltern der Frau von Juan Carlos I?</string>
 <string lang="es">¿Quién son los padres de la esposa de Juan Carlos I?</string>
@@ -4380,7 +4512,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Paul_of_Greece</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="174" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="180" onlydbo="true">
 <string lang="en">Did Tesla win a nobel prize in physics?</string>
 <string lang="de">Hat Tesla den Nobelpreis für Physik gewonnen?</string>
 <string lang="es">¿Obtuvo Tesla el premio nobel de física?</string>
@@ -4403,7 +4535,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="175" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="181" onlydbo="true">
 <string lang="en">Who is the tallest basketball player?</string>
 <string lang="fa">چه کسی بلندترین بازیکن بسکتبال است؟</string>
 <string lang="de">Wer ist der größte Basketballspieler?</string>
@@ -4425,7 +4557,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Thijs_Vermeulen</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="176" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="182" onlydbo="true">
 <string lang="en">Which city has the least inhabitants?</string>
 <string lang="fa">چه شهری کمترین سکنه را دارد؟</string>
 <string lang="de">Welche Stadt hat die wenigsten Einwohner?</string>
@@ -4447,7 +4579,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Greenhorn,_Oregon</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="177" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="183" onlydbo="true">
 <string lang="en">Is proinsulin a protein?</string>
 <string lang="de">Ist Proinsulin ein Protein?</string>
 <string lang="es">¿La proinsulina es una proteina?</string>
@@ -4471,7 +4603,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="178" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="184" onlydbo="true">
 <string lang="en">Who were the parents of Queen Victoria?</string>
 <string lang="de">Wer waren die Eltern von Königin Viktoria?</string>
 <string lang="es">¿Quiénes fueron los padres de la reina Victoria?</string>
@@ -4497,7 +4629,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Prince_Edward,_Duke_of_Kent_and_Strathearn</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="179" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="185" onlydbo="true">
 <string lang="en">Did Che Guevara have children?</string>
 <string lang="de">Hatte Che Guevara Kinder?</string>
 <string lang="es">¿Tuvo hijos el Che Guevara?</string>
@@ -4522,7 +4654,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="180" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="186" onlydbo="true">
 <string lang="en">Is Lake Baikal bigger than the Great Bear Lake?</string>
 <string lang="de">Ist der Baikalsee größer als der Große Bärensee?</string>
 <string lang="es">¿Es el lago Baikal mayor que el lago Great Bear?</string>
@@ -4549,7 +4681,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="181" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="187" onlydbo="true">
 <string lang="en">Did Kaurismäki ever win the Grand Prix at Cannes?</string>
 <string lang="fa">آیا کوریسماکی تا بحال جایزه بزرگ  جشنواره کن را برده است؟</string>
 <string lang="de">Hat Kaurismäki jemals den Großen Preis der Jury in Cannes gewonnen?</string>
@@ -4571,7 +4703,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="182" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="188" onlydbo="true">
 <string lang="en">Give me all books by William Goldman with more than 300 pages.</string>
 <string lang="de">Gib mir alle Bücher von William Goldman mit mehr als 300 Seiten.</string>
 <string lang="es">Dame todos los libros de Wiliam Goldman con más de 300 páginas.</string>
@@ -4609,7 +4741,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Brothers_(Goldman_novel)</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="183" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="189" onlydbo="true">
 <string lang="en">Where is Fort Knox located?</string>
 <string lang="fa">فورت ناکس در کجا واقع شده است؟</string>
 <string lang="de">Wo liegt Fort Knox?</string>
@@ -4631,7 +4763,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Kentucky</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="184" onlydbo="false">
+<question aggregation="false" answertype="resource" hybrid="false" id="190" onlydbo="false">
 <string lang="en">In which U.S. state is Fort Knox located?</string>
 <string lang="de">In welchem US-Bundesstaat liegt Fort Knox?</string>
 <string lang="es">¿En qué estado american se encuentra Fort Knox?</string>
@@ -4656,7 +4788,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Kentucky</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="185" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="191" onlydbo="true">
 <string lang="en">Where is Syngman Rhee buried?</string>
 <string lang="fa">ایسونگمن ری گجا دفن شده است؟</string>
 <string lang="de">Wo liegt Syngman Rhee begraben?</string>
@@ -4678,7 +4810,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Seoul_National_Cemetery</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="186" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="192" onlydbo="true">
 <string lang="en">What is the timezone in San Pedro de Atacama?</string>
 <string lang="fa">منطقه زمانی در San Pedro de Atacama چیست؟</string>
 <string lang="de">In welcher Zeitzone liegt San Pedro de Atacama?</string>
@@ -4700,7 +4832,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Time_in_Chile</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="187" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="193" onlydbo="true">
 <string lang="en">To which artistic movement did the painter of The Three Dancers belong?</string>
 <string lang="fa">نقاش سه رقصنده به چه جنبش هنری تعلق دارد؟</string>
 <string lang="de">Welcher Stilrichtung gehörte der Maler der Drei Tänzer an?</string>
@@ -4723,7 +4855,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Surrealism</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="188" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="194" onlydbo="true">
 <string lang="en">Which scientist is known for the Manhattan Project and the Nobel Peace Prize?</string>
 <string lang="de">Welcher Wissenschaftler ist bekannt für das Manhattan-Projekt und den Friedensnobelpreis?</string>
 <string lang="es">¿Qué científicos son conocidos por el proyecto Manhattan y el premio Nobel de la Paz?</string>
@@ -4751,7 +4883,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Joseph_Rotblat</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="189" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="195" onlydbo="true">
 <string lang="en">Show me all books in Asimov's Foundation series.</string>
 <string lang="fa">مجموعه کتاب های آسیموف چند کتاب دارد؟</string>
 <string lang="de">Zeig mir alle Bücher in Asimovs Foundation-Serie.</string>
@@ -4783,7 +4915,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Foundation_and_Empire</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="190" onlydbo="false">
+<question aggregation="true" answertype="resource" hybrid="false" id="196" onlydbo="false">
 <string lang="en">Give me all cities in New Jersey with more than 100000 inhabitants.</string>
 <string lang="de">Gib mir alle Städte in New Jersey, die mehr als 100000 Einwohner haben.</string>
 <string lang="es">Dame todas las cuidades en New Jersey que tengan más de 100000 habitantes.</string>
@@ -4814,7 +4946,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Paterson,_New_Jersey</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="191" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="197" onlydbo="true">
 <string lang="en">Which museum in New York has the most visitors?</string>
 <string lang="fa">کدام موزه در نیویورک بیشترین بازدید کننده را دارد؟</string>
 <string lang="de">Welches Museum in New York hat die meisten Besucher?</string>
@@ -4836,7 +4968,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Museum_of_Motherhood</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="number" hybrid="false" id="192" onlydbo="true">
+<question aggregation="false" answertype="number" hybrid="false" id="198" onlydbo="true">
 <string lang="en">How high is the Yokohama Marine Tower?</string>
 <string lang="de">Wie hoch ist der Yokohama Marine Tower?</string>
 <string lang="es">¿Cómo de alta el la torre Yokohama Marine?</string>
@@ -4861,7 +4993,7 @@ WHERE {
 <answer>106.07</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="boolean" hybrid="false" id="193" onlydbo="true">
+<question aggregation="true" answertype="boolean" hybrid="false" id="199" onlydbo="true">
 <string lang="en">Does the new Battlestar Galactica series have more episodes than the old one?</string>
 <string lang="de">Hat die neue Battlestar-Galactica-Serie mehr Episoden als die alte?</string>
 <string lang="es">¿Tiene la nueve serie de Battlestar-Galactica más episodios que la anterior?</string>
@@ -4886,7 +5018,7 @@ WHERE {
 <answer>false</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="194" onlydbo="true">
+<question aggregation="true" answertype="resource" hybrid="false" id="200" onlydbo="true">
 <string lang="en">Who is the youngest Darts player?</string>
 <string lang="de">Wer ist der jüngste Dartspieler?</string>
 <string lang="es">¿Quién es el jugador mas jóven de dardos?</string>
@@ -4914,7 +5046,7 @@ OFFSET 0 LIMIT 1</query>
 <answer>http://dbpedia.org/resource/Max_Hopp</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="195" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="201" onlydbo="true">
 <string lang="en">Who developed the video game World of Warcraft?</string>
 <string lang="de">Wer hat das Videospiel World of Warcraft entwickelt?</string>
 <string lang="es">¿Quién desarrolló el videojuego Warcraft?</string>
@@ -4937,7 +5069,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Blizzard_Entertainment</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="196" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="202" onlydbo="true">
 <string lang="en">Who was the pope that founded the Vatican Television?</string>
 <string lang="de">Welcher Papst hat das Vatikanische Fernsehen gegründet?</string>
 <string lang="es">¿Quien fue el papa que fundo la televisión Vaticana?</string>
@@ -4964,7 +5096,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Pope_John_Paul_II</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="197" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="203" onlydbo="true">
 <string lang="en">Who composed the music for Harold and Maude?</string>
 <string lang="de">Wer hat die Musik für Harold und Maude komponiert?</string>
 <string lang="es">¿Quién compuso la música para Harold y Maude?</string>
@@ -4987,7 +5119,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Cat_Stevens</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="198" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="204" onlydbo="true">
 <string lang="en">Give me all members of Prodigy.</string>
 <string lang="fa">تمام اعضای پرادیجی را لیست کن.</string>
 <string lang="de">Gib mir alle Bandmitglieder von Prodigy.</string>
@@ -5011,7 +5143,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Keith_Flint</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="199" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="205" onlydbo="true">
 <string lang="en">Who is starring in Spanish movies produced by Benicio del Toro?</string>
 <string lang="fa">چه کسی در فیلم های اسپانیایی تولید شده توسط بنیسیو دل تورو بازی می کند؟</string>
 <string lang="de">Wer spielt alles in spanischen Filmen produziert von Benicio del Toro mit? </string>
@@ -5033,7 +5165,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Benicio_del_Toro</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="200" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="206" onlydbo="true">
 <string lang="en">Which subsidiary of TUI Travel serves both Glasgow and Dublin?</string>
 <string lang="fa">چه شرکت های تابعی از تی.یو.آی. تراول به هر دوی گلاسگو و دوبلین سرویس دارند؟</string>
 <string lang="de">Welche Tochtergesellschaft von TUI Travel fliegt sowohl Glasgow als auch Dublin an?</string>
@@ -5055,7 +5187,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Thomson_Airways</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="201" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="207" onlydbo="true">
 <string lang="en">In which country is Mecca located?</string>
 <string lang="de">In welchem Land liegt Mekka?</string>
 <string lang="es">¿En que país se sitúa la Meca?</string>
@@ -5080,7 +5212,29 @@ WHERE {
 <answer>http://dbpedia.org/resource/Saudi_Arabia</answer>
 </answers>
 </question>
-<question aggregation="true" answertype="resource" hybrid="false" id="202" onlydbo="true">
+<question aggregation="true" answertype="number" hybrid="false" id="208" onlydbo="true">
+<string lang="en">How many languages are spoken in Colombia?</string>
+<string lang="fa">چه تعداد زبان در کلمبیا صحبت می شود؟</string>
+<string lang="de">Wieviele Sprachen werden in Kolumbien gesprochen?</string>
+<string lang="es">¿Cuántos idiomas se hablan en Colombia?</string>
+<string lang="it">Quante lingue sono parlate in Colombia?</string>
+<string lang="fr">Combien de langues sont parlées au Colombie?</string>
+<string lang="nl">Hoeveel talen worden er in Colombia gesproken?</string>
+<string lang="ro">Câte limbi sunt vorbite în Columbia?</string>
+<keywords lang="en">languages, Colombia</keywords>
+<keywords lang="fa">زبان، کلمبیا</keywords>
+<keywords lang="de">Sprachen, Kolumbien</keywords>
+<keywords lang="es">idiomas, Colombia</keywords>
+<keywords lang="it">lingue, Colombia</keywords>
+<keywords lang="fr">langues, Colombie</keywords>
+<keywords lang="nl">talen, Columbia</keywords>
+<keywords lang="ro">limbi, Columbia</keywords>
+<query>SELECT (COUNT(DISTINCT ?uri) as ?c) WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Language&gt; .  &lt;http://dbpedia.org/resource/Colombia&gt; &lt;http://dbpedia.org/ontology/language&gt; ?uri . } </query>
+<answers>
+<answer>2</answer>
+</answers>
+</question>
+<question aggregation="true" answertype="resource" hybrid="false" id="209" onlydbo="true">
 <string lang="en">What is the biggest stadium in Spain?</string>
 <string lang="fa">بزرگترین استادیوم در اسپانیا کدام است؟</string>
 <string lang="de">Was ist das größte Stadion in Spanien?</string>
@@ -5102,7 +5256,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Camp_Nou</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="203" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="210" onlydbo="true">
 <string lang="en">Which professional surfers were born on the Philippines?</string>
 <string lang="de">Welche Profisurfer wurden auf den Philippinen geboren?</string>
 <string lang="es">¿Qué surfistas profesionales nacieron en las Filipinas?</string>
@@ -5126,7 +5280,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Marcus_Adoro</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="204" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="211" onlydbo="true">
 <string lang="en">What are the five boroughs of New York?</string>
 <string lang="fa">پنج منطقه نیویورک کدام است؟</string>
 <string lang="de">Was sind die fünf Stadtteile von New York?</string>
@@ -5152,7 +5306,7 @@ WHERE {
 <answer>http://dbpedia.org/resource/Brooklyn</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="boolean" hybrid="false" id="205" onlydbo="true">
+<question aggregation="false" answertype="boolean" hybrid="false" id="212" onlydbo="true">
 <string lang="en">Is Cola a beverage?</string>
 <string lang="de">Ist Cola ein Getränk?</string>
 <string lang="es">¿La Coca Cola es una bebida?</string>
@@ -5178,7 +5332,7 @@ WHERE {
 <answer>true</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="206" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="213" onlydbo="true">
 <string lang="en">When did princess Diana die?</string>
 <string lang="fa">شاهزاده دیانا کی فوت کرد؟</string>
 <string lang="de">Wann ist Prinzessin Diana gestorben?</string>
@@ -5200,7 +5354,7 @@ WHERE {
 <answer>1997-08-31</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="false" id="207" onlydbo="true">
+<question aggregation="false" answertype="resource" hybrid="false" id="214" onlydbo="true">
 <string lang="en">Where in France is sparkling wine produced?</string>
 <string lang="de">Wo in Frankreich wird Schaumwein hergestellt?</string>
 <string lang="es">¿Dónde en Francia se produce el vino espumoso?</string>

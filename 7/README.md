@@ -2,7 +2,7 @@
 Last update: 2017-01-07
 
 For parsing the json files you find a full class structure and parser at:
-https://github.com/AKSW/NLIWOD/tree/dev/qa.commons/src/main/java/org/aksw/qa/commons/load/json
+https://github.com/AKSW/NLIWOD/tree/master/qa.commons/src/main/java/org/aksw/qa/commons/load/json
 
 
 ## QALD-7-train-multilingual dataset
@@ -27,23 +27,23 @@ The qald7-train-multilingual dataset was created using the multilingual question
 	Duplicates were identified by the hash of the English natural language question, and removed. If more than one duplicate of a question was present, the copy with the least errors was chosen for further handling.
 		
 You can find the corresponding code at:
-https://github.com/AKSW/NLIWOD/blob/dev/qa.commons/src/main/java/org/aksw/qa/commons/qald/Qald7CreationTool.java
+https://github.com/AKSW/NLIWOD/blob/master/qa.commons/src/main/java/org/aksw/qa/commons/qald/Qald7CreationTool.java
 
 Make sure to change the paths in the main method.
 
 By running the creator, there will also be a file report created for all the disqualified questions.
 You can find one for the latest run here:
-https://github.com/AKSW/NLIWOD/blob/dev/qa.commons/resources/qald/BadQuestionsfileReport.txt
+https://github.com/AKSW/NLIWOD/blob/master/qa.commons/resources/qald/BadQuestionsfileReport.txt
 
 The last line of the file report can be paticularly interesting:
-"Unique Questions total in all Datasets: 520 Faulty: 312 beforehand removed duplicates: 617"
+"Unique Questions total in all Datasets: 520 Faulty: 305 beforehand removed duplicates: 617"
 
-Which leaves uns with 520-312 = 208 good questions.
+Which leaves uns with 520-305 = 215 good questions.
 
 Note that the error with by far the highest occurrence is difference in answer sets. 
 
 All possible error flags are defined here:
-https://github.com/AKSW/NLIWOD/blob/dev/qa.commons/src/main/java/org/aksw/qa/commons/qald/Fail.java
+https://github.com/AKSW/NLIWOD/blob/master/qa.commons/src/main/java/org/aksw/qa/commons/qald/Fail.java
 
 ## QALD-7-train-hybrid dataset
 The qald7-train-hybrid dataset was created using the hybrid questions from QALD4 to QALD6.
