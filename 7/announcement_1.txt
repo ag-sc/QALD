@@ -1,51 +1,38 @@
-------------------------------------------------------------
-                         QALD-7
+TL;DR: New task 4, training data released, new submission information!
 
-Seventh Open Challenge on Question Answering over Linked Data
-       https://project-hobbit.eu/challenges/qald2017/
-------------------------------------------------------------
-
-Dear colleagues,
-
-We are happy to announce QALD-7, the seventh instalment of the open challenge on question answering over linked data. QALD-7 is part of the ESWC satellite events at ESWC 2017 (http://2017.eswc-conferences.org/) and puts a strong focus on multilinguality, hybrid approaches from both structured and unstructured data, Wikidata and large-scale data.
-
-The challenge is aimed at all systems that mediate between a user, expressing his or her information need in natural language (either as question or keywords, provided in seven languages: English, Spanish, Italian, French, German, Dutch, Romanian), and RDF data (in this case, DBpedia 2016-04).
-
-A full description of the challenge as well as the training data can be found at the following location:
-
+QALD2017 CHALLENGE – ESWC 2017
+ESWC 2017, May 28th, 2016 to June 1st, 2017 Portoroz, Slovenia.
 https://project-hobbit.eu/challenges/qald2017/
 
-Schedule
---------
+The key challenge for Question Answering over Linked Data is to translate a user’s information need into a form such that it can be evaluated using standard Semantic Web query processing and inferencing techniques. The main task of QALD therefore is the following:
 
-Training phase starts at Friday January 13th, 2017, the further schedule is as follows:
+Given one or several RDF dataset(s) as well as additional knowledge sources and natural language questions or keywords, return the correct answers or a SPARQL query that retrieves these answers.
+In order to focus on specific aspects and challenges, we propose the following three tasks:
 
-Challenge papers submission deadline (5 pages document): Friday March 10th, 2017
-Challenge paper reviews: Tuesday April 5th, 2017
+Task 1: Multilingual question answering over DBpedia
+Task 2: Hybrid question answering
+Task 3: Large-Scale question answering over RDF
+Task 4: Wikidata-based question answering
 
-Notifications sent to participants and invitations to submit task results: Friday April 7th, 2017
-Test data (and other participation tools) published: Friday April 7th, 2017
-Camera ready papers for the conference (5 pages document): Sunday April 23rd, 2017
-
-Submission of challenge results: Friday May 19th, 2017
-Proclamation of winners: During ESWC2017 closing ceremony
-
-Registration
-------------
-
-If you want to participate, at least one author needs to register for the challenge at the ESWC 2017 at http://2017.eswc-conferences.org/. 
+More details on the different tasks can be found here: https://project-hobbit.eu/challenges/qald2017/
 
 Submission
-----------
 
-All the participants have to submit their contributions to the post-proceedings book (5 pages, LNCS-formatted document).
+The QALD challenge provides an automatic evaluation tool (GERBIL QA integrated into the HOBBIT platform) that is open source and available for everyone to re-use. This tool is accessible online, so that participants can simply upload the answers produced by their system or even check their system via a webservice. Each experiment will have a citable, time-stable and archivable URI which is both human- and machine-readable. It is mandatory for each system to provide an endpoint URL in the submission PDF in order to be evaluated with GERBIL QA.
 
-Prizes
-------
+We are accepting papers (up to 5 pages) describing the submitted approach and evaluation results. Submissions must be in English and in PDF, formatted in the style of the Springer Publications format for Lecture Notes in Computer Science (LNCS). 
 
-We aim to be able to offer prizes for the top-scoring teams. More details will be announced soon.
+Papers should be submitted through the EasyChair system (TBA) no later than midnight Friday March 10th, 2017, Hawaii Time. Submissions will be reviewed by members of the challenge program committee. Papers will be evaluated according to their significance, originality, technical content, style, clarity, and relevance to the challenge. The complete set of papers will be published with the CEUR Workshop Proceedings (CEUR-WS.org), listed by the DBLP.
 
-We cordially invite everyone working on question answering over linked data to participate, and look forward to another exciting challenge!
+For any questions, please write an email to Ricardo Usbeck (usbeck AT informatik.uni-leipzig.de).
 
-With best regards,
-The QALD team
+Preliminary Schedule
+
+Release of training data and instructions:	Friday January 13th, 2017
+Release of test dataset:	Friday April 7th, 2017
+
+Paper submission deadline:	Friday March 10th, 2017
+Challenge paper reviews:	Tuesday April 5th, 2017
+Paper Notifications and invitation to task:	Friday April 7th, 2017
+Camera ready papers (5 pages document):	Sunday April 23rd, 2017
+Submission of camera-ready papers:	April 24, 2014
