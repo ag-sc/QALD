@@ -62,6 +62,14 @@ WHERE {
 <string lang="fr">Quelle est la hauteur du phare de Colombo?</string>
 <string lang="nl">Hoe hoog is de vuurtoren van Colombo?</string>
 <string lang="ro">Cât de înalt este farul din Colombo?</string>
+<keywords lang="en">high, lighthouse in Colombo</keywords>
+<keywords lang="fa">فانوس دریایی کولومبو، بلند</keywords>
+<keywords lang="de">hoch, Leuchtturm in Colombo</keywords>
+<keywords lang="es">alta, Faro de Colombo?</keywords>
+<keywords lang="it">altezza, faro di Colombo</keywords>
+<keywords lang="fr">hauteur, Phare de Colombo</keywords>
+<keywords lang="nl">hoog, vuurtoren van Colombo</keywords>
+<keywords lang="ro">înalt, farul din Colombo</keywords>
 <query>SELECT DISTINCT ?num WHERE {  &lt;http://dbpedia.org/resource/Colombo_Lighthouse&gt; &lt;http://dbpedia.org/ontology/height&gt; ?num . } </query>
 <answers>
 <answer>29.0</answer>
@@ -99,6 +107,14 @@ WHERE {
 <string lang="fr">Qui est le présentateur de BBC Wildlife Specials?</string>
 <string lang="nl">Wie is de presentator van de BBC Wildlife Specials?</string>
 <string lang="ro">Cine este prezentatorul pentru BBC Wildlife Specials?</string>
+<keywords lang="en">host, BBC Wildlife Specials</keywords>
+<keywords lang="fa">مجری، مجموعه حیات وحش بی.بی.سی</keywords>
+<keywords lang="de">BBC Wildlife Specials, Moderator</keywords>
+<keywords lang="es">anfitrión, BBC Wildlife</keywords>
+<keywords lang="it">presentatore, speciali, BBC Wildlife</keywords>
+<keywords lang="fr">présentateur, BBC Wildlife Specials?</keywords>
+<keywords lang="nl">presentator, BBC Wildlife Specials</keywords>
+<keywords lang="ro">prezentator, BBC Wildlife Specials</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/BBC_Wildlife_Specials&gt; &lt;http://dbpedia.org/ontology/presenter&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/David_Attenborough</answer>
@@ -113,6 +129,14 @@ WHERE {
 <string lang="fr">Combien a coûté Pulp Fiction?</string>
 <string lang="nl">Howeveel koste Pulp Fiction?</string>
 <string lang="ro">Cât a costat Pulp Fiction?</string>
+<keywords lang="en">cost, Pulp Fiction</keywords>
+<keywords lang="fa">پالپ فیکشن، هزینه</keywords>
+<keywords lang="de">Kosten, Pulp Fiction</keywords>
+<keywords lang="es">costo, Pulp Fiction</keywords>
+<keywords lang="it">costo, Pulp Fiction</keywords>
+<keywords lang="fr">prix, Pulp Fiction</keywords>
+<keywords lang="nl">kosten, Pulp Fiction</keywords>
+<keywords lang="ro">cost, Pulp Fiction</keywords>
 <query>SELECT DISTINCT ?n WHERE {  &lt;http://dbpedia.org/resource/Pulp_Fiction&gt; &lt;http://dbpedia.org/ontology/budget&gt; ?n . } </query>
 <answers>
 <answer>8.0</answer>
@@ -127,6 +151,14 @@ WHERE {
 <string lang="fr">Dans quelle ville se trouve la brasserie de Heineken?</string>
 <string lang="nl">In welke stad bevindt zich de Heineken brouwerij?</string>
 <string lang="ro">În ce oraș este fabrica de bere Heineken?</string>
+<keywords lang="en">city, Heineken brewery</keywords>
+<keywords lang="fa">آبجوسازی هینکن، شهر</keywords>
+<keywords lang="de">Stadt, Heinekenbrauerei</keywords>
+<keywords lang="es">ciudad, fábrica cerveza Heineken</keywords>
+<keywords lang="it">città, birrificio della Heiniken</keywords>
+<keywords lang="fr">ville, brasserie, Heineken?</keywords>
+<keywords lang="nl">stad, Heineken, brouwerij</keywords>
+<keywords lang="ro">oraș, fabrica de bere Heineken</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Heineken&gt; &lt;http://dbpedia.org/ontology/manufacturer&gt; ?x . ?x &lt;http://dbpedia.org/ontology/locationCity&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Amsterdam</answer>
@@ -141,6 +173,14 @@ WHERE {
 <string lang="fr">Quand a commencé l'opération Overlord?</string>
 <string lang="nl">Wanneer vond Operatie Overlord plaats?</string>
 <string lang="ro">Când a început operațiunea Overlord?</string>
+<keywords lang="en">when, Operation Overlord, commence</keywords>
+<keywords lang="fa">نبرد خان بزرگ، شروع</keywords>
+<keywords lang="de">Operation Overlord, Datum</keywords>
+<keywords lang="es">comienzo, operación Overlord </keywords>
+<keywords lang="it">data di inizio, operatione Overlord</keywords>
+<keywords lang="fr">date de commencement, opération Overlord</keywords>
+<keywords lang="nl">Operatie Overlord, datum</keywords>
+<keywords lang="ro">când, început, operațiunea Overlord</keywords>
 <query>SELECT DISTINCT ?d WHERE { &lt;http://dbpedia.org/resource/Operation_Overlord&gt; &lt;http://dbpedia.org/ontology/date&gt; ?d . } </query>
 <answers>
 <answer>1944-08-30</answer>
@@ -155,6 +195,14 @@ WHERE {
 <string lang="fr">Dans quelle ville se termine la route 68 chilienne?</string>
 <string lang="nl">In welke stad eindigt de Route 68 in Chili?</string>
 <string lang="ro">În ce oraș se termină Route 68 din Chile?</string>
+<keywords lang="en">city, Chile Route 68, ends</keywords>
+<keywords lang="fa">شهر، مسیر 68 شیلی، پایان</keywords>
+<keywords lang="de">Stadt, aufhören, Ruta 68</keywords>
+<keywords lang="es">ciudad, termina, ruta Chilena 68</keywords>
+<keywords lang="it">città, termina, Route 68, Cile</keywords>
+<keywords lang="fr">route 68, chili, ville, terminaison</keywords>
+<keywords lang="nl">stad, eindigt, Route 68, Chili</keywords>
+<keywords lang="ro">oraș, termină, Route 68, Chile</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Chile_Route_68&gt; &lt;http://dbpedia.org/ontology/routeEnd&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Valparaíso</answer>
@@ -169,6 +217,14 @@ WHERE {
 <string lang="fr">Qui est le développeur de Slack?</string>
 <string lang="nl">Wie ontwikkelde Slack?</string>
 <string lang="ro">Cine a dezvoltat Slack?</string>
+<keywords lang="en">developer, Slack</keywords>
+<keywords lang="fa">اسلک، توسعه</keywords>
+<keywords lang="de">Slack, Entwickler</keywords>
+<keywords lang="es">desarrollador, Slack</keywords>
+<keywords lang="it">sviluppatore, Slack</keywords>
+<keywords lang="fr">développeur, Slack</keywords>
+<keywords lang="nl">Slack, ontwikkelaar</keywords>
+<keywords lang="ro">dezvoltator, Slack</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/product&gt; &lt;http://dbpedia.org/resource/Slack_(software)&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Slack_Technologies</answer>
@@ -254,6 +310,14 @@ WHERE {
 <string lang="fr">Quels sont les villes traversées par la Weser?</string>
 <string lang="nl">Door welke steden loopt de Weser?</string>
 <string lang="ro">Ce orașe străbate Weserul?</string>
+<keywords lang="en">Weser, flow through, city</keywords>
+<keywords lang="fa">وزر، شهرهایی، می گذرد</keywords>
+<keywords lang="de">Weser, fließen, Stadt</keywords>
+<keywords lang="es">cuidad, pasa, Weser</keywords>
+<keywords lang="it">città, scorrere, fiume Weser</keywords>
+<keywords lang="fr">villes, traverser, Weser</keywords>
+<keywords lang="nl">stad, loopt door, Weser</keywords>
+<keywords lang="ro">Weser, străbate, oraș</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Weser&gt; &lt;http://dbpedia.org/ontology/city&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Fulda_(river)</answer>
@@ -274,6 +338,14 @@ WHERE {
 <string lang="fr">Quel est le nombre de sièges dans le stade de FC Porto?</string>
 <string lang="nl">Hoeveel plaatsen heeft het stadion van FC Porto?</string>
 <string lang="ro">Câte locuri are stadionul lui FC Porto?</string>
+<keywords lang="en">How many seats, stadium of FC Porto</keywords>
+<keywords lang="fa">ورزشگاه باشگاه پورتو، چند صندلی</keywords>
+<keywords lang="de">FC Porto, Heimstadium, wieviele, Plätze</keywords>
+<keywords lang="es">asientos, estadio FC Porto</keywords>
+<keywords lang="it">posti a sedere, stadio del FC Porto</keywords>
+<keywords lang="fr">nombre de sièges, stade, FC Porto</keywords>
+<keywords lang="nl">plaatsen, stadion, FC Porto</keywords>
+<keywords lang="ro">Câte locuri, stadionul lui FC Porto</keywords>
 <query>SELECT DISTINCT ?n WHERE { &lt;http://dbpedia.org/resource/FC_Porto&gt; &lt;http://dbpedia.org/ontology/ground&gt; ?x . ?x &lt;http://dbpedia.org/ontology/seatingCapacity&gt; ?n . } </query>
 <answers>
 <answer>50035</answer>
@@ -288,6 +360,14 @@ WHERE {
 <string lang="fr">Qui est l'époux de la fille de Robert Kennedy?</string>
 <string lang="nl">Met wie is de dochter van Robert Kennedy getrouwd?</string>
 <string lang="ro">Cu cine este căsătorită fiica lui Robert Kennedy?</string>
+<keywords lang="en">Robert Kennedy, daughter, married</keywords>
+<keywords lang="fa">دختر، رابرت کندی، ازدواج</keywords>
+<keywords lang="de">Robert Kennedy, Tochter, verheiratet</keywords>
+<keywords lang="es">Robert Kennedy, hija, casada</keywords>
+<keywords lang="it">Robert Kennedy, figlia, sposata</keywords>
+<keywords lang="fr">épou, fille, Ingrid Bergman</keywords>
+<keywords lang="nl">Robert Kennedy, dochter, getrouwd</keywords>
+<keywords lang="ro">Robert Kennedy, fiică, căsătorită</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Robert_F._Kennedy&gt; &lt;http://dbpedia.org/ontology/child&gt; ?child .  ?child &lt;http://dbpedia.org/ontology/spouse&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Cheryl_Hines</answer>
@@ -303,6 +383,14 @@ WHERE {
 <string lang="fr">Quels lives de Kerouac ont été publiés par Viking Press?</string>
 <string lang="nl">Welke boeken van Jack Kerouac werden uitgegeven door Viking Press?</string>
 <string lang="ro">Ce cărți de Kerouac a fost publicate de Viking Press?</string>
+<keywords lang="en">book, Kerouac, publish, Viking Press</keywords>
+<keywords lang="fa">کتاب هایی، کرواک، انتشارات وایکینگ، منتشر</keywords>
+<keywords lang="de">Buch, Kerouac, verlegen, Viking Press</keywords>
+<keywords lang="es">libro, Kerouac, publicado, Viking Press</keywords>
+<keywords lang="it">libro, Kerouac, pubblicare, Viking Press</keywords>
+<keywords lang="fr">lives de Kerouac, publiés, Viking Press</keywords>
+<keywords lang="nl">boek, Jack Kerouac, uitgever, Viking Press</keywords>
+<keywords lang="ro">carte, Kerouac, publica, Viking Press</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Book&gt; .  ?uri &lt;http://dbpedia.org/ontology/publisher&gt; &lt;http://dbpedia.org/resource/Viking_Press&gt; .  ?uri &lt;http://dbpedia.org/ontology/author&gt; &lt;http://dbpedia.org/resource/Jack_Kerouac&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/On_the_Road</answer>
@@ -319,6 +407,14 @@ WHERE {
 <string lang="fr">Quelle est la taille de Amazon Eve?</string>
 <string lang="nl">Hoe lang is Amazon Eve?</string>
 <string lang="ro">Ce înălțime are Amazon Eve?</string>
+<keywords lang="en">Amazon Eve, tall</keywords>
+<keywords lang="fa">قد، آمازون ایو</keywords>
+<keywords lang="de">Amazon Eve, groß</keywords>
+<keywords lang="es">Amazon Eve, altura</keywords>
+<keywords lang="it">Amazon Eve, altezza</keywords>
+<keywords lang="fr">taille, Amazon Eve</keywords>
+<keywords lang="nl">lengte, Amazon Eve</keywords>
+<keywords lang="ro">Amazon Eve, înălțime</keywords>
 <query>SELECT DISTINCT ?height WHERE {  &lt;http://dbpedia.org/resource/Amazon_Eve&gt; &lt;http://dbpedia.org/ontology/height&gt; ?height . } </query>
 <answers>
 <answer>2.02</answer>
@@ -406,6 +502,14 @@ WHERE {
 <string lang="fr">Qui a découvert Cérès?</string>
 <string lang="nl">Wie ontdekte Ceres?</string>
 <string lang="ro">Cine l-a descoperit pe Ceres?</string>
+<keywords lang="en">discoverer, Ceres</keywords>
+<keywords lang="fa">سرس، کشف</keywords>
+<keywords lang="de">Ceres, Entdecker</keywords>
+<keywords lang="es">descubridor, Ceres</keywords>
+<keywords lang="it">scopritore, Cerere</keywords>
+<keywords lang="fr">découvreur, Cérès</keywords>
+<keywords lang="nl">Ceres, ontdekker</keywords>
+<keywords lang="ro">descoperitor, Ceres</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Ceres_(dwarf_planet)&gt; &lt;http://dbpedia.org/ontology/discoverer&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Giuseppe_Piazzi</answer>
@@ -467,6 +571,14 @@ WHERE {
 <string lang="fr">Quel est le pays le plus grand du monde?</string>
 <string lang="nl">Wat is het grootse land ter wereld?</string>
 <string lang="ro">Care este cea mai mare țară din lume?</string>
+<keywords lang="en">largest country, world</keywords>
+<keywords lang="fa">بزرگترین کشور، دنیا</keywords>
+<keywords lang="de">größtes Land</keywords>
+<keywords lang="es">país, más grande mundo</keywords>
+<keywords lang="it">nazione, più grande al mondo</keywords>
+<keywords lang="fr">Pays, grandeur maximale</keywords>
+<keywords lang="nl">grootste land</keywords>
+<keywords lang="ro">cea mai mare țară, lume</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Country&gt; . ?uri &lt;http://dbpedia.org/ontology/areaTotal&gt; ?n . } ORDER BY DESC(?n) OFFSET 0 LIMIT 1</query>
 <answers>
 <answer>http://dbpedia.org/resource/Organization_for_Security_and_Co-operation_in_Europe</answer>
@@ -481,6 +593,14 @@ WHERE {
 <string lang="fr">Qui est le maire de Paris?</string>
 <string lang="nl">Wie is de burgemeester van Parijs?</string>
 <string lang="ro">Cine este primarul Parisului?</string>
+<keywords lang="en">mayor of Paris</keywords>
+<keywords lang="fa">شهردار، پاریس</keywords>
+<keywords lang="de">Paris, Bürgermeister</keywords>
+<keywords lang="es">alcalde París</keywords>
+<keywords lang="it">sindaco di Parigi</keywords>
+<keywords lang="fr">maire, Paris</keywords>
+<keywords lang="nl">burgemeester, Parijs</keywords>
+<keywords lang="ro">primarul Parisului</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Paris&gt; &lt;http://dbpedia.org/ontology/mayor&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Anne_Hidalgo</answer>
@@ -495,6 +615,14 @@ WHERE {
 <string lang="fr">Qui est le coach de l'équipe d'hockey sur glace d'Ankara?</string>
 <string lang="nl">Wie is de coach van het ijshockey team van Ankara.</string>
 <string lang="ro">Cine este antrenorul echipei de hochei pe gheață din Ankara?</string>
+<keywords lang="en">coach, ice hockey team, Ankara</keywords>
+<keywords lang="fa">سرمربی، تیم هاکی آنکارا</keywords>
+<keywords lang="de">Ankara, Eishockeymannschaft, Trainer</keywords>
+<keywords lang="es">entrenador, equipo hockey sobre hielo, Ankara</keywords>
+<keywords lang="it">allenatore, squadra di hockey, Ankara</keywords>
+<keywords lang="fr">coach, hockey sur glace, Ankara</keywords>
+<keywords lang="nl">coach, ijshockey team, Ankara</keywords>
+<keywords lang="ro">antrenor, echipa de hochei pe gheață, Ankara</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?x &lt;http://dbpedia.org/ontology/city&gt; &lt;http://dbpedia.org/resource/Ankara&gt; . ?x &lt;http://dbpedia.org/ontology/league&gt; &lt;http://dbpedia.org/resource/Turkish_Ice_Hockey_First_League&gt; . ?x &lt;http://dbpedia.org/ontology/coach&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/İbrahim_Oğuz</answer>
@@ -562,6 +690,14 @@ WHERE {
 <string lang="fr">Combien a coûté le film de Légo</string>
 <string lang="nl">Hoveel heeft de Lego Movie gekost?</string>
 <string lang="ro">Cât de mult a costat filmul Lego?</string>
+<keywords lang="en">Lego Movie, cost</keywords>
+<keywords lang="fa">فیلم لگو، هزینه</keywords>
+<keywords lang="de">Legofilm, Budget</keywords>
+<keywords lang="es">precio, película de Lego</keywords>
+<keywords lang="it">costo, Lego Movie</keywords>
+<keywords lang="fr">prix, film de Légo</keywords>
+<keywords lang="nl">Lego Movie, kosten</keywords>
+<keywords lang="ro">filmul Lego, costa</keywords>
 <query>SELECT DISTINCT ?n WHERE { &lt;http://dbpedia.org/resource/The_Lego_Movie&gt; &lt;http://dbpedia.org/ontology/budget&gt; ?n . } </query>
 <answers>
 <answer>6.0E7</answer>
@@ -576,6 +712,14 @@ WHERE {
 <string lang="fr">Où commence Piccadilly?</string>
 <string lang="nl">Waar begint Piccadilly?</string>
 <string lang="ro">Unde începe Piccadilly?</string>
+<keywords lang="en">Piccadilly, start</keywords>
+<keywords lang="fa">پیکدیلی، شروع</keywords>
+<keywords lang="de">Start, Piccadilly</keywords>
+<keywords lang="es">principio, Piccadilly</keywords>
+<keywords lang="it">Piccadilly, iniziare</keywords>
+<keywords lang="fr">début, Piccadilly</keywords>
+<keywords lang="nl">Piccadilly, begin</keywords>
+<keywords lang="ro">Piccadilly, început</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/routeStart&gt; &lt;http://dbpedia.org/resource/Piccadilly&gt;. } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Dover_Street</answer>
@@ -641,6 +785,14 @@ WHERE {
 <string lang="fr">Dans quels films jouent Julia Roberts et Richard Gere?</string>
 <string lang="nl">In welke films speelden zowel Julia Roberts als Richard Gere?</string>
 <string lang="ro">În ce filme joacă Julia Roberts precum și Richard Gere?</string>
+<keywords lang="en">film, play, Julia Roberts, Richard Gere</keywords>
+<keywords lang="fa">فیلم هایی، جولیا رابرتس، ریچارد گییر، بازی</keywords>
+<keywords lang="de">Film, mitspielen, Julia Roberts, Richard Gere</keywords>
+<keywords lang="es">película, actores, Julia Roberts, Richard Gere</keywords>
+<keywords lang="it">film, recitare, Julia Roberts, Richard Gere</keywords>
+<keywords lang="fr">films, Julia Roberts, Richard Gere</keywords>
+<keywords lang="nl">film, speel, Julia Roberts, Richard Gere</keywords>
+<keywords lang="ro">film, joacă, Julia Roberts, Richard Gere</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Film&gt; .  ?uri &lt;http://dbpedia.org/ontology/starring&gt; &lt;http://dbpedia.org/resource/Julia_Roberts&gt; .  ?uri &lt;http://dbpedia.org/ontology/starring&gt; &lt;http://dbpedia.org/resource/Richard_Gere&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Runaway_Bride_(film)</answer>
@@ -681,6 +833,14 @@ WHERE {
 <string lang="fr">Quand est née Rachel Stevens?</string>
 <string lang="nl">In welk jaar word Rachel Stevens geboren?</string>
 <string lang="ro">În ce an s-a născut Rachel Stevens?</string>
+<keywords lang="en">year, born, Rachel Stevens</keywords>
+<keywords lang="fa">ریچل استیونز، سالی، متولد</keywords>
+<keywords lang="de">Jahr, geboren, Rachel Stevens</keywords>
+<keywords lang="es">año, nació, Rachel Stevens</keywords>
+<keywords lang="it">anno nascita, Rachel Stevens</keywords>
+<keywords lang="fr">année de naissance, Rachel Stevens</keywords>
+<keywords lang="nl">jaar, geboren, Rachel Stevens</keywords>
+<keywords lang="ro">an, născut, Rachel Stevens</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Rachel_Stevens&gt; &lt;http://dbpedia.org/ontology/birthYear&gt; ?uri . } </query>
 <answers>
 <answer>1978</answer>
@@ -773,6 +933,14 @@ WHERE {
 <string lang="fr">Combien de personnes vivent en Pologne?</string>
 <string lang="nl">Hoeveel mensen wonen er in Polen?</string>
 <string lang="ro">Câți oameni locuiesc în Polonia?</string>
+<keywords lang="en">How many people, Poland</keywords>
+<keywords lang="fa">نفر، لهستان، زندگی</keywords>
+<keywords lang="de">Polen, Einwohner</keywords>
+<keywords lang="es">Cuántas personas, habitan, Polonia</keywords>
+<keywords lang="it">quante persone, Polonia</keywords>
+<keywords lang="fr">nombre de personnnes, Pologne</keywords>
+<keywords lang="nl">Polen, inwoners</keywords>
+<keywords lang="ro">câți oameni, Polonia</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Poland&gt; &lt;http://dbpedia.org/ontology/populationTotal&gt; ?uri . }  </query>
 <answers>
 <answer>38483957</answer>
@@ -787,6 +955,14 @@ WHERE {
 <string lang="fr">Où se trouve le palais de Westminster?</string>
 <string lang="nl">Waar is de Palace of Westminster?</string>
 <string lang="ro">Care este locația Palatului Westminster?</string>
+<keywords lang="en">location, Houses of Parliament</keywords>
+<keywords lang="fa">مکان، کاخ وستمینستر</keywords>
+<keywords lang="de">Ort, Westminster-Palast</keywords>
+<keywords lang="es">localización, casas del parlamento</keywords>
+<keywords lang="it">luogo, Palazzo di Westminster</keywords>
+<keywords lang="fr">location, palais de Westminster</keywords>
+<keywords lang="nl">plaats, Palace of Westminster</keywords>
+<keywords lang="ro">locație, Palatul Westminster</keywords>
 <query>SELECT ?uri WHERE {  &lt;http://dbpedia.org/resource/Palace_of_Westminster&gt; &lt;http://dbpedia.org/ontology/location&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Greater_London</answer>
@@ -850,6 +1026,14 @@ WHERE {
 <string lang="fr">Quel est le dernier film d'Alec Guinness?</string>
 <string lang="nl">Wat was de laatste film met Alec Guinness?</string>
 <string lang="ro">Care a fost ultimul film cu Alec Guinness?</string>
+<keywords lang="en">Alec Guinness, last, movie</keywords>
+<keywords lang="fa">آخرین، فیلم، الک گینس</keywords>
+<keywords lang="de">Alec Guinness, letzter, Film</keywords>
+<keywords lang="es">última película, Alec Guinness</keywords>
+<keywords lang="it">Alec Guinness, ultimo film</keywords>
+<keywords lang="fr">Alec Guiness, dernier film</keywords>
+<keywords lang="nl">Alec Guinness, laatste, film</keywords>
+<keywords lang="ro">Alec Guinness, ultim, film</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Film&gt; .  ?uri &lt;http://dbpedia.org/ontology/starring&gt; &lt;http://dbpedia.org/resource/Alec_Guinness&gt; .  ?uri &lt;http://dbpedia.org/ontology/releaseDate&gt; ?date . } ORDER BY DESC(?date) LIMIT 1 </query>
 <answers>
 <answer>http://dbpedia.org/resource/Kafka_(film)</answer>
@@ -915,6 +1099,14 @@ WHERE {
 <string lang="fr">Qui est le créateur de Family Guy?</string>
 <string lang="nl">Wie heeft Family Guy bedacht?</string>
 <string lang="ro">Cine a creat Family Guy?</string>
+<keywords lang="en">create, Family Guy</keywords>
+<keywords lang="fa">مرد خانواده، ساخته</keywords>
+<keywords lang="de">Family Guy, Erschaffer</keywords>
+<keywords lang="es">creador, Family Guy</keywords>
+<keywords lang="it">creare, I Griffin</keywords>
+<keywords lang="fr">créateur, Family Guy?</keywords>
+<keywords lang="nl">Family Guy, schepper</keywords>
+<keywords lang="ro">creat, Family Guy</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Family_Guy&gt; &lt;http://dbpedia.org/ontology/creator&gt; ?uri . }  </query>
 <answers>
 <answer>http://dbpedia.org/resource/Seth_MacFarlane</answer>
@@ -954,6 +1146,14 @@ WHERE {
 <string lang="fr">Qui a composé la chanson Hotel California?</string>
 <string lang="nl">Wie schreef het lied Hotel California?</string>
 <string lang="ro">Cine a compus cântecul Hotel California?</string>
+<keywords lang="en">write, song, Hotel California</keywords>
+<keywords lang="fa">اهنگ هتل کالیفرنیا، نوشت</keywords>
+<keywords lang="de">Lied, Hotel California, geschrieben</keywords>
+<keywords lang="es">autor, canción Hotel California</keywords>
+<keywords lang="it">scrivere, canzone, Hotel California</keywords>
+<keywords lang="fr">compositeur, Hotel California, chanson</keywords>
+<keywords lang="nl">lied, Hotel California, schrijver</keywords>
+<keywords lang="ro">scrie, cântec, Hotel California</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Hotel_California&gt; &lt;http://dbpedia.org/ontology/writer&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Don_Felder</answer>
@@ -970,6 +1170,14 @@ WHERE {
 <string lang="fr">Donnes-moi tous les acteurs qui ont joué dans des films réalisés par Williams Shatner.</string>
 <string lang="nl">Geef alle acteurs van films waar William Shatner de regie van voerde.</string>
 <string lang="ro">Dă-mi toți actorii care joacă roluri principale în filme regizate de William Shatner.</string>
+<keywords lang="en">actor, starring, movie, direct, William Shatner</keywords>
+<keywords lang="fa">بازیگرانی، فیلم های، کارگردانی شده، ویلیام شاتنر، بازی کرده اند</keywords>
+<keywords lang="de">Schauspieler, Film, Regie, William Shatner</keywords>
+<keywords lang="es">actor, película, director, William Shatner</keywords>
+<keywords lang="it">attore, recitare, film, diretto, William Shatner</keywords>
+<keywords lang="fr">acteur, film, réalisé, William Shatner</keywords>
+<keywords lang="nl">acteur, film, regisseur, William Shatner</keywords>
+<keywords lang="ro">actor, rol principal, film, regiza, William Shatner</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?x &lt;http://dbpedia.org/ontology/director&gt; &lt;http://dbpedia.org/resource/William_Shatner&gt; .  ?x &lt;http://dbpedia.org/ontology/starring&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Tom_Towles</answer>
@@ -995,6 +1203,14 @@ WHERE {
 <string lang="fr">Quels sont les ingrédients d'un cookie au chocolat</string>
 <string lang="nl">Wat heb je nodig voor chocolate chip cookies?</string>
 <string lang="ro">Ce conține un biscuit cu fulgi de ciocolată?</string>
+<keywords lang="en">ingredients, chocolate chip cookie</keywords>
+<keywords lang="fa">کیک شکلاتی</keywords>
+<keywords lang="de">Zutaten, Chocolate Chip Cookie</keywords>
+<keywords lang="es">ingredientes, galleta de chocolate</keywords>
+<keywords lang="it">ingredienti, biscotto con gocce di cioccolato</keywords>
+<keywords lang="fr">ingrédients, cookie au chocolat</keywords>
+<keywords lang="nl">ingrediënten, chocolate chip cookie</keywords>
+<keywords lang="ro">ingrediente, biscuit cu fulgi de ciocolată</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Chocolate_chip_cookie&gt; &lt;http://dbpedia.org/ontology/ingredient&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Chocolate_chip</answer>
@@ -1047,6 +1263,14 @@ WHERE {
 <string lang="fr">Quels sont les ingrédients du gateau aux carottes?</string>
 <string lang="nl">Welke ingrediënten heb ik nodig voor worteltaart?</string>
 <string lang="ro">De ce ingrediente am nevoie pentru tort de morcovi?</string>
+<keywords lang="en">carrot cake, ingredients</keywords>
+<keywords lang="fa">مواد اولیه ای، کیک هویج</keywords>
+<keywords lang="de">Möhrenkuchen, Zutaten</keywords>
+<keywords lang="es">ingredientes, tarta de zanahorias?</keywords>
+<keywords lang="it">ingredienti, torta di carote</keywords>
+<keywords lang="fr">ingrédients, gateau aux carottes</keywords>
+<keywords lang="nl">worteltaart, ingrediënten</keywords>
+<keywords lang="ro">tort de morcovi, ingrediente</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Carrot_cake&gt; &lt;http://dbpedia.org/ontology/ingredient&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Almond</answer>
@@ -1066,6 +1290,14 @@ WHERE {
 <string lang="fr">Est-ce que Neymar joue pour Madrid?</string>
 <string lang="nl">Speelt Neymar bij Real Madrid?</string>
 <string lang="ro">Neymar joacă pentru Real Madrid?</string>
+<keywords lang="en">Neymar, play, Real Madrid</keywords>
+<keywords lang="fa">نیمار، رئال مادرید، بازی</keywords>
+<keywords lang="de">Neymar, spielen für, Real Madrid</keywords>
+<keywords lang="es">Neymar, jugador, Real Madrid</keywords>
+<keywords lang="it">Neymar, giocare, Real Madrid</keywords>
+<keywords lang="fr">Neymar, joueur, Madrid</keywords>
+<keywords lang="nl">Neymar, spelen bij, Real Madrid</keywords>
+<keywords lang="ro">Neymar, joacă, Real Madrid</keywords>
 <query>ASK WHERE { &lt;http://dbpedia.org/resource/Neymar&gt; &lt;http://dbpedia.org/ontology/team&gt; &lt;http://dbpedia.org/resource/Real_Madrid_C.F.&gt; . }</query>
 <answers>
 <answer>false</answer>
@@ -1080,6 +1312,14 @@ WHERE {
 <string lang="fr">Quel informaticien a gagné un Oscar?</string>
 <string lang="nl">Welke informaticus won een Oscar?</string>
 <string lang="ro">Care informatician a câștigat un Oscar?</string>
+<keywords lang="en">computer scientist, win, oscar</keywords>
+<keywords lang="fa">دانشمند کامپیوتر، اسکار</keywords>
+<keywords lang="de">Informatiker, Oscar, gewonnen</keywords>
+<keywords lang="es">ingeniero informático, ganó, Oscar</keywords>
+<keywords lang="it">informatico, vincere, Oscar</keywords>
+<keywords lang="fr">informaticient, gagné, Oscar</keywords>
+<keywords lang="nl">informaticus, winnen, Oscar</keywords>
+<keywords lang="ro">informatician, câștigat, Oscar</keywords>
 <query>SELECT DISTINCT ?uri WHERE { { ?uri &lt;http://dbpedia.org/ontology/field&gt; &lt;http://dbpedia.org/resource/Computer_science&gt; . } UNION { ?uri &lt;http://purl.org/dc/elements/1.1/description&gt; ?s . FILTER regex(?s,'computer scientist','i') } ?uri &lt;http://dbpedia.org/ontology/award&gt; &lt;http://dbpedia.org/resource/Academy_Awards&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Edwin_Catmull</answer>
@@ -1430,6 +1670,14 @@ WHERE {
 <string lang="fr">Qui a créé la bande dessinée Captain America?</string>
 <string lang="nl">Door wie werd Batman bedacht?</string>
 <string lang="ro">Cine a creat Batman?</string>
+<keywords lang="en">Batman, creator</keywords>
+<keywords lang="fa">بتمن، ساخت</keywords>
+<keywords lang="de">Batman, Erfinder</keywords>
+<keywords lang="es">creador, comic, Capitán América</keywords>
+<keywords lang="it">creatore, Batman</keywords>
+<keywords lang="fr">bande dessinée, créer, Captain America</keywords>
+<keywords lang="nl">bedenker, Batman</keywords>
+<keywords lang="ro">Batman, creat</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Batman&gt; &lt;http://dbpedia.org/ontology/creator&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Bill_Finger</answer>
@@ -1445,6 +1693,14 @@ WHERE {
 <string lang="fr">Qui joua Gus Fring dans Breaking Bad?</string>
 <string lang="nl">Wie speelt Gus Fring in Breaking Bad?</string>
 <string lang="ro">Cine l-a jucat pe Gus Fring în Breaking Bad?</string>
+<keywords lang="en">play, Gus Fring, Breaking Bad</keywords>
+<keywords lang="fa">گوستاوو فرینگ، بریکینگ بد، بازی</keywords>
+<keywords lang="de">Gus Fring, Breaking Bad, Schauspieler</keywords>
+<keywords lang="es">actor, Gus Fring, Breaking Bad</keywords>
+<keywords lang="it">interpretare, Gustavo Fring, Breaking Bad - Reazioni collaterali</keywords>
+<keywords lang="fr">acteur, Gus Fring, Breaking Bad</keywords>
+<keywords lang="nl">Gus Fring, acteur, Breaking Bad</keywords>
+<keywords lang="ro">jucat, Gus Fring, Breaking Bad</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Gus_Fring&gt; &lt;http://dbpedia.org/ontology/portrayer&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Giancarlo_Esposito</answer>
@@ -1483,6 +1739,14 @@ WHERE {
 <string lang="fr">Dans quel empire ancien payait-on avec des fèves de cacao?</string>
 <string lang="nl">In welke oude imperium kon je met cacaobonen betalen?</string>
 <string lang="ro">În ce imperiu antic puteai plăti cu boabe de cacao?</string>
+<keywords lang="en">ancient empire, pay, cocoa beans</keywords>
+<keywords lang="fa">امپراتوری باستانی، دانه های کاکائو، داد و ستد</keywords>
+<keywords lang="de">altes Reich, bezahlen, Kakaobohnen</keywords>
+<keywords lang="es">imperio antiguo, pagar, granos cacao</keywords>
+<keywords lang="it">antico impero, pagare, fave di cacao</keywords>
+<keywords lang="fr">empire ancien, monnaie, fève de cacao</keywords>
+<keywords lang="nl">oude imperium, betalen, cacaobonen</keywords>
+<keywords lang="ro">imperiu antic, plăti, boabe de cacao</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/currency&gt; &lt;http://dbpedia.org/resource/Cocoa_bean&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Aztec_Empire</answer>
@@ -1576,6 +1840,14 @@ WHERE {
 <string lang="fr">Quelles sont les companies d'électronique fondées à Beijing?</string>
 <string lang="nl">Welke elektronica bedrijven zijn opgericht in Peking?</string>
 <string lang="ro">Care companii de electronice au fost fondate în Beijing?</string>
+<keywords lang="en">electronics companies, founded, Beijing</keywords>
+<keywords lang="fa">شرکت های الکترونیکی، پکن، تأسیس</keywords>
+<keywords lang="de">Elektronikunternehmen, gegründet in, Peking</keywords>
+<keywords lang="es">compañías de electrónica, fundadas, Pekín</keywords>
+<keywords lang="it">società di elettronica, fondate, Pechino</keywords>
+<keywords lang="fr">companies d'électronique, fondées, Beijing</keywords>
+<keywords lang="nl">elektronica bedrijven, opgericht in, Peking</keywords>
+<keywords lang="ro">companii de electronice, fondat, Beijing</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Company&gt; . ?uri &lt;http://dbpedia.org/ontology/industry&gt; &lt;http://dbpedia.org/resource/Electronics&gt; . ?uri &lt;http://dbpedia.org/ontology/foundationPlace&gt; &lt;http://dbpedia.org/resource/Beijing&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Lenovo</answer>
@@ -1618,6 +1890,14 @@ WHERE {
 <string lang="fr">Combien de magasins Aldi sont là?</string>
 <string lang="nl">Hoeveel Aldi winkels zijn er?</string>
 <string lang="ro">Câte magazine Aldi există?</string>
+<keywords lang="en">own, Aldi</keywords>
+<keywords lang="fa">فروشگاه، آلدی</keywords>
+<keywords lang="de">gehören, Aldi</keywords>
+<keywords lang="es">pertenece, Aldi</keywords>
+<keywords lang="it">possedere, Aldi</keywords>
+<keywords lang="fr">possède, Aldi</keywords>
+<keywords lang="nl">eigenaar, Aldi</keywords>
+<keywords lang="ro">avea, Aldi</keywords>
 <query>SELECT DISTINCT ?number WHERE {  &lt;http://dbpedia.org/resource/Aldi&gt; &lt;http://dbpedia.org/ontology/numberOfLocations&gt; ?number . } </query>
 <answers>
 <answer>9600</answer>
@@ -1632,6 +1912,14 @@ WHERE {
 <string lang="fr">Quelle est la capitale du Cameroun?</string>
 <string lang="nl">Wat is de hoofdstad van Kameroen?</string>
 <string lang="ro">Care este capitala Camerunului?</string>
+<keywords lang="en">capital, Cameroon</keywords>
+<keywords lang="fa">پایتخت، کامرون</keywords>
+<keywords lang="de">Hauptstadt, Kamerun</keywords>
+<keywords lang="es">capital, Camerún</keywords>
+<keywords lang="it">capitale, Cameroon</keywords>
+<keywords lang="fr">capitale, Cameroun</keywords>
+<keywords lang="nl">hoofdstad, Kameroen</keywords>
+<keywords lang="ro">capitală, Camerun</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Cameroon&gt; &lt;http://dbpedia.org/ontology/capital&gt; ?uri. } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Yaoundé</answer>
@@ -1699,6 +1987,14 @@ WHERE {
 <string lang="fr">Donnes-moi tous les films dont Francis réalisés par Francis Ford Coppola.</string>
 <string lang="nl">Geef alle films die werden geregisseerd door Francis Ford Coppola.</string>
 <string lang="ro">Dă-mi toate filmele regizate de Francis Ford Coppola.</string>
+<keywords lang="en">movie, direct, Francis Ford Coppola</keywords>
+<keywords lang="fa">فیلم، کارگردانی، فرانسیس فورد کوپولا</keywords>
+<keywords lang="de">Film, Regie, Francis Ford Coppola</keywords>
+<keywords lang="es">película, director, Francis Ford Coppola</keywords>
+<keywords lang="it">film, dirigere, Francis Ford Coppola</keywords>
+<keywords lang="fr">film, directeur, Francis Ford Coppola</keywords>
+<keywords lang="nl">films, regisseur, Francis Ford Coppola</keywords>
+<keywords lang="ro">film, regizat, Francis Ford Coppola</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Film&gt; .  ?uri &lt;http://dbpedia.org/ontology/director&gt; &lt;http://dbpedia.org/resource/Francis_Ford_Coppola&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/The_Rain_People</answer>
@@ -1847,6 +2143,14 @@ WHERE {
 <string lang="fr">Donne-moi tous les petit-enfants de Elvis Presley.</string>
 <string lang="nl">Toon alle kleinkinderen van Elvis Presley.</string>
 <string lang="ro">Dă-mi nepoții lui Elvis Presley.</string>
+<keywords lang="en">Elvis Presley, grandchildren</keywords>
+<keywords lang="fa">نوه های، الویس پرسلی</keywords>
+<keywords lang="de">Elvis Presley, Enkel</keywords>
+<keywords lang="es">Elvis Presley, nietos</keywords>
+<keywords lang="it">Elvis Presley, nipoti</keywords>
+<keywords lang="fr">petit-enfants, Elvis Presley</keywords>
+<keywords lang="nl">Elvis Presley, kleinkinderen</keywords>
+<keywords lang="ro">Elvis Presley, nepoți</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Elvis_Presley&gt; &lt;http://dbpedia.org/ontology/child&gt; ?child . ?child &lt;http://dbpedia.org/ontology/child&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Riley_Keough</answer>
@@ -1861,6 +2165,14 @@ WHERE {
 <string lang="fr">Quels films avec Mickey Rourke furent dirigés par Guy Richtie?</string>
 <string lang="nl">Welke films met Mickey Rourke werden geregisseerd door Guy Ritchie?</string>
 <string lang="ro">Ce filme cu Mickey Rourke ca protagonist au fost regizate de Guy Ritchie?</string>
+<keywords lang="en">movies, starring, Mickey Rourke, directed, Guy Ritchie</keywords>
+<keywords lang="fa">فیلم هایی، بازی، میکی رورک، گای ریچی، کارگردانی</keywords>
+<keywords lang="de">Filme, mitspielen, Mickey Rourke, Regie führen, Guy Ritchie</keywords>
+<keywords lang="es">peliculas, protagonizadas, Mickey Rourke, dirigidas, Guy Ritchie</keywords>
+<keywords lang="it">film, attore, Mickey Rourke, diretti, Guy Ritchie</keywords>
+<keywords lang="fr">films, acteur, Mickey Rourke, directeur, Guy Richtie?</keywords>
+<keywords lang="nl">films, acteur, Mickey Rourke, geregisseerd, Guy Ritchie</keywords>
+<keywords lang="ro">filme, Mickey Rourke, protagonist, regizate, Guy Ritchie</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Film&gt; . ?uri &lt;http://dbpedia.org/ontology/starring&gt; &lt;http://dbpedia.org/resource/Mickey_Rourke&gt; . ?uri &lt;http://dbpedia.org/ontology/director&gt; &lt;http://dbpedia.org/resource/Guy_Ritchie&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/The_Hire</answer>
@@ -1875,6 +2187,14 @@ WHERE {
 <string lang="fr">Quand est mort le créateur de Dracula?</string>
 <string lang="nl">Wanneer stierf de bedenker van Dracula?</string>
 <string lang="ro">Când a murit creatorul Dracula?</string>
+<keywords lang="en">Dracula, creator, die</keywords>
+<keywords lang="fa">خالق، دراکولا، فوت</keywords>
+<keywords lang="de">Dracula, Schöpfer, gestorben</keywords>
+<keywords lang="es">muerte, creador, Drácula</keywords>
+<keywords lang="it">Dracula, creatore, morire</keywords>
+<keywords lang="fr">mort, créateur, Dracula</keywords>
+<keywords lang="nl">stierf, bedenker, Dracula</keywords>
+<keywords lang="ro">Dracula, creator, a muri</keywords>
 <query>SELECT DISTINCT ?date WHERE {  &lt;http://dbpedia.org/resource/Count_Dracula&gt; &lt;http://dbpedia.org/ontology/creator&gt; ?x .  ?x &lt;http://dbpedia.org/ontology/deathDate&gt; ?date . } </query>
 <answers>
 <answer>1912-04-20</answer>
@@ -1913,6 +2233,14 @@ WHERE {
 <string lang="fr">Quel est le vrai nom de Batman?</string>
 <string lang="nl">Wat is de echte naam van Batman?</string>
 <string lang="ro">Care este numele real al lui Batman?</string>
+<keywords lang="en">real name, Batman</keywords>
+<keywords lang="fa">نام واقعی، بتمن</keywords>
+<keywords lang="de">Batman, richtiger Name</keywords>
+<keywords lang="es">verdadero nombre Batman</keywords>
+<keywords lang="it">Batman, vero nome</keywords>
+<keywords lang="fr">vrai nom, Batman</keywords>
+<keywords lang="nl">Batman, echte naam</keywords>
+<keywords lang="ro">nume real, Batman</keywords>
 <query>SELECT DISTINCT ?s WHERE { &lt;http://dbpedia.org/resource/Batman&gt; &lt;http://dbpedia.org/property/alterEgo&gt; ?s . }</query>
 <answers>
 <answer>Bruce Wayne</answer>
@@ -1927,6 +2255,14 @@ WHERE {
 <string lang="fr">Quelle est la forme de gouvernement de la Russie?</string>
 <string lang="nl">Welke regeringsvorm heeft Rusland?</string>
 <string lang="ro">Ce formă de guvern are Rusia?</string>
+<keywords lang="en">form of government, Russia</keywords>
+<keywords lang="fa">روسیه، نوع حکومت</keywords>
+<keywords lang="de">Russland, Regierungsform</keywords>
+<keywords lang="es">forma de gobierno, Rusia</keywords>
+<keywords lang="it">forma di governo, Russia</keywords>
+<keywords lang="fr">forme de gouvernement, Russie?</keywords>
+<keywords lang="nl">regeringsvorm, Rusland</keywords>
+<keywords lang="ro">formă de guvern, Rusia</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Russia&gt; &lt;http://dbpedia.org/ontology/governmentType&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Federalism</answer>
@@ -2153,6 +2489,14 @@ WHERE {
 <string lang="fr">Quels sont les aéroports servis par Yeti Airlines?</string>
 <string lang="nl">Naar welke luchthavens vliegt Yeti Airlines?</string>
 <string lang="ro">Ce aeroporturi deservește Yeti Airlines?</string>
+<keywords lang="en">airports, Yeti Airlines</keywords>
+<keywords lang="fa">یتی ایرلاینرز، فرودگاه هایی</keywords>
+<keywords lang="de">Flughäfen, anfliegen, Yeti Airlines</keywords>
+<keywords lang="es">aeropuertos, Yeti Airlines</keywords>
+<keywords lang="it">aeroporti, Yeti Airlines</keywords>
+<keywords lang="fr">Yeti Airlines, aéroports</keywords>
+<keywords lang="nl">luchthavens, Yeti Airlines</keywords>
+<keywords lang="ro">aeroporturi, Yeti Airlines</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Yeti_Airlines&gt; &lt;http://dbpedia.org/ontology/targetAirport&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Pokhara</answer>
@@ -2169,6 +2513,14 @@ WHERE {
 <string lang="fr">Quelle companie indienne a le plus d'employés?</string>
 <string lang="nl">Welke Indiase bedrijf heeft de meeste werknemers?</string>
 <string lang="ro">Ce companie indiană are cei mai mulți angajați?</string>
+<keywords lang="en">Indian company, the most employees</keywords>
+<keywords lang="fa">شرکت هندی، بیشترین تعداد کارمند</keywords>
+<keywords lang="de">Unternehmen, Indien, die meisten Angestellten</keywords>
+<keywords lang="es">empresa India, mayor número empleados</keywords>
+<keywords lang="it">società indiana, maggior numero di dipendenti</keywords>
+<keywords lang="fr">companie indienne, maximum d'employés</keywords>
+<keywords lang="nl">Indiase bedrijf, de meeste werknemers</keywords>
+<keywords lang="ro">companie indiană, cei mai mulți angajați</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Company&gt; . ?uri &lt;http://dbpedia.org/ontology/location&gt; &lt;http://dbpedia.org/resource/India&gt; . ?uri &lt;http://dbpedia.org/ontology/numberOfEmployees&gt; ?n . } ORDER BY DESC(?n) OFFSET 0 LIMIT 1</query>
 <answers>
 <answer>http://dbpedia.org/resource/Indian_Railways</answer>
@@ -2183,6 +2535,14 @@ WHERE {
 <string lang="fr">Quelle couleur exprime la loyalité?</string>
 <string lang="nl">Welke kleur staat voor loyaliteit?</string>
 <string lang="ro">Ce culoare exprimă loialitate?</string>
+<keywords lang="en">color, express, loyalty</keywords>
+<keywords lang="fa">رنگی، وفاداری، بیان</keywords>
+<keywords lang="de">Farbe, stehen für, Loyalität</keywords>
+<keywords lang="es">color, expresa, lealtad</keywords>
+<keywords lang="it">colore, esprimere, lealtà</keywords>
+<keywords lang="fr">couleur, loyalité</keywords>
+<keywords lang="nl">kleur, loyaliteit</keywords>
+<keywords lang="ro">culoare, exprimă, loialitate</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/connotation&gt; &lt;http://dbpedia.org/resource/Loyalty&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Indigo</answer>
@@ -2301,6 +2661,14 @@ WHERE {
 <string lang="fr">Qui est le président de l'Érytrée?</string>
 <string lang="nl">Wie is de president van Eritrea?</string>
 <string lang="ro">Cine este președintele Eritreei?</string>
+<keywords lang="en">president, Eritrea</keywords>
+<keywords lang="fa">رئیس جمهور، اریتره</keywords>
+<keywords lang="de">Präsident, Eritrea</keywords>
+<keywords lang="es">presidente Eritrea</keywords>
+<keywords lang="it">presidente, Eritrea</keywords>
+<keywords lang="fr">président, Erythrée</keywords>
+<keywords lang="nl">president, Eritrea</keywords>
+<keywords lang="ro">președinte, Eritreea</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Eritrea&gt; &lt;http://dbpedia.org/ontology/leader&gt; ?uri . &lt;http://dbpedia.org/resource/Eritrea&gt; &lt;http://dbpedia.org/ontology/leaderTitle&gt; 'President'@en . }  </query>
 <answers>
 <answer>http://dbpedia.org/resource/Isaias_Afwerki</answer>
@@ -2315,6 +2683,14 @@ WHERE {
 <string lang="fr">Quels films ont été dirigés par Stanley Kubrick?</string>
 <string lang="nl">Hoveel films heeft Stanley Kubrick geregisseerd?</string>
 <string lang="ro">Ce filme a regizat Stanley Kubrick?</string>
+<keywords lang="en">film, Stanley Kubrick, direct</keywords>
+<keywords lang="fa">فیلم هایی، استنلی کوبریک، کارگردانی</keywords>
+<keywords lang="de">wieviele, Filme, Stanley Kubrick, Regie</keywords>
+<keywords lang="es">películas, director, Stanley Kubrick</keywords>
+<keywords lang="it">film, Stanley Kubrick, dirigere</keywords>
+<keywords lang="fr">films, directeur, Stanley Kubrick</keywords>
+<keywords lang="nl">films, Stanley Kubrick, regisseur</keywords>
+<keywords lang="ro">film, Stanley Kubrick, regiza</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/director&gt; &lt;http://dbpedia.org/resource/Stanley_Kubrick&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Day_of_the_Fight</answer>
@@ -2552,6 +2928,14 @@ WHERE {
 <string lang="fr">Qui a composé le soundtrack du Titanic de Cameron?</string>
 <string lang="nl">Door wie is de filmmuziek van Camerons Titanic geschreven?</string>
 <string lang="ro">Cine a compus coloana sonoră pentru Titanicul lui Cameron?</string>
+<keywords lang="en">compose, soundtrack, Cameron's Titanic</keywords>
+<keywords lang="fa">موسیقی متن، تایتانیک کامرون، نوشته</keywords>
+<keywords lang="de">Cameron, Titanic, Soundtrack, geschrieben</keywords>
+<keywords lang="es">compositor, banda sonora, Titanic de Cameron</keywords>
+<keywords lang="it">comporre, colonna sonora, Titanic, Cameron</keywords>
+<keywords lang="fr">compositeur, sountrack, Titanic, Cameron</keywords>
+<keywords lang="nl">filmmuziek, Camerons Titanic, componist</keywords>
+<keywords lang="ro">compus, coloana sonoră, Titanicul lui Cameron</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Titanic_(1997_film)&gt; &lt;http://dbpedia.org/ontology/musicComposer&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/James_Horner</answer>
@@ -2655,6 +3039,14 @@ OFFSET 0 LIMIT 1</query>
 <string lang="fr">Quelle est la zone horaire de Rome?</string>
 <string lang="nl">In welke tijdzone zit Rome?</string>
 <string lang="ro">Pe ce fus orar este Roma?</string>
+<keywords lang="en">time zone, Rome</keywords>
+<keywords lang="fa">رم، ناحیه زمانی</keywords>
+<keywords lang="de">Rom, Zeitzone</keywords>
+<keywords lang="es">zona horaria, Roma</keywords>
+<keywords lang="it">fuso orario, Roma</keywords>
+<keywords lang="fr">zone horaire, Rome</keywords>
+<keywords lang="nl">Rome, tijdzone</keywords>
+<keywords lang="ro">fus orar, Roma</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Rome&gt; &lt;http://dbpedia.org/ontology/timeZone&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Central_European_Time</answer>
@@ -2694,6 +3086,14 @@ WHERE {
 <string lang="fr">Qui sont les développeurs de DBpedia?</string>
 <string lang="nl">Wie heeft DBpedia ontwikkeld?</string>
 <string lang="ro">Cine sunt dezvoltatorii DBpedia?</string>
+<keywords lang="en">developers, DBpedia</keywords>
+<keywords lang="fa">توسعه دهندگان، دی.بی.پدیا</keywords>
+<keywords lang="de">Entwickler, DBpedia</keywords>
+<keywords lang="es">desarrolladores, DBpedia</keywords>
+<keywords lang="it">sviluppatori, DBpedia</keywords>
+<keywords lang="fr">développeurs, DBpedia</keywords>
+<keywords lang="nl">DBpedia, ontwikkelaar</keywords>
+<keywords lang="ro">dezvoltatori, DBpedia</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/DBpedia&gt; &lt;http://dbpedia.org/ontology/developer&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/University_of_Mannheim</answer>
@@ -2736,6 +3136,14 @@ WHERE {
 <string lang="fr">Qui est le roi des Pays-Bas?</string>
 <string lang="nl">Wie is de koning van Nederland?</string>
 <string lang="ro">Cine este regele Țărilor de Jos?</string>
+<keywords lang="en">king, the Netherlands</keywords>
+<keywords lang="fa">پادشاه، هلند</keywords>
+<keywords lang="de">König, Niederlande</keywords>
+<keywords lang="es">rey, Países Bajos</keywords>
+<keywords lang="it">re, Paesi Bassi</keywords>
+<keywords lang="fr">roi, pays-bas</keywords>
+<keywords lang="nl">koning, Nederland</keywords>
+<keywords lang="ro">rege, Țările de Jos</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Netherlands&gt; &lt;http://dbpedia.org/ontology/leader&gt; ?uri . ?uri a &lt;http://dbpedia.org/ontology/Royalty&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Willem-Alexander_of_the_Netherlands</answer>
@@ -2750,6 +3158,14 @@ WHERE {
 <string lang="fr">Dans quelle ville est mort Kazantsakis?</string>
 <string lang="nl">In welke stad is Nikos Kazantzakis overleden?</string>
 <string lang="ro">În ce oraș a murit Nikos Kazantsakis?</string>
+<keywords lang="en">city, Nikos Kazantzakis, die</keywords>
+<keywords lang="fa">نیکوس کازانتزاکیس، کشور، مرد</keywords>
+<keywords lang="de">Nikos Kazantzakis, Stadt, gestorben</keywords>
+<keywords lang="es">ciudad, murió, Nikos Kazantzakis?</keywords>
+<keywords lang="it">città, Nikos Kazantzakis, morto</keywords>
+<keywords lang="fr">ville de décès, Kazantsakis</keywords>
+<keywords lang="nl">Nikos Kazantzakis, overleden, stad</keywords>
+<keywords lang="ro">oraș, Nikos Kazantsakis, murit</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Nikos_Kazantzakis&gt; &lt;http://dbpedia.org/ontology/deathPlace&gt; ?uri . ?uri a &lt;http://dbpedia.org/ontology/Town&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Freiburg_im_Breisgau</answer>
@@ -2787,6 +3203,14 @@ WHERE {
 <string lang="fr">Donnes-moi la liste des oiseaux en voie de disparition.</string>
 <string lang="nl">Geef een lijst met alle ernstig bedreigde vogelsoorten.</string>
 <string lang="ro">Dă-mi o listă cu toate păsările în pericol ridicat de dispariție.</string>
+<keywords lang="en">list, critically endangered birds</keywords>
+<keywords lang="fa">پرندگان، روبه انقراض</keywords>
+<keywords lang="de">Vogel, stark gefährdet</keywords>
+<keywords lang="es">aves, peligro de extinción</keywords>
+<keywords lang="it">lista, uccelli in via di estinzione</keywords>
+<keywords lang="fr">oiseaux, voie de disparition</keywords>
+<keywords lang="nl">vogels, ernstig bedreigd</keywords>
+<keywords lang="ro">listă, păsări în pericol ridicat de dispariție</keywords>
 <query>SELECT DISTINCT ?uri ?p WHERE { ?uri a &lt;http://dbpedia.org/ontology/Bird&gt; . { ?uri &lt;http://dbpedia.org/ontology/conservationStatus&gt; 'CR'^^&lt;http://www.w3.org/2001/XMLSchema#string&gt; . } UNION { ?uri &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Critically_endangered_animals&gt; . } }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Chatham_pigeon</answer>
@@ -2913,6 +3337,14 @@ WHERE {
 <string lang="fr">Quel est le pilote de Formule 1 qui a gagné le plus de courses?</string>
 <string lang="nl">Wie is de Formule 1-coureur met de meeste races op zijn naam?</string>
 <string lang="ro">Cine este pilotul de curse Formula 1 cu cele mai multe curse?</string>
+<keywords lang="en">Formula 1, race driver, races, most</keywords>
+<keywords lang="fa">راننده، فرمول 1، بیشترین، مسابقه</keywords>
+<keywords lang="de">Formel 1, Rennfahrer, Rennen, die meisten</keywords>
+<keywords lang="es">Fconductor, órmula 1, carreras, más</keywords>
+<keywords lang="it">Formula 1, pilota, maggior numero di gare</keywords>
+<keywords lang="fr">Formule 1, pilote, plus de courses</keywords>
+<keywords lang="nl">Formule 1, coureur, races, de meeste</keywords>
+<keywords lang="ro">Formula 1, pilot de curse, cele mai multe</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/FormulaOneRacer&gt; .  ?uri &lt;http://dbpedia.org/ontology/races&gt; ?x . } ORDER BY DESC(?x) OFFSET 0 LIMIT 1 </query>
 <answers>
 <answer>http://dbpedia.org/resource/Michael_Schumacher</answer>
@@ -2927,6 +3359,14 @@ WHERE {
 <string lang="fr">Quelles companies produisent des aéroglisseurs?</string>
 <string lang="nl">Welke bedrijven produceren hovercrafts?</string>
 <string lang="ro">Care companii produc aeroglisoare?</string>
+<keywords lang="en">companies, produce, hovercrafts</keywords>
+<keywords lang="fa">شرکت هایی، هواناو، تولید</keywords>
+<keywords lang="de">Firma, herstellen, Hovercraft</keywords>
+<keywords lang="es">compañías, producen, aerodeslizadores</keywords>
+<keywords lang="it">società produrre, aeroscafi</keywords>
+<keywords lang="fr">companies, aéroglisseurs</keywords>
+<keywords lang="nl">bedrijven, produceren, hovercrafts</keywords>
+<keywords lang="ro">companii, produc, aeroglisoare</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Company&gt; . ?uri &lt;http://dbpedia.org/ontology/product&gt; &lt;http://dbpedia.org/resource/Hovercraft&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Saunders-Roe</answer>
@@ -2943,6 +3383,14 @@ WHERE {
 <string lang="fr">Elvis Presley a-t-il eu des enfants?</string>
 <string lang="nl">Had Elvis Presley kinderen?</string>
 <string lang="ro">A avut Elvis Presley copii?</string>
+<keywords lang="en">Elvis Presley, children</keywords>
+<keywords lang="fa">الویس پرسلی، فرزند</keywords>
+<keywords lang="de">Elvis Presley, Kinder</keywords>
+<keywords lang="es">hijos, Elvis Presley</keywords>
+<keywords lang="it">Elvis Presley, figli</keywords>
+<keywords lang="fr">enfants, Elvis Presley</keywords>
+<keywords lang="nl">Elvis Presley, kinderen</keywords>
+<keywords lang="ro">Elvis Presly, copii</keywords>
 <query>ASK WHERE { &lt;http://dbpedia.org/resource/Elvis_Presley&gt; &lt;http://dbpedia.org/ontology/child&gt; ?uri . } </query>
 <answers>
 <answer>true</answer>
@@ -2957,6 +3405,14 @@ WHERE {
 <string lang="fr">Quelle est la ville de naissance du président du Monténégro?</string>
 <string lang="nl">In welke stad is de president van Montenegro geboren?</string>
 <string lang="ro">În ce oraș s-a născut președintele Muntenegrului?</string>
+<keywords lang="en">city, born, president of Montenegro</keywords>
+<keywords lang="fa">رئیس جمهور، مونتنگرو، کشور، متولد</keywords>
+<keywords lang="de">Präsident, Montenegro, Geburtsstadt</keywords>
+<keywords lang="es">ciudad, nació, presidente de Montenegro</keywords>
+<keywords lang="it">città, nato, presidente del Montenegro</keywords>
+<keywords lang="fr">ville, naissance, président, Monténégro</keywords>
+<keywords lang="nl">president, Montenegro, geboortestad</keywords>
+<keywords lang="ro">oraș, născut, președintele Muntenegrului</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?x &lt;http://dbpedia.org/property/office&gt; &lt;http://dbpedia.org/resource/President_of_Montenegro&gt; . ?x &lt;http://dbpedia.org/ontology/birthPlace&gt; ?uri . ?uri a &lt;http://dbpedia.org/ontology/City&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Belgrade</answer>
@@ -2971,6 +3427,14 @@ WHERE {
 <string lang="fr">Quel est l'état de naissance de Bill Gates?</string>
 <string lang="nl">In welke land is Bill Gates geboren?</string>
 <string lang="ro">În ce țară s-a născut Bill Gates?</string>
+<keywords lang="en">country, born, Bill Gates</keywords>
+<keywords lang="fa">بیل گیت، کشور، متولد</keywords>
+<keywords lang="de">Bill Gates, Land, geboren</keywords>
+<keywords lang="es">país nacimiento, Bill Gates</keywords>
+<keywords lang="it">stato, nato, Bill Gates</keywords>
+<keywords lang="fr">état, naissance, Bill Gates</keywords>
+<keywords lang="nl">Bill Gates, geboorteland</keywords>
+<keywords lang="ro">țară, născut, Bill Gates</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Bill_Gates&gt; &lt;http://dbpedia.org/ontology/birthPlace&gt; ?x . ?x &lt;http://dbpedia.org/ontology/country&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/United_States</answer>
@@ -2985,6 +3449,14 @@ WHERE {
 <string lang="fr">Dans quels pays parle-t-on japonais?</string>
 <string lang="nl">In welke landen wordt Japans gesproken?</string>
 <string lang="ro">În ce țari se vorbește japoneza?</string>
+<keywords lang="en">which countries, speak, Japanese</keywords>
+<keywords lang="fa">کشورهایی، ژاپنی، صحبت</keywords>
+<keywords lang="de">Länder, Sprache, Japanisch</keywords>
+<keywords lang="es">países, habla, japonés</keywords>
+<keywords lang="it">stati, parlare, giapponese</keywords>
+<keywords lang="fr">pays, language, japonais</keywords>
+<keywords lang="nl">landen, taal, Japans</keywords>
+<keywords lang="ro">ce țări, vorbește, japoneza</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Country&gt; . ?uri &lt;http://dbpedia.org/ontology/language&gt; &lt;http://dbpedia.org/resource/Japanese_language&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Japan</answer>
@@ -3107,6 +3579,14 @@ WHERE {
 <string lang="fr">Quels sont les surnoms de San Francisco?</string>
 <string lang="nl">Wat zijn bijnamen van San Francisco?</string>
 <string lang="ro">Care sunt poreclele pentru San Francisco?</string>
+<keywords lang="en">San Francisco, nickname</keywords>
+<keywords lang="fa">اسم های مستعار، سانفرانسیسکو</keywords>
+<keywords lang="de">San Francisco, Spitzname</keywords>
+<keywords lang="es">San Francisco, apodo</keywords>
+<keywords lang="it">San Francisco, soprannome</keywords>
+<keywords lang="fr">surnoms, San Francisco</keywords>
+<keywords lang="nl">bijnaam, San Francisco</keywords>
+<keywords lang="ro">San Francisco, poreclă</keywords>
 <query>SELECT DISTINCT ?string WHERE {  &lt;http://dbpedia.org/resource/San_Francisco&gt; &lt;http://dbpedia.org/property/nickname&gt; ?string . } </query>
 <answers>
 <answer>The City by the Bay; Fog City; San Fran; Frisco ; The City that Knows How ; Baghdad by the Bay ; The Paris of the West</answer>
@@ -3121,6 +3601,14 @@ WHERE {
 <string lang="fr">Quel est le premier album de Queen?</string>
 <string lang="nl">Wat was het eerste Queen-album?</string>
 <string lang="ro">Care a fost primul album Queen?</string>
+<keywords lang="en">first album, Queen</keywords>
+<keywords lang="fa">اولین، آلبوم، کوئین</keywords>
+<keywords lang="de">erstes Queen-Album</keywords>
+<keywords lang="es">primer álbum, Queen</keywords>
+<keywords lang="it">primo album, Queen</keywords>
+<keywords lang="fr">premier album, Queen</keywords>
+<keywords lang="nl">eerste Queen-album</keywords>
+<keywords lang="ro">primul album, Queen</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Album&gt; . ?uri &lt;http://dbpedia.org/ontology/artist&gt; &lt;http://dbpedia.org/resource/Queen_(band)&gt; . ?uri &lt;http://dbpedia.org/ontology/releaseDate&gt; ?d . } ORDER BY ASC(?d) OFFSET 0 LIMIT 1</query>
 <answers>
 <answer>http://dbpedia.org/resource/Queen_(Queen_album)</answer>
@@ -3215,6 +3703,14 @@ OFFSET 0 LIMIT 1</query>
 <string lang="fr">Quel est le pays d'origine de Sitecore?</string>
 <string lang="nl">Uit welke land komt Sitecore?</string>
 <string lang="ro">Din ce țară este Sitecore?</string>
+<keywords lang="en">country, Sitecore</keywords>
+<keywords lang="fa">سایتکور، کشور، تأسیس</keywords>
+<keywords lang="de">Sitecore, Land</keywords>
+<keywords lang="es">país origen, Sitecore</keywords>
+<keywords lang="it">nazione, Sitecore</keywords>
+<keywords lang="fr">pays, Sitecore</keywords>
+<keywords lang="nl">land, Sitecore</keywords>
+<keywords lang="ro">țară, Sitecore</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Sitecore&gt; &lt;http://dbpedia.org/ontology/foundationPlace&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Denmark</answer>
@@ -3229,6 +3725,14 @@ OFFSET 0 LIMIT 1</query>
 <string lang="fr">Qui est l'épouse de Lance Bass?</string>
 <string lang="nl">Wie heeft Lance Baas getrouwd?</string>
 <string lang="ro">Cu cine s-a căsătorit Lance Bass?</string>
+<keywords lang="en">wife, Lance Bass</keywords>
+<keywords lang="fa">لنس بس، ازدواج</keywords>
+<keywords lang="de">Lance Bass, Ehemann</keywords>
+<keywords lang="es">esposa, Lance Bass</keywords>
+<keywords lang="it">moglie, Lance Bass</keywords>
+<keywords lang="fr">épouse, Lance Bass</keywords>
+<keywords lang="nl">Lance Baas, getrouwd</keywords>
+<keywords lang="ro">soție, Lance Bass</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/spouse&gt; &lt;http://dbpedia.org/resource/Lance_Bass&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Michael_Turchin</answer>
@@ -3266,6 +3770,14 @@ WHERE {
 <string lang="fr">Qui a inspiré Victor van Gogh?</string>
 <string lang="nl">Wie heeft van Gogh geinspireerd?</string>
 <string lang="ro">De către cine a fost Vincent van Gogh inspirat?</string>
+<keywords lang="en">person, inspiring, Vincent van Gogh</keywords>
+<keywords lang="fa">ونسان ون گوگ، الهام</keywords>
+<keywords lang="de">Vincent van Gogh, Inspiration</keywords>
+<keywords lang="es">persona, inpiracion, Vincent van Gogh</keywords>
+<keywords lang="it">persona, ispirare, Vincent van Gogh</keywords>
+<keywords lang="fr">inspiration, Victor van Gogh</keywords>
+<keywords lang="nl">van Gogh, geinspireerd</keywords>
+<keywords lang="ro">persoană, inspirație, Vincent van Gogh</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/influenced&gt; &lt;http://dbpedia.org/resource/Vincent_van_Gogh&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Adolphe_Monticelli</answer>
@@ -3329,6 +3841,14 @@ WHERE {
 <string lang="fr">Qui a écrit le thème de Game of Thrones?</string>
 <string lang="nl">Wie heeft de titelmuziek van Game of Thrones gekomponeerd?</string>
 <string lang="ro">Cine a scris tema din Urzeala Tronurilor?</string>
+<keywords lang="en">writer, Game of Thrones</keywords>
+<keywords lang="fa">طرح، بازی تاج و تخت، نوشت</keywords>
+<keywords lang="de">Game of Thrones, Titellied, Autor</keywords>
+<keywords lang="es">escritor, tema Juego de Tronos</keywords>
+<keywords lang="it">scrittore, Game of Thrones</keywords>
+<keywords lang="fr">compositeur, thème, Game of Thrones</keywords>
+<keywords lang="nl">titelmuziek, Game of Thrones, componist</keywords>
+<keywords lang="ro">scriitor, Urzeala Tronurilor</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Game_of_Thrones&gt; &lt;http://dbpedia.org/ontology/composer&gt; ?uri. }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Ramin_Djawadi</answer>
@@ -3368,6 +3888,14 @@ WHERE {
 <string lang="fr">Quelle est la date de terminaison de la carrière de Boris Becker?</string>
 <string lang="nl">Wanneer stopte Boris Becker zijn actieve loopbaan?</string>
 <string lang="ro">Când și-a încheiat Boris Becker cariera activă?</string>
+<keywords lang="en">Boris Becker, end career</keywords>
+<keywords lang="fa">بوریس بکر، فعالیت حرفه ای، خاتمه</keywords>
+<keywords lang="de">Boris Becker, aktive Karriere, beendet</keywords>
+<keywords lang="es">fin carrera, actor Boris Becker</keywords>
+<keywords lang="it">Boris Becker, fine, carriera</keywords>
+<keywords lang="fr">Date de terminaison, carrière, Boris Becker</keywords>
+<keywords lang="nl">Boris Becker, actieve loopbaan, einde</keywords>
+<keywords lang="ro">încheia cariera, Boris Becker</keywords>
 <query>SELECT DISTINCT ?d WHERE { &lt;http://dbpedia.org/resource/Boris_Becker&gt; &lt;http://dbpedia.org/ontology/activeYearsEndDate&gt; ?d . } </query>
 <answers>
 <answer>1999-06-25</answer>
@@ -3382,6 +3910,14 @@ WHERE {
 <string lang="fr">Quelles genres de raisin poussent en Oregon?</string>
 <string lang="nl">Welke soorten druiven groeien in Oregon?</string>
 <string lang="ro">Ce soiuri de struguri cresc în Oregon?</string>
+<keywords lang="en">grape types, grow, Oregon</keywords>
+<keywords lang="fa">انواعی انگور، اورگن، رشد</keywords>
+<keywords lang="de">Traubenarten, wachsen, Oregon</keywords>
+<keywords lang="es">tipo uva, crece, Oregon</keywords>
+<keywords lang="it">tipi di uva, crescere, Oregon</keywords>
+<keywords lang="fr">genres, raisins, Oregon</keywords>
+<keywords lang="nl">soorten druiven, groeien, Oregon</keywords>
+<keywords lang="ro">soiuri de struguri, cresc, Oregon</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Oregon_wine&gt; &lt;http://dbpedia.org/ontology/growingGrape&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Chenin_blanc</answer>
@@ -3452,6 +3988,14 @@ WHERE {
 <string lang="fr">Quel est le parti politique du maire de Paris?</string>
 <string lang="nl">Tot welke partij behoort de burgemeester van Parijs?</string>
 <string lang="ro">Cărui partid aparține primarul Parisului?</string>
+<keywords lang="en">party, mayor of Paris, belong</keywords>
+<keywords lang="fa">شهردار پاریس، حزب</keywords>
+<keywords lang="de">Paris, Bürgermeisterin, Partei</keywords>
+<keywords lang="es">partido politico, alcalde de París</keywords>
+<keywords lang="it">partito politico, sindaco di Parigi, appartiene</keywords>
+<keywords lang="fr">parti politique, maire, Paris</keywords>
+<keywords lang="nl">partij, burgemeester, Parijs</keywords>
+<keywords lang="ro">partid, primarul Parisului, aparține</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Paris&gt; &lt;http://dbpedia.org/ontology/mayor&gt; ?x . ?x &lt;http://dbpedia.org/ontology/party&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Socialist_Party_(France)</answer>
@@ -3540,6 +4084,14 @@ WHERE {
 <string lang="fr">Qui était le directeur de thèse d'Albert Einstein</string>
 <string lang="nl">Wie was de promotor van Albert Einsteins doctoraatsonderzoek?</string>
 <string lang="ro">Cine a fost conducătorul de doctorat al lui Albert Einstein?</string>
+<keywords lang="en">doctoral supervisor, Albert Einstein</keywords>
+<keywords lang="fa">استاد راهنما، دکترا، آلبرت اینشتین</keywords>
+<keywords lang="de">Doktorvater, Albert Einstein</keywords>
+<keywords lang="es">supervisor doctoral, Albert Einstein</keywords>
+<keywords lang="it">supervisore della tesi di dottorato, Albert Einstein </keywords>
+<keywords lang="fr">directeur, these, Albert Einstein</keywords>
+<keywords lang="nl">Albert Einstein, promotor</keywords>
+<keywords lang="ro">conducător de doctorat, Albert Einstein</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Albert_Einstein&gt; &lt;http://dbpedia.org/ontology/doctoralAdvisor&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Alfred_Kleiner</answer>
@@ -3554,6 +4106,14 @@ WHERE {
 <string lang="fr">Dans quelle ville vit Sylvester Stallone?</string>
 <string lang="nl">In welke stad woont Sylvester Stallone?</string>
 <string lang="ro">În ce oraș trăiește Sylvester Stallone?</string>
+<keywords lang="en">city, live, Sylvester Stallone</keywords>
+<keywords lang="fa">سیلوستر استالونه، شهر، زندگی</keywords>
+<keywords lang="de">Sylvester Stallone, wohnen, Stadt</keywords>
+<keywords lang="es">ciudad, vive, Sylvester Stallone</keywords>
+<keywords lang="it">città, vive, Sylvester Stallone</keywords>
+<keywords lang="fr">ville, Sylvester Stallone</keywords>
+<keywords lang="nl">stad, wonen, Sylvester Stallone</keywords>
+<keywords lang="ro">oraș, trăiește, Sylvester Stallone</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/City&gt; . &lt;http://dbpedia.org/resource/Sylvester_Stallone&gt; &lt;http://dbpedia.org/ontology/residence&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Beverly_Hills,_California</answer>
@@ -3637,6 +4197,14 @@ WHERE {
 <string lang="fr">Qui est le fils de Sonny et Cher?</string>
 <string lang="nl">Wie is de zoon van Sonny en Cher?</string>
 <string lang="ro">Cine este fiul lui Sonny și Cher?</string>
+<keywords lang="en">son, Sonny and Cher</keywords>
+<keywords lang="fa">پسر، سونی و چر</keywords>
+<keywords lang="de">Sonny, Cher, Sohn</keywords>
+<keywords lang="es">hijo, Sonny y Cher?</keywords>
+<keywords lang="it">figlio, Sonny e Cher</keywords>
+<keywords lang="fr">fils, Sonny, Cher</keywords>
+<keywords lang="nl">zoon, Sonny, Cher</keywords>
+<keywords lang="ro">fiu, Sonny și Cher</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/parent&gt; &lt;http://dbpedia.org/resource/Cher&gt; . ?uri &lt;http://dbpedia.org/ontology/parent&gt; &lt;http://dbpedia.org/resource/Sonny_Bono&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Chaz_Bono</answer>
@@ -3651,6 +4219,14 @@ WHERE {
 <string lang="fr">Dans quelle ville se trouvé les quartiers généraux des Nations Unies?</string>
 <string lang="nl">In welke stad bevindt zich het hoofdkwartier van de Verenigde Naties?</string>
 <string lang="ro">În ce oraș se află cartierul general al Națiunilor Unite?</string>
+<keywords lang="en">city, headquarters of the United Nations</keywords>
+<keywords lang="fa">مقر، سازمان ملل، شهر</keywords>
+<keywords lang="de">Vereinte Nationen, Hauptquartier, Stadt</keywords>
+<keywords lang="es">ciudad, la sede de las Naciones Unidas</keywords>
+<keywords lang="it">città, quartier generale delle Nazioni Unite</keywords>
+<keywords lang="fr">ville, quartiers généraux, Nations Unies?</keywords>
+<keywords lang="nl">stad, hoofdkwartier, Verenigde Naties</keywords>
+<keywords lang="ro">oraș, cartierul general al Națiunilor Unite</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Headquarters_of_the_United_Nations&gt; &lt;http://dbpedia.org/ontology/location&gt; ?uri . ?uri a &lt;http://dbpedia.org/ontology/City&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/New_York_City</answer>
@@ -3691,6 +4267,14 @@ WHERE {
 <string lang="fr">Quand a été fondé Jack Wolfskin?</string>
 <string lang="nl">Wanneer werd Jack Wolfskin opgericht?</string>
 <string lang="ro">Când a fost fondat Jack Wolfskin?</string>
+<keywords lang="en">Jack Wolfskin, founded</keywords>
+<keywords lang="fa">جک ولفیش، تأسیس</keywords>
+<keywords lang="de">Jack Wolfskin, gründen</keywords>
+<keywords lang="es">Jack Wolfskin, fundada</keywords>
+<keywords lang="it">Jack Wolfskin, fondata</keywords>
+<keywords lang="fr">fondé, Jack Wolfskin</keywords>
+<keywords lang="nl">Jack Wolfskin, opgericht</keywords>
+<keywords lang="ro">Jack Wolfskin, fondat</keywords>
 <query>SELECT DISTINCT ?year WHERE {  &lt;http://dbpedia.org/resource/Jack_Wolfskin&gt; &lt;http://dbpedia.org/ontology/foundingYear&gt; ?year . } </query>
 <answers>
 <answer>1981</answer>
@@ -3756,6 +4340,14 @@ WHERE {
 <string lang="fr">Montre l'autobiographie de Hemingway.</string>
 <string lang="nl">Toen de autobiografie van Hemmingway.</string>
 <string lang="ro">Arată-mi autobiografia lui Hemingway</string>
+<keywords lang="en">autobiography, Hemingway</keywords>
+<keywords lang="fa">خود زندگی نامه، همینگوی</keywords>
+<keywords lang="de">Hemmingway, Autobiographie</keywords>
+<keywords lang="es">autobiografía Hemingway</keywords>
+<keywords lang="it">autobiorafia, Hemingway</keywords>
+<keywords lang="fr">autobiographie, Hemingway</keywords>
+<keywords lang="nl">Hemmingway, autobiografie</keywords>
+<keywords lang="ro">autobiografie, Hemingway</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/author&gt; &lt;http://dbpedia.org/resource/Ernest_Hemingway&gt; . ?uri &lt;http://dbpedia.org/ontology/literaryGenre&gt; &lt;http://dbpedia.org/resource/Autobiography&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/A_Moveable_Feast</answer>
@@ -3820,6 +4412,14 @@ WHERE {
 <string lang="fr">Quel est le plus grand joueur de basket?</string>
 <string lang="nl">Wie is de grootste basketballer?</string>
 <string lang="ro">Cine este cel mai înalt jucător de basket?</string>
+<keywords lang="en">tallest, basketball player</keywords>
+<keywords lang="fa">بلندترین، بازیکن بسکتبال</keywords>
+<keywords lang="de">größter, Basketballspieler</keywords>
+<keywords lang="es">jugador baloncesto, mas alto</keywords>
+<keywords lang="it">giocatore di pallacanestro, più alto</keywords>
+<keywords lang="fr">plus grand, joueur, basket</keywords>
+<keywords lang="nl">grootste, basketballer</keywords>
+<keywords lang="ro">cel mai înalt, jucător de basket</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/BasketballPlayer&gt; .  ?uri &lt;http://dbpedia.org/ontology/height&gt; ?num . } ORDER BY DESC(?num) OFFSET 0 LIMIT 1 </query>
 <answers>
 <answer>http://dbpedia.org/resource/Thijs_Vermeulen</answer>
@@ -3834,6 +4434,14 @@ WHERE {
 <string lang="fr">Quelle ville a le plus petit nombre d'habitants?</string>
 <string lang="nl">Welke stad heeft de minste inwoners?</string>
 <string lang="ro">Care oraș are cei mai puțini locuitori?</string>
+<keywords lang="en">city, the least inhabitants</keywords>
+<keywords lang="fa">شهری، کمترین سکنه</keywords>
+<keywords lang="de">Stadt, wenigsten Einwohner</keywords>
+<keywords lang="es">ciudad, menor población</keywords>
+<keywords lang="it">città, minor numero di abitanti</keywords>
+<keywords lang="fr">ville, plus petit nombre d'habitants</keywords>
+<keywords lang="nl">stad, minste inwoners</keywords>
+<keywords lang="ro">oraș, cei mai puțini locuitori</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/City&gt; .  ?uri &lt;http://dbpedia.org/ontology/populationTotal&gt; ?pop . } ORDER BY ASC(?pop) OFFSET 0 LIMIT 1 </query>
 <answers>
 <answer>http://dbpedia.org/resource/Greenhorn,_Oregon</answer>
@@ -3950,6 +4558,14 @@ WHERE {
 <string lang="fr">A Kaurismäki gagné le Grand Prix de Cannes?</string>
 <string lang="nl">Heeft Kaurismäki ooit de Grand Prix op het filmfestival van Cannes gewonnen?</string>
 <string lang="ro">Kaurismäki a câștigat vreodată premiul Grand Prix la Cannes?</string>
+<keywords lang="en">Kaurismäki, winner, Grand Prix at Cannes</keywords>
+<keywords lang="fa">کوریسماکی، جایزه بزرگ جشنواره کن</keywords>
+<keywords lang="de">Kaurismäki, Großer Preis der Jury, Cannes</keywords>
+<keywords lang="es">Kaurismäki, ganador, Grand Prix de Cannes</keywords>
+<keywords lang="it">Kaurismäki, vincitore, Grand Prix a Cannes</keywords>
+<keywords lang="fr">Kaurismäki, gagné, Grand Prix de Cannes</keywords>
+<keywords lang="nl">Kaurismäki, winnaar, Grand Prix, Cannes</keywords>
+<keywords lang="ro">Kaurismäki, câștigător, Grand Prix la Cannes</keywords>
 <query>ASK WHERE { &lt;http://dbpedia.org/resource/Aki_Kaurismäki&gt; &lt;http://dbpedia.org/ontology/award&gt; &lt;http://dbpedia.org/resource/Grand_Prix_(Cannes_Film_Festival)&gt; . }</query>
 <answers>
 <answer>true</answer>
@@ -4002,6 +4618,14 @@ WHERE {
 <string lang="fr">Dans quel état américain se trouve Fort Knox?</string>
 <string lang="nl">Waar ligt Fort Knox?</string>
 <string lang="ro">În ce stat american este situat Fort Knox?</string>
+<keywords lang="en">Fort Knox, located</keywords>
+<keywords lang="fa">فورت ناکس، واقع</keywords>
+<keywords lang="de">Fort Knox, liegen</keywords>
+<keywords lang="es">Fort Knox, se encuentra, estado americano</keywords>
+<keywords lang="it">Fort Knox, trovarsi</keywords>
+<keywords lang="fr">état américain, Fort Knox</keywords>
+<keywords lang="nl">Fort Knox, ligt</keywords>
+<keywords lang="ro">Fort Knox, situat, stat american</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/Fort_Knox&gt; &lt;http://dbpedia.org/property/location&gt; ?uri . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Kentucky</answer>
@@ -4041,6 +4665,14 @@ WHERE {
 <string lang="fr">Où est enterré Syngman Rhee?</string>
 <string lang="nl">Waar ligt Syngman Rhee begraven?</string>
 <string lang="ro">Unde este înmormântat Syngman Rhee?</string>
+<keywords lang="en">where, Syngman Rhee, buried</keywords>
+<keywords lang="fa">ایسونگمن ری، دفن</keywords>
+<keywords lang="de">Syngman Rhee, begraben</keywords>
+<keywords lang="es">Dónde, enterrado, Syngman Rhee</keywords>
+<keywords lang="it">dove, sepolto, Syngman Rhee</keywords>
+<keywords lang="fr">lieu d'enterrement, Syngman Rhee</keywords>
+<keywords lang="nl">Syngman Rhee, begrafplaats</keywords>
+<keywords lang="ro">unde, înmormântat, Syngman Rhee</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/Syngman_Rhee&gt; &lt;http://dbpedia.org/ontology/restingPlace&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Seoul_National_Cemetery</answer>
@@ -4055,6 +4687,14 @@ WHERE {
 <string lang="fr">Quel est le fuseau horaire de San Pedro de Atacama?</string>
 <string lang="nl">Wat is de tijdzone in San Pedro de Atacama?</string>
 <string lang="ro">Care este fusul orar din San Pedro de Atacama?</string>
+<keywords lang="en">timezone, San Pedro de Atacama</keywords>
+<keywords lang="fa">منطقه زمانی، San Pedro de Atacama</keywords>
+<keywords lang="de">Zeitzone, San Pedro de Atacama</keywords>
+<keywords lang="es">zona horaria, San Pedro de Atacama</keywords>
+<keywords lang="it">fuso orario, San Pedro de Atacama</keywords>
+<keywords lang="fr">fuseau horaire, San Pedro de Atacama</keywords>
+<keywords lang="nl">tijdzone, San Pedro de Atacama</keywords>
+<keywords lang="ro">fus orar, San Pedro de Atacama</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/San_Pedro_de_Atacama&gt; &lt;http://dbpedia.org/ontology/timeZone&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Time_in_Chile</answer>
@@ -4069,6 +4709,14 @@ WHERE {
 <string lang="fr">A quel mouvement artistisque appartient le peintre de Les Trois Danceurs?</string>
 <string lang="nl">Tot welke artistieke stijl behoort de schilder van de Drie Dansers?</string>
 <string lang="ro">Cărui curent artistic îi aparține pictorul lucrării Trei dansatoare?</string>
+<keywords lang="en">artistic movement, painter, The Three Dancers</keywords>
+<keywords lang="fa">نقاش، سه رقصنده، جنبش هنری</keywords>
+<keywords lang="de">Drei Tänzer, Maler, Stilrichtung</keywords>
+<keywords lang="es">estilo artístico, pintor, Los Tres Bailarines</keywords>
+<keywords lang="it">movimento artistico, pittore, I tre ballerini</keywords>
+<keywords lang="fr">mouvement artistique, peintre, les trois danceurs</keywords>
+<keywords lang="nl">Drie Dansers, schilder, stijl</keywords>
+<keywords lang="ro">curent artistic, pictor, Trei dansatoare</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/The_Three_Dancers&gt; &lt;http://dbpedia.org/ontology/author&gt; ?person .  ?person &lt;http://dbpedia.org/ontology/movement&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Cubism</answer>
@@ -4112,6 +4760,14 @@ WHERE {
 <string lang="fr">Montres-moi tous les livres du Cycle de Fondation d'Asimov.</string>
 <string lang="nl">Toon alle boeken die bij de Foundation-serie horen.</string>
 <string lang="ro">Arată-mi toate cărțile din seria Fundația de Asimov</string>
+<keywords lang="en">books, Asimov, Foundation series</keywords>
+<keywords lang="fa">مجموعه کتاب های، آسیموف، کتاب</keywords>
+<keywords lang="de">Asimov, Foundation-Serie, Bücher</keywords>
+<keywords lang="es">libros, serie Fundación Asimov</keywords>
+<keywords lang="it">libri, Ciclo della Fondazione, Asimov</keywords>
+<keywords lang="fr">livres, Cycle de Fondation, Asimov</keywords>
+<keywords lang="nl">boeken, Foundation-serie</keywords>
+<keywords lang="ro">cărți, seria Fundația, Asimov</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/series&gt; &lt;http://dbpedia.org/resource/Foundation_series&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Foundation's_Edge</answer>
@@ -4167,6 +4823,14 @@ WHERE {
 <string lang="fr">Quel musée de New York a le plus de visiteurs?</string>
 <string lang="nl">Welk museum in New York heeft de meeste bezoekers?</string>
 <string lang="ro">Care muzeu din New York are cei mai mulți vizitatori?</string>
+<keywords lang="en">museum, New York, the most visitors</keywords>
+<keywords lang="fa">موزه، نیویورک، بیشترین بازدید کننده</keywords>
+<keywords lang="de">Museum, New York, die meisten Besucher</keywords>
+<keywords lang="es">museo Nueva York, mayor numero visitantes</keywords>
+<keywords lang="it">museo, New York, maggior numero di visitatori</keywords>
+<keywords lang="fr">musée, New York, nombre maximal de visiteurs</keywords>
+<keywords lang="nl">museum, New York, de meeste bezoekers</keywords>
+<keywords lang="ro">muzeu, New York, cei mai mulți vizitatori</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Museum&gt; .  ?uri &lt;http://dbpedia.org/ontology/location&gt; &lt;http://dbpedia.org/resource/New_York_City&gt; .  ?uri &lt;http://dbpedia.org/ontology/numberOfVisitors&gt; ?num . } ORDER BY DESC(?num) OFFSET 0 LIMIT 1 </query>
 <answers>
 <answer>http://dbpedia.org/resource/Museum_of_Motherhood</answer>
@@ -4332,6 +4996,14 @@ WHERE {
 <string lang="fr">Donne-moi tous les membres de Prodigy.</string>
 <string lang="nl">Noem alle leden van Prodigy.</string>
 <string lang="ro">Dă-mi toții membrii Prodigy.</string>
+<keywords lang="en">member, Prodigy</keywords>
+<keywords lang="fa">اعضا، پرادیجی</keywords>
+<keywords lang="de">Bandmitglied, Prodigy</keywords>
+<keywords lang="es">miembros de la banda Prodigy</keywords>
+<keywords lang="it">membri, Prodigy</keywords>
+<keywords lang="fr">members, Prodigy</keywords>
+<keywords lang="nl">leden, Prodigy</keywords>
+<keywords lang="ro">membru, Prodigy</keywords>
 <query>SELECT DISTINCT ?uri WHERE {  &lt;http://dbpedia.org/resource/The_Prodigy&gt; &lt;http://dbpedia.org/ontology/bandMember&gt; ?uri . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Maxim_(musician)</answer>
@@ -4348,6 +5020,14 @@ WHERE {
 <string lang="fr">Quels acteurs jouent dans des films dirigés par Benicio del Toro?</string>
 <string lang="nl">Wie speeld in Spaanse films geproduceerd door Benicio del Toro?</string>
 <string lang="ro">Cine sunt protagoniști în filmele spaniole produse de Benicio del Toro?</string>
+<keywords lang="en">starring, Spanish movies, produced, Benicio del Toro</keywords>
+<keywords lang="fa">فیلم های اسپانیایی، تولید، بنیسیو دل تورو، بازی</keywords>
+<keywords lang="de">mitspielen, spanische Filme, produziert, Benicio del Toro</keywords>
+<keywords lang="es">protagonista, peliculas españolas, productor, Benicio del Toro</keywords>
+<keywords lang="it">attori, film spagnoli, prodotti, Benicio del Toro</keywords>
+<keywords lang="fr">acteurs, directeur, Benicio del Toro</keywords>
+<keywords lang="nl">speeld, Spaanse films, geproduceerd, Benicio del Toro</keywords>
+<keywords lang="ro">protagoniști, filmele spaniole, produse, Benicio del Toro</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?film &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Film&gt; . ?film &lt;http://dbpedia.org/ontology/country&gt; &lt;http://dbpedia.org/resource/Spain&gt; . ?film &lt;http://dbpedia.org/ontology/producer&gt; &lt;http://dbpedia.org/resource/Benicio_del_Toro&gt; . ?film &lt;http://dbpedia.org/ontology/starring&gt; ?uri . ?uri &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://dbpedia.org/ontology/Person&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Benicio_del_Toro</answer>
@@ -4362,6 +5042,14 @@ WHERE {
 <string lang="fr">Quelle subsidiaire de TUI Travel vole sur Glasgow et Dublin?</string>
 <string lang="nl">Welke dochteronderneming van TUI Travel bedient zowel Glasgow en Dublin?</string>
 <string lang="ro">Care filială a TUI Travel deservește atât Glasgow cât și Dublin?</string>
+<keywords lang="en">subsidiary, TUI Travel, serve, Glasgow, Dublin</keywords>
+<keywords lang="fa">شرکت های تابعی، تی.یو.آی. تراول، گلاسگو، دوبلین، سرویس</keywords>
+<keywords lang="de">Tochtergesellschaft, TUI Travel, anfliegen, Glasgow, Dublin</keywords>
+<keywords lang="es">subsidiario, TUI Travel, vuela, Glasgow, Dublin</keywords>
+<keywords lang="it">società sussidiaria di TUI Travel, servire, Glasgow, Dublin</keywords>
+<keywords lang="fr">subsidiaire, TUI Travel, vole sur, Glasgow, Dublin</keywords>
+<keywords lang="nl">dochteronderneming, TUI Travel, bedient, Glasgow, Dublin</keywords>
+<keywords lang="ro">filială, TUI Travel, deservește, Glasgow, Dublin</keywords>
 <query>SELECT DISTINCT ?uri WHERE { &lt;http://dbpedia.org/resource/TUI_Travel&gt; &lt;http://dbpedia.org/ontology/subsidiary&gt; ?uri .  ?uri &lt;http://dbpedia.org/ontology/targetAirport&gt; &lt;http://dbpedia.org/resource/Glasgow_Airport&gt; . ?uri &lt;http://dbpedia.org/ontology/targetAirport&gt; &lt;http://dbpedia.org/resource/Dublin_Airport&gt; . } </query>
 <answers>
 <answer>http://dbpedia.org/resource/Thomson_Airways</answer>
@@ -4401,6 +5089,14 @@ WHERE {
 <string lang="fr">Quel est le plus grand stade d'Espagne?</string>
 <string lang="nl">Wat is het grootste stadion van Spanje?</string>
 <string lang="ro">Care este cel mai mare stadion din Spania?</string>
+<keywords lang="en">biggest stadium, Spain</keywords>
+<keywords lang="fa">بزرگترین استادیوم، اسپانیا</keywords>
+<keywords lang="de">Spanien, größtes Stadium</keywords>
+<keywords lang="es">estadio más grande España</keywords>
+<keywords lang="it">stadio più grande, Spagna</keywords>
+<keywords lang="fr">plus grand stade, Espagne</keywords>
+<keywords lang="nl">grootste stadion, Spanje</keywords>
+<keywords lang="ro">cel mai mare stadion, Spania</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri a &lt;http://dbpedia.org/ontology/Stadium&gt; . ?uri &lt;http://dbpedia.org/ontology/location&gt; &lt;http://dbpedia.org/resource/Spain&gt; . ?uri &lt;http://dbpedia.org/ontology/seatingCapacity&gt; ?n . } ORDER BY DESC(?n) OFFSET 0 LIMIT 1</query>
 <answers>
 <answer>http://dbpedia.org/resource/Camp_Nou</answer>
@@ -4439,6 +5135,14 @@ WHERE {
 <string lang="fr">Donne-moi cinq quartiers de New York.</string>
 <string lang="nl">Wat zijn de fijv wijken van New York?</string>
 <string lang="ro">Care sunt cele cinci cartiere din New York?</string>
+<keywords lang="en">five boroughs, New York</keywords>
+<keywords lang="fa">پنج، منطقه، نیویورک</keywords>
+<keywords lang="de">New York, Stadtteile</keywords>
+<keywords lang="es">cinco condados, Nueva York</keywords>
+<keywords lang="it">cinque quartieri, New York</keywords>
+<keywords lang="fr">quartiers, New York</keywords>
+<keywords lang="nl">New York, wijken</keywords>
+<keywords lang="ro">cinci cartiere, New York</keywords>
 <query>SELECT DISTINCT ?uri WHERE { ?uri &lt;http://dbpedia.org/ontology/governmentType&gt; &lt;http://dbpedia.org/resource/Borough_(New_York_City)&gt; . }</query>
 <answers>
 <answer>http://dbpedia.org/resource/Queens</answer>
@@ -4483,6 +5187,14 @@ WHERE {
 <string lang="fr">Donne moi la date de décès de Princesse Diana.</string>
 <string lang="nl">Wanneer is prinses Diana overleden?</string>
 <string lang="ro">Când a murit prințesa Diana?</string>
+<keywords lang="en">date, princess Diana, died</keywords>
+<keywords lang="fa">شاهزاده دیانا، فوت</keywords>
+<keywords lang="de">Prinzessin Diana, Todestag</keywords>
+<keywords lang="es">fecha fallecimiento, princesa Diana</keywords>
+<keywords lang="it">data di morte, principessa Diana</keywords>
+<keywords lang="fr">date de décès, Princesse Diana</keywords>
+<keywords lang="nl">prinses Diana, overleden, datum</keywords>
+<keywords lang="ro">data morții, prințesa Diana</keywords>
 <query>SELECT DISTINCT ?d WHERE { &lt;http://dbpedia.org/resource/Diana,_Princess_of_Wales&gt; &lt;http://dbpedia.org/ontology/deathDate&gt; ?d . }</query>
 <answers>
 <answer>1997-08-31</answer>
