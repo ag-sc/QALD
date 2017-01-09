@@ -1,4 +1,4 @@
-TL;DR: New task 4, training data released!
+TL;DR: New task 4, training data released, new submission information!
 
 QALD2017 CHALLENGE – ESWC 2017
 ESWC 2017, May 28th, 2016 to June 1st, 2017 Portoroz, Slovenia.
@@ -15,6 +15,16 @@ Task 3: Large-Scale question answering over RDF
 Task 4: Wikidata-based question answering
 
 More details on the different tasks can be found here: https://project-hobbit.eu/challenges/qald2017/
+
+Submission
+
+The QALD challenge provides an automatic evaluation tool (GERBIL QA integrated into the HOBBIT platform) that is open source and available for everyone to re-use. This tool is accessible online, so that participants can simply upload the answers produced by their system or even check their system via a webservice. Each experiment will have a citable, time-stable and archivable URI which is both human- and machine-readable. It is mandatory for each system to provide an endpoint URL in the submission PDF in order to be evaluated with GERBIL QA.
+
+We are accepting papers (up to 5 pages) describing the submitted approach and evaluation results. Submissions must be in English and in PDF, formatted in the style of the Springer Publications format for Lecture Notes in Computer Science (LNCS). 
+
+Papers should be submitted through the EasyChair system (TBA) no later than midnight Friday March 10th, 2017, Hawaii Time. Submissions will be reviewed by members of the workshop program committee. Papers will be evaluated according to their significance, originality, technical content, style, clarity, and relevance to the challenge. The complete set of papers will be published with the CEUR Workshop Proceedings (CEUR-WS.org), listed by the DBLP.
+
+For any questions, please write an email to Ricardo Usbeck (usbeck AT informatik.uni-leipzig.de).
 
 Preliminary Schedule
 
