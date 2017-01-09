@@ -1,0 +1,6454 @@
+{
+"dataset": {
+"id": "hobbit-2-train-largescale"
+},
+"questions": [
+{
+"id": "1",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Did Robin Cook attend a university?",
+"keywords": "Robin Cook, attend, university"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { res:Robin_Cook dbo:almaMater ?x . ?x rdf:type dbo:University . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "2",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Did Tony Fry influence Aristotle?",
+"keywords": "Tony Fry, influence, Aristotle"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Aristotle dbo:influencedBy res:Tony_Fry . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "3",
+"answertype": "boolean",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Does Por tu amor have more episodes than Game of Thrones?",
+"keywords": "Por tu amor, more, episodes, Game of Thrones"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Por_tu_amor dbo:numberOfEpisodes ?x . res:Game_of_Thrones dbo:numberOfEpisodes ?y . FILTER (?x > ?y) }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "4",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Does the Alba River flow into a lake?",
+"keywords": "Alba River, flow, lake"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { ?x dbo:inflow res:Alba_River . ?x rdf:type dbo:Lake . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "5",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "From which region is the Refosco dal Peduncolo Rosso?",
+"keywords": "region, Refosco dal Peduncolo Rosso"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Refosco_dal_Peduncolo_Rosso dbo:wineRegion ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Slovenia"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Veneto"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Friuli-Venezia_Giulia"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "6",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all Avant-garde jazz record labels.",
+"keywords": "Avant-garde jazz record labels"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:RecordLabel . ?uri dbo:genre res:Avant-garde_jazz . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cavity_Search_Records"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Black_Saint/Soul_Note"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Northern_Spy_Records"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/AUM_Fidelity"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "7",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all books written by David Foster Wallace.",
+"keywords": "books, written, David Foster Wallace"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book . ?uri dbp:author res:David_Foster_Wallace . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brief_Interviews_with_Hideous_Men"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Everything_and_More_(book)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Broom_of_the_System"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Pale_King"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/This_Is_Water"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Both_Flesh_and_Not"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Infinite_Jest"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/A_Supposedly_Fun_Thing_I'll_Never_Do_Again"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Signifying_Rappers"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Consider_the_Lobster"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Girl_with_Curious_Hair"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Oblivion:_Stories"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "8",
+"answertype": "resource",
+"aggregation": "union",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all cars that are produced in Netherlands.",
+"keywords": "cars, produced, Netherlands"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Automobile . { ?uri dbo:assembly res:Netherlands . } UNION { ?uri dbp:assembly res:Netherlands . } UNION { { ?uri dbo:manufacturer ?x . } UNION { ?uri dbp:manufacturer ?x . } { ?x dbo:locationCountry res:Netherlands . } UNION { ?x dbo:location res:Netherlands . } } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_Daffodil"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mitsubishi_Space_Star"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Smart_Forfour"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_44"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Austin_A40_Farina"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ford_Cortina__Mark_II__1"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ford_Cortina__Mark_I__1"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ford_Cortina__TC_Mark_III__1"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mitsubishi_Outlander__Second_generation__1"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Volvo_300_Series"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_XF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mini_Hatch"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_F218_series"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_F241_series"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mitsubishi_Outlander"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_D8"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_B6"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_C12_Zagato"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_C8"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Saab_9-5"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Saab_9-3"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_E12"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spyker_C12_La_Turbie"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Renault–Nissan_Common_Module_Family"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_33"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_MB200"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DAF_SB220"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/VDL_SB200"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/VDL_SB120"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "9",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all companies in Jena.",
+"keywords": "companies, Jena"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:location res:Jena . } UNION { ?uri dbo:headquarter res:Jena . } UNION { ?uri dbo:locationCity res:Jena . } OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Jenapharm"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Präzisionsteilefertigung_Steffen_Pfüller"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Jenoptik"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Analytik_Jena"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Intershop_Communications"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Carl_Zeiss_Meditec"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "10",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all inflows of the Lake Houston.",
+"keywords": "inflows, Lake Houston"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Lake_Houston> dbo:inflow ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/San_Jacinto_River_(Texas)"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "11",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all members of The Who.",
+"keywords": "members, The Who"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:The_Who dbo:bandMember ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Pete_Townshend"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Roger_Daltrey"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "12",
+"answertype": "resource",
+"aggregation": "union",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all professional skateboarders from Sweden.",
+"keywords": "professional, skateboarders, Sweden"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri dbo:occupation res:Skateboarding . { ?uri dbo:birthPlace res:Sweden . } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country res:Sweden . } OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ali_Boulala"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Tony_Magnusson"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "13",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all soccer clubs in Qatar.",
+"keywords": "soccer clubs, Qatar"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:SoccerClub . { ?uri dbo:ground res:Qatar . } UNION { ?uri dbp:ground ?ground . FILTER (regex(?ground, 'Qatar')) } OPTIONAL {?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Shahania_Sports_Club"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Muaither_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al_Rayan_SC_Futsal_Team"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al_Sadd_Futsal_Team"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Khor_Sports_Club"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Umm_Salal_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Rayan_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al_Ahli_SC_(Doha)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Gharafa_Sports_Club"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al_Kharaitiyat_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/El_Jaish_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lekhwiya_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al_Sadd_SC"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Wakrah_Sport_Club"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Arabi_FC_(Qatar)_Reserves"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Al-Arabi_SC_(Qatar)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Qatar_SC"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "14",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me all video games published by Black Isle Studios.",
+"keywords": "video games, published, Black Isle Studios"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:VideoGame . { ?uri dbp:publisher 'Black Isle Studios'@en . } UNION { ?uri dbo:publisher res:Black_Isle_Studios . } OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lionheart:_Legacy_of_the_Crusader"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baldur's_Gate_II:_Throne_of_Bhaal"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baldur's_Gate"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baldur's_Gate:_Dark_Alliance"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baldur's_Gate:_Tales_of_the_Sword_Coast"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baldur's_Gate_II:_Shadows_of_Amn"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "15",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me the children of David Foster.",
+"keywords": "children, David Foster"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?child WHERE { res:David_Foster dbo:child ?child . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"child"
+]
+},
+"results": {
+"bindings": [
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Gigi_Hadid"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brandon_&_Leah"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Amy_S._Foster"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sara_Michael_Foster"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bella_Hadid"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brody_Jenner"
+}
+},
+{
+"child": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Erin_Foster"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "16",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Give me the homepage of Metropolitan Home.",
+"keywords": "homepage, Metropolitan Home"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?string WHERE { res:Metropolitan_Home foaf:homepage ?string . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"string"
+]
+},
+"results": {
+"bindings": [
+{
+"string": {
+"type": "literal",
+"value": "http://www.pointclickhome.com/metropolitan_home"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "17",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How big is the Mammoth Pool Reservoir?",
+"keywords": "big, Mammoth Pool Reservoir"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT ?area WHERE { <http://dbpedia.org/resource/Mammoth_Pool_Reservoir> dbo:areaTotal ?area . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"area"
+]
+},
+"results": {
+"bindings": [
+{
+"area": {
+"type": "literal",
+"value": "4.45154e+06"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "18",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How deep is Steinsee?",
+"keywords": "deep, Steinsee"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?n WHERE { <http://dbpedia.org/resource/Steinsee> dbo:maximumDepth ?n . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"n"
+]
+},
+"results": {
+"bindings": [
+{
+"n": {
+"type": "literal",
+"value": "19.0"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "19",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How high is the Doe Hill Mountain?",
+"keywords": "high, Doe Hill Mountain"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Doe_Hill_Mountain dbo:elevation ?num. }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "1229.87"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "20",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How high is the Volcano Mountain?",
+"keywords": "high, Volcano Mountain"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Volcano_Mountain dbo:elevation ?num. }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "1239.0"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "21",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How high is the Landegode Lighthouse?",
+"keywords": "high, Landegode Lighthouse"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Landegode_Lighthouse dbo:height ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "29.0"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "22",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many employees does Staedtler have?",
+"keywords": "many, employees, Staedtler"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?number WHERE { res:Staedtler dbo:numberOfEmployees ?number . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"number"
+]
+},
+"results": {
+"bindings": [
+{
+"number": {
+"type": "literal",
+"value": "3000"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "23",
+"answertype": "number",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many ethnic groups live in Spain?",
+"keywords": "ethnic groups, live, Spain"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { res:Spain dbo:ethnicGroup ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "1"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "24",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many inhabitants does Nagamangala have?",
+"keywords": "inhabitants, Nagamangala"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Nagamangala dbo:populationTotal ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "17776"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "25",
+"answertype": "number",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many museums does Sofia have?",
+"keywords": "museums, Sofia"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { ?uri rdf:type dbo:Museum . ?uri dbo:location res:Sofia . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "4"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "26",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many pages does The Man with the Red Tattoo have?",
+"keywords": "pages, The Man with the Red Tattoo"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?n WHERE { res:The_Man_with_the_Red_Tattoo dbo:numberOfPages ?n . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"n"
+]
+},
+"results": {
+"bindings": [
+{
+"n": {
+"type": "literal",
+"value": "320"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "27",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many people live in the capital of Togo?",
+"keywords": "people, live, capital, Togo "
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Togo dbo:capital ?x . ?x dbo:populationTotal ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "837437"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "28",
+"answertype": "number",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many politicians graduated from Stanford University?",
+"keywords": "politicians, graduated, Stanford University"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { ?uri dbo:profession res:Politician . ?uri dbo:almaMater res:Stanford_University . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "11"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "29",
+"answertype": "number",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many scientists graduated from Washburn University?",
+"keywords": "scientists, graduated, Washburn University"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { ?uri rdf:type dbo:Scientist . ?uri dbo:almaMater res:Washburn_University . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "2"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "30",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How many students does the Texas Tech University have?",
+"keywords": "students, Texas Tech University"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Texas_Tech_University dbo:numberOfStudents ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "35893"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "31",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How much did Vanilla Sky cost?",
+"keywords": "Vanilla Sky, cost"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?n WHERE { res:Vanilla_Sky dbo:budget ?n . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"n"
+]
+},
+"results": {
+"bindings": [
+{
+"n": {
+"type": "literal",
+"value": "6.8E7"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "32",
+"answertype": "number",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How often did Teresa Mo marry?",
+"keywords": "Teresa Mo, marry"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT (COUNT(DISTINCT ?uri) AS ?count) WHERE { res:Teresa_Mo dbo:spouse ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "1"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "33",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How tall is John Windsor?",
+"keywords": "tall, John Windsor"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:John_Windsor dbo:height ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "2.032"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "34",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "How tall is Kate Upton?",
+"keywords": "tall, Kate Upton"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?height WHERE { res:Kate_Upton dbo:height ?height . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"height"
+]
+},
+"results": {
+"bindings": [
+{
+"height": {
+"type": "literal",
+"value": "1.778"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "35",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "In which country is Solaize located?",
+"keywords": "country, Solaize, located"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Solaize dbo:country ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/France"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "36",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "In which country is the Tasman Lake?",
+"keywords": "country, Tasman Lake"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Tasman_Lake dbo:country ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/New_Zealand"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "37",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "In which country is the Tiefer See?",
+"keywords": "country, Tiefer See"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Tiefer_See dbo:country ?uri . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Germany"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "38",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "In which programming language is QuickTime written?",
+"keywords": "programming language, QuickTime, written"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:QuickTime dbo:programmingLanguage ?uri . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/C_(programming_language)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Objective-C"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "39",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is Campari a beverage?",
+"keywords": "Campari, beverage"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { res:Campari rdf:type dbo:Beverage . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "40",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is Lisa Guerrero a model?",
+"keywords": "Lisa Guerrero, model"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { res:Lisa_Guerrero rdf:type dbo:Model . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "41",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is Sol Tax a scientist?",
+"keywords": "Sol Tax, scientist"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { res:Sol_Tax rdf:type dbo:Scientist . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "42",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is Joe Biden a democrat?",
+"keywords": "Joe Biden, democrat"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Joe_Biden dbo:party <http://dbpedia.org/resource/Democratic_Party_(United_States)> . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "43",
+"answertype": "boolean",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is David Macaulay still alive?",
+"keywords": "David Macaulay, alive"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { OPTIONAL { res:David_Macaulay dbo:deathDate ?date . } FILTER (!BOUND(?date)) }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "44",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is Wilma Flintstone married?",
+"keywords": "Wilma Flintstone, married"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Wilma_Flintstone dbo:spouse ?uri . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "45",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Is there a video game called Flappy Bird?",
+"keywords": "video, game, called, Flappy Bird"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ASK WHERE { ?uri rdf:type dbo:VideoGame . ?uri rdfs:label 'Flappy Bird'@en . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "46",
+"answertype": "resource",
+"aggregation": "union",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Show me everyone who was born on Boxing Day.",
+"keywords": "born, Boxing_Day"
+}
+],
+"query":{
+"sparql": "PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . { ?uri dbo:birthDate ?date . } UNION { ?uri dbp:birthDate ?date . } res:Boxing_Day dbp:date ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Michael_Ponikvar"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Shivam_Patil"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hiro-x"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Jan_Halvarsson"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lizz_Njagah"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "47",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Was Peter Isola a chemist?",
+"keywords": "Peter Isola, chemist"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> ASK WHERE { res:Peter_Isola dbo:profession res:Chemist . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "48",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Was Denis Dutton born in Sioux City?",
+"keywords": "Denis Dutton, born, Sioux City"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Denis_Dutton dbo:birthPlace res:Sioux_City . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "49",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Was Vannes Wu born in Aachen-Mitte?",
+"keywords": "Vanness Wu, born, Aachen-Mitte"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Vanness_Wu dbo:birthPlace res:Aachen-Mitte . } "
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "50",
+"answertype": "boolean",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Was the band Led Zeppelin founded before DJ Tomekk was born?",
+"keywords": "band, Led Zeppelin, founded, DJ Tomekk, born"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX bio: <http://purl.org/vocab/bio/0.1/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX mo: <http://purl.org/ontology/mo/> ASK WHERE { { ?band foaf:name ?name . FILTER regex(?name,'Led Zeppelin') } ?band dbo:activeYearsStartYear ?date1 . res:DJ_Tomekk dbo:birthDate ?date2 . FILTER (?date1 <= ?date2) }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "51",
+"answertype": "boolean",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Was the band ZZ Top founded before Macklemore was born?",
+"keywords": "band, ZZ Top, founded, Macklemore, born"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX bio: <http://purl.org/vocab/bio/0.1/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX mo: <http://purl.org/ontology/mo/> ASK WHERE { { ?band foaf:name ?name . FILTER regex(?name,'ZZ Top') } ?band dbo:activeYearsStartYear ?date1 . res:DJ_Tomekk dbo:birthDate ?date2 . FILTER (?date1 <= ?date2) }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "52",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What are the official languages of Tunisia?",
+"keywords": "official, languages, Tunisia"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Tunisia dbo:officialLanguage ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Arabic"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "53",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the area code of Aegina?",
+"keywords": "area code, Aegina"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?string WHERE { res:Aegina dbo:areaCode ?string . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"string"
+]
+},
+"results": {
+"bindings": [
+{
+"string": {
+"type": "literal",
+"value": "2297"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "54",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the capital of Venezuela?",
+"keywords": "capital, Venezuela"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Venezuela dbo:capital ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Caracas"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "55",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the currency of Rhodesia?",
+"keywords": "currency, Rhodesia"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Rhodesia dbo:currency ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Rhodesian_dollar"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Rhodesian_pound"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "56",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the eye color of Liza Kennedy?",
+"keywords": "eye color, Liza Kennedy"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?color WHERE { res:Liza_Kennedy dbo:eyeColor ?color . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"color"
+]
+},
+"results": {
+"bindings": [
+{
+"color": {
+"type": "literal",
+"value": "Dark brown"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "57",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the hair color of Marlon Teixeira?",
+"keywords": "hair color, Marlon Teixeira"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?color WHERE { res:Marlon_Teixeira dbo:hairColor ?color . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"color"
+]
+},
+"results": {
+"bindings": [
+{
+"color": {
+"type": "literal",
+"value": "Brown"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "58",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the official color of the Carleton University?",
+"keywords": "official color, Carleton University"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:Carleton_University dbo:officialSchoolColour ?string . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"string"
+]
+},
+"results": {
+"bindings": [
+{
+"string": {
+"type": "literal",
+"value": "Black and red"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "59",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "What is the ruling party in Lo Espejo?",
+"keywords": "ruling party, Lo Espejo"
+}
+],
+"query":{
+"sparql": "PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Lo_Espejo dbp:leaderParty ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Party_for_Democracy_(Chile)"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "60",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When did Jules Bergman die?",
+"keywords": "Jules Bergman, die"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Jules_Bergman dbo:deathDate ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1987-02-11"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "61",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When did Red Sonja's creator die?",
+"keywords": "Red Sonja, creator die"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Red_Sonja dbo:creator ?x . ?x dbo:deathDate ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1936-06-11"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "62",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When is Gibraltar Diamond Jubilee Flotilla?",
+"keywords": "Gibraltar Diamon Jubilee Flotilla"
+}
+],
+"query":{
+"sparql": "PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Gibraltar_Diamond_Jubilee_Flotilla dbp:date ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "2012-06-04"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "63",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When was Sevcon founded?",
+"keywords": "Sevcon, founded"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Sevcon dbo:foundingDate ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1961-04-04"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "64",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When was Albert Schweitzer born?",
+"keywords": "Albert Schweitzer, born"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Albert_Schweitzer dbo:birthDate ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1875-01-14"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "65",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When was the Cobble Hill Tunnel built?",
+"keywords": "Cobble Hill Tunnel, built"
+}
+],
+"query":{
+"sparql": "PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Cobble_Hill_Tunnel dbp:built ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "1844"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "66",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When was the Riverdale Monument built?",
+"keywords": "Riverdale Monument, built"
+}
+],
+"query":{
+"sparql": "PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT ?num WHERE { res:Riverdale_Monument dbp:built ?num . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"num"
+]
+},
+"results": {
+"bindings": [
+{
+"num": {
+"type": "literal",
+"value": "1930-09-17"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "67",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "When was the Operation Purple Haze?",
+"keywords": "Operation Purple Haze"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Operation_Purple_Haze dbo:date ?date . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "2007-07-15"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "68",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Where did Queen Emma of Hawaii  die?",
+"keywords": "Queen Emma of Hawaii , die"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Queen_Emma_of_Hawaii  dbo:deathPlace ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Oahu"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Honolulu"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "69",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Where is the Sandhammaren located?",
+"keywords": "Sandhammaren, located"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Sandhammaren dbo:location ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sweden"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ystad"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "70",
+"answertype": "resource",
+"aggregation": "union",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which airports are located in Chios?",
+"keywords": "airports, located, Chios"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Airport . { ?uri dbo:location res:Chios . } UNION { ?uri dbp:location res:Chios . } UNION { ?uri dbo:city res:Chios . } UNION { ?uri dbo:city ?city . ?city dbo:isPartOf res:Chios . } UNION { ?uri dbo:operator res:Chios . } UNION { ?uri dbp:cityServed res:Chios . } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Chios_Island_National_Airport"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "71",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which artist made the album Old School Prankstas?",
+"keywords": "artist, made, album, Old School Prankstas"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Old_School_Prankstas> dbo:artist ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/3_the_Hard_Way"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "72",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which books were published by DAW Books?",
+"keywords": "books, published, DAW Books"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:Book . ?uri dbo:publisher res:DAW_Books . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/ReVisions"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Regenesis_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Fitzpatrick's_War"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Storm_Warning_(Lackey_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Black_Swan_(Lackey_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Book_of_Dreams_(Jack_Vance_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Darkover_Landfall"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hawkmistress!"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Stormqueen!"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Flight_to_Opar"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hadon_of_Ancient_Opar"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Towers_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Winds_of_Fury"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Heritage_of_Hastur"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/We_Can_Build_You"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1984_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/We_Think,_Therefore_We_Are"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Forbidden_Tower"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Night's_Sorceries"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Swordships_of_Scorpio"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Horrible_Beginnings"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Relic_of_Empire"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1990_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/As_the_Green_Star_Rises"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Home_from_the_Sea"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Slow_Regard_of_Silent_Things"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Fall_of_Neskaya"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Warrior_of_World's_End"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Delirium's_Mistress"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Pillars_of_Eternity"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_DAW_Science_Fiction_Reader"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Feast_of_Souls"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cageworld_series"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Star_Winds"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Zen_Gun"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lost_Worlds_(Lin_Carter)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Red_Sun_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Book_of_Philip_K._Dick"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Second_Book_of_Fritz_Leiber"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Spell_Sword"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Native_Tongue_(Suzette_Haden_Elgin_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Serpent's_Shadow_(Lackey_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Magical_Beginnings"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Requiem_for_the_Conqueror"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1983_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1975_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1980_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Heirs_of_Hammerfell"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Other_Side_of_the_Mirror_(anthology)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cthulhu_Mythos_anthology"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Forbidden_Planets"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Free_Amazons_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Renegade_of_Kregen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Exile's_Song"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Perilous_Dreams"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1986_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_White_Gryphon"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Book_of_Frank_Herbert"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Golden_Key_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_8"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1985_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Blackveil"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bladesman_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_5"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Amazons_II"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Shadowplay_(Williams_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/By_the_Sword_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Collision_Course_(Bayley_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Amazons!"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_High_King's_Tomb"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Fall_of_Chronopolis"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/When_the_Green_Star_Calls"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Arrow's_Fall"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Shattered_Chain"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Wizard_of_Zao"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Grand_Wheel"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Other_Earths"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Domains_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1974_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Keeper's_Price"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_3"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Don't_Bite_the_Sun"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Night's_Master"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mention_My_Name_in_Atlantis"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Armor_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Black_Sun_Rising"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brothers_of_Earth"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cuckoo's_Egg"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Dragon_Prince"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/First_Rider's_Call"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Green_Rider"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hestia_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Merchanter's_Luck"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Shadowmarch"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Skybowl"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Stronghold_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sunrunner's_Fire"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Tailchaser's_Song"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Book_of_Earth"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Collected_Short_Fiction_of_C._J._Cherryh"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Dragon_Token"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Dragonbone_Chair"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Other_Log_of_Phileas_Fogg"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Star_Scroll"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_War_of_the_Flowers"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/To_Green_Angel_Tower"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/When_True_Night_Falls"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Fox_(Sherwood_Smith_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mountain_of_Black_Glass"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Wise_Man's_Fear"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_4"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Phoenix_and_Ashes"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Avenger_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Garments_of_Caean"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Past_Imperfect"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cthulhu's_Reign"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Snows_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Alton_Gift"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/By_the_Light_of_the_Green_Star"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Under_the_Green_Star"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Armada_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Name_of_the_Wind"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Transit_to_Scorpio"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/A_Flame_in_Hali"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Arena_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Death's_Master"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hastur_Lord"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1973_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Winds_of_Change_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Exile's_Gate"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Gate_of_Ivrel"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Two_to_Conquer"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/River_of_Blue_Fire"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Brothers_(novella)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Fires_of_Azeroth"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Space_Opera_(1996_anthology)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Arrow's_Flight"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Arrows_of_the_Queen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Elemental_Masters"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Black_Gryphon"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Wondrous_Beginnings"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Four_Moons_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_2"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Alta_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Firebird_(Lackey_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Constellations_(2005_book)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Face_(Vance_novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Joust_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Heroic_Fantasy_(anthology)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1987_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1989_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Stardroppers"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1979_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1988_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Owlknight"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Well_of_Shiuan"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Inda"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Spell_of_the_Witch_World"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Shadow_Matrix"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1972_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Star-Crowned_Kings"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Traitor's_Sun"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Fliers_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Throne_of_the_Crescent_Moon"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Red_as_Blood,_or_Tales_from_the_Sisters_Grimmer"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Suns_of_Scorpio"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Delusion's_Master"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sea_of_Silver_Light"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_9"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lore_of_the_Witch_World"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Prince_of_Scorpio"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1978_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1982_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Time_Slave"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Manhounds_of_Antares"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mars_Probes"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_13"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Book_of_Fritz_Leiber"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/In_the_Green_Star's_Glow"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Forest_of_Peldain"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Reserved_for_the_Cat"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Warrior_of_Scorpio"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Final_Circle_of_Paradise"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Blood_Red_(novel)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1977_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1981_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Rediscovery"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Heroes_in_Training"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sharra's_Exile"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Space,_Inc."
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_10"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_11"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_12"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_14"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_6"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Year's_Best_Fantasy_Stories:_7"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_1976_Annual_World's_Best_SF"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Blood_Price_(Tanya_Huff)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/My_Favorite_Fantasy_Story"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Tides_of_Kregen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mirror_Sight"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Krozair_of_Kregen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/City_of_Sorcery"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Leroni_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Marion_Zimmer_Bradley's_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Renunciates_of_Darkover"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sword_of_Chaos"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Thendara_House"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Wings_of_Wrath"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "73",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which bridges cross the Prut?",
+"keywords": "bridges, cross, Prut"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge . ?uri dbo:crosses res:Prut . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Eiffel_Bridge,_Ungheni"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lipcani-Rădăuți_Bridge"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "74",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which instruments does Courtney Love play?",
+"keywords": "instruments, Courtney Love, play"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Courtney_Love dbo:instrument ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/List_of_Rickenbacker_products"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Squier_Venus"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Fender_Jazzmaster"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "75",
+"answertype": "resource",
+"aggregation": "union",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which languages are spoken in Romania?",
+"keywords": "languages, spoken, Romania"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { { res:Romania dbo:language ?uri . } UNION { ?uri dbo:spokenIn res:Romania . } OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Romanian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bulgarian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hungarian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Macedonian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Banat_Bulgarian_dialect"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kalderash_Romani_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Romanian_Sign_Language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Moselle_Franconian_dialects"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Turkish_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Dacian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hungarian_Sign_Language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Croatian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Torlakian_dialect"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Karamanli_Turkish"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Megleno-Romanian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Aromanian_language"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Shtokavian"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Vlax_Romani_language"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "76",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which museum exhibits The Skater?",
+"keywords": "museum, exhibits, The Skater"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:The_Skater dbo:museum ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/National_Gallery_of_Art"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "77",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which music albums contain the song Into Your Arms?",
+"keywords": "music albums, contain, song, Into Your Arms"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri WHERE { ?single dbo:album ?uri . ?single rdfs:label 'Into Your Arms'@en . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Come_on_Feel_the_Lemonheads"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "78",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which organizations were founded in 1918?",
+"keywords": "organizations, founded, 1918"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri rdf:type dbo:Organisation . { ?uri dbp:foundation ?date . } UNION { ?uri dbo:formationYear ?date . } FILTER regex(?date,'^1918') . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/GTE"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bessarabian_Peasants'_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Santam"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bignan_(automobile)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Eberhart_Steel_Products_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Manx_Labour_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Deutsche_Werft"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Zojirushi_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Luvos"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Plesner_(law_firm)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Quaker_Chemical_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Fruehauf_Trailer_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brendle's"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/General_Motors_Canada"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Clas_Ohlson"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Česká_pošta"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/German_People's_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Istad"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Norsk_Spisevognselskap"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Borregaard"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Tatung_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Jordan's_Furniture"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/OGMA"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mac_Fisheries"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/F.C._Tucker_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/West_Bengal_State_Coop_Bank"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Esimene_Eesti_Põlevkivitööstus"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Robertson_Aircraft_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lenfilm"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Catholic_People's_Party_(Poland)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Brookville_Equipment_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Inghams_Enterprises"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cowen_Group"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Houchens_Industries"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Belships"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/New_York_&_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Lithuania"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Saraswat_Bank"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Perry's_Ice_Cream"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Merchants_Insurance_Group"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Henry_Robb"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bjørnøen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Ukraine_(Soviet_Union)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hungarian_Communist_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kuwahara_(bicycle_company)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/GAGFAH"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kawasaki_Aerospace_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Renault_Agriculture"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Coop_Norden"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Foreign_Policy_Association"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ritz_Camera_Centers"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Argentina"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Austria"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Poland"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/German_National_People's_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Progressive_Citizens'_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Wanzl_(Company)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Engineering_Division"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Crookes_Healthcare"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cotton_(motorcycle)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Germany"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Teachers_Insurance_and_Annuity_Association"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Hertz_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Darigold"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kriegsmarinewerft_Wilhelmshaven"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/People's_Party_(interwar_Romania)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Cecil_Purnell"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Gusmer_Enterprises,_Inc."
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/UBM_plc"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/United_Steel_Companies"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Nationalist_Party_(Northern_Ireland)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Koninklijke_Hoogovens"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mido_(watch)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/O'Neills"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Iochpe-Maxion"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Desnoes_&_Geddes"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Shinano_Kenshi"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Canadian_National_Railway"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/English_Electric"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/German_Democratic_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Oakhurst_Dairy"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Officine_Meccaniche"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Parker_Hannifin"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ruston_(engine_builder)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Société_Anonyme_des_Ateliers_de_Sécheron"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Tuscan_Dairy_Farms"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Zenith_Electronics"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sanlam"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Barclays_Bank_(Zambia)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Frigidaire"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Reformed_Political_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Latvian_Social_Democratic_Workers'_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/IISCO_Steel_Plant"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Burntisland_Shipbuilding_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Attica_Group"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Etos"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Terryberry"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Baker_Perkins"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/DekaBank_(Germany)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lassonde_Industries"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ukrinform"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Votorantim_Group"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Day-Elder"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Bavarian_People's_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Christian-Social_People's_Party_(Liechtenstein)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Federação_Norte-rio-grandense_de_Futebol"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Justice_of_Georgia"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Coachella_Valley_Water_District"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Federação_Gaúcha_de_Futebol"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Education_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Education_and_Science_(Lithuania)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Finance_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Healthcare_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Justice_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Värmlands_Fotbollförbund"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Västergötlands_Fotbollförbund"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Birmingham_Civic_Society"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/English-Speaking_Union"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Great_Public_Schools_Association_of_Queensland_Inc."
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Internal_Revenue_Service"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Thule_Society"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Byelorussia"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/German_Socialist_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/CONSUDATLE"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Agriculture,_Forestry_and_Rural_Development"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Stahlhelm,_Bund_der_Frontsoldaten"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Minnesota_Farmer–Labor_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Berlin-Brandenburg_Academy_of_Sciences_and_Humanities"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Politischer_Arbeiter-Zirkel"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Federação_Maranhense_de_Futebol"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_for_Foreign_Affairs_(Finland)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Universities_UK"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/National_Academy_of_Sciences_of_Ukraine"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/White_Guard_(Finland)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Foreign_Affairs_(Armenia)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Foreign_Affairs_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Foreign_Affairs_(Lithuania)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Foreign_Affairs_of_Georgia"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Association_of_Theological_Schools_in_the_United_States_and_Canada"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Greece"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Council_on_Foreign_Relations"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/National_Coalition_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/World_Affairs_Councils_of_America"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Communist_Party_of_Finland"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Main_Intelligence_Directorate_(Russia)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Armenian_National_Committee_of_America"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Economy_(Lithuania)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/National_War_Labor_Board"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Royal_Air_Force_Club"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Central_Oregon_Irrigation_District"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/New_Jersey_State_Interscholastic_Athletic_Association"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Oregon_School_Activities_Association"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/National_Democratic_and_Labour_Party"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Interior_(Poland)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ministry_of_Internal_Affairs_(Azerbaijan)"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Virginia_Department_of_Education"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "79",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which presidents were born in 1891?",
+"keywords": "presidents, born, 1891"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:President . ?uri dbo:birthDate ?date . FILTER regex(?date, '^1891') . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Karl_Dönitz"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Antonio_Segni"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Béla_Imrédy"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mohammad-Reza_Hekmat"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sun_Fo"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Alberto_Teisaire"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Harry_Nixon"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mariano_Ospina_Pérez"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Saadallah_al-Jabiri"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Lutfi_al-Haffar"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Hans_Gabrielsen"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Máire_Gill"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "80",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Which professional surfers were born in Australia?",
+"keywords": "professional surfers, born, Australia"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri dbo:occupation res:Surfing . ?uri dbo:birthPlace res:Australia . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ian_Cairns"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Midget_Farrelly"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "81",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who created Retrocrush?",
+"keywords": "created, Retrocrush"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Retrocrush dbo:author ?uri . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Robert_Berry_(webmaster)"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "82",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who created Miss Marple?",
+"keywords": "created, Miss Marple"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Miss_Marple dbo:creator ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Agatha_Christie"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "83",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who created the comic Old Man Logan?",
+"keywords": "created, comic, Old Man Logan"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?uri ?string WHERE { res:Old_Man_Logan dbo:writer ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mark_Millar"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "84",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who designed the Langebro?",
+"keywords": "designed, Langebro"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Langebro dbp:designer ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kaj_Gottlob"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "85",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who developed Quake engine?",
+"keywords": "developed, Quake engine"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Quake_engine dbo:developer ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Id_Software"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/John_Carmack"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Michael_Abrash"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "86",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who developed the video game Duke Nukem 3D?",
+"keywords": "developed, video game, Duke Nukem 3D"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Duke_Nukem_3D dbo:developer ?uri . OPTIONAL { ?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/3D_Realms"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/General_Arcade"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "87",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who founded Sony?",
+"keywords": "founded, Sony"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Sony dbo:foundedBy ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Akio_Morita"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Masaru_Ibuka"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "88",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the editor of Semana?",
+"keywords": "editor, Semana"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Semana dbo:editor ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Alejandro_Santos_Rubino"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "89",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the founder of DC Comics?",
+"keywords": "founder, DC Comics"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:DC_Comics dbo:founder ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Malcolm_Wheeler-Nicholson"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "90",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the heaviest player of the ASK Riga?",
+"keywords": "heaviest, player, ASK Riga"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . ?uri dbo:weight ?num . { ?uri dbp:team res:ASK_Riga . } UNION { ?uri dbp:draftTeam res:ASK_Riga . } UNION { ?uri dbo:draftTeam res:ASK_Riga . } } ORDER BY DESC(?num) OFFSET 0 LIMIT 1"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kaspars_Kambala"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "91",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the manager of Gazelle FC?",
+"keywords": "manager, Gazelle FC"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Gazelle_FC> dbo:manager ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Mamadou_Bodjim"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "92",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the mayor of Virar?",
+"keywords": "mayor, Virar"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?uri ?string WHERE { res:Virar dbo:leaderName ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Kshitij_Thakur"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "93",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the mayor of the capital of New Caledonia?",
+"keywords": "mayor, capital, New Caledonia"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:New_Caledonia dbo:capital ?x . ?x dbo:mayor ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sonia_Lagarde"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "94",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the owner of Mazda?",
+"keywords": "owner, Mazda"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Mazda dbo:owner ?uri . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Japan_Trustee_Services_Bank"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Ford_Motor_Company"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Sumitomo_Mitsui_Banking_Corporation"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/The_Master_Trust_Bank_of_Japan"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "95",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the tallest player of Udinese Calcio?",
+"keywords": "tallest, player, Udinese Calcio"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:team res:Udinese_Calcio . ?uri dbo:height ?h . } ORDER BY DESC(?h) OFFSET 0 LIMIT 1"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Željko_Brkić"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "96",
+"answertype": "resource",
+"aggregation": "true",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who is the youngest Snooker player?",
+"keywords": "youngest, Snooker player"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:SnookerPlayer . ?uri dbo:birthDate ?date . } ORDER BY DESC(?date) OFFSET 0 LIMIT 1"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Yan_Bingtao"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "97",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who painted Unfinished portrait of General Bonaparte?",
+"keywords": "painted, Unfinished portrait of General Bonaparte"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Unfinished_portrait_of_General_Bonaparte dbo:author ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Jacques-Louis_David"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "98",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who produces Red Bull?",
+"keywords": "produces, Red Bull"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { ?uri dbo:product res:Red_Bull . OPTIONAL { ?uri rdfs:label ?string. FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Red_Bull_GmbH"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "99",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who were the parents of Maria of Antioch?",
+"keywords": "parents, Maria of Antioch"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Maria_of_Antioch dbo:parent ?uri . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Constance_of_Antioch"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/Raymond_of_Poitiers"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "100",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "false",
+"question": [
+{
+"language": "en",
+"string": "Who wrote the book Leave It to Psmith?",
+"keywords": "wrote, book, Leave It to Psmith"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?uri ?string WHERE { res:Leave_It_to_Psmith dbo:author ?uri . OPTIONAL {?uri rdfs:label ?string . FILTER (lang(?string) = 'en') } }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "http://dbpedia.org/resource/P._G._Wodehouse"
+}
+}
+]
+}
+}
+]
+}
+]
+}
