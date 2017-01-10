@@ -50,6 +50,6 @@ The qald7-train-hybrid dataset was created using the hybrid questions from QALD4
 Duplicates were identified by hash of english question string, and removed.
 
 ## QALD-7-train-largescale dataset
-The qald7-train-largescale dataset was created by varying the QALD1 to QALD5 question's instance data by another random instance data of the same DBpedia class. The instance data was replaced in both the question and the query. Queries that did not give a proper result were removed.
+The qald7-train-largescale dataset was created by replacing the QALD1 to QALD5 question's instance data, mostly but not limited to named entities, by another random instance data of the same DBpedia class. The instance data was replaced in both the question and the query. Queries that did not give a proper result were removed.
 
 ## QALD-7-train-multilingual-wikidata dataset
