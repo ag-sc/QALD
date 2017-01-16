@@ -54,6 +54,6 @@ The qald7-train-largescale dataset was created by replacing the QALD1 to QALD5 q
 
 ## QALD-7-train-multilingual-wikidata dataset
 
-The qald-7-train-multilingual-wikidata dataset was created based on the qald-6-test-multilingual dataset from QALD-6. We took the questions and gold standard queries created for DBpedia and formulated corresponding queries to answer these questions from Wikidata. Due to different schema and data structure of Wikidata, some questions could not be answered using Wikidata. We replaced these questions with the ones taken from qald-6-train-multilingual.
+The qald-7-train-en-wikidata dataset was created based on the qald-6-test-multilingual dataset from QALD-6. We took only the English questions and gold standard queries created for DBpedia and formulated corresponding queries to answer these questions from Wikidata. Due to different schema and data structure of Wikidata, some questions could not be answered using Wikidata. We replaced these questions with the ones taken from qald-6-train-multilingual.
 The gold standard answers were generated using the Wikidata dumps from 09-01-2017 (https://dumps.wikimedia.org/wikidatawiki/entities/20170109/).
 
