@@ -709,7 +709,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 18,
       "answertype": "resource",
       "aggregation": "true",
       "onlydbo": "false",
@@ -719,6 +719,42 @@
           "language": "en",
           "string": "What is the largest country in the world?",
           "keywords": "largest country, world"
+        }
+      ],
+      "query": {
+        "sparql": "SELECT DISTINCT * WHERE { ?uri <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q6256> . ?uri <http://www.wikidata.org/prop/direct/P2046> ?area . ?uri rdfs:label ?label } ORDER BY DESC(?area) LIMIT 1"
+      },
+      "answers": [
+        {
+          "head": {
+            "vars": [
+              "uri"
+            ]
+          },
+          "results": {
+            "bindings": [
+              {
+                "uri": {
+                  "type": "uri",
+                  "value": "http://www.wikidata.org/entity/Q419"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "answertype": "resource",
+      "aggregation": "false",
+      "onlydbo": "false",
+      "hybrid": "false",
+      "question": [
+        {
+          "language": "en",
+          "string": "Which states border Illinois?",
+          "keywords": "state, border, Illinois"
         }
       ],
       "query": {
@@ -767,43 +803,6 @@
                 "uri": {
                   "type": "uri",
                   "value": "http://www.wikidata.org/entity/Q1603"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "answertype": "resource",
-      "aggregation": "false",
-      "onlydbo": "false",
-      "hybrid": "false",
-      "question": [
-        {
-          "language": "en",
-          "string": "Which states border Illinois?",
-          "keywords": "state, border, Illinois"
-        }
-      ],
-      "query": {
-        "sparql": "SELECT (SUM(?goals) as ?total) WHERE { <http://www.wikidata.org/entity/Q12897> <http://www.wikidata.org/prop/P54> ?teamMembership .  ?teamMembership <http://www.wikidata.org/prop/qualifier/P1351> ?goals . }"
-      },
-      "answers": [
-        {
-          "head": {
-            "vars": [
-              "total"
-            ]
-          },
-          "results": {
-            "bindings": [
-              {
-                "total": {
-                  "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
-                  "type": "literal",
-                  "value": "679"
                 }
               }
             ]
