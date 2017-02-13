@@ -1,0 +1,3795 @@
+{
+  "dataset" : {
+    "id" : "qald-7-train-hybrid"
+  },
+  "questions" : [ {
+    "question" : {
+      "id" : "0",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pierce_Brosnan"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "1",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "At which college did the only American actor that received the César Award study?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Queens_College,_City_University_of_New_York"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "2",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Where did the first man in space die?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Kirzhach"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "3",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which Chinese-speaking country is a former Portguese colony?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Macau"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "4",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the largest city in the county in which Faulkner spent most of his life?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Oxford,_Mississippi"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "5",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Barton_Fink"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "6",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Dakar is the capital of which country member of the African Union?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Senegal"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "7",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which city does the first person to climb all 14 eight-thousanders come from?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://http://dbpedia.org/page/Brixen"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "8",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Under which king did the British prime minister that signed the Munich agreement serve?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_VI"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "9",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who succeeded the pope that reigned only 33 days?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pope_John_Paul_II"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "10",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "A landmark of which city is the home of the Mona Lisa?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Paris"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "11",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which street basketball player was diagnosed with Sarcoidosis?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Slick_Watts"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "12",
+      "answertype" : "date",
+      "language" : [ {
+        "language" : "en",
+        "question" : "When was the composer of the opera Madame Butterfly born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "date" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "date" : {
+              "type" : "literal",
+              "value" : "1858-12-22"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "13",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which anti-apartheid activist graduated from the University of South Africa?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "14",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who is the front man of the band that wrote Coffee & TV?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Damon_Albarn"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "15",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which recipients of the Victoria Cross died in the Battle of Arnhem?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Baskeyfield"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Hollington_Grayburn"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "16",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Gaborone is the capital of which country member of the African Union?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Botswana"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "17",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which German mathematicians were members of the von Braun rocket group?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Walter_Haeussermann"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Oswald_Lange"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "18",
+      "answertype" : "boolean",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Are there man-made lakes in Australia that are deeper than 100 meters?"
+      } ],
+      "answers" : {
+        "head" : { },
+        "results" : { },
+        "boolean" : false
+      },
+      "metadata" : {
+        "aggregation" : true,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "19",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which Secretary of State policies lead to the United States' acquisition of Pacific colonies?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_G._Blaine"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "20",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_G._Blaine"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "21",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who played the drums in the band that wrote Complete Control?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Topper_Headon"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "22",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which horses did The Long Fellow ride?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alleged_(horse)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nijinsky_II"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Crepello"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Sir_Ivor"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Empery"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/St._Paddy"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/The_Minstrel"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Never_Say_Die_(horse)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Petite_Etoile"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Teenoso"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Roberto_(horse)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "23",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How many awards achieved the creator of the world's most famous equation?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "6"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "24",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Of the people that died of radiation in Los Alamos, whose death was an accident?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Louis_Slotin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Harry_K._Daghlian,_Jr."
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "25",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which writers converted to Islam?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Jamilah_Kolocotronis"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lev_Nussimbaum"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ismael_Urbain"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Jacky_Trevane"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Aukai_Collins"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "26",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who was the last man on the moon?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Eugene_Cernan"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "27",
+      "answertype" : "string",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Under which pseudonym did Charles Dickens publish some of his books?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "string" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "string" : {
+              "type" : "literal",
+              "value" : "Boz"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "28",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "For which movie did the daughter of Francis Ford Coppola receive an Oscar?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lost_in_Translation_(film)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "29",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who is the president by whom 20 million Americans had gained health insurance?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Barack_Obama"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "30",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who invented the World Wide Web?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Tim_Berners-Lee"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "31",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which astronauts died at the Columbia disaster also known as STS-107?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/David_M._Brown"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Rick_Husband"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Laurel_Clark"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ilan_Ramon"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Michael_P._Anderson"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_C._McCool"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Kalpana_Chawla"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "32",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city was the assassin of Martin Luther King born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "33",
+      "answertype" : "string",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the name of the Viennese newspaper founded by the creator of the croissant?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "string" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "string" : {
+              "type" : "literal",
+              "value" : "Die Presse"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "34",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which members of the Wu-Tang Clan took their stage name from a movie?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Method_Man"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ghostface_Killah"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "35",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which actress starring in the TV series Friends owns the production company Coquette Productions?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Courteney_Cox"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "36",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who of those resting in Westminster Abbey wrote a book set in London and Paris?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Charles_Dickens"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "37",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "List all the battles commanded by the lover of Cleopatra."
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Avaricum"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Alesia"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Siege_of_Uxellodunum"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_the_Axona"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Zela"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Siege_of_Massilia"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Gergovia"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Gallic_Wars"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Siege_of_Alexandria_(47_BC)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Thapsus"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Vosges_(58_BC)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Dyrrhachium_(48_BC)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Pharsalus"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Caesar's_invasions_of_Britain"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_the_Nile_(47_BC)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Caesar's_Civil_War"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Munda"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Bibracte"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_the_Sabis"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Ilerda"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_the_Arar"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Ruspina"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "38",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who was vice president under the president who authorized atomic weapons against Japan during World War II?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alben_W._Barkley"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "39",
+      "answertype" : "string",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Daniel Craig"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "string" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "string" : {
+              "type" : "literal",
+              "value" : "Daniel Craig"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "40",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which anti-apartheid activist was born in Mvezo?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "41",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "The home of the Mona Lisa is a landmark of which city?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Paris"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "42",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "On which island did the national poet of Greece die?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Corfu"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "43",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which books of the laureate of American lowlife are published by Black Sparrow Books?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Factotum_(novel)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Women_(novel)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Post_Office_(novel)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ham_on_Rye"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pulp_(novel)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Hollywood_(Bukowski_novel)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "44",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How many floors does the world's only 7 star hotel have?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "56"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "45",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How many children does the actor who plays Dan White in Milk have?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "2"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "46",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who are the architects of the tallest building in Japan?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/César_Pelli"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nikken_Sekkei"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "47",
+      "answertype" : "text",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the name of the school where obama's wife is studied?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "text" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "text" : {
+              "type" : "text",
+              "value" : "\"Harward Law School\" @en"
+            }
+          }, {
+            "text" : {
+              "type" : "text",
+              "value" : "\"Princeton University\" @en"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "48",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which recipients of the Victoria Cross fought in the Battle of Arnhem?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Baskeyfield"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Hollington_Grayburn"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "49",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which buildings in art deco style did Shreve, Lamb and Harmon design?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Empire_State_Building"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/500_Fifth_Avenue"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Joel_W._Solomon_Federal_Building_and_United_States_Courthouse"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Hill_Building"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "50",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which country did the first known photographer of snowflakes come from?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/United_States"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "51",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the Answer to The Ultimate Question of Life, the Universe, and Everything?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/42_(number)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "52",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which building owned by the Bank of America was featured in the TV series MegaStructures?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/page/Bank_of_America_Tower_(New_York_City)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "53",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How old is James Bond in the latest Bond book by William Boyd?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "45"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "54",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which of the volcanoes that erupted in 1550 was named after an explorer?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Krasheninnikov_(volcano)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "55",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which British territories was the \"Father of Singapore\" born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Straits_Settlements"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "56",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How many Golden Globe awards did the daughter of Henry Fonda win?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "7"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "57",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who are the sons of the songwriter of the Beatles?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Sean_Lennon"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Julian_Lennon"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "58",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Where did the first human in space die?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Kirzhach"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "59",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which daughter of Francis Ford Coppola received an Academy Award for Lost in Translation?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Sofia_Coppola"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "60",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which year did the Hungarian-American actor called \"The King of Horror\" make his first film?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "1917"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "61",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the native city of Hollywood's highest-paid actress?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Los_Angeles"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "62",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Give me the currencies of all G8 countries."
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Euro_sign"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/United_States_dollar"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Japanese_yen"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Russian_ruble"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Canadian_dollar"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pound_sterling"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Euro"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "63",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Bryan_Cranston"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "64",
+      "answertype" : "boolean",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Did Napoleon's first wife die in France?"
+      } ],
+      "answers" : {
+        "head" : { },
+        "results" : { },
+        "boolean" : false
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "65",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city does the leader of the Xposé girls live?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Dublin"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "66",
+      "answertype" : "date",
+      "language" : [ {
+        "language" : "en",
+        "question" : "When was the composer of the opera Madama Butterfly born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "date" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "date" : {
+              "type" : "literal",
+              "value" : "1858-12-22"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "67",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How many Golden Globe awards did the husband of Katie Holmes win?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "3"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : true,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "68",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Are the Rosetta Stone and the Gayer-Andersen cat exhibited in the same museum?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "true"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : true,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "69",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city was the mother of Bill Gates born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Seattle"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "70",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What eating disorder is characterized by an appetite for substances such as clay and sand?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pica_(disorder)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "71",
+      "answertype" : "string",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Lost in Translation"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "string" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "string" : {
+              "type" : "literal",
+              "value" : "Lost in Translation"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "72",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which movie established a second carrier for Bill Murray?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Rushmore_(film)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "73",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which anti-apartheid revolutionary was born in Mvezo?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nelson_Mandela"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "74",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which town was the man convicted of killing Martin Luther King born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "75",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Under which king did the British prime minister that had a reputation as a playboy serve?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_VI"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "76",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How old was Steve Job's sister when she first met him?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "25"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "77",
+      "answertype" : "date",
+      "language" : [ {
+        "language" : "en",
+        "question" : "When was the the greatest composer of Italian opera after Verdi born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "date" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "date" : {
+              "type" : "literal",
+              "value" : "1858-12-22"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "78",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who composed the music for the film that depicts the early life of Jane Austen?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Adrian_Johnston"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "79",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which writers had influenced the philosopher that refused a Nobel Prize?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Dos_Passos"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Fyodor_Dostoyevsky"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Voltaire"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Gustave_Flaubert"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Louis-Ferdinand_Céline"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "80",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who composed the music for the film that depicts the early life of Jane Austin?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "dbpedia.org/resource/Adrian_Johnston"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "81",
+      "answertype" : "string",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Under which pseudonym did Charles Dickens write some of his books?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "string" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "string" : {
+              "type" : "literal",
+              "value" : "Boz"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "82",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which princess died in a car crash in Paris?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Diana_Princess_of_Wales"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "83",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which birds are protected under the National Parks and Wildlife Act?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Yellow_Thornbill"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Bar-shouldered_Dove"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Chestnut_Teal"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Black-faced_Cuckoo-shrike"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Australian_Shelduck"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "84",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "List all the battles fought by the lover of Cleopatra."
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Pharsalus"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Final_War_of_the_Roman_Republic"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Philippi"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Caesar's_Civil_War"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Liberators'_civil_war"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Actium"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Antony's_Parthian_War"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Roman–Parthian_Wars"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Gallic_Wars"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Battle_of_Mutina"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "85",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who is the founder of the Turkish Republic?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Mustafa_Kemal_Atat%C3%BCrk"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "86",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which buildings owned by the crown overlook the North Sea?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Scarborough_Castle"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "87",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Which of the volcanoes that erupted in 1550 is still active?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/page/Volc%C3%A1n_Bar%C3%BA"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "88",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Where was the \"Father of Singapore\" born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Jamaica"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "89",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who was the president of the USSR during the cold war?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Mikhail_Gorbachev"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "90",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What is the birth place of Hollywood's highest-paid actress?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Los_Angeles"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "91",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Where was the first race for the greatest Formula One driver of all times?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/1991_Belgian_Grand_Prix"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "92",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who is the wife of the creator of the César Award?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Françoise_Arnoul"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "93",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who were generals of the battle of gettysburg?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_Warner_Slocum"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_Barnes_(general)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Archibald_C._Godwin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alexander_Hays"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Romeyn_B._Ayres"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/R%C3%A9gis_de_Trobriand"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Orpheus_S._Woodward"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Clement_A._Evans"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_Dorsey_Pender"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Robert_O._Tyler"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Paul_Jones_Semmes"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Buford"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_L._Kemper"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_Armstrong_Custer"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_R._Chambliss"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Samuel_K._Zook"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Stephen_Dodson_Ramseur"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Charles_K._Graham"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Abner_Monroe_Perrin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/J._H._Hobart_Ward"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_Mahone"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Carle_Augustus_Woodruff"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Robert_D._Lilley"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Oliver_O._Howard"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Richard_L._T._Beale"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lafayette_McLaws"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Isaac_R._Trimble"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_T._Anderson"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Richard_B._Garnett"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_H._Steuart_(brigadier_general)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lucius_Fairchild"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_Devin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alfred_Iverson,_Jr."
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_Barksdale"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Gabriel_Ren%C3%A9_Paul"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Harry_C._Egbert"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_L._Rosser"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_Pickett"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Doby_Kennedy"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Newton_(engineer)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lewis_Armistead"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alexander_Schimmelfennig"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/J._Johnston_Pettigrew"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_F._Reynolds"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_Baxter"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Elwell_Stephen_Otis"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Gouverneur_K._Warren"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_T._Wofford"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Charles_Powell_Adams"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ira_Coray_Abbott"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_C._Oates"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Lysander_Cutler"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ranald_S._Mackenzie"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Augustus_Pearl_Martin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Birkett_D._Fry"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_C._Caldwell"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_Montrose_Graham,_Jr."
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Armistead_Lindsay_Long"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_P._Foster"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_M._Jones"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Benjamin_G._Humphreys"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_Algeo_Rowley"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Junius_Daniel"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Charles_Griffin"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Adrian_R._Root"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alonzo_W._Adams"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Daniel_Butterfield"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_L._Eustis"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_Conner_(general)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_Livermore_Abbott"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Napoleon_B._McLaughlen"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_Alfred_Smyth"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/W%C5%82odzimierz_Krzy%C5%BCanowski"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_Henry_Lane_(Confederate_general)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Joshua_Chamberlain"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Charles_Saalmann"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Brown_Gordon"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Leroy_Augustus_Stafford"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_Gwyn"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Winfield_Scott_Hancock"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Albion_P._Howe"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Joseph_G._Sanders"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Peter_A.S._McGlashan"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alexander_S._Webb"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Richard_Napoleon_Batchelder"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Laurence_S._Baker"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Ellis_Spear"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Daniel_Sickles"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_Clay_Rice"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Harry_T._Hays"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_W._Egan"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_W._Hyde"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_L._Brandon"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Edward_Lloyd_Thomas"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_C._Bates"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/George_Meade"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Richard_S._Ewell"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Thomas_H._Ruger"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Adolph_von_Steinwehr"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Collett_Leventhorpe"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_Bell_Hood"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Moxley_Sorrel"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/John_C._Robinson"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_Heth"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Joseph_B._Kershaw"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Beverly_Robertson"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alfred_Moore_Scales"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Elon_J._Farnsworth"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Francis_C._Barlow"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Horatio_Wright"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Samuel_W._Crawford"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_S._Huidekoper"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/William_Smith_(Virginia_governor)"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Henry_Jackson_Hunt"
+            }
+          }, {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/James_J._Archer"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "94",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city where Charlie Chaplin's half brothers born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/London"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "95",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who was the mayor of London during the olympic games?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Boris_Johnson"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "96",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who is the architect of the tallest building in Japan?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Nikken_Sekkei"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "97",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city does the sports commentator know as Memory Man live?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Dublin"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "98",
+      "answertype" : "date",
+      "language" : [ {
+        "language" : "en",
+        "question" : "When was the European President known as the decider born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "date" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "date" : {
+              "type" : "literal",
+              "value" : "1954-07-17"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "99",
+      "answertype" : "number",
+      "language" : [ {
+        "language" : "en",
+        "question" : "How old was Steve Jobs' sister when she first met him?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "c" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "c" : {
+              "type" : "literal",
+              "value" : "25"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "100",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who was vice president under the president who approved the use of atomic weapons against Japan during World War II?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alben_W._Barkley"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "101",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "What eating disorder is characterized by eating substances such as clay and sand?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Pica_(disorder)"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "102",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "Who first deciphered the Egyptian hieroglyphs?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Jean-Fran%C3%A7ois_Champollion"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "103",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which city does the former main presenter of the Xposé girls live?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Dublin"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : true,
+        "hybrid" : true
+      }
+    }
+  }, {
+    "question" : {
+      "id" : "104",
+      "answertype" : "resource",
+      "language" : [ {
+        "language" : "en",
+        "question" : "In which town was the assassin of Martin Luther King born?"
+      } ],
+      "answers" : {
+        "head" : {
+          "vars" : [ "uri" ]
+        },
+        "results" : {
+          "bindings" : [ {
+            "uri" : {
+              "type" : "uri",
+              "value" : "http://dbpedia.org/resource/Alton,_Illinois"
+            }
+          } ]
+        }
+      },
+      "metadata" : {
+        "aggregation" : false,
+        "onlydbo" : false,
+        "hybrid" : true
+      }
+    }
+  } ]
+}
