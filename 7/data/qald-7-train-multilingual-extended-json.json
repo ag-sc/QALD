@@ -1996,7 +1996,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : true,
@@ -2367,7 +2367,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -4181,7 +4181,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -5311,7 +5311,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -5362,7 +5362,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -6595,7 +6595,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -6646,7 +6646,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -6781,7 +6781,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -7152,7 +7152,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -7198,7 +7198,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -9241,7 +9241,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -9548,7 +9548,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -10362,7 +10362,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -11296,7 +11296,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -12065,7 +12065,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -12178,7 +12178,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -12227,7 +12227,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -12283,7 +12283,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
@@ -13915,7 +13915,7 @@
       "answers" : {
         "head" : { },
         "results" : { },
-        "boolean" : false
+        "boolean" : true
       },
       "metadata" : {
         "aggregation" : false,
