@@ -39,7 +39,12 @@
           "language": "nl",
           "string": "Wanneer was de Slag bij Gettysburg?",
           "keywords": "Slag bij Gettysburg"
-        }
+        },
+      	{
+      	  "language": "hi_IN",
+      	  "string":"गेटिसबर्ग का युद्ध कब हुआ था?",
+      	  "keywords":"गेटिसबर्ग का युद्ध"
+      	}
       ],
       "query": {
         "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?date \nWHERE { \n       res:Battle_of_Gettysburg dbo:date ?date .\n}"
@@ -100,6 +105,11 @@
           "language": "nl",
           "string": "Toen een lijst van alle musicals met muziek van Elton John.",
           "keywords": "musicals, muziek van, Elton John"
+        },
+        {
+          "language": "hi_IN",
+          "string":"एल्टन जॉन द्वारा संगीत के साथ सभी संगीतों को सूचीबद्ध करें।",
+          "keywords":"एल्टन जॉन का संगीत"
         },
         {
           "language": "ro",
@@ -191,6 +201,11 @@
           "keywords": "hoog, vuurtoren van Colombo"
         },
         {
+          "language": "hi_IN",
+          "string":"कोलंबो में लाइटहाउस कितना ऊँचा है?",
+          "keywords":"कोलंबो, लाइटहाउस"
+        },
+        {
           "language": "ro",
           "string": "Cât de înalt este farul din Colombo?",
           "keywords": "înalt, farul din Colombo"
@@ -255,6 +270,11 @@
           "language": "nl",
           "string": "Wie was de vrouw van de Amerikaanse president Lincoln?",
           "keywords": "vrouw, president van America, Lincoln"
+        },
+        {
+          "language": "hi_IN",
+          "string":"अमेरिकी राष्ट्रपति लिंकन की पत्नी कौन थी?",
+          "keywords":"अमेरिकी राष्ट्रपति लिंकन"
         }
       ],
       "query": {
@@ -321,6 +341,11 @@
           "language": "nl",
           "string": "Wie is de presentator van de BBC Wildlife Specials?",
           "keywords": "presentator, BBC Wildlife Specials"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"बीबीसी वाइल्डलाइफ स्पेशल का मेजबान कौन है?",
+        	"keywords":"बीबीसी वाइल्डलाइफ स्पेशल, मेजबान"
         },
         {
           "language": "ro",
@@ -394,6 +419,11 @@
           "keywords": "kosten, Pulp Fiction"
         },
         {
+        	"language": "hi_IN",
+        	"string":"पल्प फिक्शन की लागत कितनी थी?",
+        	"keywords":"पल्प फिक्शन, लागत"
+        },
+        {
           "language": "ro",
           "string": "Cât a costat Pulp Fiction?",
           "keywords": "cost, Pulp Fiction"
@@ -463,6 +493,11 @@
           "language": "nl",
           "string": "In welke stad bevindt zich de Heineken brouwerij?",
           "keywords": "stad, Heineken, brouwerij"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"हाइनेकेन शराब की भठ्ठी किस शहर में है?",
+        	"keywords":"हाइनेकेन, शराब की भठ्ठ, शहर"
         },
         {
           "language": "ro",
@@ -536,6 +571,11 @@
           "keywords": "Operatie Overlord, datum"
         },
         {
+        	"language": "hi_IN",
+        	"string":"ऑपरेशन ओवेरलोर्ड कब शुरू हुआ था?",
+        	"keywords":"ऑपरेशन ओवेरलोर्ड"
+        },
+        {
           "language": "ro",
           "string": "Când a început operațiunea Overlord?",
           "keywords": "când, început, operațiunea Overlord"
@@ -605,6 +645,11 @@
           "language": "nl",
           "string": "In welke stad eindigt de Route 68 in Chili?",
           "keywords": "stad, eindigt, Route 68, Chili"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"चिली रूट 68 का अंत कौनसे शहर में होता है?",
+        	"keywords":"चिली रूट 68, शहर"
         },
         {
           "language": "ro",
@@ -678,6 +723,11 @@
           "keywords": "Slack, ontwikkelaar"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कौन ने स्लैक विकसित किया है?",
+        	"keywords":"स्लैक, विकासक"
+        },
+        {
           "language": "ro",
           "string": "Cine a dezvoltat Slack?",
           "keywords": "dezvoltator, Slack"
@@ -744,6 +794,11 @@
           "keywords": "getrouwd met, president Chirac"
         },
         {
+        	"language": "hi_IN",
+        	"string":"राष्ट्रपति चिराक से किसने विवाह किया था?",
+        	"keywords":"राष्ट्रपति चिराक, विवाह"
+        },
+        {
           "language": "ro",
           "string": "Cine a fost căsătorit cu președintele Chirac?",
           "keywords": "căsătorit cu, președintele Chirac"
@@ -808,6 +863,11 @@
           "language": "nl",
           "string": "Waaraan overleed Bruce Carver?",
           "keywords": "Bruce Carver, gestorven aan"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ब्रूस कार्वर कि मृत्यु किस से हुई?",
+        	"keywords":"ब्रूस कार्वर, मृत्यु"
         }
       ],
       "query": {
@@ -869,6 +929,11 @@
           "language": "nl",
           "string": "Wie schilderde Christus in de storm op het meer van Galilea?",
           "keywords": "schilder, Christus in de storm op het meer van Galilea"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किसने गलील के सागर पर द स्टॉर्म को चित्रित किया?",
+        	"keywords":"गलील सागर, द स्टॉर्म, चित्रित"
         }
       ],
       "query": {
@@ -935,6 +1000,11 @@
           "language": "nl",
           "string": "Door welke steden loopt de Weser?",
           "keywords": "stad, loopt door, Weser"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किन शहरों से वेसर का प्रवाह होता है?",
+        	"keywords":"वेसर, शहरो, प्रवाह"
         },
         {
           "language": "ro",
@@ -1044,6 +1114,11 @@
           "keywords": "plaatsen, stadion, FC Porto"
         },
         {
+        	"language": "hi_IN",
+        	"string":"एफसी पोर्टो के घर स्टेडियम में कितनी सीटें हैं?",
+        	"keywords":"एफसी पोर, सीटें, स्टेडियम"
+        },
+        {
           "language": "ro",
           "string": "Câte locuri are stadionul lui FC Porto?",
           "keywords": "Câte locuri, stadionul lui FC Porto"
@@ -1113,6 +1188,11 @@
           "language": "nl",
           "string": "Met wie is de dochter van Robert Kennedy getrouwd?",
           "keywords": "Robert Kennedy, dochter, getrouwd"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"रॉबर्ट कैनेडी की बेटी की कौन से शादी हुइ है?",
+        	"keywords":"रॉबर्ट कैनेडी, बेटी, शादी"
         },
         {
           "language": "ro",
@@ -1190,6 +1270,11 @@
           "language": "nl",
           "string": "Welke boeken van Jack Kerouac werden uitgegeven door Viking Press?",
           "keywords": "boek, Jack Kerouac, uitgever, Viking Press"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"वाइकिंग प्रेस द्वारा कैरौक की कौन सी किताबें प्रकाशित की गई थीं?",
+        	"keywords":"वाइकिंग प्रेस, कैरौक, प्रकाशित"
         },
         {
           "language": "ro",
@@ -1275,6 +1360,11 @@
           "keywords": "lengte, Amazon Eve"
         },
         {
+        	"language": "hi_IN",
+        	"string":"अमेज़ॅन ईव कितनी लंबी है?",
+        	"keywords":"अमेज़ॅन ईव, लंबी"
+        },
+        {
           "language": "ro",
           "string": "Ce înălțime are Amazon Eve?",
           "keywords": "Amazon Eve, înălțime"
@@ -1341,6 +1431,11 @@
           "keywords": "museum, De Schreeuw, Munch"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कौन सा संग्रहालय मंच द्वारा द स्क्रीम प्रदर्शित करता है?",
+        	"keywords":"संग्रहालय, मंच, द स्क्रीम, प्रदर्शित"
+        },
+        {
           "language": "ro",
           "string": "În ce muzeu este expus “Strigătul” lui Munch?",
           "keywords": "muzeu, Strigătul, Munch"
@@ -1405,6 +1500,11 @@
           "language": "nl",
           "string": "Wie schreef het boek De Pilaren van de Aarde?",
           "keywords": "auteur, De Pilaren van de Aarde"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"लेस पिलीरेस डी ला टेरे किताब को किसने लिखा है?",
+        	"keywords":"लेस पिलीरेस डी ला टेर, लेखक"
         }
       ],
       "query": {
@@ -1468,6 +1568,11 @@
           "keywords": "James Bond, getrouwd"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या जेम्स बांड ने शादी की है?",
+        	"keywords":"जेम्स बांड, शादी"
+        },
+        {
           "language": "ro",
           "string": "James Bond este căsătorit?",
           "keywords": "James Bond, căsătorit"
@@ -1525,6 +1630,11 @@
           "language": "nl",
           "string": "Wie ontdekte Ceres?",
           "keywords": "Ceres, ontdekker"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"सेरेस की खोज किसने की?",
+        	"keywords":"सेरेस, खोज"
         },
         {
           "language": "ro",
@@ -1591,6 +1701,11 @@
           "language": "nl",
           "string": "Welke rivier overspant de Brooklyn Bridge?",
           "keywords": "rivier, Brooklyn Bridge, overspant"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ब्रुकलिन ब्रिज को कोनसी नदी पार करती है?",
+        	"keywords":"ब्रुकलिन ब्रिज, नदी"
         }
       ],
       "query": {
@@ -1652,6 +1767,11 @@
           "language": "nl",
           "string": "Wie werd er Frank The Tank genoemd?",
           "keywords": "Frank The Tank, bijnaam"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कौनको फ्रैंक द टैंक कहा जाता था?",
+        	"keywords":"फ्रैंक द टैंक"
         },
         {
           "language": "ro",
@@ -1725,6 +1845,11 @@
           "keywords": "grootste land"
         },
         {
+        	"language": "hi_IN",
+        	"string":"दुनिया का सबसे बड़ा देश क्या है?",
+        	"keywords":"सबसे बड़ा, देश"
+        },
+        {
           "language": "ro",
           "string": "Care este cea mai mare țară din lume?",
           "keywords": "cea mai mare țară, lume"
@@ -1794,6 +1919,11 @@
           "language": "nl",
           "string": "Wie is de burgemeester van Parijs?",
           "keywords": "burgemeester, Parijs"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"पेरिस का महापौर कौन है?",
+        	"keywords":"पेरिस, महापौर"
         },
         {
           "language": "ro",
@@ -1867,6 +1997,11 @@
           "keywords": "coach, ijshockey team, Ankara"
         },
         {
+        	"language": "hi_IN",
+        	"string":"अंकारा के आइस हॉकी टीम का कोच कौन है?",
+        	"keywords":"अंकारा, आइस हॉकी टीम, कोच"
+        },
+        {
           "language": "ro",
           "string": "Cine este antrenorul echipei de hochei pe gheață din Ankara?",
           "keywords": "antrenor, echipa de hochei pe gheață, Ankara"
@@ -1933,6 +2068,11 @@
           "keywords": "burgermeester, hoofdstad, Frans-Polynesië"
         },
         {
+        	"language": "hi_IN",
+        	"string":"फ्रेंच पोलिनेशिया की राजधानी का महापौर कौन है?",
+        	"keywords":"फ्रेंच पोलिनेशिया, राजधानी, महापौर"
+        },
+        {
           "language": "ro",
           "string": "Cine este primarul capitaliei Polineziei Franceze?",
           "keywords": "primar, capitală, Polinezia Franceză"
@@ -1997,6 +2137,11 @@
           "language": "nl",
           "string": "Welke prijzen heeft Douglas Hofstadter gewonnen?",
           "keywords": "Douglas Hofstadter, prijs"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"डगलस हॉफस्टैडर ने किन पुरस्कारों को जीता है?",
+        	"keywords":"डगलस हॉफस्टैडर, पुरस्कार, जीत"
         },
         {
           "language": "ro",
@@ -2082,6 +2227,11 @@
           "keywords": "Lego Movie, kosten"
         },
         {
+        	"language": "hi_IN",
+        	"string":"लेगो मूवी की लागत कितनी थी?",
+        	"keywords":"लेगो मूवी, लागत"
+        },
+        {
           "language": "ro",
           "string": "Cât de mult a costat filmul Lego?",
           "keywords": "filmul Lego, costa"
@@ -2153,6 +2303,11 @@
           "keywords": "Piccadilly, begin"
         },
         {
+        	"language": "hi_IN",
+        	"string":"पिकाडिली कहां शुरू होती है?",
+        	"keywords":"पिकाडिली, शुरू"
+        },
+        {
           "language": "ro",
           "string": "Unde începe Piccadilly?",
           "keywords": "Piccadilly, început"
@@ -2219,6 +2374,11 @@
           "keywords": "prins Harry, prins William, dezelfde, ouders"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या प्रिंस हैरी और प्रिंस विलियम के माता-पिता एक हैं?",
+        	"keywords":"प्रिंस हैरी, प्रिंस विलियम, माता, पिता"
+        },
+        {
           "language": "ro",
           "string": "Prințul Harry și Prințul William au aceiași părinți?",
           "keywords": "Prințul Harry, Prințul William, aceiași, părinți"
@@ -2271,6 +2431,11 @@
           "language": "nl",
           "string": "Wie speelde Agent Smith in Matrix?",
           "keywords": "speelde, Agent Smith, Matrix"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मैट्रिक्स में किसने एजेंट स्मिथ को निभाया है ?",
+        	"keywords":"मैट्रिक्स, एजेंट, स्मिथ, निभाया"
         },
         {
           "language": "ro",
@@ -2350,6 +2515,11 @@
           "keywords": "talen, Turkmenistan"
         },
         {
+        	"language": "hi_IN",
+        	"string":"तुर्कमेनिस्तान में कितनी भाषाएं बोली जाती हैं?",
+        	"keywords":"तुर्कमेनिस्तान, भाषाएं, बोली"
+        },
+        {
           "language": "ro",
           "string": "Câte limbi sunt vorbite în Turkmenistan?",
           "keywords": "limbi, Turkmenistan"
@@ -2419,6 +2589,11 @@
           "language": "nl",
           "string": "In welke films speelden zowel Julia Roberts als Richard Gere?",
           "keywords": "film, speel, Julia Roberts, Richard Gere"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"जूलिया रॉबर्ट्स और रिचर्ड गेरे ने किस फिल्म में अभिनय किया था?",
+        	"keywords":"जूलिया रॉबर्ट्स, रिचर्ड गेरे, फिल्म, अभिनय"
         },
         {
           "language": "ro",
@@ -2493,6 +2668,11 @@
           "keywords": "ontspringt, Ganges"
         },
         {
+        	"language": "hi_IN",
+        	"string":"गंगा किस देश में शुरू होती है?",
+        	"keywords":"गंगा, देश, शुरू"
+        },
+        {
           "language": "ro",
           "string": "Din ce țară izvorăște Ganga?",
           "keywords": "Gangele, izvor, țară"
@@ -2564,6 +2744,11 @@
           "keywords": "jaar, geboren, Rachel Stevens"
         },
         {
+        	"language": "hi_IN",
+        	"string":"रेचल स्टीवंस का जन्म किस साल हुआ था?",
+        	"keywords":"रेचल स्टीवंस, जन्म, साल"
+        },
+        {
           "language": "ro",
           "string": "În ce an s-a născut Rachel Stevens?",
           "keywords": "an, născut, Rachel Stevens"
@@ -2630,6 +2815,11 @@
           "keywords": "Barack Obama, democraat"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या बराक ओबामा एक डेमोक्रेट है?",
+        	"keywords":"बराक ओबामा, डेमोक्रेट"
+        },
+        {
           "language": "ro",
           "string": "Barack Obama este un democrat?",
           "keywords": "Barack Obama, democrat"
@@ -2682,6 +2872,11 @@
           "language": "nl",
           "string": "Waar was Bach geboren?",
           "keywords": "Bach, geboorteplaats"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"बाख का जन्म कहाँ हुवा था?",
+        	"keywords":"बाख, जन्म"
         },
         {
           "language": "ro",
@@ -2755,6 +2950,11 @@
           "keywords": "Jane Fonda, getrouwd, hoe vaak"
         },
         {
+        	"language": "hi_IN",
+        	"string":"जेन फोंडा ने कितनी बार शादी की?",
+        	"keywords":"जेन फोंडा, कितनी बार, शादी"
+        },
+        {
           "language": "ro",
           "string": "Cât de des s-a măritat Jane Fonda?",
           "keywords": "Jane Fonda, mărita, cât de des"
@@ -2819,6 +3019,11 @@
           "language": "nl",
           "string": "Wie was de eerste die de Mount Everest beklom?",
           "keywords": "Mount Everest, eerste, beklimmen"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"माउंट एवरेस्ट पर चढ़ने वाला पहला कौन था?",
+        	"keywords":"माउंट एवरेस्ट, चढ़ने वाला पहला"
         },
         {
           "language": "ro",
@@ -2910,6 +3115,11 @@
           "keywords": "Polen, inwoners"
         },
         {
+        	"language": "hi_IN",
+        	"string":"पोलैंड में कितने लोग रहते हैं?",
+        	"keywords":"पोलैंड, कितन लोग, रहते"
+        },
+        {
           "language": "ro",
           "string": "Câți oameni locuiesc în Polonia?",
           "keywords": "câți oameni, Polonia"
@@ -2979,6 +3189,11 @@
           "language": "nl",
           "string": "Waar is de Palace of Westminster?",
           "keywords": "plaats, Palace of Westminster"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"संसद के सदनों का स्थान क्या है?",
+        	"keywords":"संसद के सदनों, स्थान"
         },
         {
           "language": "ro",
@@ -3063,6 +3278,11 @@
           "language": "nl",
           "string": "Speelt Christian Bale in Batman Begins?",
           "keywords": "Christian Bale, speelt in, Batman Begins"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या क्रिस्चियन बॉल बैटमैन बेगिंस में है?",
+        	"keywords":"क्रिस्चियन बॉल, बैटमैन बेगिंस"
         }
       ],
       "query": {
@@ -3112,6 +3332,11 @@
           "language": "nl",
           "string": "In welk land ligt Limerick Lake?",
           "keywords": "Limerick Lake, land"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"लिमरिक झील किस देश में है?",
+        	"keywords":"लिमरिक झील, देश"
         }
       ],
       "query": {
@@ -3180,6 +3405,11 @@
           "keywords": "Alec Guinness, laatste, film"
         },
         {
+        	"language": "hi_IN",
+        	"string":"एलेक गिनीज की आखिरी फिल्म क्या थी?",
+        	"keywords":"एलेक गिनीज, आखिरी फिल्म"
+        },
+        {
           "language": "ro",
           "string": "Care a fost ultimul film cu Alec Guinness?",
           "keywords": "Alec Guinness, ultim, film"
@@ -3244,6 +3474,11 @@
           "language": "nl",
           "string": "Wat is de hoogste berg van Australië?",
           "keywords": "Australië, hoogste berg"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ऑस्ट्रेलिया में सर्वोच्च पर्वत कोनसा है?",
+        	"keywords":"ऑस्ट्रेलिया, सर्वोच्च पर्वत"
         }
       ],
       "query": {
@@ -3305,6 +3540,11 @@
           "language": "nl",
           "string": "Leeft Frank Herbert nog?",
           "keywords": "Frank Herbert, leeft"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या फ्रैंक हरबर्ट अभी भी जीवित है?",
+        	"keywords":"फ्रैंक हरबर्ट, जीवित"
         }
       ],
       "query": {
@@ -3359,6 +3599,11 @@
           "language": "nl",
           "string": "Wie heeft Family Guy bedacht?",
           "keywords": "Family Guy, schepper"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"फॅमिली गाए कौन ने बनाया है?",
+        	"keywords":"फॅमिली गाए, बनाया"
         },
         {
           "language": "ro",
@@ -3425,6 +3670,11 @@
           "language": "nl",
           "string": "Wat is de officiële taal van Suriname?",
           "keywords": "Suriname, officiële taal"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"सूरीनाम की आधिकारिक भाषा क्या है?",
+        	"keywords":"सूरीनाम, आधिकारिक भाषा"
         },
         {
           "language": "ro",
@@ -3496,6 +3746,11 @@
           "language": "nl",
           "string": "Wie schreef het lied Hotel California?",
           "keywords": "lied, Hotel California, schrijver"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"गीत होटल कैलिफोर्निया कोंन ने लिखा था?",
+        	"keywords":"गीत होटल कैलिफोर्निया, लिखा"
         },
         {
           "language": "ro",
@@ -3579,6 +3834,11 @@
           "language": "nl",
           "string": "Geef alle acteurs van films waar William Shatner de regie van voerde.",
           "keywords": "acteur, film, regisseur, William Shatner"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"विलियम शेटनेर द्वारा निर्देशित फिल्मों में सभी कलाकारों की सूचि दे।",
+        	"keywords":"विलियम शेटनेर, निर्देशित फिल्म, कलाकार"
         },
         {
           "language": "ro",
@@ -3718,6 +3978,11 @@
           "keywords": "ingrediënten, chocolate chip cookie"
         },
         {
+        	"language": "hi_IN",
+        	"string":"चॉकलेट चिप कुकी में क्या है?",
+        	"keywords":"चॉकलेट चिप कुकी, सामग्री"
+        },
+        {
           "language": "ro",
           "string": "Ce conține un biscuit cu fulgi de ciocolată?",
           "keywords": "ingrediente, biscuit cu fulgi de ciocolată"
@@ -3836,6 +4101,11 @@
           "language": "nl",
           "string": "Noem alle professionele skateboarders uit Zweden.",
           "keywords": "skateboarder, professioneel, Zweden"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे स्वीडन से सभी पेशेवर स्केटबोर्डर की सूचि दो।",
+        	"keywords":"स्वीडन, पेशेवर स्केटबोर्डर, सूचि"
         }
       ],
       "query": {
@@ -3908,6 +4178,11 @@
           "language": "nl",
           "string": "Welke ingrediënten heb ik nodig voor worteltaart?",
           "keywords": "worteltaart, ingrediënten"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"गाजर केक के लिए मुझे कौन से सामग्री की आवश्यकता है?",
+        	"keywords":"गाजर केक, सामग्री"
         },
         {
           "language": "ro",
@@ -4011,6 +4286,11 @@
           "keywords": "Neymar, spelen bij, Real Madrid"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या नेयमार रियल मैड्रिड के लिए खेलते हैं?",
+        	"keywords":"नेयमार, रियल मैड्रिड, खेलते"
+        },
+        {
           "language": "ro",
           "string": "Neymar joacă pentru Real Madrid?",
           "keywords": "Neymar, joacă, Real Madrid"
@@ -4080,6 +4360,11 @@
           "language": "nl",
           "string": "Welke informaticus won een Oscar?",
           "keywords": "informaticus, winnen, Oscar"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किस कंप्यूटर वैज्ञानिक ने ऑस्कर जीता?",
+        	"keywords":"कंप्यूटर वैज्ञानिक, ऑस्कर, जीत"
         },
         {
           "language": "ro",
@@ -4153,6 +4438,11 @@
           "keywords": "bedrijven, opgericht, hetzelfde jaar, Google"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कितनी कंपनियां स्थापित की गईं जिस वर्ष में गूगल हुइ?",
+        	"keywords":"कंपनिया, वर्ष, गूगल, स्थापित"
+        },
+        {
           "language": "ro",
           "string": "Câte companii au fost înființate în același an cu Google?",
           "keywords": "companii, înființate, același an, Google"
@@ -4219,6 +4509,11 @@
           "keywords": "MI6, hoofdkwartier, Britse stad"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किस यूके शहर में एमआई-6 का मुख्यालय है?",
+        	"keywords":"यूके, शहर, एमआई-6, मुख्यालय"
+        },
+        {
           "language": "ro",
           "string": "În care oraș din Regatul Unit se află cartierul general al MI6?",
           "keywords": "MI6, cartier general, oraș, Regatul Unit"
@@ -4283,6 +4578,11 @@
           "language": "nl",
           "string": "Was de Cubacrisis eerder dan de invasie in de Varkensbaai?",
           "keywords": "Cubacrisis, eerder dan, invasie in de Varkensbaai"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या क्यूबाई मिसाइल संकट बे ऑफ़ पिग्स आक्रमण के पहले हुआ था?",
+        	"keywords":"क्यूबाई मिसाइल संकट, बे ऑफ़ पिग्स आक्रमण, पहले हुआ"
         }
       ],
       "query": {
@@ -4332,6 +4632,11 @@
           "language": "nl",
           "string": "Waarvoor staat de afkorting IYCM?",
           "keywords": "IYCM, staat voor"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"आईसीवायएम् का पूर्ण प्रपत्र क्या है?",
+        	"keywords":"आईसीवायएम, पूर्ण प्रपत्र"
         },
         {
           "language": "ro",
@@ -4398,6 +4703,11 @@
           "keywords": "Ming-dynastie, beëindigd"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मिंग राजवंश को कब भंग किया?",
+        	"keywords":"मिंग राजवंश, भंग"
+        },
+        {
           "language": "ro",
           "string": "Când a dispărut dinastia Ming?",
           "keywords": "dispărut, dinastia Ming"
@@ -4462,6 +4772,11 @@
           "language": "nl",
           "string": "Noem alle afleveringen van het eerste seizoen van de HBO-serie The Sopranos.",
           "keywords": "HBO-serie, The Sopranos, eerste seizoen, aflevering"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"एचबीओ टेलीविजन श्रृंखला द सोप्रानोस! के पहले सीज़न के सभी एपिसोड की सूची बनाएं ।",
+        	"keywords":"एचबीओ, टेलीविजन श्रृंखला, द सोप्रानोस!, पहले सीज़न, सभी एपिसोड"
         }
       ],
       "query": {
@@ -4597,6 +4912,11 @@
           "keywords": "bevolking, Melbourne Florida"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मेलबोर्न, फ्लोरिडा की कुल आबादी क्या है?",
+        	"keywords":"मेलबोर्न, फ्लोरिडा, कुल आबादी"
+        },
+        {
           "language": "ro",
           "string": "Care este populația totală a Melbourne, Florida?",
           "keywords": "populația totală, Melbourne Florida"
@@ -4663,6 +4983,11 @@
           "keywords": "Arnold Schwarzenegger, universiteit, gestudeerd"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या अर्नोल्ड श्वार्ज़नेगर विश्वविद्यालय गए थे?",
+        	"keywords":"अर्नोल्ड श्वार्ज़नेगर, विश्वविद्यालय"
+        },
+        {
           "language": "ro",
           "string": "Arnold Schwarzenegger a frecventat o universitate?",
           "keywords": "Arnold Schwarzenegger, frecventa, universitate"
@@ -4715,6 +5040,11 @@
           "language": "nl",
           "string": "In welke land is de Mount Everest?",
           "keywords": "land, Mount Everest"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कोनसे देश में माउंट एवरेस्ट है?",
+        	"keywords":"देश, माउंट एवरेस्ट"
         },
         {
           "language": "ro",
@@ -4787,6 +5117,11 @@
           "language": "nl",
           "string": "Wat is de grootste stad van Australië?",
           "keywords": "grootste stad, Australië"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ऑस्ट्रेलिया में सबसे बड़ा शहर क्या है?",
+        	"keywords":"ऑस्ट्रेलिया, सबसे बड़ा शहर"
         }
       ],
       "query": {
@@ -4848,6 +5183,11 @@
           "language": "nl",
           "string": "Noem alle lanceerplatformen van de NASA.",
           "keywords": "lanceerplatform, NASA"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे नासा द्वारा संचालित सभी लॉन्च पैड की सूचि दें।",
+        	"keywords":"नासा, संचालित, लॉन्च पैड"
         },
         {
           "language": "ro",
@@ -4952,6 +5292,11 @@
           "keywords": "Tel Aviv, burgemeester"
         },
         {
+        	"language": "hi_IN",
+        	"string":"तेल अवीव के महापौर कौन हैं?",
+        	"keywords":"तेल अवीव, महापौर"
+        },
+        {
           "language": "ro",
           "string": "Cien este primarul din Tel Aviv?",
           "keywords": "Tel Aviv, primar"
@@ -5016,6 +5361,11 @@
           "language": "nl",
           "string": "Noem alle afleveringen van het eerste seizoen van de HBO-serie The Sopranos.",
           "keywords": "HBO-serie, The Sopranos, eerste seizoen, aflevering"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"एचओओ टेलीविजन श्रृंखला द सोप्रानोस के पहले सीज़न के सभी एपिसोड की सूची बनाएं। '",
+        	"keywords":"एचओओ टेलीविजन श्रृंखला, द सोप्रानोस, पहले सीज़न, एपिसोड"
         },
         {
           "language": "ro",
@@ -5161,6 +5511,11 @@
           "keywords": "bedenker, Batman"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किसने बैटमैन बनाया?",
+        	"keywords":"बैटमैन, निर्माता"
+        },
+        {
           "language": "ro",
           "string": "Cine a creat Batman?",
           "keywords": "Batman, creat"
@@ -5238,6 +5593,11 @@
           "keywords": "Gus Fring, acteur, Breaking Bad"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किसने गस फ्रिंग को ब्रेकिंग बैड में निभाया है ?",
+        	"keywords":"गस फ्रिंग, ब्रेकिंग बैड, निभाया, अभिनेता"
+        },
+        {
           "language": "ro",
           "string": "Cine l-a jucat pe Gus Fring în Breaking Bad?",
           "keywords": "jucat, Gus Fring, Breaking Bad"
@@ -5302,6 +5662,11 @@
           "language": "nl",
           "string": "In welke programmeertaal is GIMP geschreven?",
           "keywords": "GIMP, programmeertaal"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"जीआईएमपी किस प्रोग्रामिंग भाषा में लिखी गई है?",
+        	"keywords":"जीआईएमपी, प्रोग्रामिंग भाषा"
         }
       ],
       "query": {
@@ -5376,6 +5741,11 @@
           "keywords": "oude imperium, betalen, cacaobonen"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किस प्राचीन साम्राज्य में आप कोको बीन से भुगतान कर सकते हैं?",
+        	"keywords":"प्राचीन साम्राज्य, कोको बीन, भुगतान"
+        },
+        {
           "language": "ro",
           "string": "În ce imperiu antic puteai plăti cu boabe de cacao?",
           "keywords": "imperiu antic, plăti, boabe de cacao"
@@ -5448,6 +5818,11 @@
           "keywords": "Forbes, uitgever"
         },
         {
+        	"language": "hi_IN",
+        	"string":"फोर्ब्स के संपादक कौन है?",
+        	"keywords":"फोर्ब्स, संपादक"
+        },
+        {
           "language": "ro",
           "string": "Cine este editorul Forbes?",
           "keywords": "Forbes, editor"
@@ -5514,6 +5889,11 @@
           "keywords": "inwoners, hoofdstad van Australië"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कितने लोग ऑस्ट्रेलिया की राजधानी में रहते हैं?",
+        	"keywords":"ऑस्ट्रेलिया, राजधानी, आबादी"
+        },
+        {
           "language": "ro",
           "string": "Câți oameni locuiesc in capitala Australiei?",
           "keywords": "Australia, captital, oameni, locui"
@@ -5578,6 +5958,11 @@
           "language": "nl",
           "string": "Welke professionele surfers werden geboren in Australië?",
           "keywords": "professionele surfer, Australië"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कौन से पेशेवर सर्फरस ऑस्ट्रेलिया में पैदा हुए थे?",
+        	"keywords":"पेशेवर सर्फरस, ऑस्ट्रेलिया, पैदा"
         },
         {
           "language": "ro",
@@ -5657,6 +6042,11 @@
           "keywords": "elektronica bedrijven, opgericht in, Peking"
         },
         {
+        	"language": "hi_IN",
+        	"string":"बीजिंग में कौन से इलेक्ट्रॉनिक्स कंपनियां स्थापित की गई थीं?",
+        	"keywords":"बीजिंग, इलेक्ट्रॉनिक्स कंपनियां, स्थापित"
+        },
+        {
           "language": "ro",
           "string": "Care companii de electronice au fost fondate în Beijing?",
           "keywords": "companii de electronice, fondat, Beijing"
@@ -5721,6 +6111,11 @@
           "language": "nl",
           "string": "Geef me alle videogames van Mean Hamster Software.",
           "keywords": "videogame, Mean Hamster Software"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मीन हम्सटर सॉफ्टवेयर द्वारा प्रकाशित सभी वीडियो गेम की सूचि दें। '",
+        	"keywords":"मीन हम्सटर सॉफ्टवेयर, प्रकाशित, वीडियो गेम"
         },
         {
           "language": "ro",
@@ -5800,6 +6195,11 @@
           "keywords": "eigenaar, Aldi"
         },
         {
+        	"language": "hi_IN",
+        	"string":"आलड़ी के कितने स्टोर हैं?",
+        	"keywords":"आलड़ी, कितने स्टोर"
+        },
+        {
           "language": "ro",
           "string": "Câte magazine Aldi există?",
           "keywords": "avea, Aldi"
@@ -5871,6 +6271,11 @@
           "keywords": "hoofdstad, Kameroen"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कैमरून की राजधानी क्या है?",
+        	"keywords":"कैमरून, राजधानी"
+        },
+        {
           "language": "ro",
           "string": "Care este capitala Camerunului?",
           "keywords": "capitală, Camerun"
@@ -5935,6 +6340,11 @@
           "language": "nl",
           "string": "Bestaat er een videospel met de naam Battle Chess?",
           "keywords": "videospel, Battle Chess"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या बैटल चैस नामक वीडियो गेम है?",
+        	"keywords":"बैटल चैस, वीडियो गेम"
         }
       ],
       "query": {
@@ -5984,6 +6394,11 @@
           "language": "nl",
           "string": "Heette de echtgenote van president Lincoln Mary?",
           "keywords": "echtgenote, Lincoln, Mary"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या राष्ट्रपति लिंकन की पत्नी का नाम मैरी था?",
+        	"keywords":"राष्ट्रपति लिंकन, पत्नी, मैरी"
         },
         {
           "language": "ro",
@@ -6043,6 +6458,11 @@
           "language": "nl",
           "string": "Geef alle films die werden geregisseerd door Francis Ford Coppola.",
           "keywords": "films, regisseur, Francis Ford Coppola"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे फ्रांसिस फोर्ड कोपोला द्वारा निर्देशित सभी फिल्मों की सूचि दे ।",
+        	"keywords":"फ्रांसिस फोर्ड कोपोला, निर्देशित, फिल्मों"
         },
         {
           "language": "ro",
@@ -6297,6 +6717,11 @@
           "keywords": "film, Tim Burton, hoogste budget"
         },
         {
+        	"language": "hi_IN",
+        	"string":"टिम बर्टन की फिल्मों में से कौन सी का सबसे ज्यादा बजट था?",
+        	"keywords":"टिम बर्टन, फिल्मो, सबसे ज्यादा बजट"
+        },
+        {
           "language": "ro",
           "string": "Care dintre filmele lui Tom Burton a avut cel mai mare buget?",
           "keywords": "cel mai mare buget, film, Tim Burton"
@@ -6363,6 +6788,11 @@
           "keywords": "Breaking Bad, afleveringen, meer dan, Game of Thrones"
         },
         {
+        	"language": "hi_IN",
+        	"string":"ब्रेकिंग बैड में गेम ऑफ़ थ्रोन्स की तुलना में अधिक एपिसोड हैं?",
+        	"keywords":"ब्रेकिंग बैड, गेम ऑफ़ थ्रोन्स, अधिक एपिसोड"
+        },
+        {
           "language": "ro",
           "string": "Are Breaking Bad mai multe episoade decât Game of Thrones?",
           "keywords": "Breaking Bad, episoade, mai multe decât, Game of Thrones"
@@ -6415,6 +6845,11 @@
           "language": "nl",
           "string": "Wie werd Rodzilla genoemd?",
           "keywords": "genoemd, Rodzilla"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किसको रॉडज़िला कहा जाता था?",
+        	"keywords":"रॉडज़िला"
         },
         {
           "language": "ro",
@@ -6481,6 +6916,11 @@
           "language": "nl",
           "string": "Werd Natalie Portman geboren in de Verenigde Staten?",
           "keywords": "Natalie Portman, geboren, Verenigde Staten"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या नेटली पोर्टमैन संयुक्त राज्य में पैदा हुइ थी ?",
+        	"keywords":"नेटली पोर्टमैन, संयुक्त राज्य, पैदा"
         }
       ],
       "query": {
@@ -6535,6 +6975,11 @@
           "language": "nl",
           "string": "Toon alle kleinkinderen van Elvis Presley.",
           "keywords": "Elvis Presley, kleinkinderen"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे एल्विस प्रेस्ली के पोतों के नाम दे। ",
+        	"keywords":"एल्विस प्रेस्ली, पोतो के नाम"
         },
         {
           "language": "ro",
@@ -6608,6 +7053,11 @@
           "keywords": "films, acteur, Mickey Rourke, geregisseerd, Guy Ritchie"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मिकी रोर्के अभिनीत कौन सी फिल्में गाए रिची द्वारा निर्देशित थीं?",
+        	"keywords":"मिकी रोर्, अभिनीत, गाए रिची, निर्देशित"
+        },
+        {
           "language": "ro",
           "string": "Ce filme cu Mickey Rourke ca protagonist au fost regizate de Guy Ritchie?",
           "keywords": "filme, Mickey Rourke, protagonist, regizate, Guy Ritchie"
@@ -6679,6 +7129,11 @@
           "keywords": "stierf, bedenker, Dracula"
         },
         {
+        	"language": "hi_IN",
+        	"string":"ड्रेकुला के निर्माता का निधन कब हुआ?",
+        	"keywords":"ड्रेकुला, निर्माता, निधन"
+        },
+        {
           "language": "ro",
           "string": "Când a murit creatorul Dracula?",
           "keywords": "Dracula, creator, a muri"
@@ -6743,6 +7198,11 @@
           "language": "nl",
           "string": "Uit welk land komt de bedenker van Nijntje?",
           "keywords": "Nijntje, bedenker, nationaliteit"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मिफ्फी के निर्माता किस देश से आते है?",
+        	"keywords":"मिफ्फ, निर्माता, देश"
         }
       ],
       "query": {
@@ -6809,6 +7269,11 @@
           "language": "nl",
           "string": "Wat is de echte naam van Batman?",
           "keywords": "Batman, echte naam"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"बैटमैन का असली नाम क्या है?",
+        	"keywords":"बैटमैन, असली नाम"
         },
         {
           "language": "ro",
@@ -6882,6 +7347,11 @@
           "keywords": "regeringsvorm, Rusland"
         },
         {
+        	"language": "hi_IN",
+        	"string":"रूस की सरकार किस प्रकार की है?",
+        	"keywords":"रूस, सरकार, प्रकार"
+        },
+        {
           "language": "ro",
           "string": "Ce formă de guvern are Rusia?",
           "keywords": "formă de guvern, Rusia"
@@ -6953,6 +7423,11 @@
           "keywords": "bedrijven, opgericht, oprichter, Facebook"
         },
         {
+        	"language": "hi_IN",
+        	"string":"फेसबुक के संस्थापक द्वारा कितनी कंपनियों की स्थापना की गई थी?",
+        	"keywords":"फेसबुक, संस्थापक, कंपनियों की स्थापना"
+        },
+        {
           "language": "ro",
           "string": "Câte companii au fost înființate de fondatorul Facebook?",
           "keywords": "companii, înființate, fondator, Facebook"
@@ -7017,6 +7492,11 @@
           "language": "nl",
           "string": "Noem alle Canadese grunge-platenlabels.",
           "keywords": "Canadees, platenlabel, Grunge"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे सभी कैनेडियन ग्रांज रिकॉर्ड लेबल की सूचि दें।",
+        	"keywords":"कैनेडियन, ग्रांज, रिकॉर्ड लेबल"
         }
       ],
       "query": {
@@ -7085,6 +7565,11 @@
           "keywords": "Benjamin Franklin, kinderen, hoeveel"
         },
         {
+        	"language": "hi_IN",
+        	"string":"बेंजामिन फ्रैंकलिन के कितने बच्चे हैं?",
+        	"keywords":"बेंजामिन फ्रैंकलिन, बच्चे"
+        },
+        {
           "language": "ro",
           "string": "Câți copii a avut Benjamin Franklin?",
           "keywords": "Benjamin Franklin, copil"
@@ -7149,6 +7634,11 @@
           "language": "nl",
           "string": "Noem alle kinderen van Margaret Thatcher.",
           "keywords": "kinderen, Margaret Thatcher"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मार्गरेट थैचर के बच्चों की सूची बनाएं।",
+        	"keywords":"मार्गरेट थैचर, बच्चों"
         }
       ],
       "query": {
@@ -7216,6 +7706,11 @@
           "language": "nl",
           "string": "Vanuit welke regio is de Melon de Bourgogne?",
           "keywords": "regio, Melon de Bourgogne"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मेलन डी बर्गोगोन किस क्षेत्र से है?",
+        	"keywords":"मेलन डी बर्गोगोन, क्षेत्र"
         },
         {
           "language": "ro",
@@ -7302,6 +7797,11 @@
           "keywords": "oudste kind, Meryl Streep"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मेरिल स्ट्रीप का सबसे पहला बच्चा कौन है?",
+        	"keywords":"मेरिल स्ट्रीप, सबसे पहला बच्चा"
+        },
+        {
           "language": "ro",
           "string": "Cine este copilul cel mai mare al lui Meryl Streep?",
           "keywords": "copilul cel mai mare, Meryl Streep"
@@ -7368,6 +7868,11 @@
           "keywords": "boomkikker, amfibie"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या वृक्ष के मेंढक एक प्रकार की उभयचर हैं?",
+        	"keywords":"वृक्ष के मेंढक, प्रकार, उभयचर"
+        },
+        {
           "language": "ro",
           "string": "Sunt broaștele de copac un tip de amfibieni?",
           "keywords": "broască de copac, amfibian"
@@ -7422,6 +7927,11 @@
           "keywords": "Christian Bale, speelt in, Velvet Goldmine"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या वेलवेट गोल्डमाइन में अभिनीता क्रिस्चियन बेल है?",
+        	"keywords":"वेलवेट गोल्डमाइन, अभिनीता, क्रिस्चियन बेल"
+        },
+        {
           "language": "ro",
           "string": "Joacă Christian Bale un rol principal în Velvet Goldmine?",
           "keywords": "Christian Bale, rol principal, Velevet Goldmine"
@@ -7474,6 +7984,11 @@
           "language": "nl",
           "string": "Noem alle spelen van GMT.",
           "keywords": "spel, GMT"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"जीएमटी द्वारा सभी खेलों की सूची बनाएं।",
+        	"keywords":"जीएमटी, खेल"
         }
       ],
       "query": {
@@ -7573,6 +8088,11 @@
           "keywords": "Isar, uitmonden, meer"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या ईसार एक झील में प्रवाहित होती है?",
+        	"keywords":"ईसार, झील, प्रवाहित"
+        },
+        {
           "language": "ro",
           "string": "Isarul se varsă într-un lac?",
           "keywords": "Isar, varsă, lac"
@@ -7630,6 +8150,11 @@
           "language": "nl",
           "string": "Naar welke luchthavens vliegt Yeti Airlines?",
           "keywords": "luchthavens, Yeti Airlines"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"यति एयरलाइंस किस हवाई अड्डे की सेवा करती है?",
+        	"keywords":"यति एयरलाइंस, हवाई अड्ड, सेवा"
         },
         {
           "language": "ro",
@@ -7715,6 +8240,11 @@
           "keywords": "Indiase bedrijf, de meeste werknemers"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किस भारतीय कंपनी में सबसे अधिक कर्मचारी हैं?",
+        	"keywords":"भारतीय, कंपनी, सबसे अधिक कर्मचारी"
+        },
+        {
           "language": "ro",
           "string": "Ce companie indiană are cei mai mulți angajați?",
           "keywords": "companie indiană, cei mai mulți angajați"
@@ -7786,6 +8316,11 @@
           "keywords": "kleur, loyaliteit"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कोनसा रंग वफादारी व्यक्त करता है?",
+        	"keywords":"रंग, वफादारी"
+        },
+        {
           "language": "ro",
           "string": "Ce culoare exprimă loialitate?",
           "keywords": "culoare, exprimă, loialitate"
@@ -7852,6 +8387,11 @@
           "keywords": "stad, meeste inwoners"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कौन से शहर में सबसे अधिक निवासी है?",
+        	"keywords":"शहर, सबसे अधिक निवासी"
+        },
+        {
           "language": "ro",
           "string": "Care oraș are cei mai mulți locuitori?",
           "keywords": "oraș, cei mai mulți locuitori"
@@ -7916,6 +8456,11 @@
           "language": "nl",
           "string": "Wie heeft Wikipedia opgericht?",
           "keywords": "Wikipedia, oprichter"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"विकिपीडिया किसने बनाया?",
+        	"keywords":"विकिपीडिया, निर्माता"
         }
       ],
       "query": {
@@ -7985,6 +8530,11 @@
           "keywords": "Rita Wilson, vrouw, Tom Hanks"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या रीटा विल्सन टॉम हैंक्स की पत्नी है?",
+        	"keywords":"रीटा विल्सन, टॉम हैंक्स, पत्नी"
+        },
+        {
           "language": "ro",
           "string": "Este Rita Wilson soția lui Tom Hanks?",
           "keywords": "Rita Wilson, soție, Tom Hanks"
@@ -8037,6 +8587,11 @@
           "language": "nl",
           "string": "Heet de echtgenote van president Barack Obama Michelle?",
           "keywords": "echtgenote, Barack Obama, Michelle"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या राष्ट्रपति ओबामा की पत्नी का नाम मिशेल है?",
+        	"keywords":"राष्ट्रपति ओबामा, पत्नी, मिशेल"
         }
       ],
       "query": {
@@ -8091,6 +8646,11 @@
           "language": "nl",
           "string": "Hoeveel etnische groepen leven in Slovenië?",
           "keywords": "hoeveel, etnische groepen, Slovenië"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कितने जातीय समूह स्लोवेनिया में रहते हैं?",
+        	"keywords":"जातीय समूह, स्लोवेनिया"
         },
         {
           "language": "ro",
@@ -8164,6 +8724,11 @@
           "keywords": "president, Eritrea"
         },
         {
+        	"language": "hi_IN",
+        	"string":"इरीट्रिया के राष्ट्रपति कौन है?",
+        	"keywords":"इरीट्रिया, राष्ट्रपति"
+        },
+        {
           "language": "ro",
           "string": "Cine este președintele Eritreei?",
           "keywords": "președinte, Eritreea"
@@ -8233,6 +8798,11 @@
           "language": "nl",
           "string": "Hoveel films heeft Stanley Kubrick geregisseerd?",
           "keywords": "films, Stanley Kubrick, regisseur"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"स्टैनले कुब्री ने कौन सी फिल्मे निर्देशित की हैं ?",
+        	"keywords":"स्टैनले कुब्री, फिल्म, निर्देशित"
         },
         {
           "language": "ro",
@@ -8391,6 +8961,11 @@
           "keywords": "Titanic, wanneer, afgewerkt"
         },
         {
+        	"language": "hi_IN",
+        	"string":"टाइटैनिक कब पूरा हुआ?",
+        	"keywords":"टाइटैनिक, पूरा"
+        },
+        {
           "language": "ro",
           "string": "Când a fost terminat Titanicul?",
           "keywords": "Titanic, data terminării"
@@ -8455,6 +9030,11 @@
           "language": "nl",
           "string": "Hoeveel pagina's heeft Oorlog en vrede?",
           "keywords": "hoeveel pagina's, Oorlog en vrede"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"वॉर एंड पीस में कितने पृष्ठ हैं?",
+        	"keywords":"वॉर एंड पीस, कितने पृष्ठ"
         },
         {
           "language": "ro",
@@ -8523,6 +9103,11 @@
           "keywords": "speler, jongste, Premier League"
         },
         {
+        	"language": "hi_IN",
+        	"string":"प्रीमियर लीग में सबसे कम उम्र के खिलाड़ी कौन हैं?",
+        	"keywords":"प्रीमियर लीग, सबसे कम उम्र, खिलाड़ी"
+        },
+        {
           "language": "ro",
           "string": "Cine este cel mai tânăr jucător din Premier League?",
           "keywords": "juător, Premier League, cel mai tânăr"
@@ -8585,6 +9170,11 @@
           "language": "nl",
           "string": "Wat is de hoogste berg in Italië?",
           "keywords": "hoogste, berg, Italië"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"इटली में सर्वोच्च पर्वत कोनसा है?",
+        	"keywords":"इटली, सर्वोच्च पर्वत"
         },
         {
           "language": "ro",
@@ -8651,6 +9241,11 @@
           "language": "nl",
           "string": "Hoe lang is Claudia Schiffer?",
           "keywords": "lengte, Claudia Schiffer"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्लाउडिया शिफ़ेर कितनी लंबी है?",
+        	"keywords":"क्लाउडिया शिफ़ेर, कितनी लंबी"
         }
       ],
       "query": {
@@ -8712,6 +9307,11 @@
           "language": "nl",
           "string": "Wie was de vicepresident onder John F. Kennedy?",
           "keywords": "John F. Kennedy, vicepresident"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"जॉन एफ कैनेडी के उपाध्यक्ष कौन थे?",
+        	"keywords":"जॉन एफ कैनेडी, उपाध्यक्ष"
         },
         {
           "language": "ro",
@@ -8780,6 +9380,11 @@
           "keywords": "dochteronderneming, Lufthansa, bedient, Dortmund, Berlin Tegel"
         },
         {
+        	"language": "hi_IN",
+        	"string":"लुफ्तहांसा की कौन सी सहायक कंपनी डॉर्टमुंड और बर्लिन टेगल दोनों की सेवा करती है?",
+        	"keywords":"लुफ्तहांसा, सहायक कंपनी, डॉर्टमुंड, बर्लिन टेगल, सेवा"
+        },
+        {
           "language": "ro",
           "string": "Care filială a Lufthansa deservește atât Dortmund cât și Berlin Tegel?",
           "keywords": "filială, Lufthansa, deservește, Dortmund, Berlin Tegel"
@@ -8844,6 +9449,11 @@
           "language": "nl",
           "string": "Wie was de opvolger van John F. Kennedy?",
           "keywords": "John F. Kennedy, opvolger"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"जॉन एफ कैनेडी के उत्तराधिकारी कौन थे?",
+        	"keywords":"जॉन एफ कैनेडी, उत्तराधिकारी"
         }
       ],
       "query": {
@@ -8924,6 +9534,11 @@
           "keywords": "filmmuziek, Camerons Titanic, componist"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कैमरन टाइटैनिक के लिए साउंडट्रैक किसने बनाया है?",
+        	"keywords":"कैमरन टाइटैनिक, साउंडट्रैक, बनाया"
+        },
+        {
           "language": "ro",
           "string": "Cine a compus coloana sonoră pentru Titanicul lui Cameron?",
           "keywords": "compus, coloana sonoră, Titanicul lui Cameron"
@@ -8988,6 +9603,11 @@
           "language": "nl",
           "string": "Welke films heeft Kurosawa geregisseerd?",
           "keywords": "film, Kurosawa, regisseur"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कुरोसावा ने कौन सी फिल्मों का निर्देशन किया है ?",
+        	"keywords":"कुरोसावा, फिल्मो, निर्देशन"
         },
         {
           "language": "ro",
@@ -9242,6 +9862,11 @@
           "keywords": "platenlabel, eerste album, Elvis"
         },
         {
+        	"language": "hi_IN",
+        	"string":"किस लेबल के लिए एल्विस ने अपना पहला एल्बम रिकॉर्ड किया था?",
+        	"keywords":"लेबल, एल्विस, पहला एल्बम, रिकॉर्ड"
+        },
+        {
           "language": "ro",
           "string": "Ce casă discografică a înregistrat primul album al lui Elvis?",
           "keywords": "Elvis, prim, album, casă discografică"
@@ -9313,6 +9938,11 @@
           "keywords": "Rome, tijdzone"
         },
         {
+        	"language": "hi_IN",
+        	"string":"रोम किस समय क्षेत्र में है?",
+        	"keywords":"रोम, समय क्षेत्र"
+        },
+        {
           "language": "ro",
           "string": "Pe ce fus orar este Roma?",
           "keywords": "fus orar, Roma"
@@ -9377,6 +10007,11 @@
           "language": "nl",
           "string": "Wat is de munteenheid van China?",
           "keywords": "munteenheid, China"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे चीन की मुद्रा बतायें ।",
+        	"keywords":"चीन, मुद्रा"
         },
         {
           "language": "ro",
@@ -9448,6 +10083,11 @@
           "language": "nl",
           "string": "Wie heeft DBpedia ontwikkeld?",
           "keywords": "DBpedia, ontwikkelaar"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"डीबीपीडिया के डेवलपर कौन हैं?",
+        	"keywords":"डीबीपीडिया, डेवलपर, विकासक"
         },
         {
           "language": "ro",
@@ -9528,6 +10168,11 @@
           "keywords": "Abraham Lincoln, stad, gestorven, website"
         },
         {
+        	"language": "hi_IN",
+        	"string":"अब्राहम लिंकन की मौत की जगह की बसाइट है?",
+        	"keywords":"अब्राहम लिंकन, मौत, जगह, बसाइट"
+        },
+        {
           "language": "ro",
           "string": "Locul morții lui Abraham Lincoln are un website?",
           "keywords": "locul morții, Abraham Lincoln, website"
@@ -9585,6 +10230,11 @@
           "language": "nl",
           "string": "Wie is de koning van Nederland?",
           "keywords": "koning, Nederland"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"नीदरलैंड का राजा कौन है?",
+        	"keywords":"नीदरलैंड, राजा"
         },
         {
           "language": "ro",
@@ -9658,6 +10308,11 @@
           "keywords": "Nikos Kazantzakis, overleden, stad"
         },
         {
+        	"language": "hi_IN",
+        	"string":"निकोस काजांटाजाकिस का किस शहर में निधन हुआ ?",
+        	"keywords":"निकोस काजांटाजाकिस, शहर, निधन"
+        },
+        {
           "language": "ro",
           "string": "În ce oraș a murit Nikos Kazantsakis?",
           "keywords": "oraș, Nikos Kazantsakis, murit"
@@ -9722,6 +10377,11 @@
           "language": "nl",
           "string": "Wie was de vader van koningin Elizabeth II?",
           "keywords": "koningin Elizabeth II, vader"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"महारानी एलिजाबेथ द्वितीय के पिता कौन थे?",
+        	"keywords":"महारानी एलिजाबेथ द्वितीय, पिता"
         }
       ],
       "query": {
@@ -9790,6 +10450,11 @@
           "keywords": "vogels, ernstig bedreigd"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मुझे समीक्षकों से लुप्तप्राय पक्षियों की सूची बतायें ।",
+        	"keywords":"समीक्षकों, लुप्तप्राय पक्षियों"
+        },
+        {
           "language": "ro",
           "string": "Dă-mi o listă cu toate păsările în pericol ridicat de dispariție.",
           "keywords": "listă, păsări în pericol ridicat de dispariție"
@@ -9856,6 +10521,11 @@
           "keywords": "inwoners, grootste, stad, Canada"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कनाडा के सबसे बड़े शहर में कितने निवासी हैं?",
+        	"keywords":"कनाडा, सबसे बड़े शहर, निवासी"
+        },
+        {
           "language": "ro",
           "string": "Câți locuitori are cel mai are oraș din Canada?",
           "keywords": "locuitori, cel mai mare oraș, Canada"
@@ -9920,6 +10590,11 @@
           "language": "nl",
           "string": "Bij welke militaire conflicten was Lawrence of Arabia betrokken?",
           "keywords": "militair conflict, Lawrence of Arabia"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"अरब के लॉरेंस ने किस सैन्य युद्ध में भाग लिया?",
+        	"keywords":"अरब के लॉरेंस, सैन्य युद्ध, भाग लिया"
         },
         {
           "language": "ro",
@@ -10042,6 +10717,11 @@
           "keywords": "boek, meeste pagina's"
         },
         {
+        	"language": "hi_IN",
+        	"string":"कौन से पुस्तक में सबसे अधिक पृष्ठ हैं?",
+        	"keywords":"पुस्तक, सबसे अधिक पृष्ठ"
+        },
+        {
           "language": "ro",
           "string": "Ce carte are cele mai multe pagini?",
           "keywords": "carte, cele mai multe pagini"
@@ -10106,6 +10786,11 @@
           "language": "nl",
           "string": "In welk land ontspringt de Nijl?",
           "keywords": "ontspringt, Nijl"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"नाइल नदी किस देश में शुरू होती है?",
+        	"keywords":"नाइल नदी, देश, शुरू"
         }
       ],
       "query": {
@@ -10180,6 +10865,11 @@
           "keywords": "Formule 1, coureur, races, de meeste"
         },
         {
+        	"language": "hi_IN",
+        	"string":"सबसे अधिक दौड़ वाले फॉर्मूला 1 रेस ड्रायवर कौन है?",
+        	"keywords":"सबसे अधिक दौड़, फॉर्मूला 1, रेस ड्रायवर"
+        },
+        {
           "language": "ro",
           "string": "Cine este pilotul de curse Formula 1 cu cele mai multe curse?",
           "keywords": "Formula 1, pilot de curse, cele mai multe"
@@ -10249,6 +10939,11 @@
           "language": "nl",
           "string": "Welke bedrijven produceren hovercrafts?",
           "keywords": "bedrijven, produceren, hovercrafts"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कौन सी कंपनियां हॉवरक्राफ्ट बनाती हैं?",
+        	"keywords":"कंपनियां, हॉवरक्राफ्ट बनाती"
         },
         {
           "language": "ro",
@@ -10334,6 +11029,11 @@
           "keywords": "Elvis Presley, kinderen"
         },
         {
+        	"language": "hi_IN",
+        	"string":"क्या एल्विस प्रेस्ली के बच्चे थे ?",
+        	"keywords":"एल्विस प्रेस्ली, बच्चे"
+        },
+        {
           "language": "ro",
           "string": "A avut Elvis Presley copii?",
           "keywords": "Elvis Presly, copii"
@@ -10391,6 +11091,11 @@
           "language": "nl",
           "string": "In welke stad is de president van Montenegro geboren?",
           "keywords": "president, Montenegro, geboortestad"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मोंटेनेग्रो के राष्ट्रपति किस शहर में पैदा हुए थे?",
+        	"keywords":"मोंटेनेग्रो, राष्ट्रपति, शहर, पैदा"
         },
         {
           "language": "ro",
@@ -10464,6 +11169,11 @@
           "keywords": "Bill Gates, geboorteland"
         },
         {
+        	"language": "hi_IN",
+        	"string":"बिल गेट्स का जन्म किस देश में हुआ था?",
+        	"keywords":"बिल गेट्स, जन्म, देश"
+        },
+        {
           "language": "ro",
           "string": "În ce țară s-a născut Bill Gates?",
           "keywords": "țară, născut, Bill Gates"
@@ -10533,6 +11243,11 @@
           "language": "nl",
           "string": "In welke landen wordt Japans gesproken?",
           "keywords": "landen, taal, Japans"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किन देशों में लोग जापानी बोलते हैं?",
+        	"keywords":"देशों, लोग, जापानी"
         },
         {
           "language": "ro",
@@ -10613,6 +11328,11 @@
           "keywords": "boek, geschreven, Muhammad Ali"
         },
         {
+        	"language": "hi_IN",
+        	"string":"मुझे किताब बताओ जो मुहम्मद अली ने लिखी थी।",
+        	"keywords":"किताब, मुहम्मद अली, लिखी"
+        },
+        {
           "language": "ro",
           "string": "Arată-mi cartea pe care a scris-o Muhammad Ali.",
           "keywords": "carte, scris, Muhammad Ali"
@@ -10677,6 +11397,11 @@
           "language": "nl",
           "string": "Is Michelle Obama de vrouw van Barack Obama?",
           "keywords": "Michelle Obama, vrouw van, Barack Obama"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या बराक ओबामा की पत्नी मिशेल ओबामा हैं?",
+        	"keywords":"बराक ओबामा, पत्नी, मिशेल ओबामा"
         }
       ],
       "query": {
@@ -10726,7 +11451,12 @@
           "language": "nl",
           "string": "Wat is het kengetal van Berlijn?",
           "keywords": "kengetal, Berlijn"
-        }
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"बर्लिन का क्षेत्र कोड क्या है?",
+        	"keywords":"बर्लिन, क्षेत्र कोड"
+        },
       ],
       "query": {
         "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?string \nWHERE {\n\tres:Berlin dbo:areaCode ?string .\n}"
@@ -10787,6 +11517,11 @@
           "language": "nl",
           "string": "Noem alle acteurs uit de film Last Action Hero.",
           "keywords": "acteur, Last Action Hero"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"मुझे लास्ट एक्शन हीरो में अभिनीत सभी कलाकारों के नाम बतायें दो।",
+        	"keywords":"लास्ट एक्शन हीरो, सभी कलाकार, नाम"
         },
         {
           "language": "ro",
@@ -10908,6 +11643,11 @@
           "keywords": "bijnaam, San Francisco"
         },
         {
+        	"language": "hi_IN",
+        	"string":"सैन फ्रांसिस्को के उपनाम क्या हैं?",
+        	"keywords":"सैन फ्रांसिस्को, उपनाम"
+        },
+        {
           "language": "ro",
           "string": "Care sunt poreclele pentru San Francisco?",
           "keywords": "San Francisco, poreclă"
@@ -10979,6 +11719,11 @@
           "keywords": "eerste Queen-album"
         },
         {
+        	"language": "hi_IN",
+        	"string":"सबसे पहला क्वीन एल्बम क्या था?",
+        	"keywords":"सबसे पहला, क्वीन एल्बम"
+        },
+        {
           "language": "ro",
           "string": "Care a fost primul album Queen?",
           "keywords": "primul album, Queen"
@@ -11043,6 +11788,11 @@
           "language": "nl",
           "string": "Door welke landen stroomt de Jenisej?",
           "keywords": "Jenisej, land, stroomt door"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किस देश के माध्यम से यनेसी नदी का प्रवाह होता है?",
+        	"keywords":"देश, यनेसी नदी, प्रवाह"
         }
       ],
       "query": {
@@ -11110,6 +11860,11 @@
           "language": "nl",
           "string": "Welke televisieseries werden bedacht door Walt Disney?",
           "keywords": "televisieserie, bedacht, Walt Disney"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"वॉल्ट डिज़नी द्वारा किस टेलीविज़न शो का निर्माण किया गया था?",
+        	"keywords":"वॉल्ट डिज़नी, टेलीविज़न शो, निर्माण"
         }
       ],
       "query": {
@@ -11185,6 +11940,11 @@
           "keywords": "brug, langste spanwijdte"
         },
         {
+        	"language": "hi_IN",
+        	"string":"सबसे लंबा पुल कौन सा है?",
+        	"keywords":"सबसे लंबा, पुल"
+        },
+        {
           "language": "ro",
           "string": "Care este podul cu cea mai mare deschidere?",
           "keywords": "pod, cea mai mare deschidere"
@@ -11254,6 +12014,11 @@
           "language": "nl",
           "string": "Uit welke land komt Sitecore?",
           "keywords": "land, Sitecore"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"साइटकोर कौन से देश से है?",
+        	"keywords":"साइटकोर, देश"
         },
         {
           "language": "ro",
@@ -11327,6 +12092,11 @@
           "keywords": "Lance Baas, getrouwd"
         },
         {
+        	"language": "hi_IN",
+        	"string":"लांस बास ने किससे शादी की?",
+        	"keywords":"लांस बास, शादी"
+        },
+        {
           "language": "ro",
           "string": "Cu cine s-a căsătorit Lance Bass?",
           "keywords": "soție, Lance Bass"
@@ -11391,6 +12161,11 @@
           "language": "nl",
           "string": "Wat is de hoofdstad van Canada?",
           "keywords": "hoofdstad, Canada"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"कनाडा की राजधानी क्या है?",
+        	"keywords":"कनाडा, राजधानी"
         }
       ],
       "query": {
@@ -11457,6 +12232,11 @@
           "language": "nl",
           "string": "Wie heeft van Gogh geinspireerd?",
           "keywords": "van Gogh, geinspireerd"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"विंसेंट वैन गाग किनसे प्रेरित थे ?",
+        	"keywords":"विंसेंट वैन गाग, प्रेरित"
         },
         {
           "language": "ro",
@@ -11529,6 +12309,11 @@
           "language": "nl",
           "string": "In welke stad kwam John F. Kennedy om het leven?",
           "keywords": "stad, John F. Kennedy, gestorven"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किस शहर में जॉन एफ कैनेडी का निधन हुआ ?",
+        	"keywords":"शहर, जॉन एफ कैनेडी, निधन"
         }
       ],
       "query": {
@@ -11590,6 +12375,11 @@
           "language": "nl",
           "string": "Was president Jackson van de Verenigde Staten betrokken bij een oorlog?",
           "keywords": "president van de Verenigde Staten, Jackson, oorlog, betrokken bij"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"क्या अमेरिका के राष्ट्रपति जैक्सन किसी युद्ध में शामिल थे?",
+        	"keywords":"अमेरिका, राष्ट्रपति जैक्सन, युद्ध"
         }
       ],
       "query": {
@@ -11644,6 +12434,11 @@
           "language": "nl",
           "string": "Wie heeft de titelmuziek van Game of Thrones gekomponeerd?",
           "keywords": "titelmuziek, Game of Thrones, componist"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"गेम ऑफ़ थ्रोन्स थीम किसने लिखी हैं ?",
+        	"keywords":"गेम ऑफ़ थ्रोन्स, थीम, लिखी"
         },
         {
           "language": "ro",
@@ -11710,6 +12505,11 @@
           "language": "nl",
           "string": "Wie ontwierp de Brooklyn Bridge?",
           "keywords": "ontwerp, Brooklyn Bridge"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ब्रुकलिन ब्रिज को किसने बनाया है?",
+        	"keywords":"ब्रुकलिन ब्रिज, बनाया"
         },
         {
           "language": "ro",
@@ -11783,6 +12583,11 @@
           "keywords": "Boris Becker, actieve loopbaan, einde"
         },
         {
+        	"language": "hi_IN",
+        	"string":"बोरिस बेकर ने अपना सक्रिय कैरियर कब समाप्त किया?",
+        	"keywords":"बोरिस बेकर, सक्रिय कैरियर, समाप्त"
+        },
+        {
           "language": "ro",
           "string": "Când și-a încheiat Boris Becker cariera activă?",
           "keywords": "încheia cariera, Boris Becker"
@@ -11852,6 +12657,11 @@
           "language": "nl",
           "string": "Welke soorten druiven groeien in Oregon?",
           "keywords": "soorten druiven, groeien, Oregon"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"ओरेगन में किस प्रकार के अंगूर उगते हैं?",
+        	"keywords":"ओरेगन, प्रकार, अंगूर, उगते"
         },
         {
           "language": "ro",
@@ -12116,6 +12926,11 @@
           "language": "nl",
           "string": "Hoe lang is Michael Jordan?",
           "keywords": "lang, Michael Jordan"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"माइकल जॉर्डन कितना लंबा है?",
+        	"keywords":"माइकल जॉर्डन, लंबा"
         }
       ],
       "query": {
@@ -12184,6 +12999,11 @@
           "keywords": "partij, burgemeester, Parijs"
         },
         {
+        	"language": "hi_IN",
+        	"string":"पेरिस के महापौर किस पार्टी के हैं?",
+        	"keywords":"पेरिस, महापौर, पार्टी"
+        },
+        {
           "language": "ro",
           "string": "Cărui partid aparține primarul Parisului?",
           "keywords": "partid, primarul Parisului, aparține"
@@ -12248,6 +13068,11 @@
           "language": "nl",
           "string": "Wie schreef het boek De Pilaren van de Aarde?",
           "keywords": "auteur, De Pilaren van de Aarde"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"किसने द पिल्लर्स ऑफ द अर्थ किताब को लिखा हैं ?",
+        	"keywords":"द पिल्लर्स ऑफ द अर्थ, किताब, लिखा"
         },
         {
           "language": "ro",
@@ -12316,6 +13141,11 @@
           "keywords": "Verenigde Staten, 16de president"
         },
         {
+        	"language": "hi_IN",
+        	"string":"संयुक्त राज्य के 16 वें राष्ट्रपति कौन थे?",
+        	"keywords":"संयुक्त राज्य, 16 वें राष्ट्रपति"
+        },
+        {
           "language": "ro",
           "string": "Cine a fost primul președinte al Statelor Unite?",
           "keywords": "Statele Unite, primul președinte"
@@ -12380,7 +13210,12 @@
           "language": "nl",
           "string": "Hoe hoog is de Mount Everest?",
           "keywords": "hoogte, Mount Everest"
-        }
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"माउंट एवरेस्ट कितना ऊँचा है?",
+        	"keywords":"माउंट एवरेस्ट, ऊँचा"
+        },
       ],
       "query": {
         "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?num \nWHERE {\n\tres:Mount_Everest dbo:elevation ?num.\n}"
@@ -12446,6 +13281,11 @@
           "language": "nl",
           "string": "Wie was de promotor van Albert Einsteins doctoraatsonderzoek?",
           "keywords": "Albert Einstein, promotor"
+        },
+        {
+        	"language": "hi_IN",
+        	"string":"अल्बर्ट आइंस्टीन के डॉक्टरेट के पर्यवेक्षक कौन थे?",
+        	"keywords":"अल्बर्ट आइंस्टीन, डॉक्टरेट, पर्यवेक्षक"
         },
         {
           "language": "ro",
@@ -12519,6 +13359,11 @@
           "keywords": "stad, wonen, Sylvester Stallone"
         },
         {
+          "language": "hi_IN",
+          "string": "सिल्वेस्टर स्टेलोन किस शहर में रहते हैं?",
+          "keywords": "सिल्वेस्टर स्टेलोन, शहर, रहते"
+        },
+        {
           "language": "ro",
           "string": "În ce oraș trăiește Sylvester Stallone?",
           "keywords": "oraș, trăiește, Sylvester Stallone"
@@ -12583,6 +13428,11 @@
           "language": "nl",
           "string": "Wat is de munteenheid van Tsjechië?",
           "keywords": "Tsjechië, munteenheid"
+        },
+        {
+          "language": "hi_IN",
+          "string": "चेक गणराज्य की मुद्रा क्या है?",
+          "keywords": "चेक गणराज्य, मुद्रा"
         }
       ],
       "query": {
@@ -12644,6 +13494,11 @@
           "language": "nl",
           "string": "Beïnvloedde Socrates Aristoteles?",
           "keywords": "beïnvloeden, Socrates, Aristoteles"
+        },
+        {
+          "language": "hi_IN",
+          "string": "क्या एरिस्टोटल सोक्रेटस से प्रभावित थे?",
+          "keywords": "एरिस्टोटल, सोक्रेटस, प्रभावित"
         }
       ],
       "query": {
@@ -12693,6 +13548,11 @@
           "language": "nl",
           "string": "In welke tijdzone ligt Salt Lake City?",
           "keywords": "Salt Lake City, tijdzone"
+        },
+        {
+          "language": "hi_IN",
+          "string": "साल्ट लेक सिटी का समय क्षेत्र क्या है?",
+          "keywords": "साल्ट लेक सिटी, समय क्षेत्र"
         }
       ],
       "query": {
@@ -12759,6 +13619,11 @@
           "language": "nl",
           "string": "Wie is de zoon van Sonny en Cher?",
           "keywords": "zoon, Sonny, Cher"
+        },
+        {
+          "language": "hi_IN",
+          "string": "सोनि और चेर का बेटा कौन है?",
+          "keywords": "सोन, चेर, बेटा"
         },
         {
           "language": "ro",
@@ -12832,6 +13697,11 @@
           "keywords": "stad, hoofdkwartier, Verenigde Naties"
         },
         {
+          "language": "hi_IN",
+          "string": "संयुक्त राष्ट के मुख्यालय कौन सा शहर में हैं?",
+          "keywords": "संयुक्त राष्ट, मुख्यालय, शहर"
+        },
+        {
           "language": "ro",
           "string": "În ce oraș se află cartierul general al Națiunilor Unite?",
           "keywords": "oraș, cartierul general al Națiunilor Unite"
@@ -12896,6 +13766,11 @@
           "language": "nl",
           "string": "Wie is de oprichter van Penguin Books?",
           "keywords": "oprichter, Penguin Books"
+        },
+        {
+          "language": "hi_IN",
+          "string": "पेंगुइन बुक्स के संस्थापक कौन हैं?",
+          "keywords": "पेंगुइन बुक्स, संस्थापक"
         },
         {
           "language": "ro",
@@ -12969,6 +13844,11 @@
           "keywords": "Jack Wolfskin, opgericht"
         },
         {
+          "language": "hi_IN",
+          "string": "जैक वुल्फस्किन की स्थापना कब हुई थी?",
+          "keywords": "जैक वुल्फस्किन, स्थापना"
+        },
+        {
           "language": "ro",
           "string": "Când a fost fondat Jack Wolfskin?",
           "keywords": "Jack Wolfskin, fondat"
@@ -13031,6 +13911,11 @@
           "language": "nl",
           "string": "Wie is de burgemeester van Rotterdam?",
           "keywords": "burgemeester, Rotterdam"
+        },
+        {
+          "language": "hi_IN",
+          "string": "रॉटरडैम के महपौर कौन हैं?",
+          "keywords": "रॉटरडैम, महपौर"
         },
         {
           "language": "ro",
@@ -13097,6 +13982,11 @@
           "language": "nl",
           "string": "Toon alle Zweedse oceanograafen.",
           "keywords": "Zweedse, oceanograafen"
+        },
+        {
+          "language": "hi_IN",
+          "string": "मुझे सभी स्वीडिश महासागरीय वैज्ञानिकों की सूचि बतायें।",
+          "keywords": "स्वीडिश, महासागरीय वैज्ञानिक"
         },
         {
           "language": "ro",
@@ -13170,6 +14060,11 @@
           "keywords": "Hemmingway, autobiografie"
         },
         {
+          "language": "hi_IN",
+          "string": "हेमिंग्वे की आत्मकथा मुझे दिखायें।",
+          "keywords": "हेमिंग्वे, आत्मकथा"
+        },
+        {
           "language": "ro",
           "string": "Arată-mi autobiografia lui Hemingway",
           "keywords": "autobiografie, Hemingway"
@@ -13234,6 +14129,11 @@
           "language": "nl",
           "string": "Hoe heten de ouders van de vrouw van Juan Carlos I?",
           "keywords": "ouders, vrouw van, Juan Carlos I"
+        },
+        {
+          "language": "hi_IN",
+          "string": "जुआन कार्लोस-१ की पत्नी के माता-पिता कौन हैं?",
+          "keywords": "जुआन कार्लोस-१, पत्नी, माता-पिता"
         },
         {
           "language": "ro",
@@ -13306,6 +14206,11 @@
           "language": "nl",
           "string": "Heeft Tesla ooit de Nobelprijs voor de Natuurkunde gewonnen?",
           "keywords": "Nobelprijs voor de Natuurkunde, Tesla"
+        },
+        {
+          "language": "hi_IN",
+          "string": "क्या टेस्ला ने भौतिक विज्ञान में नोबेल पुरस्कार जीता?",
+          "keywords": "टेस्ला, भौतिक विज्ञान, नोबेल पुरस्कार"
         }
       ],
       "query": {
@@ -13360,6 +14265,11 @@
           "language": "nl",
           "string": "Wie is de grootste basketballer?",
           "keywords": "grootste, basketballer"
+        },
+        {
+          "language": "hi_IN",
+          "string": "सबसे लंबा बास्केटबॉल खिलाड़ी कौन है?",
+          "keywords": "सबसे लंबा, बास्केटबॉल, खिलाड़ीै"
         },
         {
           "language": "ro",
@@ -13433,6 +14343,11 @@
           "keywords": "stad, minste inwoners"
         },
         {
+          "language": "hi_IN",
+          "string": "सबसे कम निवासियों वाला शहर कौन सा है?",
+          "keywords": "सबसे कम, निवासियों, शहर"
+        },
+        {
           "language": "ro",
           "string": "Care oraș are cei mai puțini locuitori?",
           "keywords": "oraș, cei mai puțini locuitori"
@@ -13497,6 +14412,11 @@
           "language": "nl",
           "string": "Is proinsuline een proteïne?",
           "keywords": "proinsuline, proteïne"
+        },
+        {
+          "language": "hi_IN",
+          "string": "क्या प्रोइन्सुलिन एक प्रोटीन है?",
+          "keywords": "प्रोइन्सुलिन, प्रोटीन"
         }
       ],
       "query": {
@@ -13544,6 +14464,11 @@
           "language": "nl",
           "string": "Wie waren de ouders van Koningin Victoria?",
           "keywords": "ouders, Koningin Victoria"
+        },
+        {
+          "language": "hi_IN",
+          "string": "महारानी विक्टोरिया के माता-पिता कौन थे?",
+          "keywords": "महारानी विक्टोरियाे, माता-पिता"
         },
         {
           "language": "ro",
@@ -13618,6 +14543,11 @@
           "keywords": "kinderen, Che Guevara"
         },
         {
+          "language": "hi_IN",
+          "string": "क्या चे ग्वेरा के बच्चे हैं?",
+          "keywords": "चे ग्वेरा, बच्चे"
+        },
+        {
           "language": "ro",
           "string": "Che Guevara a avut copii?",
           "keywords": "copii, Che Guevara"
@@ -13668,6 +14598,11 @@
           "language": "nl",
           "string": "Is het Baikalmeer groter dan het Groot Berenmeer?",
           "keywords": "Baikalmeer, groter, Groot Berenmeer"
+        },
+        {
+          "language": "hi_IN",
+          "string": "क्या जैक बेयर झील तुलना में बाइकाल झील बड़ी है?",
+          "keywords": "जैक बेयर झील, बाइकाल झील, बड़ी"
         },
         {
           "language": "ro",
@@ -13729,6 +14664,11 @@
           "keywords": "Kaurismäki, winnaar, Grand Prix, Cannes"
         },
         {
+          "language": "hi_IN",
+          "string": "क्या कौरिस्म्की कभी कैनन्स में ग्रांड प्रिक्स जीते हैं?",
+          "keywords": "कौरिस्म्की, कैनन्स, ग्रांड प्रिक्स, जीत"
+        },
+        {
           "language": "ro",
           "string": "Kaurismäki a câștigat vreodată premiul Grand Prix la Cannes?",
           "keywords": "Kaurismäki, câștigător, Grand Prix la Cannes"
@@ -13781,6 +14721,11 @@
           "language": "nl",
           "string": "Geef alle boeken van William Goldman met meer dan 300 pagina's.",
           "keywords": "boeken, William Goldman, meer dan 300 pagina's"
+        },
+        {
+          "language": "hi_IN",
+          "string": "मुझे ३०० से अधिक पृष्ठों के साथ विलियम गोल्डमैन की किताबें की सूचि बतायें।",
+          "keywords": "३०० से अधिक पृष्ठों, विलियम गोल्डमैन, किताबें"
         },
         {
           "language": "ro",
@@ -13908,6 +14853,11 @@
           "keywords": "Fort Knox, ligt"
         },
         {
+          "language": "hi_IN",
+          "string": "फोर्ट नॉक्स कहां स्थित है?",
+          "keywords": "फोर्ट नॉक्स, स्थित"
+        },
+        {
           "language": "ro",
           "string": "În ce stat american este situat Fort Knox?",
           "keywords": "Fort Knox, situat, stat american"
@@ -13972,6 +14922,11 @@
           "language": "nl",
           "string": "In welke staat van de Verenigde Staten ligt Fort Knox?",
           "keywords": "Fort Knox, staat van de Verenigde Staten, ligt"
+        },
+        {
+          "language": "hi_IN",
+          "string": "सैयुक्त राज्य के किस राज्य में फोर्ट नॉक्स स्थित है?",
+          "keywords": "सैयुक्त राज्य, फोर्ट नॉक्स, स्थित"
         }
       ],
       "query": {
@@ -14038,6 +14993,11 @@
           "language": "nl",
           "string": "Waar ligt Syngman Rhee begraven?",
           "keywords": "Syngman Rhee, begrafplaats"
+        },
+        {
+          "language": "hi_IN",
+          "string": "सिन्गमैन र्ही कहाँ दफनाया गया है?",
+          "keywords": "सिन्गमैन र्ही, दफनाया"
         },
         {
           "language": "ro",
@@ -14111,6 +15071,11 @@
           "keywords": "tijdzone, San Pedro de Atacama"
         },
         {
+          "language": "hi_IN",
+          "string": "सैन पेड्रो डे अटाकामा में समय क्षेत्र क्या है?",
+          "keywords": "सैन पेड्रो डे अटाकामा, समय क्षेत्र"
+        },
+        {
           "language": "ro",
           "string": "Care este fusul orar din San Pedro de Atacama?",
           "keywords": "fus orar, San Pedro de Atacama"
@@ -14180,6 +15145,11 @@
           "language": "nl",
           "string": "Tot welke artistieke stijl behoort de schilder van de Drie Dansers?",
           "keywords": "Drie Dansers, schilder, stijl"
+        },
+        {
+          "language": "hi_IN",
+          "string": "द थ्री डांसर्स के चित्रकार किस कलात्मक आंदोलन से हैं?",
+          "keywords": "द थ्री डांसर्स, चित्रकार, कलात्मक आंदोलन"
         },
         {
           "language": "ro",
@@ -14254,6 +15224,11 @@
           "keywords": "wetenschaper, bekend om, Manhattan Project, Nobelprijs voor de Vrede"
         },
         {
+          "language": "hi_IN",
+          "string": "कौन सा वैज्ञानिक मैनहट्टन प्रोजेक्ट और नोबेल शांति पुरस्कार के लिए जाना जाता है?",
+          "keywords": "वैज्ञानिक, मैनहट्टन प्रोजेक्ट, नोबेल, शांति पुरस्कार"
+        },
+        {
           "language": "ro",
           "string": "Care om de știință este cunoscut pentru proiectul Manhattan și pentru premiul Nobel pentru pace?",
           "keywords": "om de știință, cunoscut pentru, proiect Manhattan, premiul Nobel pentru pace"
@@ -14323,6 +15298,11 @@
           "language": "nl",
           "string": "Toon alle boeken die bij de Foundation-serie horen.",
           "keywords": "boeken, Foundation-serie"
+        },
+        {
+          "language": "hi_IN",
+          "string": "असिमोव की फाउंडेशन श्रृंखला की सारी पुस्तकों की सूचि दिखाएं।",
+          "keywords": "असिमोव, फाउंडेशन श्रृंखला, पुस्तकों"
         },
         {
           "language": "ro",
@@ -14449,6 +15429,11 @@
           "language": "nl",
           "string": "Geef alle steden in New Jersey met meer dan 100000 inwoners.",
           "keywords": "New Jersey, stad, inwoners, meer dan 100000"
+        },
+        {
+          "language": "hi_IN",
+          "string": "मुझे न्यू जर्सी के १००००० से अधिक निवासियों के साथ सभी शहरों की सूचि बतायें।",
+          "keywords": "न्यू जर्सी, १००००० से अधिक निवासि, शहर"
         }
       ],
       "query": {
@@ -14535,6 +15520,11 @@
           "keywords": "museum, New York, de meeste bezoekers"
         },
         {
+          "language": "hi_IN",
+          "string": "न्यूयॉर्क में कौन से संग्रहालय में सबसे अधिक आगंतुक हैं?",
+          "keywords": "न्यूयॉर्क, संग्रहालय, सबसे अधिक आगंतुक"
+        },
+        {
           "language": "ro",
           "string": "Care muzeu din New York are cei mai mulți vizitatori?",
           "keywords": "muzeu, New York, cei mai mulți vizitatori"
@@ -14597,6 +15587,11 @@
           "language": "nl",
           "string": "Hoe hoog is de Yokohama Marine Tower?",
           "keywords": "hoog, Yokohama Marine Tower"
+        },
+        {
+          "language": "hi_IN",
+          "string": "योकोहामा समुद्री टॉवर कितना ऊँचा है?",
+          "keywords": "योकोहामा समुद्री टॉवर, ऊँचा"
         },
         {
           "language": "ro",
@@ -14663,6 +15658,11 @@
           "language": "nl",
           "string": "Heeft de nieuwe Battlestar Galactica-serie meer afleveringen dan de oude?",
           "keywords": "nieuwe Battlestar Galactica-serie, meer afleveringen, oude Battlestar Galactica-serie"
+        },
+        {
+          "language": "hi_IN",
+          "string": "क्या नई बट्ट्लैस्टार गैलेक्टिका सीरीज़ के पुराने संस्करणों की तुलना में अधिक एपिसोड हैं?",
+          "keywords": "नई बट्ट्लैस्टार गैलेक्टिका सीरीज़, पुराने संस्करणों, अधिक एपिसोड"
         }
       ],
       "query": {
@@ -14712,6 +15712,11 @@
           "language": "nl",
           "string": "Wie is de jongste dartsspeler?",
           "keywords": "jongste Darts speeler"
+        },
+        {
+          "language": "hi_IN",
+          "string": "सबसे छोटा डार्ट्स खिलाड़ी कौन है?",
+          "keywords": "सबसे छोटा, डार्ट्स खिलाड़ी"
         },
         {
           "language": "ro",
@@ -14778,6 +15783,11 @@
           "language": "nl",
           "string": "Wie heeft het videospel World of Warcraft ontwikkeld?",
           "keywords": "World of Warcraft, ontwikkelaar"
+        },
+        {
+          "language": "hi_IN",
+          "string": "वर्ल्ड ऑफ़ वारक्राफ़्ट गेम किसने विकसित किया हैं?",
+          "keywords": "वर्ल्ड ऑफ़ वारक्राफ़्ट, गेम, विकसित"
         }
       ],
       "query": {
@@ -14839,6 +15849,11 @@
           "language": "nl",
           "string": "Welk paus richtte de Vaticaanse televisie op?",
           "keywords": "paus, oprichter, Vaticaanse televisie"
+        },
+        {
+          "language": "hi_IN",
+          "string": "किस पोप ने वेटिकन टेलीविजन की स्थापना की थी?",
+          "keywords": "पोप, वेटिकन टेलीविजन, स्थापना"
         },
         {
           "language": "ro",
@@ -14905,6 +15920,11 @@
           "language": "nl",
           "string": "Wie componeerde de muziek voor Harold and Maude",
           "keywords": "componist, Harold and Maude"
+        },
+        {
+          "language": "hi_IN",
+          "string": "हेरोल्ड एंड मॉड के लिए संगीत किसने बनाया था?",
+          "keywords": "हेरोल्ड एंड मॉड, संगीत, बनाया"
         }
       ],
       "query": {
@@ -14971,6 +15991,11 @@
           "language": "nl",
           "string": "Noem alle leden van Prodigy.",
           "keywords": "leden, Prodigy"
+        },
+        {
+          "language": "hi_IN",
+          "string": "मुझे प्रोडिजी के सभी सदस्यों की सूचि बतायें।",
+          "keywords": "प्रोडिजी, सदस्यों"
         },
         {
           "language": "ro",
@@ -15056,6 +16081,11 @@
           "keywords": "speeld, Spaanse films, geproduceerd, Benicio del Toro"
         },
         {
+          "language": "hi_IN",
+          "string": "बेनिसीओ डेल टोरो द्वारा निर्मित स्पेनिश फिल्मों में कौन अभिनय करता है?",
+          "keywords": "बेनिसीओ डेल टोरो, निर्मित, स्पेनिश फिल्म, अभिनय"
+        },
+        {
           "language": "ro",
           "string": "Cine sunt protagoniști în filmele spaniole produse de Benicio del Toro?",
           "keywords": "protagoniști, filmele spaniole, produse, Benicio del Toro"
@@ -15127,6 +16157,11 @@
           "keywords": "dochteronderneming, TUI Travel, bedient, Glasgow, Dublin"
         },
         {
+          "language": "hi_IN",
+          "string": "टीयूआई ट्रैवल की कौन सी सहायक कंपनी ग्लासगो और डबलिन को सेवाएं देती है?",
+          "keywords": "टीयूआई ट्रैवल, सहायक कंपनी, ग्लासगो, डबलिन, सेवा?"
+        },
+        {
           "language": "ro",
           "string": "Care filială a TUI Travel deservește atât Glasgow cât și Dublin?",
           "keywords": "filială, TUI Travel, deservește, Glasgow, Dublin"
@@ -15191,6 +16226,11 @@
           "language": "nl",
           "string": "In welk land ligt Mekka?",
           "keywords": "land, Mekka"
+        },
+        {
+          "language": "hi_IN",
+          "string": "मक्का किस देश में स्थित है?",
+          "keywords": "मक्का, देश, स्थित"
         },
         {
           "language": "ro",
@@ -15264,6 +16304,11 @@
           "keywords": "talen, Columbia"
         },
         {
+          "language": "hi_IN",
+          "string": "कोलंबिया में कितनी भाषाएं बोली जाती हैं?",
+          "keywords": "कोलंबिया, भाषाएं, बोली"
+        },
+        {
           "language": "ro",
           "string": "Câte limbi sunt vorbite în Columbia?",
           "keywords": "limbi, Columbia"
@@ -15335,6 +16380,11 @@
           "keywords": "grootste stadion, Spanje"
         },
         {
+          "language": "hi_IN",
+          "string": "स्पेन, सबसे बड़ा, स्टेडियम",
+          "keywords": "कोलंबिया, भाषाएं, बोली"
+        },
+        {
           "language": "ro",
           "string": "Care este cel mai mare stadion din Spania?",
           "keywords": "cel mai mare stadion, Spania"
@@ -15399,6 +16449,11 @@
           "language": "nl",
           "string": "Welke professionele surfers werden geboren op de Filipijnen?",
           "keywords": "professionele surfer, Filipijnen"
+        },
+        {
+          "language": "hi_IN",
+          "string": "फिलीपींस पर कौन से पेशेवर सर्फर्स पैदा हुए थे?",
+          "keywords": "फिलीपींस, पेशेवर सर्फर्स, पैदा"
         }
       ],
       "query": {
@@ -15465,6 +16520,11 @@
           "language": "nl",
           "string": "Wat zijn de fijv wijken van New York?",
           "keywords": "New York, wijken"
+        },
+        {
+          "language": "hi_IN",
+          "string": "न्यूयॉर्क के पांच नगर क्या हैं?",
+          "keywords": "न्यूयॉर्क, पांच नगर"
         },
         {
           "language": "ro",
@@ -15557,6 +16617,11 @@
           "keywords": "Cola, drank"
         },
         {
+          "language": "hi_IN",
+          "string": "क्या कोला एक पेय है?",
+          "keywords": "कोला, पेय"
+        },
+        {
           "language": "ro",
           "string": "Cola este o băutură?",
           "keywords": "Cola, băutură"
@@ -15614,6 +16679,11 @@
           "language": "nl",
           "string": "Wanneer is prinses Diana overleden?",
           "keywords": "prinses Diana, overleden, datum"
+        },
+        {
+          "language": "hi_IN",
+          "string": "राजकुमारी डायना का निधन कब हुआ?",
+          "keywords": "राजकुमारी डायना, निधन"
         },
         {
           "language": "ro",
@@ -15682,6 +16752,11 @@
           "keywords": "Frankrijk, mousserende wijn, geproduceerd"
         },
         {
+          "language": "hi_IN",
+          "string": "फ्रांस में स्पार्कलिंग वाइन का उत्पादन कहाँ होता है?",
+          "keywords": "फ्रांस, स्पार्कलिंग वाइन, उत्पादन"
+        },
+        {
           "language": "ro",
           "string": "Unde în Franța este produs vinul spumant?",
           "keywords": "produs, Franța, vin spumant"
@@ -15712,3 +16787,4 @@
     }
   ]
 }
+
