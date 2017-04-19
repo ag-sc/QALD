@@ -1,6 +1,6 @@
 {
   "dataset" : {
-    "id" : "qald-7-train-hybrid"
+    "id" : "qald-7-test-hybrid"
   },
   "questions" : [ {
     "id" : "1",
