@@ -1,0 +1,506 @@
+{
+  "dataset" : {
+    "id" : "qald-7-train-hybrid"
+  },
+  "questions" : [ {
+    "id" : "1",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are there other solar systems?"
+    } ]
+  }, {
+    "id" : "2",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Did George Washington want to be a teacher?"
+    } ]
+  }, {
+    "id" : "3",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Does Johns Hopkins Bayview Medical Center have a burn victim unit?"
+    } ]
+  }, {
+    "id" : "4",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all greek gods."
+    } ]
+  }, {
+    "id" : "5",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the names of all of the people who signed the American Declaration of Independence."
+    } ]
+  }, {
+    "id" : "6",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "The name of which ocean refers to Atlas of Greek mythology?"
+    } ]
+  }, {
+    "id" : "7",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which star is about 4.24 light-years from the Sun."
+    } ]
+  }, {
+    "id" : "8",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which transmission does the German car with a top speed of 407 km/h have?"
+    } ]
+  }, {
+    "id" : "9",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which star's diameter is about 109 times that of Earth?"
+    } ]
+  }, {
+    "id" : "10",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which writer was involved in two successive plane crashes?"
+    } ]
+  }, {
+    "id" : "11",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many children did the person have that began their concerts with 'Hello, I'm Johnny Cash'?"
+    } ]
+  }, {
+    "id" : "12",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the team size of the sport that is practiced by 250 million players in over 200 nations?"
+    } ]
+  }, {
+    "id" : "13",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Were there more than 1000 different species of non-avian dinosaurs?"
+    } ]
+  }, {
+    "id" : "14",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which indigenous language includes a large proportion of non-indigenous people?"
+    } ]
+  }, {
+    "id" : "15",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which animal is primarily responsible for the extinction of 33 species of birds?"
+    } ]
+  }, {
+    "id" : "16",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Was the Earth formed about 4.54 billion years ago?"
+    } ]
+  }, {
+    "id" : "17",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which television series is about the survivors of a passenger jet crash on a tropical island?"
+    } ]
+  }, {
+    "id" : "18",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In what present-day country did the Protestant Reformation begin?"
+    } ]
+  }, {
+    "id" : "19",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is Michael Jordan the MVP of all time?"
+    } ]
+  }, {
+    "id" : "20",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which company is a portmanteau of the words microcomputer and software?"
+    } ]
+  }, {
+    "id" : "21",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What causes earthquakes?"
+    } ]
+  }, {
+    "id" : "22",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the first European to reach India by sea?"
+    } ]
+  }, {
+    "id" : "23",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "For which video game was an Apple II version planned but never released."
+    } ]
+  }, {
+    "id" : "24",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is an eggshell made of Calcium carbonate?"
+    } ]
+  }, {
+    "id" : "25",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is California's state bird?"
+    } ]
+  }, {
+    "id" : "26",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the worldwide best-selling album of all time?"
+    } ]
+  }, {
+    "id" : "27",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the alias of the band which member was ranked the 17th greatest guitarist of all time by a Guitar World magazine reader's poll in 2012?"
+    } ]
+  }, {
+    "id" : "28",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the best-selling book of all time?"
+    } ]
+  }, {
+    "id" : "29",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the maximum depth of the lake with the alleged sighted monster Nessie?"
+    } ]
+  }, {
+    "id" : "30",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many bits does the CPU of the device have that IGN named the 9th greatest video game console of all time?"
+    } ]
+  }, {
+    "id" : "31",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is created by tanning animal rawhide?"
+    } ]
+  }, {
+    "id" : "32",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the capital of the state whose flag reflects Hispanic and Native American influences?"
+    } ]
+  }, {
+    "id" : "33",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What causes the sound of thunder?"
+    } ]
+  }, {
+    "id" : "34",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which animal is the largest flying land bird in the western hemisphere?"
+    } ]
+  }, {
+    "id" : "35",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the total population of the town that port wine is named after?"
+    } ]
+  }, {
+    "id" : "36",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the completion date of the ship sunken in the North Atlantic Ocean in 1912 and rediscovered in 1985."
+    } ]
+  }, {
+    "id" : "37",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When did the person who worked on short satirical poems together with Goethe die?"
+    } ]
+  }, {
+    "id" : "38",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which food's name derived from the verb 'empanar'?"
+    } ]
+  }, {
+    "id" : "39",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the leader of the first Antarctic expedition to reach the South Pole born?"
+    } ]
+  }, {
+    "id" : "40",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which urban fire in the United States burned from October 8 to October 10, 1871?"
+    } ]
+  }, {
+    "id" : "41",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the official name of the host city of the Summer Olympic Games in 1932 and 1984?"
+    } ]
+  }, {
+    "id" : "42",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the band found whose performance in 1998 was documented by Wim Wenders?"
+    } ]
+  }, {
+    "id" : "43",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which battle in 1757 marked the beginning of the expansion of the British Empire in Asia?"
+    } ]
+  }, {
+    "id" : "44",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which Hindu deity is also known as 'Vinayaka'?"
+    } ]
+  }, {
+    "id" : "45",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which newspaper had an average daily circulation of 189000 copies in August 2013?"
+    } ]
+  }, {
+    "id" : "46",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which tiger reserve in India shares the north-eastern boundary with Nepal?"
+    } ]
+  }, {
+    "id" : "47",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the first deaf-blind person to receive a bachelor of arts degree?"
+    } ]
+  }, {
+    "id" : "48",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the first man to walk on the moon?"
+    } ]
+  }, {
+    "id" : "49",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many floors does the tower on the Champ de Mars in Paris have?"
+    } ]
+  }, {
+    "id" : "50",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : true,
+    "question" : [ {
+      "language" : "en",
+      "string" : "The net worth of which actor is estimated by Forbes magazine to be $350 million?"
+    } ]
+  } ]
+}

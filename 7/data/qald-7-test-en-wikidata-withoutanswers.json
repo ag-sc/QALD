@@ -1,0 +1,556 @@
+{
+  "dataset" : {
+    "id" : "qald-7-test-en-wikidata"
+  },
+  "questions" : [ {
+    "id" : "1",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all cosmonauts.",
+      "keywords" : "cosmonauts"
+    } ]
+  }, {
+    "id" : "2",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the birthdays of all actors of the television show Charmed.",
+      "keywords" : "television show, Charmed, actor, birthday"
+    } ]
+  }, {
+    "id" : "3",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the daughter of Robert Kennedy married to?",
+      "keywords" : "Robert Kennedy, daughter, married"
+    } ]
+  }, {
+    "id" : "4",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which river does the Brooklyn Bridge cross?",
+      "keywords" : "river, cross, Brooklyn Bridge"
+    } ]
+  }, {
+    "id" : "5",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many countries are there in Europe?",
+      "keywords" : "Europe, countries"
+    } ]
+  }, {
+    "id" : "6",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which city did John F. Kennedy die?",
+      "keywords" : "city, John F. Kennedy, die"
+    } ]
+  }, {
+    "id" : "7",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Does the Isar flow into a lake?",
+      "keywords" : "Isar, flow, lake"
+    } ]
+  }, {
+    "id" : "8",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which countries have more than ten caves?",
+      "keywords" : "country, cave, more than ten"
+    } ]
+  }, {
+    "id" : "9",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are tree frogs a type of amphibian?",
+      "keywords" : "tree frog, amphibian"
+    } ]
+  }, {
+    "id" : "10",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who created Goofy?",
+      "keywords" : "created, Goofy"
+    } ]
+  }, {
+    "id" : "11",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the capitals of all countries in Africa.",
+      "keywords" : "Africa, country, capital"
+    } ]
+  }, {
+    "id" : "12",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all cities in New Jersey with more than 100000 inhabitants.",
+      "keywords" : "New Jersey, city, inhabitants, more than 100000"
+    } ]
+  }, {
+    "id" : "13",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which museum exhibits The Scream by Munch?",
+      "keywords" : "museum, Scream, Munch"
+    } ]
+  }, {
+    "id" : "14",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is Egypts largest city also its capital?",
+      "keywords" : "largest city, Egypt, capital"
+    } ]
+  }, {
+    "id" : "15",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many people live in the capital of Australia?",
+      "keywords" : "Australia, capital, people, live"
+    } ]
+  }, {
+    "id" : "16",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which country is the Limerick Lake?",
+      "keywords" : "Limerick Lake, country"
+    } ]
+  }, {
+    "id" : "17",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which television shows were created by John Cleese?",
+      "keywords" : "television show, create, John Cleese"
+    } ]
+  }, {
+    "id" : "18",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which mountain is the highest after the Annapurna?",
+      "keywords" : "mountain, highest after, Annapurna"
+    } ]
+  }, {
+    "id" : "19",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "In which films directed by Garry Marshall was Julia Roberts starring?",
+      "keywords" : "film, directed, Garry Marshall, starring, Julia Roberts"
+    } ]
+  }, {
+    "id" : "20",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Was U.S. president Jackson involved in a war?",
+      "keywords" : "U.S. president, Jackson, war"
+    } ]
+  }, {
+    "id" : "21",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all communist countries.",
+      "keywords" : "communist countries"
+    } ]
+  }, {
+    "id" : "22",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which awards did Douglas Hofstadter win?",
+      "keywords" : "Douglas Hofstadter, award"
+    } ]
+  }, {
+    "id" : "23",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the currency of the Czech Republic?",
+      "keywords" : "Czech republic, currency"
+    } ]
+  }, {
+    "id" : "24",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which countries adopted the Euro?",
+      "keywords" : "country, adopt, Euro"
+    } ]
+  }, {
+    "id" : "25",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the area code of Berlin?",
+      "keywords" : "Berlin, area code"
+    } ]
+  }, {
+    "id" : "26",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which countries have more than two official languages?",
+      "keywords" : "country, official language, more than two"
+    } ]
+  }, {
+    "id" : "27",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the owner of Rolls-Royce?",
+      "keywords" : "Rolls-Royce, owner"
+    } ]
+  }, {
+    "id" : "28",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Through which countries does the Yenisei river flow?",
+      "keywords" : "Yenisei river, flow through, country"
+    } ]
+  }, {
+    "id" : "29",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When did Latvia join the EU?",
+      "keywords" : "Latvia, join, EU"
+    } ]
+  }, {
+    "id" : "30",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which politicians were married to a German?",
+      "keywords" : "politician, married, German"
+    } ]
+  }, {
+    "id" : "31",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the Battle of Gettysburg?",
+      "keywords" : "Battle of Gettysburg"
+    } ]
+  }, {
+    "id" : "32",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the highest mountain in Australia?",
+      "keywords" : "Australia, highest mountain"
+    } ]
+  }, {
+    "id" : "33",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all soccer clubs in Spain.",
+      "keywords" : "Spain, soccer club"
+    } ]
+  }, {
+    "id" : "34",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the official language of Suriname?",
+      "keywords" : "Suriname, official language"
+    } ]
+  }, {
+    "id" : "35",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who is the mayor of Tel Aviv?",
+      "keywords" : "Tel Aviv, mayor"
+    } ]
+  }, {
+    "id" : "36",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which telecommunications organizations are located in Belgium?",
+      "keywords" : "telecommunications organization, located, Belgium"
+    } ]
+  }, {
+    "id" : "37",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is Frank Herbert still alive?",
+      "keywords" : "Frank Herbert, alive"
+    } ]
+  }, {
+    "id" : "38",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the highest place of the Urals?",
+      "keywords" : "Urals, highest place"
+    } ]
+  }, {
+    "id" : "39",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who wrote the lyrics for the Polish national anthem?",
+      "keywords" : "Poland, national anthem, write, lyrics"
+    } ]
+  }, {
+    "id" : "40",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all federal chancellors of Germany.",
+      "keywords" : "Germany, federal chancellors"
+    } ]
+  }, {
+    "id" : "41",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the official website of Tom Cruise?",
+      "keywords" : "Tom Cruise, official website"
+    } ]
+  }, {
+    "id" : "42",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "List all episodes of the first season of the HBO television series The Sopranos.",
+      "keywords" : "HBO, television series, Sopranos, first season, episode"
+    } ]
+  }, {
+    "id" : "43",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is there a video game called Battle Chess?",
+      "keywords" : "video game, Battle Chess"
+    } ]
+  }, {
+    "id" : "44",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the websites of companies with more than 500000 employees.",
+      "keywords" : "website, company, employee, more than 500000"
+    } ]
+  }, {
+    "id" : "45",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which actors were born in Germany?",
+      "keywords" : "actor, born, Germany"
+    } ]
+  }, {
+    "id" : "46",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which instruments does Cat Stevens play?",
+      "keywords" : "Cat Stevens, instrument"
+    } ]
+  }, {
+    "id" : "47",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all books written by Danielle Steel.",
+      "keywords" : "book, written, Danielle Steel"
+    } ]
+  }, {
+    "id" : "48",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When did the Ming dynasty dissolve?",
+      "keywords" : "dissolve, Ming dynasty"
+    } ]
+  }, {
+    "id" : "49",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is Lake Baikal bigger than the Great Bear Lake?",
+      "keywords" : "Lake Baikal, bigger than, Great Bear Lake"
+    } ]
+  }, {
+    "id" : "50",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?",
+      "keywords" : "Cuban Missile Crisis, earlier, Bay of Pigs Invasion"
+    } ]
+  } ]
+}

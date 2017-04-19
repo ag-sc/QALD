@@ -1,0 +1,1556 @@
+{
+  "dataset" : {
+    "id" : "qald-7-test-multilingual"
+  },
+  "questions" : [ {
+    "id" : "1",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are penguins endangered?",
+      "keywords" : "penguins, endangered"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Sind Pinguine vom Aussterben gefärdet?",
+      "keywords" : "Pinguine, Aussterben, Gefahr"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "I pinguini sono una specie in pericolo?",
+      "keywords" : "pinguini, specie, pericolo"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que les pingouins sont une espèce menacée d'extinction?",
+      "keywords" : "pingouins, espèce, menacée d'extinction"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "2",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Are there any castles in the United States?",
+      "keywords" : "castles, United States"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gibt es irgendwelche Schlösser in den Vereinigten Staaten?",
+      "keywords" : "Schlösser, Vereinigte Staaten"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Ci sono castelli negli Stati Uniti?",
+      "keywords" : "castelli, Stati Uniti"
+    }, {
+      "language" : "fr",
+      "string" : "Y a-t-il des châteaux aux États-Unis?",
+      "keywords" : "châteaux, États-Unis"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "3",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Can you find frescoes in Crete?",
+      "keywords" : "frescoes, Crete"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Können Sie Fresken in Kreta finden?",
+      "keywords" : "Fresken, Kreta"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Si possono trovare affreschi a Creta?",
+      "keywords" : "affreschi, Creta"
+    }, {
+      "language" : "fr",
+      "string" : "Peut-on trouver des fresques en Crète?",
+      "keywords" : "fresques, Crète"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "4",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Do Urdu and Persian have a common root?",
+      "keywords" : "Urdu, Persian, common root"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Haben Urdu und Perser eine gemeinsame Wurzel?",
+      "keywords" : "Urdu, Perser, gemeinsame Wurzel"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Urdu e Persiano hanno le stesse radici?",
+      "keywords" : "Urdu, Persiano, stesse, radici"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que l'ourdou et le persan ont une origine commune?",
+      "keywords" : "ourdou, persan, origine commune"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "5",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Does the Ford Motor Company have a manufacturing plant in Malaysia?",
+      "keywords" : "Ford Motor Company, manufacturing plant, Malaysia"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Hat Ford eine Frabik in Malaysia?",
+      "keywords" : "Ford, Fabrik, Malaysia"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "La Ford ha una fabbrica in Malesia?",
+      "keywords" : "Ford, fabbrica, Malesia"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que Ford possède une usine en Malaisie?",
+      "keywords" : "Ford, usine, Malaisie"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "6",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many years was the Ford Model T manufactured?",
+      "keywords" : "years, Ford Model T, manufactured"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Jahre wurde das Ford Model T hergestellt?",
+      "keywords" : "Jahre, Ford Model T, hergestellt"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Per quanti anni fu prodotta la Ford T?",
+      "keywords" : "anni, Ford T, prodotta"
+    }, {
+      "language" : "fr",
+      "string" : "Pendant combien d'années la Ford T a-t-elle été fabriquée?",
+      "keywords" : "années, Ford T, frabriquée"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "7",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all American presidents in the last 20 years.",
+      "keywords" : "American presidents, last 20 years"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir alle Amerikanischen Präsidenten der letzten 20 Jahre.",
+      "keywords" : "Amerikanische Präsidenten, letzten 20 Jahre"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi tutti i presidenti americani degli ultimi 20 anni.",
+      "keywords" : "presidenti americani, ultimi 20 anni"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le nom des présidents américains des 20 dernières années.",
+      "keywords" : "présidents américains, 20 dernières années"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "8",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all gangsters from the prohibition era.",
+      "keywords" : "gangsters, prohibition era"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir alle Gangster der Prohibitions Ära.",
+      "keywords" : "Gangster, Prohibitions Ära"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi tutti i gangster dell'era del proibizionismo.",
+      "keywords" : "gangster, era, proibizionismo"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le nom de tous les gangsters de la Prohibition.",
+      "keywords" : "gangsters, Prohibition"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "9",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all Seven Wonders of the Ancient World.",
+      "keywords" : "Seven Wonders of the Ancient World"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir alle Sieben Wunder der Antiken Welt.",
+      "keywords" : "Sieben Wunder der Antiken Welt"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi tutte le Sette Meraviglie del Mondo Antico.",
+      "keywords" : "Sette Meraviglie del Mondo Antico"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le nom des Sept Merveilles du Monde antique.",
+      "keywords" : "Sept Merveilles du Monde antique"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "10",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all Spanish artists.",
+      "keywords" : "Spanish artists"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gibr mir alle Spanischen Künstler.",
+      "keywords" : "Spanische Künstler"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi tutti gli artisti spagnoli",
+      "keywords" : "artisti spagnoli"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le nom de tous les artistes espagnols.",
+      "keywords" : "artistes espagnols"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "11",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me all chemical elements.",
+      "keywords" : "chemical elements"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir alle Chemischen Elemente.",
+      "keywords" : "Chemische Elemente"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi tutti gli elementi chimici.",
+      "keywords" : "elementi chimici"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le nom de tous les éléments chimiques.",
+      "keywords" : "éléments chimiques"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "12",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many continents are there?",
+      "keywords" : "continents"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Kontinente gibt es?",
+      "keywords" : "Kontinente"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quanti continenti ci sono?",
+      "keywords" : "continenti"
+    }, {
+      "language" : "fr",
+      "string" : "Combien y a-t-il de continents?",
+      "keywords" : "continents"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "13",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many rivers and lakes are in South Carolina?",
+      "keywords" : "rivers, lakes, South Carolina"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Flüsse und Seen gibt es in South Carolina?",
+      "keywords" : "Flüsse, Seen, South Carolina"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quanti fiumi e laghi ci sono in Carolina del Sud?",
+      "keywords" : "fiumi, laghi, Carolina del Sud"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de rivières et de lacs y a-t-il en Caroline du Sud?",
+      "keywords" : "rivières, lacs, Caroline du Sud"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "14",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many states are in Mexico?",
+      "keywords" : "states, Mexico"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Staaten gibt es in Mexiko?",
+      "keywords" : "Staaten, Mexiko"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quanti stati ci sono in Messico?",
+      "keywords" : "stati, Messico"
+    }, {
+      "language" : "fr",
+      "string" : "Combien d'états y a-t-il au Mexique?",
+      "keywords" : "états, Mexique"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "15",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many theories did Albert Einstein come up with?",
+      "keywords" : "theories, Albert Einstein, come up"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Theorien hat Albert Einstein formuliert?",
+      "keywords" : "Theorien, Albert Einstein, formuliert"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quante teorie formulò Albert Einstein?",
+      "keywords" : "teorie, formulò, Albert Einstein"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de théories a Albert Einstein formulé?",
+      "keywords" : "théories, Albert Einstein, formulé"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "16",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is horse racing a sport?",
+      "keywords" : "horse racing, sport"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Ist Pferderennen ein Sport",
+      "keywords" : "Pferderennen, Sport"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "L'ippica è uno sport?",
+      "keywords" : "ippica, sport"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que les courses hippiques sont un sport?",
+      "keywords" : "courses hippiques, sport"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "17",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Is Pluto really a planet?",
+      "keywords" : "Pluto, planet"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Ist Pluto wirklich ein Planet?",
+      "keywords" : "Pluto, Planet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Plutone è veramente un pianeta?",
+      "keywords" : "Plutone, pianeta"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que Pluton est réellement une planète?",
+      "keywords" : "Pluton, planète"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "18",
+    "answertype" : "boolean",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Was Sigmund Freud married?",
+      "keywords" : "Sigmund Freud, married"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "War Sigmund Freud verheiratet?",
+      "keywords" : "Sigmund Freud, verheiratet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Sigmund Freud era sposato?",
+      "keywords" : "Sigmund Freud, sposato"
+    }, {
+      "language" : "fr",
+      "string" : "Est-ce que Sigmund Freud était marié?",
+      "keywords" : "Sigmund Freud, marié"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "19",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What form of government is found in South Africa?",
+      "keywords" : "form, government, South Africa"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welche Regierungsform hat Südafrika?",
+      "keywords" : "Regierungsform, Südafrika"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Che forma di governo c'è in Sudafrica?",
+      "keywords" : "forma, governo, Sudafrica"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle forme de gouvernement y a-t-il en Afrique du Sud?",
+      "keywords" : "forme, gouvernement, Afrique du Sud"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "20",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is a bipolar syndrome?",
+      "keywords" : "bipolar syndrome"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was ist ein bipolares Syndrom?",
+      "keywords" : "bipolares Syndrom"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Cos'è un disturbo bipolare?",
+      "keywords" : "disturbo bipolare"
+    }, {
+      "language" : "fr",
+      "string" : "Qu'est-ce qu'un syndrome bipolaire?",
+      "keywords" : "syndrome bipolaire"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "21",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is backgammon?",
+      "keywords" : "backgammon"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was ist Backgammon?",
+      "keywords" : "Backgammon"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Cos'è il backgammon?",
+      "keywords" : "backgammon"
+    }, {
+      "language" : "fr",
+      "string" : "Qu'est-ce que le backgammon?",
+      "keywords" : "backgammon?"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "22",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the largest state in the United States?",
+      "keywords" : "largest state, United States"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was ist der größte Staat in den Vereinigten Staaten?",
+      "keywords" : "größte Staat, Vereinigten Staaten"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Qual è lo stato più esteso degli Stati Uniti?",
+      "keywords" : "stato più esteso, Stati Uniti"
+    }, {
+      "language" : "fr",
+      "string" : "Quel est le plus grand état des États-Unis?",
+      "keywords" : "le plus grand état, États-Unis"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "23",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the longest river in the world?",
+      "keywords" : "longest river, world"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was ist der längste Fluss der Welt?",
+      "keywords" : "längste Fluss, Welt"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Qual è il fiume più lungo del mondo?",
+      "keywords" : "fiume più lungo, mondo"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle est la rivière la plus longue au monde?",
+      "keywords" : "rivière, la plus longue, monde"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "24",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which building after the Burj Khalifa has the most floors?",
+      "keywords" : "building, after, Burj Khalifa, most floors"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welches Gebäude nach dem Burj Khalifa hat die meisten Etagen",
+      "keywords" : "Gebäude, nach, Burj Khalifa, meisten Etagen"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quale edificio dopo il Burj Khalifa ha più piani?",
+      "keywords" : "edificio, dopo, Burj Khalifa, più piani"
+    }, {
+      "language" : "fr",
+      "string" : "Quel édifice a le plus grand nombre d'étages après le Burj Khalifa?",
+      "keywords" : "édifice, le plus grand nombre d'étages, après, Burj Khalifa "
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "25",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What is the wavelength of indigo?",
+      "keywords" : "wavelength, indigo"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was ist die Wellenlänge von Indigo?",
+      "keywords" : "Wellenlänge, Indigo"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Qual è la lunghezza d'onda dell'indaco?",
+      "keywords" : "lunghezza d'onda, indaco"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle est la longueur d'onde de l'indigo?",
+      "keywords" : "longueur d'onde, indigo"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "26",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What was the name of the famous battle in 1836 in San Antonio?",
+      "keywords" : "famous battle, 1836, San Antonio"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie ist der Name der berühmten Schlacht von 1836 in San Antonio?",
+      "keywords" : "berühmte Schlacht, 1836, San Antonio"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quale fu il nome della famosa battaglia di San Antonio del 1836?",
+      "keywords" : "famosa battaglia, San Antonio, 1836"
+    }, {
+      "language" : "fr",
+      "string" : "Quel est le nom de la célèbre bataille de San Antonio en 1836?",
+      "keywords" : "célèbre bataille, San Antonio, 1836"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "27",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What were the names of the three ships used by Columbus?",
+      "keywords" : "three ships, used, Columbus"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was waren die Namen der drei Schiffe, die Columbus benutzte?",
+      "keywords" : "drei Schiffe, Columbus, benutzte"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quali furono i nomi delle tre navi utilizzate da Colombo?",
+      "keywords" : "tre navi, utilizzate, Colombo"
+    }, {
+      "language" : "fr",
+      "string" : "Quels sont les noms des trois bateaux utilisés par Colomb?",
+      "keywords" : "trois bateaux, utilisés, Colomb"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "28",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What were the original 13 British colonies?",
+      "keywords" : "original 13 British colonies"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was waren die Originalen 13 Britischen Kolonien?",
+      "keywords" : "Originalen 13 Britischen Kolonien"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quali furono le 13 originarie colonie britanniche?",
+      "keywords" : "13 originarie colonie britanniche"
+    }, {
+      "language" : "fr",
+      "string" : "Quelles étaient les 13 colonnies britanniques originales?",
+      "keywords" : "13 colonnies britanniques originales"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "29",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When did Muhammad die?",
+      "keywords" : "Muhammad, die"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wann ist Muhammad gestorben?",
+      "keywords" : "Muhammad, gestorben"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quando morì Maometto?",
+      "keywords" : "morì, Maometto"
+    }, {
+      "language" : "fr",
+      "string" : "Quand est mort Mahomet?",
+      "keywords" : "mort, Mahomet"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "30",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was the De Beers company founded?",
+      "keywords" : "De Beers company, founded"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wann wurde De Beers gegründet?",
+      "keywords" : "De Beers, gegründet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quando fu fondata l'azienda De Beers?",
+      "keywords" : "fondata, De Beers"
+    }, {
+      "language" : "fr",
+      "string" : "Quand a été fondée la société De Beers?",
+      "keywords" : "fondée, société De Beers"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "31",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When was John Adams born?",
+      "keywords" : "John Adams, born"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wann wurde John Adams geboren?",
+      "keywords" : "John Adams, geboren"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quando nacque John Adams?",
+      "keywords" : "nacque, John Adams"
+    }, {
+      "language" : "fr",
+      "string" : "Quand est né John Adams?",
+      "keywords" : "né, John Adams"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "32",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which American presidents were in office during the Vietnam War?",
+      "keywords" : "American presidents, office, Vietnam War"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welche Amerikanischen Präsidenten waren während des Vietnamkriegs im Amt?",
+      "keywords" : "Amerikanischer Präsidenten, Vietnamkriegs, Amt"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quali presidenti americani erano in carica durante la Guerra del Vietnam?",
+      "keywords" : "presidenti americani, in carica, Guerra del Vietnam"
+    }, {
+      "language" : "fr",
+      "string" : "Quels présidents américains étaient au pouvoir pendant la guerre du Vietnam?",
+      "keywords" : "président américain, au pouvoir, guerre du Vietnam"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "33",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which city has the oldest running metro?",
+      "keywords" : "city, oldest running metro"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welche Stadt hat die älteste funktionierende U-Bahn?",
+      "keywords" : "Stadt, älteste funktionierende U-Bahn"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quale città ha la più antica metropolitana in funzione?",
+      "keywords" : "città, più antica metropolitana, in funzione"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle ville a le plus vieux métro en fonction?",
+      "keywords" : "ville, le plus vieux métro, en fonction"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "34",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which holidays are celebrated around the world?",
+      "keywords" : "holidays, celebrated, world"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welche Feiertage werden auf der Welt gefeiert?",
+      "keywords" : "Feiertage, Welt, gefeiert"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quali festività sono celebrate nel mondo?",
+      "keywords" : "festività, celebrate, mondo"
+    }, {
+      "language" : "fr",
+      "string" : "Quelles fêtes sont célébrées autour du monde?",
+      "keywords" : "fêtes, célébrées, monde"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "35",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who assassinated President McKinley?",
+      "keywords" : "assassinated, President McKinley"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer hat Präsident McKinley ermordet?",
+      "keywords" : "Präsident McKinley, ermordet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi assassinò il presidente McKinley?",
+      "keywords" : "assassinò, presidente McKinley"
+    }, {
+      "language" : "fr",
+      "string" : "Qui a assassiné le président McKinley?",
+      "keywords" : "assassiné, président McKinley"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "36",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who discovered Pluto?",
+      "keywords" : "discovered, Pluto"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer hat Pluto entdeckt?",
+      "keywords" : "Pluto, entdeckt"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi scoprì Plutone?",
+      "keywords" : "scoprì, Plutone"
+    }, {
+      "language" : "fr",
+      "string" : "Qui a découvert Pluton?",
+      "keywords" : "découvert, Pluton"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "37",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who killed Caesar?",
+      "keywords" : "killed, Caesar"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer hat Caesar getötet?",
+      "keywords" : "Caesar, getötet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi uccise Giulio Cesare?",
+      "keywords" : "uccise, Giulio Cesare"
+    }, {
+      "language" : "fr",
+      "string" : "Qui a tué César?",
+      "keywords" : "tué, César"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "38",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was buried in the Great Pyramid of Giza?",
+      "keywords" : "buried, Great Pyramid of Giza"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer wurde in der Cheops-Pyramide begraben?",
+      "keywords" : "Cheops-Pyramide, begraben"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi fu sepolto nella Grande Piramide di Giza?",
+      "keywords" : "sepolto, Grande Piramide di Giza"
+    }, {
+      "language" : "fr",
+      "string" : "Qui est enterré dans la grande pyramide de Gizeh?",
+      "keywords" : "enterré, grande pyramide de Gizeh"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "39",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who was the first King of England?",
+      "keywords" : "first King of England"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer war der erste König von England?",
+      "keywords" : "erste König von England"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi fu il primo Re d'Inghilterra?",
+      "keywords" : "primo Re d'Inghilterra"
+    }, {
+      "language" : "fr",
+      "string" : "Qui était le premier roi d'Angleterre?",
+      "keywords" : "premier roi d'Angleterre"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "40",
+    "answertype" : "resource",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who were the architects of Central Park?",
+      "keywords" : "architects, Central Park"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer waren die Architekten des Central Park?",
+      "keywords" : "Architekten, Central Park"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi furono gli architetti di Central Park?",
+      "keywords" : "architetti, Central Park"
+    }, {
+      "language" : "fr",
+      "string" : "Qui étaient les architectes de Central Park",
+      "keywords" : "architectes, Central Park"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "41",
+    "answertype" : "string",
+    "aggregation" : true,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What was the final result of the War of the Roses?",
+      "keywords" : "result, War of Roses"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was war das Endergebnis der Rosenkriege?",
+      "keywords" : "Endergebnis, Rosenkriege"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quale fu il risultato finale della Guerra delle Due Rose?",
+      "keywords" : "risultato, Guerra delle Due Rose"
+    }, {
+      "language" : "fr",
+      "string" : "Quel a été le résultat final de la Guerre des Rose?",
+      "keywords" : "résultat final, Guerre des Rose"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "42",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Who writes the Farmers' Almanac?",
+      "keywords" : "writes, Farmers' Almanac"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wer schreibt das Farmes' Almanac?",
+      "keywords" : "schreibt, Farmers' Almanac"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Chi scrive il Farmers' Almanac?",
+      "keywords" : "scrive, Farmers' Almanac"
+    }, {
+      "language" : "fr",
+      "string" : "Qui écrit l'Almanach des fermiers?",
+      "keywords" : "écrit, Almanach des fermiers"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "43",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How big is the earth's diameter?",
+      "keywords" : "big, earth, diameter"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie groß ist der Durchmesser der Erde?",
+      "keywords" : "groß, Durchmesser, Erde"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quanto è grande il diametro della Terra?",
+      "keywords" : "grande, diametro, Terra"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle est la longueur du diamètre de la Terre?",
+      "keywords" : "longueur, diamètre, Terre"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "44",
+    "answertype" : "date",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "When did Paraguay proclaim its independence?",
+      "keywords" : "Paraguay, proclaim, independence"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wann hat Paraguay seine Unabhängigkeit verkündet?",
+      "keywords" : "Paraguay, Unabhängigkeit, verkündet"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quando si dichiarò indipendente il Paraguay?",
+      "keywords" : "dichiarò, indipendente, Paraguay"
+    }, {
+      "language" : "fr",
+      "string" : "Quand est-ce que le Paraguay a prononcé son indépendance?",
+      "keywords" : "Paraguay, prononcé, indépendance"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "45",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "How many people live in Eurasia?",
+      "keywords" : "people, Eurasia"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wie viele Menschen leben in Eurasien?",
+      "keywords" : "Menschen, Eurasien"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quante persone vivono in Eurasia?",
+      "keywords" : "persone, Eurasia"
+    }, {
+      "language" : "fr",
+      "string" : "Combien de personnes vivent en Eurasie?",
+      "keywords" : "personnes, Eurasie"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "46",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Where were the last Winter Paralympics held?",
+      "keywords" : "last Winter Paralympics, held"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Wo haben die letzten Winter-Paralympics stattgefunden?",
+      "keywords" : "letzten Winter-Paralympics, stattgefunden"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dove si sono tenuti gli ultimi Giochi Paralimpici Invernali?",
+      "keywords" : "tenuti, ultimi Giochi Paralimpici Invernali"
+    }, {
+      "language" : "fr",
+      "string" : "Où ont eu lieu les derniers jeux paralympiques?",
+      "keywords" : "eu lieu, derniers jeux paralympiques"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "47",
+    "answertype" : "number",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the runtime of Toy Story.",
+      "keywords" : "runtime, Toy Story"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir die Laufzeit von Toy Story.",
+      "keywords" : "Laufzeit, Toy Story"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi la durata di Toy Story.",
+      "keywords" : "durata, Toy Story"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi la durée de Toy Story.",
+      "keywords" : "durée, Toy Story"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "48",
+    "answertype" : "string",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "What was the first name of the band Queens of the Stone Age?",
+      "keywords" : "first name, Queens of the Stone Age"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Was war der erste Name der Band Queens of the Stone Age?",
+      "keywords" : "erste Name, Queens of the Stone Age"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Qual è stato il primo nome del gruppo Queens of the Stone Age?",
+      "keywords" : "primo nome, Queens of the Stone Age"
+    }, {
+      "language" : "fr",
+      "string" : "Quel était le premier nom du groupe Queens of the Stone Age?",
+      "keywords" : "premier nom, Queens of the Stone Age"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "49",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Give me the birth place of Frank Sinatra.",
+      "keywords" : "birth place, Frank Sinatra"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Gib mir den Geburtsort von Frank Sinatra.",
+      "keywords" : "Geburtsort, Frank Sinatra"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Dammi il luogo di nascita di Frank Sinatra.",
+      "keywords" : "luogo di nascita, Frank Sinatra"
+    }, {
+      "language" : "fr",
+      "string" : "Donnez-moi le lieu de naissance de Frank Sinatra.",
+      "keywords" : "lieu de naissance, Frank Sinatra"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  }, {
+    "id" : "50",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : false,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "en",
+      "string" : "Which university did Angela Merkel attend?",
+      "keywords" : "university, Angela Merkel"
+    }, {
+      "language" : "fa"
+    }, {
+      "language" : "de",
+      "string" : "Welche Universiät hat Angela Merkel besucht?",
+      "keywords" : "Universität, Angela Merkel"
+    }, {
+      "language" : "es"
+    }, {
+      "language" : "it",
+      "string" : "Quale università ha frequentato Angela Merkel?",
+      "keywords" : "università, frequentato, Angela Merkel"
+    }, {
+      "language" : "fr",
+      "string" : "Quelle université a Angela Merkel fréquenté?",
+      "keywords" : "université, Angela Merkel, fréquenté"
+    }, {
+      "language" : "nl"
+    }, {
+      "language" : "ro"
+    } ]
+  } ]
+}
