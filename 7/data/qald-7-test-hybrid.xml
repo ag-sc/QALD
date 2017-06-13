@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dataset id="qald-7-test-hybrid">
+<question aggregation="false" answertype="boolean" hybrid="true" id="1000" onlydbo="true">
+<string lang="en">Are there other solar systems?</string>
+<pseudoquery>&quot;ask where { ?proj text:\&quot;&quot;other&quot;&quot; . ?proj text:\&quot;&quot;solar systems\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1001" onlydbo="false">
+<string lang="en">Did George Washington want to be a teacher?</string>
+<pseudoquery>&quot;PREFIX res: &lt;http://dbpedia.org/resource/&gt; ask where { res:George_Washington text:\&quot;&quot;want\&quot;&quot; . res:George_Washington text:\&quot;&quot;be\&quot;&quot; . res:George_Washington text:\&quot;&quot;teacher\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>false</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1002" onlydbo="false">
+<string lang="en">Does Johns Hopkins Bayview Medical Center have a burn victim unit?</string>
+<pseudoquery>&quot;PREFIX res: &lt;http://dbpedia.org/resource/&gt; ask where { res:Johns_Hopkins_Bayview_Medical_Center text:\&quot;&quot;burn victim unit\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1003" onlydbo="false">
+<string lang="en">Give me all greek gods.</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri text:\&quot;&quot;greek god\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Achelous</answer>
+<answer>http://dbpedia.org/resource/Achlys</answer>
+<answer>http://dbpedia.org/resource/Acis_and_Galatea_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Aeacus</answer>
+<answer>http://dbpedia.org/resource/Aether_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Aglaea</answer>
+<answer>http://dbpedia.org/resource/Aion_(deity)</answer>
+<answer>http://dbpedia.org/resource/Alecto</answer>
+<answer>http://dbpedia.org/resource/Amphitrite</answer>
+<answer>http://dbpedia.org/resource/Ananke_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Angelos_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Aphrodite</answer>
+<answer>http://dbpedia.org/resource/Apollo</answer>
+<answer>http://dbpedia.org/resource/Ares</answer>
+<answer>http://dbpedia.org/resource/Artemis</answer>
+<answer>http://dbpedia.org/resource/Asclepius</answer>
+<answer>http://dbpedia.org/resource/Asia_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Asopus</answer>
+<answer>http://dbpedia.org/resource/Asteria_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Astraeus</answer>
+<answer>http://dbpedia.org/resource/Athena</answer>
+<answer>http://dbpedia.org/resource/Atlas_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Atropos</answer>
+<answer>http://dbpedia.org/resource/Bia_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Calliope</answer>
+<answer>http://dbpedia.org/resource/Ceto</answer>
+<answer>http://dbpedia.org/resource/Chaos_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Chronos</answer>
+<answer>http://dbpedia.org/resource/Clio</answer>
+<answer>http://dbpedia.org/resource/Clotho</answer>
+<answer>http://dbpedia.org/resource/Clymene_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Coeus</answer>
+<answer>http://dbpedia.org/resource/Crius</answer>
+<answer>http://dbpedia.org/resource/Cronus</answer>
+<answer>http://dbpedia.org/resource/Cyclops</answer>
+<answer>http://dbpedia.org/resource/Deimos_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Demeter</answer>
+<answer>http://dbpedia.org/resource/Dike_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Dione_(Titaness/Oceanid)</answer>
+<answer>http://dbpedia.org/resource/Dionysus</answer>
+<answer>http://dbpedia.org/resource/Doris_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Eileithyia</answer>
+<answer>http://dbpedia.org/resource/Eirene_(Greek_goddess)</answer>
+<answer>http://dbpedia.org/resource/Enipeus_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Enyo</answer>
+<answer>http://dbpedia.org/resource/Eos</answer>
+<answer>http://dbpedia.org/resource/Epimetheus_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Erato</answer>
+<answer>http://dbpedia.org/resource/Erebus</answer>
+<answer>http://dbpedia.org/resource/Eris_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Eros</answer>
+<answer>http://dbpedia.org/resource/Eunomia_(goddess)</answer>
+<answer>http://dbpedia.org/resource/Euphrosyne_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Eurybia_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Eurynome_(Oceanid)</answer>
+<answer>http://dbpedia.org/resource/Euterpe</answer>
+<answer>http://dbpedia.org/resource/Gaia_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Ganymede_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Giants_(Greek_mythology)</answer>
+<answer>http://dbpedia.org/resource/Glaucus</answer>
+<answer>http://dbpedia.org/resource/Hades</answer>
+<answer>http://dbpedia.org/resource/Harmonia_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Hebe_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Hecate</answer>
+<answer>http://dbpedia.org/resource/Hekatonkheires</answer>
+<answer>http://dbpedia.org/resource/Helios</answer>
+<answer>http://dbpedia.org/resource/Hemera</answer>
+<answer>http://dbpedia.org/resource/Hephaestus</answer>
+<answer>http://dbpedia.org/resource/Hera</answer>
+<answer>http://dbpedia.org/resource/Heracles</answer>
+<answer>http://dbpedia.org/resource/Hermes</answer>
+<answer>http://dbpedia.org/resource/Hestia</answer>
+<answer>http://dbpedia.org/resource/Hyperion_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Iacchus</answer>
+<answer>http://dbpedia.org/resource/Iapetus_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Iris_(deity)</answer>
+<answer>http://dbpedia.org/resource/Kouretes</answer>
+<answer>http://dbpedia.org/resource/Kratos_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Lachesis_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Lelantos</answer>
+<answer>http://dbpedia.org/resource/Leto</answer>
+<answer>http://dbpedia.org/resource/Megaera</answer>
+<answer>http://dbpedia.org/resource/Meliae</answer>
+<answer>http://dbpedia.org/resource/Melinoe</answer>
+<answer>http://dbpedia.org/resource/Melpomene</answer>
+<answer>http://dbpedia.org/resource/Menoetius_(Greek_mythology)</answer>
+<answer>http://dbpedia.org/resource/Metis_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Minos</answer>
+<answer>http://dbpedia.org/resource/Mnemosyne</answer>
+<answer>http://dbpedia.org/resource/Moirai</answer>
+<answer>http://dbpedia.org/resource/Nemesis_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Nereus</answer>
+<answer>http://dbpedia.org/resource/Nike_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Nyx</answer>
+<answer>http://dbpedia.org/resource/Oceanus</answer>
+<answer>http://dbpedia.org/resource/Ophion</answer>
+<answer>http://dbpedia.org/resource/Orpheus</answer>
+<answer>http://dbpedia.org/resource/Paean_(god)</answer>
+<answer>http://dbpedia.org/resource/Pallas_(Titan)</answer>
+<answer>http://dbpedia.org/resource/Pan_(god)</answer>
+<answer>http://dbpedia.org/resource/Persephone</answer>
+<answer>http://dbpedia.org/resource/Perses_(Titan)</answer>
+<answer>http://dbpedia.org/resource/Phanes_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Phobos_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Phoebe_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Phorcys</answer>
+<answer>http://dbpedia.org/resource/Pleione_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Polyhymnia</answer>
+<answer>http://dbpedia.org/resource/Pontus_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Poseidon</answer>
+<answer>http://dbpedia.org/resource/Prometheus</answer>
+<answer>http://dbpedia.org/resource/Proteus</answer>
+<answer>http://dbpedia.org/resource/Rhadamanthus</answer>
+<answer>http://dbpedia.org/resource/Rhea_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Scamander</answer>
+<answer>http://dbpedia.org/resource/Selene</answer>
+<answer>http://dbpedia.org/resource/Styx</answer>
+<answer>http://dbpedia.org/resource/Tartarus</answer>
+<answer>http://dbpedia.org/resource/Telchines</answer>
+<answer>http://dbpedia.org/resource/Terpsichore</answer>
+<answer>http://dbpedia.org/resource/Tethys_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Thalassa_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Thalia_(Grace)</answer>
+<answer>http://dbpedia.org/resource/Thalia_(Muse)</answer>
+<answer>http://dbpedia.org/resource/Thaumas</answer>
+<answer>http://dbpedia.org/resource/Theia</answer>
+<answer>http://dbpedia.org/resource/Themis</answer>
+<answer>http://dbpedia.org/resource/Thetis</answer>
+<answer>http://dbpedia.org/resource/Tisiphone</answer>
+<answer>http://dbpedia.org/resource/Triptolemus</answer>
+<answer>http://dbpedia.org/resource/Triton_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Trophonius</answer>
+<answer>http://dbpedia.org/resource/Tyche</answer>
+<answer>http://dbpedia.org/resource/Typhon</answer>
+<answer>http://dbpedia.org/resource/Urania</answer>
+<answer>http://dbpedia.org/resource/Uranus_(mythology)</answer>
+<answer>http://dbpedia.org/resource/Zelus</answer>
+<answer>http://dbpedia.org/resource/Zeus</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1004" onlydbo="false">
+<string lang="en">Give me the names of all of the people who signed the American Declaration of Independence.</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:person . ?uri text:\&quot;&quot;signed\&quot;&quot; . { ?uri text:\&quot;&quot;American Declaration of Independence\&quot;&quot; . } UNION { ?uri text:\&quot;&quot;Declaration of Independence\&quot;&quot; . }  } &quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/John_Hancock</answer>
+<answer>http://dbpedia.org/resource/Josiah_Bartlett</answer>
+<answer>http://dbpedia.org/resource/William_Whipple</answer>
+<answer>http://dbpedia.org/resource/Matthew_Thornton</answer>
+<answer>http://dbpedia.org/resource/Samuel_Adams</answer>
+<answer>http://dbpedia.org/resource/John_Adams</answer>
+<answer>http://dbpedia.org/resource/Robert_Treat_Paine</answer>
+<answer>http://dbpedia.org/resource/Elbridge_Gerry</answer>
+<answer>http://dbpedia.org/resource/Stephen_Hopkins_(politician)</answer>
+<answer>http://dbpedia.org/resource/William_Ellery</answer>
+<answer>http://dbpedia.org/resource/Roger_Sherman</answer>
+<answer>http://dbpedia.org/resource/Samuel_Huntington_(statesman)</answer>
+<answer>http://dbpedia.org/resource/William_Williams_(signer)</answer>
+<answer>http://dbpedia.org/resource/Oliver_Wolcott</answer>
+<answer>http://dbpedia.org/resource/William_Floyd</answer>
+<answer>http://dbpedia.org/resource/Philip_Livingston</answer>
+<answer>http://dbpedia.org/resource/Francis_Lewis</answer>
+<answer>http://dbpedia.org/resource/Lewis_Morris</answer>
+<answer>http://dbpedia.org/resource/Richard_Stockton_(Continental_Congressman)</answer>
+<answer>http://dbpedia.org/resource/John_Witherspoon</answer>
+<answer>http://dbpedia.org/resource/Francis_Hopkinson</answer>
+<answer>http://dbpedia.org/resource/John_Hart_(New_Jersey_politician)</answer>
+<answer>http://dbpedia.org/resource/Abraham_Clark</answer>
+<answer>http://dbpedia.org/resource/Robert_Morris_(financier)</answer>
+<answer>http://dbpedia.org/resource/Benjamin_Rush</answer>
+<answer>http://dbpedia.org/resource/Benjamin_Franklin</answer>
+<answer>http://dbpedia.org/resource/John_Morton_(politician)</answer>
+<answer>http://dbpedia.org/resource/George_Clymer</answer>
+<answer>http://dbpedia.org/resource/James_Smith_(delegate)</answer>
+<answer>http://dbpedia.org/resource/George_Taylor_(delegate)</answer>
+<answer>http://dbpedia.org/resource/James_Wilson</answer>
+<answer>http://dbpedia.org/resource/George_Ross_(delegate)</answer>
+<answer>http://dbpedia.org/resource/Caesar_Rodney</answer>
+<answer>http://dbpedia.org/resource/George_Read_(signer)</answer>
+<answer>http://dbpedia.org/resource/Thomas_McKean</answer>
+<answer>http://dbpedia.org/resource/Samuel_Chase</answer>
+<answer>http://dbpedia.org/resource/William_Paca</answer>
+<answer>http://dbpedia.org/resource/Thomas_Stone</answer>
+<answer>http://dbpedia.org/resource/Charles_Carroll_of_Carrollton</answer>
+<answer>http://dbpedia.org/resource/George_Wythe</answer>
+<answer>http://dbpedia.org/resource/Richard_Henry_Lee</answer>
+<answer>http://dbpedia.org/resource/Thomas_Jefferson</answer>
+<answer>http://dbpedia.org/resource/Benjamin_Harrison_V</answer>
+<answer>http://dbpedia.org/resource/Thomas_Nelson,_Jr.</answer>
+<answer>http://dbpedia.org/resource/Francis_Lightfoot_Lee</answer>
+<answer>http://dbpedia.org/resource/Carter_Braxton</answer>
+<answer>http://dbpedia.org/resource/William_Hooper</answer>
+<answer>http://dbpedia.org/resource/Joseph_Hewes</answer>
+<answer>http://dbpedia.org/resource/John_Penn_(Continental_Congress)</answer>
+<answer>http://dbpedia.org/resource/Edward_Rutledge</answer>
+<answer>http://dbpedia.org/resource/Thomas_Heyward,_Jr.</answer>
+<answer>http://dbpedia.org/resource/Thomas_Lynch,_Jr.</answer>
+<answer>http://dbpedia.org/resource/Arthur_Middleton</answer>
+<answer>http://dbpedia.org/resource/Button_Gwinnett</answer>
+<answer>http://dbpedia.org/resource/Lyman_Hall</answer>
+<answer>http://dbpedia.org/resource/George_Walton</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1005" onlydbo="false">
+<string lang="en">The name of which ocean refers to Atlas of Greek mythology?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; PREFIX dct: &lt;http://purl.org/dc/terms/&gt; PREFIX dbc: &lt;http://dbpedia.org/resource/Category:&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri dct:subject dbc:Oceans . ?uri text:\&quot;&quot;refers\&quot;&quot; . ?uri text:\&quot;&quot;Atlas\&quot;&quot; . ?uri text:\&quot;&quot;Greek mythology\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Atlantic_Ocean</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1006" onlydbo="false">
+<string lang="en">Which star is about 4.24 light-years from the Sun.</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Star . ?uri text:\&quot;&quot;star\&quot;&quot; . ?uri text:\&quot;&quot;4.24 light-years\&quot;&quot; . ?uri text:\&quot;&quot;Sun\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Proxima_Centauri</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="1007" onlydbo="false">
+<string lang="en">Which transmission does the German car with a top speed of 407 km/h have?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?trans WHERE { ?uri rdf:type dbo:Automobile . ?uri dbo:transmission ?trans . ?uri text:\&quot;&quot;German\&quot;&quot; . ?uri text:\&quot;&quot;top speed\&quot;&quot; . ?uri text:\&quot;&quot;407 km/h\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>7-speedDSGautomatic transmission</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1008" onlydbo="true">
+<string lang="en">Which star's diameter is about 109 times that of Earth?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;star\&quot;&quot; . ?uri text:\&quot;&quot;diameter\&quot;&quot; . ?uri text:\&quot;&quot;109 times\&quot;&quot; . ?uri text:\&quot;&quot;Earth\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Sun</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1009" onlydbo="false">
+<string lang="en">Which writer was involved in two successive plane crashes?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Writer . ?uri text:\&quot;&quot;two successive plane crashes\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Ernest_Hemingway</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1010" onlydbo="false">
+<string lang="en">How many children did the person have that began their concerts with 'Hello, I'm Johnny Cash'?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT (COUNT(?child) AS ?count) WHERE { ?uri rdf:type dbo:Person . ?uri dbo:child ?child . ?uri text:\&quot;&quot;began\&quot;&quot; . ?uri text:\&quot;&quot;concerts\&quot;&quot; . ?uri text:\&quot;&quot;Hello&quot;&quot;\ . ?uri text:\&quot;&quot;I&apos;m Johnny Cash\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>4</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1011" onlydbo="false">
+<string lang="en">What is the team size of the sport that is practiced by 250 million players in over 200 nations?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; select distinct ?size where { ?uri rdf:type dbo:Sport . ?uri dbo:teamSize ?size .?uri text:\&quot;&quot;250 million\&quot;&quot; . ?uri text:\&quot;&quot;players, \&quot;&quot; . ?uri text:\&quot;&quot;200\&quot;&quot; . ?uri text:\&quot;&quot;nations\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>11</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1012" onlydbo="true">
+<string lang="en">Were there more than 1000 different species of non-avian dinosaurs?</string>
+<pseudoquery>&quot;ask where { ?proj text:\&quot;&quot;more\&quot;&quot; . ?proj text:\&quot;&quot;1000 different species\&quot;&quot; . ?proj text:\&quot;&quot;non-avian\&quot;&quot; . ?proj text:\&quot;&quot;dinosaur\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1013" onlydbo="false">
+<string lang="en">Which indigenous language includes a large proportion of non-indigenous people?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Language . ?uri text:\&quot;&quot;includes a large proportion of non-indigenous people\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Guarani_language</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1014" onlydbo="false">
+<string lang="en">Which animal is primarily responsible for the extinction of 33 species of birds?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Animal . ?uri text:\&quot;&quot;responsible\&quot;&quot; . ?uri text:\&quot;&quot;extinction\&quot;&quot; . ?uri text:\&quot;&quot;33 species\&quot;&quot; . ?uri text:\&quot;&quot;birds\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Cat</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1015" onlydbo="false">
+<string lang="en">Was the Earth formed about 4.54 billion years ago?</string>
+<pseudoquery>&quot;PREFIX res: &lt;http://dbpedia.org/resource/&gt; ask where { res:Earth text:\&quot;&quot;formed\&quot;&quot; . res:Earth text:\&quot;&quot;4.54 billion\&quot;&quot; . res:Earth text:\&quot;&quot;years\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1016" onlydbo="true">
+<string lang="en">Which television series is about the survivors of a passenger jet crash on a tropical island?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:TelevisionShow . ?uri text:\&quot;&quot;survivors\&quot;&quot; . ?uri text:\&quot;&quot;passenger jet\&quot;&quot; . ?uri text:\&quot;&quot;crash\&quot;&quot; . ?uri text:\&quot;&quot;tropical island\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Lost_(TV_series)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1017" onlydbo="false">
+<string lang="en">In what present-day country did the Protestant Reformation begin?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?uri text:\&quot;&quot;Protestant Reformation\&quot;&quot; . ?uri text:\&quot;&quot;begin\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Germany</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1018" onlydbo="true">
+<string lang="en">Is Michael Jordan the MVP of all time?</string>
+<pseudoquery>&quot;ask where { ?proj text:\&quot;&quot;Michael Jordan\&quot;&quot; . ?proj text:\&quot;&quot;MVP of all time\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1019" onlydbo="false">
+<string lang="en">Which company is a portmanteau of the words microcomputer and software?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . ?uri text:\&quot;&quot;portmanteau\&quot;&quot; . ?uri text:\&quot;&quot;words\&quot;&quot; . ?uri text:\&quot;&quot;microcomputer\&quot;&quot; . ?uri text:\&quot;&quot;software\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Microsoft</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1020" onlydbo="true">
+<string lang="en">What causes earthquakes?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;causes earthquakes\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Tectonics</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1021" onlydbo="true">
+<string lang="en">Who was the first European to reach India by sea?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;first European\&quot;&quot; . ?uri text:\&quot;&quot;reach India\&quot;&quot; . ?uri text:\&quot;&quot;by sea\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Vasco_da_Gama</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1022" onlydbo="false">
+<string lang="en">For which video game was an Apple II version planned but never released.</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:VideoGame . ?uri text:\&quot;&quot;Apple II version\&quot;&quot; . ?uri text:\&quot;&quot;planned\&quot;&quot; . ?uri text:\&quot;&quot;never released\&quot;&quot; .  }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Zak_McKracken_and_the_Alien_Mindbenders</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="boolean" hybrid="true" id="1023" onlydbo="false">
+<string lang="en">Is an eggshell made of Calcium carbonate?</string>
+<pseudoquery>&quot;PREFIX res: &lt;http://dbpedia.org/resource/&gt; ask where { { res:Eggshell text:\&quot;&quot;made of\&quot;&quot; . } UNION { res:Eggshell text:\&quot;&quot;contain\&quot;&quot; . }  res:Eggshell text:\&quot;&quot;Calcium carbonate\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1024" onlydbo="false">
+<string lang="en">What is California's state bird?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bird . ?uri text:\&quot;&quot;California&quot;&quot;\ . ?uri text:\&quot;&quot;state bird&quot;&quot;\ . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/California_quail</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1025" onlydbo="false">
+<string lang="en">What is the worldwide best-selling album of all time?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album . ?uri text:\&quot;&quot;best-selling album of all time\&quot;&quot; . ?uri text:\&quot;&quot;worldwide\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Thriller_(Michael_Jackson_album)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="1026" onlydbo="false">
+<string lang="en">What is the alias of the band which member was ranked the 17th greatest guitarist of all time by a Guitar World magazine reader's poll in 2012?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?alias WHERE { ?uri rdf:type dbo:Band . ?uri dbo:alias ?alias . ?uri dbo:bandMember ?member . ?member text:\&quot;&quot;17th greatest guitarist of all time\&quot;&quot; . ?member text:\&quot;&quot;Guitar World magazine\&quot;&quot; . ?member text:\&quot;&quot;reader&apos;s poll\&quot;&quot; . ?member text:\&quot;&quot;2012\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>Majesty (1985–86)</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1027" onlydbo="true">
+<string lang="en">What is the best-selling book of all time?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;best-selling book of all time\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Bible</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1028" onlydbo="false">
+<string lang="en">What is the maximum depth of the lake with the alleged sighted monster Nessie?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?depth WHERE { ?uri rdf:type dbo:Lake . ?uri dbo:maximumDepth ?depth . ?uri text:\&quot;&quot;allege\&quot;&quot; . ?uri text:\&quot;&quot;sight\&quot;&quot; . ?uri text:\&quot;&quot;monster\&quot;&quot; . ?uri text:\&quot;&quot;Nessie\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>226.96</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1029" onlydbo="false">
+<string lang="en">How many bits does the CPU of the device have that IGN named the 9th greatest video game console of all time?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; SELECT DISTINCT ?bits WHERE { ?uri rdf:type dbo:Device . ?uri dbp:cpu ?bits . ?uri text:\&quot;&quot;IGN\&quot;&quot; . ?uri text:\&quot;&quot;name\&quot;&quot; . ?uri text:\&quot;&quot;9th greatest video game console of all time\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>64</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1030" onlydbo="false">
+<string lang="en">What is created by tanning animal rawhide?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri text:\&quot;&quot;tanning\&quot;&quot; . ?uri text:\&quot;&quot;animal\&quot;&quot; .  ?uri text:\&quot;&quot;rawhide\&quot;&quot; .  }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Leather</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1031" onlydbo="false">
+<string lang="en">What is the capital of the state whose flag reflects Hispanic and Native American influences?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?capital WHERE { ?uri rdf:type dbo:Place . ?uri dbo:capital ?capital . ?uri text:\&quot;&quot;flag\&quot;&quot; . ?uri text:\&quot;&quot;Hispanic\&quot;&quot; . ?uri text:\&quot;&quot;Native American\&quot;&quot; . ?uri text:\&quot;&quot;influence\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Santa_Fe,_New Mexico</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1032" onlydbo="true">
+<string lang="en">What causes the sound of thunder?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;causes\&quot;&quot; . ?uri text:\&quot;&quot;sound\&quot;&quot; . ?uri text:\&quot;&quot;thunder\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/lightning</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1033" onlydbo="false">
+<string lang="en">Which animal is the largest flying land bird in the western hemisphere?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Animal . ?uri text:\&quot;&quot;largest\&quot;&quot; . ?uri text:\&quot;&quot;flying\&quot;&quot; . ?uri text:\&quot;&quot;land bird\&quot;&quot; . ?uri text:\&quot;&quot;Western Hemisphere\&quot;&quot; .  }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Condor</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1034" onlydbo="false">
+<string lang="en">What is the total population of the town that port wine is named after?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri rdf:type dbo:Location. ?uri dbo:populationTotal ?proj . ?uri text:\&quot;&quot;port wine\&quot;&quot; . ?uri text:\&quot;&quot;named\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>237591</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="1035" onlydbo="false">
+<string lang="en">Give me the completion date of the ship sunken in the North Atlantic Ocean in 1912 and rediscovered in 1985.</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Ship. ?uri dbo:completionDate ?date . ?uri text:\&quot;&quot;sunken\&quot;&quot; . ?uri text:\&quot;&quot;North Atlantic Ocean\&quot;&quot; . ?uri text:\&quot;&quot;1912\&quot;&quot; . ?uri text:\&quot;&quot;rediscovered\&quot;&quot; . ?uri text:\&quot;&quot;1985\&quot;&quot; .  }&quot;</pseudoquery>
+<answers>
+<answer>1912-04-02</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="1036" onlydbo="false">
+<string lang="en">When did the person who worked on short satirical poems together with Goethe die?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Person . ?uri dbo:deathDate ?date . ?uri text:\&quot;&quot;work\&quot;&quot; . ?uri text:\&quot;&quot;short satirical poem\&quot;&quot; . ?uri text:\&quot;&quot;Goethe\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>1805-05-09</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1037" onlydbo="false">
+<string lang="en">Which food's name derived from the verb 'empanar'?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Food . ?uri text:\&quot;&quot;name\&quot;&quot; . ?uri text:\&quot;&quot;derived\&quot;&quot; . ?uri text:\&quot;&quot;verb\&quot;&quot; . ?uri text:\&quot;&quot;empanar\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Empanada</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="1038" onlydbo="false">
+<string lang="en">When was the leader of the first Antarctic expedition to reach the South Pole born?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Person . ?uri dbo:birthDate ?date . ?uri text:\&quot;&quot;leader\&quot;&quot; . ?uri text:\&quot;&quot;first\&quot;&quot; . ?uri text:\&quot;&quot;Antarctic expedition\&quot;&quot; . ?uri text:\&quot;&quot;reach\&quot;&quot; . ?uri text:\&quot;&quot;South Pole\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>1872-07-16</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1039" onlydbo="false">
+<string lang="en">Which urban fire in the United States burned from October 8 to October 10, 1871?</string>
+<pseudoquery>&quot;PREFIX dct: &lt;http://purl.org/dc/terms/&gt; PREFIX dbc: &lt;http://dbpedia.org/resource/Category:&gt; SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Urban_fires_in_the_United_States . ?uri text:\&quot;&quot;Sunday\&quot;&quot; . ?uri text:\&quot;&quot;October 8\&quot;&quot; . ?uri text:\&quot;&quot;Tuesday\&quot;&quot; . ?uri text:\&quot;&quot;October 10\&quot;&quot; . ?uri text:\&quot;&quot;1871\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Great_Chicago_Fire</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="string" hybrid="true" id="1040" onlydbo="false">
+<string lang="en">What is the official name of the host city of the Summer Olympic Games in 1932 and 1984?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; SELECT DISTINCT ?name WHERE { ?uri rdf:type dbo:City . ?uri dbp:officialName ?name . ?uri text:\&quot;&quot;host\&quot;&quot; . ?uri text:\&quot;&quot;Summer Olympic Games\&quot;&quot; . ?uri text:\&quot;&quot;1932\&quot;&quot; . ?uri text:\&quot;&quot;1984\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>City of Los Angeles</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="date" hybrid="true" id="1041" onlydbo="false">
+<string lang="en">When was the band found whose performance in 1998 was documented by Wim Wenders?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Band . ?uri dbo:activeYearsStartYear ?date . ?uri text:\&quot;&quot;performance\&quot;&quot; . ?uri text:\&quot;&quot;1998\&quot;&quot; . ?uri text:\&quot;&quot;document\&quot;&quot; . ?uri text:\&quot;&quot;Wim Wenders\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>1996</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1042" onlydbo="false">
+<string lang="en">Which battle in 1757 marked the beginning of the expansion of the British Empire in Asia?</string>
+<pseudoquery>&quot;PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; SELECT DISTINCT ?uri WHERE { ?uri dbo:date ?date . ?uri rdf:type dbo:MilitaryConflict . FILTER(year(?date)=1757) ?uri text:\&quot;&quot;begin\&quot;&quot; . ?uri text:\&quot;&quot;expand\&quot;&quot; . ?uri text:\&quot;&quot;British Empire\&quot;&quot; . ?uri text:\&quot;&quot;Asia\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Battle_of_Plassey</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1043" onlydbo="true">
+<string lang="en">Which Hindu deity is also known as 'Vinayaka'?</string>
+<pseudoquery>&quot;SELECT DISTINCT ?uri WHERE { ?uri text:\&quot;&quot;Hindu deity\&quot;&quot; . ?uri text:\&quot;&quot;known as\&quot;&quot; . ?uri text:\&quot;&quot;Vinayaka\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Ganesha</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1044" onlydbo="false">
+<string lang="en">Which newspaper had an average daily circulation of 189000 copies in August 2013?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Newspaper . ?uri text:\&quot;&quot;average daily circulation\&quot;&quot; . ?uri text:\&quot;&quot;189000 copies\&quot;&quot; . ?uri text:\&quot;&quot;August 2013\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/The_Guardian</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1045" onlydbo="false">
+<string lang="en">Which tiger reserve in India shares the north-eastern boundary with Nepal?</string>
+<pseudoquery>&quot;PREFIX dct: &lt;http://purl.org/dc/terms/&gt; PREFIX dbc: &lt;http://dbpedia.org/resource/Category:&gt; SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Tiger_reserves_of_India . ?uri text:\&quot;&quot;shares\&quot;&quot; . ?uri text:\&quot;&quot;north-eastern boundary\&quot;&quot; . ?uri text:\&quot;&quot;Nepal\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Dudhwa_Tiger_Reserve</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1046" onlydbo="false">
+<string lang="en">Who was the first deaf-blind person to receive a bachelor of arts degree?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . ?uri text:\&quot;&quot;first deaf-blind\&quot;&quot; . ?uri text:\&quot;&quot;receive\&quot;&quot; . ?uri text:\&quot;&quot;bachelor of arts degree\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Helen_Keller</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1047" onlydbo="false">
+<string lang="en">Who was the first man to walk on the moon?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . ?uri text:\&quot;&quot;first man\&quot;&quot; . ?uri text:\&quot;&quot;walk\&quot;&quot; . ?uri text:\&quot;&quot;moon\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Neil_Armstrong</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="number" hybrid="true" id="1048" onlydbo="false">
+<string lang="en">How many floors does the tower on the Champ de Mars in Paris have?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?proj WHERE { ?uri rdf:type dbo:Building . ?uri dbo:floorCount ?proj . ?uri text:\&quot;&quot;tower\&quot;&quot; . ?uri text:\&quot;&quot;Champ de Mars\&quot;&quot; . ?uri text:\&quot;&quot;Paris\&quot;&quot; .}&quot;</pseudoquery>
+<answers>
+<answer>3</answer>
+</answers>
+</question>
+<question aggregation="false" answertype="resource" hybrid="true" id="1049" onlydbo="false">
+<string lang="en">The net worth of which actor is estimated by Forbes magazine to be $350 million?</string>
+<pseudoquery>&quot;PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri text:\&quot;&quot;net worth\&quot;&quot; . ?uri text:\&quot;&quot;estimated\&quot;&quot; . ?uri text:\&quot;&quot;$350 million\&quot;&quot; . ?uri text:\&quot;&quot;Forbes magazine\&quot;&quot; . }&quot;</pseudoquery>
+<answers>
+<answer>http://dbpedia.org/resource/Jackie_Chan</answer>
+</answers>
+</question>
+</dataset>

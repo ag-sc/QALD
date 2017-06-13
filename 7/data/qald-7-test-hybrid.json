@@ -1,0 +1,2874 @@
+{
+"dataset": {
+"id": "qald-7-train-hybrid"
+},
+"questions": [
+{
+"id": "1",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Are there other solar systems?"
+}
+],
+"query":{
+"sparql": "ask where { ?proj text:\"other\" . ?proj text:\"solar systems\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "2",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Did George Washington want to be a teacher?"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> ask where { res:George_Washington text:\"want\" . res:George_Washington text:\"be\" . res:George_Washington text:\"teacher\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": false
+}
+]
+}
+,
+{
+"id": "3",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Does Johns Hopkins Bayview Medical Center have a burn victim unit?"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> ask where { res:Johns_Hopkins_Bayview_Medical_Center text:\"burn victim unit\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "4",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Give me all greek gods."
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri text:\"greek god\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Achelous>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Achlys>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Acis_and_Galatea_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Aeacus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Aether_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Aglaea>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Aion_(deity)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Alecto>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Amphitrite>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ananke_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Angelos_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Aphrodite>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Apollo>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ares>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Artemis>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Asclepius>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Asia_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Asopus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Asteria_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Astraeus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Athena>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Atlas_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Atropos>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Bia_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Calliope>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ceto>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Chaos_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Chronos>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Clio>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Clotho>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Clymene_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Coeus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Crius>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Cronus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Cyclops>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Deimos_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Demeter>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Dike_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Dione_(Titaness/Oceanid)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Dionysus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Doris_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eileithyia>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eirene_(Greek_goddess)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Enipeus_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Enyo>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eos>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Epimetheus_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Erato>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Erebus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eris_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eros>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eunomia_(goddess)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Euphrosyne_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eurybia_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Eurynome_(Oceanid)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Euterpe>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Gaia_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ganymede_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Giants_(Greek_mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Glaucus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hades>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Harmonia_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hebe_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hecate>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hekatonkheires>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Helios>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hemera>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hephaestus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hera>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Heracles>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hermes>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hestia>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Hyperion_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Iacchus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Iapetus_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Iris_(deity)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Kouretes>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Kratos_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Lachesis_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Lelantos>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Leto>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Megaera>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Meliae>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Melinoe>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Melpomene>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Menoetius_(Greek_mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Metis_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Minos>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Mnemosyne>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Moirai>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Nemesis_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Nereus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Nike_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Nyx>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Oceanus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ophion>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Orpheus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Paean_(god)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Pallas_(Titan)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Pan_(god)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Persephone>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Perses_(Titan)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Phanes_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Phobos_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Phoebe_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Phorcys>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Pleione_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Polyhymnia>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Pontus_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Poseidon>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Prometheus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Proteus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Rhadamanthus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Rhea_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Scamander>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Selene>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Styx>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Tartarus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Telchines>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Terpsichore>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Tethys_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thalassa_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thalia_(Grace)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thalia_(Muse)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thaumas>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Theia>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Themis>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thetis>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Tisiphone>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Triptolemus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Triton_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Trophonius>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Tyche>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Typhon>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Urania>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Uranus_(mythology)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Zelus>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Zeus>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "5",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Give me the names of all of the people who signed the American Declaration of Independence."
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:person . ?uri text:\"signed\" . { ?uri text:\"American Declaration of Independence\" . } UNION { ?uri text:\"Declaration of Independence\" . }  } "
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Hancock>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Josiah_Bartlett>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Whipple>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Matthew_Thornton>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Samuel_Adams>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Adams>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Robert_Treat_Paine>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Elbridge_Gerry>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Stephen_Hopkins_(politician)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Ellery>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Roger_Sherman>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Samuel_Huntington_(statesman)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Williams_(signer)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Oliver_Wolcott>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Floyd>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Philip_Livingston>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Francis_Lewis>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Lewis_Morris>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Richard_Stockton_(Continental_Congressman)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Witherspoon>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Francis_Hopkinson>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Hart_(New_Jersey_politician)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Abraham_Clark>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Robert_Morris_(financier)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Benjamin_Rush>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Benjamin_Franklin>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Morton_(politician)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Clymer>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/James_Smith_(delegate)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Taylor_(delegate)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/James_Wilson>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Ross_(delegate)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Caesar_Rodney>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Read_(signer)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_McKean>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Samuel_Chase>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Paca>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_Stone>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Charles_Carroll_of_Carrollton>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Wythe>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Richard_Henry_Lee>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_Jefferson>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Benjamin_Harrison_V>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_Nelson,_Jr.>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Francis_Lightfoot_Lee>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Carter_Braxton>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/William_Hooper>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Joseph_Hewes>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/John_Penn_(Continental_Congress)>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Edward_Rutledge>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_Heyward,_Jr.>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thomas_Lynch,_Jr.>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Arthur_Middleton>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Button_Gwinnett>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Lyman_Hall>"
+}
+},
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/George_Walton>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "6",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "The name of which ocean refers to Atlas of Greek mythology?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri dct:subject dbc:Oceans . ?uri text:\"refers\" . ?uri text:\"Atlas\" . ?uri text:\"Greek mythology\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Atlantic_Ocean>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "7",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which star is about 4.24 light-years from the Sun."
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Star . ?uri text:\"star\" . ?uri text:\"4.24 light-years\" . ?uri text:\"Sun\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Proxima_Centauri>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "8",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which transmission does the German car with a top speed of 407 km/h have?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?trans WHERE { ?uri rdf:type dbo:Automobile . ?uri dbo:transmission ?trans . ?uri text:\"German\" . ?uri text:\"top speed\" . ?uri text:\"407 km/h\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"trans"
+]
+},
+"results": {
+"bindings": [
+{
+"trans": {
+"type": "literal",
+"value": "7-speedDSGautomatic transmission"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "9",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which star's diameter is about 109 times that of Earth?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"star\" . ?uri text:\"diameter\" . ?uri text:\"109 times\" . ?uri text:\"Earth\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Sun>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "10",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which writer was involved in two successive plane crashes?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Writer . ?uri text:\"two successive plane crashes\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ernest_Hemingway>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "11",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "How many children did the person have that began their concerts with 'Hello, I'm Johnny Cash'?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT (COUNT(?child) AS ?count) WHERE { ?uri rdf:type dbo:Person . ?uri dbo:child ?child . ?uri text:\"began\" . ?uri text:\"concerts\" . ?uri text:\"Hello\" . ?uri text:\"I'm Johnny Cash\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"count"
+]
+},
+"results": {
+"bindings": [
+{
+"count": {
+"type": "literal",
+"value": "4"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "12",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the team size of the sport that is practiced by 250 million players in over 200 nations?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> select distinct ?size where { ?uri rdf:type dbo:Sport . ?uri dbo:teamSize ?size .?uri text:\"250 million\" . ?uri text:\"players, \" . ?uri text:\"200\" . ?uri text:\"nations\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"size"
+]
+},
+"results": {
+"bindings": [
+{
+"size": {
+"type": "literal",
+"value": "11"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "13",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Were there more than 1000 different species of non-avian dinosaurs?"
+}
+],
+"query":{
+"sparql": "ask where { ?proj text:\"more\" . ?proj text:\"1000 different species\" . ?proj text:\"non-avian\" . ?proj text:\"dinosaur\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "14",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which indigenous language includes a large proportion of non-indigenous people?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Language . ?uri text:\"includes a large proportion of non-indigenous people\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Guarani_language>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "15",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which animal is primarily responsible for the extinction of 33 species of birds?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Animal . ?uri text:\"responsible\" . ?uri text:\"extinction\" . ?uri text:\"33 species\" . ?uri text:\"birds\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Cat>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "16",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Was the Earth formed about 4.54 billion years ago?"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> ask where { res:Earth text:\"formed\" . res:Earth text:\"4.54 billion\" . res:Earth text:\"years\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "17",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which television series is about the survivors of a passenger jet crash on a tropical island?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:TelevisionShow . ?uri text:\"survivors\" . ?uri text:\"passenger jet\" . ?uri text:\"crash\" . ?uri text:\"tropical island\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Lost_(TV_series)>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "18",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "In what present-day country did the Protestant Reformation begin?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?uri text:\"Protestant Reformation\" . ?uri text:\"begin\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Germany>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "19",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Is Michael Jordan the MVP of all time?"
+}
+],
+"query":{
+"sparql": "ask where { ?proj text:\"Michael Jordan\" . ?proj text:\"MVP of all time\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "20",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which company is a portmanteau of the words microcomputer and software?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . ?uri text:\"portmanteau\" . ?uri text:\"words\" . ?uri text:\"microcomputer\" . ?uri text:\"software\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Microsoft>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "21",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What causes earthquakes?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"causes earthquakes\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Tectonics>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "22",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Who was the first European to reach India by sea?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"first European\" . ?uri text:\"reach India\" . ?uri text:\"by sea\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Vasco_da_Gama>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "23",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "For which video game was an Apple II version planned but never released."
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:VideoGame . ?uri text:\"Apple II version\" . ?uri text:\"planned\" . ?uri text:\"never released\" .  }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Zak_McKracken_and_the_Alien_Mindbenders>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "24",
+"answertype": "boolean",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Is an eggshell made of Calcium carbonate?"
+}
+],
+"query":{
+"sparql": "PREFIX res: <http://dbpedia.org/resource/> ask where { { res:Eggshell text:\"made of\" . } UNION { res:Eggshell text:\"contain\" . }  res:Eggshell text:\"Calcium carbonate\" . }"
+},
+"answers": [
+{
+"head": {
+},
+"boolean": true
+}
+]
+}
+,
+{
+"id": "25",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is California's state bird?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bird . ?uri text:\"California\" . ?uri text:\"state bird\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/California_quail>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "26",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the worldwide best-selling album of all time?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album . ?uri text:\"best-selling album of all time\" . ?uri text:\"worldwide\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Thriller_(Michael_Jackson_album)>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "27",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the alias of the band which member was ranked the 17th greatest guitarist of all time by a Guitar World magazine reader's poll in 2012?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?alias WHERE { ?uri rdf:type dbo:Band . ?uri dbo:alias ?alias . ?uri dbo:bandMember ?member . ?member text:\"17th greatest guitarist of all time\" . ?member text:\"Guitar World magazine\" . ?member text:\"reader's poll\" . ?member text:\"2012\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"alias"
+]
+},
+"results": {
+"bindings": [
+{
+"alias": {
+"type": "literal",
+"value": "Majesty (1985–86)"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "28",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the best-selling book of all time?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"best-selling book of all time\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Bible>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "29",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the maximum depth of the lake with the alleged sighted monster Nessie?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?depth WHERE { ?uri rdf:type dbo:Lake . ?uri dbo:maximumDepth ?depth . ?uri text:\"allege\" . ?uri text:\"sight\" . ?uri text:\"monster\" . ?uri text:\"Nessie\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"depth"
+]
+},
+"results": {
+"bindings": [
+{
+"depth": {
+"type": "literal",
+"value": "226.96"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "30",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "How many bits does the CPU of the device have that IGN named the 9th greatest video game console of all time?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?bits WHERE { ?uri rdf:type dbo:Device . ?uri dbp:cpu ?bits . ?uri text:\"IGN\" . ?uri text:\"name\" . ?uri text:\"9th greatest video game console of all time\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"bits"
+]
+},
+"results": {
+"bindings": [
+{
+"bits": {
+"type": "literal",
+"value": "64"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "31",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is created by tanning animal rawhide?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type owl:Thing . ?uri text:\"tanning\" . ?uri text:\"animal\" .  ?uri text:\"rawhide\" .  }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Leather>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "32",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the capital of the state whose flag reflects Hispanic and Native American influences?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?capital WHERE { ?uri rdf:type dbo:Place . ?uri dbo:capital ?capital . ?uri text:\"flag\" . ?uri text:\"Hispanic\" . ?uri text:\"Native American\" . ?uri text:\"influence\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"capital"
+]
+},
+"results": {
+"bindings": [
+{
+"capital": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Santa_Fe,_New Mexico>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "33",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What causes the sound of thunder?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"causes\" . ?uri text:\"sound\" . ?uri text:\"thunder\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/lightning>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "34",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which animal is the largest flying land bird in the western hemisphere?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Animal . ?uri text:\"largest\" . ?uri text:\"flying\" . ?uri text:\"land bird\" . ?uri text:\"Western Hemisphere\" .  }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Condor>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "35",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the total population of the town that port wine is named after?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri rdf:type dbo:Location. ?uri dbo:populationTotal ?proj . ?uri text:\"port wine\" . ?uri text:\"named\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"proj"
+]
+},
+"results": {
+"bindings": [
+{
+"proj": {
+"type": "literal",
+"value": "237591"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "36",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Give me the completion date of the ship sunken in the North Atlantic Ocean in 1912 and rediscovered in 1985."
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Ship. ?uri dbo:completionDate ?date . ?uri text:\"sunken\" . ?uri text:\"North Atlantic Ocean\" . ?uri text:\"1912\" . ?uri text:\"rediscovered\" . ?uri text:\"1985\" .  }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1912-04-02"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "37",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "When did the person who worked on short satirical poems together with Goethe die?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Person . ?uri dbo:deathDate ?date . ?uri text:\"work\" . ?uri text:\"short satirical poem\" . ?uri text:\"Goethe\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1805-05-09"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "38",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which food's name derived from the verb 'empanar'?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Food . ?uri text:\"name\" . ?uri text:\"derived\" . ?uri text:\"verb\" . ?uri text:\"empanar\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Empanada>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "39",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "When was the leader of the first Antarctic expedition to reach the South Pole born?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Person . ?uri dbo:birthDate ?date . ?uri text:\"leader\" . ?uri text:\"first\" . ?uri text:\"Antarctic expedition\" . ?uri text:\"reach\" . ?uri text:\"South Pole\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1872-07-16"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "40",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which urban fire in the United States burned from October 8 to October 10, 1871?"
+}
+],
+"query":{
+"sparql": "PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Urban_fires_in_the_United_States . ?uri text:\"Sunday\" . ?uri text:\"October 8\" . ?uri text:\"Tuesday\" . ?uri text:\"October 10\" . ?uri text:\"1871\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Great_Chicago_Fire>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "41",
+"answertype": "string",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "What is the official name of the host city of the Summer Olympic Games in 1932 and 1984?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?name WHERE { ?uri rdf:type dbo:City . ?uri dbp:officialName ?name . ?uri text:\"host\" . ?uri text:\"Summer Olympic Games\" . ?uri text:\"1932\" . ?uri text:\"1984\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"name"
+]
+},
+"results": {
+"bindings": [
+{
+"name": {
+"type": "literal",
+"value": "City of Los Angeles"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "42",
+"answertype": "date",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "When was the band found whose performance in 1998 was documented by Wim Wenders?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?date WHERE { ?uri rdf:type dbo:Band . ?uri dbo:activeYearsStartYear ?date . ?uri text:\"performance\" . ?uri text:\"1998\" . ?uri text:\"document\" . ?uri text:\"Wim Wenders\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"date"
+]
+},
+"results": {
+"bindings": [
+{
+"date": {
+"type": "literal",
+"value": "1996"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "43",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which battle in 1757 marked the beginning of the expansion of the British Empire in Asia?"
+}
+],
+"query":{
+"sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri dbo:date ?date . ?uri rdf:type dbo:MilitaryConflict . FILTER(year(?date)=1757) ?uri text:\"begin\" . ?uri text:\"expand\" . ?uri text:\"British Empire\" . ?uri text:\"Asia\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Battle_of_Plassey>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "44",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "true",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which Hindu deity is also known as 'Vinayaka'?"
+}
+],
+"query":{
+"sparql": "SELECT DISTINCT ?uri WHERE { ?uri text:\"Hindu deity\" . ?uri text:\"known as\" . ?uri text:\"Vinayaka\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Ganesha>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "45",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which newspaper had an average daily circulation of 189000 copies in August 2013?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Newspaper . ?uri text:\"average daily circulation\" . ?uri text:\"189000 copies\" . ?uri text:\"August 2013\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/The_Guardian>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "46",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Which tiger reserve in India shares the north-eastern boundary with Nepal?"
+}
+],
+"query":{
+"sparql": "PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Tiger_reserves_of_India . ?uri text:\"shares\" . ?uri text:\"north-eastern boundary\" . ?uri text:\"Nepal\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Dudhwa_Tiger_Reserve>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "47",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Who was the first deaf-blind person to receive a bachelor of arts degree?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . ?uri text:\"first deaf-blind\" . ?uri text:\"receive\" . ?uri text:\"bachelor of arts degree\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Helen_Keller>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "48",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "Who was the first man to walk on the moon?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Person . ?uri text:\"first man\" . ?uri text:\"walk\" . ?uri text:\"moon\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Neil_Armstrong>"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "49",
+"answertype": "number",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "How many floors does the tower on the Champ de Mars in Paris have?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?proj WHERE { ?uri rdf:type dbo:Building . ?uri dbo:floorCount ?proj . ?uri text:\"tower\" . ?uri text:\"Champ de Mars\" . ?uri text:\"Paris\" .}"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"proj"
+]
+},
+"results": {
+"bindings": [
+{
+"proj": {
+"type": "literal",
+"value": "3"
+}
+}
+]
+}
+}
+]
+}
+,
+{
+"id": "50",
+"answertype": "resource",
+"aggregation": "false",
+"onlydbo": "false",
+"hybrid": "true",
+"question": [
+{
+"language": "en",
+"string": "The net worth of which actor is estimated by Forbes magazine to be $350 million?"
+}
+],
+"query":{
+"sparql": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri text:\"net worth\" . ?uri text:\"estimated\" . ?uri text:\"$350 million\" . ?uri text:\"Forbes magazine\" . }"
+},
+"answers": [
+{
+"head": {
+"vars": [
+"uri"
+]
+},
+"results": {
+"bindings": [
+{
+"uri": {
+"type": "uri",
+"value": "<http://dbpedia.org/resource/Jackie_Chan>"
+}
+}
+]
+}
+}
+]
+}
+]
+}
