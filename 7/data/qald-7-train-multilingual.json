@@ -4695,7 +4695,9 @@
           "keywords": "anno scomparsa, dinastia Ming"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Quand la dynastie Ming s'est-elle dissoute?",
+          "keywords": "dissoudre, dynastie Ming"
         },
         {
           "language": "nl",
@@ -9164,7 +9166,9 @@
           "keywords": "montagna, più alta, Italia"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Quelle est la plus haute montagne d'Italie?",
+          "keywords": "plus haute, plus haute, Italie"
         },
         {
           "language": "nl",
@@ -13905,7 +13909,9 @@
           "keywords": "sindaco, Rotterdam"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Qui est le maire de Rotterdam?",
+          "keywords": "maire, Rotterdam"
         },
         {
           "language": "nl",
@@ -14458,7 +14464,9 @@
           "keywords": "genitori, regina Vittoria"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Qui étaient les parents de la reine Victoria?",
+          "keywords": "parents, reine Victoria"
         },
         {
           "language": "nl",
@@ -14592,7 +14600,9 @@
           "keywords": "lago Baikal, più grande, lago Great Bear"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Est-ce que Lake Baikal est plus grand que le Great Bear Lake?",
+          "keywords": "Lake Baikal, plus grand, Great Bear Lake"
         },
         {
           "language": "nl",
@@ -15581,7 +15591,9 @@
           "keywords": "altezza, torre Yokohama Marine"
         },
         {
-          "language": "fr"
+          "language": "fr",
+          "string": "Quelle est la hauteur de la tour de Yokohama?",
+          "keywords": "hauteur, tour de Yokohama"
         },
         {
           "language": "nl",
