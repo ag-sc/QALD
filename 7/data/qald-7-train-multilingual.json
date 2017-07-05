@@ -11460,7 +11460,7 @@
         	"language": "hi_IN",
         	"string":"बर्लिन का क्षेत्र कोड क्या है?",
         	"keywords":"बर्लिन, क्षेत्र कोड"
-        },
+        }
       ],
       "query": {
         "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX res: <http://dbpedia.org/resource/>\nSELECT DISTINCT ?string \nWHERE {\n\tres:Berlin dbo:areaCode ?string .\n}"
