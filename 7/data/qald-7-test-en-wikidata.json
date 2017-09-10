@@ -11150,7 +11150,7 @@
         }
       ],
       "query": {
-        "sparql": "ASK WHERE { ?uri <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7889> . ?uri rdfs:label \"Battle Chess\"@en }"
+        "sparql": "prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>  ASK WHERE { ?uri <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7889> . ?uri rdfs:label \"Battle Chess\"@en }"
       },
       "answers": [
         {
