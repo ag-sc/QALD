@@ -783,33 +783,6 @@
     }
   }, {
     "question" : {
-      "id" : "26",
-      "answertype" : "resource",
-      "language" : [ {
-        "language" : "en",
-        "question" : "Who was the last man on the moon?"
-      } ],
-      "answers" : {
-        "head" : {
-          "vars" : [ "uri" ]
-        },
-        "results" : {
-          "bindings" : [ {
-            "uri" : {
-              "type" : "uri",
-              "value" : "http://dbpedia.org/resource/Eugene_Cernan"
-            }
-          } ]
-        }
-      },
-      "metadata" : {
-        "aggregation" : false,
-        "onlydbo" : true,
-        "hybrid" : true
-      }
-    }
-  }, {
-    "question" : {
       "id" : "27",
       "answertype" : "string",
       "language" : [ {
@@ -1520,38 +1493,6 @@
     }
   }, {
     "question" : {
-      "id" : "47",
-      "answertype" : "text",
-      "language" : [ {
-        "language" : "en",
-        "question" : "What is the name of the school where obama's wife is studied?"
-      } ],
-      "answers" : {
-        "head" : {
-          "vars" : [ "text" ]
-        },
-        "results" : {
-          "bindings" : [ {
-            "text" : {
-              "type" : "text",
-              "value" : "\"Harward Law School\" @en"
-            }
-          }, {
-            "text" : {
-              "type" : "text",
-              "value" : "\"Princeton University\" @en"
-            }
-          } ]
-        }
-      },
-      "metadata" : {
-        "aggregation" : false,
-        "onlydbo" : true,
-        "hybrid" : true
-      }
-    }
-  }, {
-    "question" : {
       "id" : "48",
       "answertype" : "resource",
       "language" : [ {
@@ -2000,33 +1941,6 @@
             "uri" : {
               "type" : "uri",
               "value" : "http://dbpedia.org/resource/Euro"
-            }
-          } ]
-        }
-      },
-      "metadata" : {
-        "aggregation" : false,
-        "onlydbo" : true,
-        "hybrid" : true
-      }
-    }
-  }, {
-    "question" : {
-      "id" : "63",
-      "answertype" : "resource",
-      "language" : [ {
-        "language" : "en",
-        "question" : "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
-      } ],
-      "answers" : {
-        "head" : {
-          "vars" : [ "uri" ]
-        },
-        "results" : {
-          "bindings" : [ {
-            "uri" : {
-              "type" : "uri",
-              "value" : "http://dbpedia.org/resource/Bryan_Cranston"
             }
           } ]
         }

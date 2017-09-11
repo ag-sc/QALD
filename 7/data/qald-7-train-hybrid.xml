@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dataset id="qald-7-train-hybrid">
+<dataset id="qald7-train-hybrid">
 <question aggregation="false" answertype="resource" hybrid="true" id="0" onlydbo="true">
 <string lang="en">Who plays Phileas Fogg in the adaptation of Around the World in 80 Days directed by Buzz Kulik?</string>
 <pseudoquery>PREFIX dbo:  &lt;http://dbpedia.org/ontology/&gt;
@@ -263,7 +263,7 @@ WHERE {
         FILTER(?num &gt; 100.0)
 }</pseudoquery>
 <answers>
-<answer>true</answer>
+<answer>false</answer>
 </answers>
 </question>
 <question aggregation="false" answertype="resource" hybrid="true" id="19" onlydbo="true">
@@ -360,13 +360,6 @@ WHERE {
 <answer>http://dbpedia.org/resource/Ismael_Urbain</answer>
 <answer>http://dbpedia.org/resource/Jacky_Trevane</answer>
 <answer>http://dbpedia.org/resource/Aukai_Collins</answer>
-</answers>
-</question>
-<question aggregation="false" answertype="resource" hybrid="true" id="26" onlydbo="true">
-<string lang="en">Who was the last man on the moon?</string>
-<pseudoquery>PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;   SELECT DISTINCT ?proj WHERE { dbr:Last_man_on_the_moon dbo:wikiPageRedirects ?proj . }</pseudoquery>
-<answers>
-<answer>http://dbpedia.org/resource/Eugene_Cernan</answer>
 </answers>
 </question>
 <question aggregation="false" answertype="string" hybrid="true" id="27" onlydbo="true">
@@ -616,14 +609,6 @@ WHERE {
 <answer>http://dbpedia.org/resource/Nikken_Sekkei</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="text" hybrid="true" id="47" onlydbo="true">
-<string lang="en">What is the name of the school where obama's wife is studied?</string>
-<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX dbp: &lt;http://dbpedia.org/property/&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?proj WHERE { ?x rdf:type dbo:Person . dbr:Barack_Obama dbp:spouse ?x . ?x dbp:almaMater ?proj }</pseudoquery>
-<answers>
-<answer>"Harward Law School" @en</answer>
-<answer>"Princeton University" @en</answer>
-</answers>
-</question>
 <question aggregation="false" answertype="resource" hybrid="true" id="48" onlydbo="true">
 <string lang="en">Which recipients of the Victoria Cross fought in the Battle of Arnhem?</string>
 <pseudoquery> PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; PREFIX res: &lt;http://dbpedia.org/resource/&gt; SELECT DISTINCT ?uri WHERE {     ?uri dbo:award res:Victoria_Cross .    { ?uri text:"fought in" text:"Battle of Arnhem" . } UNION {?uri text:"went into action" text:"Battle of Arnhem"} } </pseudoquery>
@@ -796,13 +781,6 @@ WHERE {
 <answer>http://dbpedia.org/resource/Euro</answer>
 </answers>
 </question>
-<question aggregation="false" answertype="resource" hybrid="true" id="63" onlydbo="true">
-<string lang="en">Who portrays a chemistry teacher and drug dealer in a famous TV series?</string>
-<pseudoquery>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX dbr: &lt;http://dbpedia.org/resource/&gt; PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?role dbo:portrayer ?proj . ?role &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Fictional_schoolteachers&gt; . ?role &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Fictional_drug_dealers&gt; . }</pseudoquery>
-<answers>
-<answer>http://dbpedia.org/resource/Bryan_Cranston</answer>
-</answers>
-</question>
 <question aggregation="false" answertype="boolean" hybrid="true" id="64" onlydbo="true">
 <string lang="en">Did Napoleon's first wife die in France?</string>
 <pseudoquery>PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
@@ -813,7 +791,7 @@ WHERE {
         ?x dbo:deathPlace res:France .	
 }</pseudoquery>
 <answers>
-<answer>true</answer>
+<answer>false</answer>
 </answers>
 </question>
 <question aggregation="false" answertype="resource" hybrid="true" id="65" onlydbo="true">
