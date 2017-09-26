@@ -756,32 +756,6 @@
       }
     } ]
   }, {
-    "id" : "26",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : true,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Who was the last man on the moon?"
-    } ],
-    "query" : {
-      "pseudo" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { dbr:Last_man_on_the_moon dbo:wikiPageRedirects ?proj . }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "uri" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Eugene_Cernan"
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "27",
     "answertype" : "string",
     "aggregation" : false,
@@ -1472,37 +1446,6 @@
       }
     } ]
   }, {
-    "id" : "47",
-    "answertype" : "text",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : true,
-    "question" : [ {
-      "language" : "en",
-      "string" : "What is the name of the school where obama's wife is studied?"
-    } ],
-    "query" : {
-      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?proj WHERE { ?x rdf:type dbo:Person . dbr:Barack_Obama dbp:spouse ?x . ?x dbp:almaMater ?proj }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "text" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "text" : {
-            "type" : "text",
-            "value" : "\"Harward Law School\" @en"
-          }
-        }, {
-          "text" : {
-            "type" : "text",
-            "value" : "\"Princeton University\" @en"
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "48",
     "answertype" : "resource",
     "aggregation" : false,
@@ -1943,32 +1886,6 @@
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Euro"
-          }
-        } ]
-      }
-    } ]
-  }, {
-    "id" : "63",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : true,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Who portrays a chemistry teacher and drug dealer in a famous TV series?"
-    } ],
-    "query" : {
-      "pseudo" : "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/>   SELECT DISTINCT ?proj WHERE { ?proj rdf:type dbo:Person . ?role dbo:portrayer ?proj . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_schoolteachers> . ?role <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Fictional_drug_dealers> . }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "uri" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Bryan_Cranston"
           }
         } ]
       }

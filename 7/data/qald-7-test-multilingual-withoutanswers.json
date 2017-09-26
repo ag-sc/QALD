@@ -3,37 +3,6 @@
     "id" : "qald-7-test-multilingual"
   },
   "questions" : [ {
-    "id" : "1",
-    "answertype" : "boolean",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Are penguins endangered?",
-      "keywords" : "penguins, endangered"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Sind Pinguine vom Aussterben gefärdet?",
-      "keywords" : "Pinguine, Aussterben, Gefahr"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "I pinguini sono una specie in pericolo?",
-      "keywords" : "pinguini, specie, pericolo"
-    }, {
-      "language" : "fr",
-      "string" : "Est-ce que les pingouins sont une espèce menacée d'extinction?",
-      "keywords" : "pingouins, espèce, menacée d'extinction"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
     "id" : "2",
     "answertype" : "boolean",
     "aggregation" : false,
@@ -282,37 +251,6 @@
       "language" : "ro"
     } ]
   }, {
-    "id" : "10",
-    "answertype" : "resource",
-    "aggregation" : true,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Give me all Spanish artists.",
-      "keywords" : "Spanish artists"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Gibr mir alle Spanischen Künstler.",
-      "keywords" : "Spanische Künstler"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Dammi tutti gli artisti spagnoli",
-      "keywords" : "artisti spagnoli"
-    }, {
-      "language" : "fr",
-      "string" : "Donnez-moi le nom de tous les artistes espagnols.",
-      "keywords" : "artistes espagnols"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
     "id" : "11",
     "answertype" : "resource",
     "aggregation" : false,
@@ -338,37 +276,6 @@
       "language" : "fr",
       "string" : "Donnez-moi le nom de tous les éléments chimiques.",
       "keywords" : "éléments chimiques"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
-    "id" : "12",
-    "answertype" : "number",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "How many continents are there?",
-      "keywords" : "continents"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Wie viele Kontinente gibt es?",
-      "keywords" : "Kontinente"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Quanti continenti ci sono?",
-      "keywords" : "continenti"
-    }, {
-      "language" : "fr",
-      "string" : "Combien y a-t-il de continents?",
-      "keywords" : "continents"
     }, {
       "language" : "nl"
     }, {
@@ -586,68 +493,6 @@
       "language" : "fr",
       "string" : "Quelle forme de gouvernement y a-t-il en Afrique du Sud?",
       "keywords" : "forme, gouvernement, Afrique du Sud"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
-    "id" : "20",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "What is a bipolar syndrome?",
-      "keywords" : "bipolar syndrome"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Was ist ein bipolares Syndrom?",
-      "keywords" : "bipolares Syndrom"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Cos'è un disturbo bipolare?",
-      "keywords" : "disturbo bipolare"
-    }, {
-      "language" : "fr",
-      "string" : "Qu'est-ce qu'un syndrome bipolaire?",
-      "keywords" : "syndrome bipolaire"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
-    "id" : "21",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "What is backgammon?",
-      "keywords" : "backgammon"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Was ist Backgammon?",
-      "keywords" : "Backgammon"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Cos'è il backgammon?",
-      "keywords" : "backgammon"
-    }, {
-      "language" : "fr",
-      "string" : "Qu'est-ce que le backgammon?",
-      "keywords" : "backgammon?"
     }, {
       "language" : "nl"
     }, {
@@ -1212,37 +1057,6 @@
       "language" : "ro"
     } ]
   }, {
-    "id" : "40",
-    "answertype" : "resource",
-    "aggregation" : true,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Who were the architects of Central Park?",
-      "keywords" : "architects, Central Park"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Wer waren die Architekten des Central Park?",
-      "keywords" : "Architekten, Central Park"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Chi furono gli architetti di Central Park?",
-      "keywords" : "architetti, Central Park"
-    }, {
-      "language" : "fr",
-      "string" : "Qui étaient les architectes de Central Park",
-      "keywords" : "architectes, Central Park"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
     "id" : "41",
     "answertype" : "string",
     "aggregation" : true,
@@ -1392,37 +1206,6 @@
       "language" : "fr",
       "string" : "Combien de personnes vivent en Eurasie?",
       "keywords" : "personnes, Eurasie"
-    }, {
-      "language" : "nl"
-    }, {
-      "language" : "ro"
-    } ]
-  }, {
-    "id" : "46",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Where were the last Winter Paralympics held?",
-      "keywords" : "last Winter Paralympics, held"
-    }, {
-      "language" : "fa"
-    }, {
-      "language" : "de",
-      "string" : "Wo haben die letzten Winter-Paralympics stattgefunden?",
-      "keywords" : "letzten Winter-Paralympics, stattgefunden"
-    }, {
-      "language" : "es"
-    }, {
-      "language" : "it",
-      "string" : "Dove si sono tenuti gli ultimi Giochi Paralimpici Invernali?",
-      "keywords" : "tenuti, ultimi Giochi Paralimpici Invernali"
-    }, {
-      "language" : "fr",
-      "string" : "Où ont eu lieu les derniers jeux paralympiques?",
-      "keywords" : "eu lieu, derniers jeux paralympiques"
     }, {
       "language" : "nl"
     }, {
