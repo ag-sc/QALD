@@ -240,7 +240,7 @@
       "answers": [
         {
           "head": {},
-          "boolean": false
+          "boolean": true
         }
       ]
     },
