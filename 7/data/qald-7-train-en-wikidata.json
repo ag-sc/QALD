@@ -235,7 +235,7 @@
         }
       ],
       "query": {
-        "sparql": "ASK WHERE { <http://www.wikidata.org/entity/Q14169302> <http://www.wikidata.org/prop/direct/P26> ?spouse .  ?spouse <http://www.w3.org/2000/01/rdf-schema#label> ?name .  FILTER(regex(?name,'Mary')) }"
+        "sparql": "ASK WHERE { <http://www.wikidata.org/entity/Q91> <http://www.wikidata.org/prop/direct/P26> ?spouse .  ?spouse <http://www.w3.org/2000/01/rdf-schema#label> ?name .  FILTER(regex(?name,'Mary')) }"
       },
       "answers": [
         {
