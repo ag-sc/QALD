@@ -150,11 +150,11 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "how many awards has Bertrand Russell?",
+      "string" : "How many awards has Bertrand Russell?",
       "keywords" : "Bertrand Russell"
     } ],
     "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT (COUNT(?Awards) AS ?Counter) WHERE { dbr:Bertrand_Russell dbp:awards ?Awards } LIMIT 10"
+      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT (COUNT(?Awards) AS ?Counter) WHERE { dbr:Bertrand_Russell dbp:awards ?Awards }"
     },
     "answers" : [ {
       "head" : {
@@ -177,11 +177,11 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "Who is daniel jurafsky?",
-      "keywords" : "daniel jurafsky"
+      "string" : "Who is Dan Jurafsky?",
+      "keywords" : "Dan Jurafsky"
     } ],
     "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?Dan WHERE { dbr:Daniel_Jurafsky dbo:abstract ?Dan }"
+      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?Dan WHERE {  VALUES ?Dan {dbr:Daniel_Jurafsky } }"
     },
     "answers" : [ {
       "head" : {
@@ -190,8 +190,8 @@
       "results" : {
         "bindings" : [ {
           "string" : {
-            "type" : "literal",
-            "value" : "Daniel Jurafsky, commonly known as Dan Jurafsky, is a Professor of Linguistics and Computer Science at Stanford University."
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Daniel_Jurafsky"
           }
         } ]
       }
@@ -219,33 +219,6 @@
           "c" : {
             "type" : "literal",
             "value" : "2018-07-15"
-          }
-        } ]
-      }
-    } ]
-  }, {
-    "id" : "9",
-    "answertype" : "string",
-    "aggregation" : true,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "What is the difference between correlation and dependence?",
-      "keywords" : "correlation and dependence"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?diff WHERE { dbr:Correlation_and_dependence rdfs:comment ?diff } OFFSET 4 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "In statistics, dependence or association is any statistical relationship, whether causal or not, between two random variables or two sets of data. Correlation is any of a broad class of statistical relationships involving dependence, though in common usage it most often refers to the extent to which two variables have a linear relationship with each other. Familiar examples of dependent phenomena include the correlation between the physical statures of parents and their offspring, and the correlation between the demand for a product and its price."
           }
         } ]
       }
@@ -359,33 +332,6 @@
       }
     } ]
   }, {
-    "id" : "14",
-    "answertype" : "string",
-    "aggregation" : true,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Who are the founding fathers of united states?",
-      "keywords" : "US founding fathers"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?foundingfathers WHERE { dbr:Founding_Fathers_of_the_United_States rdfs:comment ?foundingfathers } OFFSET 7 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "The Founding Fathers of the United States are the individuals of the Thirteen British Colonies in North America who led the American Revolution against the authority of the British Crown and established the United States of America. The term is also used more narrowly, referring specifically to those who either signed the Declaration of Independence in 1776 or who were delegates to the 1787 Constitutional Convention and took part in drafting the proposed Constitution of the United States. A further subset includes those who signed the Continental Association or the Articles of Confederation. During much of the 19th century, they were referred to as either the \"Founders\" or the \"Fathers\"."
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "15",
     "answertype" : "string",
     "aggregation" : false,
@@ -458,20 +404,20 @@
     "question" : [ {
       "language" : "en",
       "string" : "Where is the origin of Carolina reaper?",
-      "keywords" : "Carolina reaper"
+      "keywords" : "Carolina reaper, origin"
     } ],
     "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?hot WHERE { dbr:Carolina_Reaper dbo:abstract ?hot } OFFSET 10 LIMIT 10"
+      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { dbr:Carolina_Reaper dbo:origin ?uri }"
     },
     "answers" : [ {
       "head" : {
-        "vars" : [ "string" ]
+        "vars" : [ "uri" ]
       },
       "results" : {
         "bindings" : [ {
           "string" : {
-            "type" : "literal",
-            "value" : "The Carolina Reaper, originally named the HP22B, is a cultivar of chili pepper of the Capsicum chinense species. It is red and has a gnarled, lumpy pod with a tail like a scythe. As of 2013, Guinness has dubbed it as the hottest chilli in the world, surpassing the previous record holder, the Trinidad Scorpion \"Butch T\"."
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Fort_Mill,_South_Carolina"
           }
         } ]
       }
@@ -484,7 +430,7 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "How much is the population of mexico city ?",
+      "string" : "How much is the population of Mexico City ?",
       "keywords" : "mexico city"
     } ],
     "query" : {
@@ -511,7 +457,7 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "what is the nick name of Baghdad?",
+      "string" : "What is the nick name of Baghdad?",
       "keywords" : "Baghdad"
     } ],
     "query" : {
@@ -592,8 +538,8 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "how much is the population  Iraq?",
-      "keywords" : "Iraq"
+      "string" : "How much is the population of Iraq?",
+      "keywords" : "Iraq, population"
     } ],
     "query" : {
       "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?pIraq WHERE { dbr:Iraq dbo:populationTotal ?pIraq }"
@@ -607,33 +553,6 @@
           "string" : {
             "type" : "literal",
             "value" : "37056169"
-          }
-        } ]
-      }
-    } ]
-  }, {
-    "id" : "23",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "What is the Sicilian pizza?",
-      "keywords" : "Sicilian pizza"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?pizza WHERE { dbr:Sicilian_pizza rdfs:comment ?pizza } OFFSET 3 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "Sicilian pizza is pizza prepared in a manner that originated in Sicily, Italy. In the United States, the phrase Sicilian pizza is often synonymous with thick-crust or deep-dish pizza derived from the Sicilian sfincione [sfiŋˈtʃoːne]."
           }
         } ]
       }
@@ -673,7 +592,7 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "how much is the population densty rank of germany?",
+      "string" : "How much is the population density rank of Germany?",
       "keywords" : "Germany"
     } ],
     "query" : {
@@ -727,8 +646,8 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "how big is the total area of North Rhine- Westphalia?",
-      "keywords" : "Nord Rhine Westphalia"
+      "string" : "How large is the total area of North Rhine-Westphalia?",
+      "keywords" : "Nord Rhine Westphalia, total area"
     } ],
     "query" : {
       "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?tarea WHERE { dbr:North_Rhine-Westphalia dbo:areaTotal ?tarea }"
@@ -774,33 +693,6 @@
           "string" : {
             "type" : "literal",
             "value" : "Die Traumdeutung"
-          }
-        } ]
-      }
-    } ]
-  }, {
-    "id" : "29",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : false,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "how many times the German football team won the world cup?",
-      "keywords" : "German football team"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT ?winner WHERE { dbr:Germany_national_football_team dbp:worldCupBest ?winner }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "Champions, 1954, 1974, 1990 and 2014"
           }
         } ]
       }
@@ -942,33 +834,6 @@
       }
     } ]
   }, {
-    "id" : "33",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Where is Sungkyunkwan University?",
-      "keywords" : "Sungkyunkwan,  University"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?country WHERE { dbr:Sungkyunkwan_University dbo:city ?city ; dbo:country ?country }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "uri" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/South_Korea"
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "34",
     "answertype" : "resource",
     "aggregation" : true,
@@ -1094,16 +959,16 @@
   }, {
     "id" : "38",
     "answertype" : "resource",
-    "aggregation" : true,
-    "onlydbo" : true,
+    "aggregation" : false,
+    "onlydbo" : false,
     "hybrid" : false,
     "question" : [ {
       "language" : "en",
-      "string" : "What is the highest mountain in Saxony Germany?",
-      "keywords" : "highest,  mountain,  Saxony,  Germany"
+      "string" : "What is the highest mountain in the Bavarian Alps?",
+      "keywords" : "highest,  mountain,  Bavarian Alps"
     } ],
     "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?m WHERE { ?m dbo:mountainRange dbr:Ore_Mountains ; dbo:elevation ?height } ORDER BY DESC(?height) LIMIT 1"
+      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?m  WHERE { dbr:Bavarian_Alps dbp:highest ?m} "
     },
     "answers" : [ {
       "head" : {
@@ -1113,34 +978,7 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Fichtelberg"
-          }
-        } ]
-      }
-    } ]
-  }, {
-    "id" : "39",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "en",
-      "string" : "Who wrote Thinking In Java? ( dose not exist in dbpedia)",
-      "keywords" : "Thinking of java"
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?name WHERE { dbr:Thinking_in_Java dbo:abstract ?name }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "Thinking in Java (ISBN 978-0131872486) is a book about the Java programming language, written by Bruce Eckel and first published in 1998. Prentice Hall published the 4th edition of the work in 2006. The book represents a print version of Eckel’s “Hands-on Java” seminar."
+            "value" : "http://dbpedia.org/resource/Zugspitze"
           }
         } ]
       }
