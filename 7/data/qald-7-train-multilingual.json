@@ -1767,7 +1767,7 @@
 			"question": [{
 					"language": "en",
 					"string": "Who is the mayor of Paris?",
-					"keywords": "mayor of Paris"
+					"keywords": "mayor, Paris"
 				},
 				{
 					"language": "fa",
@@ -12235,7 +12235,7 @@
 			"question": [{
 					"language": "en",
 					"string": "To which party does the mayor of Paris belong?",
-					"keywords": "party, mayor of Paris, belong"
+					"keywords": "party, mayor, Paris, belong"
 				},
 				{
 					"language": "fa",
@@ -15692,7 +15692,7 @@
 		},
 		{
 			"id": "213",
-			"answertype": "resource",
+			"answertype": "date",
 			"aggregation": false,
 			"onlydbo": true,
 			"hybrid": false,
@@ -15748,13 +15748,13 @@
 			"answers": [{
 				"head": {
 					"vars": [
-						"uri"
+						"date"
 					]
 				},
 				"results": {
 					"bindings": [{
-						"uri": {
-							"type": "uri",
+						"date": {
+							"type": "literal",
 							"value": "1997-08-31"
 						}
 					}]
