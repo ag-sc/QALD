@@ -46,7 +46,7 @@
           "keywords": "cosmonauți"
         }
       ],
-      "query": " PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Astronaut . { ?uri dbo:nationality res:Rusia . } UNION { ?uri dbo:nationality res:Soviet_Union . } } ",
+      "query": " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Astronaut . { ?uri dbo:nationality res:Russia . } UNION { ?uri dbo:nationality res:Soviet_Union . } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mikhail_Korniyenko"
@@ -441,7 +441,7 @@
           "keywords": "Gangele, izvor, țară"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri .} ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri .} ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/India"
@@ -539,7 +539,7 @@
           "keywords": "oraș, Germania, locuitori, mai mult de 250000"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { { ?uri rdf:type dbo:City . } UNION { ?uri rdf:type dbo:Town . } ?uri dbo:country res:Germany . ?uri dbo:populationTotal ?population . FILTER ( ?population > 250 ) } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { { ?uri rdf:type dbo:City . } UNION { ?uri rdf:type dbo:Town . } ?uri dbo:country res:Germany . ?uri dbo:populationTotal ?population . FILTER ( ?population > 250 ) } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Braunschweig"
@@ -658,7 +658,7 @@
           "keywords": "John F. Kennedy, vicepreședinte"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:John_F._Kenedy dbo:vicePresident ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:vicePresident ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Lyndon_B._Johnson"
@@ -708,7 +708,7 @@
           "keywords": "Berlin, primar"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Berlin dbo:leader ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Berlin dbo:leader ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Klaus_Wowereit"
@@ -758,7 +758,7 @@
           "keywords": "Universitatea Liberă, Amsterdam, studenți"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:VU_University_Amsterdam dbo:numberOfStudents ?num . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:VU_University_Amsterdam dbo:numberOfStudents ?num . } ",
       "answers": [
         {
           "string": "24500"
@@ -808,7 +808,7 @@
           "keywords": "munte, al doilea cel mai înalt"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?elevation . } ORDER BY DESC(?elevation) OFSET 1 LIMIT 1 ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?elevation . } ORDER BY DESC(?elevation) OFSET 1 LIMIT 1 ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/K2"
@@ -858,7 +858,7 @@
           "keywords": "profesionist, skateboarder, Suedia"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:ocupation res:Skateboarding . { ?uri dbo:birthPlace res:Sweden . } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country res:Sweden . } } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation res:Skateboarding . { ?uri dbo:birthPlace res:Sweden . } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country res:Sweden . } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ali_Boulala"
@@ -911,7 +911,7 @@
           "keywords": "Alberta, recunoaște, provincie"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Alberta dbp:admitancedate ?date . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Alberta dbp:admitancedate ?date . } ",
       "answers": [
         {
           "string": "1905-09-01+02:00"
@@ -961,7 +961,7 @@
           "keywords": "lanțul munților Himalaya, întinde, țară"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Himalayas dbp:country ?uri . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Himalayas dbp:country ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/China"
@@ -1023,7 +1023,7 @@
           "keywords": "conducător de formație, cântă, trompetă"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:ocupation res:Bandleader . ?uri dbo:instrument res:Trumpet . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation res:Bandleader . ?uri dbo:instrument res:Trumpet . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Richard_Maltby,_Sr."
@@ -1277,7 +1277,7 @@
           "keywords": "țară, peșteră, mai mult de zece"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?cave rdf:type dbo:Cave . { ?cave dbo:location ?uri . } UNION { ?cave dbo:location ?loc . ?loc dbo:country ?uri . } } GROUP BY ?uri HAVING(COUNT(?cave) > 10) ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?cave rdf:type dbo:Cave . { ?cave dbo:location ?uri . } UNION { ?cave dbo:location ?loc . ?loc dbo:country ?uri . } } GROUP BY ?uri HAVING(COUNT(?cave) > 10) ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/China"
@@ -1357,7 +1357,7 @@
           "keywords": "număr total, bărbați, femei, membri, Departamentul de Pompieri din New York"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:New_York_City_Fire_Department dbp:employes ?num . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:New_York_City_Fire_Department dbp:employes ?num . } ",
       "answers": [
         {
           "string": "15870"
@@ -1407,7 +1407,7 @@
           "keywords": "produce, Orangina"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:product res:Orangina . }",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:product res:Orangina . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/A.G._Barr"
@@ -1457,7 +1457,7 @@
           "keywords": "Formula 1, pilot de curse, cele mai multe"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:FormulaOneRacer . ?uri dbo:races ?x . } ORDER BY DESC(?x) OFSET 0 LIMIT 1 ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:FormulaOneRacer . ?uri dbo:races ?x . } ORDER BY DESC(?x) OFSET 0 LIMIT 1 ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Rubens_Barrichello"
@@ -1507,7 +1507,7 @@
           "keywords": "situri de patrimoniu mondial, desemna, ultimii doi ani"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> PREFIX xsd: <htp:/w.w3.org/201/XMLSchema#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:WorldHeritageSite . { ?uri dbp:year '2013'^xsd:integer . } UNION { ?uri dbp:year '2014'^xsd:integer . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX xsd: <http://w.w3.org/201/XMLSchema#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:WorldHeritageSite . { ?uri dbp:year '2013'^xsd:integer . } UNION { ?uri dbp:year '2014'^xsd:integer . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ranthambore_Fort"
@@ -1593,7 +1593,7 @@
           "keywords": "juător, Premier League, cel mai tânăr"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:team ?x . ?x dbo:league res:Premier_League . ?uri dbo:birthDate ?y . } ORDER BY DESC(?y) OFSET 0 LIMIT 1 ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:team ?x . ?x dbo:league res:Premier_League . ?uri dbo:birthDate ?y . } ORDER BY DESC(?y) OFSET 0 LIMIT 1 ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ernie_Pinkney"
@@ -1643,7 +1643,7 @@
           "keywords": "membru, Prodigy"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:The_Prodigy dbo:bandMember ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:The_Prodigy dbo:bandMember ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Keith_Flint"
@@ -1699,7 +1699,7 @@
           "keywords": "fluviu, cel mai lung"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:River . { ?uri dbo:length ?l . } UNION { ?uri dbp:length ?l . } } ORDER BY DESC(?l) OFSET 0 LIMIT 1 ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:River . { ?uri dbo:length ?l . } UNION { ?uri dbp:length ?l . } } ORDER BY DESC(?l) OFSET 0 LIMIT 1 ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Lochbach_(Itter)"
@@ -1749,7 +1749,7 @@
           "keywords": "Breaking Bad, episoade, mai multe decât, Game of Thrones"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Breaking_Bad dbo:numberOfEpisodes ?x . res:Game_of_Thrones dbo:numberOfEpisodes ?y . FILTER (?x > ?y) } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Breaking_Bad dbo:numberOfEpisodes ?x . res:Game_of_Thrones dbo:numberOfEpisodes ?y . FILTER (?x > ?y) } ",
       "answers": [
         {
           "string": "true"
@@ -1799,7 +1799,7 @@
           "keywords": "mașină, produse, Germania"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Automobile . { ?uri dbo:asembly res:Germany . } UNION { ?uri dbp:asembly res:Germany . } UNION { { ?uri dbo:manufacturer ?x . } UNION { ?uri dbp:manufacturer ?x . } { ?x dbo:locationCountry res:Germany . } UNION { ?x dbo:location res:Germany . } } } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Automobile . { ?uri dbo:assembly res:Germany . } UNION { ?uri dbp:asembly res:Germany . } UNION { { ?uri dbo:manufacturer ?x . } UNION { ?uri dbp:manufacturer ?x . } { ?x dbo:locationCountry res:Germany . } UNION { ?x dbo:location res:Germany . } } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/BMW_New_Class"
@@ -3706,7 +3706,7 @@
           "keywords": "oameni, născut, Viena, murit, Berlin"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:birthPlace res:Viena . ?uri dbo:deathPlace res:Berlin . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:birthPlace res:Vienna . ?uri dbo:deathPlace res:Berlin . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Alfred_Halm"
@@ -3792,7 +3792,7 @@
           "keywords": "proinsulină, proteină"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> ASK WHERE { res:Proinsulin rdf:type dbo:Protein . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { res:Proinsulin rdf:type dbo:Protein . } ",
       "answers": [
         {
           "string": "true"
@@ -3842,7 +3842,7 @@
           "keywords": "înălțime, Michael Jordan"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num . } ",
       "answers": [
         {
           "string": "1.9812"
@@ -3892,7 +3892,7 @@
           "keywords": "capitală, Canada"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ottawa"
@@ -3942,7 +3942,7 @@
           "keywords": "guvernator, Wyoming"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Wyoming dbp:governor ?uri . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Wyoming dbp:governor ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Matt_Mead"
@@ -3992,7 +3992,7 @@
           "keywords": "Prințul Harry, Prințul William, aceiași, părinți"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> ASKWHERE { <htp:/dbpedia.org/resource/Prince_Wiliam,_Duke_of_Cambridge> dbo:parent ?x . <htp:/dbpedia.org/resource/Prince_Hary> dbo:parent ?x .} ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> ASKWHERE { <http://dbpedia.org/resource/Prince_Wiliam,_Duke_of_Cambridge> dbo:parent ?x . <http://dbpedia.org/resource/Prince_Hary> dbo:parent ?x .} ",
       "answers": [
         {
           "string": "true"
@@ -4042,7 +4042,7 @@
           "keywords": "tată, regina Elisabeta a II-a"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Elizabeth_I dbp:father ?uri . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Elizabeth_I dbp:father ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/George_VI"
@@ -4092,7 +4092,7 @@
           "keywords": "stat american, recunoscut, ultimul"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:admitancedate ?x . } ORDER BY DESC(?x) OFSET 0 LIMIT 1 ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:admitancedate ?x . } ORDER BY DESC(?x) OFSET 0 LIMIT 1 ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Hawaii"
@@ -4142,7 +4142,7 @@
           "keywords": "limbi, Turkmenistan"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT COUNT(DISTINCT ?x) WHERE { res:Turkmenistan dbo:language ?x . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT COUNT(DISTINCT ?x) WHERE { res:Turkmenistan dbo:language ?x . } ",
       "answers": [
         {
           "string": "2"
@@ -4192,7 +4192,7 @@
           "keywords": "stat american, guvernator, Sean Parnell"
         }
       ],
-      "query": " PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:governor res:Sean_Parnel . } ",
+      "query": " PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:governor res:Sean_Parnel . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Alaska"
@@ -4242,7 +4242,7 @@
           "keywords": "film, regizat, Francis Ford Coppola"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Francis_Ford_Copola . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Francis_Ford_Coppola . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Hammett_(film)"
@@ -4379,7 +4379,7 @@
           "keywords": "actor, rol principal, film, regiza, William Shatner"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?x dbo:director res:Wiliam_Shatner . ?x dbo:staring ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?x dbo:director res:William_Shatner . ?x dbo:starring ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Leonard_Nimoy"
@@ -4480,7 +4480,7 @@
           "keywords": "broască de copac, amfibian"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Hylidae dbo:clas res:Amphibian . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Hylidae dbo:clas res:Amphibian . } ",
       "answers": [
         {
           "string": "true"
@@ -4530,7 +4530,7 @@
           "keywords": "nume de domnișoară, Angela Merkel"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:Angela_Merkel dbp:birthName ?string . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:Angela_Merkel dbp:birthName ?string . } ",
       "answers": [
         {
           "string": "Angela Dorothea Kasner"
@@ -4580,7 +4580,7 @@
           "keywords": "politician, metodist"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Politician . ?uri dbo:religion res:Methodism . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Politician . ?uri dbo:religion res:Methodism . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/James_F._Hinkle"
@@ -5497,7 +5497,7 @@
           "keywords": "Jane Fonda, mărita, cât de des"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT COUNT(DISTINCT ?uri) WHERE { res:Jane_Fonda dbo:spouse ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT COUNT(DISTINCT ?uri) WHERE { res:Jane_Fonda dbo:spouse ?uri . } ",
       "answers": [
         {
           "string": "3"
@@ -5547,7 +5547,7 @@
           "keywords": "organizație non-profit, Australia"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:type res:Nonprofit_organization . { ?uri dbo:locationCountry res:Australia . } UNION { ?uri dbo:location ?x . ?x dbo:country res:Australia . } } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:type res:Nonprofit_organization . { ?uri dbo:locationCountry res:Australia . } UNION { ?uri dbo:location ?x . ?x dbo:country res:Australia . } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/The_Conversation_(website)"
@@ -5654,7 +5654,7 @@
           "keywords": "Lawrence al Arabiei, conflict militar"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:batle ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:battle ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Capture_of_Damascus_(1918)"
@@ -5731,7 +5731,7 @@
           "keywords": "Minecraft, dezvolta"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Minecraft dbo:developer ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Minecraft dbo:developer ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/4J_Studios"
@@ -5880,7 +5880,7 @@
           "keywords": "Maribor, locuitori"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Maribor dbo:populationTotal ?num . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Maribor dbo:populationTotal ?num . } ",
       "answers": [
         {
           "string": "114487"
@@ -5930,7 +5930,7 @@
           "keywords": "companie, München"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:location res:Munich . } UNION { ?uri dbo:headquarter res:Munich . } UNION { ?uri dbo:locationCity res:Munich . } } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:location res:Munich . } UNION { ?uri dbo:headquarter res:Munich . } UNION { ?uri dbo:locationCity res:Munich . } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Keil_(company)"
@@ -6337,7 +6337,7 @@
           "keywords": "Claudia Schiffer, înălțime"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?height WHERE { res:Claudia_Schifer dbo:height ?height . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?height WHERE { res:Claudia_Schiffer dbo:height ?height . } ",
       "answers": [
         {
           "string": "1.81"
@@ -6387,7 +6387,7 @@
           "keywords": "joc, GMT"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:publisher res:GMT_Games . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:publisher res:GMT_Games . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Fields_of_Fire_(game)"
@@ -6455,7 +6455,7 @@
           "keywords": "Intel, fondat"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Intel dbo:foundedBy ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Intel dbo:foundedBy ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Robert_Noyce"
@@ -6508,7 +6508,7 @@
           "keywords": "Amanda Palmer, soț"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Amanda_Palmer dbp:spouse ?uri . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Amanda_Palmer dbp:spouse ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Neil_Gaiman"
@@ -6558,7 +6558,7 @@
           "keywords": "rasă, câine Ciobănesc German"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbp:bred res:German_Shepherd . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbp:bred res:German_Shepherd . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Antis_(dog)"
@@ -6635,7 +6635,7 @@
           "keywords": "Weser, străbate, oraș"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Weser dbo:city ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Weser dbo:city ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Kassel"
@@ -6703,7 +6703,7 @@
           "keywords": "Rin, țară"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> PREFIX rdfs: <htp:/w.w3.org/20/01/rdf-schema#> SELECT DISTINCT ?uri WHERE { res:Rhine dbp:country ?string . ?uri rdf:type dbo:Country . ?uri rdfs:label ?string . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://w.w3.org/20/01/rdf-schema#> SELECT DISTINCT ?uri WHERE { res:Rhine dbp:country ?string . ?uri rdf:type dbo:Country . ?uri rdfs:label ?string . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Germany"
@@ -6768,7 +6768,7 @@
           "keywords": "surfer profesionist, născut, Australia"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:ocupation res:Surfing . { ?uri dbo:birthPlace res:Australia . } UNION { ?uri dbo:birthPlace ?x . ?x dbo:country res:Australia . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:occupation res:Surfing . { ?uri dbo:birthPlace res:Australia . } UNION { ?uri dbo:birthPlace ?x . ?x dbo:country res:Australia . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Midget_Farrelly"
@@ -6872,7 +6872,7 @@
           "keywords": "MI6, cartier general, oraș, Regatul Unit"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { res:Secret_Inteligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { res:Secret_Intelligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/London"
@@ -6922,7 +6922,7 @@
           "keywords": "Uzi, proiectant, realiza, armă"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Weapon . ?uri dbp:designer ?x . res:Uzi dbp:designer ?x . FILTER (?uri != res:Uzi) } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Weapon . ?uri dbp:designer ?x . res:Uzi dbp:designer ?x . FILTER (?uri != res:Uzi) } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Minebea_PM-9"
@@ -6972,7 +6972,7 @@
           "keywords": "creat, Goofy"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Gofy dbo:creator ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Goofy dbo:creator ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Walt_Disney"
@@ -7028,7 +7028,7 @@
           "keywords": "Criza rachetelor din Cuba, mai devreme, Invazia din Golful Porcilor"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Cuban_misile_crisis dbo:date ?x . res:Bay_of_Pigs_Invasion dbo:date ?y . FILTER (?x < ?y) } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Cuban_missile_crisis dbo:date ?x . res:Bay_of_Pigs_Invasion dbo:date ?y . FILTER (?x < ?y) } ",
       "answers": [
         {
           "string": "false"
@@ -7078,7 +7078,7 @@
           "keywords": "insule, Japonia"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Island . ?uri dbo:country res:Japan . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Island . ?uri dbo:country res:Japan . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Kume_Island"
@@ -7386,7 +7386,7 @@
           "keywords": "Lisabona, partid la putere"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Lisbon dbp:leaderParty ?uri . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Lisbon dbp:leaderParty ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Socialist_Party_(Portugal)"
@@ -7436,7 +7436,7 @@
           "keywords": "San Francisco, poreclă"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:San_Francisco dbp:nickname ?string . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?string WHERE { res:San_Francisco dbp:nickname ?string . } ",
       "answers": [
         {
           "string": "The City by the Bay; Fog City; San Fran; Frisco; The City that Knows How ; Baghdad by the Bay ; The Paris of the West"
@@ -7486,7 +7486,7 @@
           "keywords": "zeiță greacă, locui, Muntele Olimp"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:GrekGodeses . ?uri dbp:abode res:Mount_Olympus . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:GrekGodeses . ?uri dbp:abode res:Mount_Olympus . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Aphrodite"
@@ -7563,7 +7563,7 @@
           "keywords": "Hell Angels, înființat"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Hels_Angels dbp:founded ?date . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Hells_Angels dbp:founded ?date . } ",
       "answers": [
         {
           "string": "1948-03-17+02:00"
@@ -7613,7 +7613,7 @@
           "keywords": "astronaut, Apollo 14"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:mision res:Apolo_14 . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:mission res:Apollo_14 . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Alan_Shepard"
@@ -7669,7 +7669,7 @@
           "keywords": "Salt Lake City, fus orar"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Salt_Lake_City dbp:timezone ?uri . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { res:Salt_Lake_City dbp:timezone ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mountain_Time_Zone"
@@ -7719,7 +7719,7 @@
           "keywords": "stat american, același, fus orar, Utah"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Utah dbp:timezone ?x . ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:timezone ?x . FILTER (?uri != res:Utah) } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Utah dbp:timezone ?x . ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:timezone ?x . FILTER (?uri != res:Utah) } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Rhode_Island"
@@ -7910,7 +7910,7 @@
           "keywords": "Africa, țară, capitală"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?states rdf:type yago:AfricanCountries . ?states dbo:capital ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?states rdf:type yago:AfricanCountries . ?states dbo:capital ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Banjul"
@@ -8101,7 +8101,7 @@
           "keywords": "lac, Danemarca"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { { ?uri rdf:type dbo:Lake . ?uri dbo:country res:Denmark . } UNION { ?uri rdf:type yago:LakesOfDenmark . } } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { { ?uri rdf:type dbo:Lake . ?uri dbo:country res:Denmark . } UNION { ?uri rdf:type yago:LakesOfDenmark . } } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/The_Lakes,_Copenhagen"
@@ -8172,7 +8172,7 @@
           "keywords": "câte, misiune, programul Soyuz"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT COUNT(DISTINCT ?uri)WHERE { ?uri dbp:programe res:Soyuz_programe . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT COUNT(DISTINCT ?uri)WHERE { ?uri dbp:programe res:Soyuz_programme . } ",
       "answers": [
         {
           "string": "129"
@@ -8222,7 +8222,7 @@
           "keywords": "Socrate, influență, Aristotel"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Socrates dbo:influenced res:Aristotle . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Socrates dbo:influenced res:Aristotle . } ",
       "answers": [
         {
           "string": "true"
@@ -8272,7 +8272,7 @@
           "keywords": "film, Danemarca"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:country res:Denmark . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:country res:Denmark . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Antichrist_(film)"
@@ -8685,7 +8685,7 @@
           "keywords": "rampă de lansare, operat, NASA"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:LaunchPad . ?uri dbo:operator res:NASA . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:LaunchPad . ?uri dbo:operator res:NASA . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mid-Atlantic_Regional_Spaceport_Launch_Pad_0"
@@ -8753,7 +8753,7 @@
           "keywords": "Cat Stevens, instrument"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Cat_Stevens dbo:instrument ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Cat_Stevens dbo:instrument ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mellotron"
@@ -8842,7 +8842,7 @@
           "keywords": "navă, numit după, Benjamin Franklin"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:shipNamesake res:Benjamin_Franklin . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:shipNamesake res:Benjamin_Franklin . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/HMS_Canopus_(1798)"
@@ -8901,7 +8901,7 @@
           "keywords": "Juan Carlos I, soție, părinți"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Juan_Carlos_I_of_Spain dbo:spouse ?x . ?x dbo:parent ?uri . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Juan_Carlos_I_of_Spain dbo:spouse ?x . ?x dbo:parent ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Paul_of_Greece"
@@ -8954,7 +8954,7 @@
           "keywords": "Google, angajați"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?num WHERE { res:Gogle dbo:numberOfEmployes ?num . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?num WHERE { res:Google dbo:numberOfEmployees ?num . } ",
       "answers": [
         {
           "string": "49829"
@@ -9004,7 +9004,7 @@
           "keywords": "Tesla, premiu Nobel, fizică"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Nikola_Tesla dbo:award res:Nobel_Prize_in_Physics . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Nikola_Tesla dbo:award res:Nobel_Prize_in_Physics . } ",
       "answers": [
         {
           "string": "false"
@@ -9054,7 +9054,7 @@
           "keywords": "New Jersey, oraș, locuitori, mai mult de 100000"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . ?uri dbo:isPartOf res:New_Jersey . ?uri dbo:populationTotal ?inhabitants . FILTER (?inhabitants > 10) . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . ?uri dbo:isPartOf res:New_Jersey . ?uri dbo:populationTotal ?inhabitants . FILTER (?inhabitants > 10) . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Newark,_New_Jersey"
@@ -9113,7 +9113,7 @@
           "keywords": "Rita Wilson, soție, Tom Hanks"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson . } ",
       "answers": [
         {
           "string": "true"
@@ -9163,7 +9163,7 @@
           "keywords": "Statuia Libertății, construit"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Statue_of_Liberty dbp:beginingDate ?date . } ",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Statue_of_Liberty dbp:beginingDate ?date . } ",
       "answers": [
         {
           "string": "1886-10-28+02:00"
@@ -9213,7 +9213,7 @@
           "keywords": "Fort Knox, situat, stat american"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Fort_Knox dbp:location ?uri . ?uri dbo:country res:United_States . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Fort_Knox dbp:location ?uri . ?uri dbo:country res:United_States . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Kentucky"
@@ -9263,7 +9263,7 @@
           "keywords": "Benjamin Franklin, copil"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT COUNT(DISTINCT ?uri) WHERE { res:Benjamin_Franklin dbo:child ?uri . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT COUNT(DISTINCT ?uri) WHERE { res:Benjamin_Franklin dbo:child ?uri . } ",
       "answers": [
         {
           "string": "3"
@@ -9313,7 +9313,7 @@
           "keywords": "Michael Jackson, muri"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Michael_Jackson dbo:deathDate ?date . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Michael_Jackson dbo:deathDate ?date . } ",
       "answers": [
         {
           "string": "2009-06-25+02:00"
@@ -9363,7 +9363,7 @@
           "keywords": "jucători de șah, British earl, murit, același, loc, născut"
         }
       ],
-      "query": " PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:ChesPlayer . ?uri dbo:birthPlace ?x . ?uri dbo:deathPlace ?y . FILTER (?x = ?y) . } ",
+      "query": " PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:ChessPlayer . ?uri dbo:birthPlace ?x . ?uri dbo:deathPlace ?y . FILTER (?x = ?y) . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Svetozar_Gligori%C4%87"
@@ -9578,7 +9578,7 @@
           "keywords": "Margaret Thatcher, copil"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Margaret_Thatcher dbo:child ?uri . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Margaret_Thatcher dbo:child ?uri . } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Carol_Thatcher"
@@ -9631,7 +9631,7 @@
           "keywords": "numit, Frank The Tank"
         }
       ],
-      "query": " PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:nickname 'Frank The Tank'@en . }",
+      "query": " PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:nickname 'Frank The Tank'@en . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Frank_Young_(basketball)"
@@ -9681,7 +9681,7 @@
           "keywords": "Margaret Thatcher, chimist"
         }
       ],
-      "query": " PREFIX res: <htp:/dbpedia.org/resource/> PREFIX dbo: <htp:/dbpedia.org/ontology/> ASK WHERE { res:Margaret_Thatcher dbo:profesion res:Chemist . } ",
+      "query": " PREFIX res: <http://dbpedia.org/resource/> PREFIX dbo: <http://dbpedia.org/ontology/> ASK WHERE { res:Margaret_Thatcher dbo:profession res:Chemist . } ",
       "answers": [
         {
           "string": "true"
@@ -9731,7 +9731,7 @@
           "keywords": "Marc Chagall, evreu"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>ASK WHERE { res:Marc_Chagal dbp:ethnicity 'Jewish'@en .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>ASK WHERE { res:Marc_Chagal dbp:ethnicity 'Jewish'@en .}",
       "answers": [
         {
           "string": "true"
@@ -9781,7 +9781,7 @@
           "keywords": "muzeu, Strigătul, Munch"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:The_Scream dbo:museum ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:The_Scream dbo:museum ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/National_Gallery_(Norway)"
@@ -9831,7 +9831,7 @@
           "keywords": "carte, William Goldman, pagini, mai mult de 300"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bok . ?uri dbo:author res:Wiliam_Goldman . ?uri dbo:numberOfPages ?x . FILTER (?x > 30)}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book . ?uri dbo:author res:William_Goldman . ?uri dbo:numberOfPages ?x . FILTER (?x > 30)}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Wait_Till_Next_Year"
@@ -9908,7 +9908,7 @@
           "keywords": "carte, Kerouac, publica, Viking Press"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bok . ?uri dbo:publisher res:Viking_Pres . ?uri dbo:author res:Jack_Kerouac .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book . ?uri dbo:publisher res:Viking_Pres . ?uri dbo:author res:Jack_Kerouac .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/On_the_Road"
@@ -9967,7 +9967,7 @@
           "keywords": "invenție americană"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:AmericanInventions .}",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:AmericanInventions .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Qore_(programming_language)"
@@ -10419,7 +10419,7 @@
           "keywords": "muntele Everest, altitudine"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Mount_Everest dbo:elevation ?num.}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Mount_Everest dbo:elevation ?num.}",
       "answers": [
         {
           "string": "8848.0"
@@ -10469,7 +10469,7 @@
           "keywords": "bandă desenată, Captain America, creat"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Captain_America dbo:creator ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Captain_America dbo:creator ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jack_Kirby"
@@ -10522,7 +10522,7 @@
           "keywords": "Australia, captital, oameni, locui"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Australia dbo:capital ?x . ?x dbo:populationTotal ?num .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Australia dbo:capital ?x . ?x dbo:populationTotal ?num .}",
       "answers": [
         {
           "string": "381488"
@@ -10572,7 +10572,7 @@
           "keywords": "Australia, cel mai mare oraș"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Australia dbo:largestCity ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Australia dbo:largestCity ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Sydney"
@@ -10622,7 +10622,7 @@
           "keywords": "Harold și Maude, compune, coloana sonoră"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Harold_and_Maude dbo:musicComposer ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Harold_and_Maude dbo:musicComposer ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Cat_Stevens"
@@ -10672,7 +10672,7 @@
           "keywords": "film, rol principal, regizor, Clint Eastwood"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Clint_Eastwod . ?uri dbo:staring res:Clint_Eastwod .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Clint_Eastwood . ?uri dbo:starring res:Clint_Eastwood .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Million_Dollar_Baby"
@@ -10782,7 +10782,7 @@
           "keywords": "regina Olandei, Juliana, inmormântată, oraș"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { res:Juliana_of_the_Netherlands dbo:restingPlace ?uri. ?uri rdf:type dbo:Setlement .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { res:Juliana_of_the_Netherlands dbo:restingPlace ?uri. ?uri rdf:type dbo:Settlement .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Delft"
@@ -10832,7 +10832,7 @@
           "keywords": "cel mai mare oraș, Egipt, capitală"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>ASK WHERE { res:Egypt dbo:largestCity ?large . res:Egypt dbo:capital ?capital . FILTER (?large = ?capital)}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>ASK WHERE { res:Egypt dbo:largestCity ?large . res:Egypt dbo:capital ?capital . FILTER (?large = ?capital)}",
       "answers": [
         {
           "string": "true"
@@ -10882,7 +10882,7 @@
           "keywords": "prim ministru, Spania, reședință"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Prime_Minister_of_Spain dbp:residence ?uri .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Prime_Minister_of_Spain dbp:residence ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Palace_of_Moncloa"
@@ -10932,7 +10932,7 @@
           "keywords": "stat american, abreviere, MN"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:postalabreviation 'MN'@en .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:postalabreviation 'MN'@en .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Minnesota"
@@ -10982,7 +10982,7 @@
           "keywords": "melodie, Bruce Springsteen, apărut, între 1980 și 1990"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX xsd: <htp:/w.w3.org/201/XMLSchema#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Song . ?uri dbo:artist res:Bruce_Springsten . ?uri dbo:releaseDate ?date . FILTER (?date >= '1980-01-01'^xsd:date & ?date <= '190-12-31'^xsd:date)}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX xsd: <http://w.w3.org/201/XMLSchema#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Song . ?uri dbo:artist res:Bruce_Springsteen . ?uri dbo:releaseDate ?date . FILTER (?date >= '1980-01-01'^xsd:date & ?date <= '190-12-31'^xsd:date)}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/No_Surrender_(song)"
@@ -11047,7 +11047,7 @@
           "keywords": "film, regiza, Kurosawa"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Akira_Kurosawa .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Akira_Kurosawa .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Seven_Samurai"
@@ -11190,7 +11190,7 @@
           "keywords": "Pilsner Urquell, berărie, anul înființării"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Pilsner_Urquel dbp:brewery ?uri . ?uri dbp:foundation ?num .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?num WHERE { res:Pilsner_Urquel dbp:brewery ?uri . ?uri dbp:foundation ?num .}",
       "answers": [
         {
           "string": "1842"
@@ -11240,7 +11240,7 @@
           "keywords": "Polonia, imn national, scrie, versuri"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Poland dbo:anthem ?x . ?x dbp:author ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Poland dbo:anthem ?x . ?x dbp:author ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/J%C3%B3zef_Wybicki"
@@ -11290,7 +11290,7 @@
           "keywords": "Ramones, laturi B"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { ?x dbo:musicalArtist res:Ramones . ?x dbo:bSide ?string . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { ?x dbo:musicalArtist res:Ramones . ?x dbo:bSide ?string . }",
       "answers": [
         {
           "string": "\"Daytime Dilemma (Dangers of Love)\""
@@ -11364,7 +11364,7 @@
           "keywords": "Furtuna pe Marea Galileii, picta"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:The_Storm_on_the_Sea_of_Galile dbo:author ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:The_Storm_on_the_Sea_of_Galile dbo:author ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Rembrandt"
@@ -11414,7 +11414,7 @@
           "keywords": "Miffy, creator, țară"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Mify dbo:creator ?x . ?x dbo:nationality ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Miffy dbo:creator ?x . ?x dbo:nationality ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Netherlands"
@@ -11464,7 +11464,7 @@
           "keywords": "Elvis, prim, album, casă discografică"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?x rdf:type dbo:Album . ?x dbo:artist res:Elvis_Presley . ?x dbo:releaseDate ?y . ?x dbo:recordLabel ?uri .}ORDER BY ASC(?y) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?x rdf:type dbo:Album . ?x dbo:artist res:Elvis_Presley . ?x dbo:releaseDate ?y . ?x dbo:recordLabel ?uri .}ORDER BY ASC(?y) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pickwick_Records"
@@ -11514,7 +11514,7 @@
           "keywords": "serial de televiziune, Charmed, actor, zi de naștere"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Charmed dbo:staring ?actor . ?actor dbo:birthDate ?date .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Charmed dbo:starring ?actor . ?actor dbo:birthDate ?date .}",
       "answers": [
         {
           "string": "1985-11-30+02:00"
@@ -11597,7 +11597,7 @@
           "keywords": "IBM, angajați"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?number WHERE { res:IBM dbo:numberOfEmployes ?number .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?number WHERE { res:IBM dbo:numberOfEmployees ?number .}",
       "answers": [
         {
           "string": "431212"
@@ -11647,7 +11647,7 @@
           "keywords": "stat, granite, Illinois"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/>SELECT DISTINCT ?uri WHERE { res:Ilinois dbp:borderingstates ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/>SELECT DISTINCT ?uri WHERE { res:Illinois dbp:borderingstates ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Wisconsin"
@@ -11709,7 +11709,7 @@
           "keywords": "lacul Limerick, țară"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Limerick_Lake dbo:country ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Limerick_Lake dbo:country ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Canada"
@@ -11759,7 +11759,7 @@
           "keywords": "serial de televiziune, creat, John Cleese"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:TelevisionShow . ?uri dbo:creator res:John_Clese .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:TelevisionShow . ?uri dbo:creator res:John_Cleese .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Python_Night_%E2%80%93_30_Years_of_Monty_Python"
@@ -11827,7 +11827,7 @@
           "keywords": "munte, cel mai înalt după, Annapurna"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:Anapurna dbo:elevation ?elevation . ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?otherelevation . FILTER (?otherelevation < ?elevation) .} ORDER BY DESC(?otherelevation) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:Annapurna dbo:elevation ?elevation . ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?otherelevation . FILTER (?otherelevation < ?elevation) .} ORDER BY DESC(?otherelevation) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Gasherbrum_I"
@@ -11877,7 +11877,7 @@
           "keywords": "film, regizat, Garry Marshall, rol principal, Julia Roberts"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:staring res:Julia_Roberts . ?uri dbo:director res:Gary_Marshal .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:starring res:Julia_Roberts . ?uri dbo:director res:Garry_Marshall .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pretty_Woman"
@@ -11933,7 +11933,7 @@
           "keywords": "pod, același tip, Podul din Manhattan"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Bridge . ?uri dbp:design ?design . res:Manhatan_Bridge dbp:design ?mdesign . FILTER (?design = ?mdesign & ?uri != res:Manhatan_Bridge) . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Bridge . ?uri dbp:design ?design . res:Manhattan_Bridge dbp:design ?mdesign . FILTER (?design = ?mdesign & ?uri != res:Manhattan_Bridge) . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Angus_L._Macdonald_Bridge"
@@ -12403,7 +12403,7 @@
           "keywords": "președinte american, Jackson, război"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASK WHERE { res:Andrew_Jackson dbo:batle ?batle . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASK WHERE { res:Andrew_Jackson dbo:battle ?batle . }",
       "answers": [
         {
           "string": "true"
@@ -12453,7 +12453,7 @@
           "keywords": "țări comuniste"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . { ?uri dbo:governmentType res:Comunism . } UNION { ?uri dbo:governmentType res:Comunist_state . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . { ?uri dbo:governmentType res:Communism . } UNION { ?uri dbo:governmentType res:Communist_state . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mongolian_People's_Republic"
@@ -12518,7 +12518,7 @@
           "keywords": "Douglas Hofstadter, premii"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Douglas_Hofstadter dbo:award ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Douglas_Hofstadter dbo:award ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/National_Book_Award"
@@ -12574,7 +12574,7 @@
           "keywords": "Robert Kennedy, fiică, căsătorită"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Robert_F._Kenedy dbo:child ?child . ?child dbo:spouse ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Robert_F._Kennedy dbo:child ?child . ?child dbo:spouse ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Andrew_Cuomo"
@@ -12624,7 +12624,7 @@
           "keywords": "stat, Statele Unite ale Americii, densitatea populației, cea mai mare"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:densityrank ?rank .} ORDER BY ASC(?rank) OFSET 0 LIMIT 1",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . ?uri dbp:densityrank ?rank .} ORDER BY ASC(?rank) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Wisconsin"
@@ -12674,7 +12674,7 @@
           "keywords": "Cehia, monedă națională"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Czech_Republic dbo:curency ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Czech_Republic dbo:currency ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Czech_koruna"
@@ -12724,7 +12724,7 @@
           "keywords": "țară, introdus, euro"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . { ?uri dbo:curency res:Euro . } UNION { ?uri dbp:curencyCode 'EUR'@en . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . { ?uri dbo:currency res:Euro . } UNION { ?uri dbp:curencyCode 'EUR'@en . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/United_Nations_Interim_Administration_Mission_in_Kosovo"
@@ -12891,7 +12891,7 @@
           "keywords": "Berlin, prefix telefonic"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { res:Berlin dbo:areaCode ?string .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { res:Berlin dbo:areaCode ?string .}",
       "answers": [
         {
           "string": "030"
@@ -12941,7 +12941,7 @@
           "keywords": "țară, limbă oficială, mai mult de două"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?uri dbo:oficialLanguage ?language .} GROUP BY ?uriHAVING (COUNT(?language) > 2)",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country . ?uri dbo:officialLanguage ?language .} GROUP BY ?uriHAVING (COUNT(?language) > 2)",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Republic_of_Molossia"
@@ -13015,7 +13015,7 @@
           "keywords": "Rolls-Royce, proprietar"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Rols-Royce_Motors dbo:owner ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Rolls-Royce_Motors dbo:owner ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Volkswagen_Group"
@@ -13071,7 +13071,7 @@
           "keywords": "fluviul Enisei, traversează, țară"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Yenisei dbo:country ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Yenisei dbo:country ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mongolia"
@@ -13124,7 +13124,7 @@
           "keywords": "Letonia, adera, Uniunea Europeană"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/>SELECT DISTINCT ?date WHERE { res:Latvia dbp:acesioneudate ?date . }",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/>SELECT DISTINCT ?date WHERE { res:Latvia dbp:acesioneudate ?date . }",
       "answers": [
         {
           "string": "2004-05-01+02:00"
@@ -13174,7 +13174,7 @@
           "keywords": "monarh, căsătorit, german"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Monarch . ?uri dbo:spouse ?spouse . { ?spouse dbo:birthPlace res:Germany. } UNION { ?spouse dbo:birthPlace ?p . ?p dbo:country res:Germany. }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Monarch . ?uri dbo:spouse ?spouse . { ?spouse dbo:birthPlace res:Germany. } UNION { ?spouse dbo:birthPlace ?p . ?p dbo:country res:Germany. }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Boles%C5%82aw_III_Wrymouth"
@@ -13224,7 +13224,7 @@
           "keywords": "bătălia de la Gettysburg"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Batle_of_Getysburg dbo:date ?date .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Battle_of_Gettysburg dbo:date ?date .}",
       "answers": [
         {
           "string": "1863-07-03+02:00"
@@ -13274,7 +13274,7 @@
           "keywords": "râu, traversează, podul din Brooklyn"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Broklyn_Bridge dbo:croses ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Brooklyn_Bridge dbo:crosses ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/East_River"
@@ -13324,7 +13324,7 @@
           "keywords": "Australia, cel mai înalt munte"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:locatedInArea res:Australia . ?uri dbo:elevation ?elevation .} ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:locatedInArea res:Australia . ?uri dbo:elevation ?elevation .} ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mawson_Peak"
@@ -13374,7 +13374,7 @@
           "keywords": "Spania, club de fotbal"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SocerClub . { ?uri dbo:ground res:Spain . } UNION { ?uri dbp:ground ?ground . FILTER (regex(?ground,'Spain') }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SoccerClub . { ?uri dbo:ground res:Spain . } UNION { ?uri dbp:ground ?ground . FILTER (regex(?ground,'Spain') }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/CF_Lorca_Deportiva"
@@ -15863,7 +15863,7 @@
           "keywords": "Suriname, limba oficială"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Suriname dbo:oficialLanguage ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Suriname dbo:officialLanguage ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Dutch_language"
@@ -15913,7 +15913,7 @@
           "keywords": "Tel Aviv, primar"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Tel_Aviv dbo:leaderName ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Tel_Aviv dbo:leaderName ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ron_Huldai"
@@ -15963,7 +15963,7 @@
           "keywords": "podul din Brooklyn, proiecta"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Broklyn_Bridge dbo:architect ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Brooklyn_Bridge dbo:architect ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/John_A._Roebling"
@@ -16013,7 +16013,7 @@
           "keywords": "agenții de telecomunicații, localizat, Belgia"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { \t ?uri rdf:type dbo:Organisation . { ?uri dbo:industry res:Telecomunication . } UNION { ?uri dbp:industry ?industry . FILTER (regex(?industry,'Telecomunications') . } { ?uri dbo:location res:Belgium. } UNION { ?uri dbp:locationCountry 'Belgium'@en . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { \t ?uri rdf:type dbo:Organisation . { ?uri dbo:industry res:Telecommunication . } UNION { ?uri dbp:industry ?industry . FILTER (regex(?industry,'Telecomunications') . } { ?uri dbo:location res:Belgium. } UNION { ?uri dbp:locationCountry 'Belgium'@en . }",
       "answers": [
         {
           "string": "9"
@@ -16063,7 +16063,7 @@
           "keywords": "Frak Herbert, în viață"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASK WHERE { OPTIONAL { res:Frank_Herbert dbo:deathDate ?date . } FILTER (!BOUND(?date)}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASK WHERE { OPTIONAL { res:Frank_Herbert dbo:deathDate ?date . } FILTER (!BOUND(?date)}",
       "answers": [
         {
           "string": "false"
@@ -16113,7 +16113,7 @@
           "keywords": "munții Urali, cel mai înalt punct"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Ural_Mountains dbp:highest ?uri . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Ural_Mountains dbp:highest ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mount_Narodnaya"
@@ -16163,7 +16163,7 @@
           "keywords": "Forbes, editor"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Forbes dbo:editor ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uri WHERE { res:Forbes dbo:editor ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Steve_Forbes"
@@ -16213,7 +16213,7 @@
           "keywords": "companii, industria publicitară"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:industry res:Advertising } UNION { ?uri dbo:industry ?industry . FILTER regex(?industry,'advertising','i') . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:industry res:Advertising } UNION { ?uri dbo:industry ?industry . FILTER regex(?industry,'advertising','i') . }",
       "answers": [
         {
           "string": "310"
@@ -16263,7 +16263,7 @@
           "keywords": "Europa, țări"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type yago:EuropeanCountries .}",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type yago:EuropeanCountries .}",
       "answers": [
         {
           "string": "50"
@@ -16313,7 +16313,7 @@
           "keywords": "Bruce Carver, muri"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Bruce_Carver dbo:deathCause ?uri . }",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Bruce_Carver dbo:deathCause ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Cancer"
@@ -16363,7 +16363,7 @@
           "keywords": "biblioteci, înființat, înainte de 1400"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Library . ?uri dbp:established ?year . FILTER (?year < 140)}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Library . ?uri dbp:established ?year . FILTER (?year < 140)}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jagiellonian_Library"
@@ -16434,7 +16434,7 @@
           "keywords": "președinte, născut, 1945"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:President . ?uri dbo:birthDate ?date . FILTER regex(?date, '^1945') .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:President . ?uri dbo:birthDate ?date . FILTER regex(?date, '^1945') .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Faruk_S%C3%BCren"
@@ -16553,7 +16553,7 @@
           "keywords": "Germania, cancelar federal"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Person . { ?uri dbo:ofice 'Chancelor of Germany' . } UNION { ?uri dbp:ofice res:Chancelor_of_Germany . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Person . { ?uri dbo:office 'Chancelor of Germany' . } UNION { ?uri dbp:ofice res:Chancellor_of_Germany . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Helmut_Kohl"
@@ -16636,7 +16636,7 @@
           "keywords": "președinte American, Lincoln, soție"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Abraham_Lincoln dbo:spouse ?uri.}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Abraham_Lincoln dbo:spouse ?uri.}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mary_Todd_Lincoln"
@@ -16686,7 +16686,7 @@
           "keywords": "joc video, World of Warcraft, dezvolta"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:World_of_Warcraft dbo:developer ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:World_of_Warcraft dbo:developer ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Blizzard_Entertainment"
@@ -16736,7 +16736,7 @@
           "keywords": "Tom Cruise, website oficial"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { res:Tom_Cruise dbp:website ?string .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?string WHERE { res:Tom_Cruise dbp:website ?string .}",
       "answers": [
         {
           "string": "http://www.tomcruise.com/"
@@ -16786,7 +16786,7 @@
           "keywords": "HBO, serial de televiziune, Sopranos, primul sezon, episod"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:series res:The_Sopranos . ?uri dbo:seasonNumber 1 .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:series res:The_Sopranos . ?uri dbo:seasonNumber 1 .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/College_(The_Sopranos)"
@@ -16872,7 +16872,7 @@
           "keywords": "film, produs, cel mai mult"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?film rdf:type dbo:Film . ?film dbo:producer ?uri .} ORDER BY DESC(COUNT(?film) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?film rdf:type dbo:Film . ?film dbo:producer ?uri .} ORDER BY DESC(COUNT(?film) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Hal_Roach"
@@ -16922,7 +16922,7 @@
           "keywords": "persoană, prenume, Jimmy"
         }
       ],
-      "query": "PREFIX foaf: <htp:/xmlns.com/foaf/0.1/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type foaf:Person . ?uri foaf:givenName 'Jimy'@en .}",
+      "query": "PREFIX foaf: <http://xmlns.com/foaf/0.1/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type foaf:Person . ?uri foaf:givenName 'Jimy'@en .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jimmy_Constable"
@@ -20998,7 +20998,7 @@
           "keywords": "oraș, John F. Kennedy, muri"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:John_F._Kenedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:John_F._Kennedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Dallas"
@@ -21048,7 +21048,7 @@
           "keywords": "joc video, Battle Chess"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX rdfs: <htp:/w.w3.org/20/01/rdf-schema#>ASK WHERE { ?uri rdf:type dbo:VideoGame . ?uri rdfs:label 'Batle Ches'@en .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://w.w3.org/20/01/rdf-schema#>ASK WHERE { ?uri rdf:type dbo:VideoGame . ?uri rdfs:label 'Batle Ches'@en .}",
       "answers": [
         {
           "string": "true"
@@ -21098,7 +21098,7 @@
           "keywords": "munte, mai mare, Nanga Parbat"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:Nanga_Parbat dbo:elevation ?elevation . ?uri rdf:type dbo:Mountain . { ?uri dbo:elevation ?otherelevation . } UNION { ?uri dbp:elevationM ?otherelevation . } FILTER (?otherelevation > ?elevation) .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:Nanga_Parbat dbo:elevation ?elevation . ?uri rdf:type dbo:Mountain . { ?uri dbo:elevation ?otherelevation . } UNION { ?uri dbp:elevationM ?otherelevation . } FILTER (?otherelevation > ?elevation) .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mount_Everest"
@@ -21172,7 +21172,7 @@
           "keywords": "Wikipedia, creat"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Wikipedia dbo:author ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Wikipedia dbo:author ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jimmy_Wales"
@@ -21225,7 +21225,7 @@
           "keywords": "actor, rol principal, Last Action Hero"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Last_Action_Hero dbo:staring ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Last_Action_Hero dbo:starring ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Robert_Prosky"
@@ -21299,7 +21299,7 @@
           "keywords": "organizație, fondată, California, dezvolta, software"
         }
       ],
-      "query": "PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Software . ?company rdf:type dbo:Company . ?uri dbo:developer ?company . ?company dbo:foundationPlace res:California . }",
+      "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Software . ?company rdf:type dbo:Company . ?uri dbo:developer ?company . ?company dbo:foundationPlace res:California . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Apple_Advanced_Typography"
@@ -22396,7 +22396,7 @@
           "keywords": "companii, industrie aerospațială, medicină"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . ?uri dbo:industry res:Aerospace . ?uri dbo:industry res:Medicine .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . ?uri dbo:industry res:Aerospace . ?uri dbo:industry res:Medicine .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Radiall"
@@ -22452,7 +22452,7 @@
           "keywords": "Christian Bale, rol principal, Velevet Goldmine"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASKWHERE { res:Velvet_Goldmine dbo:staring res:Christian_Bale .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASKWHERE { res:Velvet_Goldmine dbo:starring res:Christian_Bale .}",
       "answers": [
         {
           "string": "true"
@@ -22502,7 +22502,7 @@
           "keywords": "website, companie, angajat, mai mult de 500000"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX xsd: <htp:/w.w3.org/201/XMLSchema#>SELECT DISTINCT ?stringWHERE { ?c rdf:type dbo:Company . { ?c dbo:numberOfEmployes ?employes . } UNION { ?c dbp:numEmployes ?employes . } FILTER( xsd:integer(?employes) > 50 ) . ?c dbp:homepage ?string .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX xsd: <http://w.w3.org/201/XMLSchema#>SELECT DISTINCT ?stringWHERE { ?c rdf:type dbo:Company . { ?c dbo:numberOfEmployees ?employes . } UNION { ?c dbp:numEmployes ?employes . } FILTER( xsd:integer(?employes) > 50 ) . ?c dbp:homepage ?string .}",
       "answers": [
         {
           "string": "http://volkswagenag.com"
@@ -22663,7 +22663,7 @@
           "keywords": "actor, născut, Germania"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Actor . { ?uri dbo:birthPlace res:Germany . } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country res:Germany . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Actor . { ?uri dbo:birthPlace res:Germany . } UNION { ?uri dbo:birthPlace ?place . ?place dbo:country res:Germany . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Kelly_Trump"
@@ -22809,7 +22809,7 @@
           "keywords": "peșteră, intrare, mai mult de 3"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Cave . ?uri dbp:entranceCount ?entrance . FILTER (?entrance > 3) .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Cave . ?uri dbp:entranceCount ?entrance . FILTER (?entrance > 3) .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Wookey_Hole_Caves"
@@ -22976,7 +22976,7 @@
           "keywords": "Lincoln, președinte, soție, numită, Mary"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdfs: <htp:/w.w3.org/20/01/rdf-schema#>ASK WHERE { res:Abraham_Lincoln dbo:spouse ?spouse . ?spouse rdfs:label ?name . FILTER(regex(?name,'Mary') }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdfs: <http://w.w3.org/20/01/rdf-schema#>ASK WHERE { res:Abraham_Lincoln dbo:spouse ?spouse . ?spouse rdfs:label ?name . FILTER(regex(?name,'Mary') }",
       "answers": [
         {
           "string": "true"
@@ -23026,7 +23026,7 @@
           "keywords": "film, produs, Hal Roach"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:producer res:Hal_Roach .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:producer res:Hal_Roach .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Bashful_(film)"
@@ -24606,7 +24606,7 @@
           "keywords": "joc video, publicat, Mean Hamster Software"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:VideoGame . ?uri dbo:publisher res:Mean_Hamster_Software . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:VideoGame . ?uri dbo:publisher res:Mean_Hamster_Software . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Riven"
@@ -24659,7 +24659,7 @@
           "keywords": "limbă, vorbită, Estonia"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:spokenIn res:Estonia . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:spokenIn res:Estonia . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Estonian_language"
@@ -24733,7 +24733,7 @@
           "keywords": "avea, Aldi"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?numberWHERE { res:Aldi dbo:numberOfLocations ?number .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?numberWHERE { res:Aldi dbo:numberOfLocations ?number .}",
       "answers": [
         {
           "string": "9235"
@@ -24783,7 +24783,7 @@
           "keywords": "capital, Europa, oraș gazdă, Jocurile Olimpice"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:CapitalsInEurope . ?uri rdf:type yago:HostCitiesOfTheSumerOlympicGames .}",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type yago:CapitalsInEurope . ?uri rdf:type yago:HostCitiesOfTheSumerOlympicGames .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Amsterdam"
@@ -24857,7 +24857,7 @@
           "keywords": "Statele Unite, primul președinte"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:ofice 'President of the United States' . ?uri dbo:orderInOfice '16th' .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:office 'President of the United States' . ?uri dbo:orderInOffice '16th' .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Abraham_Lincoln"
@@ -24907,7 +24907,7 @@
           "keywords": "Hal Roach, produs, film"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri dbo:producer res:Hal_Roach .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri dbo:producer res:Hal_Roach .}",
       "answers": [
         {
           "string": "513"
@@ -24957,7 +24957,7 @@
           "keywords": "album musical, melodie, Last Christmas"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdfs: <htp:/w.w3.org/20/01/rdf-schema#>SELECT DISTINCT ?uri WHERE { ?single dbo:album ?uri . ?single rdfs:label 'Last Christmas'@en .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdfs: <http://w.w3.org/20/01/rdf-schema#>SELECT DISTINCT ?uri WHERE { ?single dbo:album ?uri . ?single rdfs:label 'Last Christmas'@en .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Disco_Defenders"
@@ -25025,7 +25025,7 @@
           "keywords": "carte, scrisă, Danielle Steele"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bok . ?uri dbo:author res:Daniele_Stel .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book . ?uri dbo:author res:Danielle_Steel .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Accident_(novel)"
@@ -25213,7 +25213,7 @@
           "keywords": "aeroport, aflat, California, SUA"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Airport . { ?uri dbo:location res:California . } UNION { ?uri dbo:city res:California . } UNION { ?uri dbo:city ?city . ?city dbo:isPartOf res:California . } UNION { ?uri dbo:operator res:California . } }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Airport . { ?uri dbo:location res:California . } UNION { ?uri dbo:city res:California . } UNION { ?uri dbo:city ?city . ?city dbo:isPartOf res:California . } UNION { ?uri dbo:operator res:California . } }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Apple_Valley_Airport_(California)"
@@ -25875,7 +25875,7 @@
           "keywords": "stat, Germania, guverna, Partidul Social Democrat"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:StatesOfGermany . { ?uri dbo:leaderParty res:Social_Democratic_Party_of_Germany . } UNION { ?uri dbp:rulingParty 'SPD'@en . } }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:StatesOfGermany . { ?uri dbo:leaderParty res:Social_Democratic_Party_of_Germany . } UNION { ?uri dbp:rulingParty 'SPD'@en . } }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mecklenburg-Vorpommern"
@@ -25961,7 +25961,7 @@
           "keywords": "casă de înregistrări, canadian, Grunge"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel . ?uri dbo:genre res:Grunge . ?uri dbo:country res:Canada .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel . ?uri dbo:genre res:Grunge . ?uri dbo:country res:Canada .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Murderecords"
@@ -26011,7 +26011,7 @@
           "keywords": "șară, limbă oficială, cele mai multe"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . ?uri dbp:oficialLanguages ?language .} ORDER BY DESC(COUNT(?language) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Country . ?uri dbp:oficialLanguages ?language .} ORDER BY DESC(COUNT(?language) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Vojvodina"
@@ -26061,7 +26061,7 @@
           "keywords": "GIMP, limbaj de programare"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:GIMP dbo:programingLanguage ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:GIMP dbo:programmingLanguage ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/C_(programming_language)"
@@ -26114,7 +26114,7 @@
           "keywords": "produce, film, rol principal, Natalie Portman"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?film rdf:type dbo:Film . ?film dbo:staring res:Natalie_Portman . ?film dbo:producer ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?film rdf:type dbo:Film . ?film dbo:starring res:Natalie_Portman . ?film dbo:producer ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Natalie_Portman"
@@ -26254,7 +26254,7 @@
           "keywords": "film, Tom Cruise"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film. ?uri dbo:staring res:Tom_Cruise .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film. ?uri dbo:starring res:Tom_Cruise .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Vanilla_Sky"
@@ -26400,7 +26400,7 @@
           "keywords": "film, joacă, Julia Roberts, Richard Gere"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:staring res:Julia_Roberts . ?uri dbo:staring res:Richard_Gere.}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:starring res:Julia_Roberts . ?uri dbo:starring res:Richard_Gere..}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pretty_Woman"
@@ -26453,7 +26453,7 @@
           "keywords": "feminine, prenume"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:GivenName . ?uri dbo:gender res:Female .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:GivenName . ?uri dbo:gender res:Female .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Christa_(given_name)"
@@ -26899,7 +26899,7 @@
           "keywords": "scrie, carte, Stâlpii Pământului"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:The_Pilars_of_the_Earth dbo:author ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:The_Pillars_of_the_Earth dbo:author ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ken_Follett"
@@ -26949,7 +26949,7 @@
           "keywords": "film, rol principal, Leonardo DiCaprio"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type dbo:Film . ?uri dbo:staring res:Leonardo_DiCaprio . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type dbo:Film . ?uri dbo:starring res:Leonardo_DiCaprio . }",
       "answers": [
         {
           "string": "24"
@@ -26999,7 +26999,7 @@
           "keywords": "Premier League, club de fotbal"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SocerClub . ?uri dbo:league res:Premier_League . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SoccerClub . ?uri dbo:league res:Premier_League . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Aston_Villa_F.C."
@@ -27115,7 +27115,7 @@
           "keywords": "stat american, aflat, muntele McKinley"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . res:Mount_McKinley dbo:locatedInArea ?uri . }",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:StatesOfTheUnitedStates . res:Mount_McKinley dbo:locatedInArea ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Alaska"
@@ -27165,7 +27165,7 @@
           "keywords": "Capcom, fondat"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Capcom dbo:foundingDate ?date .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?date WHERE { res:Capcom dbo:foundingDate ?date .}",
       "answers": [
         {
           "string": "1983-06-11+02:00"
@@ -27215,7 +27215,7 @@
           "keywords": "organizație, fondat, 1930"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Organisation . { ?uri dbo:formationYear ?date . } UNION { ?uri dbo:foundingYear ?date. } FILTER regex(?date,'^1930') . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Organisation . { ?uri dbo:formationYear ?date . } UNION { ?uri dbo:foundingYear ?date. } FILTER regex(?date,'^1930') . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Department_of_Markets_(1930%E2%80%931932)"
@@ -28180,7 +28180,7 @@
           "keywords": "munte, cel mai înalt"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?elevation .} ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain . ?uri dbo:elevation ?elevation .} ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mount_Everest"
@@ -28230,7 +28230,7 @@
           "keywords": "Natalie Portman, născută, Statele Unite"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASK WHERE { { res:Natalie_Portman dbo:birthPlace res:United_States . } UNION { res:Natalie_Portman dbo:birthPlace ?city . ?city dbo:country res:United_States . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASK WHERE { { res:Natalie_Portman dbo:birthPlace res:United_States . } UNION { res:Natalie_Portman dbo:birthPlace ?city . ?city dbo:country res:United_States . }",
       "answers": [
         {
           "string": "false"
@@ -28568,7 +28568,7 @@
           "keywords": "locuitori, cel mai mare oraș, Canada"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?numWHERE { res:Canada dbo:largestCity ?city . ?city dbo:populationTotal ?num .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?numWHERE { res:Canada dbo:largestCity ?city . ?city dbo:populationTotal ?num .}",
       "answers": [
         {
           "string": "2615060"
@@ -28666,7 +28666,7 @@
           "keywords": "primul, escaladat, muntele Everest"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Mount_Everest dbo:firstAscentPerson ?uri . }",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:Mount_Everest dbo:firstAscentPerson ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Krzysztof_Wielicki"
@@ -28725,7 +28725,7 @@
           "keywords": "limbaje de programare, există"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:ProgramingLanguage .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:ProgrammingLanguage .}",
       "answers": [
         {
           "string": "1202"
@@ -28775,7 +28775,7 @@
           "keywords": "Universitatea Oxford, culoare oficială"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?stringWHERE { res:University_of_Oxford dbo:oficialScholColour ?string . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?stringWHERE { res:University_of_Oxford dbo:officialSchoolColour ?string . }",
       "answers": [
         {
           "string": "Oxford Blue"
@@ -28873,7 +28873,7 @@
           "keywords": "curent artistic, pictor, Trei dansatoare"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:The_Thre_Dancers dbo:author ?person . ?person dbo:movement ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?uriWHERE { res:The_Three_Dancers dbo:author ?person . ?person dbo:movement ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Cubism"
@@ -28923,7 +28923,7 @@
           "keywords": "animal, dispărut"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Animal . ?uri dbo:conservationStatus 'EX' .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Animal . ?uri dbo:conservationStatus 'EX' .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pseudophilautus_stellatus"
@@ -31766,7 +31766,7 @@
           "keywords": "locul morții, Abraham Lincoln, website"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/>ASKWHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbp:website ?w . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/>ASKWHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbp:website ?w . }",
       "answers": [
         {
           "string": "true"
@@ -31816,7 +31816,7 @@
           "keywords": "lacul Placid, adânc"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?nWHERE { <htp:/dbpedia.org/resource/Lake_Placid_(Texas)> dbo:depth ?n . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?nWHERE { <http://dbpedia.org/resource/Lake_Placid_(Texas)> dbo:depth ?n . }",
       "answers": [
         {
           "string": "12.192"
@@ -31866,7 +31866,7 @@
           "keywords": "Bruce Lee, nepoți"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Bruce_Le dbo:child ?child . ?child dbo:child ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Bruce_Le dbo:child ?child . ?child dbo:child ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Shannon_Lee"
@@ -31916,7 +31916,7 @@
           "keywords": "jucător de Darts, cel mai tânăr"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:DartsPlayer . ?uri dbo:birthDate ?date .}ORDER BY DESC(?date)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:DartsPlayer . ?uri dbo:birthDate ?date .}ORDER BY DESC(?date)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Max_Hopp"
@@ -31966,7 +31966,7 @@
           "keywords": "locul nașterii, Bach"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Johan_Sebastian_Bach dbo:birthPlace ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:Johann_Sebastian_Bach dbo:birthPlace ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Eisenach"
@@ -32016,7 +32016,7 @@
           "keywords": "țări, plăti, franc CFA vest-african"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:curency res:West_African_CFA_franc . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:currency res:West_African_CFA_franc . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/French_Upper_Volta"
@@ -32105,7 +32105,7 @@
           "keywords": "top-10, acțiune, ju=ocuri de simulare, IGN"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri <htp:/purl.org/dc/terms/subject> <htp:/dbpedia.org/resource/Category:Action_role-playing_video_games> . ?uri dbp:ign ?score .} ORDER BY DESC(?score) LIMIT 10",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Action_role-playing_video_games> . ?uri dbp:ign ?score .} ORDER BY DESC(?score) LIMIT 10",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jade_Empire"
@@ -32182,7 +32182,7 @@
           "keywords": "cauză a deceselor, cea mai frecventă"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>SELECT DISTINCT ?xWHERE { ?uri dbo:deathCause ?x . }ORDER BY DESC(COUNT(DISTINCT ?uri) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>SELECT DISTINCT ?xWHERE { ?uri dbo:deathCause ?x . }ORDER BY DESC(COUNT(DISTINCT ?uri) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Myocardial_infarction"
@@ -32232,7 +32232,7 @@
           "keywords": "Isar, varsă, lac"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>ASKWHERE { ?x dbo:inflow res:Isar . ?x rdf:type dbo:Lake . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>ASKWHERE { ?x dbo:inflow res:Isar . ?x rdf:type dbo:Lake . }",
       "answers": [
         {
           "string": "true"
@@ -32282,7 +32282,7 @@
           "keywords": "filme, producător, Steven Spielberg, buget, 80 milioane de dolari"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Steven_Spielberg . ?uri dbo:budget ?b . FILTER( xsd:double(?b) >= 8.0E7 )}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film . ?uri dbo:director res:Steven_Spielberg . ?uri dbo:budget ?b . FILTER( xsd:double(?b) >= 8.0E7 )}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Jurassic_Park"
@@ -32344,7 +32344,7 @@
           "keywords": "scriitor, câștigat, premiul Nobel pentru literatură"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Writer . ?uri dbo:award res:Nobel_Prize_in_Literature . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Writer . ?uri dbo:award res:Nobel_Prize_in_Literature . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Ivo_Andri%C4%87"
@@ -32424,7 +32424,7 @@
           "keywords": "taikonaut"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Astronaut . ?uri dbo:nationality res:China .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Astronaut . ?uri dbo:nationality res:China .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Fei_Junlong"
@@ -32489,7 +32489,7 @@
           "keywords": "câte pagini, Război și Pace"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:War_and_Peace dbo:numberOfPages ?n .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:War_and_Peace dbo:numberOfPages ?n .}",
       "answers": [
         {
           "string": "1225"
@@ -32539,7 +32539,7 @@
           "keywords": "pod, cea mai mare deschidere"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge . ?uri dbo:mainspan ?s . } ORDER BY DESC(?s) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge . ?uri dbo:mainspan ?s . } ORDER BY DESC(?s) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Overseas_Highway"
@@ -32589,7 +32589,7 @@
           "keywords": "actori, numit, Baldwin"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX foaf: <htp:/xmlns.com/foaf/0.1/>SELECT DISTINCT ?uriWHERE { ?uri foaf:surname 'Baldwin'@en . { ?uri dbo:ocupation res:Actor . } UNION { ?uri rdf:type dbo:Actor . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX foaf: <http://xmlns.com/foaf/0.1/>SELECT DISTINCT ?uriWHERE { ?uri foaf:surname 'Baldwin'@en . { ?uri dbo:occupation res:Actor . } UNION { ?uri rdf:type dbo:Actor . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Lise_Baldwin"
@@ -32657,7 +32657,7 @@
           "keywords": "Atlanta Falcons, jucător, cel mai înalt"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:team res:Atlanta_Falcons . ?uri dbo:height ?h .} ORDER BY DESC(?h) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:team res:Atlanta_Falcons . ?uri dbo:height ?h .} ORDER BY DESC(?h) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Gabe_Carimi"
@@ -32707,7 +32707,7 @@
           "keywords": "râuri, varsă, lac din Germania"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:River . ?x dbo:inflow ?uri . ?x rdf:type dbo:Lake . ?x dbo:country res:Germany .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:River . ?x dbo:inflow ?uri . ?x rdf:type dbo:Lake . ?x dbo:country res:Germany .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Rhine"
@@ -32853,7 +32853,7 @@
           "keywords": "câte, filme James Bond"
         }
       ],
-      "query": "PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX yago: <htp:/dbpedia.org/clas/yago/> SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type yago:JamesBondFilms . }",
+      "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX yago: <http://dbpedia.org/clas/yago/> SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type yago:JamesBondFilms . }",
       "answers": [
         {
           "string": "24"
@@ -32903,7 +32903,7 @@
           "keywords": "rachete, lansat, Baikonur"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Rocket . ?uri dbo:launchSite res:Baikonur_Cosmodrome .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Rocket . ?uri dbo:launchSite res:Baikonur_Cosmodrome .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Soyuz-U"
@@ -33061,7 +33061,7 @@
           "keywords": "papă, urmat, Ioan Paul al II-lea"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/>SELECT DISTINCT ?uriWHERE { res:Pope_John_Paul_I dbp:sucesor ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/>SELECT DISTINCT ?uriWHERE { res:Pope_John_Paul_I dbp:sucesor ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pope_Benedict_XVI"
@@ -33111,7 +33111,7 @@
           "keywords": "partide politice olandeze"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:PoliticalParty . ?uri dbo:country res:Netherlands .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:PoliticalParty . ?uri dbo:country res:Netherlands .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Christian_Democratic_Appeal"
@@ -33197,7 +33197,7 @@
           "keywords": "dată, Halloween"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Halowen dbp:date ?date . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Halloween dbp:date ?date . }",
       "answers": [
         {
           "string": "0001-10-31+02:00"
@@ -33247,7 +33247,7 @@
           "keywords": "oceanograf, suedez"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:field res:Oceanography . ?uri dbo:birthPlace res:Sweden . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:field res:Oceanography . ?uri dbo:birthPlace res:Sweden . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Vagn_Walfrid_Ekman"
@@ -33297,7 +33297,7 @@
           "keywords": "actori, născut, Berlin"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri dbo:birthPlace res:Berlin .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri dbo:birthPlace res:Berlin .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Dru_Berrymore"
@@ -33353,7 +33353,7 @@
           "keywords": "Alec Guinness, ultim, film"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:staring res:Alec_Guines . ?uri dbo:releaseDate ?date . } ORDER BY DESC(?date) LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Film . ?uri dbo:starring res:Alec_Guinness . ?uri dbo:releaseDate ?date . } ORDER BY DESC(?date) LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/A_Foreign_Field"
@@ -33403,7 +33403,7 @@
           "keywords": "poet, cel mai mare număr, cărți"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:ocupation res:Poet . ?x dbo:author ?uri . ?x rdf:type dbo:Bok .}ORDER BY DESC(COUNT(?x)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:occupation res:Poet . ?x dbo:author ?uri . ?x rdf:type dbo:Book .}ORDER BY DESC(COUNT(?x)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Agatha_Christie"
@@ -33453,7 +33453,7 @@
           "keywords": "limbi, Columbia"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT COUNT(DISTINCT ?uri) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri .}",
       "answers": [
         {
           "string": "2"
@@ -33503,7 +33503,7 @@
           "keywords": "IYCM, înseamnă"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:abreviation 'IYCM' .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { ?uri dbo:abbreviation 'IYCM' .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Youth_Climate_Movement"
@@ -33553,7 +33553,7 @@
           "keywords": "Brazilia, cel mai mic loc, clasament mondial FIFA"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:Brazil_national_fotbal_team dbp:fifaMin ?n .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:Brazil_national_football_team dbp:fifaMin ?n .}",
       "answers": [
         {
           "string": "22"
@@ -33603,7 +33603,7 @@
           "keywords": "țări, traversate de Himalaya, capitale"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Himalayas dbp:country ?country . ?country dbo:capital ?uri .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Himalayas dbp:country ?country . ?country dbo:capital ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Beijing"
@@ -33662,7 +33662,7 @@
           "keywords": "actor, jucat, Chewbacca"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Chewbaca dbp:portrayer ?uri . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Chewbacca dbp:portrayer ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Peter_Mayhew"
@@ -33712,7 +33712,7 @@
           "keywords": "tort de morcovi, ingrediente"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Carot_cake dbo:ingredient ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Carrot_cake dbo:ingredient ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Flour"
@@ -33786,7 +33786,7 @@
           "keywords": "Cola, băutură"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>ASK WHERE { res:Cola rdf:type dbo:Beverage .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>ASK WHERE { res:Cola rdf:type dbo:Beverage .}",
       "answers": [
         {
           "string": "true"
@@ -33836,7 +33836,7 @@
           "keywords": "Tom Cruise, căsătorit"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:spouse res:Tom_Cruise.}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:spouse res:Tom_Cruise.}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mimi_Rogers"
@@ -33886,7 +33886,7 @@
           "keywords": "cel mai mare buget, film, Tim Burton"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton . ?uri dbo:budget ?b .}ORDER BY ?bOFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton . ?uri dbo:budget ?b .}ORDER BY ?bOFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Big_Eyes"
@@ -33936,7 +33936,7 @@
           "keywords": "greu, Jupiter, satelit, cel mai ușor"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { ?uri dbp:sateliteOf res:Jupiter . ?uri dbo:mas ?n .}ORDER BY ASC(?n)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { ?uri dbp:sateliteOf res:Jupiter . ?uri dbo:mas ?n .}ORDER BY ASC(?n)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "1100.0"
@@ -33986,7 +33986,7 @@
           "keywords": "actor, distribuit, cele mai multe filme"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?f rdf:type dbo:Film . ?f dbo:staring ?uri .} ORDER BY DESC(COUNT(DISTINCT(?f) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?f rdf:type dbo:Film . ?f dbo:starring ?uri .} ORDER BY DESC(COUNT(DISTINCT(?f) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Andy_Lau"
@@ -34036,7 +34036,7 @@
           "keywords": "James Bond, căsătorit"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASK WHERE { res:James_Bond dbo:spouse ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASK WHERE { res:James_Bond dbo:spouse ?uri . }",
       "answers": [
         {
           "string": "false"
@@ -34086,7 +34086,7 @@
           "keywords": "australian, trupe metalcore"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Band . ?uri dbo:genre res:Metalcore . { ?uri dbo:hometown res:Australia . } UNION { ?uri dbo:hometown ?h . ?h dbo:country res:Australia . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Band . ?uri dbo:genre res:Metalcore . { ?uri dbo:hometown res:Australia . } UNION { ?uri dbo:hometown ?h . ?h dbo:country res:Australia . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Confession_(band)"
@@ -34175,7 +34175,7 @@
           "keywords": "actori, născut, Paris, după 1950"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri dbo:birthPlace res:Paris . ?uri dbo:birthDate ?date . FILTER ( ?date >= xsd:dateTime('1950-12-31T0:0:0Z') }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Actor . ?uri dbo:birthPlace res:Paris . ?uri dbo:birthDate ?date . FILTER ( ?date >= xsd:dateTime('1950-12-31T0:0:0Z') }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Coralie_Trinh_Thi"
@@ -34294,7 +34294,7 @@
           "keywords": "dată, Carlo Giuliani, ucis"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Death_of_Carlo_Giuliani dbp:dateOfDeath ?date .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Death_of_Carlo_Giuliani dbp:dateOfDeath ?date .}",
       "answers": [
         {
           "string": "2001-07-20+02:00"
@@ -34344,7 +34344,7 @@
           "keywords": "patru, cei mai tineri, MVP, jucători de baschet"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:BasketbalPlayer . ?uri dbo:birthDate ?date. ?uri dbp:highlights ?h . FILTER regex(?h,'MVP')} ORDER BY DESC(?date) OFSET 0 LIMIT 4",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:BasketballPlayer . ?uri dbo:birthDate ?date. ?uri dbp:highlights ?h . FILTER regex(?h,'MVP')} ORDER BY DESC(?date) OFSET 0 LIMIT 4",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Cliff_Alexander"
@@ -34403,7 +34403,7 @@
           "keywords": "companie, mai mult de 1 milion, angajați"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:numberOfEmployes ?n . } UNION { ?uri dbp:numEmployes ?n . } FILTER ( ?n > 10 ) } ",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Company . { ?uri dbo:numberOfEmployees ?n . } UNION { ?uri dbp:numEmployes ?n . } FILTER ( ?n > 10 ) } ",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Parkson"
@@ -40591,7 +40591,7 @@
           "keywords": "înotători, născuți, Moscova"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Swimer . ?uri dbo:birthPlace res:Moscow .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Swimmer . ?uri dbo:birthPlace res:Moscow .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Aleksandr_Samsonov"
@@ -40722,7 +40722,7 @@
           "keywords": "numit, Rodzilla"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:nickname \"Rodzila\"@en .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:nickname \"Rodzila\"@en .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Rodney_Blake"
@@ -40772,7 +40772,7 @@
           "keywords": "carte, scris, Muhammad Ali"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bok . ?uri dbo:author res:Muhamad_Ali . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book . ?uri dbo:author res:Muhammad_Ali . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/The_Soul_of_a_Butterfly"
@@ -40822,7 +40822,7 @@
           "keywords": "câte, muzee, Paris"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Museum . ?uri dbo:location res:Paris . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Museum . ?uri dbo:location res:Paris . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mus%C3%A9e_national_Gustave_Moreau"
@@ -40923,7 +40923,7 @@
           "keywords": "oraș, cei mai mulți locuitori"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:City . ?uri dbo:populationTotal ?pop . }ORDER BY DESC(?pop)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:City . ?uri dbo:populationTotal ?pop . }ORDER BY DESC(?pop)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Karachi"
@@ -40973,7 +40973,7 @@
           "keywords": "oraș, cei mai puțini locuitori"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:City . ?uri dbo:populationTotal ?pop . }ORDER BY ASC(?pop)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:City . ?uri dbo:populationTotal ?pop . }ORDER BY ASC(?pop)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Lakeside,_Missouri"
@@ -41023,7 +41023,7 @@
           "keywords": "emisiuni TV, Neil Patrick Harris"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:TelevisionShow . ?uri dbo:staring res:Neil_Patrick_Haris . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:TelevisionShow . ?uri dbo:starring res:Neil_Patrick_Harris . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Neil's_Puppet_Dreams"
@@ -41085,7 +41085,7 @@
           "keywords": "scris, Jocurile Foamei"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uriWHERE { res:The_Hunger_Games dbo:author ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uriWHERE { res:The_Hunger_Games dbo:author ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Suzanne_Collins"
@@ -41135,7 +41135,7 @@
           "keywords": "cluburi de fotbal, joacă, Bundesliga"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SocerClub . ?uri dbo:league res:Bundesliga . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:SoccerClub . ?uri dbo:league res:Bundesliga . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/SC_Freiburg"
@@ -41236,7 +41236,7 @@
           "keywords": "țară, muntele Everest"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { res:Mount_Everest dbo:locatedInArea ?uri . ?uri rdf:type dbo:Country .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { res:Mount_Everest dbo:locatedInArea ?uri . ?uri rdf:type dbo:Country .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/China"
@@ -41289,7 +41289,7 @@
           "keywords": "fondator, Penguin Books"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { res:Penguin_Boks dbo:founder ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { res:Penguin_Books dbo:founder ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Allen_Lane"
@@ -41339,7 +41339,7 @@
           "keywords": "limbaje de programare, influențat, Javascript"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:ProgramingLanguage . ?uri dbo:influenced res:JavaScript . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:ProgrammingLanguage . ?uri dbo:influenced res:JavaScript . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Self_(programming_language)"
@@ -41407,7 +41407,7 @@
           "keywords": "copii, Che Guevara"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>ASKWHERE { res:Che_Guevara dbo:child ?uri . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>ASKWHERE { res:Che_Guevara dbo:child ?uri . }",
       "answers": [
         {
           "string": "true"
@@ -41457,7 +41457,7 @@
           "keywords": "muzicaluri, muzică de Elton John"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Musical . ?uri dbo:musicBy res:Elton_John .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Musical . ?uri dbo:musicBy res:Elton_John .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/The_Lion_King_(musical)"
@@ -41516,7 +41516,7 @@
           "keywords": "berării, Australia"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uri ?xWHERE { ?uri rdf:type dbo:Brewery . { ?uri dbo:location res:Australia . } UNION { ?uri dbo:location ?x . ?x dbo:country res:Australia . } }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri ?xWHERE { ?uri rdf:type dbo:Brewery . { ?uri dbo:location res:Australia . } UNION { ?uri dbo:location ?x . ?x dbo:country res:Australia . } }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Carlton_&amp;_United_Breweries"
@@ -41725,7 +41725,7 @@
           "keywords": "Titanic, data terminării"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:RMS_Titanic dbo:completionDate ?date . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:RMS_Titanic dbo:completionDate ?date . }",
       "answers": [
         {
           "string": "1912-04-02+02:00"
@@ -41775,7 +41775,7 @@
           "keywords": "cost, Pulp Fiction"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:Pulp_Fiction dbo:budget ?n . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?nWHERE { res:Pulp_Fiction dbo:budget ?n . }",
       "answers": [
         {
           "string": "8500000.0"
@@ -41825,7 +41825,7 @@
           "keywords": "câte, companii aeriene"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:Airline . }",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT COUNT(DISTINCT ?uri)WHERE { ?uri rdf:type dbo:Airline . }",
       "answers": [
         {
           "string": "3387"
@@ -41875,7 +41875,7 @@
           "keywords": "jucat, Agent Smith, Matrix"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Agent_Smith dbp:portrayer ?uri . }",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Agent_Smith dbp:portrayer ?uri . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Hugo_Weaving"
@@ -41928,7 +41928,7 @@
           "keywords": "câți, carbohidrați, unt de arahide"
         }
       ],
-      "query": "PREFIX dbp: <htp:/dbpedia.org/property/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?carbsWHERE { res:Peanut_buter dbp:carbs ?carbs .}",
+      "query": "PREFIX dbp: <http://dbpedia.org/property/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?carbsWHERE { res:Peanut_butter dbp:carbs ?carbs .}",
       "answers": [
         {
           "string": "20.0"
@@ -41978,7 +41978,7 @@
           "keywords": "carte, cele mai multe pagini"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Bok . ?uri dbo:numberOfPages ?n .}ORDER BY DESC(?n)OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Book . ?uri dbo:numberOfPages ?n .}ORDER BY DESC(?n)OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/The_Tolkien_Reader"
@@ -42028,7 +42028,7 @@
           "keywords": "poduri, traversează, Sena"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Bridge . ?uri dbo:croses res:Seine .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uriWHERE { ?uri rdf:type dbo:Bridge . ?uri dbo:crosses res:Seine .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pont_de_la_Concorde_(Paris)"
@@ -42198,7 +42198,7 @@
           "keywords": "primar, capitală, Polinezia Franceză"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:French_Polynesia dbo:capital ?x . ?x dbo:mayor ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uri WHERE { res:French_Polynesia dbo:capital ?x . ?x dbo:mayor ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Michel_Buillard"
@@ -42248,7 +42248,7 @@
           "keywords": "Dracula, creator, a muri"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Count_Dracula dbo:creator ?x . ?x dbo:deathDate ?date .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?dateWHERE { res:Count_Dracula dbo:creator ?x . ?x dbo:deathDate ?date .}",
       "answers": [
         {
           "string": "1912-04-20+02:00"
@@ -42298,7 +42298,7 @@
           "keywords": "locație, Palatul Westminster"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT ?uri WHERE { res:Palace_of_Westminster dbo:location ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { res:Palace_of_Westminster dbo:location ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/City_of_Westminster"
@@ -42354,7 +42354,7 @@
           "keywords": "clădiri engleze gotice, Kent"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Building . ?uri dbo:architecturalStyle res:English_Gothic_architecture . ?uri dbo:location res:Kent .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Building . ?uri dbo:architecturalStyle res:English_Gothic_architecture . ?uri dbo:location res:Kent .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Church_of_St_Thomas_%C3%A0_Becket,_Capel"
@@ -42458,7 +42458,7 @@
           "keywords": "papa, fondat, televiziunea din Vatican"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Pope . res:Vatican_Television_Center dbo:foundedBy ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?uri WHERE { ?uri rdf:type dbo:Pope . res:Vatican_Television_Center dbo:foundedBy ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Pope_John_Paul_II"
@@ -42508,7 +42508,7 @@
           "keywords": "companii aeriene, parte din, alianța SkyTeam"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Airline . { ?uri dbp:aliance res:SkyTeam . } UNION { ?uri dbo:Aliance res:SkyTeam . }",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/> PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Airline . { ?uri dbp:aliance res:SkyTeam . } UNION { ?uri dbo:Alliance res:SkyTeam . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Chautauqua_Airlines"
@@ -42684,7 +42684,7 @@
           "keywords": "populația totală, Melbourne Florida"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT ?uri WHERE { <htp:/dbpedia.org/resource/Melbourne,_Florida> dbo:populationTotal ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT ?uri WHERE { <http://dbpedia.org/resource/Melbourne,_Florida> dbo:populationTotal ?uri .}",
       "answers": [
         {
           "string": "76068"
@@ -42734,7 +42734,7 @@
           "keywords": "aeroporturi, Air China"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Air_China dbo:targetAirport ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Air_China dbo:targetAirport ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Guiyang_Longdongbao_International_Airport"
@@ -42805,7 +42805,7 @@
           "keywords": "an, născut, Rachel Stevens"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Rachel_Stevens dbo:birthYear ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:Rachel_Stevens dbo:birthYear ?uri .}",
       "answers": [
         {
           "string": "1978-01-01+02:00"
@@ -42855,7 +42855,7 @@
           "keywords": "JFK, asasinat"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:John_F._Kenedy dbo:deathPlace ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:deathPlace ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Dallas"
@@ -42908,7 +42908,7 @@
           "keywords": "câți, politicieni, absolvit, Universitatea Columbia?"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT COUNT(?uri) WHERE { ?uri dbo:profesion res:Politician . ?uri dbo:almaMater res:Columbia_University .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT COUNT(?uri) WHERE { ?uri dbo:profession res:Politician . ?uri dbo:almaMater res:Columbia_University .}",
       "answers": [
         {
           "string": "14"
@@ -42958,7 +42958,7 @@
           "keywords": "om de știință, cunoscut pentru, proiect Manhattan, premiul Nobel pentru pace"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:knownFor res:Manhatan_Project . ?uri rdf:type dbo:Scientist . ?uri dbo:knownFor res:Nobel_Peace_Prize .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri dbo:knownFor res:Manhattan_Project . ?uri rdf:type dbo:Scientist . ?uri dbo:knownFor res:Nobel_Peace_Prize .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Joseph_Rotblat"
@@ -43008,7 +43008,7 @@
           "keywords": "cel mai înalt, vulcan, Africa?"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>PREFIX yago: <htp:/dbpedia.org/clas/yago/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Volcano . ?uri dbo:locatedInArea ?area . ?area rdf:type yago:AfricanCountries . ?uri dbo:elevation ?elevation .}ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX yago: <http://dbpedia.org/clas/yago/> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Volcano . ?uri dbo:locatedInArea ?area . ?area rdf:type yago:AfricanCountries . ?uri dbo:elevation ?elevation .}ORDER BY DESC(?elevation) OFSET 0 LIMIT 1",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mount_Kilimanjaro"
@@ -43058,7 +43058,7 @@
           "keywords": "bere, originară, Irlanda"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:type res:Ber . ?uri dbp:origin \"Ireland\"@en .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:type res:Ber . ?uri dbp:origin \"Ireland\"@en .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Guinness"
@@ -43108,7 +43108,7 @@
           "keywords": "specializări, UNC Health Care"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:UNC_Health_Care dbp:speciality ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { res:UNC_Health_Care dbp:speciality ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Cancer"
@@ -43161,7 +43161,7 @@
           "keywords": "proprietar, Facebook?"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/>PREFIX res: <htp:/dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Facebok dbo:foundedBy ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX res: <http://dbpedia.org/resource/>SELECT DISTINCT ?uriWHERE { res:Facebook dbo:foundedBy ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Mark_Zuckerberg"
@@ -43211,7 +43211,7 @@
           "keywords": "regiune, Melon de Bourgogne"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Melon_de_Bourgogne dbo:wineRegion ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Melon_de_Bourgogne dbo:wineRegion ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Loire_Valley_(wine)"
@@ -43270,7 +43270,7 @@
           "keywords": "influențat, Socrate"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { ?uri dbo:influencedBy res:Socrates .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { ?uri dbo:influencedBy res:Socrates .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Epictetus"
@@ -43356,7 +43356,7 @@
           "keywords": "preşedinte, Pakistan, 1978"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:title res:President_of_Pakistan . ?uri dbp:years 1978 .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uri WHERE { ?uri dbp:title res:President_of_Pakistan . ?uri dbp:years 1978 .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Muhammad_Zia-ul-Haq"
@@ -43406,7 +43406,7 @@
           "keywords": "actori englezi, protagoniști, Lovesick"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX yago: <htp:/dbpedia.org/clas/yago/> SELECT DISTINCT ?uriWHERE { res:Lovesick dbo:staring ?uri . { ?uri dbo:birthPlace res:England . } UNION { ?uri rdf:type yago:EnglishFilmActors . }",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX yago: <http://dbpedia.org/clas/yago/> SELECT DISTINCT ?uriWHERE { res:Lovesick dbo:starring ?uri . { ?uri dbo:birthPlace res:England . } UNION { ?uri rdf:type yago:EnglishFilmActors . }",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Dudley_Moore"
@@ -43459,7 +43459,7 @@
           "keywords": "tipuri, tulburări alimentare"
         }
       ],
-      "query": "PREFIX yago: <htp:/dbpedia.org/clas/yago/> PREFIX rdf: <htp:/w.w3.org/19/02/2-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:EatingDisorders .}",
+      "query": "PREFIX yago: <http://dbpedia.org/clas/yago/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>SELECT DISTINCT ?uriWHERE { ?uri rdf:type yago:EatingDisorders .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Fat_Chance_(Lesl%C3%A9a_Newman_novel)"
@@ -43668,7 +43668,7 @@
           "keywords": "căsătorit cu, președintele Chirac"
         }
       ],
-      "query": "PREFIX dbo: <htp:/dbpedia.org/ontology/> PREFIX res: <htp:/dbpedia.org/resource/> SELECT DISTINCT ?uriWHERE { res:Jacques_Chirac dbo:spouse ?uri .}",
+      "query": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uriWHERE { res:Jacques_Chirac dbo:spouse ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Bernadette_Chirac"
@@ -43718,7 +43718,7 @@
           "keywords": "cea mai mare zonă metropolitană, statul Washington"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbp: <htp:/dbpedia.org/property/> SELECT DISTINCT ?uriWHERE { <htp:/dbpedia.org/resource/Washington_(state)> dbp:largestmetro ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?uriWHERE { <http://dbpedia.org/resource/Washington_(state)> dbp:largestmetro ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Seattle_metropolitan_area"
@@ -43768,7 +43768,7 @@
           "keywords": "produs, Franța, vin spumant"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { ?uri dbo:wineProduced res:Sparkling_wine . ?uri dbo:location res:France .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { ?uri dbo:wineProduced res:Sparkling_wine . ?uri dbo:location res:France .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Loire_Valley_(wine)"
@@ -43818,7 +43818,7 @@
           "keywords": "Hillel Slovak, locul morții"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Hilel_Slovak dbo:deathPlace ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Hillel_Slovak dbo:deathPlace ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Hollywood"
@@ -43874,7 +43874,7 @@
           "keywords": "fus orar, San Pedro de Atacama"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/timezone/> SELECT DISTINCT ?uriWHERE { res:San_Pedro_de_Atacama dbo:timezone ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/timezone/> SELECT DISTINCT ?uriWHERE { res:San_Pedro_de_Atacama dbo:timezone ?uri .}",
       "answers": [
 
       ]
@@ -43922,7 +43922,7 @@
           "keywords": "oraș, termină, Route 68, Chile"
         }
       ],
-      "query": "PREFIX res: <htp:/dbpedia.org/resource/>PREFIX dbo: <htp:/dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Chile_Route_68 dbo:routeEnd ?uri .}",
+      "query": "PREFIX res: <http://dbpedia.org/resource/>PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uriWHERE { res:Chile_Route_68 dbo:routeEnd ?uri .}",
       "answers": [
         {
           "string": "http://dbpedia.org/resource/Valpara%C3%ADso"
