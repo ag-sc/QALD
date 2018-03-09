@@ -14,6 +14,11 @@
 					"keywords": "Battle of Gettysburg"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quando foi a batalha de Gettysburg?",
+					"keywords": "batalha de Gettysburg"
+				},
+				{
 					"language": "de",
 					"string": "Wann fand die Schlacht von Gettysburg statt?",
 					"keywords": "Schlacht von Gettysburg"
@@ -73,6 +78,11 @@
 					"language": "en",
 					"string": "List all the musicals with music by Elton John.",
 					"keywords": "musicals, music by, Elton John"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os musicais com músicas de Elton John.",
+					"keywords": "musicais, música de, Elton John"
 				},
 				{
 					"language": "de",
@@ -160,6 +170,11 @@
 					"keywords": "high, lighthouse in Colombo"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura do Farol em Colombo?",
+					"keywords": "altura, Farol em Colombo"
+				},
+				{
 					"language": "fa",
 					"string": "فانوس دریایی کولومبو چقدر بلند است؟",
 					"keywords": "فانوس دریایی کولومبو، بلند"
@@ -231,6 +246,11 @@
 					"keywords": "U.S. president, Lincoln, wife"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem foi a esposa do presidente americano Lincoln?",
+					"keywords": "presidente americano, Lincoln, mulher"
+				},
+				{
 					"language": "de",
 					"string": "Wer war die Frau von US-Präsident Lincoln?",
 					"keywords": "US-Präsident, Lincoln, Frau"
@@ -290,6 +310,11 @@
 					"language": "en",
 					"string": "Who is the host of the BBC Wildlife Specials?",
 					"keywords": "host, BBC Wildlife Specials"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o apresentador do BBC Wildlife Specials?",
+					"keywords": "apresentador, BBC Wildlife Specials"
 				},
 				{
 					"language": "fa",
@@ -360,6 +385,11 @@
 			"question": [{
 					"language": "en",
 					"string": "How much did Pulp Fiction cost?",
+					"keywords": "cost, Pulp Fiction"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quanto custou Pulp Fiction?",
 					"keywords": "cost, Pulp Fiction"
 				},
 				{
@@ -434,6 +464,11 @@
 					"keywords": "city, Heineken brewery"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade fica a cervejaria Heineken?",
+					"keywords": "cidade, cervejaria Heineken"
+				},
+				{
 					"language": "fa",
 					"string": "آبجوسازی هینکن در کدام شهر قرار دارد؟",
 					"keywords": "آبجوسازی هینکن، شهر"
@@ -503,6 +538,11 @@
 					"language": "en",
 					"string": "When did Operation Overlord commence?",
 					"keywords": "when, Operation Overlord, commence"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quando começou a Operação Overlord?",
+					"keywords": "começou, Operação Overlord"
 				},
 				{
 					"language": "fa",
@@ -576,6 +616,11 @@
 					"keywords": "city, Chile Route 68, ends"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade termina a Rota 68 do Chile?",
+					"keywords": "cidade, Rota 68, termina"
+				},
+				{
 					"language": "fa",
 					"string": "در کدام شهر مسیر 68 شیلی پایان می یابد؟",
 					"keywords": "شهر، مسیر 68 شیلی، پایان"
@@ -645,6 +690,11 @@
 					"language": "en",
 					"string": "Who developed Slack?",
 					"keywords": "developer, Slack"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem desenvolveu o Slack?",
+					"keywords": "começou, Operação Overlord"
 				},
 				{
 					"language": "fa",
@@ -718,6 +768,11 @@
 					"keywords": "married to, president Chirac"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem foi casada com o presidente Chirac?",
+					"keywords": "casada, presidente Chirac"
+				},
+				{
 					"language": "de",
 					"string": "Wer war mit Präsident Chirac verheiratet?",
 					"keywords": "verheiratet mit, Päsident Chirac"
@@ -784,6 +839,11 @@
 					"keywords": "Bruce Carver, die"
 				},
 				{
+					"language": "pt_BR",
+					"string": "De que morreu Bruce Carver?",
+					"keywords": "morreu, Bruce Carver"
+				},
+				{
 					"language": "de",
 					"string": "Woran ist Bruce Carver gestorben?",
 					"keywords": "Bruce Carver, gestorben an"
@@ -845,6 +905,11 @@
 					"keywords": "The Storm on the Sea of Galilee, paint"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem pintou Tormenta no Mar da Galileia?",
+					"keywords": "pintou, Tormenta no Mar da Galileia"
+				},
+				{
 					"language": "de",
 					"string": "Wer malte Christus im Sturm auf dem See von Galilea?",
 					"keywords": "Christus im Sturm auf dem See von Galilea, malen"
@@ -904,6 +969,11 @@
 					"language": "en",
 					"string": "Which cities does the Weser flow through?",
 					"keywords": "Weser, flow through, city"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em quais cidades o rio Weser passa?",
+					"keywords": "cidades, rio Weser, passa"
 				},
 				{
 					"language": "fa",
@@ -1014,6 +1084,11 @@
 					"keywords": "How many seats, stadium of FC Porto"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantas cadeiras tem o estádio do Futebol Clube do Porto",
+					"keywords": "cadeiras, estádio, Futebol Clube do Porto"
+				},
+				{
 					"language": "fa",
 					"string": "ورزشگاه باشگاه پورتو چند صندلی دارد؟",
 					"keywords": "ورزشگاه باشگاه پورتو، چند صندلی"
@@ -1083,6 +1158,11 @@
 					"language": "en",
 					"string": "Who is the daughter of Robert Kennedy married to?",
 					"keywords": "Robert Kennedy, daughter, married"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Com quem a filha de Robert Kennedy casou-se?",
+					"keywords": "casada, filha, Robert Kennedy"
 				},
 				{
 					"language": "fa",
@@ -1161,6 +1241,11 @@
 					"language": "en",
 					"string": "Which books by Kerouac were published by Viking Press?",
 					"keywords": "book, Kerouac, publish, Viking Press"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que livros de Kerouac foram publicados pela Viking Press?",
+					"keywords": "livros, Kerouac, publicados,Viking Press"
 				},
 				{
 					"language": "fa",
@@ -1247,6 +1332,11 @@
 					"keywords": "Amazon Eve, tall"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura de Amazon Eve?",
+					"keywords": "altura, Amazon Eve"
+				},
+				{
 					"language": "fa",
 					"string": "قد آمازون ایو چقدر است؟",
 					"keywords": "قد، آمازون ایو"
@@ -1318,6 +1408,11 @@
 					"keywords": "museum, Scream, Munch"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que museu está exposto O Grito de Munch?",
+					"keywords": "museu, exposto, O Grito, Munch"
+				},
+				{
 					"language": "de",
 					"string": "In welchem Museum ist Der Schrei von Munch ausgestellt?",
 					"keywords": "Museum, Schrei, Munch"
@@ -1384,6 +1479,11 @@
 					"keywords": "wrote, book, The pillars of the Earth"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem escreveu o livro Os Pilares da Terra?",
+					"keywords": "escritor, livro, Os Pilares da Terra"
+				},
+				{
 					"language": "de",
 					"string": "Wer schrieb das Buch Die Säulen der Erde?",
 					"keywords": "schreiben, Buch, Die Säulen der Erde"
@@ -1445,6 +1545,11 @@
 					"keywords": "James Bond, married"
 				},
 				{
+					"language": "pt_BR",
+					"string": "James Bond é casado?",
+					"keywords": "James Bond, casado"
+				},
+				{
 					"language": "de",
 					"string": "Ist James Bond verheiratet?",
 					"keywords": "James Bond, verheiratet"
@@ -1499,6 +1604,11 @@
 					"language": "en",
 					"string": "Who discovered Ceres?",
 					"keywords": "discoverer, Ceres"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem descobriu Ceres?",
+					"keywords": "descobridor, Ceres"
 				},
 				{
 					"language": "fa",
@@ -1572,6 +1682,11 @@
 					"keywords": "river, cross, Brooklyn Bridge"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que rio a Ponte do Brooklyn cruza?",
+					"keywords": "rio, Ponte do Brooklyn, cruza"
+				},
+				{
 					"language": "de",
 					"string": "Welchen Fluss überspannt die Brooklyn Bridge?",
 					"keywords": "Fluss, überspannen, Brooklyn Bridge"
@@ -1631,6 +1746,11 @@
 					"language": "en",
 					"string": "Who was called Frank The Tank?",
 					"keywords": "called, Frank The Tank"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi chamado de Frank The Tank?",
+					"keywords": "chamado, Frank The Tank"
 				},
 				{
 					"language": "de",
@@ -1697,6 +1817,11 @@
 					"language": "en",
 					"string": "What is the largest country in the world?",
 					"keywords": "largest country, world"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual é o maior país do mundo",
+					"keywords": "maior país, mundo"
 				},
 				{
 					"language": "fa",
@@ -1770,6 +1895,11 @@
 					"keywords": "mayor, Paris"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o prefeito de Paris?",
+					"keywords": "prefeito, Paris"
+				},
+				{
 					"language": "fa",
 					"string": "شهردار پاریس کیست؟",
 					"keywords": "شهردار، پاریس"
@@ -1839,6 +1969,11 @@
 					"language": "en",
 					"string": "Who is the coach of Ankara's ice hockey team?",
 					"keywords": "coach, ice hockey team, Ankara"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o treinador da equipe de hockey no gelo de Ankara?",
+					"keywords": "treinador, equipe de hockey no gelo, Ankara"
 				},
 				{
 					"language": "fa",
@@ -1912,6 +2047,11 @@
 					"keywords": "mayor, capital, French Polynesia"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o prefeito da capital da Polinésia Francessa?",
+					"keywords": "prefeito, capital, Polinésia Francesa"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist der Bürgermeister der Hauptstadt von Französisch-Polynesien?",
 					"keywords": "Bürgermeister, Hauptstadt, Französisch-Polynesien"
@@ -1976,6 +2116,11 @@
 					"language": "en",
 					"string": "Which awards did Douglas Hofstadter win?",
 					"keywords": "Douglas Hofstadter, award"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que prêmios Douglas Hofstadter ganhou?",
+					"keywords": "prêmios, Douglas Hofstadter"
 				},
 				{
 					"language": "de",
@@ -2057,6 +2202,11 @@
 					"keywords": "Lego Movie, cost"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quanto custou The Lego Movie?",
+					"keywords": "custou, The Lego Movie"
+				},
+				{
 					"language": "fa",
 					"string": "فیلم لگو چقدر هزینه داشت؟",
 					"keywords": "فیلم لگو، هزینه"
@@ -2128,9 +2278,9 @@
 					"keywords": "Piccadilly, start"
 				},
 				{
-					"language": "fa",
-					"string": "پیکدیلی از کجا شروع می شود؟",
-					"keywords": "پیکدیلی، شروع"
+					"language": "pt_BR",
+					"string": "Onde começa a Piccadilly?",
+					"keywords": "começa, Picadilly"
 				},
 				{
 					"language": "de",
@@ -2199,6 +2349,11 @@
 					"keywords": "Prince Harry, Prince William, same, parents"
 				},
 				{
+					"language": "pt_BR",
+					"string": "O Príncipe Harry e o Príncipe William têm os mesmos pais?",
+					"keywords": "Príncipe Harry, Príncipe William, mesma mãe"
+				},
+				{
 					"language": "de",
 					"string": "Haben Prinz Harry und Prinz William dieselben Eltern?",
 					"keywords": "Prinz Harry, Prinz William, selbe Eltern"
@@ -2253,6 +2408,11 @@
 					"language": "en",
 					"string": "Who played Agent Smith in Matrix?",
 					"keywords": "played, Agent Smith, Matrix"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem interpretou o Agente Smith em Matrix?",
+					"keywords": "interpretou, Agente Smith, Matrix"
 				},
 				{
 					"language": "de",
@@ -2328,6 +2488,11 @@
 					"keywords": "languages, Turkmenistan"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantos idiomas são falados no Turquemenistão?",
+					"keywords": "idiomas, falados, Turcomenistão"
+				},
+				{
 					"language": "fa",
 					"string": "چند زبان در ترکمنستان صحبت می شود؟]",
 					"keywords": "زبان، ترکمنستان"
@@ -2399,9 +2564,9 @@
 					"keywords": "film, play, Julia Roberts, Richard Gere"
 				},
 				{
-					"language": "fa",
-					"string": "در چه فیلم هایی جولیا رابرتس همچنین ریچارد گییر بازی کردند؟",
-					"keywords": "فیلم هایی، جولیا رابرتس، ریچارد گییر، بازی"
+					"language": "pt_BR",
+					"string": "Em que filmes Julia Roberts e Richard Gere atuaram?",
+					"keywords": "filme, atuaram, Julia Roberts, Richard Gere"
 				},
 				{
 					"language": "de",
@@ -2477,6 +2642,11 @@
 					"keywords": "Ganges, start, country"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que país nasce o Ganges?",
+					"keywords": "país, nasce, Ganges"
+				},
+				{
 					"language": "de",
 					"string": "In welchem Land entspringt der Ganges?",
 					"keywords": "Ganges, entspringen, Land"
@@ -2541,6 +2711,11 @@
 					"language": "en",
 					"string": "In which year was Rachel Stevens born?",
 					"keywords": "year, born, Rachel Stevens"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que ano nasceu Rachel Stevens?",
+					"keywords": "ano, nasceu, Rachel Stevens"
 				},
 				{
 					"language": "fa",
@@ -2614,6 +2789,11 @@
 					"keywords": "Barack Obama, democrat"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Barack Obama é um Democrata?",
+					"keywords": "Barack Obama, Demokrat"
+				},
+				{
 					"language": "de",
 					"string": "Ist Barack Obama ein Demokrat?",
 					"keywords": "Barack Obama, Demokrat"
@@ -2668,6 +2848,11 @@
 					"language": "en",
 					"string": "Where was Bach born?",
 					"keywords": "birthplace, Bach"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Onde nasceu Bach?",
+					"keywords": "Bach, geboren"
 				},
 				{
 					"language": "de",
@@ -2734,6 +2919,11 @@
 					"language": "en",
 					"string": "How often did Jane Fonda marry?",
 					"keywords": "Jane Fonda, marry, how often"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantas vezes Jane Fonda se casou?",
+					"keywords": "Jane Fonda, casou"
 				},
 				{
 					"language": "fa",
@@ -2805,6 +2995,11 @@
 					"language": "en",
 					"string": "Who was the first to climb Mount Everest?",
 					"keywords": "first, climb, mount Everest"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi o primeiro a escalar o Monte Everest?",
+					"keywords": "Mount Everest, besteigen, erster"
 				},
 				{
 					"language": "de",
@@ -2892,6 +3087,11 @@
 					"keywords": "How many people, Poland"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantas pessoas vivem na Polônia",
+					"keywords": "pessoas, Polônia"
+				},
+				{
 					"language": "fa",
 					"string": "چند نفر در لهستان زندگی می کنند؟",
 					"keywords": "نفر، لهستان، زندگی"
@@ -2961,6 +3161,11 @@
 					"language": "en",
 					"string": "What is the location of the Houses of Parliament?",
 					"keywords": "location, Houses of Parliament"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Onde fica o Palácio de Westminster?",
+					"keywords": "local, Palácio de Westminster"
 				},
 				{
 					"language": "fa",
@@ -3053,6 +3258,11 @@
 					"keywords": "Christian Bale, starring, Batman Begins"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Christian Bale atua em Batman Begins?",
+					"keywords": "Christian Bale, atua, Batman Begins"
+				},
+				{
 					"language": "de",
 					"string": "Spielt Christian Bale in Batman Begins mit?",
 					"keywords": "Christian Bale, mitspielen, Batman Begins"
@@ -3102,6 +3312,11 @@
 					"language": "en",
 					"string": "In which country is the Limerick Lake?",
 					"keywords": "Limerick Lake, country"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que país fica o Lago Limerick?",
+					"keywords": "país, Lago Limerick"
 				},
 				{
 					"language": "de",
@@ -3163,6 +3378,11 @@
 					"language": "en",
 					"string": "What was the last movie with Alec Guinness?",
 					"keywords": "Alec Guinness, last, movie"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual foi o último filme de Alec Guinness?",
+					"keywords": "último, filme, Alec Guinness"
 				},
 				{
 					"language": "fa",
@@ -3236,6 +3456,11 @@
 					"keywords": "Australia, highest mountain"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a montanha mais alta da Austrália?",
+					"keywords": "montanha mais alta, Austrália"
+				},
+				{
 					"language": "de",
 					"string": "Was ist der höchste Berg in Australien?",
 					"keywords": "Australien, höchster Berg"
@@ -3297,6 +3522,11 @@
 					"keywords": "Frank Herbert, alive"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Frank Herbert ainda vive?",
+					"keywords": "Frank Herbert, vive"
+				},
+				{
 					"language": "de",
 					"string": "Lebt Frank Herbert noch?",
 					"keywords": "Frank Herbert, leben"
@@ -3346,6 +3576,11 @@
 					"language": "en",
 					"string": "Who created Family Guy?",
 					"keywords": "create, Family Guy"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem criou Family Guy?",
+					"keywords": "criou, Family Guy"
 				},
 				{
 					"language": "fa",
@@ -3419,6 +3654,11 @@
 					"keywords": "Suriname, official language"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a língua oficial do Suriname?",
+					"keywords": "língua oficial, Suriname"
+				},
+				{
 					"language": "de",
 					"string": "Was ist die Amtssprache Von Surinam?",
 					"keywords": "Surinam, Amtssprache"
@@ -3485,9 +3725,9 @@
 					"keywords": "write, song, Hotel California"
 				},
 				{
-					"language": "fa",
-					"string": "چه کسی آهنگ هتل کالیفرنیا را نوشت؟",
-					"keywords": "اهنگ هتل کالیفرنیا، نوشت"
+					"language": "pt_BR",
+					"string": "Quem escreveu a canção Hotel California?",
+					"keywords": "autor"
 				},
 				{
 					"language": "de",
@@ -3567,6 +3807,11 @@
 					"language": "en",
 					"string": "Give me all actors starring in movies directed by William Shatner.",
 					"keywords": "actor, starring, movie, direct, William Shatner"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os atores que estrelaram em filmes dirigidos por William Shatner.",
+					"keywords": "atores, files, diretor, William Shatner"
 				},
 				{
 					"language": "fa",
@@ -3707,6 +3952,11 @@
 					"keywords": "ingredients, chocolate chip cookie"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quais são os ingredientes do biscoito de chocolate?",
+					"keywords": "ingredientes, Chocolate Chip Cookie"
+				},
+				{
 					"language": "fa",
 					"string": "چه چیزهایی در یک کیک شکلاتی هست؟",
 					"keywords": "کیک شکلاتی"
@@ -3833,6 +4083,11 @@
 					"keywords": "professional, skateboarder, Sweden"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Liste todos os skatistas profissionais da Suécia.",
+					"keywords": "skatista, profissionais, Suécia"
+				},
+				{
 					"language": "de",
 					"string": "Gib mir alle Profiskateboarder aus Schweden.",
 					"keywords": "Profiskateboarder, Schweden"
@@ -3899,6 +4154,11 @@
 					"language": "en",
 					"string": "Which ingredients do I need for carrot cake?",
 					"keywords": "carrot cake, ingredients"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que ingredientes eu preciso para um bolo de cenoura?",
+					"keywords": "ingredientes, bolo de cenoura"
 				},
 				{
 					"language": "fa",
@@ -4003,6 +4263,11 @@
 					"keywords": "Neymar, play, Real Madrid"
 				},
 				{
+					"language": "pt_BR",
+					"string": "O Neymar joga no Real Madrid?",
+					"keywords": "Neymar, joga, Real Madrid"
+				},
+				{
 					"language": "fa",
 					"string": "آیا نیمار برای رئال مادرید بازی می کند؟",
 					"keywords": "نیمار، رئال مادرید، بازی"
@@ -4072,6 +4337,11 @@
 					"language": "en",
 					"string": "Which computer scientist won an oscar?",
 					"keywords": "computer scientist, win, oscar"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que cientista da computação ganhou um Oscar?",
+					"keywords": "cientista da computação, ganhou, Oscar"
 				},
 				{
 					"language": "fa",
@@ -4145,6 +4415,11 @@
 					"keywords": "companies, founded, same year, Google"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantas empresas foram fundadas no mesmo ano que o Google?",
+					"keywords": "empresas, fundadas, mesmo ano, Google"
+				},
+				{
 					"language": "fa",
 					"string": "چه تعداد شرکت در سال یکسانی با گوگل تأسیس شدند؟",
 					"keywords": "شرکت، سال یکسانی، گوگل، تأسیس"
@@ -4216,6 +4491,11 @@
 					"keywords": "MI6, headquarters, city, UK"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade da Inglaterra está a sede do MI6?",
+					"keywords": "cidade, Inglaterra, sede, MI6"
+				},
+				{
 					"language": "de",
 					"string": "In welcher Stadt im Vereinigten Königreich ist das Hauptquartier des MI6?",
 					"keywords": "MI6, Hauptquartier, Stadt, Vereinigtes Königreich"
@@ -4282,6 +4562,11 @@
 					"keywords": "Cuban Missile Crisis, earlier, Bay of Pigs Invasion"
 				},
 				{
+					"language": "pt_BR",
+					"string": "A Crise dos Mísseis de Cuba ocorreu antes da Invasão da Baía dos Porcos?",
+					"keywords": "Crise dos Mísseis de Cuba, antes, Invasão da Baía dos Porcos"
+				},
+				{
 					"language": "de",
 					"string": "War die Kubakrise vor der Schweinebuchtinvasion?",
 					"keywords": "Kubakrise, vor, Schweinebuchtinvasion"
@@ -4331,6 +4616,11 @@
 					"language": "en",
 					"string": "What does IYCM stand for?",
 					"keywords": "IYCM, stand for"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual o significado de IYCM?",
+					"keywords": "significado, IYCM"
 				},
 				{
 					"language": "de",
@@ -4399,6 +4689,11 @@
 					"keywords": "dissolve, Ming dynasty"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quando a Dinastia Ming acabou?",
+					"keywords": "Dinastia Ming, acabou"
+				},
+				{
 					"language": "de",
 					"string": "Wann endete die Ming-Dynastie?",
 					"keywords": "Ende, Ming-Dynastie"
@@ -4463,6 +4758,11 @@
 					"language": "en",
 					"string": "List all episodes of the first season of the HBO television series The Sopranos!",
 					"keywords": "HBO, television series, Sopranos, first season, episode"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os episódios da primeira temporada do seriado Família Soprano da HBO.",
+					"keywords": "episódio, primeira temporada, seriado, Família Soprano, HBO"
 				},
 				{
 					"language": "de",
@@ -4599,6 +4899,11 @@
 					"keywords": "total population, Melbourne Florida"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual é a população total de Melbourne, Florida?",
+					"keywords": "população total, Melbourne, Florida"
+				},
+				{
 					"language": "de",
 					"string": "Was ist die Gesamteinwohnerzahl von Melbourne, Florida?",
 					"keywords": "Gesamteinwohnerzahl, Melbourne Florida"
@@ -4665,6 +4970,11 @@
 					"keywords": "Arnold Schwarzenegger, attend, university"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Arnold Schwarzenegger frequentou uma universidade?",
+					"keywords": "Arnold Schwarzenegger, frequentou, universidade"
+				},
+				{
 					"language": "de",
 					"string": "Hat Arnold Schwarzenegger eine Universität besucht?",
 					"keywords": "Arnold Schwarzenegger, Universität, besucht"
@@ -4719,6 +5029,11 @@
 					"language": "en",
 					"string": "What country is Mount Everest in?",
 					"keywords": "country, Mount Everest"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que país está o Monte Everest?",
+					"keywords": "país, Monte Everest"
 				},
 				{
 					"language": "de",
@@ -4794,6 +5109,11 @@
 					"keywords": "Australia, largest city"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual é a maior cidade da Austrália?",
+					"keywords": "maior cidade, Austrália"
+				},
+				{
 					"language": "de",
 					"string": "Was ist die größte Stadt in Australien?",
 					"keywords": "Australien, größte Stadt"
@@ -4853,6 +5173,11 @@
 					"language": "en",
 					"string": "Give me all launch pads operated by NASA.",
 					"keywords": "launch pad, operate, NASA"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Ache todas as plataformas de lançamento espaciais operadas pela NASA.",
+					"keywords": "plataforma de lançamento, operadas, NASA"
 				},
 				{
 					"language": "de",
@@ -4958,6 +5283,11 @@
 					"keywords": "Tel Aviv, mayor"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o prefeito de Tel Aviv?",
+					"keywords": "prefeito, Tel Aviv"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist der Bürgermeister von Tel Aviv?",
 					"keywords": "Tel Aviv, Bürgermeister"
@@ -5022,6 +5352,11 @@
 					"language": "en",
 					"string": "List all episodes of the first season of the HBO television series The Sopranos.",
 					"keywords": "HBO, television series, Sopranos, first season, episode"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os episódios da primeira temporada do seriado Família Soprano da HBO.",
+					"keywords": "episódio, primeira temporada, seriado, Família Soprano, HBO"
 				},
 				{
 					"language": "de",
@@ -5163,6 +5498,11 @@
 					"keywords": "Batman, creator"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem criou Batman?",
+					"keywords": "criador, Batman"
+				},
+				{
 					"language": "fa",
 					"string": "چه کسی بتمن را ساخت؟",
 					"keywords": "بتمن، ساخت"
@@ -5241,6 +5581,11 @@
 					"keywords": "play, Gus Fring, Breaking Bad"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem interpretou Gus Fring em Breaking Bad?",
+					"keywords": "intérprete, Gus Fring, Breaking Bad"
+				},
+				{
 					"language": "fa",
 					"string": "چه کسی گوستاوو فرینگ را در بریکینگ بد بازی کرد؟",
 					"keywords": "گوستاوو فرینگ، بریکینگ بد، بازی"
@@ -5312,6 +5657,11 @@
 					"keywords": "GIMP, programming language"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que linguagem de programação foi escrito o GIMP?",
+					"keywords": "linguagem de programação, GIMP"
+				},
+				{
 					"language": "de",
 					"string": "In welcher Programmiersprache wurde GIMP geschrieben?",
 					"keywords": "GIMP, Programmiersprache"
@@ -5378,6 +5728,11 @@
 					"language": "en",
 					"string": "In which ancient empire could you pay with cocoa beans?",
 					"keywords": "ancient empire, pay, cocoa beans"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que império antigo você poderia pagar com grãos de cacau?",
+					"keywords": "império antigo, pagar, grãos de cacau"
 				},
 				{
 					"language": "fa",
@@ -5458,6 +5813,11 @@
 					"keywords": "Forbes, editor"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o editor da Forbes?",
+					"keywords": "editor, Forbes"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist der Herausgeber von Forbes?",
 					"keywords": "Forbes, Herausgeber"
@@ -5524,6 +5884,11 @@
 					"keywords": "Australia, capital, people, live"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantos habitantes tem a capital da Austrália?",
+					"keywords": "habitantes, capital, Austrália"
+				},
+				{
 					"language": "de",
 					"string": "Wieviele Menschen leben in der Hauptstadt Australiens?",
 					"keywords": "Australien, Hauptstadt, Menschen, leben"
@@ -5588,6 +5953,11 @@
 					"language": "en",
 					"string": "Which professional surfers were born in Australia?",
 					"keywords": "professional surfer, born, Australia"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quais surfistas profissionais nasceram na Austrália?",
+					"keywords": "surfistas profissionais, nascer, Austrália"
 				},
 				{
 					"language": "de",
@@ -5663,6 +6033,11 @@
 					"keywords": "electronics companies, founded, Beijing"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que companhias de eletrônica foram fundadas em Beijing?",
+					"keywords": "companhias de eletrônica, fundadas, Beijing"
+				},
+				{
 					"language": "fa",
 					"string": "چه شرکت های الکترونیکی در پکن تأسیس شدند؟",
 					"keywords": "شرکت های الکترونیکی، پکن، تأسیس"
@@ -5732,6 +6107,11 @@
 					"language": "en",
 					"string": "Give me all video games published by Mean Hamster Software.",
 					"keywords": "video game, publish, Mean Hamster Software"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Mostre todos os jogos da Mean Hamster Software.",
+					"keywords": "Videospiel, Mean Hamster Software"
 				},
 				{
 					"language": "de",
@@ -5807,6 +6187,11 @@
 					"keywords": "own, Aldi"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantas lojas Aldi existem?",
+					"keywords": "lojas, Aldi"
+				},
+				{
 					"language": "fa",
 					"string": "چه تعداد فروشگاه آلدی وجود دارد؟",
 					"keywords": "فروشگاه، آلدی"
@@ -5876,6 +6261,11 @@
 					"language": "en",
 					"string": "What is the capital of Cameroon?",
 					"keywords": "capital, Cameroon"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual a capital de Camarões?",
+					"keywords": "capital, Camarões"
 				},
 				{
 					"language": "fa",
@@ -5949,6 +6339,11 @@
 					"keywords": "video game, Battle Chess"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Há algum jogo eletrônico chamado Battle Chess?",
+					"keywords": "jogo eletrônico, Battle Chess"
+				},
+				{
 					"language": "de",
 					"string": "Gibt es ein Videospiel, das Battle Chess heißt?",
 					"keywords": "Videospiel, Battle Chess"
@@ -5998,6 +6393,11 @@
 					"language": "en",
 					"string": "Was the wife of president Lincoln called Mary?",
 					"keywords": "Lincoln, president, wife, called, Mary"
+				},
+				{
+					"language": "pt_BR",
+					"string": "A esposa do Presidente Lincoln chamava-se Mary?",
+					"keywords": "mulher, Presidente Lincoln, chamava, Mary"
 				},
 				{
 					"language": "de",
@@ -6054,6 +6454,11 @@
 					"language": "en",
 					"string": "Give me all movies directed by Francis Ford Coppola.",
 					"keywords": "movie, direct, Francis Ford Coppola"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Encontre todos os filmes dirigidos por Francis Ford Coppola.",
+					"keywords": "filmes, dirigido, Francis Ford Coppola"
 				},
 				{
 					"language": "fa",
@@ -6314,6 +6719,11 @@
 					"keywords": "highest budget, film, Tim Burton"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual filme de Tim Burton teve o maior orçamento?",
+					"keywords": "filme, Tim Burton, maior orçamento"
+				},
+				{
 					"language": "de",
 					"string": "Welcher von Tim Burtons Filmen hatte das höchste Budget?",
 					"keywords": "höchstes Budget, Film, Tim Burton"
@@ -6380,6 +6790,11 @@
 					"keywords": "Breaking Bad, episodes, more than, Game of Thrones"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Breaking Bad tem mais episódios do que Game of Thrones?",
+					"keywords": "Breaking Bad, mais, episódios, Game of Thrones"
+				},
+				{
 					"language": "de",
 					"string": "Hat Breaking Bad mehr Episoden als Game of Thrones?",
 					"keywords": "Breaking Bad, Episoden, mehr als, Game of Thrones"
@@ -6434,6 +6849,11 @@
 					"language": "en",
 					"string": "Who was called Rodzilla?",
 					"keywords": "called, Rodzilla"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem era chamado de Rodzilla?",
+					"keywords": "chamado, Rodzilla"
 				},
 				{
 					"language": "de",
@@ -6502,6 +6922,11 @@
 					"keywords": "Natalie Portman, born, United States"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Natalie Portman nasceu nos Estados Unidos?",
+					"keywords": "Natalie Portman, nasceu, Estados Unidos"
+				},
+				{
 					"language": "de",
 					"string": "Wurde Natalie Portman in den Vereinigten Staaten geboren?",
 					"keywords": "Natalie Portman, geboren, Vereinigte Staaten"
@@ -6551,6 +6976,11 @@
 					"language": "en",
 					"string": "Give me the grandchildren of Elvis Presley.",
 					"keywords": "Elvis Presley, grandchildren"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Mostre os netos de Elvis Presley.",
+					"keywords": "netos, Elvis Presley"
 				},
 				{
 					"language": "fa",
@@ -6624,6 +7054,11 @@
 					"keywords": "movies, starring, Mickey Rourke, directed, Guy Ritchie"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quais filmes protagonizados por Mickey Rourke foram dirigidos por Guy Ritchie?",
+					"keywords": "filmes, estrelados, Mickey Rourke, dirigidos, Guy Ritchie"
+				},
+				{
 					"language": "fa",
 					"string": "چه فیلم هایی با بازی میکی رورک توسط گای ریچی کارگردانی شدند؟",
 					"keywords": "فیلم هایی، بازی، میکی رورک، گای ریچی، کارگردانی"
@@ -6693,6 +7128,11 @@
 					"language": "en",
 					"string": "When did Dracula's creator die?",
 					"keywords": "Dracula, creator, die"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quando morreu o criador de Drácula?",
+					"keywords": "morte, criador, Drácula"
 				},
 				{
 					"language": "fa",
@@ -6766,6 +7206,11 @@
 					"keywords": "Miffy, creator, country"
 				},
 				{
+					"language": "pt_BR",
+					"string": "De que país vem o criador de Miffy?",
+					"keywords": "país, criador, Miffy"
+				},
+				{
 					"language": "de",
 					"string": "Aus welchem Land kommt der Erfinder von Nijntje?",
 					"keywords": "Nijntje, Erfinder, Land"
@@ -6825,6 +7270,11 @@
 					"language": "en",
 					"string": "What is Batman's real name?",
 					"keywords": "real name, Batman"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual é o nome verdadeiro do Batman?",
+					"keywords": "nome real, Batman"
 				},
 				{
 					"language": "fa",
@@ -6898,6 +7348,11 @@
 					"keywords": "form of government, Russia"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que forma de governo a Rússia possui?",
+					"keywords": "forma de governo, Rússia"
+				},
+				{
 					"language": "fa",
 					"string": "روسیه چه نوع حکومتی دارد؟",
 					"keywords": "روسیه، نوع حکومت"
@@ -6967,6 +7422,11 @@
 					"language": "en",
 					"string": "How many companies were founded by the founder of Facebook?",
 					"keywords": "companies, founded by, founder, Facebook"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantas companhias foram fundadas pelo fundador do Facebook?",
+					"keywords": "compahias, fundadas, fundador, Facebook"
 				},
 				{
 					"language": "fa",
@@ -7040,6 +7500,11 @@
 					"keywords": "record label, Canadian, Grunge"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Liste todas as gravadoras canadenses de música Grunge.",
+					"keywords": "gravadoras, canadenses, música, Grunge"
+				},
+				{
 					"language": "de",
 					"string": "Gib mir alle kanadischen Grunge-Plattenfirmen.",
 					"keywords": "kanadisch, Plattenfirma, Grunge"
@@ -7099,6 +7564,11 @@
 					"language": "en",
 					"string": "How many children did Benjamin Franklin have?",
 					"keywords": "Benjamin Franklin, child"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantos filhos Benjamim Franklin teve?",
+					"keywords": "filhos, Benjamim Franklin"
 				},
 				{
 					"language": "fa",
@@ -7172,6 +7642,11 @@
 					"keywords": "Margaret Thatcher, child"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Liste os filhos de Margaret Thatcher.",
+					"keywords": "filho, Margaret Thatcher"
+				},
+				{
 					"language": "de",
 					"string": "Liste die Kinder von Margaret Thatcher auf.",
 					"keywords": "Margaret Thatcher, Kind"
@@ -7238,6 +7713,11 @@
 					"language": "en",
 					"string": "From which region is the Melon de Bourgogne?",
 					"keywords": "region, Melon de Bourgogne"
+				},
+				{
+					"language": "pt_BR",
+					"string": "De que região é o Melon de Bourgogne?",
+					"keywords": "região, Melon de Bourgogne"
 				},
 				{
 					"language": "de",
@@ -7325,6 +7805,11 @@
 					"keywords": "oldest child, Meryl Streep"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual é o filho mais velho de Meryl Streep?",
+					"keywords": "filho mais velho, Meryl Streep"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist das älteste Kind von Meryl Streep?",
 					"keywords": "ältestes Kind, Meryl Streep"
@@ -7391,6 +7876,11 @@
 					"keywords": "tree frog, amphibian"
 				},
 				{
+					"language": "pt_BR",
+					"string": "As rãs arborícolas são um tipo de anfíbio?",
+					"keywords": "rã arborícola, anfíbio"
+				},
+				{
 					"language": "de",
 					"string": "Sind Laubfrösche Amphibien?",
 					"keywords": "Laubfrosch, Amphibie"
@@ -7447,6 +7937,11 @@
 					"keywords": "Christian Bale, starring, Velvet Goldmine"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Christian Bale atua em Velvet Goldmine?",
+					"keywords": "Christian Bale, estrelar, Velvet Goldmine"
+				},
+				{
 					"language": "de",
 					"string": "Spielt Christian Bale in Velvet Goldmine mit?",
 					"keywords": "Christian Bale, mitspielen, Velvet Goldmine"
@@ -7501,6 +7996,11 @@
 					"language": "en",
 					"string": "List all games by GMT.",
 					"keywords": "game, GMT"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os jogos da GMT.",
+					"keywords": "jogos, GMT"
 				},
 				{
 					"language": "de",
@@ -7601,6 +8101,11 @@
 					"keywords": "Isar, flow, lake"
 				},
 				{
+					"language": "pt_BR",
+					"string": "O Isar desemboca em um lago?",
+					"keywords": "Isar, desemboca, lago"
+				},
+				{
 					"language": "de",
 					"string": "Fließt die Isar in einen See?",
 					"keywords": "Isar, fließt, See"
@@ -7655,6 +8160,11 @@
 					"language": "en",
 					"string": "Which airports does Yeti Airlines serve?",
 					"keywords": "airports, Yeti Airlines"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que aeroportos a Yeti Airlines serve?",
+					"keywords": "aeroportos, Yeti Airlines"
 				},
 				{
 					"language": "fa",
@@ -7741,6 +8251,11 @@
 					"keywords": "Indian company, the most employees"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que empresa indiana tem o maior número de empregados?",
+					"keywords": "empresa indiana, maior número de empregados"
+				},
+				{
 					"language": "fa",
 					"string": "کدام شرکت هندی بیشترین تعداد کارمند را دارد؟",
 					"keywords": "شرکت هندی، بیشترین تعداد کارمند"
@@ -7810,6 +8325,11 @@
 					"language": "en",
 					"string": "What color expresses loyalty?",
 					"keywords": "color, express, loyalty"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que cor expressa a lealdade?",
+					"keywords": "cor, expressa, lealdade"
 				},
 				{
 					"language": "fa",
@@ -7883,6 +8403,11 @@
 					"keywords": "city, the most inhabitants"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a cidade com maior população?",
+					"keywords": "cidade, maior população"
+				},
+				{
 					"language": "de",
 					"string": "Welche Stadt hat die meisten Einwohner?",
 					"keywords": "Stadt, meisten Einwohner"
@@ -7947,6 +8472,11 @@
 					"language": "en",
 					"string": "Who created Wikipedia?",
 					"keywords": "Wikipedia, created"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem criou a Wikipedia?",
+					"keywords": "criador, Wikipedia"
 				},
 				{
 					"language": "de",
@@ -8017,6 +8547,11 @@
 					"keywords": "Rita Wilson, wife, Tom Hanks"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Rita Wilson é a esposa de Tom Hanks?",
+					"keywords": "Rita Wilson, esposa, Tom Hanks"
+				},
+				{
 					"language": "de",
 					"string": "Ist Rita Wilson die Frau von Tom Hanks?",
 					"keywords": "Rita Wilson, Frau, Tom Hanks"
@@ -8073,6 +8608,11 @@
 					"keywords": "Obama, president, wife, called, Michelle"
 				},
 				{
+					"language": "pt_BR",
+					"string": "A esposa do presidente Obama chama-se Michelle?",
+					"keywords": "esposa, presidente, Obama, chama, Michelle"
+				},
+				{
 					"language": "de",
 					"string": "Heißt die Frau von Präsident Obama Michelle?",
 					"keywords": "Obama, Präsident, Frau, heißen, Michelle"
@@ -8122,6 +8662,11 @@
 					"language": "en",
 					"string": "How many ethnic groups live in Slovenia?",
 					"keywords": "how many, ethnic groups, Slovenia"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantos grupos étnicos vivem na Eslovênia?",
+					"keywords": "grupos étnicos, Eslovênia"
 				},
 				{
 					"language": "fa",
@@ -8195,6 +8740,11 @@
 					"keywords": "president, Eritrea"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o presidente da Eritrea?",
+					"keywords": "presidente, Eritrea"
+				},
+				{
 					"language": "fa",
 					"string": "رئیس جمهور اریتره کیست؟",
 					"keywords": "رئیس جمهور، اریتره"
@@ -8264,6 +8814,11 @@
 					"language": "en",
 					"string": "Which films did Stanley Kubrick direct?",
 					"keywords": "film, Stanley Kubrick, direct"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que filmes Stanley Kubrick dirigiu?",
+					"keywords": "filmes, Stanley Kubrick, dirigiu"
 				},
 				{
 					"language": "fa",
@@ -8428,6 +8983,11 @@
 					"keywords": "Titanic, completion date"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quando o Titanic foi completado?",
+					"keywords": "Titanic, completado"
+				},
+				{
 					"language": "de",
 					"string": "Wann wurde die Titanic fertiggestellt?",
 					"keywords": "Titanic, fertiggestellt, Datum"
@@ -8492,6 +9052,11 @@
 					"language": "en",
 					"string": "How many pages does War and Peace have?",
 					"keywords": "how many, pages, War and Peace"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantas páginas tem Guerra e Paz?",
+					"keywords": "páginas, Guerra e Paz"
 				},
 				{
 					"language": "de",
@@ -8560,6 +9125,11 @@
 					"keywords": "player, Premier League, youngest"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o jogador mais jovem da Premier League?",
+					"keywords": "jogador, mais jovem, Premier League"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist der jüngste Spieler in der Premier League?",
 					"keywords": "Spieler, Premier League, jüngste"
@@ -8624,6 +9194,11 @@
 					"language": "en",
 					"string": "What is the highest mountain in Italy?",
 					"keywords": "highest, mountain, Italy"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual a montanha mais alta da Itália?",
+					"keywords": "montanha, mais alta, Itália"
 				},
 				{
 					"language": "de",
@@ -8692,6 +9267,11 @@
 					"keywords": "Claudia Schiffer, tall"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura de Claudia Schiffer?",
+					"keywords": "Claudia Schiffer, groß"
+				},
+				{
 					"language": "de",
 					"string": "Wie groß ist Claudia Schiffer?",
 					"keywords": "Claudia Schiffer, groß"
@@ -8751,6 +9331,11 @@
 					"language": "en",
 					"string": "Who was John F. Kennedy's vice president?",
 					"keywords": "John F. Kennedy, vice president"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi o vice presidente de John F. Kennedy?",
+					"keywords": "John F. Kennedy"
 				},
 				{
 					"language": "de",
@@ -8819,6 +9404,11 @@
 					"keywords": "subsidiary, Lufthansa, serve, Dortmund, Berlin Tegel"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que subsidiária da Lufthansa atende Dortmund e Berlin?",
+					"keywords": "Tochtergesellschaft, Lufthansa, anfliegen, Dortmund, Berlin Tegel"
+				},
+				{
 					"language": "de",
 					"string": "Welche Tochtergesellschaft von Lufthansa fliegt sowohl Dortmund als auch Berlin Tegel an?",
 					"keywords": "Tochtergesellschaft, Lufthansa, anfliegen, Dortmund, Berlin Tegel"
@@ -8883,6 +9473,11 @@
 					"language": "en",
 					"string": "Who was the successor of John F. Kennedy?",
 					"keywords": "John F. Kennedy, successor"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi o sucessor de John F. Kennedy?",
+					"keywords": "sucessor, John F. Kennedy"
 				},
 				{
 					"language": "de",
@@ -8959,6 +9554,11 @@
 					"keywords": "compose, soundtrack, Cameron's Titanic"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem compôs a trilha sonora do Titanic de Cameron?",
+					"keywords": "compositor, trilha sonora, Titanic, Cameron"
+				},
+				{
 					"language": "fa",
 					"string": "چه کسی موسیقی متن تایتانیک کامرون را نوشته است؟",
 					"keywords": "موسیقی متن، تایتانیک کامرون، نوشته"
@@ -9028,6 +9628,11 @@
 					"language": "en",
 					"string": "Which movies did Kurosawa direct?",
 					"keywords": "film, direct, Kurosawa"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quais filmes Kurosawa dirigiu?",
+					"keywords": "filmes, Kurosawa, dirigiu"
 				},
 				{
 					"language": "de",
@@ -9283,6 +9888,11 @@
 					"keywords": "Elvis, first, album, label"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Para qual gravadora Elvis gravou seu primeiro álbum?",
+					"keywords": "gravadora, Elvis, gravou, primeiro, álbum"
+				},
+				{
 					"language": "de",
 					"string": "Welche Plattenfirma hat Elvis' erstes Album aufgenommen?",
 					"keywords": "Elvis, erstes, Album, Plattenfirma"
@@ -9347,6 +9957,11 @@
 					"language": "en",
 					"string": "In which time zone is Rome?",
 					"keywords": "time zone, Rome"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que fuso horário está Roma?",
+					"keywords": "fuso horário, Roma"
 				},
 				{
 					"language": "fa",
@@ -9420,6 +10035,11 @@
 					"keywords": "currency, China"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a moeda da China?",
+					"keywords": "Währung, China"
+				},
+				{
 					"language": "de",
 					"string": "Welche Währung benutzt China?",
 					"keywords": "Währung, China"
@@ -9484,6 +10104,11 @@
 					"language": "en",
 					"string": "Who are the developers of DBpedia?",
 					"keywords": "developers, DBpedia"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem são os desenvolvedores do DBPedia?",
+					"keywords": "desenvolvedor, DBPedia"
 				},
 				{
 					"language": "fa",
@@ -9570,6 +10195,11 @@
 					"keywords": "Abraham Lincoln, death place, website"
 				},
 				{
+					"language": "pt_BR",
+					"string": "O local onde Abraham Lincoln morreu tem um website?",
+					"keywords": "local, Abraham Lincoln, morreu, website"
+				},
+				{
 					"language": "de",
 					"string": "Hat Abraham Lincolns Sterbeort eine Webseite?",
 					"keywords": "Abraham Lincoln, Sterbeort, Webseite"
@@ -9624,6 +10254,11 @@
 					"language": "en",
 					"string": "Who is the king of the Netherlands?",
 					"keywords": "king, the Netherlands"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o rei da Holanda?",
+					"keywords": "rei, Países Baixos"
 				},
 				{
 					"language": "fa",
@@ -9697,6 +10332,11 @@
 					"keywords": "city, Nikos Kazantzakis, die"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade Nikos Kazantzakis morreu?",
+					"keywords": "cidade, Nikos Kazantzakis, morreu"
+				},
+				{
 					"language": "fa",
 					"string": "نیکوس کازانتزاکیس در کدام کشور مرد؟",
 					"keywords": "نیکوس کازانتزاکیس، کشور، مرد"
@@ -9768,6 +10408,11 @@
 					"keywords": "father, Queen Elizabeth II"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem foi o pai da Rainha Elizabeth II?",
+					"keywords": "pai, Rainha Elizabeth II"
+				},
+				{
 					"language": "de",
 					"string": "Wer war der Vater von Königin Elizabeth II?",
 					"keywords": "Vater, Königin Elizabeth II"
@@ -9827,6 +10472,11 @@
 					"language": "en",
 					"string": "Give me a list of all critically endangered birds.",
 					"keywords": "list, critically endangered birds"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todas as aves que correm perigo de extinção.",
+					"keywords": "aves, perigo de extinção"
 				},
 				{
 					"language": "fa",
@@ -9900,6 +10550,11 @@
 					"keywords": "inhabitants, largest city, Canada"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quantos habitantes tem a maior cidade do Canadá?",
+					"keywords": "habitantes, maior cidade, Canadá"
+				},
+				{
 					"language": "de",
 					"string": "Wieviele Einwohner hat die größte Stadt in Kanada?",
 					"keywords": "Einwohner, größte Stadt, Kanada"
@@ -9964,6 +10619,11 @@
 					"language": "en",
 					"string": "In which military conflicts did Lawrence of Arabia participate?",
 					"keywords": "Lawrence of Arabia, military conflict"
+				},
+				{
+					"language": "pt_BR",
+					"string": "De quais conflitos militares Lawrence da Arábia participou?",
+					"keywords": "conflitos militares, Lawrence da Arabia"
 				},
 				{
 					"language": "de",
@@ -10087,6 +10747,11 @@
 					"keywords": "book, the most pages"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual o livro com maior número de páginas?",
+					"keywords": "livro, maior número de páginas"
+				},
+				{
 					"language": "de",
 					"string": "Welches Buch hat die meisten Seiten?",
 					"keywords": "Buch, meisten Seiten"
@@ -10151,6 +10816,11 @@
 					"language": "en",
 					"string": "In which country does the Nile start?",
 					"keywords": "Nile, start, country"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que país nasce o Nilo?",
+					"keywords": "país, nasce, Nilo"
 				},
 				{
 					"language": "de",
@@ -10219,6 +10889,11 @@
 					"language": "en",
 					"string": "Who is the Formula 1 race driver with the most races?",
 					"keywords": "Formula 1, race driver, races, most"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o piloto de Fórmula 1 com mais corridas?",
+					"keywords": "piloto, Fórmula 1, mais, corridas"
 				},
 				{
 					"language": "fa",
@@ -10290,6 +10965,11 @@
 					"language": "en",
 					"string": "Which companies produce hovercrafts?",
 					"keywords": "companies, produce, hovercrafts"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que companhias produzem aerodeslizadores?",
+					"keywords": "companhias, produz, hovercrafts"
 				},
 				{
 					"language": "fa",
@@ -10376,6 +11056,11 @@
 					"keywords": "Elvis Presley, children"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Elvis Presley teve filhos?",
+					"keywords": "Elvis Presley, filhos"
+				},
+				{
 					"language": "fa",
 					"string": "آیا الویس پرسلی فرزند دارد؟",
 					"keywords": "الویس پرسلی، فرزند"
@@ -10435,6 +11120,11 @@
 					"language": "en",
 					"string": "In which city was the president of Montenegro born?",
 					"keywords": "city, born, president of Montenegro"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que cidade o presidente de Montenegro nasceu?",
+					"keywords": "cidade, nasceu, presidente de Montenegro"
 				},
 				{
 					"language": "fa",
@@ -10508,6 +11198,11 @@
 					"keywords": "country, born, Bill Gates"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que país Bill Gates nasceu?",
+					"keywords": "país, nascimento, Bill Gates"
+				},
+				{
 					"language": "fa",
 					"string": "بیل گیت در کدام کشور متولد آمد؟",
 					"keywords": "بیل گیت، کشور، متولد"
@@ -10577,6 +11272,11 @@
 					"language": "en",
 					"string": "In which countries do people speak Japanese?",
 					"keywords": "which countries, speak, Japanese"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Em que país se fala japonês?",
+					"keywords": "país, fala, japonês"
 				},
 				{
 					"language": "fa",
@@ -10663,6 +11363,11 @@
 					"keywords": "book, wrote, Muhammad Ali"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Mostre me o livro que Muhammad Ali escreveu.",
+					"keywords": "livro, Muhammad Ali, escreveu"
+				},
+				{
 					"language": "de",
 					"string": "Zeig mir das Buch, das Muhammad Ali geschrieben hat.",
 					"keywords": "Buch, geschrieben, Muhammad Ali"
@@ -10729,6 +11434,11 @@
 					"keywords": "Michelle Obama, wife, Barack Obama"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Michelle Obama é a esposa de Barack Obama?",
+					"keywords": "Michelle Obama, esposa, Barack Obama"
+				},
+				{
 					"language": "de",
 					"string": "Ist Michelle Obama die Frau von Barack Obama?",
 					"keywords": "Michelle Obama, Frau, Barack Obama"
@@ -10778,6 +11488,11 @@
 					"language": "en",
 					"string": "What is the area code of Berlin?",
 					"keywords": "Berlin, area code"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual é o código de área de Berlin?",
+					"keywords": "código de área, Berlin"
 				},
 				{
 					"language": "de",
@@ -10839,6 +11554,11 @@
 					"language": "en",
 					"string": "Give me all actors starring in Last Action Hero.",
 					"keywords": "actor, starring, Last Action Hero"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os atores que atuaram em Last Action Hero.",
+					"keywords": "atores, atuaram, Last Action Hero"
 				},
 				{
 					"language": "de",
@@ -10956,6 +11676,11 @@
 					"keywords": "San Francisco, nickname"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quais são os apelidos de San Francisco?",
+					"keywords": "apelido, San Francisco"
+				},
+				{
 					"language": "fa",
 					"string": "اسم های مستعار سانفرانسیسکو چیست؟",
 					"keywords": "اسم های مستعار، سانفرانسیسکو"
@@ -11025,6 +11750,11 @@
 					"language": "en",
 					"string": "What was the first Queen album?",
 					"keywords": "first album, Queen"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual foi o primeiro álbum do Queen?",
+					"keywords": "primeiro álbum, Queen"
 				},
 				{
 					"language": "fa",
@@ -11098,6 +11828,11 @@
 					"keywords": "Yenisei river, flow through, country"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Por quais países o rio Yenisei passa?",
+					"keywords": "país, passa, rio Yenisei"
+				},
+				{
 					"language": "de",
 					"string": "Durch welche Länder fließt der Yenisei?",
 					"keywords": "Yenisei, fließen, Land"
@@ -11164,6 +11899,11 @@
 					"language": "en",
 					"string": "Which television shows were created by Walt Disney?",
 					"keywords": "television show, create, Walt Disney"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quais séries de televisão foram criadas por Walt Disney?",
+					"keywords": "série, televisão, criada, Walt Disney"
 				},
 				{
 					"language": "de",
@@ -11240,6 +11980,11 @@
 					"keywords": "bridge, longest span"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a ponte mais comprida?",
+					"keywords": "Ponte, mais comprida"
+				},
+				{
 					"language": "de",
 					"string": "Welche Brücke hat die längste Spannweite?",
 					"keywords": "Brücke, längste Spannweite"
@@ -11304,6 +12049,11 @@
 					"language": "en",
 					"string": "What country is Sitecore from?",
 					"keywords": "country, Sitecore"
+				},
+				{
+					"language": "pt_BR",
+					"string": "De que país é a Sitecore",
+					"keywords": "país, Sitecore"
 				},
 				{
 					"language": "fa",
@@ -11377,6 +12127,11 @@
 					"keywords": "wife, Lance Bass"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Com quem Lance Bass casou-se?",
+					"keywords": "esposa, Lance Bass"
+				},
+				{
 					"language": "fa",
 					"string": "لنس بس با چه کسی ازدواج کرده است؟",
 					"keywords": "لنس بس، ازدواج"
@@ -11448,6 +12203,11 @@
 					"keywords": "capital, Canada"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a capital do Canadá?",
+					"keywords": "capital, Canadá"
+				},
+				{
 					"language": "de",
 					"string": "Was ist die Hauptstadt von Kanada?",
 					"keywords": "Hauptstadt, Kanada"
@@ -11509,9 +12269,9 @@
 					"keywords": "person, inspiring, Vincent van Gogh"
 				},
 				{
-					"language": "fa",
-					"string": "ونسان ون گوگ از چه کسی الهام گرفته است؟",
-					"keywords": "ونسان ون گوگ، الهام"
+					"language": "pt_BR",
+					"string": "Em quem Vincent van Gogh inspirou-se?",
+					"keywords": "inspiração, Vincent van Gogh"
 				},
 				{
 					"language": "de",
@@ -11587,6 +12347,11 @@
 					"keywords": "city, John F. Kennedy, die"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade John F. Kennedy morreu?",
+					"keywords": "cidade, John F. Kennedy, morte"
+				},
+				{
 					"language": "de",
 					"string": "In welcher Stadt ist John F. Kennedy gestorben?",
 					"keywords": "Stadt, John F. Kennedy, gestorben"
@@ -11648,6 +12413,11 @@
 					"keywords": "U.S. president, Jackson, war"
 				},
 				{
+					"language": "pt_BR",
+					"string": "O presidente Jackson dos EUA envolveu-se em uma guerra?",
+					"keywords": "presidente, Jackson, EUA"
+				},
+				{
 					"language": "de",
 					"string": "War US-Präsident Jackson in einen Krieg verwickelt?",
 					"keywords": "US-Präsident, Jackson, Krieg"
@@ -11697,6 +12467,11 @@
 					"language": "en",
 					"string": "Who wrote the Game of Thrones theme?",
 					"keywords": "writer, Game of Thrones"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem escreveu o tema do Game of Thrones?",
+					"keywords": "escritor, tema, Game of Thrones"
 				},
 				{
 					"language": "fa",
@@ -11770,6 +12545,11 @@
 					"keywords": "Brooklyn Bridge, design"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem projetou a Ponte do Brooklin?",
+					"keywords": "projetou, Ponte do Brooklyn"
+				},
+				{
 					"language": "de",
 					"string": "Wer hat die Brooklyn Bridge entworfen?",
 					"keywords": "Brooklyn Bridge, entwerfen"
@@ -11834,6 +12614,11 @@
 					"language": "en",
 					"string": "When did Boris Becker end his active career?",
 					"keywords": "Boris Becker, end career"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quando Boris Becker encerrou sua carreira?",
+					"keywords": "Borix Becker, encerrou, carreira"
 				},
 				{
 					"language": "fa",
@@ -11905,6 +12690,11 @@
 					"language": "en",
 					"string": "Which types of grapes grow in Oregon?",
 					"keywords": "grape types, grow, Oregon"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Que tipos de uvas crescem no Oregon?",
+					"keywords": "tipos de uva, cresce, Oregon"
 				},
 				{
 					"language": "fa",
@@ -12177,6 +12967,11 @@
 					"keywords": "tall, Michael Jordan"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura de Michael Jordan?",
+					"keywords": "altura, Michael Jordan"
+				},
+				{
 					"language": "de",
 					"string": "Wie groß ist Michael Jordan?",
 					"keywords": "groß, Michael Jordan"
@@ -12236,6 +13031,11 @@
 					"language": "en",
 					"string": "To which party does the mayor of Paris belong?",
 					"keywords": "party, mayor, Paris, belong"
+				},
+				{
+					"language": "pt_BR",
+					"string": "A que partido o prefeito de Paris pertence?",
+					"keywords": "partido, pertence, prefeito, Paris"
 				},
 				{
 					"language": "fa",
@@ -12309,6 +13109,11 @@
 					"keywords": "wrote, book, The pillars of the Earth"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem escreveu o livro Os Pilares da Terra?",
+					"keywords": "schreiben, Buch, Die Säulen der Erde"
+				},
+				{
 					"language": "de",
 					"string": "Wer schrieb das Buch Die Säulen der Erde?",
 					"keywords": "schreiben, Buch, Die Säulen der Erde"
@@ -12373,6 +13178,11 @@
 					"language": "en",
 					"string": "Who was the 16th president of the United States?",
 					"keywords": "United States, 16th president"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi o 16o presidente dos Estados Unidos?",
+					"keywords": "16o presidente, Estados Unidos"
 				},
 				{
 					"language": "de",
@@ -12441,6 +13251,11 @@
 					"keywords": "Mount Everest, high"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura do Monte Everest?",
+					"keywords": "altura, Monte Everest"
+				},
+				{
 					"language": "de",
 					"string": "Wie hoch ist der Mount Everest?",
 					"keywords": "Mount Everest, hoch"
@@ -12500,6 +13315,11 @@
 					"language": "en",
 					"string": "Who was the doctoral supervisor of Albert Einstein?",
 					"keywords": "doctoral supervisor, Albert Einstein"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foi o orientador do doutorado de Albert Einstein?",
+					"keywords": "orientador, doutorado, Albert Einstein"
 				},
 				{
 					"language": "fa",
@@ -12573,6 +13393,11 @@
 					"keywords": "city, live, Sylvester Stallone"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade Sylvester Stallone mora?",
+					"keywords": "cidade, Silvester Stallone, vive"
+				},
+				{
 					"language": "fa",
 					"string": "سیلوستر استالونه در کدام شهر زندگی می کند؟",
 					"keywords": "سیلوستر استالونه، شهر، زندگی"
@@ -12644,6 +13469,11 @@
 					"keywords": "Czech republic, currency"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a moeda da República Tcheca?",
+					"keywords": "moeda, República Tcheca"
+				},
+				{
 					"language": "de",
 					"string": "Was ist die Währung der Tschechischen Republik?",
 					"keywords": "Tschechischen Republik, Währung"
@@ -12705,6 +13535,11 @@
 					"keywords": "Socrates, influence, Aristotle"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Sócrates influenciou Aristóteles?",
+					"keywords": "Sócrates, influência, Aristóteles"
+				},
+				{
 					"language": "de",
 					"string": "Hat Sokrates Aristoteles beeinflusst?",
 					"keywords": "Sokrates, beeinflussen, Aristoteles"
@@ -12754,6 +13589,11 @@
 					"language": "en",
 					"string": "What is the time zone of Salt Lake City?",
 					"keywords": "Salt Lake City, time zone"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual o fuso horário de Salt Lake City?",
+					"keywords": "fuso horário, Salt Lake City"
 				},
 				{
 					"language": "de",
@@ -12815,6 +13655,11 @@
 					"language": "en",
 					"string": "Who is the son of Sonny and Cher?",
 					"keywords": "son, Sonny and Cher"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o filho de Sonny e Cher?",
+					"keywords": "filho, Sonny, Cher"
 				},
 				{
 					"language": "fa",
@@ -12888,6 +13733,11 @@
 					"keywords": "city, headquarters of the United Nations"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que cidade está a sede das Nações Unidas?",
+					"keywords": "cidade, sede, Nações Unidas"
+				},
+				{
 					"language": "fa",
 					"string": "مقر سازمان ملل در کدام شهر قرار دارد؟",
 					"keywords": "مقر، سازمان ملل، شهر"
@@ -12959,6 +13809,11 @@
 					"keywords": "founder, Penguin Books"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o fundador da Penquin Books?",
+					"keywords": "fundador, Penguin Books"
+				},
+				{
 					"language": "de",
 					"string": "Wer hat Penguin Books gegründet?",
 					"keywords": "gegründet, Penguin Books"
@@ -13023,6 +13878,11 @@
 					"language": "en",
 					"string": "When was Jack Wolfskin founded?",
 					"keywords": "Jack Wolfskin, founded"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quando foi fundada a Jack Wolfskin?",
+					"keywords": "fundada, Jack Wolfskin"
 				},
 				{
 					"language": "fa",
@@ -13096,6 +13956,11 @@
 					"keywords": "mayor, Rotterdam"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem é o prefeito de Rotterdam?",
+					"keywords": "prefeito, Rotterdam"
+				},
+				{
 					"language": "de",
 					"string": "Wer ist der Bürgermeister von Rotterdam?",
 					"keywords": "Bürgermeister, Rotterdam"
@@ -13162,6 +14027,11 @@
 					"keywords": "Swedish, oceanographer"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Liste todos os oceanógrafos suecos.",
+					"keywords": "oceanógrafos, suecos"
+				},
+				{
 					"language": "de",
 					"string": "Gib mir alle Schwedischen Ozeanographen.",
 					"keywords": "Schwedisch, Ozeanographen"
@@ -13226,6 +14096,11 @@
 					"language": "en",
 					"string": "Show me Hemingway's autobiography.",
 					"keywords": "autobiography, Hemingway"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Mostre-me a autobiografia de Hemingway.",
+					"keywords": "autobiografia, Hemingway"
 				},
 				{
 					"language": "fa",
@@ -13297,6 +14172,11 @@
 					"language": "en",
 					"string": "Who are the parents of the wife of Juan Carlos I?",
 					"keywords": "Juan Carlos I, wife, parents"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem são os pais da esposa de Juan Carlos I?",
+					"keywords": "pais, esposa, Juan Carlos I"
 				},
 				{
 					"language": "de",
@@ -13372,6 +14252,11 @@
 					"keywords": "Tesla, nobel prize, physics"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Tesla ganhou um Prêmio Nobel de Física?",
+					"keywords": "Tesla, Prêmio Nobel de Física"
+				},
+				{
 					"language": "de",
 					"string": "Hat Tesla den Nobelpreis für Physik gewonnen?",
 					"keywords": "Tesla, Nobelpreis, Physik"
@@ -13421,6 +14306,11 @@
 					"language": "en",
 					"string": "Who is the tallest basketball player?",
 					"keywords": "tallest, basketball player"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o jogador de basquete mais alto?",
+					"keywords": "jogador de basquete, mais alto"
 				},
 				{
 					"language": "fa",
@@ -13494,6 +14384,11 @@
 					"keywords": "city, the least inhabitants"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual cidade tem menos habitantes?",
+					"keywords": "cidade, menos habitantes"
+				},
+				{
 					"language": "fa",
 					"string": "چه شهری کمترین سکنه را دارد؟",
 					"keywords": "شهری، کمترین سکنه"
@@ -13565,6 +14460,11 @@
 					"keywords": "proinsulin, protein"
 				},
 				{
+					"language": "pt_BR",
+					"string": "A proinsulina é uma proteína?",
+					"keywords": "proinsulina, proteína"
+				},
+				{
 					"language": "de",
 					"string": "Ist Proinsulin ein Protein?",
 					"keywords": "Proinsulin, Protein"
@@ -13614,6 +14514,11 @@
 					"language": "en",
 					"string": "Who were the parents of Queen Victoria?",
 					"keywords": "parents, Queen Victoria"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem foram os pais da Rainha Victoria?",
+					"keywords": "pais, Rainha Victoria"
 				},
 				{
 					"language": "de",
@@ -13689,6 +14594,11 @@
 					"keywords": "children, Che Guevara"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Che Guevara teve filhos?",
+					"keywords": "Che Guevara, filhos"
+				},
+				{
 					"language": "de",
 					"string": "Hatte Che Guevara Kinder?",
 					"keywords": "Kinder, Che Guevara"
@@ -13743,6 +14653,11 @@
 					"language": "en",
 					"string": "Is Lake Baikal bigger than the Great Bear Lake?",
 					"keywords": "Lake Baikal, bigger than, Great Bear Lake"
+				},
+				{
+					"language": "pt_BR",
+					"string": "O lago Baikal é maior do que o lago Great Bear?",
+					"keywords": "lago Baikal, maior, lago Great Bear"
 				},
 				{
 					"language": "de",
@@ -13801,6 +14716,11 @@
 					"keywords": "Kaurismäki, winner, Grand Prix at Cannes"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Kaurismäki alguma vez venceu o Grand Prix de Cannes?",
+					"keywords": "Kaurismäki, vencedor, Grand Prix de Cannes"
+				},
+				{
 					"language": "fa",
 					"string": "آیا کوریسماکی تا بحال جایزه بزرگ  جشنواره کن را برده است؟",
 					"keywords": "کوریسماکی، جایزه بزرگ جشنواره کن"
@@ -13814,7 +14734,7 @@
 					"language": "es",
 					"string": "¿Gano Kaurismäki alguna vez el Gran Prix de Cannes?",
 					"keywords": "Kaurismäki, ganador, Grand Prix de Cannes"
-				},
+				}, 
 				{
 					"language": "it",
 					"string": "Kaurismäki ha mai vinto il Grand Prix a Cannes?",
@@ -13860,6 +14780,11 @@
 					"language": "en",
 					"string": "Give me all books by William Goldman with more than 300 pages.",
 					"keywords": "book, William Goldman, pages, more than 300"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os livros de William Goldman com mais de 300 páginas.",
+					"keywords": "livro, William Goldman, mais de 300, páginas"
 				},
 				{
 					"language": "de",
@@ -13983,6 +14908,11 @@
 					"keywords": "Fort Knox, located"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Onde está localizado o Fort Knox?",
+					"keywords": "localizado, Fort Knox"
+				},
+				{
 					"language": "fa",
 					"string": "فورت ناکس در کجا واقع شده است؟",
 					"keywords": "فورت ناکس، واقع"
@@ -14054,6 +14984,11 @@
 					"keywords": "Fort Knox, located, U.S. state"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em que estado dos EUA fica o Fort Knox?",
+					"keywords": "estado dos EUA, Fort Knox"
+				},
+				{
 					"language": "de",
 					"string": "In welchem US-Bundesstaat liegt Fort Knox?",
 					"keywords": "Fort Knox, liegen, US-Bundesstaat"
@@ -14113,6 +15048,11 @@
 					"language": "en",
 					"string": "Where is Syngman Rhee buried?",
 					"keywords": "where, Syngman Rhee, buried"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Onde está enterrado Syngman Rhee?",
+					"keywords": "enterrado, Syngman Rhee"
 				},
 				{
 					"language": "fa",
@@ -14186,6 +15126,11 @@
 					"keywords": "timezone, San Pedro de Atacama"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual é o fuso horário de São Pedro de Atacama?",
+					"keywords": "fuso horário, São Pedro de Atacama"
+				},
+				{
 					"language": "fa",
 					"string": "منطقه زمانی در San Pedro de Atacama چیست؟",
 					"keywords": "منطقه زمانی، San Pedro de Atacama"
@@ -14255,6 +15200,11 @@
 					"language": "en",
 					"string": "To which artistic movement did the painter of The Three Dancers belong?",
 					"keywords": "artistic movement, painter, The Three Dancers"
+				},
+				{
+					"language": "pt_BR",
+					"string": "A que movimento artístico o pintor do quadro As Três Dançarinas pertencia?",
+					"keywords": "movimento artístico, pintor, As Três Dançarinas"
 				},
 				{
 					"language": "fa",
@@ -14335,6 +15285,11 @@
 					"keywords": "scientist, known for, Manhattan Project, Nobel Peace Prize"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que cientista é conhecido pelo Projeto Manhattan e pelo Prêmio Nobel da Paz?",
+					"keywords": "cientista, conhecido, Projeto Manhattan, Prêmio Nobel da Paz"
+				},
+				{
 					"language": "de",
 					"string": "Welcher Wissenschaftler ist bekannt für das Manhattan-Projekt und den Friedensnobelpreis?",
 					"keywords": "Wissenschaftler, bekannt für, Manhattan-Projekt, Friedensnobelpreis"
@@ -14399,6 +15354,11 @@
 					"language": "en",
 					"string": "Show me all books in Asimov's Foundation series.",
 					"keywords": "books, Asimov, Foundation series"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Mostre-me todos os livros de Asimov da série Fundação.",
+					"keywords": "livros, Asimov, série Fundação"
 				},
 				{
 					"language": "fa",
@@ -14533,6 +15493,11 @@
 					"keywords": "New Jersey, city, inhabitants, more than 100000"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Liste todas as cidades em New Jersey com mais de 100000 habitantes.",
+					"keywords": "cidade, New Jersey, mais de 100000, habitantes"
+				},
+				{
 					"language": "de",
 					"string": "Gib mir alle Städte in New Jersey, die mehr als 100000 Einwohner haben.",
 					"keywords": "New Jersey, Stadt, Einwohner, mehr als 100000"
@@ -14613,6 +15578,11 @@
 					"keywords": "museum, New York, the most visitors"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que museu de Nova York tem mais visitantes?",
+					"keywords": "museu, Nova York, mais visitantes"
+				},
+				{
 					"language": "fa",
 					"string": "کدام موزه در نیویورک بیشترین بازدید کننده را دارد؟",
 					"keywords": "موزه، نیویورک، بیشترین بازدید کننده"
@@ -14684,6 +15654,11 @@
 					"keywords": "high, Yokohama Marine Tower"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual a altura da torre Yokohama Marine?",
+					"keywords": "altura, torre Yokohama Marine"
+				},
+				{
 					"language": "de",
 					"string": "Wie hoch ist der Yokohama Marine Tower?",
 					"keywords": "hoch, Yokohama Marine Tower"
@@ -14750,6 +15725,11 @@
 					"keywords": "new BattleStar Galactica series, episodes, more, old Battle Star Galactica series"
 				},
 				{
+					"language": "pt_BR",
+					"string": "A nova série Battlestar Galactica tem mais episódios do que a anterior?",
+					"keywords": "nova série Battlestar Galactica, mais episódios do que a anterior"
+				},
+				{
 					"language": "de",
 					"string": "Hat die neue Battlestar-Galactica-Serie mehr Episoden als die alte?",
 					"keywords": "neue Battlestar-Galactica-Serie, Episoden, mehr, alte Battlestar-Galactica-Serie"
@@ -14799,6 +15779,11 @@
 					"language": "en",
 					"string": "Who is the youngest Darts player?",
 					"keywords": "Darts player, youngest"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quem é o jogador mais jovem de dardos?",
+					"keywords": "jogador mais jovem de dardos"
 				},
 				{
 					"language": "de",
@@ -14867,6 +15852,11 @@
 					"keywords": "video game, World of Warcraft, develop"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem desenvolveu o jogo World of Warcraft?",
+					"keywords": "desenvolver, jogo, World of Warcraft"
+				},
+				{
 					"language": "de",
 					"string": "Wer hat das Videospiel World of Warcraft entwickelt?",
 					"keywords": "Videospiel, World of Warcraft, entwickeln"
@@ -14926,6 +15916,11 @@
 					"language": "en",
 					"string": "Who was the pope that founded the Vatican Television?",
 					"keywords": "pope, founded, Vatican Television"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual papa fundou a Televisão do Vaticano?",
+					"keywords": "papa, fundou, Televisão do Vaticano"
 				},
 				{
 					"language": "de",
@@ -14994,6 +15989,11 @@
 					"keywords": "Harold and Maude, compose, music"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem compôs a música para Harold e Maude?",
+					"keywords": "compositor, música, Harold e Maude"
+				},
+				{
 					"language": "de",
 					"string": "Wer hat die Musik für Harold und Maude komponiert?",
 					"keywords": "Harold und Maude, komponieren, Musik"
@@ -15053,6 +16053,11 @@
 					"language": "en",
 					"string": "Give me all members of Prodigy.",
 					"keywords": "member, Prodigy"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Liste todos os membros da Prodigy",
+					"keywords": "membros, Prodigy"
 				},
 				{
 					"language": "fa",
@@ -15139,6 +16144,11 @@
 					"keywords": "starring, Spanish movies, produced, Benicio del Toro"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Quem atua nos filmes espanhois produzidos por Benicio del Toro?",
+					"keywords": "atua, filmes espanhois, produzidos, Benicio del Toro"
+				},
+				{
 					"language": "fa",
 					"string": "چه کسی در فیلم های اسپانیایی تولید شده توسط بنیسیو دل تورو بازی می کند؟",
 					"keywords": "فیلم های اسپانیایی، تولید، بنیسیو دل تورو، بازی"
@@ -15208,6 +16218,11 @@
 					"language": "en",
 					"string": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?",
 					"keywords": "subsidiary, TUI Travel, serve, Glasgow, Dublin"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Qual subsidiária da TUI Travel vôa para Glasgow e Dublin?",
+					"keywords": "subsidiária, TUI Travel, voa, Glasgow, Dublin"
 				},
 				{
 					"language": "fa",
@@ -15281,6 +16296,11 @@
 					"keywords": "country, located, Mecca"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Em qual país está localizada Meca?",
+					"keywords": "país, locallizada, Meca"
+				},
+				{
 					"language": "de",
 					"string": "In welchem Land liegt Mekka?",
 					"keywords": "Land, Mekka"
@@ -15345,6 +16365,11 @@
 					"language": "en",
 					"string": "How many languages are spoken in Colombia?",
 					"keywords": "languages, Colombia"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quantos idiomas são falados na Colômbia?",
+					"keywords": "idiomas, Colômbia"
 				},
 				{
 					"language": "fa",
@@ -15418,6 +16443,11 @@
 					"keywords": "biggest stadium, Spain"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Qual o maior estádio da Espanha?",
+					"keywords": "maior estádio, Espanha"
+				},
+				{
 					"language": "fa",
 					"string": "بزرگترین استادیوم در اسپانیا کدام است؟",
 					"keywords": "بزرگترین استادیوم، اسپانیا"
@@ -15489,6 +16519,11 @@
 					"keywords": "professional surfer, born, Philippines"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Que surfistas profissionais nasceram nas Filipinas?",
+					"keywords": "surfistas profissionais, nascer, Filipinas"
+				},
+				{
 					"language": "de",
 					"string": "Welche Profisurfer wurden auf den Philippinen geboren?",
 					"keywords": "Profisurfer, geboren, Philippinen"
@@ -15548,6 +16583,11 @@
 					"language": "en",
 					"string": "What are the five boroughs of New York?",
 					"keywords": "five boroughs, New York"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quais são os cinco condados de New York?",
+					"keywords": "cinco condados, New York"
 				},
 				{
 					"language": "fa",
@@ -15646,6 +16686,11 @@
 					"keywords": "Cola, beverage"
 				},
 				{
+					"language": "pt_BR",
+					"string": "Cola é uma bebida?",
+					"keywords": "Cola, bebida"
+				},
+				{
 					"language": "de",
 					"string": "Ist Cola ein Getränk?",
 					"keywords": "Cola, Getränk"
@@ -15700,6 +16745,11 @@
 					"language": "en",
 					"string": "When did princess Diana die?",
 					"keywords": "date, princess Diana, died"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Quando a princesa Diana morreu?",
+					"keywords": "princesa Diana, morreu"
 				},
 				{
 					"language": "fa",
@@ -15771,6 +16821,11 @@
 					"language": "en",
 					"string": "Where in France is sparkling wine produced?",
 					"keywords": "produced, France, sparkling wine"
+				},
+				{
+					"language": "pt_BR",
+					"string": "Onde é produzido o vinho espumante na França?",
+					"keywords": "produz, vinho espumante, França"
 				},
 				{
 					"language": "de",
