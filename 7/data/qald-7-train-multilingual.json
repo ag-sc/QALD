@@ -2569,6 +2569,11 @@
 					"keywords": "filme, atuaram, Julia Roberts, Richard Gere"
 				},
 				{
+					"language": "fa",
+					"string": "در چه فیلم هایی جولیا رابرتس همچنین ریچارد گییر بازی کردند؟",
+					"keywords": "فیلم هایی، جولیا رابرتس، ریچارد گییر، بازی"
+				},
+				{
 					"language": "de",
 					"string": "In welchen Filmen spielen sowohl Julia Roberts als auch Richard Gere mit?",
 					"keywords": "Film, mitspielen, Julia Roberts, Richard Gere"
@@ -3728,6 +3733,11 @@
 					"language": "pt_BR",
 					"string": "Quem escreveu a canção Hotel California?",
 					"keywords": "autor"
+				},
+				{
+					"language": "fa",
+					"string": "چه کسی آهنگ هتل کالیفرنیا را نوشت؟",
+					"keywords": "اهنگ هتل کالیفرنیا، نوشت"
 				},
 				{
 					"language": "de",
@@ -12272,6 +12282,11 @@
 					"language": "pt_BR",
 					"string": "Em quem Vincent van Gogh inspirou-se?",
 					"keywords": "inspiração, Vincent van Gogh"
+				},
+				{
+					"language": "fa",
+					"string": "ونسان ون گوگ از چه کسی الهام گرفته است؟",
+					"keywords": "ونسان ون گوگ، الهام"
 				},
 				{
 					"language": "de",
