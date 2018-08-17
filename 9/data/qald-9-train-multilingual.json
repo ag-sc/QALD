@@ -64,37 +64,12 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
-            "value" : "Twilight Struggle"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Washington's_War"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Sword of Rome"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Fields of Fire (game)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Chandragupta (board game)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Washington's War"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Paths of Glory (board game)"
+            "value" : "http://dbpedia.org/resource/Fields_of_Fire_(game)"
           }
         }, {
           "uri" : {
@@ -109,7 +84,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "A World At War"
+            "value" : "http://dbpedia.org/resource/Sword_of_Rome"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Twilight_Struggle"
           }
         }, {
           "uri" : {
@@ -119,27 +99,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Commands & Colors: Ancients"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Chandragupta_(board_game)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Fields_of_Fire_(game)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Sword_of_Rome"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Twilight_Struggle"
           }
         } ]
       }
@@ -211,17 +171,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Skype Technologies"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Skype_Technologies"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Microsoft"
           }
         } ]
       }
@@ -288,17 +238,22 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Kapsetaki_duo"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Gianna_Angelopoulos-Daskalaki"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Lefteris_Gialousis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Kapsetaki duo"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Dimitrios Kiliaras"
+            "value" : "http://dbpedia.org/resource/Elia_del_Medigo"
           }
         }, {
           "uri" : {
@@ -308,12 +263,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Nikos Karelis"
+            "value" : "http://dbpedia.org/resource/Meletius_I_Pegas"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Meletius_I_Pegas"
+            "value" : "http://dbpedia.org/resource/Ilya_Livykou"
           }
         }, {
           "uri" : {
@@ -323,22 +278,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Nadia Valavani"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Minas_Pitsos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Stiliani Pilatou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Andreas Ritzos"
           }
         }, {
           "uri" : {
@@ -348,7 +288,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Manolis Roubakis"
+            "value" : "http://dbpedia.org/resource/Dimitris_Raptakis"
           }
         }, {
           "uri" : {
@@ -363,27 +303,27 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Odysseas_Elytis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Antonis_Bourselis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Stiliani_Pilatou"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Stavros_Labrakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Michael Damaskinos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Notis Sfakianakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Manolis_Moniakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Giannis Vardinogiannis"
           }
         }, {
           "uri" : {
@@ -398,17 +338,27 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nikos_Androulakis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Labros_Kefaloukos"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Rika Dialina"
+            "value" : "http://dbpedia.org/resource/Manolis_Saliakas"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Manolis_Saliakas"
+            "value" : "http://dbpedia.org/resource/Ieroklis_Stoltidis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Yannis_Markopoulos"
           }
         }, {
           "uri" : {
@@ -423,17 +373,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Dimitris Raptakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Cyril Lucaris"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikos Kousidis"
+            "value" : "http://dbpedia.org/resource/Cyril_Lucaris__Hieromartyr_Cyril_Lucaris__1"
           }
         }, {
           "uri" : {
@@ -443,27 +383,22 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Michail Fragoulakis"
+            "value" : "http://dbpedia.org/resource/Leonidas_Kyrkos"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Lena Platonos"
+            "value" : "http://dbpedia.org/resource/Argyro_Strataki"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Christoforos Liontakis"
+            "value" : "http://dbpedia.org/resource/Michael_Koukoulakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Joseph Solomon Delmedigo"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Francesco Barozzi"
+            "value" : "http://dbpedia.org/resource/Anastasios_Triantafyllou"
           }
         }, {
           "uri" : {
@@ -473,17 +408,12 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Francisco_Leontaritis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Janus_Plousiadenos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Elli Alexiou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Giannis Domatas"
           }
         }, {
           "uri" : {
@@ -493,32 +423,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Christos Saloustros"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Notis_Sfakianakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Christoforos Papakaliatis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Anastasios Triantafyllou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nektarios Tavernarakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Lili Zografou"
+            "value" : "http://dbpedia.org/resource/Albi_Alla"
           }
         }, {
           "uri" : {
@@ -528,7 +438,17 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nektarios_Tavernarakis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Christos_Saloustros"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nikos_Kazantzakis"
           }
         }, {
           "uri" : {
@@ -539,11 +459,6 @@
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Romylos_Kedikoglou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Iosif Daskalakis"
           }
         }, {
           "uri" : {
@@ -559,16 +474,6 @@
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Nikonas_Spiliotakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Angelos Akotantos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Francisco Leontaritis"
           }
         }, {
           "uri" : {
@@ -593,7 +498,22 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Charalampos_Damianakis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Chrysovalantis_Kozoronis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Apelles_of_Heraklion"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Rhea_Galanaki"
           }
         }, {
           "uri" : {
@@ -608,7 +528,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Maria Spiridaki"
+            "value" : "http://dbpedia.org/resource/Manolis_Rasoulis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Joseph_Sifakis"
           }
         }, {
           "uri" : {
@@ -618,7 +543,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Peter Diamandopoulos"
+            "value" : "http://dbpedia.org/resource/Konstantinos_Volanakis"
           }
         }, {
           "uri" : {
@@ -633,12 +558,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Georges Panayotis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikos Marinakis"
+            "value" : "http://dbpedia.org/resource/İbrahim_Senil"
           }
         }, {
           "uri" : {
@@ -648,462 +568,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Joseph Sifakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Angelos_Akotantos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Georgios_Kalaitzakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nicholas_Kalliakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Konstantinos Volanakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Andreas_Ritzos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Romylos Kedikoglou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Elia del Medigo"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Andreas Bouchalakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Giorgos Grammatikakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Manolis_Roubakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Ntinos_Konstantakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Manolis_Papadrakakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Minas Pitsos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Greg Massialas"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Giannis_Vardinogiannis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nikos_Karelis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "İbrahim Senil"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Georgios_Samaras"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Michail_Fragoulakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Ieroklis Stoltidis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Michael_Damaskinos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Papadrakakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Giorgos_Giakoumakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nikos_Kousidis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Rhea Galanaki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Konstantinos Gouvis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Saliakas"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Ntinos Konstantakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Christos Kozyrakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Georges_Panayotis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Lefteris Gialousis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Kapsetaki_duo"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Gianna_Angelopoulos-Daskalaki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikonas Spiliotakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Elia_del_Medigo"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Spyros Danellis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Sapfo Notara"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikos Androulakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Ilya_Livykou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Rovithis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Theophanes the Cretan"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikos Machlas"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Albi Alla"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Dimitris_Raptakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Giorgos Giakoumakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Stefanoudakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Odysseas_Elytis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Antonis_Bourselis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Stiliani_Pilatou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Moniakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nikos Kazantzakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Zacharias Kavousakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Chrysovalantis Kozoronis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Meletius I Pegas"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nikos_Androulakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Ieroklis_Stoltidis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Yannis Markopoulos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Yannis_Markopoulos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Argyro Strataki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Konstanty Korniakt"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Cyril_Lucaris__Hieromartyr_Cyril_Lucaris__1"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Andreas Musalus"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Leonidas_Kyrkos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Argyro_Strataki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Janus Plousiadenos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Michael_Koukoulakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Anastasios_Triantafyllou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nicholas Kalliakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Francisco_Leontaritis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Michael Katehakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Aristeidis Stergiadis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Apelles of Heraklion"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Albi_Alla"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nektarios_Tavernarakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Nikos_Kazantzakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "El Greco"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Charalampos_Damianakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Georgios Kalaitzakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Kefalogiannis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Chrysovalantis_Kozoronis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Rhea_Galanaki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Georgios Samaras"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Abraham III of Armenia"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Labros Kefaloukos"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Manolis_Rasoulis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Joseph_Sifakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Konstantinos_Volanakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/İbrahim_Senil"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Odysseas Elytis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Spyros_Danellis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Fotis Kafatos"
+            "value" : "http://dbpedia.org/resource/Angelos_Akotantos"
           }
         }, {
           "uri" : {
@@ -1118,17 +588,17 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Georgios Sarris"
+            "value" : "http://dbpedia.org/resource/Georgios_Kalaitzakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Stavros Labrakis"
+            "value" : "http://dbpedia.org/resource/Nicholas_Kalliakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Stephanos Sahlikis"
+            "value" : "http://dbpedia.org/resource/Andreas_Ritzos"
           }
         }, {
           "uri" : {
@@ -1153,12 +623,17 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Maria Papapetros"
+            "value" : "http://dbpedia.org/resource/Manolis_Roubakis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Michalis Sifakis"
+            "value" : "http://dbpedia.org/resource/Ntinos_Konstantakis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Manolis_Papadrakakis"
           }
         }, {
           "uri" : {
@@ -1173,22 +648,22 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Michael Koukoulakis"
+            "value" : "http://dbpedia.org/resource/Giannis_Vardinogiannis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Leonidas Kyrkos"
+            "value" : "http://dbpedia.org/resource/Nikos_Karelis"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Manolis Tzanakakis"
+            "value" : "http://dbpedia.org/resource/Georgios_Samaras"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Charalampos Damianakis"
+            "value" : "http://dbpedia.org/resource/Michail_Fragoulakis"
           }
         }, {
           "uri" : {
@@ -1203,12 +678,17 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Antonis Bourselis"
+            "value" : "http://dbpedia.org/resource/Michael_Damaskinos"
           }
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Beata Kitsikis"
+            "value" : "http://dbpedia.org/resource/Giorgos_Giakoumakis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nikos_Kousidis"
           }
         }, {
           "uri" : {
@@ -1223,22 +703,12 @@
         }, {
           "uri" : {
             "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Georges_Panayotis"
+          }
+        }, {
+          "uri" : {
+            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Andreas_Bouchalakis"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Ilya Livykou"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Gianna Angelopoulos-Daskalaki"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Manolis Rasoulis"
           }
         }, {
           "uri" : {
@@ -1315,22 +785,12 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
-            "value" : "Lincoln County, Nevada"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Nevada"
           }
         }, {
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Lincoln_County,_Nevada"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Nevada"
           }
         } ]
       }
@@ -1657,16 +1117,6 @@
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Washington,_D.C."
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Washington, D.C."
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "Petersen House (Washington, D.C.)"
           }
         }, {
           "uri" : {
@@ -6184,11 +5634,6 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
-            "value" : "Ken Follett"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Ken_Follett"
           }
         } ]
@@ -6254,11 +5699,6 @@
       },
       "results" : {
         "bindings" : [ {
-          "uri" : {
-            "type" : "uri",
-            "value" : "New Jersey"
-          }
-        }, {
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/New_Jersey"
@@ -69260,32 +68700,12 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Tasmania"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Moonta_Bay,_South_Australia"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Victoria_(Australia)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Copper_Coast_Wines"
           }
         }, {
           "uri" : {
             "type" : "uri",
             "value" : "http://dbpedia.org/resource/Matilda_Bay_Brewing_Company"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Hobart"
           }
         } ]
       }
@@ -76356,73 +75776,6 @@
       "boolean" : true
     } ]
   }, {
-    "id" : "228",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "de",
-      "string" : "Was ist das Unterschied zwischen Korrelation und Abhängigkeit? ",
-      "keywords" : "Korrelation und Abhängigkeit "
-    }, {
-      "language" : "ru",
-      "string" : "Какие является  разница между корреляция а также зависимость? ",
-      "keywords" : "корреляция а также зависимость "
-    }, {
-      "language" : "pt",
-      "string" : "o que é a diferença entre correlação e dependência? ",
-      "keywords" : "correlação e dependência "
-    }, {
-      "language" : "en",
-      "string" : "What is the difference between correlation and dependence?",
-      "keywords" : "correlation and dependence"
-    }, {
-      "language" : "hi_IN",
-      "string" : "सह - संबंध तथा निर्भरता के बीच अंतर क्या है ? ",
-      "keywords" : "सह - संबंध तथा निर्भरता "
-    }, {
-      "language" : "fa",
-      "string" : "  وابستگی؟  و  همبستگی  بین  تفاوت  این  است  چی",
-      "keywords" : "  وابستگی  و  همبستگی"
-    }, {
-      "language" : "it",
-      "string" : "Che cosa è il differenza fra correlazione e dipendenza? ",
-      "keywords" : "correlazione e dipendenza "
-    }, {
-      "language" : "fr",
-      "string" : "Quelle est la différence entre corrélation et dépendance? ",
-      "keywords" : "corrélation et dépendance "
-    }, {
-      "language" : "ro",
-      "string" : "Ce este  diferență între corelație și dependență? ",
-      "keywords" : "corelație și dependență "
-    }, {
-      "language" : "es",
-      "string" : "Qué es el diferencia Entre correlación y ¿dependencia? ",
-      "keywords" : "correlación y dependencia "
-    }, {
-      "language" : "nl",
-      "string" : "Wat is de verschil tussen correlatie en afhankelijkheid? ",
-      "keywords" : "correlatie en afhankelijkheid "
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?diff WHERE { dbr:Correlation_and_dependence rdfs:comment ?diff } OFFSET 4 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "In statistics, dependence or association is any statistical relationship, whether causal or not, between two random variables or two sets of data. Correlation is any of a broad class of statistical relationships involving dependence, though in common usage it most often refers to the extent to which two variables have a linear relationship with each other. Familiar examples of dependent phenomena include the correlation between the physical statures of parents and their offspring, and the correlation between the demand for a product and its price."
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "229",
     "answertype" : "string",
     "aggregation" : false,
@@ -76964,52 +76317,7 @@
         "bindings" : [ {
           "uri" : {
             "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Deception_Point"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "1998"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "2009-09-15"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/The_Lost_Symbol"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "2013-05-14"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
             "value" : "http://dbpedia.org/resource/Inferno_(Brown_novel)"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/The_Da_Vinci_Code"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "2001"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "April 2003"
-          }
-        }, {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Digital_Fortress"
           }
         } ]
       }
@@ -77216,73 +76524,6 @@
       }
     } ]
   }, {
-    "id" : "240",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "de",
-      "string" : "Wer sind das Gründung Väter von vereinigt Zustände? ",
-      "keywords" : "UNS Gründung Väter "
-    }, {
-      "language" : "ru",
-      "string" : "Кто находятся  учредительный отцы из единый состояния? ",
-      "keywords" : "НАС учредительный отцы "
-    }, {
-      "language" : "pt",
-      "string" : "Quem estamos a fundando pais do Unidos estados? ",
-      "keywords" : "NOS fundando pais "
-    }, {
-      "language" : "en",
-      "string" : "Who are the founding fathers of united states?",
-      "keywords" : "US founding fathers"
-    }, {
-      "language" : "hi_IN",
-      "string" : "अमेरिका के संस्थापक पिता कौन हैं?",
-      "keywords" : "अमेरिका, संस्थापक पिता"
-    }, {
-      "language" : "fa",
-      "string" : "  ایالت ها؟  متحد  از  پدران  تاسیس  این  هستند  که",
-      "keywords" : "  پدران  تاسیس  ایالات متحده"
-    }, {
-      "language" : "it",
-      "string" : "Chi siamo il fondazione padri di unito stati? ",
-      "keywords" : "NOI fondazione padri "
-    }, {
-      "language" : "fr",
-      "string" : "Qui sont la fonder pères de uni États? ",
-      "keywords" : "NOUS fonder pères "
-    }, {
-      "language" : "ro",
-      "string" : "Care sunt  fondator tați de Unit state? ",
-      "keywords" : "S.U.A. fondator tați "
-    }, {
-      "language" : "es",
-      "string" : "Quien son el establecimiento padres de unido estados? ",
-      "keywords" : "NOS establecimiento padres "
-    }, {
-      "language" : "nl",
-      "string" : "Wie zijn de oprichten vaders van verenigd staten? ",
-      "keywords" : "ONS oprichten vaders "
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?foundingfathers WHERE { dbr:Founding_Fathers_of_the_United_States rdfs:comment ?foundingfathers } OFFSET 7 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "The Founding Fathers of the United States are the individuals of the Thirteen British Colonies in North America who led the American Revolution against the authority of the British Crown and established the United States of America. The term is also used more narrowly, referring specifically to those who either signed the Declaration of Independence in 1776 or who were delegates to the 1787 Constitutional Convention and took part in drafting the proposed Constitution of the United States. A further subset includes those who signed the Continental Association or the Articles of Confederation. During much of the 19th century, they were referred to as either the \"Founders\" or the \"Fathers\"."
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "241",
     "answertype" : "resource",
     "aggregation" : false,
@@ -77351,7 +76592,7 @@
     } ]
   }, {
     "id" : "242",
-    "answertype" : "string",
+    "answertype" : "uri",
     "aggregation" : false,
     "onlydbo" : true,
     "hybrid" : false,
@@ -77401,17 +76642,17 @@
       "keywords" : "Carolina maaimachine "
     } ],
     "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?hot WHERE { dbr:Carolina_Reaper dbo:abstract ?hot } OFFSET 10 LIMIT 10"
+      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/>PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { dbr:Carolina_Reaper dbo:origin ?uri}"
     },
     "answers" : [ {
       "head" : {
-        "vars" : [ "string" ]
+        "vars" : [ "uri" ]
       },
       "results" : {
         "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "The Carolina Reaper, originally named the HP22B, is a cultivar of chili pepper of the Capsicum chinense species. It is red and has a gnarled, lumpy pod with a tail like a scythe. As of 2013, Guinness has dubbed it as the hottest chilli in the world, surpassing the previous record holder, the Trinidad Scorpion \"Butch T\"."
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Fort_Mill,_South_Carolina"
           }
         } ]
       }
@@ -78647,73 +77888,6 @@
       }
     } ]
   }, {
-    "id" : "261",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "de",
-      "string" : "Wer ist Daniel Jurafsky? ",
-      "keywords" : "Daniel Jurafsky "
-    }, {
-      "language" : "ru",
-      "string" : "Кто является Даниил jurafsky? ",
-      "keywords" : "Даниил jurafsky "
-    }, {
-      "language" : "pt",
-      "string" : "Quem é daniel jurafsky? ",
-      "keywords" : "daniel jurafsky "
-    }, {
-      "language" : "en",
-      "string" : "Who is daniel jurafsky?",
-      "keywords" : "daniel jurafsky"
-    }, {
-      "language" : "hi_IN",
-      "string" : "कौन है डैनियल जुराफस्की? ",
-      "keywords" : "डैनियल जुराफस्की"
-    }, {
-      "language" : "fa",
-      "string" : "دانیال یورافسکی کیست؟",
-      "keywords" : "دانیل یورافسکی "
-    }, {
-      "language" : "it",
-      "string" : "Chi è daniel jurafsky? ",
-      "keywords" : "daniel jurafsky "
-    }, {
-      "language" : "fr",
-      "string" : "Qui est daniel jurafsky? ",
-      "keywords" : "daniel jurafsky "
-    }, {
-      "language" : "ro",
-      "string" : "Care este daniel jurafsky? ",
-      "keywords" : "daniel jurafsky "
-    }, {
-      "language" : "es",
-      "string" : "Quien es daniel jurafsky? ",
-      "keywords" : "daniel jurafsky "
-    }, {
-      "language" : "nl",
-      "string" : "Wie is daniel Jurafsky? ",
-      "keywords" : "daniel Jurafsky "
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?Dan WHERE { dbr:Daniel_Jurafsky dbo:abstract ?Dan }"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "Daniel Jurafsky, commonly known as Dan Jurafsky, is a Professor of Linguistics and Computer Science at Stanford University."
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "262",
     "answertype" : "resource",
     "aggregation" : false,
@@ -79393,73 +78567,6 @@
       }
     } ]
   }, {
-    "id" : "272",
-    "answertype" : "string",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "de",
-      "string" : "Was ist das Beziehung zwischen Ressource Beschreibung Rahmen und Netz Ontologie Sprache? ",
-      "keywords" : "Netz Ontologie Sprache "
-    }, {
-      "language" : "ru",
-      "string" : "Какие является  связь между Ресурс Описание Фреймворк а также Web онтология Язык? ",
-      "keywords" : "Web онтология язык "
-    }, {
-      "language" : "pt",
-      "string" : "o que é a relação entre Recurso Descrição Estrutura e Rede Ontologia Língua? ",
-      "keywords" : "Rede Ontologia Língua "
-    }, {
-      "language" : "en",
-      "string" : "What is the relation between Resource Description Framework and Web Ontology Language?",
-      "keywords" : "Web Ontology Language"
-    }, {
-      "language" : "hi_IN",
-      "string" : " संसाधन विवरण ढांचा तथा वेब आंटलजी भाषा के बीच क्या रिश्ता है? ",
-      "keywords" : "वेब आंटलजी भाषा "
-    }, {
-      "language" : "fa",
-      "string" : "رابطه بین چارچوب توصیف منابع و زبان هستی شناسی وب چیست؟",
-      "keywords" : "  زبان  هستی شناسی  وب"
-    }, {
-      "language" : "it",
-      "string" : "Che cosa è il relazione fra Risorsa Descrizione Struttura e web Ontologia Linguaggio? ",
-      "keywords" : "web Ontologia linguaggio "
-    }, {
-      "language" : "fr",
-      "string" : "Quelle est la relation entre Ressource La description Cadre et Web Ontologie La langue? ",
-      "keywords" : "Web Ontologie La langue "
-    }, {
-      "language" : "ro",
-      "string" : "Ce este  relație între Resursă Descriere Cadru și Web Ontologie Limba? ",
-      "keywords" : "Web Ontologie Limba "
-    }, {
-      "language" : "es",
-      "string" : "Qué es el relación Entre Recurso Descripción Marco de referencia y Web Ontología ¿Idioma? ",
-      "keywords" : "Web Ontología Idioma "
-    }, {
-      "language" : "nl",
-      "string" : "Wat is de relatie tussen hulpbron Beschrijving Kader en Web Ontologie Taal? ",
-      "keywords" : "Web Ontologie Taal "
-    } ],
-    "query" : {
-      "sparql" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?rdf_owl WHERE { dbr:Web_Ontology_Language dbo:abstract ?rdf_owl } LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "string" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "string" : {
-            "type" : "literal",
-            "value" : "The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Class hierarchies are meant to represent structures used in source code that evolve fairly slowly (typically monthly revisions) whereas ontologies are meant to represent information on the Internet and are expected to be evolving almost constantly. Similarly, ontologies are typically far more flexible as they are meant to represent information on the Internet coming from all sorts of heterogeneous data sources. Class hierarchies on the other hand are meant to be fairly static and rely on far less diverse and more structured sources of data such as corporate databases. The OWL languages are characterized by formal semantics. They are built upon a W3C XML standard for objects called the Resource Description Framework (RDF). OWL and RDF have attracted significant academic, medical and commercial interest. In October 2007, a new W3C working group was started to extend OWL with several new features as proposed in the OWL 1.1 member submission. W3C announced the new version of OWL on 27 October 2009. This new version, called OWL 2, soon found its way into semantic editors such as Protégé and semantic reasoners such as Pellet, RacerPro, FaCT++ and HermiT. The OWL family contains many species, serializations, syntaxes and specifications with similar names. OWL and OWL2 are used to refer to the 2004 and 2009 specifications, respectively. Full species names will be used, including specification version (for example, OWL2 EL). When referring more generally, OWL Family will be used."
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "273",
     "answertype" : "resource",
     "aggregation" : false,
@@ -79740,73 +78847,6 @@
       }
     } ]
   }, {
-    "id" : "277",
-    "answertype" : "resource",
-    "aggregation" : false,
-    "onlydbo" : true,
-    "hybrid" : false,
-    "question" : [ {
-      "language" : "de",
-      "string" : "Woher ist das die meisten tief Punkt im das Ozean? ",
-      "keywords" : "tiefste Punkt ,  Ozean "
-    }, {
-      "language" : "ru",
-      "string" : "где является  большинство глубоко точка в  океан? ",
-      "keywords" : "глубочайшее точка ,  океан "
-    }, {
-      "language" : "pt",
-      "string" : "Onde é a a maioria profundo ponto dentro a oceano? ",
-      "keywords" : "mais profundo ponto ,  oceano "
-    }, {
-      "language" : "en",
-      "string" : "Where is the most deep point in the ocean?",
-      "keywords" : "deepest point, ocean"
-    }, {
-      "language" : "hi_IN",
-      "string" : "दुनिया में महासागर का सबसे गहरा बिंदु कहां है?",
-      "keywords" : "गहरे बिंदु ,  सागर "
-    }, {
-      "language" : "fa",
-      "string" : "  اقیانوس؟  این  که در  نقطه  عمیق  اکثر  این  است  جایی که",
-      "keywords" : "  نقطه  عمیق ترین,    اقیانوس"
-    }, {
-      "language" : "it",
-      "string" : "Dove è il maggior parte in profondità punto in il oceano? ",
-      "keywords" : "più profondo punto ,  oceano "
-    }, {
-      "language" : "fr",
-      "string" : "Où est la plus Profond point dans la océan? ",
-      "keywords" : "le plus profond point ,  océan "
-    }, {
-      "language" : "ro",
-      "string" : "Unde este  cel mai adâncime punct în  ocean? ",
-      "keywords" : "cea mai adâncă punct ,  ocean "
-    }, {
-      "language" : "es",
-      "string" : "Dónde es el más profundo punto en el ¿Oceano? ",
-      "keywords" : "más profundo punto ,  Oceano "
-    }, {
-      "language" : "nl",
-      "string" : "Waar is de meest diep punt in de oceaan? ",
-      "keywords" : "diepste punt ,  oceaan "
-    } ],
-    "query" : {
-      "sparql" : "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?point WHERE { dbr:Extreme_points_of_Earth dct:subject ?x . ?point dct:subject ?x ; rdfs:comment ?comment FILTER ( lang(?comment) = \"en\" ) } OFFSET 13 LIMIT 1"
-    },
-    "answers" : [ {
-      "head" : {
-        "vars" : [ "uri" ]
-      },
-      "results" : {
-        "bindings" : [ {
-          "uri" : {
-            "type" : "uri",
-            "value" : "http://dbpedia.org/resource/Challenger_Deep"
-          }
-        } ]
-      }
-    } ]
-  }, {
     "id" : "278",
     "answertype" : "number",
     "aggregation" : false,
@@ -80073,7 +79113,7 @@
       "keywords" : "voetbal wereld- kop 2018 "
     } ],
     "query" : {
-      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT ?Date WHERE { dbr:2018_FIFA_World_Cup dbp:date ?Date } OFFSET 24 LIMIT 1"
+      "sparql" : "PREFIX dbr: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT ?Date WHERE { dbr:2018_FIFA_World_Cup dbp:date ?Date } ORDER BY DESC(?Date) LIMIT 1"
     },
     "answers" : [ {
       "head" : {
