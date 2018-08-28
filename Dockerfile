@@ -1,6 +1,3 @@
-FROM: nginx:alpine
+FROM wyveo/nginx-php-fpm
 
-ADD https://github.com/aparcar/QALD/archive/master.zip master.zip
-
-RUN unzip master.zip -d /usr/share/nginx/html/
-
+ADD . /usr/share/nginx/html
