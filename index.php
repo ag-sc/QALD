@@ -40,6 +40,9 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
+if ($q == "9") {
+    header("location:http://2018.nliwod.org/challenge");
+     }
 if ($q == "8") {
     header("location:https://project-hobbit.eu/challenges/qald-8-challenge/");
      }
@@ -174,6 +177,12 @@ if ($q == "7") {
     echo "September 2014 &sdot; Part of: <a href='http://nlp.uned.es/clef-qa/' class='sel'><b>QA Track at CLEF 2014&nbsp;&nbsp;</b></a>";
   if ($q == "5")
     echo "September 2015 &sdot; Part of: <a href='http://nlp.uned.es/clef-qa/' class='sel'><b>QA Track at CLEF 2015&nbsp;&nbsp;</b></a>";
+  if ($q == "7")
+    echo "May 2017 &sdot; Part of: <a href='http://2017.eswc-conferences.org/' class='sel'><b>Challenge at ESWC 2017&nbsp;&nbsp;</b></a>";
+  if ($q == "8")
+    echo "October 2017 &sdot; Part of: <a href='http://iswc2017.semanticweb.org' class='sel'><b>Part of NLIWOD workshop at ISWC 2017&nbsp;&nbsp;</b></a>";
+  if ($q == "9")
+    echo "October 2018 &sdot; Part of: <a href='http://iswc2018.semanticweb.org' class='sel'><b>Part of NLIWOD workshop at ISWC 2018&nbsp;&nbsp;</b></a>";
 
  ?>
  </div>
