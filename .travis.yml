@@ -1,0 +1,24 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+    global:
+       - IMAGE_NAME=aksw/qald
+
+before_script:
+    - docker pull "$IMAGE_NAME" || true
+
+script:
+    - docker build --pull --cache-from "$IMAGE_NAME" -t "$IMAGE_NAME" .
+
+before_deploy:
+    - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+    - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
+
+deploy:
+  provider: script
+  script: docker push "${IMAGE_NAME}:latest"
+  on:
+    branch: master
