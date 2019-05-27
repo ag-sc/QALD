@@ -33363,7 +33363,7 @@
       "keywords" : "hoeveel, films, Park Chan-wook, regisseur"
     } ],
     "query" : {
-      "sparql" : "SELECT COUNT(DISTINCT ?uri) WHERE { ?uri <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Park_Chan-wook> . }"
+      "sparql" : "SELECT COUNT(DISTINCT ?uri AS ?uri) WHERE { ?uri <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Park_Chan-wook> . }"
     },
     "answers" : [ {
       "head" : {
@@ -47163,7 +47163,7 @@
       "keywords" : "acteurs, heten, Baldwin"
     } ],
     "query" : {
-      "sparql" : "SELECT DISTINCT ?uri WHERE { ?uri foaf:surname 'Baldwin'@en . { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Actor> . } UNION { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> . } }"
+      "sparql" : "PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?uri WHERE { ?uri foaf:surname 'Baldwin'@en . { ?uri <http://dbpedia.org/ontology/occupation> <http://dbpedia.org/resource/Actor> . } UNION { ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> . } }"
     },
     "answers" : [ {
       "head" : {

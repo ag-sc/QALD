@@ -2227,7 +2227,7 @@
       "keywords" : "bijnaam,  San Francisco"
     } ],
     "query" : {
-      "sparql" : "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> SELECT DISTINCT ?string WHERE { res:San_Francisco foaf:nick ?string }"
+      "sparql" : "PREFIX res: <http://dbpedia.org/resource/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?string WHERE { res:San_Francisco foaf:nick ?string }"
     },
     "answers" : [ {
       "head" : {
@@ -2858,7 +2858,7 @@
       "keywords" : "Jacques Cousteau,  kleinkinderen"
     } ],
     "query" : {
-      "sparql" : "SELECT COUNT(DISTINCT ?y) WHERE { <http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x . ?x <http://dbpedia.org/ontology/child> ?y . }"
+      "sparql" : "SELECT COUNT(DISTINCT ?y AS ?y) WHERE { <http://dbpedia.org/resource/Jacques_Cousteau> <http://dbpedia.org/ontology/child> ?x . ?x <http://dbpedia.org/ontology/child> ?y . }"
     },
     "answers" : [ {
       "head" : {
@@ -20069,7 +20069,7 @@
       "keywords" : "antaal,  keizers,  China"
     } ],
     "query" : {
-      "sparql" : "SELECT COUNT(DISTINCT ?uri) WHERE { ?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> . }"
+      "sparql" : "SELECT COUNT(DISTINCT ?uri AS ?uri) WHERE { ?uri <http://dbpedia.org/property/title> <http://dbpedia.org/resource/Emperor_of_China> . }"
     },
     "answers" : [ {
       "head" : {
@@ -20136,7 +20136,7 @@
       "keywords" : "Teenage Mutant Ninja Turtles,  namen"
     } ],
     "query" : {
-      "sparql" : "SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x . ?x foaf:givenName ?s }"
+      "sparql" : "PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT DISTINCT ?s WHERE { <http://dbpedia.org/resource/Teenage_Mutant_Ninja_Turtles> <http://dbpedia.org/property/members> ?x . ?x foaf:givenName ?s }"
     },
     "answers" : [ {
       "head" : {
