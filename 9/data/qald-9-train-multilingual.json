@@ -10,8 +10,8 @@
     "hybrid" : false,
     "question" : [ {
       "language" : "de",
-      "string" : "Liste alle Brettspiele durch MITTLERE GREENWICH-ZEIT. ",
-      "keywords" : "Brettspiel ,  mittlere Greenwich-Zeit "
+      "string" : "Liste alle Brettspiele von GMT. ",
+      "keywords" : "Brettspiel ,  GMT"
     }, {
       "language" : "ru",
       "string" : "Список все настольные игры от ВРЕМЯ ПО ГРИНВИЧУ. ",
