@@ -18,7 +18,7 @@
       "keywords" : "настольная игра ,  время по Гринвичу "
     }, {
       "language" : "pt",
-      "string" : "Lista todos jogos de tabuleiro de GMT. ",
+      "string" : "Liste todos jogos de tabuleiro da GMT. ",
       "keywords" : "jogo de tabuleiro ,  GMT "
     }, {
       "language" : "en",
@@ -120,7 +120,7 @@
       "keywords" : "развивать ,  Skype "
     }, {
       "language" : "pt",
-      "string" : "Quem desenvolvido Skype? ",
+      "string" : "Quem desenvolveu o Skype? ",
       "keywords" : "desenvolve ,  Skype "
     }, {
       "language" : "en",
@@ -192,7 +192,7 @@
       "keywords" : "люди ,  Родился ,  ираклион "
     }, {
       "language" : "pt",
-      "string" : "Qual pessoas estavam nascermos dentro Heraklion? ",
+      "string" : "Quais pessoas nasceram em Heraklion? ",
       "keywords" : "pessoas ,  nascermos ,  heraklion "
     }, {
       "language" : "en",
@@ -739,7 +739,7 @@
       "keywords" : "Площадь 51 ,  располагается ,  У.С. государство "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual EUA Estado é Área 51 localizado? ",
+      "string" : "Em qual estado dos EUA está localizada a Área 51? ",
       "keywords" : "Área 51 ,  localizado ,  EUA Estado "
     }, {
       "language" : "en",
@@ -811,7 +811,7 @@
       "keywords" : "новый Йорк город ,  мэр "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito do Novo Iorque Cidade? ",
+      "string" : "Quem é a prefeito da cidade de Nova Iorque? ",
       "keywords" : "Novo Iorque Cidade ,  prefeito "
     }, {
       "language" : "en",
@@ -878,7 +878,7 @@
       "keywords" : "страна ,  место ,  пещера ,  Больше чем два "
     }, {
       "language" : "pt",
-      "string" : "Qual paises ter locais com Mais do que dois cavernas? ",
+      "string" : "Quais países tem locais com mais de duas cavernas? ",
       "keywords" : "país ,  Lugar,  colocar ,  caverna ,  Mais do que dois "
     }, {
       "language" : "en",
@@ -1070,7 +1070,7 @@
       "keywords" : "Авраам Линкольн ,   "
     }, {
       "language" : "pt",
-      "string" : "Onde fez Abraão Lincoln o? ",
+      "string" : "Onde morreu Abraão Lincoln? ",
       "keywords" : "Abraão Lincoln ,  o "
     }, {
       "language" : "en",
@@ -1142,7 +1142,7 @@
       "keywords" : "аэропорты ,  Воздух Китай "
     }, {
       "language" : "pt",
-      "string" : "Qual aeroportos faz Ar China servir? ",
+      "string" : "Em quais aeroportos a Air China opera? ",
       "keywords" : "aeroportos ,  Ar China "
     }, {
       "language" : "en",
@@ -1249,7 +1249,7 @@
       "keywords" : "актер ,  в главной роли ,  кино ,  непосредственный ,  в главной роли ,  Уильям Шатнер "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores estrelando dentro filmes dirigido de e estrelando William Shatner ",
+      "string" : "Liste para mim todos os atores estrelando em filmes dirigidos ou com a participação de William Shatner ",
       "keywords" : "ator ,  estrelando ,  filme ,  direto ,  estrelando ,  William Shatner "
     }, {
       "language" : "en",
@@ -1371,7 +1371,7 @@
       "keywords" : "Филиппины ,  официальный язык "
     }, {
       "language" : "pt",
-      "string" : "o que estamos a oficial línguas do a Filipinas? ",
+      "string" : "Quais são as línguas oficiais das Filipinas? ",
       "keywords" : "Filipinas ,  oficial língua "
     }, {
       "language" : "en",
@@ -1443,7 +1443,7 @@
       "keywords" : "фильм ,  Дания "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos dinamarquês filmes. ",
+      "string" : "Me dê todos os filmes dinamarquês. ",
       "keywords" : "filme ,  Dinamarca "
     }, {
       "language" : "en",
@@ -2105,7 +2105,7 @@
       "keywords" : "кино ,  в главной роли ,  штифтик Питт ,  направленный ,  парень Ritchie "
     }, {
       "language" : "pt",
-      "string" : "Qual filmes estrelando Brad Pitt estavam dirigido de Cara Ritchie? ",
+      "string" : "Quais filmes estrelando Brad Pitt foram dirigidos por Cara Ritchie? ",
       "keywords" : "filmes ,  estrelando ,  Brad Pitt ,  dirigido ,  Cara Ritchie "
     }, {
       "language" : "en",
@@ -2172,7 +2172,7 @@
       "keywords" : "Брюс подветренный ,  внучата "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a netos do Bruce Lee ",
+      "string" : "Me dê os netos de Bruce Lee. ",
       "keywords" : "Bruce Lee ,  netos "
     }, {
       "language" : "en",
@@ -2239,7 +2239,7 @@
       "keywords" : "Узи ,  дизайнер ,  развивать ,  оружие "
     }, {
       "language" : "pt",
-      "string" : "Qual de outros armas fez a desenhista do a Uzi desenvolve? ",
+      "string" : "Quais outras armas o desenhista da Uzi desenvolveu? ",
       "keywords" : "Uzi ,  desenhista ,  desenvolve ,  arma "
     }, {
       "language" : "en",
@@ -2306,7 +2306,7 @@
       "keywords" : "универсальный Студии ,  владелец "
     }, {
       "language" : "pt",
-      "string" : "Quem é a proprietário do Universal Studios? ",
+      "string" : "Quem é o proprietário da Universal Studios? ",
       "keywords" : "Universal Estúdios ,  proprietário "
     }, {
       "language" : "en",
@@ -2373,7 +2373,7 @@
       "keywords" : "государство ,  США ,  Население плотность ,  наибольший "
     }, {
       "language" : "pt",
-      "string" : "Qual Estado do a EUA tem a maior população densidade? ",
+      "string" : "Qual estado dos EUA tem a maior densidade populacional? ",
       "keywords" : "Estado ,  EUA ,  população densidade ,  maior "
     }, {
       "language" : "en",
@@ -2440,7 +2440,7 @@
       "keywords" : "монарх ,  в браке ,  Немецкий "
     }, {
       "language" : "pt",
-      "string" : "Qual monarcas estavam casado para uma Alemão? ",
+      "string" : "Quais monarcas foram casados com uma alemã? ",
       "keywords" : "monarca ,  casado ,  alemão "
     }, {
       "language" : "en",
@@ -2512,7 +2512,7 @@
       "keywords" : "организация ,  основанный ,  1950 "
     }, {
       "language" : "pt",
-      "string" : "Qual organizações estavam fundado dentro 1950? ",
+      "string" : "Quais organizações foram fundadas em 1950? ",
       "keywords" : "organização ,  fundado ,  1950 "
     }, {
       "language" : "en",
@@ -5439,7 +5439,7 @@
       "keywords" : "комический ,  капитан Америка ,  Создайте "
     }, {
       "language" : "pt",
-      "string" : "Quem criada a quadrinho Capitão América? ",
+      "string" : "Quem criou o quadrinho Capitão América? ",
       "keywords" : "quadrinho ,  Capitão América ,  crio "
     }, {
       "language" : "en",
@@ -5511,7 +5511,7 @@
       "keywords" : "космонавт ,  Аполлон 14 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a Apolo 14 astronautas. ",
+      "string" : "Me dê os astronautas da Apolo 14.",
       "keywords" : "astronauta ,  Apolo 14 "
     }, {
       "language" : "en",
@@ -5588,7 +5588,7 @@
       "keywords" : "писал ,  книга ,   столбы из  Земля "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi a livro o pilares do a Terra? ",
+      "string" : "Quem escreveu o livro Os pilares da Terra? ",
       "keywords" : "escrevi ,  livro ,  o pilares do a Terra "
     }, {
       "language" : "en",
@@ -5655,7 +5655,7 @@
       "keywords" : "государство ,  единый ,  состояния ,  Америка ,  наибольший ,  плотность "
     }, {
       "language" : "pt",
-      "string" : "Qual Estado do a Unidos Estados do América tem a maior densidade? ",
+      "string" : "Qual estado dos Unidos Estados da América tem a maior densidade? ",
       "keywords" : "Estado ,  Unidos ,  estados ,  América ,  maior ,  densidade "
     }, {
       "language" : "en",
@@ -5722,7 +5722,7 @@
       "keywords" : "космический полет ,  запущенный ,  Космодром "
     }, {
       "language" : "pt",
-      "string" : "Qual vôos espaciais estavam lançado a partir de Baikonur? ",
+      "string" : "Quais vôos espaciais foram lançados a partir de Baikonur? ",
       "keywords" : "voo espacial ,  lançado ,  Baikonur "
     }, {
       "language" : "en",
@@ -5849,7 +5849,7 @@
       "keywords" : "труба игрок ,  бэндлидер "
     }, {
       "language" : "pt",
-      "string" : "Dar mim uma Lista do todos trombeta jogadoras aquele estavam bandleaders. ",
+      "string" : "Me dê a Lista de todos os tocadores de trombeta que foram líderes de bandas. ",
       "keywords" : "trombeta jogador ,  líder de banda "
     }, {
       "language" : "en",
@@ -6141,7 +6141,7 @@
       "keywords" : "У.С. государство ,  одна и та же ,  часовой пояс ,  Юта "
     }, {
       "language" : "pt",
-      "string" : "Qual EUA estados estamos dentro a mesmo fuso horário Como Utah? ",
+      "string" : "Qual estado dos EUA estão no mesmo fuso horário de Utah? ",
       "keywords" : "EUA Estado ,  mesmo ,  fuso horário ,  Utah "
     }, {
       "language" : "en",
@@ -6428,7 +6428,7 @@
       "keywords" : "У.С. государство ,  минеральная ,  золото "
     }, {
       "language" : "pt",
-      "string" : "Qual EUA estados possuir ouro minerais? ",
+      "string" : "Qual estado dos EUA possui ouro? ",
       "keywords" : "EUA Estado ,  mineral ,  ouro "
     }, {
       "language" : "en",
@@ -6505,7 +6505,7 @@
       "keywords" : "Ingrid Bergman ,  дочь ,  в браке "
     }, {
       "language" : "pt",
-      "string" : "Quem é a filha do Ingrid Bergman casado para? ",
+      "string" : "Com quem é casada a filha de Ingrid Bergman?",
       "keywords" : "Ingrid Bergman ,  filha ,  casado "
     }, {
       "language" : "en",
@@ -47301,7 +47301,7 @@
       "keywords" : "Elvis, primo, album, casa discografica"
     }, {
       "language" : "pt_BR",
-      "string" : "Para qual gravadora Elvis gravou seu primeiro álbum?",
+      "string" : "Com qual gravadora Elvis gravou seu primeiro álbum?",
       "keywords" : "gravadora, Elvis, gravou, primeiro, álbum"
     }, {
       "language" : "fr",
@@ -67705,7 +67705,7 @@
       "keywords" : "Fort Knox, trovarsi, stato americano"
     }, {
       "language" : "pt_BR",
-      "string" : "Em que estado dos EUA fica o Fort Knox?",
+      "string" : "Em qual estado dos EUA fica o Fort Knox?",
       "keywords" : "estado dos EUA, Fort Knox"
     }, {
       "language" : "fr",
