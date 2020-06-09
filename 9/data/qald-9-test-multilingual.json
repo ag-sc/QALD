@@ -18,8 +18,8 @@
       "keywords" : "Поваренная соль Озеро город ,   время зона "
     }, {
       "language" : "pt",
-      "string" : "o que é a Tempo zona do Sal Lago Cidade? ",
-      "keywords" : "Sal Lago Cidade ,   Tempo zona "
+      "string" : "o que é a fuso horário do Salt Lake Cidade? ",
+      "keywords" : "Cidade de Salt Lake, fuso horário"
     }, {
       "language" : "en",
       "string" : "What is the time zone of Salt Lake City?",
@@ -34,8 +34,8 @@
       "keywords" : "سالت‌لیک‌سیتی,  منطقه زمانی"
     }, {
       "language" : "pt_BR",
-      "string" : "Qual o fuso horário de Salt Lake City?",
-      "keywords" : "fuso horário,  Salt Lake City"
+      "string" : "Qual o fuso horário da cidade de Salt Lake?",
+      "keywords" : "fuso horário, cidade de Salt Lake"
     }, {
       "language" : "it",
       "string" : "In quale fuso orario si trova Salt Lake City?",
@@ -689,7 +689,7 @@
       "keywords" : "एफसी पोर,  सीटें,  स्टेडियम"
     }, {
       "language" : "pt_BR",
-      "string" : "Quantas cadeiras tem o estádio do Futebol Clube do Porto",
+      "string" : "Quantas cadeiras tem o estádio de futebol do Clube do Porto",
       "keywords" : "cadeiras,  estádio,  Futebol Clube do Porto"
     }, {
       "language" : "fa",
@@ -2763,7 +2763,7 @@
       "keywords" : "बिल गेट्स,  जन्म,  देश"
     }, {
       "language" : "pt_BR",
-      "string" : "Em que país Bill Gates nasceu?",
+      "string" : "Em qual país Bill Gates nasceu?",
       "keywords" : "país,  nascimento,  Bill Gates"
     }, {
       "language" : "fa",
@@ -4973,7 +4973,7 @@
       "keywords" : "कंप्यूटर वैज्ञानिक,  ऑस्कर,  जीत"
     }, {
       "language" : "pt_BR",
-      "string" : "Que cientista da computação ganhou um Oscar?",
+      "string" : "Qual cientista da computação ganhou um Oscar?",
       "keywords" : "cientista da computação,  ganhou,  Oscar"
     }, {
       "language" : "fa",
