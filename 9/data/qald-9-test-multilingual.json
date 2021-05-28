@@ -6410,7 +6410,14 @@
       "head" : {
         "vars" : [ "date" ]
       },
-      "results" : { }
+      "results" : {
+        "bindings" : [ {
+          "date" : {
+            "type" : "literal",
+            "value" : "2001-07-20"
+          }
+        } ]
+      }
     } ]
   }, {
     "id" : "123",
