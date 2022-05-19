@@ -115,8 +115,9 @@ if ($q == "7") {
 
  <?php
  echo "<p><b>Current challenge:</b></p>
- <p> <a href='index.php?x=".$x."&q=9'>QALD-9</a> <img src='pictures/list_arrow_gray.gif'> </p>
+ <p> <a href='index.php?x=".$x."&q=10'>QALD-10</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p><b>Previous challenges:</b></p>
+ <p> <a href='index.php?x=".$x."&q=9'>QALD-9</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=8'>QALD-8</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=7'>QALD-7</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> <a href='index.php?x=".$x."&q=6'>QALD-6</a> <img src='pictures/list_arrow_gray.gif'> </p>
@@ -181,6 +182,8 @@ if ($q == "7") {
     echo "October 2017 &sdot; Part of: <a href='http://iswc2017.semanticweb.org' class='sel'><b>Part of NLIWOD workshop at ISWC 2017&nbsp;&nbsp;</b></a>";
   if ($q == "9")
     echo "October 2018 &sdot; Part of: <a href='http://iswc2018.semanticweb.org' class='sel'><b>Part of NLIWOD workshop at ISWC 2018&nbsp;&nbsp;</b></a>";
+  if ($q == "10")
+    echo "May 2022 &sdot; Part of: <a href='https://www.nliwod.org/challenge' class='sel'><b>Part of NLIWOD workshop at ESWC 2022&nbsp;&nbsp;</b></a>";
 
  ?>
  </div>
