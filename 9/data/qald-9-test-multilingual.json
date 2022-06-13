@@ -18118,7 +18118,7 @@
         }, {
           "uri" : {
             "type" : "uri",
-            "value" : "Germany"
+            "value" : "http://dbpedia.org/resource/Germany"
           }
         } ]
       }
