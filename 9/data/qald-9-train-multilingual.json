@@ -18,7 +18,7 @@
       "keywords" : "настольная игра ,  время по Гринвичу "
     }, {
       "language" : "pt",
-      "string" : "Liste todos jogos de tabuleiro da GMT. ",
+      "string" : "Liste todos os jogos de mesa da GMT.",
       "keywords" : "jogo de tabuleiro ,  GMT "
     }, {
       "language" : "en",
@@ -120,7 +120,7 @@
       "keywords" : "развивать ,  Skype "
     }, {
       "language" : "pt",
-      "string" : "Quem desenvolveu o Skype? ",
+      "string" : "Quem desenvolveu o skype?",
       "keywords" : "desenvolve ,  Skype "
     }, {
       "language" : "en",
@@ -192,7 +192,7 @@
       "keywords" : "люди ,  Родился ,  ираклион "
     }, {
       "language" : "pt",
-      "string" : "Quais pessoas nasceram em Heraklion? ",
+      "string" : "Quais pessoas nasceram em Heraklion?",
       "keywords" : "pessoas ,  nascermos ,  heraklion "
     }, {
       "language" : "en",
@@ -739,7 +739,7 @@
       "keywords" : "Площадь 51 ,  располагается ,  У.С. государство "
     }, {
       "language" : "pt",
-      "string" : "Em qual estado dos EUA está localizada a Área 51? ",
+      "string" : "Em qual estado dos EUA fica a área 51?",
       "keywords" : "Área 51 ,  localizado ,  EUA Estado "
     }, {
       "language" : "en",
@@ -811,7 +811,7 @@
       "keywords" : "новый Йорк город ,  мэр "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito da cidade de Nova Iorque? ",
+      "string" : "Quem é o prefeito da cidade de Nova York?",
       "keywords" : "Novo Iorque Cidade ,  prefeito "
     }, {
       "language" : "en",
@@ -878,7 +878,7 @@
       "keywords" : "страна ,  место ,  пещера ,  Больше чем два "
     }, {
       "language" : "pt",
-      "string" : "Quais países tem locais com mais de duas cavernas? ",
+      "string" : "Quais países têm lugares com mais de duas cavernas?",
       "keywords" : "país ,  Lugar,  colocar ,  caverna ,  Mais do que dois "
     }, {
       "language" : "en",
@@ -1070,7 +1070,7 @@
       "keywords" : "Авраам Линкольн ,   "
     }, {
       "language" : "pt",
-      "string" : "Onde morreu Abraão Lincoln? ",
+      "string" : "Onde Abraham Lincoln morreu?",
       "keywords" : "Abraão Lincoln ,  o "
     }, {
       "language" : "en",
@@ -1142,7 +1142,7 @@
       "keywords" : "аэропорты ,  Воздух Китай "
     }, {
       "language" : "pt",
-      "string" : "Em quais aeroportos a Air China opera? ",
+      "string" : "Quais aeroportos a Air China atende?",
       "keywords" : "aeroportos ,  Ar China "
     }, {
       "language" : "en",
@@ -1249,7 +1249,7 @@
       "keywords" : "актер ,  в главной роли ,  кино ,  непосредственный ,  в главной роли ,  Уильям Шатнер "
     }, {
       "language" : "pt",
-      "string" : "Liste para mim todos os atores estrelando em filmes dirigidos ou com a participação de William Shatner ",
+      "string" : "Liste todos os atores de filmes dirigidos e estrelados por Wiliam Shatner.",
       "keywords" : "ator ,  estrelando ,  filme ,  direto ,  estrelando ,  William Shatner "
     }, {
       "language" : "en",
@@ -1371,7 +1371,7 @@
       "keywords" : "Филиппины ,  официальный язык "
     }, {
       "language" : "pt",
-      "string" : "Quais são as línguas oficiais das Filipinas? ",
+      "string" : "Quais são os idiomas oficiais das Filipinas?",
       "keywords" : "Filipinas ,  oficial língua "
     }, {
       "language" : "en",
@@ -1443,7 +1443,7 @@
       "keywords" : "фильм ,  Дания "
     }, {
       "language" : "pt",
-      "string" : "Me dê todos os filmes dinamarquês. ",
+      "string" : "Quero saber todos os filmes dinamarqueses.",
       "keywords" : "filme ,  Dinamarca "
     }, {
       "language" : "en",
@@ -2105,7 +2105,7 @@
       "keywords" : "кино ,  в главной роли ,  штифтик Питт ,  направленный ,  парень Ritchie "
     }, {
       "language" : "pt",
-      "string" : "Quais filmes estrelando Brad Pitt foram dirigidos por Cara Ritchie? ",
+      "string" : "Quais filmes estrelados por Brad Pitt foram dirigidos por Guy Ritchie?",
       "keywords" : "filmes ,  estrelando ,  Brad Pitt ,  dirigido ,  Cara Ritchie "
     }, {
       "language" : "en",
@@ -2172,7 +2172,7 @@
       "keywords" : "Брюс подветренный ,  внучата "
     }, {
       "language" : "pt",
-      "string" : "Me dê os netos de Bruce Lee. ",
+      "string" : "Quero saber quem são os netos do Bruce Lee.",
       "keywords" : "Bruce Lee ,  netos "
     }, {
       "language" : "en",
@@ -2239,7 +2239,7 @@
       "keywords" : "Узи ,  дизайнер ,  развивать ,  оружие "
     }, {
       "language" : "pt",
-      "string" : "Quais outras armas o desenhista da Uzi desenvolveu? ",
+      "string" : "Os criadores da Uzi  desenvolveram quais outras armas?",
       "keywords" : "Uzi ,  desenhista ,  desenvolve ,  arma "
     }, {
       "language" : "en",
@@ -2306,7 +2306,7 @@
       "keywords" : "универсальный Студии ,  владелец "
     }, {
       "language" : "pt",
-      "string" : "Quem é o proprietário da Universal Studios? ",
+      "string" : "Quem é o dono da Universal Studios?",
       "keywords" : "Universal Estúdios ,  proprietário "
     }, {
       "language" : "en",
@@ -2373,7 +2373,7 @@
       "keywords" : "государство ,  США ,  Население плотность ,  наибольший "
     }, {
       "language" : "pt",
-      "string" : "Qual estado dos EUA tem a maior densidade populacional? ",
+      "string" : "Qual estado dos EUA possui a maior densidade populacional?",
       "keywords" : "Estado ,  EUA ,  população densidade ,  maior "
     }, {
       "language" : "en",
@@ -2440,7 +2440,7 @@
       "keywords" : "монарх ,  в браке ,  Немецкий "
     }, {
       "language" : "pt",
-      "string" : "Quais monarcas foram casados com uma alemã? ",
+      "string" : "Quais monarcas casaram com alemãs?",
       "keywords" : "monarca ,  casado ,  alemão "
     }, {
       "language" : "en",
@@ -2512,7 +2512,7 @@
       "keywords" : "организация ,  основанный ,  1950 "
     }, {
       "language" : "pt",
-      "string" : "Quais organizações foram fundadas em 1950? ",
+      "string" : "Quais organizações foram fundadas em 1950?",
       "keywords" : "organização ,  fundado ,  1950 "
     }, {
       "language" : "en",
@@ -5439,7 +5439,7 @@
       "keywords" : "комический ,  капитан Америка ,  Создайте "
     }, {
       "language" : "pt",
-      "string" : "Quem criou o quadrinho Capitão América? ",
+      "string" : "Quem criou a história em quadrinhos do Capitão América?",
       "keywords" : "quadrinho ,  Capitão América ,  crio "
     }, {
       "language" : "en",
@@ -5511,7 +5511,7 @@
       "keywords" : "космонавт ,  Аполлон 14 "
     }, {
       "language" : "pt",
-      "string" : "Me dê os astronautas da Apolo 14.",
+      "string" : "Quero saber todos os astronautas da Apollo 14.",
       "keywords" : "astronauta ,  Apolo 14 "
     }, {
       "language" : "en",
@@ -5588,7 +5588,7 @@
       "keywords" : "писал ,  книга ,   столбы из  Земля "
     }, {
       "language" : "pt",
-      "string" : "Quem escreveu o livro Os pilares da Terra? ",
+      "string" : "Quem escreveu o livro Os pilares da Terra?",
       "keywords" : "escrevi ,  livro ,  o pilares do a Terra "
     }, {
       "language" : "en",
@@ -5655,7 +5655,7 @@
       "keywords" : "государство ,  единый ,  состояния ,  Америка ,  наибольший ,  плотность "
     }, {
       "language" : "pt",
-      "string" : "Qual estado dos Unidos Estados da América tem a maior densidade? ",
+      "string" : "Qual estado dos Estados Unidos da América possui a maior densidade?",
       "keywords" : "Estado ,  Unidos ,  estados ,  América ,  maior ,  densidade "
     }, {
       "language" : "en",
@@ -5722,7 +5722,7 @@
       "keywords" : "космический полет ,  запущенный ,  Космодром "
     }, {
       "language" : "pt",
-      "string" : "Quais vôos espaciais foram lançados a partir de Baikonur? ",
+      "string" : "Quais vôos espaciais foram lançados da base de Baikonur?",
       "keywords" : "voo espacial ,  lançado ,  Baikonur "
     }, {
       "language" : "en",
@@ -5849,7 +5849,7 @@
       "keywords" : "труба игрок ,  бэндлидер "
     }, {
       "language" : "pt",
-      "string" : "Me dê a Lista de todos os tocadores de trombeta que foram líderes de bandas. ",
+      "string" : "Quero saber todos os trompetistas que foram líderes de uma banda.",
       "keywords" : "trombeta jogador ,  líder de banda "
     }, {
       "language" : "en",
@@ -6141,7 +6141,7 @@
       "keywords" : "У.С. государство ,  одна и та же ,  часовой пояс ,  Юта "
     }, {
       "language" : "pt",
-      "string" : "Qual estado dos EUA estão no mesmo fuso horário de Utah? ",
+      "string" : "Quais estados dos EUA pertencem ao mesmo fuso horário que Utah?",
       "keywords" : "EUA Estado ,  mesmo ,  fuso horário ,  Utah "
     }, {
       "language" : "en",
@@ -6428,7 +6428,7 @@
       "keywords" : "У.С. государство ,  минеральная ,  золото "
     }, {
       "language" : "pt",
-      "string" : "Qual estado dos EUA possui ouro? ",
+      "string" : "Quais estados dos EUA possuem minério de ouro?",
       "keywords" : "EUA Estado ,  mineral ,  ouro "
     }, {
       "language" : "en",
@@ -6505,7 +6505,7 @@
       "keywords" : "Ingrid Bergman ,  дочь ,  в браке "
     }, {
       "language" : "pt",
-      "string" : "Com quem é casada a filha de Ingrid Bergman?",
+      "string" : "Com quem a filha da Ingrid Bergman é casada?",
       "keywords" : "Ingrid Bergman ,  filha ,  casado "
     }, {
       "language" : "en",
@@ -6582,7 +6582,7 @@
       "keywords" : "Озеро безмятежный ,  глубина "
     }, {
       "language" : "pt",
-      "string" : "Como profundo é Lago Placid ",
+      "string" : "Qual a profundidade do Lake Placid?",
       "keywords" : "Lago Plácido ,  profundidade "
     }, {
       "language" : "en",
@@ -6649,7 +6649,7 @@
       "keywords" : "музеи ,  Лондон "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos museus dentro Londres. ",
+      "string" : "Quero ver todos os museus de Londres.",
       "keywords" : "museus ,  Londres "
     }, {
       "language" : "en",
@@ -7406,7 +7406,7 @@
       "keywords" : "Atlanta Соколы ,  игрок ,  Самый высокий "
     }, {
       "language" : "pt",
-      "string" : "Quem é a mais alto jogador do a Atlanta Falcões? ",
+      "string" : "Qual é o jogador mais alto do Atlanta Falcons?",
       "keywords" : "Atlanta Falcões ,  jogador ,  mais alto "
     }, {
       "language" : "en",
@@ -7473,7 +7473,7 @@
       "keywords" : "Топ 10 ,  действие ,  ролевая игры ,  IGN "
     }, {
       "language" : "pt",
-      "string" : "o que estamos a top-10 açao interpretação de papéis vídeo jogos de acordo para IGN? ",
+      "string" : "Quais são os 10 melhores jogos de videogame ",
       "keywords" : "top-10 ,  açao ,  interpretação de papéis jogos ,  IGN "
     }, {
       "language" : "en",
@@ -7585,7 +7585,7 @@
       "keywords" : "писатель ,  выиграть ,  Нобель приз в литература "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos escritoras aquele Ganhou a Nobel Prêmio dentro literatura. ",
+      "string" : "Liste para mim todos os escritores ganharam o Prêmio Nobel de Literatura.",
       "keywords" : "escritor ,  ganhar ,  Nobel Prêmio dentro literatura "
     }, {
       "language" : "en",
@@ -7752,7 +7752,7 @@
       "keywords" : "баскетбол игроки ,  выше чем 2 метры "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos basquetebol jogadoras aquele estamos superior do que 2 metros. ",
+      "string" : "Me mostre todos os jogadores de basquete que medem mais que 2 metros de altura.",
       "keywords" : "basquetebol jogadoras ,  superior do que 2 metros "
     }, {
       "language" : "en",
@@ -29159,7 +29159,7 @@
       "keywords" : "Статуя из свобода ,  построен "
     }, {
       "language" : "pt",
-      "string" : "Quando estava a Estátua do Liberdade construído? ",
+      "string" : "Quando a Estátua da Liberdade foi construída?",
       "keywords" : "Estátua do Liberdade ,  construído "
     }, {
       "language" : "en",
@@ -29226,7 +29226,7 @@
       "keywords" : "государство ,  граница ,  Иллинойс "
     }, {
       "language" : "pt",
-      "string" : "Qual estados fronteira Illinois? ",
+      "string" : "Quais estados fazem fronteira com Ilinois?",
       "keywords" : "Estado ,  fronteira ,  Illinois "
     }, {
       "language" : "en",
@@ -29313,7 +29313,7 @@
       "keywords" : "Шахтерское ремесло ,  развивать "
     }, {
       "language" : "pt",
-      "string" : "Quem desenvolvido Minecraft? ",
+      "string" : "Quem desenvolveu o Minicraft?",
       "keywords" : "Minecraft ,  desenvolve "
     }, {
       "language" : "en",
@@ -29380,7 +29380,7 @@
       "keywords" : "Гилель словацкий ,  смерть место "
     }, {
       "language" : "pt",
-      "string" : "Onde fez Hillel Eslovaco o? ",
+      "string" : "Onde Hilel Slovak morreu?",
       "keywords" : "Hillel Eslovaco ,  morte Lugar,  colocar "
     }, {
       "language" : "en",
@@ -29457,7 +29457,7 @@
       "keywords" : "кино ,  Джесси Eisenberg "
     }, {
       "language" : "pt",
-      "string" : "o que filmes faz Jesse Eisenberg Toque dentro? ",
+      "string" : "Em quais filmes a Jesse Eisenberg atua?",
       "keywords" : "filmes ,  Jesse Eisenberg "
     }, {
       "language" : "en",
@@ -29644,7 +29644,7 @@
       "keywords" : "пловец ,  Родился ,  Москва "
     }, {
       "language" : "pt",
-      "string" : "Dar todos nadadores aquele estavam nascermos dentro Moscou. ",
+      "string" : "Liste todos os nadanores nascido em Moscou.",
       "keywords" : "nadador ,  nascermos ,  Moscou "
     }, {
       "language" : "en",
@@ -30031,7 +30031,7 @@
       "keywords" : "космонавты "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos cosmonautas. ",
+      "string" : "Liste para mim todos os cosmonautas.",
       "keywords" : "cosmonautas "
     }, {
       "language" : "en",
@@ -30683,7 +30683,7 @@
       "keywords" : "швейцарцы ,  Некоммерческий организация "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos suíço Sem fins lucrativos organizações. ",
+      "string" : "Liste para mim as organizações sem fins lucrativos suíças. ",
       "keywords" : "suíço ,  Sem fins lucrativos organização "
     }, {
       "language" : "en",
@@ -30750,7 +30750,7 @@
       "keywords" : "президент ,  Родился ,  1945 "
     }, {
       "language" : "pt",
-      "string" : "Qual presidentes estavam nascermos dentro 1945? ",
+      "string" : "Quais presidentes nasceram em 1945?",
       "keywords" : "Presidente ,  nascermos ,  1945 "
     }, {
       "language" : "en",
@@ -30942,7 +30942,7 @@
       "keywords" : "своего рода из Музыка ,  Лу камыш ,  играть "
     }, {
       "language" : "pt",
-      "string" : "o que tipo do música fez Lou Reed Toque? ",
+      "string" : "Qual o estilo musical que o Lou Reed toca?",
       "keywords" : "tipo do música ,  Lou Reed ,  Toque "
     }, {
       "language" : "en",
@@ -31029,7 +31029,7 @@
       "keywords" : "где ,  красный носки ,  играть "
     }, {
       "language" : "pt",
-      "string" : "Onde Faz a Vermelho Sox Toque? ",
+      "string" : "Onde o Red Sox toca?",
       "keywords" : "Onde ,  Vermelho Sox ,  Toque "
     }, {
       "language" : "en",
@@ -31095,7 +31095,7 @@
       "keywords" : "футбольный клубы ,  играть ,  Бундеслига "
     }, {
       "language" : "pt",
-      "string" : "exposição uma Lista do futebol clubes aquele Toque dentro a Bundesliga. ",
+      "string" : "Mostre uma lista de clubes de futebol que jogam na Bundesliga.",
       "keywords" : "futebol clubes ,  Toque ,  Bundesliga "
     }, {
       "language" : "en",
@@ -31247,7 +31247,7 @@
       "keywords" : "вулканы ,  Япония ,  извергался ,  поскольку 2000 "
     }, {
       "language" : "pt",
-      "string" : "Qual vulcões dentro Japão irrompeu Desde a 2000? ",
+      "string" : "Quais vulcões japoneses entraram em erupção desde o ano 2000?",
       "keywords" : "vulcões ,  Japão ,  irrompeu ,  Desde a 2000 "
     }, {
       "language" : "en",
@@ -31343,7 +31343,7 @@
       "keywords" : "мосты ,  пересекать ,  его "
     }, {
       "language" : "pt",
-      "string" : "Qual pontes Cruz a Sua? ",
+      "string" : "Quais pontes atravesssam o rio Sena?",
       "keywords" : "pontes ,  Cruz ,  sua "
     }, {
       "language" : "en",
@@ -31570,7 +31570,7 @@
       "keywords" : "Университет из Оксфорд ,  официальный цвет "
     }, {
       "language" : "pt",
-      "string" : "o que é a oficial cor do a Universidade do Oxford? ",
+      "string" : "Qual é a cor oficial da Universidade de Oxford?",
       "keywords" : "Universidade do Oxford ,  oficial cor "
     }, {
       "language" : "en",
@@ -31637,7 +31637,7 @@
       "keywords" : "случай плотва ,  производить ,  фильм "
     }, {
       "language" : "pt",
-      "string" : "Como muitos filmes fez P Barata produzir? ",
+      "string" : "Quantos filmes Hal Roach produziu?",
       "keywords" : "P Barata ,  produzir ,  filme "
     }, {
       "language" : "en",
@@ -31704,7 +31704,7 @@
       "keywords" : "кино ,  Дания "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos dinamarquês filmes. ",
+      "string" : "Dê-me todos os filmes dinarmaquezes.",
       "keywords" : "filme ,  Dinamarca "
     }, {
       "language" : "en",
@@ -32366,7 +32366,7 @@
       "keywords" : "причина из смерть ,  большинство частый "
     }, {
       "language" : "pt",
-      "string" : "o que é a a maioria freqüente causa do morte? ",
+      "string" : "Qual é a causa mais frequênte de morte?",
       "keywords" : "causa do morte ,  a maioria freqüente "
     }, {
       "language" : "en",
@@ -32503,7 +32503,7 @@
       "keywords" : "Компания ,  Мюнхен "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos empresas dentro Munique. ",
+      "string" : "Liste para mim as companhias localizadas em Monique.",
       "keywords" : "companhia ,  Munique "
     }, {
       "language" : "en",
@@ -33260,7 +33260,7 @@
       "keywords" : "страны Гималаи бег через ,  столицы "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a capitais do todos paises aquele a Himalaia corre através. ",
+      "string" : "Liste as capitais de todos os países aos quais o Himalaia pertence.",
       "keywords" : "paises Himalaia corre através ,  capitais "
     }, {
       "language" : "en",
@@ -33327,7 +33327,7 @@
       "keywords" : "как многие кино ,  направленный ,  Парк Чан-Вук "
     }, {
       "language" : "pt",
-      "string" : "Como muitos filmes fez Parque Chan-Wook direto? ",
+      "string" : "Quantos filmesPark Chan-wook dirigiu?",
       "keywords" : "como muitos filmes ,  dirigido ,  Parque Chan-Wook "
     }, {
       "language" : "en",
@@ -33394,7 +33394,7 @@
       "keywords" : "реки ,  течь ,  Немецкий озеро "
     }, {
       "language" : "pt",
-      "string" : "Qual rios fluxo para dentro uma alemão lago? ",
+      "string" : "Quais rios fluem para um lago Alemão?",
       "keywords" : "rios ,  fluxo ,  alemão lago "
     }, {
       "language" : "en",
@@ -33641,7 +33641,7 @@
       "keywords" : "как многие ,  авиакомпании "
     }, {
       "language" : "pt",
-      "string" : "Como muitos companhias aéreas estamos há? ",
+      "string" : "Quantas companhias aéreas existem?",
       "keywords" : "como muitos ,  companhias aéreas "
     }, {
       "language" : "en",
@@ -33708,7 +33708,7 @@
       "keywords" : "острова ,  Япония "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos ilhas aquele pertencer para Japão. ",
+      "string" : "Liste as ilhas que pertencem ao Japão.",
       "keywords" : "ilhas ,  Japão "
     }, {
       "language" : "en",
@@ -34210,7 +34210,7 @@
       "keywords" : "Марибор ,  жителей "
     }, {
       "language" : "pt",
-      "string" : "Como muitos habitantes faz Maribor ter? ",
+      "string" : "Quantos habitantes têm Maribor?",
       "keywords" : "Maribor ,  habitantes "
     }, {
       "language" : "en",
@@ -34277,7 +34277,7 @@
       "keywords" : "космонавт ,  Аполлон 14 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos Apolo 14 astronautas. ",
+      "string" : "Liste todos os astronautas da Apollo 14.",
       "keywords" : "astronauta ,  Apolo 14 "
     }, {
       "language" : "en",
@@ -34354,7 +34354,7 @@
       "keywords" : "Компания ,  Больше чем 1 миллиона ,  сотрудников "
     }, {
       "language" : "pt",
-      "string" : "Qual empresas ter Mais do que 1 milhão funcionários? ",
+      "string" : "Quais companhias possuem mais de 1 milhão de empregados?",
       "keywords" : "companhia ,  Mais do que 1 milhão ,  funcionários "
     }, {
       "language" : "en",
@@ -37881,7 +37881,7 @@
       "keywords" : "фильм ,  направленный ,  Garry Маршалл ,  в главной роли ,  Юлия Робертс "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual filmes dirigido de Garry Marechal estava Julia Roberts estrelando? ",
+      "string" : "Em quais filmes, dirigidos pelo Garry Marshal, a Julia Robert estrelou?",
       "keywords" : "filme ,  dirigido ,  Garry Marechal ,  estrelando ,  Julia Roberts "
     }, {
       "language" : "en",
@@ -37958,7 +37958,7 @@
       "keywords" : "премьер лига ,  футбольный клуб "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos futebol clubes dentro a Premier Liga. ",
+      "string" : "Liste para mim os clubes de futebol que jogam na Premier Ligue.",
       "keywords" : "Premier Liga ,  futebol clube "
     }, {
       "language" : "en",
@@ -38125,7 +38125,7 @@
       "keywords" : "Урал ,  наибольший место "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior Lugar, colocar do a Urais? ",
+      "string" : "Qual é o lugar mais alto dos montes Urais? ",
       "keywords" : "Urais ,  maior Lugar,  colocar "
     }, {
       "language" : "en",
@@ -38192,7 +38192,7 @@
       "keywords" : "губернатор ,  Вайоминг "
     }, {
       "language" : "pt",
-      "string" : "Quem é a governador do Wyoming? ",
+      "string" : "Qual é o governador de Wyoming?",
       "keywords" : "governador ,  Wyoming "
     }, {
       "language" : "en",
@@ -38259,7 +38259,7 @@
       "keywords" : "архитектор ,  Eiffel башня ,  изучение "
     }, {
       "language" : "pt",
-      "string" : "Onde fez a arquiteto do a Eiffel Torre estude? ",
+      "string" : "Onde o arquiteto da Torre Eifel estudou?",
       "keywords" : "arquiteto ,  Eiffel Torre ,  estude "
     }, {
       "language" : "en",
@@ -38326,7 +38326,7 @@
       "keywords" : "Мир наследие сайт ,  назначать ,  мимо два лет "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos mundo herança sites designada dentro a passado dois anos. ",
+      "string" : "Dar mim todos mundo herança sites designada dentro a passado dois anos.",
       "keywords" : "mundo herança local ,  designar ,  passado dois anos "
     }, {
       "language" : "en",
@@ -38553,7 +38553,7 @@
       "keywords" : "актеры ,  Родился ,  Париж ,  после 1950 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores quem estavam nascermos dentro Paris depois de 1950 ",
+      "string" : "Liste os atores que nasceram em Paris depois de 1950.",
       "keywords" : "atores ,  nascermos ,  Paris ,  depois de 1950 "
     }, {
       "language" : "en",
@@ -39500,7 +39500,7 @@
       "keywords" : "кино ,  звезда ,  Лиз Тейлор ,  Ричард Burton? "
     }, {
       "language" : "pt",
-      "string" : "Qual filmes Estrela ambos Liz Taylor e Richard Burton? ",
+      "string" : "Em quais filmes a Liz Taylor o Richard Burton atuam juntos?",
       "keywords" : "filmes ,  Estrela ,  Liz Taylor ,  Richard Burton? "
     }, {
       "language" : "en",
@@ -39617,7 +39617,7 @@
       "keywords" : "некоммерческий организация ,  Австралия "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos australiano sem fins lucrativos organizações. ",
+      "string" : "Liste para mim as organizações sem fins lucrativos australianas. ",
       "keywords" : "sem fins lucrativos organização ,  Austrália "
     }, {
       "language" : "en",
@@ -39684,7 +39684,7 @@
       "keywords" : "папа ,  добиться успеха ,  Джон Павел II "
     }, {
       "language" : "pt",
-      "string" : "Qual papa conseguiu John Paulo II? ",
+      "string" : "Qual foi o papa sucessor do Jõao Paulo II?",
       "keywords" : "papa ,  suceder ,  John Paulo II "
     }, {
       "language" : "en",
@@ -39750,7 +39750,7 @@
       "keywords" : "ESA космонавты "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos ESA astronautas. ",
+      "string" : "Liste todos os astronautas do ESA.",
       "keywords" : "ESA astronautas "
     }, {
       "language" : "en",
@@ -39817,7 +39817,7 @@
       "keywords" : "президент ,  Пакистан ,  1978 "
     }, {
       "language" : "pt",
-      "string" : "Quem estava Presidente do Paquistão dentro 1978? ",
+      "string" : "Quem era o presidente do Paquistão em 1978?",
       "keywords" : "Presidente ,  Paquistão ,  1978 "
     }, {
       "language" : "en",
@@ -39884,7 +39884,7 @@
       "keywords" : "Rolls-Royce ,  владелец "
     }, {
       "language" : "pt",
-      "string" : "Quem é a proprietário do Rolls Royce? ",
+      "string" : "Quem é o dono da Rolls-Royce?",
       "keywords" : "Rolls Royce ,  proprietário "
     }, {
       "language" : "en",
@@ -39956,7 +39956,7 @@
       "keywords" : "как многие ,  музей ,  Париж "
     }, {
       "language" : "pt",
-      "string" : "Como muitos museus faz Paris ter? ",
+      "string" : "Quantos museus existem em Paris?",
       "keywords" : "como muitos ,  museu ,  Paris "
     }, {
       "language" : "en",
@@ -40123,7 +40123,7 @@
       "keywords" : "JFK ,  убитый "
     }, {
       "language" : "pt",
-      "string" : "Onde estava JFK assassinado? ",
+      "string" : "Onde o JKS foi assassinado?",
       "keywords" : "JFK ,  assassinado "
     }, {
       "language" : "en",
@@ -40195,7 +40195,7 @@
       "keywords" : "Германия ,  федеральный канцлеры "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos Federal chanceleres do Alemanha. ",
+      "string" : "Liste para mim todos os chanceleres da Alemanha.",
       "keywords" : "Alemanha ,  Federal chanceleres "
     }, {
       "language" : "en",
@@ -40322,7 +40322,7 @@
       "keywords" : "человек ,  Родился на ,  Хэллоуин "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos quem estava nascermos em Dia das Bruxas. ",
+      "string" : "Me apresente todo mundo que nasceu no hollowween.",
       "keywords" : "pessoa ,  nascermos em ,  dia das Bruxas "
     }, {
       "language" : "en",
@@ -40444,7 +40444,7 @@
       "keywords" : "гималайский гора система ,  простираться ,  страна "
     }, {
       "language" : "pt",
-      "string" : "Para qual paises faz a Himalaia montanha sistema ampliar? ",
+      "string" : "As montanhas do Himalaya pertencem a quais países?",
       "keywords" : "Himalaia montanha sistema ,  ampliar ,  país "
     }, {
       "language" : "en",
@@ -40511,7 +40511,7 @@
       "keywords" : "актер ,  Родился ,  Германия "
     }, {
       "language" : "pt",
-      "string" : "Qual atores estavam nascermos dentro Alemanha? ",
+      "string" : "Quais atores nasceram na Alemanha?",
       "keywords" : "ator ,  nascermos ,  Alemanha "
     }, {
       "language" : "en",
@@ -40753,7 +40753,7 @@
       "keywords" : "как много ,  карбюраторы ,  арахис масло "
     }, {
       "language" : "pt",
-      "string" : "Como Muito de carboidratos faz amendoim manteiga ter? ",
+      "string" : "Quantos carboidratos tem a manteiga de amendoin?",
       "keywords" : "como Muito de ,  carboidratos ,  amendoim manteiga "
     }, {
       "language" : "en",
@@ -40820,7 +40820,7 @@
       "keywords" : "фильм ,  произведенный ,  большинство "
     }, {
       "language" : "pt",
-      "string" : "Quem produzido a a maioria filmes? ",
+      "string" : "Quem produziu mais filmes?",
       "keywords" : "filme ,  produzido ,  a maioria "
     }, {
       "language" : "en",
@@ -40887,7 +40887,7 @@
       "keywords" : "Google ,  сотрудников "
     }, {
       "language" : "pt",
-      "string" : "Como muitos funcionários faz Google ter? ",
+      "string" : "Quantos funcionários o Google tem?",
       "keywords" : "Google ,  funcionários "
     }, {
       "language" : "en",
@@ -40954,7 +40954,7 @@
       "keywords" : "актеры ,  Родился ,  Берлин "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores quem estavam nascermos dentro Berlim. ",
+      "string" : "Liste para mim todos os atores nascidos em Berlim.",
       "keywords" : "atores ,  nascermos ,  Berlim "
     }, {
       "language" : "en",
@@ -41026,7 +41026,7 @@
       "keywords" : "созданный ,  бестолковый "
     }, {
       "language" : "pt",
-      "string" : "Quem criada Pateta? ",
+      "string" : "Quem criou a Goofy?",
       "keywords" : "criada ,  Pateta "
     }, {
       "language" : "en",
@@ -41103,7 +41103,7 @@
       "keywords" : "Музыка альбом ,  песня ,  Последний рождество "
     }, {
       "language" : "pt",
-      "string" : "Qual música álbuns conter a canção Último Natal? ",
+      "string" : "Quais álbuns de música contém a canção Last Christmas?",
       "keywords" : "música álbum ,  canção ,  Último Natal "
     }, {
       "language" : "en",
@@ -41205,7 +41205,7 @@
       "keywords" : "альберта ,  признавать ,  провинция "
     }, {
       "language" : "pt",
-      "string" : "Quando estava Alberta admitido Como província? ",
+      "string" : "Quando Alberta virou uma província?",
       "keywords" : "Alberta ,  Admitem ,  província "
     }, {
       "language" : "en",
@@ -41272,7 +41272,7 @@
       "keywords" : "как многие ,  миссия ,  Союз программа "
     }, {
       "language" : "pt",
-      "string" : "Como muitos missões faz a Soyuz programa ter? ",
+      "string" : "Quantos missoões o programa Soyuz têm?",
       "keywords" : "como muitos ,  missão ,  Soyuz programa "
     }, {
       "language" : "en",
@@ -41339,7 +41339,7 @@
       "keywords" : "ТВ шоу ,  Нил Патрик Харрис "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos a televisão mostra com Neil Patrick Harris ",
+      "string" : "Liste os programas de TV em que Neil Patrick Harris participa.",
       "keywords" : "televisão mostra ,  Neil Patrick Harris "
     }, {
       "language" : "en",
@@ -41461,7 +41461,7 @@
       "keywords" : "Hells Ангелы ,  основанный "
     }, {
       "language" : "pt",
-      "string" : "Quando estavam a Infernos Anjos fundado? ",
+      "string" : "Quando foi fundado o clube Hells Angels?",
       "keywords" : "Infernos Anjos ,  fundado "
     }, {
       "language" : "en",
@@ -41528,7 +41528,7 @@
       "keywords" : "сеть доход ,  яблоко "
     }, {
       "language" : "pt",
-      "string" : "o que é a líquido renda do Maçã? ",
+      "string" : "Qual é o lucro da Apple?",
       "keywords" : "líquido renda ,  maçã "
     }, {
       "language" : "en",
@@ -41595,7 +41595,7 @@
       "keywords" : "шведский каникулы "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos sueco feriados. ",
+      "string" : "Liste para mim os feriados suecos.",
       "keywords" : "sueco feriados "
     }, {
       "language" : "en",
@@ -41677,7 +41677,7 @@
       "keywords" : "Голландский Королева Юлиана ,  похороненный ,  город "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade estava a antigo holandês rainha Juliana enterrado? ",
+      "string" : "Em qual cidade a antiga rainha holandesa Juliana foi enterrada?",
       "keywords" : "holandês rainha Juliana ,  enterrado ,  cidade "
     }, {
       "language" : "en",
@@ -41744,7 +41744,7 @@
       "keywords" : "мюзиклы ,  Музыка от ,  Леонард Бернштейн "
     }, {
       "language" : "pt",
-      "string" : "Lista todos a musicais com música de Leonard Bernstein ",
+      "string" : "Liste todos os musicais que possuem músicas do Leonardo Bernstein.",
       "keywords" : "musicais ,  música de ,  Leonard Bernstein "
     }, {
       "language" : "en",
@@ -41846,7 +41846,7 @@
       "keywords" : "Компания ,  реклама промышленность "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos empresas dentro a propaganda indústria. ",
+      "string" : "Liste todas as empresas do setor de publicidade.",
       "keywords" : "companhia ,  propaganda indústria "
     }, {
       "language" : "en",
@@ -41913,7 +41913,7 @@
       "keywords" : "крупнейший столичный площадь ,  Вашингтон государство "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior metropolitano área dentro Washington Estado? ",
+      "string" : "Qual é a maior área metropolitana no estado de Washington?",
       "keywords" : "maior metropolitano área ,  Washington Estado "
     }, {
       "language" : "en",
@@ -41980,7 +41980,7 @@
       "keywords" : "убитый ,  Джон Леннон "
     }, {
       "language" : "pt",
-      "string" : "Quem assassinado John Lennon? ",
+      "string" : "Quem matou John Lennon?",
       "keywords" : "assassinado ,  John Lennon "
     }, {
       "language" : "en",
@@ -42047,7 +42047,7 @@
       "keywords" : "писатели ,  изучал ,  Стамбул "
     }, {
       "language" : "pt",
-      "string" : "Qual escritoras estudou dentro Istambul? ",
+      "string" : "Quais escritores estudaram em Istambul?",
       "keywords" : "escritoras ,  estudou ,  Istambul "
     }, {
       "language" : "en",
@@ -42169,7 +42169,7 @@
       "keywords" : "австралиец ,  металкор группы "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos australiano núcleo de metal bandas. ",
+      "string" : "Liste todas as bandas de metalcore australianas.",
       "keywords" : "australiano ,  núcleo de metal bandas "
     }, {
       "language" : "en",
@@ -42336,7 +42336,7 @@
       "keywords" : "страна ,  принять ,  Евро "
     }, {
       "language" : "pt",
-      "string" : "Qual paises adotado a Euro? ",
+      "string" : "Quais países adotaram o Euro?",
       "keywords" : "país ,  adotar ,  Euro "
     }, {
       "language" : "en",
@@ -42623,7 +42623,7 @@
       "keywords" : "типы ,  принимать пищу расстройства "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos tipos do comendo distúrbios ",
+      "string" : "Liste todos os tipos de desordem alimentar.",
       "keywords" : "tipos ,  comendo desordens "
     }, {
       "language" : "en",
@@ -43000,7 +43000,7 @@
       "keywords" : "Марк Шагал ,  иудей "
     }, {
       "language" : "pt",
-      "string" : "Estava Marc Chagall uma judeu? ",
+      "string" : "Marc Chagall era judeu?",
       "keywords" : "Marc Chagall ,  judeu "
     }, {
       "language" : "en",
@@ -43059,7 +43059,7 @@
       "keywords" : "Бразилия ,  низший ранг ,  ФИФА Мир ранжирование "
     }, {
       "language" : "pt",
-      "string" : "o que estava Do brasil mais baixo classificação dentro a FIFA Mundo Ranking? ",
+      "string" : "Qual foi a posição mais baixa do Brasil no rank mundial da FIFA?",
       "keywords" : "Brasil ,  mais baixo classificação ,  FIFA Mundo Ranking "
     }, {
       "language" : "en",
@@ -43126,7 +43126,7 @@
       "keywords" : "фильм ,  звезда ,  Leonardo ДиКаприо "
     }, {
       "language" : "pt",
-      "string" : "Como muitos filmes fez Leonardo DiCaprio Estrela dentro? ",
+      "string" : "Quantos filmes Leornado DiCaprio estrelou?",
       "keywords" : "filme ,  Estrela ,  Leonardo DiCaprio "
     }, {
       "language" : "en",
@@ -43193,7 +43193,7 @@
       "keywords" : "Маргарет Thatcher ,  химик "
     }, {
       "language" : "pt",
-      "string" : "Estava Margarida Thatcher uma químico? ",
+      "string" : "Margaret Thatcher era uma química?",
       "keywords" : "Margarida Thatcher ,  químico "
     }, {
       "language" : "en",
@@ -43252,7 +43252,7 @@
       "keywords" : "У.С. государство ,  одна и та же ,  время зона ,  Юта "
     }, {
       "language" : "pt",
-      "string" : "Qual EUA estados estamos dentro a mesmo Tempo zona Como Utah? ",
+      "string" : "Quais estados dos EUA estão no mesmo fuso horário que Utah?",
       "keywords" : "EUA Estado ,  mesmo ,  Tempo zona ,  Utah "
     }, {
       "language" : "en",
@@ -43539,7 +43539,7 @@
       "keywords" : "книга ,  написано ,  Danielle Стали "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos livros escrito de Danielle Aço. ",
+      "string" : "Dê-me todos os livros escritos pela Danielle Steel.",
       "keywords" : "livro ,  escrito ,  Danielle Aço "
     }, {
       "language" : "en",
@@ -43836,7 +43836,7 @@
       "keywords" : "страна ,  официальный язык ,  большинство "
     }, {
       "language" : "pt",
-      "string" : "Qual país tem a a maioria oficial línguas? ",
+      "string" : "Qual país tem mais idiomas oficiais?",
       "keywords" : "país ,  oficial língua ,  a maioria "
     }, {
       "language" : "en",
@@ -43903,7 +43903,7 @@
       "keywords" : "Всего количество ,  люди ,  женщины ,  обслуживать ,  FDNY "
     }, {
       "language" : "pt",
-      "string" : "o que é a total montante do homens e mulheres servindo dentro a FDNY? ",
+      "string" : "Qual é a quantidade total de homens e mulheres servindo o FDNY?",
       "keywords" : "total montante ,  homens ,  mulheres ,  servir ,  FDNY "
     }, {
       "language" : "en",
@@ -43970,7 +43970,7 @@
       "keywords" : "актер ,  играть ,  Чубакка "
     }, {
       "language" : "pt",
-      "string" : "Qual ator reproduziu Chewbacca? ",
+      "string" : "Qual ator interpretou o Chewbacca?",
       "keywords" : "ator ,  Toque ,  Chewbacca "
     }, {
       "language" : "en",
@@ -44042,7 +44042,7 @@
       "keywords" : "библиотеки ,  установленный ,  ранее чем 1400 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos bibliotecas estabelecido mais cedo do que 1400 ",
+      "string" : "Liste para mim todas as livrarias criadas antes de 1400.",
       "keywords" : "bibliotecas ,  estabelecido ,  mais cedo do que 1400 "
     }, {
       "language" : "en",
@@ -44164,7 +44164,7 @@
       "keywords" : "программирование языки ,  влияние от ,  Perl "
     }, {
       "language" : "pt",
-      "string" : "Qual programação línguas estavam influenciado de Perl? ",
+      "string" : "Quais linguagens de programação foram influênciadas pelo Perl?",
       "keywords" : "programação línguas ,  influenciado de ,  Perl "
     }, {
       "language" : "en",
@@ -44316,7 +44316,7 @@
       "keywords" : "У.С. государство ,  располагается ,  гора МакКинли "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual EUA Estado é Monte McKinley localizado? ",
+      "string" : "Em qual estado dos EUA está localizado o monte Denali?",
       "keywords" : "EUA Estado ,  localizado ,  Monte McKinley "
     }, {
       "language" : "en",
@@ -44383,7 +44383,7 @@
       "keywords" : "авиакомпании ,  часть из ,  SkyTeam союз "
     }, {
       "language" : "pt",
-      "string" : "o que companhias aéreas estamos parte do a Equipa aérea aliança? ",
+      "string" : "Quais companhias aéreas fazem parte da aliamça SkyTeam?",
       "keywords" : "companhias aéreas ,  parte do ,  Equipa aérea aliança "
     }, {
       "language" : "en",
@@ -44715,7 +44715,7 @@
       "keywords" : "корабль ,  называется после ,  Вениамин Франклин "
     }, {
       "language" : "pt",
-      "string" : "Qual navios estavam chamado depois de Benjamin Franklin? ",
+      "string" : "Quais navios foram nomeados em homenagem a Benjamin Franklin?",
       "keywords" : "navio ,  chamado depois de ,  Benjamin Franklin "
     }, {
       "language" : "en",
@@ -44802,7 +44802,7 @@
       "keywords" : "политик ,  методист "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos metodista políticos. ",
+      "string" : "Liste para mim todos os politicos metodistas.",
       "keywords" : "político ,  metodista "
     }, {
       "language" : "en",
@@ -45294,7 +45294,7 @@
       "keywords" : "книги ,  автор ,   придираться в наш Звезды "
     }, {
       "language" : "pt",
-      "string" : "o que de outros livros ter fui escrito de a autor do o Culpa dentro Nosso Estrelas? ",
+      "string" : "Quais outros livros foram escritos pelo autor de A culpa é das estrelas? ",
       "keywords" : "livros ,  autor ,  o Culpa dentro Nosso Estrelas "
     }, {
       "language" : "en",
@@ -45386,7 +45386,7 @@
       "keywords" : "гора ,  наибольший "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior montanha? ",
+      "string" : "Qual é a maior montanha?",
       "keywords" : "montanha ,  maior "
     }, {
       "language" : "en",
@@ -45453,7 +45453,7 @@
       "keywords" : "поэт ,  большинство ,  книги "
     }, {
       "language" : "pt",
-      "string" : "Qual poeta escrevi a a maioria livros? ",
+      "string" : "Qual poeta escreveu mais livros?",
       "keywords" : "poeta ,  a maioria ,  livros "
     }, {
       "language" : "en",
@@ -45520,7 +45520,7 @@
       "keywords" : "программирование языки ,  влияние ,  Javascript "
     }, {
       "language" : "pt",
-      "string" : "Qual programação línguas influenciado Javascript? ",
+      "string" : "Quais linguagens de programação influenciaram o JavaScript?",
       "keywords" : "programação línguas ,  influenciado ,  Javascript "
     }, {
       "language" : "en",
@@ -45627,7 +45627,7 @@
       "keywords" : "музыкант ,  писал ,   большинство книги "
     }, {
       "language" : "pt",
-      "string" : "Qual músico escrevi a a maioria livros? ",
+      "string" : "Qual musicista escreveu mais livros?",
       "keywords" : "músico ,  escrevi ,  a a maioria livros "
     }, {
       "language" : "en",
@@ -45694,7 +45694,7 @@
       "keywords" : "фильм ,  в главной роли ,  непосредственный ,  Clint Иствуд "
     }, {
       "language" : "pt",
-      "string" : "Qual filmes estrelando Clint Eastwood fez ele direto ele mesmo? ",
+      "string" : "Quais filmes estrelados por Clint Eastwood foram dirigidos por ele própio?",
       "keywords" : "filme ,  estrelando ,  direto ,  Clint Eastwood "
     }, {
       "language" : "en",
@@ -45806,7 +45806,7 @@
       "keywords" : "организация ,  основанный ,  Калифорния ,  развивать ,  программного обеспечения "
     }, {
       "language" : "pt",
-      "string" : "Qual Programas tem fui desenvolvido de organizações fundado dentro Califórnia? ",
+      "string" : "Qual software foi desenvolvido por organizações fundadas na Califórnia?",
       "keywords" : "organização ,  fundado ,  Califórnia ,  desenvolve ,  Programas "
     }, {
       "language" : "en",
@@ -46948,7 +46948,7 @@
       "keywords" : "Кот Стивенс ,  инструмент "
     }, {
       "language" : "pt",
-      "string" : "Qual instrumentos faz Gato Stevens Toque? ",
+      "string" : "Quais instrumentos Cat Stevens toca?",
       "keywords" : "Gato Stevens ,  instrumento "
     }, {
       "language" : "en",
@@ -47060,7 +47060,7 @@
       "keywords" : "как многие ,  авиакомпании ,  член ,  звезда союз "
     }, {
       "language" : "pt",
-      "string" : "Como muitos companhias aéreas estamos membros do a Estrela Aliança? ",
+      "string" : "Quantas companhias aéreas integram a aliança de companhias aéreas?",
       "keywords" : "como muitos ,  companhias aéreas ,  membro ,  Estrela Aliança "
     }, {
       "language" : "en",
@@ -47127,7 +47127,7 @@
       "keywords" : "актеры ,  называется ,  Болдуин "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores chamado Baldwin ",
+      "string" : "Liste para mim todos os atores chamados Baldwin.",
       "keywords" : "atores ,  chamado ,  Baldwin "
     }, {
       "language" : "en",
@@ -47214,7 +47214,7 @@
       "keywords" : "писал ,  голодание Игры "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi o Fome Jogos? ",
+      "string" : "Quem escreveu jogos vorazes?",
       "keywords" : "escrevi ,  Fome Jogos "
     }, {
       "language" : "en",
@@ -47281,7 +47281,7 @@
       "keywords" : "Элвис ,  первый ,  альбом ,  метка "
     }, {
       "language" : "pt",
-      "string" : "Para qual rótulo fez Elvis registro dele primeiro álbum? ",
+      "string" : "Em qual empresa Elvis gravou o primeiro disco?",
       "keywords" : "Elvis ,  primeiro ,  álbum ,  rótulo "
     }, {
       "language" : "en",
@@ -47352,7 +47352,7 @@
       "keywords" : "Кристиан тюк ,  в главной роли ,  Бэтмен Начинает "
     }, {
       "language" : "pt",
-      "string" : "É cristão Fardo estrelando dentro homem Morcego Começa? ",
+      "string" : "Christian Bale está atuando em Batman Begins?",
       "keywords" : "cristão Fardo ,  estrelando ,  homem Morcego Começa "
     }, {
       "language" : "en",
@@ -47415,7 +47415,7 @@
       "keywords" : "простое число министр ,  Испания ,  резиденция "
     }, {
       "language" : "pt",
-      "string" : "Onde é a residência do a prima ministro do Espanha? ",
+      "string" : "Onde ficaa residência do primeiro ministro da Espanha?",
       "keywords" : "prima ministro ,  Espanha ,  residência "
     }, {
       "language" : "en",
@@ -47482,7 +47482,7 @@
       "keywords" : "актер ,  литая ,  большинство кино "
     }, {
       "language" : "pt",
-      "string" : "Qual ator estava fundido dentro a a maioria filmes? ",
+      "string" : "Qual ator fez mais filmes?",
       "keywords" : "ator ,  fundido ,  a maioria filmes "
     }, {
       "language" : "en",
@@ -47549,7 +47549,7 @@
       "keywords" : "страна ,  официальный язык ,  Больше чем два "
     }, {
       "language" : "pt",
-      "string" : "Qual paises ter Mais do que dois oficial línguas? ",
+      "string" : "Quais países tem mais de duas línguas oficiais?",
       "keywords" : "país ,  oficial língua ,  Mais do que dois "
     }, {
       "language" : "en",
@@ -47766,7 +47766,7 @@
       "keywords" : "страна ,  пещера ,  Больше чем 10 "
     }, {
       "language" : "pt",
-      "string" : "Qual paises ter Mais do que dez cavernas? ",
+      "string" : "Quais países possuem mais de 10 cavernas?",
       "keywords" : "país ,  caverna ,  Mais do que dez "
     }, {
       "language" : "en",
@@ -47908,7 +47908,7 @@
       "keywords" : "песня ,  Брюс Спрингстин ,  выпуск ,  между 1980 а также 1990 "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos canções a partir de Bruce Springsteen liberado entre 1980 e 1990. ",
+      "string" : "Mostre-me todas as músicas do Bruce Springsteen lançadas entre 1980 e 1990.",
       "keywords" : "canção ,  Bruce Springsteen ,  lançamento ,  entre 1980 e 1990 "
     }, {
       "language" : "en",
@@ -48005,7 +48005,7 @@
       "keywords" : "телевидение показать ,  Создайте ,  Джон Клиз "
     }, {
       "language" : "pt",
-      "string" : "Qual televisão mostra estavam criada de John Cleese? ",
+      "string" : "Quais programas de televisão foram criados pelo John Cleese?",
       "keywords" : "televisão exposição ,  crio ,  John Cleese "
     }, {
       "language" : "en",
@@ -48102,7 +48102,7 @@
       "keywords" : "Латвия ,  присоединиться ,  США "
     }, {
       "language" : "pt",
-      "string" : "Quando fez Letônia Junte-se a EU? ",
+      "string" : "Quando Lativa passou a fazer parte da UE?",
       "keywords" : "Letônia ,  Junte-se ,  EU "
     }, {
       "language" : "en",
@@ -48169,7 +48169,7 @@
       "keywords" : "футбольный игрок ,  Родился на ,  Мальта "
     }, {
       "language" : "pt",
-      "string" : "Qual futebol jogadoras estavam nascermos em Malta? ",
+      "string" : "Quais jogadores de futebol nasceram em Malta?",
       "keywords" : "futebol jogador ,  nascermos em ,  Malta "
     }, {
       "language" : "en",
@@ -48806,7 +48806,7 @@
       "keywords" : "как многие ,  политики ,  закончил ,  Колумбия Университет "
     }, {
       "language" : "pt",
-      "string" : "Como muitos políticos graduado a partir de Columbia Universidade? ",
+      "string" : "Quantos políticos se formaram na Universidade de Columbia?",
       "keywords" : "como muitos ,  políticos ,  graduado ,  Columbia Universidade "
     }, {
       "language" : "en",
@@ -48873,7 +48873,7 @@
       "keywords" : "телевидение показать ,  Зачарованные ,  актер ,  день рождения "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a aniversários do todos atores do a televisão exposição Encantado. ",
+      "string" : "Liste para mim os aniversários dos atores do programa de televisão Charmed.",
       "keywords" : "televisão exposição ,  Encantado ,  ator ,  aniversário "
     }, {
       "language" : "en",
@@ -49025,7 +49025,7 @@
       "keywords" : "связь организация ,  располагается ,  Бельгия "
     }, {
       "language" : "pt",
-      "string" : "Qual telecomunicações organizações estamos localizado dentro Bélgica? ",
+      "string" : "Quais organizações de telecomunicação ficam na Bélgica?",
       "keywords" : "telecomunicações organização ,  localizado ,  Bélgica "
     }, {
       "language" : "en",
@@ -49092,7 +49092,7 @@
       "keywords" : "озеро ,  Дания "
     }, {
       "language" : "pt",
-      "string" : "Dar mim uma Lista do todos lagos dentro Dinamarca. ",
+      "string" : "Dê-me uma lista de todos os lagos da Dinamarca.",
       "keywords" : "lago ,  Dinamarca "
     }, {
       "language" : "en",
@@ -49179,7 +49179,7 @@
       "keywords" : "дети ,  Эдди Мерфи "
     }, {
       "language" : "pt",
-      "string" : "Como muitos crianças faz Eddie Murphy ter? ",
+      "string" : "Quantos filhos o Eddie Murphy tem?",
       "keywords" : "crianças ,  Eddie Murphy "
     }, {
       "language" : "en",
@@ -49246,7 +49246,7 @@
       "keywords" : "английский готика здания ,  Кент "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos Inglês gótico prédios dentro Kent. ",
+      "string" : "Me mostre todos os edifícios góticos em Kent.",
       "keywords" : "Inglês gótico prédios ,  Kent "
     }, {
       "language" : "en",
@@ -49398,7 +49398,7 @@
       "keywords" : "менеджер ,  реальный Мадрид "
     }, {
       "language" : "pt",
-      "string" : "Quem é a Gerente do Real Madri? ",
+      "string" : "Qual é o técnico do Real Madrid?",
       "keywords" : "Gerente ,  Real Madri "
     }, {
       "language" : "en",
@@ -49465,7 +49465,7 @@
       "keywords" : "страны ,  платить ,  запад африканец CFA франк "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual paises posso você pagamento usando a Oeste africano CFA franco? ",
+      "string" : "Em quais paises você pode pagar com a moeda franco CFA?",
       "keywords" : "paises ,  pagamento ,  Oeste africano CFA franco "
     }, {
       "language" : "en",
@@ -49602,7 +49602,7 @@
       "keywords" : "каникулы ,  знаменитый ,  Мир "
     }, {
       "language" : "pt",
-      "string" : "Qual feriados estamos célebre por aí a mundo? ",
+      "string" : "Quais feriados são comemorados ao redor do mundo?",
       "keywords" : "feriados ,  célebre ,  mundo "
     }, {
       "language" : "en",
@@ -60411,7 +60411,7 @@
       "keywords" : "река ,  самый длинный "
     }, {
       "language" : "pt",
-      "string" : "o que é a mais longo rio? ",
+      "string" : "Qual é o rio mais longo?",
       "keywords" : "rio ,  mais longo "
     }, {
       "language" : "en",
@@ -60478,7 +60478,7 @@
       "keywords" : "организация ,  основанный ,  1930 "
     }, {
       "language" : "pt",
-      "string" : "Qual organizações estavam fundado dentro 1930? ",
+      "string" : "Quais organizações foram funddadas em 1930?",
       "keywords" : "organização ,  fundado ,  1930 "
     }, {
       "language" : "en",
@@ -62430,7 +62430,7 @@
       "keywords" : "рождение имя ,  Angela Меркель "
     }, {
       "language" : "pt",
-      "string" : "o que é a nascimento nome do Angela Merkel? ",
+      "string" : "Qual o nome de nascimento da Angela Merkel?",
       "keywords" : "nascimento nome ,  Angela Merkel "
     }, {
       "language" : "en",
@@ -62497,7 +62497,7 @@
       "keywords" : "Том Круиз ,  в браке "
     }, {
       "language" : "pt",
-      "string" : "Quem tem Tom Cruzeiro fui casado para? ",
+      "string" : "Com quem o Tom Cruise é casado?",
       "keywords" : "Tom Cruzeiro ,  casado "
     }, {
       "language" : "en",
@@ -62574,7 +62574,7 @@
       "keywords" : "трепальщик льна & Koch ,  развивать ,  оружие "
     }, {
       "language" : "pt",
-      "string" : "Qual armas fez Heckler E Koch desenvolve? ",
+      "string" : "Quais armas Heckler & Koch desenvolveram?",
       "keywords" : "Heckler E Koch ,  desenvolve ,  arma "
     }, {
       "language" : "en",
@@ -62701,7 +62701,7 @@
       "keywords" : "наименьшее ,  город ,  Германия "
     }, {
       "language" : "pt",
-      "string" : "o que é a menor cidade de área dentro Alemanha? ",
+      "string" : "Qual é a menor cidade, em área, da Alemanha?",
       "keywords" : "menor ,  cidade ,  Alemanha "
     }, {
       "language" : "en",
@@ -62768,7 +62768,7 @@
       "keywords" : "Лиссабон ,  господствующий вечеринка "
     }, {
       "language" : "pt",
-      "string" : "o que é a decisão festa dentro Lisboa? ",
+      "string" : "Qual é o partido que está no poder em Lisboa?",
       "keywords" : "Lisboa ,  decisão festa "
     }, {
       "language" : "en",
@@ -62835,7 +62835,7 @@
       "keywords" : "как тяжелый ,  Юпитер ,  Луна ,  самый светлый "
     }, {
       "language" : "pt",
-      "string" : "Como pesado é Jupiter's mais leve lua? ",
+      "string" : "Quanto pesa a lua mais brilhante de Jupter?",
       "keywords" : "como pesado ,  Júpiter ,  lua ,  mais leve "
     }, {
       "language" : "en",
@@ -62902,7 +62902,7 @@
       "keywords" : "IBM ,  сотрудников "
     }, {
       "language" : "pt",
-      "string" : "Como muitos funcionários faz IBM ter? ",
+      "string" : "Quantos empregados o IBM tem?",
       "keywords" : "IBM ,  funcionários "
     }, {
       "language" : "en",
@@ -62969,7 +62969,7 @@
       "keywords" : "ГБО ,  телевидение серии ,  Сопрано ,  первый время года ,  эпизод "
     }, {
       "language" : "pt",
-      "string" : "Lista todos episódios do a primeiro estação do a HBO televisão Series o Sopranos! ",
+      "string" : "Liste todos os episódios da primeira temporada da série de TV Sopranos da HBO.",
       "keywords" : "HBO ,  televisão Series ,  Sopranos ,  primeiro estação ,  episódio "
     }, {
       "language" : "en",
@@ -63096,7 +63096,7 @@
       "keywords" : "ICRO ,  стоять для "
     }, {
       "language" : "pt",
-      "string" : "o que faz ICRO ficar de pé para? ",
+      "string" : "O que significa a sigla ICRO?",
       "keywords" : "ICRO ,  ficar de pé para "
     }, {
       "language" : "en",
@@ -63163,7 +63163,7 @@
       "keywords" : "новый BattleStar Galactica серии ,  эпизоды ,  Больше ,  старый Боевой звезда Galactica серии "
     }, {
       "language" : "pt",
-      "string" : "Faz a Novo Battlestar Galactica Series ter Mais episódios do que a velho 1? ",
+      "string" : "A nova série de Battlestar Galatica tem mais episódios que a antiga?",
       "keywords" : "Novo BattleStar Galactica Series ,  episódios ,  Mais ,  velho Batalha Estrela Galactica Series "
     }, {
       "language" : "en",
@@ -63226,7 +63226,7 @@
       "keywords" : "фильм ,  производить ,  случай плотва "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos filmes produzido de P Barata. ",
+      "string" : "Liste para mim todos os filmes produzidos pelo Hal Roach.",
       "keywords" : "filme ,  produzir ,  P Barata "
     }, {
       "language" : "en",
@@ -65928,7 +65928,7 @@
       "keywords" : "играл ,  агент кузнец ,  матрица "
     }, {
       "language" : "pt",
-      "string" : "Quem reproduziu Agente Smith dentro Matriz? ",
+      "string" : "Quem interpretou o agente Smith em Matrix?",
       "keywords" : "reproduziu ,  Agente Smith ,  Matriz "
     }, {
       "language" : "en",
@@ -66000,7 +66000,7 @@
       "keywords" : "греческий вечеринка ,  проевропейской "
     }, {
       "language" : "pt",
-      "string" : "Qual grego festas estamos pró-europeu? ",
+      "string" : "Quais partidos gregos são pró-europeísmo?",
       "keywords" : "grego festa ,  pró-europeu "
     }, {
       "language" : "en",
@@ -66102,7 +66102,7 @@
       "keywords" : "бэндлидер ,  играть ,  труба "
     }, {
       "language" : "pt",
-      "string" : "Dar mim uma Lista do todos bandeadores aquele Toque trombeta. ",
+      "string" : "Dê-me uma lista de todos os líderes de banda que são trompetistas.",
       "keywords" : "líder de banda ,  Toque ,  trombeta "
     }, {
       "language" : "en",
@@ -66394,7 +66394,7 @@
       "keywords" : "гора ,  второй наибольший "
     }, {
       "language" : "pt",
-      "string" : "o que é a segundo maior montanha em Terra? ",
+      "string" : "Qual a segunda maior montanha da Terra?",
       "keywords" : "montanha ,  segundo maior "
     }, {
       "language" : "en",
@@ -66461,7 +66461,7 @@
       "keywords" : "крупнейший город ,  Египет ,  столица "
     }, {
       "language" : "pt",
-      "string" : "É Egito de maior cidade Além disso Está capital? ",
+      "string" : "A maior cidade do Egito também é sua capital?",
       "keywords" : "maior cidade ,  Egito ,  capital "
     }, {
       "language" : "en",
@@ -66520,7 +66520,7 @@
       "keywords" : "ракеты ,  запущенный ,  Космодром "
     }, {
       "language" : "pt",
-      "string" : "Qual foguetes estavam lançado a partir de Baikonur? ",
+      "string" : "Quais foguetes foram lançados a partir de Baikonur?",
       "keywords" : "foguetes ,  lançado ,  Baikonur "
     }, {
       "language" : "en",
@@ -66772,7 +66772,7 @@
       "keywords" : "как многие ,  программирование языки "
     }, {
       "language" : "pt",
-      "string" : "Como muitos programação línguas estamos há? ",
+      "string" : "Quantas linguagens de programação existem?",
       "keywords" : "como muitos ,  programação línguas "
     }, {
       "language" : "en",
@@ -66839,7 +66839,7 @@
       "keywords" : "шахматы игроки ,  Британская граф ,   ,  одна и та же ,  место ,  Родился "
     }, {
       "language" : "pt",
-      "string" : "Qual Xadrez jogadoras morreu dentro a mesmo Lugar, colocar eles estavam nascermos dentro? ",
+      "string" : "Quais jogadores de xadrez morreram no mesmo lugar em que nasceram?",
       "keywords" : "xadrez jogadoras ,  britânico conde ,  o ,  mesmo ,  Lugar,  colocar ,  nascermos "
     }, {
       "language" : "en",
@@ -67406,7 +67406,7 @@
       "keywords" : "владелец ,  facebook "
     }, {
       "language" : "pt",
-      "string" : "Quem é a proprietário do Facebook? ",
+      "string" : "Quem é o dono do Facebook?",
       "keywords" : "proprietário ,  Facebook "
     }, {
       "language" : "en",
@@ -67493,7 +67493,7 @@
       "keywords" : "кино ,  Том Круиз "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos filmes com Tom Cruzeiro. ",
+      "string" : "Dê-me todos os filmes com Tom Cruise.",
       "keywords" : "filme ,  Tom Cruzeiro "
     }, {
       "language" : "en",
@@ -67685,7 +67685,7 @@
       "keywords" : "Форт Нокс ,  располагается ,  У.С. государство "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual EUA Estado é Forte Knox localizado? ",
+      "string" : "Em qual estado dos EUA fica a Fort Knox?",
       "keywords" : "Forte Knox ,  localizado ,  EUA Estado "
     }, {
       "language" : "en",
@@ -67756,7 +67756,7 @@
       "keywords" : "новый Джерси ,  город ,  жителей ,  Больше чем 100000 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos cidades dentro Novo Jersey com Mais do que 100000 habitantes. ",
+      "string" : "Liste para mim todas as cidades de Nova Jersey com mais de 100000 habitantes.",
       "keywords" : "Novo Jersey ,  cidade ,  habitantes ,  Mais do que 100000 "
     }, {
       "language" : "en",
@@ -67838,7 +67838,7 @@
       "keywords" : "гора ,  выше ,  Нанга Парбат "
     }, {
       "language" : "pt",
-      "string" : "Qual montanhas estamos superior do que a Nanga Parbat? ",
+      "string" : "Quais montanhas são maiores que Nanga Parbat?",
       "keywords" : "montanha ,  superior ,  Nanga Parbat "
     }, {
       "language" : "en",
@@ -67955,7 +67955,7 @@
       "keywords" : "Ramones ,  B-сайда "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos Lados B do a Ramones. ",
+      "string" : "Liste todos os lados B do Ramones.",
       "keywords" : "Ramones ,  Lados B "
     }, {
       "language" : "en",
@@ -68072,7 +68072,7 @@
       "keywords" : "специальности ,  UNC Здоровье Забота "
     }, {
       "language" : "pt",
-      "string" : "o que estamos a especialidades do a UNC Saúde Cuidado? ",
+      "string" : "Quais são as especialidades do plano de saúde da UNC?",
       "keywords" : "especialidades ,  UNC Saúde Cuidado "
     }, {
       "language" : "en",
@@ -68144,7 +68144,7 @@
       "keywords" : "Дата ,  Олоф Palme ,  выстрел "
     }, {
       "language" : "pt",
-      "string" : "Quando estava Olof Palme tiro? ",
+      "string" : "Quando Olof Palme foi filmado?",
       "keywords" : "encontro ,  Olof Palme ,  tiro "
     }, {
       "language" : "en",
@@ -68216,7 +68216,7 @@
       "keywords" : "короли ,  Рим "
     }, {
       "language" : "pt",
-      "string" : "Lista a Sete reis do Roma. ",
+      "string" : "Liste os sete reis de Roma.",
       "keywords" : "reis ,  Roma "
     }, {
       "language" : "en",
@@ -68313,7 +68313,7 @@
       "keywords" : "люди ,  Родился ,  Вена ,   ,  Берлин "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos pessoas aquele estavam nascermos dentro Viena e morreu dentro Berlim. ",
+      "string" : "Liste para mim as pessoas que nasceram em Viena e morreram em Berlim.",
       "keywords" : "pessoas ,  nascermos ,  Viena ,  o ,  Berlim "
     }, {
       "language" : "en",
@@ -68590,7 +68590,7 @@
       "keywords" : "Darth Вейдер ,  отец ,  Люк "
     }, {
       "language" : "pt",
-      "string" : "É Darth Vader Luke pai? ",
+      "string" : "Darth Vader é o pai de Luke?",
       "keywords" : "Darth Vader ,  pai ,  Lucas "
     }, {
       "language" : "en",
@@ -68649,7 +68649,7 @@
       "keywords" : "пивоварни ,  Австралия "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos a cervejarias dentro Austrália. ",
+      "string" : "M mostre todas as cervejarias da Austrália.",
       "keywords" : "cervejarias ,  Austrália "
     }, {
       "language" : "en",
@@ -68726,7 +68726,7 @@
       "keywords" : "фильмы ,  режиссер ,  Стивен Спилберг ,  производство бюджет ,  $ 80 миллиона "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos filmes produzido de Steven Spielberg com uma despesas do a menos US $ 80 milhão. ",
+      "string" : "Liste para mim todos os filmes produzidos por Steven Spileber que custaram pelo menos $80 milhões.",
       "keywords" : "filmes ,  produtor ,  Steven Spielberg ,  Produção despesas ,  US $ 80 milhão "
     }, {
       "language" : "en",
@@ -68823,7 +68823,7 @@
       "keywords" : "Испания ,  футбольный клуб "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos futebol clubes dentro Espanha. ",
+      "string" : "Lista para mim todos os clubes de futebol da Espanha.",
       "keywords" : "Espanha ,  futebol clube "
     }, {
       "language" : "en",
@@ -72460,7 +72460,7 @@
       "keywords" : "производить ,  фильм ,  в главной роли ,  Натали Портман "
     }, {
       "language" : "pt",
-      "string" : "Quem produzido filmes estrelando Natalie Portman? ",
+      "string" : "Quem produziu os filmes estrelados pela Natalie Portman?",
       "keywords" : "produzir ,  filme ,  estrelando ,  Natalie Portman "
     }, {
       "language" : "en",
@@ -72702,7 +72702,7 @@
       "keywords" : "разводить ,  Немецкий Пасти собака "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos raças do a alemão pastor cachorro. ",
+      "string" : "Lista para mim todas as criações de pastores alemães.",
       "keywords" : "procriar ,  alemão pastor cachorro "
     }, {
       "language" : "en",
@@ -72804,7 +72804,7 @@
       "keywords" : "самый тяжелый игрок ,  Чикаго Быки "
     }, {
       "language" : "pt",
-      "string" : "Quem é a mais pesado jogador do a Chicago Touros ",
+      "string" : "Qual é o jogador mais pesado do Chicago Bulls.",
       "keywords" : "mais pesado jogador ,  Chicago Touros "
     }, {
       "language" : "en",
@@ -72871,7 +72871,7 @@
       "keywords" : "язык ,  разговорный ,  Эстония "
     }, {
       "language" : "pt",
-      "string" : "Qual línguas estamos falada dentro Estônia? ",
+      "string" : "Quais línguas são faladas na Estônia?",
       "keywords" : "língua ,  falada ,  Estônia "
     }, {
       "language" : "en",
@@ -72973,7 +72973,7 @@
       "keywords" : "крупнейший страна ,  Мир "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior país dentro a mundo? ",
+      "string" : "Qual o maior país do mundo?",
       "keywords" : "maior país ,  mundo "
     }, {
       "language" : "en",
@@ -73040,7 +73040,7 @@
       "keywords" : "крупнейший ,  город ,  Америка "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior cidade dentro América? ",
+      "string" : "Qual a maior cidade da América?",
       "keywords" : "maior ,  cidade ,  América "
     }, {
       "language" : "en",
@@ -73162,7 +73162,7 @@
       "keywords" : "исследователь ,  Церера "
     }, {
       "language" : "pt",
-      "string" : "Quem descoberto Ceres? ",
+      "string" : "Quem descobriu Ceres?",
       "keywords" : "descobridor ,  Ceres "
     }, {
       "language" : "en",
@@ -73229,7 +73229,7 @@
       "keywords" : "король ,   Нидерланды "
     }, {
       "language" : "pt",
-      "string" : "Quem é a rei do a Países Baixos? ",
+      "string" : "Quem é o rei dos países baixos?",
       "keywords" : "rei ,  a Países Baixos "
     }, {
       "language" : "en",
@@ -73296,7 +73296,7 @@
       "keywords" : "кола ,  напиток "
     }, {
       "language" : "pt",
-      "string" : "É Cola uma bebida? ",
+      "string" : "A Cola é uma bebida?",
       "keywords" : "Cola ,  bebida "
     }, {
       "language" : "en",
@@ -73355,7 +73355,7 @@
       "keywords" : "Angela Меркель "
     }, {
       "language" : "pt",
-      "string" : "o que é a alma mater do a chanceler do Alemanha Angela Merkel? ",
+      "string" : "Qual é a alma mater da chanceler da Alemanha Angela Merkel?",
       "keywords" : "Angela Merkel "
     }, {
       "language" : "en",
@@ -73422,7 +73422,7 @@
       "keywords" : "писал ,  книга ,   столбы из  Земля "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi a livro o pilares de o terre? ",
+      "string" : "Quem escreveu o livro Os pilares da terra?",
       "keywords" : "escrevi ,  livro ,  o pilares do a Terra "
     }, {
       "language" : "en",
@@ -73489,7 +73489,7 @@
       "keywords" : "аэропорты ,  Йети Авиакомпании "
     }, {
       "language" : "pt",
-      "string" : "Qual aeroportos faz Yeti Companhias Aéreas servir? ",
+      "string" : "A Yeti Airlines está presente em quais aeroportos?",
       "keywords" : "aeroportos ,  Yeti Companhias Aéreas "
     }, {
       "language" : "en",
@@ -73566,7 +73566,7 @@
       "keywords" : "Гете "
     }, {
       "language" : "pt",
-      "string" : "Onde é a berço do Goethe? ",
+      "string" : "Onde nasceu Goethe?",
       "keywords" : "Goethe "
     }, {
       "language" : "en",
@@ -73643,7 +73643,7 @@
       "keywords" : "кубинский ракета Кризис ,  ранее ,  залив из Свиньи нашествие "
     }, {
       "language" : "pt",
-      "string" : "Estava a cubano Míssil Crise mais cedo do que a Baía do Porcos Invasão? ",
+      "string" : "A crise dos mísseis de Cuba ocorreu antes da Invasão da Baía dos Porcos?",
       "keywords" : "cubano Míssil Crise ,  mais cedo ,  Baía do Porcos Invasão "
     }, {
       "language" : "en",
@@ -73702,7 +73702,7 @@
       "keywords" : "морковь кекс ,  ингредиенты "
     }, {
       "language" : "pt",
-      "string" : "Qual Ingredientes Faz Eu necessidade para cenoura bolo? ",
+      "string" : "Quais ingredientes eu preciso para um bolo de Cenoura?",
       "keywords" : "cenoura bolo ,  Ingredientes "
     }, {
       "language" : "en",
@@ -73794,7 +73794,7 @@
       "keywords" : "Википедия ,  созданный "
     }, {
       "language" : "pt",
-      "string" : "Quem criada Wikipédia? ",
+      "string" : "Quem criou a Wikipedia?",
       "keywords" : "Wikipedia ,  criada "
     }, {
       "language" : "en",
@@ -73866,7 +73866,7 @@
       "keywords" : "наибольший ,  гора ,  Саксония ,  Германия "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior montanha dentro Saxônia Alemanha? ",
+      "string" : "Qual é a montanha mais alta da Saxônia da Alemanha?",
       "keywords" : "maior ,  montanha ,  Saxônia ,  Alemanha "
     }, {
       "language" : "en",
@@ -73933,7 +73933,7 @@
       "keywords" : "федеральный министр из финансы ,  Германия "
     }, {
       "language" : "pt",
-      "string" : "Quem é a atual Federal ministro do finança dentro Alemanha? ",
+      "string" : "Quem é o atual ministro fazenda na alemanha?",
       "keywords" : "Federal ministro do finança ,  Alemanha "
     }, {
       "language" : "en",
@@ -74000,7 +74000,7 @@
       "keywords" : "страна ,  располагается ,  Мекка "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual país é Meca localizado? ",
+      "string" : "Em qual país a Meca está localizada?",
       "keywords" : "país ,  localizado ,  Meca "
     }, {
       "language" : "en",
@@ -74067,7 +74067,7 @@
       "keywords" : "играть ,  Гас Fring ,  Ломать Плохо "
     }, {
       "language" : "pt",
-      "string" : "Quem reproduziu Gus Fring dentro Quebra Mau? ",
+      "string" : "Quem interpretou o Gus Fring em Breaking Bad?",
       "keywords" : "Toque ,  Gus Fring ,  Quebra Mau "
     }, {
       "language" : "en",
@@ -74134,7 +74134,7 @@
       "keywords" : "Нил ,  Начало ,  страна "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual país faz a Nilo começar? ",
+      "string" : "Em qual país o Nilo começa?",
       "keywords" : "Nilo ,  começar ,  país "
     }, {
       "language" : "en",
@@ -74206,7 +74206,7 @@
       "keywords" : "Penn состояние Университет "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual Estado Penn Estado Universidade é localizado? ",
+      "string" : "Em qual estado a Universidade de Penn State está localizada?",
       "keywords" : "Penn Estado Universidade "
     }, {
       "language" : "en",
@@ -74273,7 +74273,7 @@
       "keywords" : "самый большой стадион ,  Испания "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior estádio dentro Espanha? ",
+      "string" : "Qual o maior estádio da Espanha?",
       "keywords" : "maior estádio ,  Espanha "
     }, {
       "language" : "en",
@@ -74340,7 +74340,7 @@
       "keywords" : "тренер ,  лед хоккей команда ,  Анкара "
     }, {
       "language" : "pt",
-      "string" : "Quem é a treinador do Ancara gelo hóquei equipe? ",
+      "string" : "Quem é o técnico do time de hockey no gelo da Ankara?",
       "keywords" : "treinador ,  gelo hóquei equipe ,  Ancara "
     }, {
       "language" : "en",
@@ -74407,7 +74407,7 @@
       "keywords" : "площадь ,  Великобритания "
     }, {
       "language" : "pt",
-      "string" : "Como ampla é a área do REINO UNIDO? ",
+      "string" : "Qual a área do UK?",
       "keywords" : "área ,  Reino Unido "
     }, {
       "language" : "en",
@@ -74474,7 +74474,7 @@
       "keywords" : "Бэтмен ,  создатель "
     }, {
       "language" : "pt",
-      "string" : "Quem criada Homem Morcego? ",
+      "string" : "Quem criou o Batman?",
       "keywords" : "homem Morcego ,  O Criador "
     }, {
       "language" : "en",
@@ -74546,7 +74546,7 @@
       "keywords" : "Зигмунд Фрейд ,  в браке "
     }, {
       "language" : "pt",
-      "string" : "Estava Sigmund Freud casado? ",
+      "string" : "Sigmund Freud foi casado?",
       "keywords" : "Sigmund Freud ,  casado "
     }, {
       "language" : "en",
@@ -74600,7 +74600,7 @@
       "keywords" : "Разработчики ,  DBpedia "
     }, {
       "language" : "pt",
-      "string" : "Quem estamos a desenvolvedores do DBpedia ",
+      "string" : "Quem são os desenvolvedores da DBpedia?",
       "keywords" : "desenvolvedores ,  DBpedia "
     }, {
       "language" : "en",
@@ -74677,7 +74677,7 @@
       "keywords" : "кино ,  непосредственный ,  Фрэнсис брод Коппола "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos filmes dirigido de Francis Ford Coppola ",
+      "string" : "Dê-me todos os filmees dirigidos pelo Francis Ford Coppola.",
       "keywords" : "filme ,  direto ,  Francis Ford Coppola "
     }, {
       "language" : "en",
@@ -74884,7 +74884,7 @@
       "keywords" : "дерево лягушка ,  амфибия "
     }, {
       "language" : "pt",
-      "string" : "Estamos árvore rãs uma tipo do anfíbio? ",
+      "string" : "As rãs aborícolas são um tipo de anfíbio? ",
       "keywords" : "árvore rã ,  anfíbio "
     }, {
       "language" : "en",
@@ -74943,7 +74943,7 @@
       "keywords" : "место нахождения ,  дома из парламент "
     }, {
       "language" : "pt",
-      "string" : "o que é a localização do a Casas do Parlamento? ",
+      "string" : "Onde está localizada a casa do parlamento?",
       "keywords" : "localização ,  Casas do Parlamento "
     }, {
       "language" : "en",
@@ -75015,7 +75015,7 @@
       "keywords" : "Дюссельдорф аэропорт "
     }, {
       "language" : "pt",
-      "string" : "como Muito de é a elevação do Düsseldorf Aeroporto ? ",
+      "string" : "Qual a altura em relação ao nível do mar do Aeroporto de Düsseldorf ?",
       "keywords" : "Düsseldorf Aeroporto "
     }, {
       "language" : "en",
@@ -75082,7 +75082,7 @@
       "keywords" : "Мексика город "
     }, {
       "language" : "pt",
-      "string" : "Como Muito de é a população do México cidade ? ",
+      "string" : "Qual o tamanho da população da Cidade do México?",
       "keywords" : "México cidade "
     }, {
       "language" : "en",
@@ -75149,7 +75149,7 @@
       "keywords" : "Французский пятый республика "
     }, {
       "language" : "pt",
-      "string" : "quando estava a fundando encontro do francês quinto república? ",
+      "string" : "Qual a data da fundação da quinta república francesa?",
       "keywords" : "francês quinto república "
     }, {
       "language" : "en",
@@ -75216,7 +75216,7 @@
       "keywords" : "первый король из Англия "
     }, {
       "language" : "pt",
-      "string" : "Quem estava a primeiro Rei do Inglaterra? ",
+      "string" : "Quem foi o primeiro rei da Inglaterra?",
       "keywords" : "primeiro Rei do Inglaterra "
     }, {
       "language" : "en",
@@ -75278,7 +75278,7 @@
       "keywords" : "Forbes ,  редактор "
     }, {
       "language" : "pt",
-      "string" : "Quem é a editor do Forbes? ",
+      "string" : "Quem é o editor da Forbes?",
       "keywords" : "Forbes ,  editor "
     }, {
       "language" : "en",
@@ -75345,7 +75345,7 @@
       "keywords" : "Дуглас Хофштадтер ,  награда "
     }, {
       "language" : "pt",
-      "string" : "Qual prêmios fez Douglas Hofstadter ganhar? ",
+      "string" : "Qual premiação o Douglas Hofdtadter ganhou?",
       "keywords" : "Douglas Hofstadter ,  prêmio "
     }, {
       "language" : "en",
@@ -75477,7 +75477,7 @@
       "keywords" : "лошадь гоночный ,  спорт "
     }, {
       "language" : "pt",
-      "string" : "É cavalo corridas uma esporte? ",
+      "string" : "Corrida de cavalo é um esporte?",
       "keywords" : "cavalo corridas ,  esporte "
     }, {
       "language" : "en",
@@ -75531,7 +75531,7 @@
       "keywords" : "река ,  пересекать ,  Brooklyn Мост "
     }, {
       "language" : "pt",
-      "string" : "Qual rio faz a Brooklyn Ponte Cruz? ",
+      "string" : "A ponte do Brooklyn atravessa qual rio?",
       "keywords" : "rio ,  Cruz ,  Brooklyn Ponte "
     }, {
       "language" : "en",
@@ -75598,7 +75598,7 @@
       "keywords" : "Как многие люди ,  Польша "
     }, {
       "language" : "pt",
-      "string" : "Como muitos pessoas viver dentro Polônia? ",
+      "string" : "Quantas pessoas vivem em Portland?",
       "keywords" : "Como muitos pessoas ,  Polônia "
     }, {
       "language" : "en",
@@ -75665,7 +75665,7 @@
       "keywords" : "последний эпизод ,  друзья ТВ показать "
     }, {
       "language" : "pt",
-      "string" : "Quando estava a último episódio do a televisão Series Amigos arejado? ",
+      "string" : "Quando o último episódio da série de TV Friends foi lançado?",
       "keywords" : "último episódio ,  Amigos Televisão exposição "
     }, {
       "language" : "en",
@@ -75732,7 +75732,7 @@
       "keywords" : "Обама ,  президент ,  жена ,  называется ,  Мишель "
     }, {
       "language" : "pt",
-      "string" : "É a esposa do Presidente Obama chamado Michelle? ",
+      "string" : "O nome da esposa do presidente Obama é Michelle?",
       "keywords" : "Obama ,  Presidente ,  esposa ,  chamado ,  Michelle "
     }, {
       "language" : "en",
@@ -75791,7 +75791,7 @@
       "keywords" : "восьмых президент ,  США "
     }, {
       "language" : "pt",
-      "string" : "Quem é 8º Presidente do NOS? ",
+      "string" : "Quem é o oitavo presidente dos EUA?",
       "keywords" : "8º Presidente ,  EUA "
     }, {
       "language" : "en",
@@ -75863,7 +75863,7 @@
       "keywords" : "Европейская союз "
     }, {
       "language" : "pt",
-      "string" : "como Muito de é a total população do europeu União? ",
+      "string" : "Qual a população total da união européia?",
       "keywords" : "europeu União "
     }, {
       "language" : "en",
@@ -75930,7 +75930,7 @@
       "keywords" : "запуск подушечка ,  работать ,  НАСА "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos lançamento almofadas operado de NASA ",
+      "string" : "Liste todas as plataformas de lanamento operados pela NASA.",
       "keywords" : "lançamento almofada ,  operar ,  NASA "
     }, {
       "language" : "en",
@@ -76078,7 +76078,7 @@
       "keywords" : "Адель "
     }, {
       "language" : "pt",
-      "string" : "o que é a nascimento nome do Adele? ",
+      "string" : "Qual o nome de nascimento da Adele?",
       "keywords" : "Adele "
     }, {
       "language" : "en",
@@ -76145,7 +76145,7 @@
       "keywords" : "Население ,  Каир "
     }, {
       "language" : "pt",
-      "string" : "o que é a população do Cairo? ",
+      "string" : "Qual o tamanho da população do Cairo?",
       "keywords" : "população ,  Cairo "
     }, {
       "language" : "en",
@@ -76212,7 +76212,7 @@
       "keywords" : "Фрэнк Герберт ,  в живых "
     }, {
       "language" : "pt",
-      "string" : "É Frank Herbert ainda vivo? ",
+      "string" : "O Frank Herbert está vivo?",
       "keywords" : "Frank Herbert ,  vivo "
     }, {
       "language" : "en",
@@ -76271,7 +76271,7 @@
       "keywords" : "последний Работа ,  и коричневый "
     }, {
       "language" : "pt",
-      "string" : "o que é a último trabalhos do E Castanho? ",
+      "string" : "Qual o maior trabalho do Dan Brown?",
       "keywords" : "último trabalhos ,  E Castanho "
     }, {
       "language" : "en",
@@ -76338,7 +76338,7 @@
       "keywords" : "Sungkyunkwan ,  Университет "
     }, {
       "language" : "pt",
-      "string" : "Onde é Sungkyunkwan Universidade? ",
+      "string" : "Onde fica a Universidade de Sungkyunkwan?",
       "keywords" : "Sungkyunkwan ,  Universidade "
     }, {
       "language" : "en",
@@ -76405,7 +76405,7 @@
       "keywords" : "Мечты "
     }, {
       "language" : "pt",
-      "string" : "Quem é a autor do a interpretação do sonhos? ",
+      "string" : "Quem é o autor da interpretação de sonhos?",
       "keywords" : "Sonhos "
     }, {
       "language" : "en",
@@ -76472,7 +76472,7 @@
       "keywords" : "Шекспир "
     }, {
       "language" : "pt",
-      "string" : "Quando estava a morte do Shakespeare? ",
+      "string" : "Quando Shakspeare morreu?",
       "keywords" : "Shakespeare "
     }, {
       "language" : "en",
@@ -76539,7 +76539,7 @@
       "keywords" : "разработчик ,  слабина "
     }, {
       "language" : "pt",
-      "string" : "Quem desenvolvido Folga? ",
+      "string" : "Quem desenvolveu o Slack?",
       "keywords" : "desenvolvedor ,  Folga "
     }, {
       "language" : "en",
@@ -76606,7 +76606,7 @@
       "keywords" : "Каролина жатка "
     }, {
       "language" : "pt",
-      "string" : "Onde é a origem do Carolina reaper? ",
+      "string" : "Qual a origem da Carolina reaper?",
       "keywords" : "Carolina reaper "
     }, {
       "language" : "en",
@@ -76673,7 +76673,7 @@
       "keywords" : "год ,  Родился ,  Рейчел Стивенс "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual ano estava Rachel Stevens nascermos? ",
+      "string" : "Em que ano nasceu Rachel Stevens?",
       "keywords" : "ano ,  nascermos ,  Rachel Stevens "
     }, {
       "language" : "en",
@@ -76740,7 +76740,7 @@
       "keywords" : "Джейн фонд ,  выйти замуж ,  как довольно часто "
     }, {
       "language" : "pt",
-      "string" : "Como frequentemente fez Jane Fundo casar? ",
+      "string" : "Quantas vezes Jane Fonda se casou?",
       "keywords" : "Jane Fundo ,  casar ,  como frequentemente "
     }, {
       "language" : "en",
@@ -76807,7 +76807,7 @@
       "keywords" : "Линкольн ,  президент ,  жена ,  называется ,  Мэри "
     }, {
       "language" : "pt",
-      "string" : "Estava a esposa do Presidente Lincoln chamado Maria? ",
+      "string" : "A esposa do presidente Lincoln se chamava Mary?",
       "keywords" : "Lincoln ,  Presidente ,  esposa ,  chamado ,  Maria "
     }, {
       "language" : "en",
@@ -76866,7 +76866,7 @@
       "keywords" : "Weser ,  течь через ,  город "
     }, {
       "language" : "pt",
-      "string" : "Qual cidades faz a Weser fluxo através? ",
+      "string" : "O Weser passa por quais cidades?",
       "keywords" : "Weser ,  fluxo através ,  cidade "
     }, {
       "language" : "en",
@@ -76963,7 +76963,7 @@
       "keywords" : "GIMP ,  программирование язык "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual programação língua é GIMP escrito? ",
+      "string" : "Em qual linguagem de programação está escrito o GIMP?",
       "keywords" : "GIMP ,  programação língua "
     }, {
       "language" : "en",
@@ -77035,7 +77035,7 @@
       "keywords" : "Университет ,  Angela Меркель "
     }, {
       "language" : "pt",
-      "string" : "Qual universidade fez Angela Merkel comparecer? ",
+      "string" : "Qual a universidade que a Angela Markel estudou?",
       "keywords" : "universidade ,  Angela Merkel "
     }, {
       "language" : "en",
@@ -77172,7 +77172,7 @@
       "keywords" : "своя ,  который "
     }, {
       "language" : "pt",
-      "string" : "Como muitos Qual lojas estamos há? ",
+      "string" : "Quantas lojas Aldis existem?",
       "keywords" : "próprio ,  Qual "
     }, {
       "language" : "en",
@@ -77239,7 +77239,7 @@
       "keywords" : "самый длинный река ,  Мир "
     }, {
       "language" : "pt",
-      "string" : "o que é a mais longo rio dentro a mundo? ",
+      "string" : "Qual o maior rio do mundo?",
       "keywords" : "mais longo rio ,  mundo "
     }, {
       "language" : "en",
@@ -77301,7 +77301,7 @@
       "keywords" : "Джон Адамс ,  Родился "
     }, {
       "language" : "pt",
-      "string" : "Quando estava John Adams nascermos? ",
+      "string" : "Quando nasceu John Adams?",
       "keywords" : "John Adams ,  nascermos "
     }, {
       "language" : "en",
@@ -77368,7 +77368,7 @@
       "keywords" : "компании ,  производить ,  на воздушной подушке "
     }, {
       "language" : "pt",
-      "string" : "Qual empresas produzir hovercrafts? ",
+      "string" : "Quais comapnhias produzem hovercrafts?",
       "keywords" : "empresas ,  produzir ,  hovercrafts "
     }, {
       "language" : "en",
@@ -77444,7 +77444,7 @@
       "keywords" : "У.С. президент ,  Линкольн ,  жена "
     }, {
       "language" : "pt",
-      "string" : "Quem estava a esposa do EUA Presidente Lincoln? ",
+      "string" : "Quem foi a esposa do presidente dos EUA Lincoln?",
       "keywords" : "EUA Presidente ,  Lincoln ,  esposa "
     }, {
       "language" : "en",
@@ -77511,7 +77511,7 @@
       "keywords" : "вид ,  слон "
     }, {
       "language" : "pt",
-      "string" : "Qual espécies faz a elefante pertence? ",
+      "string" : "Um elefante pertence a qual genero e espécie?",
       "keywords" : "espécies ,  elefante "
     }, {
       "language" : "en",
@@ -77578,7 +77578,7 @@
       "keywords" : "Австралия ,  столица ,  люди ,  жить "
     }, {
       "language" : "pt",
-      "string" : "Como muitos pessoas viver dentro a capital do Austrália? ",
+      "string" : "Quantas pessoas vivem na capital da Austrália?",
       "keywords" : "Austrália ,  capital ,  pessoas ,  viver "
     }, {
       "language" : "en",
@@ -77645,7 +77645,7 @@
       "keywords" : "древний империя ,  платить ,  какао фасоль "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual antigo Império poderia você pagamento com cacau feijões? ",
+      "string" : "Em qual immpério antigo você podia pagar com cacau?",
       "keywords" : "antigo Império ,  pagamento ,  cacau feijões "
     }, {
       "language" : "en",
@@ -77712,7 +77712,7 @@
       "keywords" : "теории ,  Альберт Эйнштейн ,  приехать вверх "
     }, {
       "language" : "pt",
-      "string" : "Como muitos teorias fez Albert Einstein venha acima com? ",
+      "string" : "Quantas teorias Albert Einstein produziu?",
       "keywords" : "teorias ,  Albert Einstein ,  venha acima "
     }, {
       "language" : "en",
@@ -77774,7 +77774,7 @@
       "keywords" : "составить ,  звуковая дорожка ,  Камерон титановый "
     }, {
       "language" : "pt",
-      "string" : "Quem composto a trilha sonora para Cameron's Titânico? ",
+      "string" : "Quem compôs a trilha sonora para o Titanic de Cameron?",
       "keywords" : "compor ,  trilha sonora ,  Cameron's Titânico "
     }, {
       "language" : "en",
@@ -77841,7 +77841,7 @@
       "keywords" : "время выполнения ,  Игрушка История "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a tempo de execução do Brinquedo História. ",
+      "string" : "Fale para mim o tempo de duração do Toy Story.",
       "keywords" : "tempo de execução ,  Brinquedo História "
     }, {
       "language" : "en",
@@ -77903,7 +77903,7 @@
       "keywords" : "Иран ,  границы "
     }, {
       "language" : "pt",
-      "string" : "Com como muitos paises Irã tem fronteiras? ",
+      "string" : "Com quantos países o Iran faz fronteira?",
       "keywords" : "Irã ,  fronteiras "
     }, {
       "language" : "en",
@@ -78005,7 +78005,7 @@
       "keywords" : "электроника компании ,  основанный ,  Пекин "
     }, {
       "language" : "pt",
-      "string" : "Qual eletrônicos empresas estavam fundado dentro Pequim? ",
+      "string" : "Quuais companhias eltrônicas fooram fundadas em Beijing?",
       "keywords" : "eletrônicos empresas ,  fundado ,  Beijing "
     }, {
       "language" : "en",
@@ -78072,7 +78072,7 @@
       "keywords" : "Джон F. Кеннеди ,  преемник "
     }, {
       "language" : "pt",
-      "string" : "Quem estava a sucessor do John F. Kennedy? ",
+      "string" : "Quem foi o sucessor do John F. Kennedy?",
       "keywords" : "John F. Kennedy ,  sucessor "
     }, {
       "language" : "en",
@@ -78149,7 +78149,7 @@
       "keywords" : "мэр из Париж "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito do Paris? ",
+      "string" : "Quem é o prefeito de Paris?",
       "keywords" : "prefeito do Paris "
     }, {
       "language" : "en",
@@ -78216,7 +78216,7 @@
       "keywords" : "Арнольд Шварценеггер ,  посещать ,  Университет "
     }, {
       "language" : "pt",
-      "string" : "fez Arnold Schwarzenegger comparecer uma universidade? ",
+      "string" : "Arnold Schwazenegger fez faculdade?",
       "keywords" : "Arnold Schwarzenegger ,  comparecer ,  universidade "
     }, {
       "language" : "en",
@@ -78322,7 +78322,7 @@
       "keywords" : "Изар ,  течь ,  озеро "
     }, {
       "language" : "pt",
-      "string" : "Faz a Isar fluxo para dentro uma lago? ",
+      "string" : "O Isar desemboca em um lago?",
       "keywords" : "Isar ,  fluxo ,  lago "
     }, {
       "language" : "en",
@@ -78381,7 +78381,7 @@
       "keywords" : "индийский Компания ,   большинство сотрудников "
     }, {
       "language" : "pt",
-      "string" : "Qual indiano companhia tem a a maioria funcionários? ",
+      "string" : "Qual companhia indiana tem mais empregados?",
       "keywords" : "indiano companhia ,  a a maioria funcionários "
     }, {
       "language" : "en",
@@ -78448,7 +78448,7 @@
       "keywords" : "Джон F. Кеннеди ,  вице президент "
     }, {
       "language" : "pt",
-      "string" : "Quem estava John F. Kennedy vício Presidente? ",
+      "string" : "Quem foi o vice presidente do John F. Kennedy?",
       "keywords" : "John F. Kennedy ,  vício Presidente "
     }, {
       "language" : "en",
@@ -78515,7 +78515,7 @@
       "keywords" : "Miffy ,  создатель ,  страна "
     }, {
       "language" : "pt",
-      "string" : "Qual país faz a O Criador do Miffy venha a partir de? ",
+      "string" : "Qual a nacionalidade do criador do Miffy?",
       "keywords" : "Miffy ,  O Criador ,  país "
     }, {
       "language" : "en",
@@ -78582,7 +78582,7 @@
       "keywords" : "город ,  Heineken пивоваренный завод "
     }, {
       "language" : "pt",
-      "string" : "Dentro o que cidade é a Heineken cervejaria? ",
+      "string" : "Em qual cidade fica a cervejaria Heineken?",
       "keywords" : "cidade ,  Heineken cervejaria "
     }, {
       "language" : "en",
@@ -78649,7 +78649,7 @@
       "keywords" : "Барак Обама ,  демократ "
     }, {
       "language" : "pt",
-      "string" : "É Barack Obama uma democrata? ",
+      "string" : "O Barack Obama é um democrata?",
       "keywords" : "Barack Obama ,  democrata "
     }, {
       "language" : "en",
@@ -78708,7 +78708,7 @@
       "keywords" : "Маргарет Thatcher ,  ребенок "
     }, {
       "language" : "pt",
-      "string" : "Lista a crianças do Margarida Thatcher. ",
+      "string" : "Liste os filhos da Margaret Thatcher.",
       "keywords" : "Margarida Thatcher ,  criança "
     }, {
       "language" : "en",
@@ -78780,7 +78780,7 @@
       "keywords" : "область ,  Дыня из Bourgogne "
     }, {
       "language" : "pt",
-      "string" : "A partir de qual região é a Melão de Borgonha? ",
+      "string" : "De qual região é a uva branca de vinho?",
       "keywords" : "região ,  Melão de Borgonha "
     }, {
       "language" : "en",
@@ -78862,7 +78862,7 @@
       "keywords" : "север Рейн Вестфалия "
     }, {
       "language" : "pt",
-      "string" : "como grande é a total área do Norte Reno Vestfália ",
+      "string" : "Qual a área total da Renânia do Norte-Vestfália?",
       "keywords" : "norte Reno Vestfália "
     }, {
       "language" : "en",
@@ -78929,7 +78929,7 @@
       "keywords" : "город ,   большинство жителей "
     }, {
       "language" : "pt",
-      "string" : "Qual cidade tem a a maioria habitantes? ",
+      "string" : "Qual cidade possui mais habitantes?",
       "keywords" : "cidade ,  a a maioria habitantes "
     }, {
       "language" : "en",
@@ -78996,7 +78996,7 @@
       "keywords" : "Дональд Трампа ,  бизнес "
     }, {
       "language" : "pt",
-      "string" : "o que é Donald Trump's a Principal o negócio? ",
+      "string" : "Qual é o empreendimento principal do Donald Trump?",
       "keywords" : "Donald Trump's ,  o negócio "
     }, {
       "language" : "en",
@@ -79077,7 +79077,7 @@
       "keywords" : "футбол Мир кружка 2018 "
     }, {
       "language" : "pt",
-      "string" : "Quando vai começar a final partida do a futebol mundo copo 2018? ",
+      "string" : "Quando começará a final da copa do mundo de futebol 2018?",
       "keywords" : "futebol mundo copo 2018 "
     }, {
       "language" : "en",
@@ -79144,7 +79144,7 @@
       "keywords" : "фильм ,  Стэнли Кубрик ,  непосредственный "
     }, {
       "language" : "pt",
-      "string" : "Qual filmes fez Stanley Kubrick direto? ",
+      "string" : "Quais filmes Stanley Kubrick dirigiu?",
       "keywords" : "filme ,  Stanley Kubrick ,  direto "
     }, {
       "language" : "en",
@@ -79286,7 +79286,7 @@
       "keywords" : "Ирак "
     }, {
       "language" : "pt",
-      "string" : "como Muito de é a população Iraque? ",
+      "string" : "Qual é a população do Iraque?",
       "keywords" : "Iraque "
     }, {
       "language" : "en",
@@ -79353,7 +79353,7 @@
       "keywords" : "жителей ,  крупнейший город ,  Канада "
     }, {
       "language" : "pt",
-      "string" : "Como muitos habitantes faz a maior cidade dentro Canadá ter? ",
+      "string" : "Quantos habitantes a maior cidade do Canadá tem?",
       "keywords" : "habitantes ,  maior cidade ,  Canadá "
     }, {
       "language" : "en",
@@ -79420,7 +79420,7 @@
       "keywords" : "мэр ,  столица ,  Французский Полинезия "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito do a capital do francês Polinésia? ",
+      "string" : "Quem é o prefeito da capital da Polinésia Francesa?",
       "keywords" : "prefeito ,  capital ,  francês Polinésia "
     }, {
       "language" : "en",
@@ -79487,7 +79487,7 @@
       "keywords" : "актер ,  в главной роли ,  кино ,  непосредственный ,  Уильям Шатнер "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores estrelando dentro filmes dirigido de William Shatner ",
+      "string" : "Liste para mim todos os atores estrelando em filmes dirigidos pelo William Shatner.",
       "keywords" : "ator ,  estrelando ,  filme ,  direto ,  William Shatner "
     }, {
       "language" : "en",
@@ -79639,7 +79639,7 @@
       "keywords" : "Клаудиа Шиффер ,  высокий "
     }, {
       "language" : "pt",
-      "string" : "Como alta é Claudia Schiffer? ",
+      "string" : "Qual a altura da Claudia Schiffer?",
       "keywords" : "Claudia Schiffer ,  alta "
     }, {
       "language" : "en",
@@ -79706,7 +79706,7 @@
       "keywords" : "Германия "
     }, {
       "language" : "pt",
-      "string" : "como Muito de é a população densidade classificação do Alemanha? ",
+      "string" : "Qual é a densidade populacional da Alemanha?",
       "keywords" : "Alemanha "
     }, {
       "language" : "en",
@@ -79773,7 +79773,7 @@
       "keywords" : "наибольший ,  гора ,  Италия "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior montanha dentro Itália? ",
+      "string" : "Qual a montanha mais alta da Itália?",
       "keywords" : "maior ,  montanha ,  Itália "
     }, {
       "language" : "en",
@@ -79840,7 +79840,7 @@
       "keywords" : "игра ,  время по Гринвичу "
     }, {
       "language" : "pt",
-      "string" : "Lista todos jogos de GMT. ",
+      "string" : "Liste todos os jogos da GMT.",
       "keywords" : "jogos ,  GMT "
     }, {
       "language" : "en",
@@ -79942,7 +79942,7 @@
       "keywords" : "Суринам ,  официальный язык "
     }, {
       "language" : "pt",
-      "string" : "o que é a oficial língua do Suriname? ",
+      "string" : "Qual a língua oficial do Suriname?",
       "keywords" : "Suriname ,  oficial língua "
     }, {
       "language" : "en",
@@ -80009,7 +80009,7 @@
       "keywords" : "город ,  Nikos Казантзакис ,   "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade fez Nikos Kazantzakis o? ",
+      "string" : "Em qual cidade o Nikos Kazantzakis morreu?",
       "keywords" : "cidade ,  Nikos Kazantzakis ,  o "
     }, {
       "language" : "en",
@@ -80076,7 +80076,7 @@
       "keywords" : "ингредиенты ,  шоколад чип печенье "
     }, {
       "language" : "pt",
-      "string" : "o que é dentro uma chocolate lasca biscoito? ",
+      "string" : "Quais os ingredientes de um biscoito com gotas de chocolate?",
       "keywords" : "Ingredientes ,  chocolate lasca biscoito "
     }, {
       "language" : "en",
@@ -80188,7 +80188,7 @@
       "keywords" : "Лимерик Озеро ,  страна "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual país é a Limerick Lago? ",
+      "string" : "Em qual país fica o lago Limerick?",
       "keywords" : "Limerick Lago ,  país "
     }, {
       "language" : "en",
@@ -80255,7 +80255,7 @@
       "keywords" : "видео игра ,  публиковать ,  Имею в виду хомяк Программного обеспечения "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos vídeo jogos Publicados de Significar Hamster Programas. ",
+      "string" : "Dê-me todos os jogos de video games lançados pela Mean Hamster Software.",
       "keywords" : "vídeo jogos ,  publicar ,  Significar Hamster Programas "
     }, {
       "language" : "en",
@@ -80327,7 +80327,7 @@
       "keywords" : "член ,  одаренный человек "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos membros do Prodígio. ",
+      "string" : "Liste os memros do Prodigy.",
       "keywords" : "membro ,  Prodígio "
     }, {
       "language" : "en",
@@ -80404,7 +80404,7 @@
       "keywords" : "время зона ,  Рим "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual Tempo zona é Roma? ",
+      "string" : "Em qual fuso horário está Roma?",
       "keywords" : "Tempo zona ,  Roma "
     }, {
       "language" : "en",
@@ -80471,7 +80471,7 @@
       "keywords" : "высокая ,  маяк в Коломбо "
     }, {
       "language" : "pt",
-      "string" : "Como Alto é a farol dentro Colombo? ",
+      "string" : "Qual é  a altura do farol de Colombo?",
       "keywords" : "Alto ,  farol dentro Colombo "
     }, {
       "language" : "en",
@@ -80538,7 +80538,7 @@
       "keywords" : " стена "
     }, {
       "language" : "pt",
-      "string" : "Quem estamos a escritoras do a parede álbum do Rosa Floyd? ",
+      "string" : "Quem são os escritores do álbum Wall do Pink Floyd?",
       "keywords" : "a parede "
     }, {
       "language" : "en",
@@ -80625,7 +80625,7 @@
       "keywords" : "мэр ,  Роттердам "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito do Rotterdam? ",
+      "string" : "Quem é o prefeito de Roterdão?",
       "keywords" : "prefeito ,  Rotterdam "
     }, {
       "language" : "en",
@@ -80692,7 +80692,7 @@
       "keywords" : "Австралия ,  крупнейший город "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior cidade dentro Austrália? ",
+      "string" : "Qual a maior cidade da Austrália?",
       "keywords" : "Austrália ,  maior cidade "
     }, {
       "language" : "en",
@@ -80759,7 +80759,7 @@
       "keywords" : "в браке в ,  президент Ширака "
     }, {
       "language" : "pt",
-      "string" : "Quem estava casado para Presidente Chirac? ",
+      "string" : "Quem foi casado com o presidente Chirac?",
       "keywords" : "casado para ,  Presidente Chirac "
     }, {
       "language" : "en",
@@ -80826,7 +80826,7 @@
       "keywords" : "форма ,  правительство ,  юг Африка "
     }, {
       "language" : "pt",
-      "string" : "o que Formato do governo é encontrado dentro Sul África? ",
+      "string" : "Qual a forma de governo da África do sul?",
       "keywords" : "Formato ,  governo ,  Sul África "
     }, {
       "language" : "en",
@@ -80889,7 +80889,7 @@
       "keywords" : "высокая ,  Yokohama морской башня "
     }, {
       "language" : "pt",
-      "string" : "Como Alto é a Yokohama Marinho Torre? ",
+      "string" : "Qual a altura da Yokohama Marine Tower?",
       "keywords" : "Alto ,  Yokohama Marinho Torre "
     }, {
       "language" : "en",
@@ -91748,7 +91748,7 @@
       "keywords" : "Самый высокий ,  баскетбол игрок "
     }, {
       "language" : "pt",
-      "string" : "Quem é a mais alto basquetebol jogador? ",
+      "string" : "Quem é o jogador mais alto de basquete?",
       "keywords" : "mais alto ,  basquetebol jogador "
     }, {
       "language" : "en",
@@ -91815,7 +91815,7 @@
       "keywords" : "языки ,  Туркменистан "
     }, {
       "language" : "pt",
-      "string" : "Como muitos línguas estamos falada dentro Turcomenistão? ",
+      "string" : "Quantos idiomas são falado no Turcomenistão?",
       "keywords" : "línguas ,  Turcomenistão "
     }, {
       "language" : "en",
@@ -91882,7 +91882,7 @@
       "keywords" : "дети ,  что Guevara "
     }, {
       "language" : "pt",
-      "string" : "fez que Guevara ter crianças? ",
+      "string" : "Che Guevara teve filhos?",
       "keywords" : "crianças ,  que Guevara "
     }, {
       "language" : "en",
@@ -91941,7 +91941,7 @@
       "keywords" : "Каурисмяки ,  победитель ,  большой цена в Канны "
     }, {
       "language" : "pt",
-      "string" : "fez Kaurismäki sempre ganhar a Grande preço a Cannes? ",
+      "string" : "O Kaurismäki  já ganhou o premio Grand Prix em Canes?",
       "keywords" : "Kaurismäki ,  vencedora ,  Grande preço a Cannes "
     }, {
       "language" : "en",
@@ -92000,7 +92000,7 @@
       "keywords" : "вечеринка ,  мэр из Париж ,  принадлежать "
     }, {
       "language" : "pt",
-      "string" : "Para qual festa faz a prefeito do Paris pertence? ",
+      "string" : "O prefeito de Paris é de qual partido?",
       "keywords" : "festa ,  prefeito do Paris ,  pertencer "
     }, {
       "language" : "en",
@@ -92067,7 +92067,7 @@
       "keywords" : "формула 1 ,  раса Водитель ,  гонки ,  большинство "
     }, {
       "language" : "pt",
-      "string" : "Quem é a Fórmula 1 corrida motorista com a a maioria raças? ",
+      "string" : "Quem é o corredor que ganhou mais corridas da Fórmula 1.",
       "keywords" : "Fórmula 1 ,  corrida motorista ,  corridas ,  a maioria "
     }, {
       "language" : "en",
@@ -92134,7 +92134,7 @@
       "keywords" : "страна ,  Sitecore "
     }, {
       "language" : "pt",
-      "string" : "o que país é Sitecore a partir de? ",
+      "string" : "De qual país é a Sitecore ?",
       "keywords" : "país ,  Sitecore "
     }, {
       "language" : "en",
@@ -92201,7 +92201,7 @@
       "keywords" : "рождение место ,  Фрэнк Sinatra "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a nascimento Lugar, colocar do Frank Sinatra ",
+      "string" : "Me fale o lugar que Frank Sinatra nasceu.",
       "keywords" : "nascimento Lugar,  colocar ,  Frank Sinatra "
     }, {
       "language" : "en",
@@ -92264,7 +92264,7 @@
       "keywords" : "Кристиан тюк ,  в главной роли ,  бархатный Золотая шахта "
     }, {
       "language" : "pt",
-      "string" : "É cristão Fardo estrelando dentro Veludo Mina de ouro? ",
+      "string" : "O Christian Bale é o ator principal de Velvet Goldmine?",
       "keywords" : "cristão Fardo ,  estrelando ,  Veludo Mina de ouro "
     }, {
       "language" : "en",
@@ -92323,7 +92323,7 @@
       "keywords" : "сын ,  Сынок а также Cher "
     }, {
       "language" : "pt",
-      "string" : "Quem é a filho do Sonny e Cher? ",
+      "string" : "Quem é o filho do Sonny e da Cher?",
       "keywords" : "filho ,  Sonny e Cher "
     }, {
       "language" : "en",
@@ -92390,7 +92390,7 @@
       "keywords" : "как многие ,  этнической группы ,  Словения "
     }, {
       "language" : "pt",
-      "string" : "Como muitos étnico grupos viver dentro Eslovênia? ",
+      "string" : "Quantos grupos étnicos existem na Eslovênia?",
       "keywords" : "como muitos ,  étnico grupos ,  Eslovênia "
     }, {
       "language" : "en",
@@ -92457,7 +92457,7 @@
       "keywords" : "столица ,  Камерун "
     }, {
       "language" : "pt",
-      "string" : "o que é a capital do Camarões? ",
+      "string" : "Qual é a capital do Camarão?",
       "keywords" : "capital ,  Camarões "
     }, {
       "language" : "en",
@@ -92524,7 +92524,7 @@
       "keywords" : "Натали Портман ,  Родился ,  объединенный состояния "
     }, {
       "language" : "pt",
-      "string" : "Estava Natalie Portman nascermos dentro a Unidos Estados? ",
+      "string" : "A Natalie Portman nasceu nos Estados Unidos?",
       "keywords" : "Natalie Portman ,  nascermos ,  Unidos Estados "
     }, {
       "language" : "en",
@@ -92583,7 +92583,7 @@
       "keywords" : "как многие ,  страницы ,  война а также мир "
     }, {
       "language" : "pt",
-      "string" : "Como muitos Páginas faz Guerra e Paz ter? ",
+      "string" : "Guerra e Paz tem quantas páginas?",
       "keywords" : "como muitos ,  Páginas ,  Guerra e Paz "
     }, {
       "language" : "en",
@@ -92650,7 +92650,7 @@
       "keywords" : "самый старший ребенок ,  Мерил Стрип "
     }, {
       "language" : "pt",
-      "string" : "Quem é a mais antigo criança do Meryl Streep? ",
+      "string" : "Quem é o filho mais velho da Meryl Streep?",
       "keywords" : "mais antigo criança ,  Meryl Streep "
     }, {
       "language" : "en",
@@ -92717,7 +92717,7 @@
       "keywords" : "телевидение показать ,  Создайте ,  Уолт Дисней "
     }, {
       "language" : "pt",
-      "string" : "Qual televisão mostra estavam criada de Walt Disney? ",
+      "string" : "Quais programas de televisão foram criados pela Walt Disney?",
       "keywords" : "televisão exposição ,  crio ,  Walt Disney "
     }, {
       "language" : "en",
@@ -92804,7 +92804,7 @@
       "keywords" : "Ваши глаза ,  стоять для "
     }, {
       "language" : "pt",
-      "string" : "o que faz Seus olhos ficar de pé para? ",
+      "string" : "O que significa a sigla IYCM?",
       "keywords" : "Seus olhos ,  ficar de pé para "
     }, {
       "language" : "en",
@@ -92871,7 +92871,7 @@
       "keywords" : "виноград типы ,  расти ,  Орегон "
     }, {
       "language" : "pt",
-      "string" : "Qual tipos do uvas crescer dentro Oregon? ",
+      "string" : "Quais tipos de uva nascem no Oregon?",
       "keywords" : "uva tipos ,  crescer ,  Oregon "
     }, {
       "language" : "en",
@@ -93343,7 +93343,7 @@
       "keywords" : "У.С. президент ,  Джексон ,  война "
     }, {
       "language" : "pt",
-      "string" : "Estava EUA Presidente Jackson envolvido dentro uma guerra? ",
+      "string" : "O presidente dos EUA Jackson esteve envolvido em uma guerra?",
       "keywords" : "EUA Presidente ,  Jackson ,  guerra "
     }, {
       "language" : "en",
@@ -93402,7 +93402,7 @@
       "keywords" : "титановый ,  завершение Дата "
     }, {
       "language" : "pt",
-      "string" : "Quando estava a Titânico completou? ",
+      "string" : "Quando o Titanic foi finalizado?",
       "keywords" : "Titânico ,  conclusão encontro "
     }, {
       "language" : "en",
@@ -93469,7 +93469,7 @@
       "keywords" : "тесла ,  нобелевский приз ,  физика "
     }, {
       "language" : "pt",
-      "string" : "fez Tesla ganhar uma nobel prêmio dentro física? ",
+      "string" : "Tesla ganhou um prêmio nobel da física?",
       "keywords" : "Tesla ,  nobel prêmio ,  física "
     }, {
       "language" : "en",
@@ -93528,7 +93528,7 @@
       "keywords" : "состояния ,  Мексика "
     }, {
       "language" : "pt",
-      "string" : "Como muitos estados estamos dentro México? ",
+      "string" : "Quantos estados existem no México?",
       "keywords" : "estados ,  México "
     }, {
       "language" : "en",
@@ -93591,7 +93591,7 @@
       "keywords" : "ученый ,  известен для ,  Манхеттен проект ,  Нобель мир приз "
     }, {
       "language" : "pt",
-      "string" : "Qual cientista é conhecido para a Manhattan Projeto e a Nobel Paz Prêmio? ",
+      "string" : "Qual cientista é conhecidos pelo Projeto Manhattan e pelo Prêmio Nobel da Paz?",
       "keywords" : "cientista ,  conhecido para ,  Manhattan Projeto ,  Nobel Paz Prêmio "
     }, {
       "language" : "en",
@@ -93658,7 +93658,7 @@
       "keywords" : "Лего Кино ,  Стоимость "
     }, {
       "language" : "pt",
-      "string" : "Como Muito de fez a Lego Filme custo? ",
+      "string" : "Quanto custou o filme Lego?",
       "keywords" : "Lego Filme ,  custo "
     }, {
       "language" : "en",
@@ -93725,7 +93725,7 @@
       "keywords" : "Гарольд а также Мод ,  составить ,  Музыка "
     }, {
       "language" : "pt",
-      "string" : "Quem composto a música para Harold e Maude? ",
+      "string" : "Quem compôs a música para Harold e Maude?",
       "keywords" : "Harold e Maude ,  compor ,  música "
     }, {
       "language" : "en",
@@ -93792,7 +93792,7 @@
       "keywords" : "ГБО ,  телевидение серии ,  Сопрано ,  первый время года ,  эпизод "
     }, {
       "language" : "pt",
-      "string" : "Lista todos episódios do a primeiro estação do a HBO televisão Series o Sopranos. ",
+      "string" : "Liste todos os episódios da primeira temporada da série de TV Sopranos da HBO.",
       "keywords" : "HBO ,  televisão Series ,  Sopranos ,  primeiro estação ,  episódio "
     }, {
       "language" : "en",
@@ -93919,7 +93919,7 @@
       "keywords" : "город ,   наименее жителей "
     }, {
       "language" : "pt",
-      "string" : "Qual cidade tem a menos habitantes? ",
+      "string" : "Qual a cidade com o menor número de habitantes?",
       "keywords" : "cidade ,  a menos habitantes "
     }, {
       "language" : "en",
@@ -93986,7 +93986,7 @@
       "keywords" : "где ,  Ли Сын Рхи ,  похороненный "
     }, {
       "language" : "pt",
-      "string" : "Onde é Syngman Rhee enterrado? ",
+      "string" : "Onde Syngman Rhee está enterrado?",
       "keywords" : "Onde ,  Syngman Rhee ,  enterrado "
     }, {
       "language" : "en",
@@ -94053,7 +94053,7 @@
       "keywords" : "Неймар ,  играть ,  реальный Мадрид "
     }, {
       "language" : "pt",
-      "string" : "Faz Neymar Toque para Real Madri? ",
+      "string" : "O Neymar joga no Real Madrid?",
       "keywords" : "Neymar ,  Toque ,  Real Madri "
     }, {
       "language" : "en",
@@ -94112,7 +94112,7 @@
       "keywords" : "писал ,  книга ,   столбы из  Земля "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi a livro o Pilares do a Terra? ",
+      "string" : "Quem escreveu o livro Os pilares da terra?",
       "keywords" : "escrevi ,  livro ,  o pilares do a Terra "
     }, {
       "language" : "en",
@@ -94179,7 +94179,7 @@
       "keywords" : "принц Гарри ,  принц Уильям ,  одна и та же ,  родители "
     }, {
       "language" : "pt",
-      "string" : "Faz Principe Harry e Principe William ter a mesmo pais? ",
+      "string" : "O Prince Harry e o Prince William têm os mesmos pais?",
       "keywords" : "Principe Harry ,  Principe William ,  mesmo ,  pais "
     }, {
       "language" : "en",
@@ -94238,7 +94238,7 @@
       "keywords" : "докторский руководитель ,  Альберт Эйнштейн "
     }, {
       "language" : "pt",
-      "string" : "Quem estava a doutoral Supervisor do Albert Einstein? ",
+      "string" : "Quem era o supervisor do doutorado de Albert Einstein?",
       "keywords" : "doutoral Supervisor ,  Albert Einstein "
     }, {
       "language" : "en",
@@ -94305,7 +94305,7 @@
       "keywords" : "Ломать Плохо ,  эпизоды ,  Больше чем ,  Игра из престолы "
     }, {
       "language" : "pt",
-      "string" : "Faz Quebra Mau ter Mais episódios do que jogos do Tronos ",
+      "string" : "Breaking Bad tem mais episódios que Game of Thrones?",
       "keywords" : "Quebra Mau ,  episódios ,  Mais do que ,  jogos do Tronos "
     }, {
       "language" : "en",
@@ -94364,7 +94364,7 @@
       "keywords" : "человек ,  вдохновляющий ,  Винсент от Гоги "
     }, {
       "language" : "pt",
-      "string" : "Quem estava Vincent de Gogh inspirado de? ",
+      "string" : "Quem inspirou Vincent van Gogh?",
       "keywords" : "pessoa ,  inspirador ,  Vincent de Gogh "
     }, {
       "language" : "en",
@@ -94431,7 +94431,7 @@
       "keywords" : "здание ,  после ,  Burj халиф ,  большинство этажей "
     }, {
       "language" : "pt",
-      "string" : "Qual construção depois de a Burj Khalifa tem a a maioria andares? ",
+      "string" : "Depois do Burj Khalifa, ual prédio tem mais andares?",
       "keywords" : "construção ,  depois de ,  Burj Khalifa ,  a maioria pavimentos "
     }, {
       "language" : "en",
@@ -94494,7 +94494,7 @@
       "keywords" : "результат ,  война из Розы "
     }, {
       "language" : "pt",
-      "string" : "o que estava a final resultado do a Guerra do a Rosas? ",
+      "string" : "Qual foi o resultado da Guerra de Rosas?",
       "keywords" : "resultado ,  Guerra do Rosas "
     }, {
       "language" : "en",
@@ -94557,7 +94557,7 @@
       "keywords" : "Стоимость ,  пульпа Фантастика "
     }, {
       "language" : "pt",
-      "string" : "Como Muito de fez Polpa Ficção custo? ",
+      "string" : "Quanto custou Pulp Fiction?",
       "keywords" : "custo ,  Polpa Ficção "
     }, {
       "language" : "en",
@@ -94624,7 +94624,7 @@
       "keywords" : "проинсулина ,  белок "
     }, {
       "language" : "pt",
-      "string" : "É pró-insulina uma proteína? ",
+      "string" : "Proinsulina é uma proteína?",
       "keywords" : "pró-insulina ,  proteína "
     }, {
       "language" : "en",
@@ -94683,7 +94683,7 @@
       "keywords" : "урду ,  персидский ,  общий корень "
     }, {
       "language" : "pt",
-      "string" : "Faz urdu e persa ter uma comum raiz? ",
+      "string" : "Urdu e Persa tem uma origem em comum?",
       "keywords" : "urdu ,  persa ,  comum raiz "
     }, {
       "language" : "en",
@@ -94738,7 +94738,7 @@
       "keywords" : "в главной роли ,  испанский кино ,  произведенный ,  Бенисио из Торо "
     }, {
       "language" : "pt",
-      "string" : "Quem é estrelando dentro espanhol filmes produzido de Benicio do Toro ",
+      "string" : "Quem está estrelando na Espanha os filmes produzidos pelo Benicio del Toro?",
       "keywords" : "estrelando ,  espanhol filmes ,  produzido ,  Benicio do Toro "
     }, {
       "language" : "en",
@@ -94805,7 +94805,7 @@
       "keywords" : "Озеро Байкал ,  больше чем ,  большой медведь Озеро "
     }, {
       "language" : "pt",
-      "string" : "É Lago Baikal Maior do que a Ótimo Urso Lago? ",
+      "string" : "O lago Baikal é maior que o lago Great Bear?",
       "keywords" : "Lago Baikal ,  Maior do que ,  Ótimo Urso Lago "
     }, {
       "language" : "en",
@@ -94864,7 +94864,7 @@
       "keywords" : "книги ,  Азимов ,  Фонд серии "
     }, {
       "language" : "pt",
-      "string" : "exposição mim todos livros dentro Asimov's Fundação Series. ",
+      "string" : "Me mostre todos os livros que pertencem a série Fundação do Asimov.",
       "keywords" : "livros ,  Asimov ,  Fundação Series "
     }, {
       "language" : "en",
@@ -94941,7 +94941,7 @@
       "keywords" : "место рождения ,  холостяк "
     }, {
       "language" : "pt",
-      "string" : "Onde estava Bach nascermos? ",
+      "string" : "Onde nasceu Bach?",
       "keywords" : "berço ,  Bach "
     }, {
       "language" : "en",
@@ -95008,7 +95008,7 @@
       "keywords" : "город ,  самый старший Бег метро "
     }, {
       "language" : "pt",
-      "string" : "Qual cidade tem a mais antigo corrida metro? ",
+      "string" : "Qual cidade tem o metrô mais antigo em funcionamento?",
       "keywords" : "cidade ,  mais antigo corrida metrô "
     }, {
       "language" : "en",
@@ -95071,7 +95071,7 @@
       "keywords" : "Brooklyn Мост ,  дизайн "
     }, {
       "language" : "pt",
-      "string" : "Quem projetado a Brooklyn Ponte? ",
+      "string" : "Quem projetou a ponte  do Broklyn?",
       "keywords" : "Brooklyn Ponte ,  desenhar "
     }, {
       "language" : "en",
@@ -95138,7 +95138,7 @@
       "keywords" : "люди ,  Евразия "
     }, {
       "language" : "pt",
-      "string" : "Como muitos pessoas viver dentro Eurásia? ",
+      "string" : "Quantas pessoas vivem na Eurasia?",
       "keywords" : "pessoas ,  Eurásia "
     }, {
       "language" : "en",
@@ -95201,7 +95201,7 @@
       "keywords" : "хозяин ,  BBC живая природа Специальные предложения "
     }, {
       "language" : "pt",
-      "string" : "Quem é a hospedeiro do a BBC Animais selvagens Promoções ",
+      "string" : "Quem é o apresentador da BBC Wildlife Specials?",
       "keywords" : "hospedeiro ,  BBC Animais selvagens Especiais "
     }, {
       "language" : "en",
@@ -95268,7 +95268,7 @@
       "keywords" : "Всего Население ,  Мельбурн Флорида "
     }, {
       "language" : "pt",
-      "string" : "o que é a total população do Melbourne, Flórida? ",
+      "string" : "Qual a população total de Melbourne, Flórida?",
       "keywords" : "total população ,  Melbourne Flórida "
     }, {
       "language" : "en",
@@ -95335,7 +95335,7 @@
       "keywords" : "страна ,  гора Эверест "
     }, {
       "language" : "pt",
-      "string" : "o que país é Monte Everest dentro? ",
+      "string" : "Em qual país está o Monte Everest?",
       "keywords" : "país ,  Monte Everest "
     }, {
       "language" : "en",
@@ -95407,7 +95407,7 @@
       "keywords" : "художественный движение ,  художник ,   Три Танцоры "
     }, {
       "language" : "pt",
-      "string" : "Para qual artístico movimento fez a pintor do o Três Dançarinos pertence? ",
+      "string" : "A qual movimento artístico pertence a pintura  As Três Dançarinas?",
       "keywords" : "artístico movimento ,  pintor ,  o Três Dançarinos "
     }, {
       "language" : "en",
@@ -95479,7 +95479,7 @@
       "keywords" : "когда ,  операция Повелитель ,  начинать "
     }, {
       "language" : "pt",
-      "string" : "Quando fez Operação Overlord começar? ",
+      "string" : "Quando começou a Operação Overlord?",
       "keywords" : "quando ,  Operação Overlord ,  começar "
     }, {
       "language" : "en",
@@ -95546,7 +95546,7 @@
       "keywords" : "мост ,  самый длинный пролет "
     }, {
       "language" : "pt",
-      "string" : "o que é a ponte com a mais longo período? ",
+      "string" : "Qual a ponte mais longa da Espanha?",
       "keywords" : "ponte ,  mais longo período "
     }, {
       "language" : "en",
@@ -95613,7 +95613,7 @@
       "keywords" : "видео игра ,  Боевой шахматы "
     }, {
       "language" : "pt",
-      "string" : "É há uma vídeo jogos chamado Batalha Xadrez? ",
+      "string" : "Existe um jogo de video game chamado Battle Chess?",
       "keywords" : "vídeo jogos ,  Batalha Xadrez "
     }, {
       "language" : "en",
@@ -95672,7 +95672,7 @@
       "keywords" : "похороненный ,  большой пирамида из Гиза "
     }, {
       "language" : "pt",
-      "string" : "Quem estava enterrado dentro a Ótimo Pirâmide do Gizé? ",
+      "string" : "Quem foi enterrada na Grande Pirâmide de Gizé?",
       "keywords" : "enterrado ,  Ótimo Pirâmide do Gizé "
     }, {
       "language" : "en",
@@ -95740,7 +95740,7 @@
       "keywords" : "брод двигатель Компания ,  производство растение ,  Малайзия "
     }, {
       "language" : "pt",
-      "string" : "Faz a Ford Motor Empresa ter uma manufatura plantar dentro Malásia? ",
+      "string" : "A Ford Motor Company possui uma fábrica de manufaturados na Malásia?",
       "keywords" : "Ford Motor Empresa ,  manufatura plantar ,  Malásia "
     }, {
       "language" : "en",
@@ -95795,7 +95795,7 @@
       "keywords" : "Сократ ,  влияние ,  Аристотель "
     }, {
       "language" : "pt",
-      "string" : "fez Sócrates influência Aristóteles? ",
+      "string" : "Sócrates influênciou Aristóteles?",
       "keywords" : "Sócrates ,  influência ,  Aristóteles "
     }, {
       "language" : "en",
@@ -95854,7 +95854,7 @@
       "keywords" : "Вениамин Франклин ,  ребенок "
     }, {
       "language" : "pt",
-      "string" : "Como muitos crianças fez Benjamin Franklin ter? ",
+      "string" : "Quantos filhos Benjamin Franklin teve?",
       "keywords" : "Benjamin Franklin ,  criança "
     }, {
       "language" : "en",
@@ -95921,7 +95921,7 @@
       "keywords" : "высокий ,  Майкл Иордания "
     }, {
       "language" : "pt",
-      "string" : "Como alta é Michael Jordânia? ",
+      "string" : "Qual a altura do Michael Jordan?",
       "keywords" : "alta ,  Michael Jordânia "
     }, {
       "language" : "en",
@@ -95988,7 +95988,7 @@
       "keywords" : "MISH ,  главное управление ,  город ,  Великобритания "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual Reino Unido cidade estamos a quartel general do a MI6 ",
+      "string" : "Em qual cidade do UK fica a sede do MI6?",
       "keywords" : "MIS ,  quartel general ,  cidade ,  Reino Unido "
     }, {
       "language" : "en",
@@ -96055,7 +96055,7 @@
       "keywords" : "Создайте ,  семья парень "
     }, {
       "language" : "pt",
-      "string" : "Quem criada Família Cara? ",
+      "string" : "Qem criou Uma Família da Pesada?",
       "keywords" : "crio ,  Família Cara "
     }, {
       "language" : "en",
@@ -96122,7 +96122,7 @@
       "keywords" : "город ,  Чили маршрут 68 ,  концы "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade faz a Chile Rota 68 fim? ",
+      "string" : "Em qual cidade termina a rota CH-68?",
       "keywords" : "cidade ,  Chile Rota 68 ,  termina "
     }, {
       "language" : "en",
@@ -96189,7 +96189,7 @@
       "keywords" : "Элвис Presley ,  внучата "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a netos do Elvis Presley ",
+      "string" : "Liste os netos de Elvis Presley.",
       "keywords" : "Elvis Presley ,  netos "
     }, {
       "language" : "en",
@@ -96256,7 +96256,7 @@
       "keywords" : "растворяться ,  Ming династия "
     }, {
       "language" : "pt",
-      "string" : "Quando fez a Ming dinastia dissolver? ",
+      "string" : "Quando acabou a dinástia Ming?",
       "keywords" : "dissolver ,  Ming dinastia "
     }, {
       "language" : "en",
@@ -96323,7 +96323,7 @@
       "keywords" : "Лоренс из Аравия ,  военные конфликт "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual militares conflitos fez Lawrence do Arabia participar? ",
+      "string" : "Lawrence of Arabia participou em quais conflitos militares?",
       "keywords" : "Lawrence do Arabia ,  militares conflito "
     }, {
       "language" : "en",
@@ -96415,7 +96415,7 @@
       "keywords" : "часовой пояс ,  Сан - Pedro из Atacama "
     }, {
       "language" : "pt",
-      "string" : "o que é a fuso horário dentro San Pedro de Atacama ",
+      "string" : "Qual é o fuso horário de São PEdro do Atacama?",
       "keywords" : "fuso horário ,  San Pedro de Atacama "
     }, {
       "language" : "en",
@@ -96482,7 +96482,7 @@
       "keywords" : "книга ,  Уильям Goldman ,  страницы ,  Больше чем 300 "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos livros de William Goldman com Mais do que 300 Páginas. ",
+      "string" : "Me dê todos os livros do William Goldman que tenham mais que 300 páginas.",
       "keywords" : "livro ,  William Goldman ,  Páginas ,  Mais do que 300 "
     }, {
       "language" : "en",
@@ -96594,7 +96594,7 @@
       "keywords" : "Брюс резчик ,   "
     }, {
       "language" : "pt",
-      "string" : "o que fez Bruce Escultor o a partir de? ",
+      "string" : "Qual a causa da morte de Bruce Caver?",
       "keywords" : "Bruce Escultor ,  o "
     }, {
       "language" : "en",
@@ -96661,7 +96661,7 @@
       "keywords" : "дочернее предприятие ,  Lufthansa ,  обслуживать ,  Дортмунд ,  Берлин Тегель "
     }, {
       "language" : "pt",
-      "string" : "Qual subsidiária do Lufthansa serve ambos Dortmund e Berlim Tegel? ",
+      "string" : "Qual subsidiária da Lufthansa serve tanto Dortmund quantoBerlin Tegel?",
       "keywords" : "subsidiária ,  Lufthansa ,  servir ,  Dortmund ,  Berlim Tegel "
     }, {
       "language" : "en",
@@ -96728,7 +96728,7 @@
       "keywords" : "Авраам Линкольн ,  смерть место ,  Веб-сайт "
     }, {
       "language" : "pt",
-      "string" : "Faz Abraão Lincoln's morte Lugar, colocar ter uma local na rede Internet? ",
+      "string" : "O local da morte de Abrahan Lincooln tem um site?",
       "keywords" : "Abraão Lincoln ,  morte Lugar,  colocar ,  local na rede Internet "
     }, {
       "language" : "en",
@@ -96787,7 +96787,7 @@
       "keywords" : "Элвис Presley ,  дети "
     }, {
       "language" : "pt",
-      "string" : "fez Elvis Presley ter crianças? ",
+      "string" : "Elvis Presley teve filhos?",
       "keywords" : "Elvis Presley ,  crianças "
     }, {
       "language" : "en",
@@ -96846,7 +96846,7 @@
       "keywords" : "Мишель Обама ,  жена ,  Барак Обама "
     }, {
       "language" : "pt",
-      "string" : "É Michelle Obama a esposa do Barack Obama? ",
+      "string" : "A Michelle Obama é esposa do Barack Obama?",
       "keywords" : "Michelle Obama ,  esposa ,  Barack Obama "
     }, {
       "language" : "en",
@@ -96905,7 +96905,7 @@
       "keywords" : "город ,  жить ,  Сильвестр Сталлоне "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade faz Sylvester Stallone viver? ",
+      "string" : "Em qual cidade o Sylvester Stallone reside?",
       "keywords" : "cidade ,  viver ,  Sylvester Stallone "
     }, {
       "language" : "en",
@@ -96972,7 +96972,7 @@
       "keywords" : "книга ,  Керуак ,  публиковать ,  викинг Нажмите "
     }, {
       "language" : "pt",
-      "string" : "Qual livros de Kerouac estavam Publicados de Viking Pressione? ",
+      "string" : "Quais livros da Kerouac foram publicados pela Viking Press?",
       "keywords" : "livro ,  Kerouac ,  publicar ,  Viking pressione "
     }, {
       "language" : "en",
@@ -97049,7 +97049,7 @@
       "keywords" : "записывать ,  песня ,  Гостиница Калифорния "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi a canção Hotel Califórnia? ",
+      "string" : "Quem escreveu a música Hotel California?",
       "keywords" : "Escreva ,  canção ,  Hotel Califórnia "
     }, {
       "language" : "en",
@@ -97126,7 +97126,7 @@
       "keywords" : "столица ,  Канада "
     }, {
       "language" : "pt",
-      "string" : "o que é a capital do Canadá? ",
+      "string" : "Qual é a capital do Canadá?",
       "keywords" : "capital ,  Canadá "
     }, {
       "language" : "en",
@@ -97193,7 +97193,7 @@
       "keywords" : "телефон Авив ,  мэр "
     }, {
       "language" : "pt",
-      "string" : "Quem é a prefeito do Tel Aviv? ",
+      "string" : "Quem é o prefeito de Tel Aviv?",
       "keywords" : "Tel Aviv ,  prefeito "
     }, {
       "language" : "en",
@@ -97260,7 +97260,7 @@
       "keywords" : "форма из правительство ,  Россия "
     }, {
       "language" : "pt",
-      "string" : "o que Formato do governo faz Rússia ter? ",
+      "string" : "Qual a forma de governo da Russia?",
       "keywords" : "Formato do governo ,  Rússia "
     }, {
       "language" : "en",
@@ -97327,7 +97327,7 @@
       "keywords" : "книга ,  писал ,  Мухаммед или "
     }, {
       "language" : "pt",
-      "string" : "exposição mim a livro aquele Maomé Mas escrevi. ",
+      "string" : "Mostre-me o livro que o Muhammad Ali escreveu.",
       "keywords" : "livro ,  escrevi ,  Maomé Mas "
     }, {
       "language" : "en",
@@ -97399,7 +97399,7 @@
       "keywords" : "первый ,  восхождение ,  крепление Эверест "
     }, {
       "language" : "pt",
-      "string" : "Quem estava a primeiro para escalar Monte Everest? ",
+      "string" : "Quem foi o primeiro a escalar o Monte Everest?",
       "keywords" : "primeiro ,  escalar ,  montar Everest "
     }, {
       "language" : "en",
@@ -97481,7 +97481,7 @@
       "keywords" : "языки ,  Колумбия "
     }, {
       "language" : "pt",
-      "string" : "Como muitos línguas estamos falada dentro Colômbia? ",
+      "string" : "Quantos línguas são falado na Colombia?",
       "keywords" : "línguas ,  Colômbia "
     }, {
       "language" : "en",
@@ -97548,7 +97548,7 @@
       "keywords" : "Чешский республика ,  валюта "
     }, {
       "language" : "pt",
-      "string" : "o que é a moeda do a Checo República? ",
+      "string" : "Qual é a moeda da República do Cazaquistão? ",
       "keywords" : "Checo república ,  moeda "
     }, {
       "language" : "en",
@@ -97615,7 +97615,7 @@
       "keywords" : "произведенный ,  Франция ,  сверкающий вино "
     }, {
       "language" : "pt",
-      "string" : "Onde dentro França é espumante vinho produzido? ",
+      "string" : "Em qual local da França é produzido espumante?",
       "keywords" : "produzido ,  França ,  espumante vinho "
     }, {
       "language" : "en",
@@ -97682,7 +97682,7 @@
       "keywords" : "Борис Becker ,  конец карьера "
     }, {
       "language" : "pt",
-      "string" : "Quando fez Boris Becker fim dele ativo carreira? ",
+      "string" : "Quando Boris Becker se aposentou?",
       "keywords" : "Boris Becker ,  fim carreira "
     }, {
       "language" : "en",
@@ -97749,7 +97749,7 @@
       "keywords" : "кино ,  в главной роли ,  Микки Рурк ,  направленный ,  парень Ritchie "
     }, {
       "language" : "pt",
-      "string" : "Qual filmes estrelando Mickey Rourke estavam dirigido de Cara Ritchie? ",
+      "string" : "Quais filmes estrelados pelo Mickey Rourke foram dirigidos pelo Guy Ritchie?",
       "keywords" : "filmes ,  estrelando ,  Mickey Rourke ,  dirigido ,  Cara Ritchie "
     }, {
       "language" : "en",
@@ -97816,7 +97816,7 @@
       "keywords" : "фильм ,  играть ,  Юлия Робертс ,  Ричард Гир "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual filmes fez Julia Roberts Como bem Como Richard Gere Toque? ",
+      "string" : "Em quais filmes Julia Roberts interpretou tão bem quanto Richard Gere?",
       "keywords" : "filme ,  Toque ,  Julia Roberts ,  Richard Gere "
     }, {
       "language" : "en",
@@ -97888,7 +97888,7 @@
       "keywords" : "автобиография ,  Хемингуэй "
     }, {
       "language" : "pt",
-      "string" : "exposição mim De Hemingway autobiografia. ",
+      "string" : "Me mostre a autobiografia da  Hemingway.",
       "keywords" : "autobiografia ,  Hemingway "
     }, {
       "language" : "en",
@@ -97955,7 +97955,7 @@
       "keywords" : "Амазонка Ева ,  высокий "
     }, {
       "language" : "pt",
-      "string" : "Como alta é Amazon Véspera? ",
+      "string" : "Qual a altura da Amazon Eve?",
       "keywords" : "Amazon véspera ,  alta "
     }, {
       "language" : "en",
@@ -98022,7 +98022,7 @@
       "keywords" : "5 боро ,  новый Йорк "
     }, {
       "language" : "pt",
-      "string" : "o que estamos a cinco bairros do Novo Iorque? ",
+      "string" : "Quais são os cinco municípios de Nova York?",
       "keywords" : "cinco bairros ,  Novo Iorque "
     }, {
       "language" : "en",
@@ -98109,7 +98109,7 @@
       "keywords" : "запись метка ,  канадец ,  Grunge "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos canadense Grunge registro rótulos. ",
+      "string" : "Liste para mim todas as gravadoras de grunge canadenses.",
       "keywords" : "registro rótulo ,  canadense ,  Grunge "
     }, {
       "language" : "en",
@@ -98176,7 +98176,7 @@
       "keywords" : "Ганг ,  Начало ,  страна "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual país faz a Ganges começar? ",
+      "string" : "Em qual país Gange começou?",
       "keywords" : "Ganges ,  começar ,  país "
     }, {
       "language" : "en",
@@ -98243,7 +98243,7 @@
       "keywords" : "основатель ,  пингвин книги "
     }, {
       "language" : "pt",
-      "string" : "Quem é a fundador do Pinguim Livros? ",
+      "string" : "Quem fundou a Penguin Books?",
       "keywords" : "fundador ,  Pinguim Livros "
     }, {
       "language" : "en",
@@ -98310,7 +98310,7 @@
       "keywords" : "писатель ,  Игра из престолы "
     }, {
       "language" : "pt",
-      "string" : "Quem escrevi a jogos do Tronos tema? ",
+      "string" : "Quem escreveu Game of Thrones?",
       "keywords" : "escritor ,  jogos do Tronos "
     }, {
       "language" : "en",
@@ -98377,7 +98377,7 @@
       "keywords" : "президент ,  Эритрея "
     }, {
       "language" : "pt",
-      "string" : "Quem é a Presidente do Eritreia? ",
+      "string" : "Quem é o presidente da Eritreia?",
       "keywords" : "Presidente ,  Eritréia "
     }, {
       "language" : "en",
@@ -98444,7 +98444,7 @@
       "keywords" : "город ,  Джон F. Кеннеди ,   "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade fez John F. Kennedy o? ",
+      "string" : "John F. Kennedy morreu em qual cidade?",
       "keywords" : "cidade ,  John F. Kennedy ,  o "
     }, {
       "language" : "en",
@@ -98511,7 +98511,7 @@
       "keywords" : "Австралия ,  наибольший гора "
     }, {
       "language" : "pt",
-      "string" : "o que é a maior montanha dentro Austrália? ",
+      "string" : "Qual é a maior montanha da Austrália?",
       "keywords" : "Austrália ,  maior montanha "
     }, {
       "language" : "en",
@@ -98578,7 +98578,7 @@
       "keywords" : "пишет ,  Фермеры альманах "
     }, {
       "language" : "pt",
-      "string" : "Quem escreve a Agricultores' Almanaque? ",
+      "string" : "Quem escreveu o Farmers' Almanac?",
       "keywords" : "escreve ,  Agricultores' Almanaque "
     }, {
       "language" : "en",
@@ -98646,7 +98646,7 @@
       "keywords" : "валюта ,  Китай "
     }, {
       "language" : "pt",
-      "string" : "Dar mim a moeda do China. ",
+      "string" : "Qual é a moeda da China?",
       "keywords" : "moeda ,  China "
     }, {
       "language" : "en",
@@ -98713,7 +98713,7 @@
       "keywords" : "шведский ,  океанограф "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos sueco oceanógrafos. ",
+      "string" : "Liste para mim todos os oceonográfos suíços.",
       "keywords" : "sueco ,  oceanógrafo "
     }, {
       "language" : "en",
@@ -98780,7 +98780,7 @@
       "keywords" : "город ,  главное управление из  объединенный наций "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual cidade estamos a quartel general do a Unidos Nações? ",
+      "string" : "Em qual cidade fica a sede das Nações Unidas?",
       "keywords" : "cidade ,  quartel general do a Unidos Nações "
     }, {
       "language" : "en",
@@ -98847,7 +98847,7 @@
       "keywords" : "Рита Wilson ,  жена ,  Том Hanks "
     }, {
       "language" : "pt",
-      "string" : "É Rita Wilson a esposa do Tom Hanks? ",
+      "string" : "Rita Wilson é a esposa do Tom Hanks?",
       "keywords" : "Rita Wilson ,  esposa ,  Tom Hanks "
     }, {
       "language" : "en",
@@ -98906,7 +98906,7 @@
       "keywords" : "который страны ,  говорить ,  Японский "
     }, {
       "language" : "pt",
-      "string" : "Dentro qual paises Faz pessoas falar Japonês? ",
+      "string" : "Em quais países as pessoas falam japonês?",
       "keywords" : "qual paises ,  falar ,  japonês "
     }, {
       "language" : "en",
@@ -98983,7 +98983,7 @@
       "keywords" : "наибольший бюджет ,  фильм ,  Тим полиспаст "
     }, {
       "language" : "pt",
-      "string" : "Qual do Tim Burton's filmes teve a maior despesas? ",
+      "string" : "Qual filme do Tim Burton teve o maior lucro?",
       "keywords" : "maior despesas ,  filme ,  Tim Burton "
     }, {
       "language" : "en",
@@ -99050,7 +99050,7 @@
       "keywords" : "музей ,  новый Йорк ,   большинство посетители "
     }, {
       "language" : "pt",
-      "string" : "Qual museu dentro Novo Iorque tem a a maioria visitantes? ",
+      "string" : "Qual museu de Nova York tem mais visitantes?",
       "keywords" : "museu ,  Novo Iorque ,  a a maioria visitantes "
     }, {
       "language" : "en",
@@ -99117,7 +99117,7 @@
       "keywords" : "первый альбом ,  Королева "
     }, {
       "language" : "pt",
-      "string" : "o que estava a primeiro Rainha álbum? ",
+      "string" : "Qual foi o primeiro álbum do Queen?",
       "keywords" : "primeiro álbum ,  Rainha "
     }, {
       "language" : "en",
@@ -99184,7 +99184,7 @@
       "keywords" : "первый имя ,  Квинс из  Камень Возраст "
     }, {
       "language" : "pt",
-      "string" : "o que estava a primeiro nome do a banda Rainhas do a Pedra Era? ",
+      "string" : "Qual foi o primeiro nome da banda Queens of the Stone Age?",
       "keywords" : "primeiro nome ,  Rainhas do a Pedra Era "
     }, {
       "language" : "en",
@@ -99247,7 +99247,7 @@
       "keywords" : "сельдь гиннес ,  последний ,  кино "
     }, {
       "language" : "pt",
-      "string" : "o que estava a último filme com Alec Guinness? ",
+      "string" : "Qual foi o último filme com o Alec Guinness?",
       "keywords" : "Alec Guinness ,  último ,  filme "
     }, {
       "language" : "en",
@@ -99314,7 +99314,7 @@
       "keywords" : "актер ,  в главной роли ,  Последний действие герой "
     }, {
       "language" : "pt",
-      "string" : "Dar mim todos atores estrelando dentro Último Açao Herói. ",
+      "string" : "Me dê todos os atores de O Último Grande Herói.",
       "keywords" : "ator ,  estrelando ,  Último Açao Herói "
     }, {
       "language" : "en",
@@ -99426,7 +99426,7 @@
       "keywords" : "обнаруженный ,  Плутон "
     }, {
       "language" : "pt",
-      "string" : "Quem descoberto Plutão? ",
+      "string" : "Quem descobriu plutão?",
       "keywords" : "descoberto ,  Plutão "
     }, {
       "language" : "en",
