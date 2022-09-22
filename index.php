@@ -40,8 +40,11 @@ if (isset($_GET['q'])) {
  <p> <a href='index.php?x=contact&q=".$q."'>Contact</a> <img src='pictures/list_arrow_gray.gif'> </p>
  <p> &nbsp; </p>";
  }
+ if ($q == "10") {
+  header("location:http://www.nliwod.org/challenge");
+   }
 if ($q == "9") {
-    header("location:http://2018.nliwod.org/challenge");
+    header("location:http://www.nliwod.org/past-workshops/2018/home.html");
      }
 if ($q == "8") {
     header("location:https://project-hobbit.eu/challenges/qald-8-challenge/");
