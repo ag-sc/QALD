@@ -263,7 +263,7 @@
       "keywords" : "американский президенты ,   офис ,   Вьетнам война "
     }, {
       "language" : "pt",
-      "string" : "Quais presidentes americanos estavão no poder durante a Guerra do Vietnã?",
+      "string" : "Quais presidentes americanos estavam no poder durante a Guerra do Vietnã?",
       "keywords" : "americano presidentes ,   escritório ,   Vietnã Guerra "
     }, {
       "language" : "hi_IN",
@@ -474,7 +474,7 @@
       "keywords" : "художник ,   Родился одна и та же Дата ,   Рейчел Стивенс "
     }, {
       "language" : "pt",
-      "string" : "Quais artiistas nasceram na mesma data que a Rachel Stevens?",
+      "string" : "Quais artistas nasceram na mesma data que a Rachel Stevens?",
       "keywords" : "artista ,   nascermos mesmo encontro ,   Rachel Stevens "
     }, {
       "language" : "hi_IN",
@@ -689,7 +689,7 @@
       "keywords" : "एफसी पोर,  सीटें,  स्टेडियम"
     }, {
       "language" : "pt_BR",
-      "string" : "Quantas cadeiras tem o estádio de futebol do Clube do Porto",
+      "string" : "Quantas cadeiras tem no estádio de futebol do Clube do Porto",
       "keywords" : "cadeiras,  estádio,  Futebol Clube do Porto"
     }, {
       "language" : "fa",
@@ -2751,7 +2751,7 @@
       "keywords" : "страна ,   Родился ,   Билл ворота "
     }, {
       "language" : "pt",
-      "string" : "Em qual país o Bill Gates nasceu?",
+      "string" : "Em qual país nasceu o Bill Gates?",
       "keywords" : "país ,   nascermos ,   Conta Portões "
     }, {
       "language" : "en",
@@ -2889,7 +2889,7 @@
       "keywords" : "профессиональный ,   скейтбордист ,   Швеция "
     }, {
       "language" : "pt",
-      "string" : "Liste para mim todos os skatistas proficionais da Suécia.",
+      "string" : "Liste para mim todos os skatistas profissionais da Suécia.",
       "keywords" : "profissional ,   skatista ,   Suécia "
     }, {
       "language" : "en",
@@ -4782,7 +4782,7 @@
       "keywords" : "Финляндия ,   Европейская союз ,   присоединиться "
     }, {
       "language" : "pt",
-      "string" : "Quando a Finlandia entrou para a UE?",
+      "string" : "Quando a Finlândia entrou para a UE?",
       "keywords" : "Finlândia ,   europeu União ,   Junte-se "
     }, {
       "language" : "hi_IN",
@@ -4849,7 +4849,7 @@
       "keywords" : "актеры ,   большой бах теория "
     }, {
       "language" : "pt",
-      "string" : "Qual é o elenco de Big Bang Theory?",
+      "string" : "Qual é o elenco do The Big Bang Theory?",
       "keywords" : "atores ,   grande Bang Teoria "
     }, {
       "language" : "hi_IN",
@@ -5744,7 +5744,7 @@
       "keywords" : "профессиональный серфер ,   Родился ,   Австралия "
     }, {
       "language" : "pt",
-      "string" : "Quais surfistas proficionais nasceram na Austrália?",
+      "string" : "Quais surfistas profissionais nasceram na Austrália?",
       "keywords" : "profissional surfista ,   nascermos ,   Austrália "
     }, {
       "language" : "en",
@@ -5758,10 +5758,6 @@
       "language" : "fa",
       "string" : "چه موج‌سواران حرفه‌ای در استرالیا به دنیا آمده‌اند؟",
       "keywords" : "موج‌سوار  حرفه ای,  به دنیا آمدن,  استرالیا"
-    }, {
-      "language" : "pt_BR",
-      "string" : "Quais surfistas profissionais nasceram na Austrália?",
-      "keywords" : "surfistas profissionais,  nascer,  Austrália"
     }, {
       "language" : "it",
       "string" : "Quali surfisti professionisti sono nati in Australia?",
@@ -16995,8 +16991,8 @@
       "keywords" : "список ,   критически находящихся под угрозой исчезновения птицы "
     }, {
       "language" : "pt",
-      "string" : "Me dê uma lista de todos os pássaros em perigo crítico.",
-      "keywords" : "Lista ,   criticamente ameaçadas de extinção passarinhos "
+      "string" : "Me dê uma lista de todos os pássaros em perigo de extinção.",
+      "keywords" : "Lista , criticamente ameaçadas de extinção passarinhos "
     }, {
       "language" : "en",
       "string" : "Give me a list of all critically endangered birds.",
@@ -18944,7 +18940,7 @@
       "keywords" : "кино ,   Наихудший случай сценарий ,   кино ,   Нидерланды "
     }, {
       "language" : "pt",
-      "string" : "Quando que o filme Worst Case Scenario vai estreiar nos Países Baixos?",
+      "string" : "Quando o filme Worst Case Scenario vai estreiar nos Países Baixos?",
       "keywords" : "filme ,   Pior Caso Cenário ,   cinema ,   Países Baixos "
     }, {
       "language" : "hi_IN",
@@ -19695,7 +19691,7 @@
       "keywords" : "реки ,   течь ,   север Море "
     }, {
       "language" : "pt",
-      "string" : "Quais rios desasguam no Mar do Norte?",
+      "string" : "Quais rios desaguam no Mar do Norte?",
       "keywords" : "rios ,   fluxo ,   Norte Mar "
     }, {
       "language" : "hi_IN",
@@ -19842,7 +19838,7 @@
       "keywords" : "Форт Нокс ,   располагается "
     }, {
       "language" : "pt",
-      "string" : "Onde esta localizada a Fort Knox ?",
+      "string" : "Onde esta localizado o Fort Knox?",
       "keywords" : "Forte Knox ,   localizado "
     }, {
       "language" : "en",
@@ -20189,7 +20185,7 @@
       "keywords" : "Piccadilly ,   Начало "
     }, {
       "language" : "pt",
-      "string" : "Onde começa Piccadilly?",
+      "string" : "Onde começa a Piccadilly?",
       "keywords" : "Piccadilly ,   começar "
     }, {
       "language" : "en",
@@ -20260,7 +20256,7 @@
       "keywords" : "школа имя ,   Обама жена ,   изучение "
     }, {
       "language" : "pt",
-      "string" : "Qual o nome da universidade que a esposa so Obama estudou?",
+      "string" : "Qual o nome da universidade que a esposa do Obama estudou?",
       "keywords" : "escola nome ,   Obama's esposa ,   estude "
     }, {
       "language" : "hi_IN",
@@ -20543,7 +20539,7 @@
       "keywords" : "разъем волчья шкура ,   основанный "
     }, {
       "language" : "pt",
-      "string" : "Quando Jack Wolfskin foi fundado?",
+      "string" : "Quando Jack Wolfskin foi fundada?",
       "keywords" : "Jack Wolfskin ,   fundado "
     }, {
       "language" : "en",
@@ -20677,7 +20673,7 @@
       "keywords" : "Pilsner Urquell ,   пивоваренный завод ,   учредительный год "
     }, {
       "language" : "pt",
-      "string" : "Qual o ano de fundação da cervejaria que produz Pilsner Urquell?",
+      "string" : "Qual o ano de fundação da cervejaria que produz a Pilsner Urquell?",
       "keywords" : "Pilsner Urquell ,   cervejaria ,   fundando ano "
     }, {
       "language" : "hi_IN",
@@ -20811,7 +20807,7 @@
       "keywords" : "животное ,   критически находящихся под угрозой исчезновения "
     }, {
       "language" : "pt",
-      "string" : "Quais animais estão em perigo crítico?",
+      "string" : "Quais animais estão em perigo de extinção?",
       "keywords" : "animal ,   criticamente ameaçadas de extinção "
     }, {
       "language" : "hi_IN",
@@ -28505,7 +28501,7 @@
       "keywords" : "большой ,   Земля ,   диаметр "
     }, {
       "language" : "pt",
-      "string" : "O quão grande é o diâmetro da Terra?",
+      "string" : "Qual o tamanho do diâmetro da Terra?",
       "keywords" : "grande ,   terra ,   diâmetro "
     }, {
       "language" : "hi_IN",
@@ -28572,7 +28568,7 @@
       "keywords" : "жена ,   президент ,   обама ,   называется ,   Michelle "
     }, {
       "language" : "pt",
-      "string" : "O nome da esposa do presidente Obama se chamaMichelle?",
+      "string" : "O nome da esposa do presidente Obama é Michelle?",
       "keywords" : "esposa ,   Presidente ,   obama ,   chamado ,   Michelle "
     }, {
       "language" : "hi_IN",
@@ -29290,7 +29286,7 @@
       "keywords" : "калорий ,   багет "
     }, {
       "language" : "pt",
-      "string" : "Quantas calorias uma baguette tem?",
+      "string" : "Quantas calorias tem uma baguete?",
       "keywords" : "calorias ,   baguete "
     }, {
       "language" : "hi_IN",
@@ -29357,7 +29353,7 @@
       "keywords" : "библиотеки ,   установленный ,   ранее чем 1400 "
     }, {
       "language" : "pt",
-      "string" : "Liste para mim todas as livrarias criadaas antes de 1400.",
+      "string" : "Liste para mim todas as livrarias criadas antes de 1400.",
       "keywords" : "bibliotecas ,   estabelecido ,   mais cedo do que 1400 "
     }, {
       "language" : "hi_IN",
@@ -29546,7 +29542,7 @@
       "keywords" : "музей ,   Крик ,   жевать "
     }, {
       "language" : "pt",
-      "string" : "Quais museus exibem  a obra de Munch, O Grito? ",
+      "string" : "Qual museu exibe a obra de Munch, O Grito? ",
       "keywords" : "museu ,   Grito ,   Munch "
     }, {
       "language" : "en",
@@ -29819,7 +29815,7 @@
       "keywords" : " песня из лед а также Огонь "
     }, {
       "language" : "pt",
-      "string" : "Qual o romancista que escreveu as Crônicas de gelo e fogo?",
+      "string" : "Qual o romancista que escreveu As Crônicas de Gelo e Fogo?",
       "keywords" : "uma canção do gelo e fogo "
     }, {
       "language" : "hi_IN",
@@ -29886,7 +29882,7 @@
       "keywords" : "Битлз ,   запись ,   первый альбом ,   студия "
     }, {
       "language" : "pt",
-      "string" : "Em qual estúdio os BEatles gravaram o primeiro albúm?",
+      "string" : "Em qual estúdio os Beatles gravaram o primeiro albúm?",
       "keywords" : "Beatles ,   registro ,   primeiro álbum ,   estúdio "
     }, {
       "language" : "hi_IN",
@@ -30045,10 +30041,6 @@
       "language" : "hi_IN",
       "string" : "राजकुमारी डायना का निधन कब हुआ?",
       "keywords" : "राजकुमारी डायना,  निधन"
-    }, {
-      "language" : "pt_BR",
-      "string" : "Quando a princesa Diana morreu?",
-      "keywords" : "princesa Diana,  morreu"
     }, {
       "language" : "fa",
       "string" : "شاهزاده دیانا کی فوت کرد؟",
@@ -30249,7 +30241,7 @@
       "keywords" : "Кот Стивенс ,   инструмент "
     }, {
       "language" : "pt",
-      "string" : "Cat Stevens toca quais instrumentos?",
+      "string" : "Quais instrumentos toca Cat Stevens?",
       "keywords" : "Gato Stevens ,   instrumento "
     }, {
       "language" : "hi_IN",
@@ -31789,7 +31781,7 @@
       "keywords" : "пеший туризм трассы ,   большой каньон ,   нет Опасность из вспышка наводнения "
     }, {
       "language" : "pt",
-      "string" : "Leve-me às trilhas do Grand Canyon em que não há perigo de inundações.",
+      "string" : "Liste as trilhas do Grand Canyon em que não há perigo de inundações.",
       "keywords" : "caminhada trilhas ,   Grande Canyon ,   não perigo do instantâneo inundações "
     }, {
       "language" : "hi_IN",
@@ -31856,7 +31848,7 @@
       "keywords" : "книга ,    большинство страницы "
     }, {
       "language" : "pt",
-      "string" : "Qual livro tem mais páginas?",
+      "string" : "Qual é o livro que tem mais páginas?",
       "keywords" : "livro ,   a a maioria Páginas "
     }, {
       "language" : "en",
