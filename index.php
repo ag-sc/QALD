@@ -41,10 +41,10 @@ if (isset($_GET['q'])) {
  <p> &nbsp; </p>";
  }
  if ($q == "10") {
-  header("location:http://www.nliwod.org/challenge");
+  header("location:https://www.nliwod.org/challenge");
    }
 if ($q == "9") {
-    header("location:http://www.nliwod.org/past-workshops/2018/home.html");
+    header("location:https://www.nliwod.org/past-workshops/2018/home.html");
      }
 if ($q == "8") {
     header("location:https://project-hobbit.eu/challenges/qald-8-challenge/");
