@@ -41,7 +41,7 @@ if (isset($_GET['q'])) {
  <p> &nbsp; </p>";
  }
  if ($q == "10") {
-  header("location:https://www.nliwod.org/challenge/");
+  header("location:https://www.nliwod.org/challenge");
    }
 if ($q == "9") {
     header("location:https://www.nliwod.org/past-workshops/2018/home.html");
